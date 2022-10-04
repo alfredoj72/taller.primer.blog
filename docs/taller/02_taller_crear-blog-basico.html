@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Pedro J. Pérez">
+<meta name="dcterms.date" content="2022-10-04">
+
+<title>Mi primer blog con Quarto (WIP) - Taller Córdoba (blog_01)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../imagenes/ababol_redondeado.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="assets/styles.css">
+<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Taller Córdoba (blog_01)">
+<meta property="og:description" content="Una vez tenemos instalados los programas vamos a ver el proceso de creación y la estructura de ficheros de un blog con Quarto de forma rápida. Ya tendremos tiempo de mejorarlo o tunearlo!!">
+<meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
+<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Taller Córdoba (blog_01)">
+<meta name="twitter:description" content="Una vez tenemos instalados los programas vamos a ver el proceso de creación y la estructura de ficheros de un blog con Quarto de forma rápida. Ya tendremos tiempo de mejorarlo o tunearlo!!">
+<meta name="twitter:creator" content="@pjpv4444">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Mi primer blog con Quarto (WIP)</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../index.html"><i class="bi bi-house-door" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../taller.html">Taller</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">Ponente</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/perezp44"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/pjpv4444"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:pedro.j.perez@uv.es"><i class="bi bi-envelope" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#blog-en-3-minutos" id="toc-blog-en-3-minutos" class="nav-link" data-scroll-target="#blog-en-3-minutos">Blog en 3 minutos</a>
+  <ul class="collapse">
+  <li><a href="#creación-de-un-rproject-para-un-blog" id="toc-creación-de-un-rproject-para-un-blog" class="nav-link" data-scroll-target="#creación-de-un-rproject-para-un-blog">Creación de un Rproject (para un blog)</a></li>
+  <li><a href="#estructura-de-ficheros-del-rproject" id="toc-estructura-de-ficheros-del-rproject" class="nav-link" data-scroll-target="#estructura-de-ficheros-del-rproject">Estructura de ficheros del Rproject</a></li>
+  <li><a href="#creación-del-blog" id="toc-creación-del-blog" class="nav-link" data-scroll-target="#creación-del-blog">Creación del blog</a></li>
+  <li><a href="#veamos-otra-vez-la-estructura-de-carpetas" id="toc-veamos-otra-vez-la-estructura-de-carpetas" class="nav-link" data-scroll-target="#veamos-otra-vez-la-estructura-de-carpetas">Veamos otra vez la estructura de carpetas</a></li>
+  <li><a href="#alojando-el-blog" id="toc-alojando-el-blog" class="nav-link" data-scroll-target="#alojando-el-blog">Alojando el blog</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Taller Córdoba (blog_01)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Pedro J. Pérez </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 4, 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Contexto
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Tutorial preparado para el taller “Mi primer blog con Quarto” celebrado en Córdoba (Spain), 23-25 de noviembre de 2022. El taller se celebró el jueves 24, 15:15-17:00.</p></li>
+<li><p>El taller está pensado para realizar con <a href="https://cran.r-project.org/">R</a>. Se utilizará el IDE <a href="https://www.rstudio.com/">RStudio</a> y <a href="https://quarto.org/">Quarto</a>, así que tendrán que estar instalados en tu ordenador</p></li>
+<li><p>Se recomienda tener instaladas <strong>versiones recientes</strong> de los 3 programas</p></li>
+<li><p>Este tutorial es sólo una parte del taller. El <strong>taller completo</strong> está <a href="">aquí</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+<section id="setup" class="level1">
+<h1>Setup</h1>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Instalación de R, RStudio y Quarto
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Todos sabemos instalar R y Rstudio, si no fuese así, <a href="https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html">aquí</a> tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.</p></li>
+<li><p>Instalación de <strong>Quarto</strong>: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada</p></li>
+<li><p>Si no fuese así, <a href="https://quarto.org/docs/get-started/">aquí</a> tienes los instaladores para los principales sistemas operativos.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="blog-en-3-minutos" class="level1">
+<h1>Blog en 3 minutos</h1>
+<p>Una vez tenemos instalados los programas vamos a ver el <strong>proceso de creación</strong> y la <strong>estructura de ficheros</strong> de un blog con Quarto de forma rápida. Ya tendremos tiempo de mejorarlo o tunearlo!!</p>
+<section id="creación-de-un-rproject-para-un-blog" class="level2">
+<h2 class="anchored" data-anchor-id="creación-de-un-rproject-para-un-blog">Creación de un Rproject (para un blog)</h2>
+<ul>
+<li><p>Si en RStudio sigues la siguiente ruta de menús: <code>File &gt; New Project &gt; New Directory &gt; Quarto Blog</code> se te creará una carpeta, un Rproject, con todo lo necesario para crear un blog.</p></li>
+<li><p>El nombre que le he puesto a la carpeta/Rproject es <code>blog_prueba_00</code></p></li>
+<li><p>También podría crear el Rproject desde la Terminal de RStudio (panel inferior-izquierda), tecleando lo siguiente:</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> create-project blog_prueba_00 <span class="at">--type</span> website:blog</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>Con el Rproject que acabamos de crear, podremos generar un blog, será un blog sencillito, vamos con lo mínimo, pero un blog.</p></li>
+<li><p>Pero … aún no veo el blog!! Sí, tienes razón, el blog lo crearemos despues de hacer un pequeño repaso a la estructura de carpetas y archivos del Rproject</p></li>
+</ul>
+<p><br></p>
+</section>
+<section id="estructura-de-ficheros-del-rproject" class="level2">
+<h2 class="anchored" data-anchor-id="estructura-de-ficheros-del-rproject">Estructura de ficheros del Rproject</h2>
+<ul>
+<li>El Rproject que acabamos de crear y que contiene nuestro blog tendrá esta estructura de archivos y carpetas:</li>
+</ul>
+<div id="fig-quarto-blog" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_01.png" class="img-fluid figure-img" width="162"></p>
+<p></p><figcaption class="figure-caption">Estructura del Rproject</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_02.png" class="img-fluid figure-img" width="247"></p>
+<p></p><figcaption class="figure-caption">Carpeta de posts: cada post en una carpeta</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_03.png" class="img-fluid figure-img" width="286"></p>
+<p></p><figcaption class="figure-caption">Carpeta de UN post (Welcome post)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Estructura de carpetas del Rproject que creará nuestro blog</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="creación-del-blog" class="level2">
+<h2 class="anchored" data-anchor-id="creación-del-blog">Creación del blog</h2>
+<p>El Rproject que hemos creado tiene todo lo necesario para crear un blog para ello tenemos que:</p>
+<ul>
+<li>Ir al cuadrante superior-izquierda de RStudio, pinchar en la pestaña <code>Build</code> y pinchar en <code>Render Website</code>. Se procesarán los archivos del Rproject y se creará el blog. Podremos verlo en el cuadrante inferior-izquierda de RStudio, concretamente en la pestaña <code>Viewer</code>. Se verá algo como esto:</li>
+</ul>
+<div id="fig-quarto-blog" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_04.png" class="img-fluid figure-img" width="490"></p>
+<p></p><figcaption class="figure-caption">Al pinchar en <code>Render Website</code> se creará el blog</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Al pinchar en <code>Render Website</code> se creará el blog</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><p>Puedes ver <a href="https://pjperez.quarto.pub/blog_prueba_00/">aquí</a> como quedaría el blog.</p></li>
+<li><p>También podríamos haber generado el blog usando la Consola o la terminal desde RStudio. En ambos casos hay que estar en el Rproject “blog_prueba_00”; es decir, “blog_prueba_00” es el working directory</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- desde la Consola</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"quarto"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">"index.qmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- desde la Terminal</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
+<p><br></p>
+</section>
+<section id="veamos-otra-vez-la-estructura-de-carpetas" class="level2">
+<h2 class="anchored" data-anchor-id="veamos-otra-vez-la-estructura-de-carpetas">Veamos otra vez la estructura de carpetas</h2>
+<ul>
+<li>Tras haber creado el blog, la estructura de carpeta de nuestro Rproject quedará como:</li>
+</ul>
+<div id="fig-quarto-blog" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="./imagenes/tt_01/img_05.png" class="img-fluid figure-img" width="204"></p>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Estructura de carpetas del Rproject tras la creación del blog</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><p>Si comparamos la estructura de carpetas antes y despúes de hacer <code>Render Website</code> vemos que <strong>se han creado 2 carpetas</strong>: <code>_freeze</code> y <code>_site</code></p></li>
+<li><p>La carpeta <code>_freeze</code> podemos dejarla para más adelante.</p></li>
+<li><p>La carpeta <code>_site</code> es la que realmente contiene el blog. Si alojas el contenido de esa carpeta en un servidor web se verá el blog que hemos creado. Antes de alojarlo, si quieres verlo puedes pinchar en el fichero <code>./blog_prueba_00/_site/index.html</code>.</p></li>
+<li><p>De esa forma podemos ver que la Home Page del blog es la lista de posts del blog. En el blog por defecto que hemos creado solo hay 2 post: uno de bienvenida y otro de.</p></li>
+<li><p>Como ves el blog es muy sencillo, el Home Page es el listado de posts y solo tiene una página mas: About.</p></li>
+<li><p>No vamos a comentarla pero abajo hay un pantallazo de la carpeta <code>_site</code>.</p>
+<div id="fig-quarto-blog" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="./imagenes/tt_01/img_06.png" class="img-fluid figure-img" width="248"></p>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: <code>_site</code> es la carpeta que contiene el blog</figcaption><p></p>
+</figure>
+</div></li>
+</ul>
+</section>
+<section id="alojando-el-blog" class="level2">
+<h2 class="anchored" data-anchor-id="alojando-el-blog">Alojando el blog</h2>
+<ul>
+<li><p>El blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es publicarlo en internet.</p></li>
+<li><p>Hay muchas formas de alojar nuestro blog, por ejemplo <a href="https://pages.github.com/">Github Pages</a> <a href="https://www.netlify.com/">Netlify</a> etc… , pero usaremos el usando el servicio <a href="https://quartopub.com/">Quartopub</a></p></li>
+<li><p>Para publicar nuestro baby-blog en Quartopub sólo hay que teclear lo siguiente en la Terminal de RStudio (panel inferior-izquierda)</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- desde la Terminal</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>Tras ejecutar lo anterior, se te pedrirá que autorices en la Terminal. Después se abrirá el navegador, tendrás que logearte en <code>Quarto Pub</code> y volverás a autorizar. Además te preguntarán el nombre del blog.</p></li>
+<li><p>Si te fijas, tras haberse publicado el blog en “Quarto Pub”, se habrá creado un nuevo fichero en nuestro Rproject: es el fichero <code>_publish.yml</code>. En él solamente están los metadatos necesarios para publicar y actualizar nuestro blog.</p>
+<div id="fig-quarto-blog" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="cell-output-display">
+<p><img src="./imagenes/tt_01/img_07.png" class="img-fluid figure-img" width="394"></p>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: Fichero <code>_publish.yml</code> con la información para publicar el blog en <code>Quarto Pub</code>.</figcaption><p></p>
+</figure>
+</div></li>
+</ul>
+<p><br><br></p>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>(Algunos artículos sobre creación de blogs en Quarto)</p>
+<ul>
+<li><p><a href="https://www.ericekholm.com/posts/demo-quarto-site/">Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure</a> es una web con blog . GOOOOD</p></li>
+<li><p><a href="https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/">Bea Milz. 2022. Creating a Blog with Quarto in 10 Steps</a></p></li>
+<li><p><a href="https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/">Navarro, Danielle. 2022. “Notes from a Data Witch - Porting a Distill Blog to Quarto</a></p></li>
+<li><p><a href="https://quarto.org/docs/websites/website-blog.html">Quarto - Creating a Blog</a></p></li>
+<li><p><a href="https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/">Alison Hill. 2022. We Don’t Talk about Quarto</a></p></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/perezp44\.github\.io\/taller\.primer\.blog\//);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© 2022 Pedro J. Pérez</div>   
+      <div class="nav-footer-center">Hecha con <a href="https://quarto.org">Quarto</a></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/perezp44">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/pjpv4444">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:pedro.j.perez@uv.es">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.de/citations?user=MFlgHdcAAAAJ&amp;hl=en"><i class="ai ai-google-scholar" role="img"></i></a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-9375-6330"><i class="ai ai-orcid" role="img"></i></a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Mi primer blog con Quarto (WIP)"
+  favicon: imagenes/ababol_redondeado.ico
+  site-url: https://perezp44.github.io/taller.primer.blog/
+  repo-url: https://github.com/perezp44/taller.primer.blog
+  open-graph: true #-https://quarto.org/docs/websites/website-tools.html#twitter-cards
+  twitter-card:
+    creator: "@pjpv4444"
+    card-style: summary_large_image
+  navbar:
+    logo: "imagenes/ababol_redondeado.png"
+    #background: primary #- pink
+    left: 
+      - icon: house-door
+        href: index.html
+    right:
+      - taller.qmd
+      - about.qmd
+      - icon: github
+        href: https://github.com/perezp44
+      - icon: twitter
+        href: https://twitter.com/pjpv4444
+      - icon: envelope
+        url: "mailto:pedro.j.perez@uv.es"
+  page-footer:
+    left: "© 2022 Pedro J. Pérez"
+    center: "Hecha con [Quarto](https://quarto.org)"
+    right:
+      - icon: github
+        href: https://github.com/perezp44
+      - icon: twitter
+        href: https://twitter.com/pjpv4444
+      - icon: envelope
+        url: "mailto:pedro.j.perez@uv.es"
+      - text: <i class="ai ai-google-scholar" role="img"></i>
+        href: https://scholar.google.de/citations?user=MFlgHdcAAAAJ&hl=en
+      - text: <i class="ai ai-orcid" role="img"></i>
+        href: https://orcid.org/0000-0001-9375-6330
+
+format:
+  html:
+    theme: ember.scss  #- de danielle Navarro(https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/)
+    # theme: 
+    #   - cosmo
+    #   - custom.scss
+    css: 
+      - styles.css
+    toc: true
+    
+#editor: visual
+
+highlight-style: monochrome

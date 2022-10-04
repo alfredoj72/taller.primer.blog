@@ -1,0 +1,157 @@
+---
+title: "Mi primer blog con Quarto"
+author: "Pedro J. Pérez"
+format: revealjs
+title-slide-attributes: #- atributos para la slide de titulo
+  data-background-color: "#562457"   #- color de R-ladies
+  #data-background-image: /imagenes/economia.gif
+  #data-background-size: contain      
+
+toc: false
+#theme: style.scss
+#multiplex: true  #- para que puedas manejar las slides del publico
+transition: fade
+height: 900
+width: 1600
+fontcolor: "#262d36"
+highlight-style: a11y
+code-line-numbers: false
+center-title-slide: true
+slide-level: 2 
+number-sections: false
+slide-number: c/t   # https://pandoc.org/MANUAL.html#structuring-the-slide-show
+incremental: true   # https://quarto.org/docs/presentations/#incremental-lists
+logo: imagenes/economia.gif
+footer: <https://quarto.org>
+footer: |
+        Slides hechas con [Quarto](https://quarto.org/) para las [XII Jornadas de Usuarios de R](http://r-es.org/12jr/)
+#heme: [moon, custom.scss]
+from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
+#preview-links: true  #- abre un iframe en lugar de abrir ventana
+
+---
+
+## Bienvenidos al taller!!
+
+<br><br><br>
+
+#### Espero que aprendamos y nos divirtamos!!
+
+
+## Estructura del taller{.smaller}
+
+- Intro
+
+- ¿Qué es Quarto?
+
+- Mi blog en 2 minutos
+
+- Creación de una web (académica??)
+
+- Tuneado de la web
+
+- Creación de posts con Quarto
+
+- Gestión y publicación de la web/blog
+
+
+# Intro
+
+
+## Sobre el ponente
+
+- Profesor en la UV
+
+- Entusiasta de R
+
+- Creador y liquidador de blogs: [2015, R & flowers, con Jekyll](http://perezp44.github.io/), [2018, R & flowers V, con Hugo y blogdown](https://rflowers5.netlify.app/), [2020, R & flowers (o casi), con radix](https://perezp44.github.io/my_blog_R-flowers-0.1.3/), [2021, pedro.j.perez blog’s, con Distill](https://perezp44.github.io/pjperez.web/) y ... [2022, R & flowers, con Quarto](https://perezp44.github.io/pjperez.blog.2022/)
+
+
+
+## Objetivo(s) del taller 
+
+- **Objetivo general**: Aprender sobre **Quarto** mientras vamos creando una web/blog
+
+- Aprender sobre como usar Quarto para hacer webpages/blogs
+
+- Que salgáis todos con el bosquejo de una web/blog!!
+
+- y, si puede ser, divertirse :bowtie: 🔥
+
+
+## beneficios de tener un blog{.smaller}
+
+- Es fácil y divertido
+
+- Se aprende mucho!!
+
+- Es divertido
+
+- Registrar análisis que haces 
+
+- Practicar skills de comunicación
+
+- Portfolio y contactos
+
+- Productive procrastination
+
+
+
+Opiniones más elaboradas en:  [Rebeca Carter](https://www.rebeccabarter.com/blog/2020-02-03_blogger/#why-start-a-blog) o [este](https://jozef.io/r914-one-year-r-blogging/) 
+
+
+
+## Ejemplos de blogs
+
+- Por ejemplo algo [así](https://www.mm218.dev/blog.html), el [repo](https://github.com/mikemahoney218/mm218.dev) , o [así](https://graphdr.github.io/data-stories/), o [este](https://rlille.fr/)
+
+- O [este](https://ddimmery.com/blog.html), o [este](https://rlille.fr/) [repo:](https://github.com/RLille/rlille.fr)
+
+
+- Otras web/blogs como inspiración: [este](https://www.paltmeyer.com/blog/) o la [Gallery de Quarto](https://quarto.org/docs/gallery/#websites)
+
+- Webs académicas con blog: [esta](https://www.mm218.dev/) o [esta](https://ddimmery.com), o [esta](https://marioangst.com/en/)
+
+
+## Setup
+
+- Voy a trabajar con R (a través de RStudio) y Quarto
+
+- Si tienes RStudio 2022.07.1 + - ya tienes Quarto instalado 
+
+- [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV)
+
+
+# ¿Qué es Quarto?
+
+- Un nuevo sistema de publicación técnica de código abierto
+
+- Muy parecido a Rmarkdown, pero ... no requiere R, soporta más lenguejes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
+
+
+- Quarto is a new open-source technical publishing system from RStudio. It is similar in many ways to R Markdown (which isn’t going away, don’t worry!), except that it doesn’t require R, supports more languages, and combines the functionality of many R Markdown packages (e.g., xaringan, bookdown). 
+
+
+## Ventajas de Quarto
+
+- [en StackOverfow](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown)
+
+
+## Blog en 100 segundos
+
+
+
+
+## Web Docente
+
+### Creación
+
+### Tuneado
+
+### Creación de posts
+
+### Publicación
+
+
+
+

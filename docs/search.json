@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html",
+    "href": "taller/02_taller_crear-blog-basico.html",
+    "title": "Taller Córdoba (blog_01)",
+    "section": "",
+    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller “Mi primer blog con Quarto” celebrado en Córdoba (Spain), 23-25 de noviembre de 2022. El taller se celebró el jueves 24, 15:15-17:00.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto, así que tendrán que estar instalados en tu ordenador\nSe recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí"
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#creación-de-un-rproject-para-un-blog",
+    "href": "taller/02_taller_crear-blog-basico.html#creación-de-un-rproject-para-un-blog",
+    "title": "Taller Córdoba (blog_01)",
+    "section": "Creación de un Rproject (para un blog)",
+    "text": "Creación de un Rproject (para un blog)\n\nSi en RStudio sigues la siguiente ruta de menús: File > New Project > New Directory > Quarto Blog se te creará una carpeta, un Rproject, con todo lo necesario para crear un blog.\nEl nombre que le he puesto a la carpeta/Rproject es blog_prueba_00\nTambién podría crear el Rproject desde la Terminal de RStudio (panel inferior-izquierda), tecleando lo siguiente:\n\n\nquarto create-project blog_prueba_00 --type website:blog\n\n\nCon el Rproject que acabamos de crear, podremos generar un blog, será un blog sencillito, vamos con lo mínimo, pero un blog.\nPero … aún no veo el blog!! Sí, tienes razón, el blog lo crearemos despues de hacer un pequeño repaso a la estructura de carpetas y archivos del Rproject"
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#estructura-de-ficheros-del-rproject",
+    "href": "taller/02_taller_crear-blog-basico.html#estructura-de-ficheros-del-rproject",
+    "title": "Taller Córdoba (blog_01)",
+    "section": "Estructura de ficheros del Rproject",
+    "text": "Estructura de ficheros del Rproject\n\nEl Rproject que acabamos de crear y que contiene nuestro blog tendrá esta estructura de archivos y carpetas:\n\n\n\n\n\n\n\n\n\nEstructura del Rproject\n\n\n\n\n\n\n\n\n\nCarpeta de posts: cada post en una carpeta\n\n\n\n\n\n\n\n\n\nCarpeta de UN post (Welcome post)\n\n\n\n\n\nFigure 1: Estructura de carpetas del Rproject que creará nuestro blog"
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#creación-del-blog",
+    "href": "taller/02_taller_crear-blog-basico.html#creación-del-blog",
+    "title": "Taller Córdoba (blog_01)",
+    "section": "Creación del blog",
+    "text": "Creación del blog\nEl Rproject que hemos creado tiene todo lo necesario para crear un blog para ello tenemos que:\n\nIr al cuadrante superior-izquierda de RStudio, pinchar en la pestaña Build y pinchar en Render Website. Se procesarán los archivos del Rproject y se creará el blog. Podremos verlo en el cuadrante inferior-izquierda de RStudio, concretamente en la pestaña Viewer. Se verá algo como esto:\n\n\n\n\n\n\n\n\n\nAl pinchar en Render Website se creará el blog\n\n\n\n\n\nFigure 2: Al pinchar en Render Website se creará el blog\n\n\n\nPuedes ver aquí como quedaría el blog.\nTambién podríamos haber generado el blog usando la Consola o la terminal desde RStudio. En ambos casos hay que estar en el Rproject “blog_prueba_00”; es decir, “blog_prueba_00” es el working directory\n\n#- desde la Consola\ninstall.packages(\"quarto\")\nquarto::quarto_render(\"index.qmd\")\n\n\n#- desde la Terminal\nquarto render"
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#veamos-otra-vez-la-estructura-de-carpetas",
+    "href": "taller/02_taller_crear-blog-basico.html#veamos-otra-vez-la-estructura-de-carpetas",
+    "title": "Taller Córdoba (blog_01)",
+    "section": "Veamos otra vez la estructura de carpetas",
+    "text": "Veamos otra vez la estructura de carpetas\n\nTras haber creado el blog, la estructura de carpeta de nuestro Rproject quedará como:\n\n\n\n\n\n\n\n\n\n\nFigure 3: Estructura de carpetas del Rproject tras la creación del blog\n\n\n\nSi comparamos la estructura de carpetas antes y despúes de hacer Render Website vemos que se han creado 2 carpetas: _freeze y _site\nLa carpeta _freeze podemos dejarla para más adelante.\nLa carpeta _site es la que realmente contiene el blog. Si alojas el contenido de esa carpeta en un servidor web se verá el blog que hemos creado. Antes de alojarlo, si quieres verlo puedes pinchar en el fichero ./blog_prueba_00/_site/index.html.\nDe esa forma podemos ver que la Home Page del blog es la lista de posts del blog. En el blog por defecto que hemos creado solo hay 2 post: uno de bienvenida y otro de.\nComo ves el blog es muy sencillo, el Home Page es el listado de posts y solo tiene una página mas: About.\nNo vamos a comentarla pero abajo hay un pantallazo de la carpeta _site.\n\n\n\n\n\n\n\n\n\nFigure 4: _site es la carpeta que contiene el blog"
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#alojando-el-blog",
+    "href": "taller/02_taller_crear-blog-basico.html#alojando-el-blog",
+    "title": "Taller Córdoba (blog_01)",
+    "section": "Alojando el blog",
+    "text": "Alojando el blog\n\nEl blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es publicarlo en internet.\nHay muchas formas de alojar nuestro blog, por ejemplo Github Pages Netlify etc… , pero usaremos el usando el servicio Quartopub\nPara publicar nuestro baby-blog en Quartopub sólo hay que teclear lo siguiente en la Terminal de RStudio (panel inferior-izquierda)\n\n\n#- desde la Terminal\nquarto publish quarto-pub\n\n\nTras ejecutar lo anterior, se te pedrirá que autorices en la Terminal. Después se abrirá el navegador, tendrás que logearte en Quarto Pub y volverás a autorizar. Además te preguntarán el nombre del blog.\nSi te fijas, tras haberse publicado el blog en “Quarto Pub”, se habrá creado un nuevo fichero en nuestro Rproject: es el fichero _publish.yml. En él solamente están los metadatos necesarios para publicar y actualizar nuestro blog.\n\n\n\n\n\n\n\n\n\nFigure 5: Fichero _publish.yml con la información para publicar el blog en Quarto Pub."
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#referencias",
+    "href": "taller/02_taller_crear-blog-basico.html#referencias",
+    "title": "Taller Córdoba (blog_01)",
+    "section": "Referencias",
+    "text": "Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD\nBea Milz. 2022. Creating a Blog with Quarto in 10 Steps\nNavarro, Danielle. 2022. “Notes from a Data Witch - Porting a Distill Blog to Quarto\nQuarto - Creating a Blog\nAlison Hill. 2022. We Don’t Talk about Quarto"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#bienvenidos-al-taller",
+    "href": "taller/01_taller_slides.html#bienvenidos-al-taller",
+    "title": "Mi primer blog con Quarto",
+    "section": "Bienvenidos al taller!!",
+    "text": "Bienvenidos al taller!!\n\nEspero que aprendamos y nos divirtamos!!"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#estructura-del-taller",
+    "href": "taller/01_taller_slides.html#estructura-del-taller",
+    "title": "Mi primer blog con Quarto",
+    "section": "Estructura del taller",
+    "text": "Estructura del taller\n\nIntro\n¿Qué es Quarto?\nMi blog en 2 minutos\nCreación de una web (académica??)\nTuneado de la web\nCreación de posts con Quarto\nGestión y publicación de la web/blog"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#sobre-el-ponente",
+    "href": "taller/01_taller_slides.html#sobre-el-ponente",
+    "title": "Mi primer blog con Quarto",
+    "section": "Sobre el ponente",
+    "text": "Sobre el ponente\n\nProfesor en la UV\nEntusiasta de R\nCreador y liquidador de blogs: 2015, R & flowers, con Jekyll, 2018, R & flowers V, con Hugo y blogdown, 2020, R & flowers (o casi), con radix, 2021, pedro.j.perez blog’s, con Distill y … 2022, R & flowers, con Quarto"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#objetivos-del-taller",
+    "href": "taller/01_taller_slides.html#objetivos-del-taller",
+    "title": "Mi primer blog con Quarto",
+    "section": "Objetivo(s) del taller",
+    "text": "Objetivo(s) del taller\n\nObjetivo general: Aprender sobre Quarto mientras vamos creando una web/blog\nAprender sobre como usar Quarto para hacer webpages/blogs\nQue salgáis todos con el bosquejo de una web/blog!!\ny, si puede ser, divertirse :bowtie: 🔥"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#beneficios-de-tener-un-blog",
+    "href": "taller/01_taller_slides.html#beneficios-de-tener-un-blog",
+    "title": "Mi primer blog con Quarto",
+    "section": "beneficios de tener un blog",
+    "text": "beneficios de tener un blog\n\nEs fácil y divertido\nSe aprende mucho!!\nEs divertido\nRegistrar análisis que haces\nPracticar skills de comunicación\nPortfolio y contactos\nProductive procrastination\n\nOpiniones más elaboradas en: Rebeca Carter o este"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#ejemplos-de-blogs",
+    "href": "taller/01_taller_slides.html#ejemplos-de-blogs",
+    "title": "Mi primer blog con Quarto",
+    "section": "Ejemplos de blogs",
+    "text": "Ejemplos de blogs\n\nPor ejemplo algo así, el repo , o así, o este\nO este, o este repo:\nOtras web/blogs como inspiración: este o la Gallery de Quarto\nWebs académicas con blog: esta o esta, o esta"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#setup",
+    "href": "taller/01_taller_slides.html#setup",
+    "title": "Mi primer blog con Quarto",
+    "section": "Setup",
+    "text": "Setup\n\nVoy a trabajar con R (a través de RStudio) y Quarto\nSi tienes RStudio 2022.07.1 + - ya tienes Quarto instalado\nEtherpad"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#ventajas-de-quarto",
+    "href": "taller/01_taller_slides.html#ventajas-de-quarto",
+    "title": "Mi primer blog con Quarto",
+    "section": "Ventajas de Quarto",
+    "text": "Ventajas de Quarto\n\nen StackOverfow"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#blog-en-100-segundos",
+    "href": "taller/01_taller_slides.html#blog-en-100-segundos",
+    "title": "Mi primer blog con Quarto",
+    "section": "Blog en 100 segundos",
+    "text": "Blog en 100 segundos"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#web-docente",
+    "href": "taller/01_taller_slides.html#web-docente",
+    "title": "Mi primer blog con Quarto",
+    "section": "Web Docente",
+    "text": "Web Docente\nCreación\nTuneado\nCreación de posts\nPublicación\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Taller: Mi primer blog (con Quarto)",
+    "section": "",
+    "text": "Aqui quiero hacer solo una foto que cubra la pantalla"
+  },
+  {
+    "objectID": "taller.html",
+    "href": "taller.html",
+    "title": "Taller",
+    "section": "",
+    "text": "Intro\nCreación de un blog básico"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Ponente",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  }
+]

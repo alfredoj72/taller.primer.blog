@@ -1,0 +1,17 @@
+{
+  "index.qmd": {
+    "index.html": "dc905cc5"
+  },
+  "about.qmd": {
+    "about.html": "595122ec"
+  },
+  "taller/01_taller_slides.qmd": {
+    "01_taller_slides.html": "ba6d92b7"
+  },
+  "taller/02_taller_crear-blog-basico.qmd": {
+    "02_taller_crear-blog-basico.html": "89a8b770"
+  },
+  "taller.qmd": {
+    "taller.html": "0fb14135"
+  }
+}

@@ -1,0 +1,9 @@
+---
+title: "Taller"
+---
+
+El taller consta de 6 secciones
+
+1) [Intro](./taller/01_taller_slides.html){target="_blank"}
+
+2) [Creación de un blog básico](./taller/02_taller_crear-blog-basico.qmd)
