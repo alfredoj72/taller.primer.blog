@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.1.251">
@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Pedro J. Pérez">
-<meta name="dcterms.date" content="2022-10-04">
 
-<title>Web del taller Mi primer blog con Quarto (WIP) - Tuneado básico del blog (parte 3ª del taller)</title>
+<title>Web del taller Mi primer blog con Quarto (WIP) - Tuneado básico del blog con Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -111,15 +110,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   "type": "overlay",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-no-results-text": "Sín resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la busqueda",
+    "search-hide-matches-text": "Esconder resultados adicionales",
+    "search-more-match-text": "hay más resultados en este documento",
+    "search-more-matches-text": "más resultados en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Eviar"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -133,11 +132,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/styles.css">
-<meta property="og:title" content="Web del taller Mi primer blog con Quarto (WIP) - Tuneado básico del blog (parte 3ª del taller)">
-<meta property="og:description" content="Este es el contenido original del fichero _quarto.yml">
+<meta property="og:title" content="Web del taller Mi primer blog con Quarto (WIP) - Tuneado básico del blog con Quarto">
+<meta property="og:description" content="En el anterior tutorial creamos un blog básico con Quarto. Ahora vamos a adaptar el blog a nuestras necesidades (tunear)">
 <meta property="og:site-name" content="Web del taller `Mi primer blog con Quarto` (WIP)">
-<meta name="twitter:title" content="Web del taller Mi primer blog con Quarto (WIP) - Tuneado básico del blog (parte 3ª del taller)">
-<meta name="twitter:description" content="Este es el contenido original del fichero _quarto.yml">
+<meta name="twitter:title" content="Web del taller Mi primer blog con Quarto (WIP) - Tuneado básico del blog con Quarto">
+<meta name="twitter:description" content="En el anterior tutorial creamos un blog básico con Quarto. Ahora vamos a adaptar el blog a nuestras necesidades (tunear)">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -203,14 +202,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Estructura del tutorial</h2>
    
   <ul>
-  <li><a href="#archivo-_quarto.yml" id="toc-archivo-_quarto.yml" class="nav-link active" data-scroll-target="#archivo-_quarto.yml">Archivo <code>_quarto.yml</code></a></li>
-  <li><a href="#archivo-index.qmd" id="toc-archivo-index.qmd" class="nav-link" data-scroll-target="#archivo-index.qmd">Archivo <code>index.qmd</code></a></li>
-  <li><a href="#archivo-about.qmd" id="toc-archivo-about.qmd" class="nav-link" data-scroll-target="#archivo-about.qmd">Archivo <code>about.qmd</code></a></li>
-  <li><a href="#archivo-styles.css" id="toc-archivo-styles.css" class="nav-link" data-scroll-target="#archivo-styles.css">Archivo <code>styles.css</code></a></li>
-  <li><a href="#truco" id="toc-truco" class="nav-link" data-scroll-target="#truco">TRUCO</a></li>
+  <li><a href="#archivo-_quarto.yml" id="toc-archivo-_quarto.yml" class="nav-link active" data-scroll-target="#archivo-_quarto.yml"><span class="toc-section-number">1</span>  Archivo <code>_quarto.yml</code></a>
+  <ul class="collapse">
+  <li><a href="#quarto.yml-original" id="toc-quarto.yml-original" class="nav-link" data-scroll-target="#quarto.yml-original"><span class="toc-section-number">1.1</span>  <code>_quarto.yml</code> original</a></li>
+  <li><a href="#quarto.yml-modificado" id="toc-quarto.yml-modificado" class="nav-link" data-scroll-target="#quarto.yml-modificado"><span class="toc-section-number">1.2</span>  <code>_quarto.yml</code> modificado</a></li>
+  <li><a href="#crear-docencia.qmd" id="toc-crear-docencia.qmd" class="nav-link" data-scroll-target="#crear-docencia.qmd"><span class="toc-section-number">1.3</span>  Crear <code>docencia.qmd</code></a></li>
+  </ul></li>
+  <li><a href="#archivo-index.qmd" id="toc-archivo-index.qmd" class="nav-link" data-scroll-target="#archivo-index.qmd"><span class="toc-section-number">2</span>  Archivo <code>index.qmd</code></a></li>
+  <li><a href="#archivo-about.qmd" id="toc-archivo-about.qmd" class="nav-link" data-scroll-target="#archivo-about.qmd"><span class="toc-section-number">3</span>  Archivo <code>about.qmd</code></a></li>
+  <li><a href="#archivo-styles.css" id="toc-archivo-styles.css" class="nav-link" data-scroll-target="#archivo-styles.css"><span class="toc-section-number">4</span>  Archivo <code>styles.css</code></a></li>
+  <li><a href="#truco" id="toc-truco" class="nav-link" data-scroll-target="#truco"><span class="toc-section-number">5</span>  TRUCO</a></li>
   </ul>
 </nav>
 </nav>
@@ -222,7 +226,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tuneado básico del blog (parte 3ª del taller)</h1>
+<h1 class="title">Tuneado básico del blog con Quarto</h1>
+<p class="subtitle lead">(3ª parte del taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)</p>
 </div>
 
 
@@ -230,26 +235,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Autor</div>
     <div class="quarto-title-meta-contents">
              <p>Pedro J. Pérez </p>
           </div>
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Fecha de Publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 4, 2022</p>
+      <p class="date">5 de octubre de 2022</p>
     </div>
   </div>
     
   </div>
   
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Resumen</div>
+    En el anterior tutorial creamos un blog básico con Quarto. Ahora vamos a adaptar el blog a nuestras necesidades (tunear)
+  </div>
+</div>
 
 </header>
 
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -258,39 +269,18 @@ Contexto
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>Tutorial preparado para el taller <strong>“Mi primer blog con Quarto”</strong> celebrado en Córdoba (Spain), 23-25 de noviembre de 2022. El taller se celebró el jueves 24, 15:15-17:00.</p></li>
-<li><p>Este tutorial es sólo una parte del taller. Concretamente la <strong>tercera parte</strong>.</p></li>
-<li><p>En esta tercera parte del taller vamos a <strong>mejorar/tunear un poco nuestro blog</strong>.</p></li>
-<li><p>El <strong>taller completo</strong> está <a href="">aquí</a>.</p></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="callout-important callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Setup: instalación de R, RStudio y Quarto
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<ul>
-<li><p>El taller está pensado para realizar con <a href="https://cran.r-project.org/">R</a>, el IDE <a href="https://www.rstudio.com/">RStudio</a> y <a href="https://quarto.org/">Quarto</a>, así que tendrán que estar instalados en tu ordenador. Es recomendable tener instaladas <strong>versiones recientes</strong> de los 3 programas.</p></li>
-<li><p>Todos sabemos <strong>instalar R y Rstudio</strong>, si no fuese así, <a href="https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html">aquí</a> tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.</p></li>
-<li><p>Instalación de <strong>Quarto</strong>: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, <a href="https://quarto.org/docs/get-started/">aquí</a> tienes los instaladores para los principales sistemas operativos.</p></li>
+<li><p>Tutorial preparado para el taller <strong>Mi primer blog con Quarto</strong> impartido en Córdoba (Spain) durante el <a href="http://r-es.org/12jr/">I Congreso &amp; XII Jornadas de Usuarios de R</a>, 23-25 de noviembre de 2022.</p></li>
+<li><p>El taller está pensado para realizar con <a href="https://cran.r-project.org/">R</a>. Se utilizará el IDE <a href="https://www.rstudio.com/">RStudio</a> y <a href="https://quarto.org/">Quarto</a>. Se recomienda tener instaladas <strong>versiones recientes</strong> de los 3 programas</p></li>
+<li><p>Este tutorial es sólo una parte del taller. El <strong>taller completo</strong> está <a href="https://perezp44.github.io/taller.primer.blog/">aquí</a>.</p></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -299,15 +289,15 @@ Recapitulación
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>En esta tercera parte del taller vamos a <strong>mejorar/tunear un poco nuestro blog</strong>.</p></li>
 <li><p>Las anteriores secciones del taller son</p>
-<ul>
-<li><p>Intro</p></li>
-<li><p>Creación de un blog (básico) con Quarto: en la segunda parte del taller vimos como crear un <strong>blog básico</strong> con RStudio y Quarto.</p></li>
-</ul></li>
+<ol type="1">
+<li><p><strong>Intro</strong>: se presenta el taller</p></li>
+<li><p><strong>Creación de un blog (básico) con Quarto</strong>: en la segunda parte del taller vimos como crear y alojar un <strong>blog básico</strong> con RStudio y Quarto.</p></li>
+</ol></li>
 </ul>
 </div>
 </div>
@@ -316,7 +306,7 @@ Recapitulación
 <hr>
 <p><br></p>
 <div class="callout-tip callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -325,7 +315,7 @@ Recapitulación
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>En esta tutorial de <strong>tuneado básico</strong> del blog, modificaremos 3 archivos, concretamente los archivos <code>_quarto.yml</code>, <code>index.qmd</code> y <code>about.qmg</code>. Iremos archivo por archivo.</p></li>
@@ -335,142 +325,213 @@ Recapitulación
 </div>
 </div>
 <p><br></p>
-<section id="archivo-_quarto.yml" class="level2">
-<h2 class="anchored" data-anchor-id="archivo-_quarto.yml">Archivo <code>_quarto.yml</code></h2>
-<p>Este es el contenido original del fichero <code>_quarto.yml</code></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  title<span class="sc">:</span> <span class="st">"blog_prueba_00"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  navbar<span class="sc">:</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    right<span class="sc">:</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> about.qmd</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> cosmo</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="archivo-_quarto.yml" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="archivo-_quarto.yml"><span class="header-section-number">1</span> Archivo <code>_quarto.yml</code></h2>
+<p>En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero <code>_quarto.yml</code>. Al final dejaremos este fichero como la figura de la derecha.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_09.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Contenido original de <code>_quarto.yml</code></figcaption><p></p>
+</figure>
 </div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_10.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Así dejaremos el fichero <code>_quarto.yml</code></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="quarto.yml-original" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="quarto.yml-original"><span class="header-section-number">1.1</span> <code>_quarto.yml</code> original</h3>
+<div id="fig-01" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_09.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figura&nbsp;1: Contenido original de <code>_quarto.yml</code></figcaption><p></p>
+</figure>
+</div>
+<p>Como puedes ver arriba en la <a href="#fig-01">Figura&nbsp;1</a>, el fichero <code>_quarto.yml</code> original tiene 3 partes:</p>
 <ul>
-<li><p>La <strong>primera parte</strong> del fichero <code>_quarto.yml</code> simplemente específica que el proyecto es para hacer una página web (<code>type: website</code>). Esta primera parte del fichero <code>_quarto.yml</code> no lo vamos a tocar, lo vamos a dejar igual. Sí, en realidad, un blog es una página web en la que la “Home page” o “landing page” es un poco especial. La “landing page” de las páginas web es el archivo <code>index.qmd</code>. Lo veremos luego.</p></li>
-<li><p>La <strong>segunda parte</strong> del fichero <code>_quarto.yml</code> sirve para decidir el formato de la página web (en nuestro caso del blog) y tiene 2 secciones:</p>
+<li><p>La <strong>primera parte</strong> del fichero <code>_quarto.yml</code> (lineas 1 y 2) simplemente específica que el proyecto es para hacer una página web (<code>type: website</code>). Esta primera parte del fichero <code>_quarto.yml</code> no lo vamos a tocar, lo vamos a dejar igual. Sí, en realidad, un blog es una página web en la que la “Home page” o “landing page” es un poco especial, es un poco especial porque es una página con un listado de posts, PERO, en definitiva un blog es una página web.</p></li>
+<li><p>La <strong>segunda parte</strong> del fichero <code>_quarto.yml</code> (lineas 4 a 12) sirve para decidir la estructura de la página web (en nuestro caso del blog). Esta segunda parte tiene 2 secciones</p>
 <ul>
 <li><p>title: “blog_prueba_00”: aquí podemos cambiar el título de nuestro blog</p></li>
 <li><p>navbar: aquí podemos cambiar la estructura de la barra de navegación del blog. En el archivo original se especifica que los elementos/pestañas de navegación se situan a la derecha y que habrán 3 links o pestañas: <code>About</code> y 2 iconos que nos llevaran a Github y a Twitter</p></li>
 </ul></li>
 <li><p>En la <strong>tercera parte</strong> del fichero <code>_quarto.yml</code> se especifica el formato. Como toda página web el formato es html. Además se especifica un <code>theme</code> y un fichero <code>.css</code> que nos permitirán modificar el aspecto estético del blog.</p></li>
-<li><p>Por ejemplo, podemos modificar el fichero <code>_quarto.yml</code> hasta dejarlo como:</p></li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">#output-dir: docs  #- para cambiar la carpeta donde se creará el blog</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">#favicon: imagenes/ababol_redondeado.ico</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#site-url: https://perezp44.github.io/pjperez.blog.2022/  #-Github Pages</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">#repo-url: https://github.com/perezp44/pjperez.blog.2022  #-Github Pages</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  navbar<span class="sc">:</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="co">#background: primary    #- pink (el backgroung de la navbar)</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    left<span class="sc">:</span> </span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> docencia.qmd</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span>  text<span class="sc">:</span> <span class="st">"Más cosas"</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>         menu<span class="sc">:</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia 2"</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>            href<span class="sc">:</span> docencia.qmd</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia 3"</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>            href<span class="sc">:</span> docencia.qmd</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"---"</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia 4"</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>            href<span class="sc">:</span> docencia.qmd</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    right<span class="sc">:</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> about.qmd</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario twitter<span class="sc">&gt;</span></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  page<span class="sc">-</span>footer<span class="sc">:</span></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    left<span class="sc">:</span> <span class="st">"© 2022 Pedro J. Pérez"</span></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    center<span class="sc">:</span> <span class="st">"Hecho con [Quarto](https://quarto.org)"</span></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    right<span class="sc">:</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-email@uv.es&gt;"</span></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-google-scholar"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>scholar.google.de<span class="sc">/</span>citations?user<span class="ot">=</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">&gt;</span></span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-orcid"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>orcid.org<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">&gt;</span></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    <span class="co">#theme: ember.scss </span></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> </span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> minty  <span class="co">#- listado de themes: https://quarto.org/docs/output-formats/html-themes.html</span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> custom.scss  <span class="co">#- este archivo no existe (ya pondré uno, igual!!)</span></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> </span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> styles.css</span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true</span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-code.html#highlighting</span></span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="co">#editor: visual    </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li>Fíjate que, entre otras cosas, hemos creado más pestañas en la barra de navegación del blog. Todas ellas están referenciando al archivo <code>docencia.qmd</code> que aún no existe, así que tenemos que crearlo. El contenido del archivo <code>docencia.qmd</code> será:</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Mi docencia"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Mi docencia es<span class="sc">:</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="do">## curso 2021-2022</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> [Econometría](<span class="sc">/</span>pdfs<span class="sc">/</span>econometria.pdf)</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="do">## curso 2022-2023</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> [Algebra](<span class="sc">/</span>pdfs<span class="sc">/</span>econometria.pdf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li><p>Como puedes ver, en el archivo <code>docencia.qmd</code> se hace referencia al archivo <code>/pdfs/econometria.pdf</code>. Si quieres que el link funcione, tienes que crear dentro del Rproject, la carpeta <code>pdfs</code>, y dentro de ella el archivo <code>econometria.pdf</code>.</p></li>
-<li><p>Una vez hecho todo esto, puedes ver como quedaría la página web (o blog) <a href="https://pjperez.quarto.pub/blog_prueba_01/">aquí</a></p></li>
-<li><p>Como ves, hemos modificado las pestañas de la barra de navegación (ahora dos más a la izquierda) y la apariencia (theme) del blog; por ejemplo, el color de la barra de navegación.</p></li>
 </ul>
 <p><br></p>
 </section>
-<section id="archivo-index.qmd" class="level2">
-<h2 class="anchored" data-anchor-id="archivo-index.qmd">Archivo <code>index.qmd</code></h2>
+<section id="quarto.yml-modificado" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="quarto.yml-modificado"><span class="header-section-number">1.2</span> <code>_quarto.yml</code> modificado</h3>
+<p>Por ejemplo, podemos modificar el fichero <code>_quarto.yml</code> hasta dejarlo como:</p>
+<div id="fig-02" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_10.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figura&nbsp;2: Dejaremos así el contenido de <code>_quarto.yml</code></figcaption><p></p>
+</figure>
+</div>
+<p>Como puedes ver arriba en la <a href="#fig-02">Figura&nbsp;2</a>, al compararla con la <a href="#fig-01">Figura&nbsp;1</a>, hemos modificado el fichero <code>_quarto.yml</code>. Concretamente:</p>
+<ul>
+<li><p>La <strong>primera parte</strong> del fichero <code>_quarto.yml</code> (lineas 1 y 2) la hemos dejado igual. Seguimos queriendo hacer una web/blog.</p></li>
+<li><p>La <strong>segunda parte</strong> del fichero <code>_quarto.yml</code> (ahora lineas 4 a 19) si la hemos modificado:</p>
+<ul>
+<li><p>Hemos cambiado el <strong>título del blog</strong>, ahora <code>title: "Mi blog (aún en pruebas)"</code>. Está en la linea 5.</p></li>
+<li><p>En la <strong>navbar (lineas 6 a 19)</strong>: hemos cambiado la estructura de la barra de navegación del blog. Hemos hecho 3 cosas:</p>
+<ol type="1">
+<li><p>Hemos <strong>añadido un logo</strong> a la barra de navegación con <code>logo: profile.jpg</code> (linea 7).</p></li>
+<li><p>En la parte derecha de la barra de navegación hemos <strong>añadido un icono para el email</strong> (<code>icon:envelope</code>) y hemos modificado el texto que se muestra en la pestaña about, esto último lo hemos hecho con <code>text: "About me"</code> en las lineas 9 y 10.</p></li>
+<li><p>Finalmente, hemos <strong>añadido una pestaña nueva (lineas 18 y 19)</strong> pero está vez <strong>a la izquierda</strong> de la barra de navegación: <code>left:</code> (linea 17). Fijate que esta nueva pestaña llamada “Docencia” creada con<code>- text: "Docencia"</code> (linea 18), esta referenciando a un archivo que no existe (aún) en el Rproject, está referenciando con <code>href: docencia.qmd</code> (linea 19) al archivo <code>docencia.qmd</code>. LOgicamente tendremos que crear este archivo.</p></li>
+</ol></li>
+</ul></li>
+<li><p>En la <strong>tercera parte</strong> del fichero <code>_quarto.yml</code> hemos cambiado el <code>theme: minty</code> y hemos añadido las lineas 25 <code>toc: true</code> que creará índices en las páginas de la web/blog<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, mientras que con <code>highlight-style: a11y</code> se cambia el formato visual de los chunks de código que hayan en la página web.</p></li>
+</ul>
+<p><br></p>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 1: Modificar el contenido de <code>_quarto.yml</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Simplemente sustituye el contenido original del fichero <code>_quarto.yml</code> por el contenido del siguiente chunk:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi blog (aún en pruebas)"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"profile.jpg"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"About me"</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> about.qmd</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/&lt;tu-usuario-github&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://twitter.com/&lt;tu-usuario twitter&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> envelope</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">url</span><span class="kw">:</span><span class="at"> </span><span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="at"> </span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> minty  </span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">highlight-style</span><span class="kw">:</span><span class="at"> a11y</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="crear-docencia.qmd" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="crear-docencia.qmd"><span class="header-section-number">1.3</span> Crear <code>docencia.qmd</code></h3>
+<p><br></p>
+<ul>
+<li>En el nuevo archivo <code>quarto.yml</code>(linea 19) se hace referencia al archivo <code>docencia.qmd</code>, así que tendremos que crearlo. Para ello:</li>
+</ul>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 2: Crear el archivo <code>docencia.qmd</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Podríamos crear el archivo <code>docencia.qmd</code> con cualquier contenido, incluso podría ser un documento sin contenido, PERO, mejor si lo creas con el siguiente contenido:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Mi docencia"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>Mi docencia es<span class="sc">:</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="do">## curso 2021-2022</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> [Econometría](<span class="sc">/</span>pdfs<span class="sc">/</span>econometria.pdf)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="do">## curso 2022-2023</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> [Algebra](<span class="sc">/</span>pdfs<span class="sc">/</span>econometria.pdf)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 3: Crear el archivo <code>/pdfs/econometria.pdf</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><br></p>
+<ul>
+<li><p>Como puedes ver, en el archivo <code>docencia.qmd</code> se hace referencia al archivo <code>/pdfs/econometria.pdf</code>. Si quieres que el link funcione, tienes que crear dentro del Rproject, la subcarpeta <code>pdfs</code>, y dentro de ella el archivo <code>econometria.pdf</code>.</p></li>
+<li><p>Puede ser cualquier pdf, siempre que se llame <code>econometria.pdf</code></p></li>
+</ul>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li><p>Una vez hechas las <strong>tarea 2 y 3</strong>, puedes crear de nuevo el blog con <code>Build &gt; Web page</code>.</p></li>
+<li><p><a href="https://pjperez.quarto.pub/blog_prueba_01/">Aquí</a> puedes ver como quedaría el blog tras haber modificado <code>_quarto.yml</code>. Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña <code>Docencia</code> a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda <code>theme: minty</code>): ahora el color de la barra es verdecito.</p></li>
+</ul>
+<p><br></p>
+</section>
+</section>
+<section id="archivo-index.qmd" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="archivo-index.qmd"><span class="header-section-number">2</span> Archivo <code>index.qmd</code></h2>
 <ul>
 <li>El archivo <code>index.qmd</code> es la “Home Page” de nuestro blog y su contenido original tiene esta pinta:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"blog_prueba_00"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  contents<span class="sc">:</span> posts</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> default</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  categories<span class="sc">:</span> true</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"blog_prueba_00"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  contents<span class="sc">:</span> posts</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> default</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  categories<span class="sc">:</span> true</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><p>Como ves es una página (nuestra “Home Page”, porque el fichero se llama <code>index.qmd</code>) sin contenido aparente: aparte del <code>yaml</code>no hay nada más. Sin embargo, justamente en el <code>yaml</code> especifica con la opción <code>listing:</code> que la página va a ser un listado; concrétamente un listado del contenido que haya en la carpeta <code>posts</code>; o sea, un listado con los posts que haya en la carpeta <code>posts</code>.</p></li>
@@ -479,88 +540,88 @@ Recapitulación
 <li><p>Otra vez se trata de modificar el archivo <code>index.qmd</code> para dejarlo como:</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#title: "Mi listado de posts"  #- yo casi prefiero que no ponga nada</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  contents<span class="sc">:</span> posts</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-listings.html#sorting-items</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span> </span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#-  https://quarto.org/docs/websites/website-listings.html#listing-types</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> default  <span class="co">#- opciones: {default, grid, table}</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  categories<span class="sc">:</span> true</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  date<span class="sc">-</span>format<span class="sc">:</span> long</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> imagenes<span class="sc">/</span>thumbnail.jpg</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#title: "Mi listado de posts"  #- yo casi prefiero que no ponga nada</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  contents<span class="sc">:</span> posts</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-listings.html#sorting-items</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span> </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#-  https://quarto.org/docs/websites/website-listings.html#listing-types</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> default  <span class="co">#- opciones: {default, grid, table}</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  categories<span class="sc">:</span> true</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  date<span class="sc">-</span>format<span class="sc">:</span> long</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> imagenes<span class="sc">/</span>thumbnail.jpg</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 </section>
-<section id="archivo-about.qmd" class="level2">
-<h2 class="anchored" data-anchor-id="archivo-about.qmd">Archivo <code>about.qmd</code></h2>
+<section id="archivo-about.qmd" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="archivo-about.qmd"><span class="header-section-number">3</span> Archivo <code>about.qmd</code></h2>
 <ul>
 <li>Vamos a modificar el fichero <code>about.qmd</code>. El contenido original de este fichero es:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"About"</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> profile.jpg</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>about<span class="sc">:</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  template<span class="sc">:</span> jolla </span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  links<span class="sc">:</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Twitter</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> linkedin</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> LinkedIn</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>linkedin.com</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Github</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>About this blog</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"About"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> profile.jpg</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>about<span class="sc">:</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  template<span class="sc">:</span> jolla </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  links<span class="sc">:</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Twitter</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> linkedin</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> LinkedIn</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>linkedin.com</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Github</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>About this blog</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Se trata de dejarlo comopuedes ver más abajo:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> Yo mismo</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> profile.jpg</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>about<span class="sc">:</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-about.html#templates</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  template<span class="sc">:</span> trestles  <span class="co">#- {jolla, solana}</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-about.html#image</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>width<span class="sc">:</span> 10em</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>shape<span class="sc">:</span> round</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-about.html#links</span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  links<span class="sc">:</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Twitter</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> linkedin</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> LinkedIn</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>linkedin.com</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Github</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> Yo mismo</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> profile.jpg</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>about<span class="sc">:</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-about.html#templates</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  template<span class="sc">:</span> trestles  <span class="co">#- {jolla, solana}</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-about.html#image</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>width<span class="sc">:</span> 10em</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>shape<span class="sc">:</span> round</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-about.html#links</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  links<span class="sc">:</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Twitter</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> linkedin</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> LinkedIn</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>linkedin.com</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Github</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Para ver más posibilidades predefinidas por Quarto acerca del fichero <code>about.qmd</code> puedes mirar <a href="https://quarto.org/docs/websites/website-about.html">aquí</a></li>
 </ul>
 <p><br></p>
 </section>
-<section id="archivo-styles.css" class="level2">
-<h2 class="anchored" data-anchor-id="archivo-styles.css">Archivo <code>styles.css</code></h2>
+<section id="archivo-styles.css" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="archivo-styles.css"><span class="header-section-number">4</span> Archivo <code>styles.css</code></h2>
 </section>
-<section id="truco" class="level2">
-<h2 class="anchored" data-anchor-id="truco">TRUCO</h2>
+<section id="truco" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="truco"><span class="header-section-number">5</span> TRUCO</h2>
 <ul>
 <li><p>casi mejor hacer esto despues de crear un post</p></li>
 <li><p>vamos a transformar nuestro blog en una página web personal con blog</p></li>
@@ -574,7 +635,13 @@ Recapitulación
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p>La opción <code>toc: true</code> creará un indice (o toc) en las páginas en las que hayan titulos de primer(#), segundo(##) o tercer nivel(###).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -615,7 +682,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     setTimeout(function() {
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
