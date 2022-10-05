@@ -1,23 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://perezp44.github.io/taller.primer.blog/taller/07_taller_ejemplos-de-blogs.html</loc>
+    <lastmod>2022-10-05T12:57:37.695Z</lastmod>
+  </url>
+  <url>
+    <loc>https://perezp44.github.io/taller.primer.blog/taller/06_taller_githubpages.html</loc>
+    <lastmod>2022-10-05T12:57:38.219Z</lastmod>
+  </url>
+  <url>
     <loc>https://perezp44.github.io/taller.primer.blog/taller/02_taller_crear-blog-basico.html</loc>
-    <lastmod>2022-10-04T08:58:10.042Z</lastmod>
+    <lastmod>2022-10-05T12:57:40.391Z</lastmod>
+  </url>
+  <url>
+    <loc>https://perezp44.github.io/taller.primer.blog/taller/05_taller_convertir-en-web.html</loc>
+    <lastmod>2022-10-05T12:57:40.835Z</lastmod>
+  </url>
+  <url>
+    <loc>https://perezp44.github.io/taller.primer.blog/taller/03_taller_tuneado-basico.html</loc>
+    <lastmod>2022-10-05T12:57:41.711Z</lastmod>
+  </url>
+  <url>
+    <loc>https://perezp44.github.io/taller.primer.blog/taller/04_taller_crear-post.html</loc>
+    <lastmod>2022-10-05T12:57:42.147Z</lastmod>
   </url>
   <url>
     <loc>https://perezp44.github.io/taller.primer.blog/taller/01_taller_slides.html</loc>
-    <lastmod>2022-10-04T08:58:10.634Z</lastmod>
+    <lastmod>2022-10-05T12:57:42.595Z</lastmod>
   </url>
   <url>
     <loc>https://perezp44.github.io/taller.primer.blog/index.html</loc>
-    <lastmod>2022-10-04T08:58:11.122Z</lastmod>
+    <lastmod>2022-10-05T12:57:43.003Z</lastmod>
   </url>
   <url>
-    <loc>https://perezp44.github.io/taller.primer.blog/taller.html</loc>
-    <lastmod>2022-10-04T08:58:11.642Z</lastmod>
+    <loc>https://perezp44.github.io/taller.primer.blog/materiales.html</loc>
+    <lastmod>2022-10-05T12:57:43.371Z</lastmod>
   </url>
   <url>
     <loc>https://perezp44.github.io/taller.primer.blog/about.html</loc>
-    <lastmod>2022-10-04T08:58:13.990Z</lastmod>
+    <lastmod>2022-10-05T12:57:43.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://perezp44.github.io/taller.primer.blog/setup.html</loc>
+    <lastmod>2022-10-05T12:57:44.131Z</lastmod>
   </url>
 </urlset>

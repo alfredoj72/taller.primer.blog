@@ -13,5 +13,26 @@
   },
   "taller.qmd": {
     "taller.html": "0fb14135"
+  },
+  "taller/07_taller_ejemplos-de-blogs.qmd": {
+    "07_taller_ejemplos-de-blogs.html": "f7fa6033"
+  },
+  "taller/06_taller_githubpages.qmd": {
+    "06_taller_githubpages.html": "f8d097d6"
+  },
+  "taller/05_taller_convertir-en-web.qmd": {
+    "05_taller_convertir-en-web.html": "a6bc2e98"
+  },
+  "taller/03_taller_tuneado-basico.qmd": {
+    "03_taller_tuneado-basico.html": "21aeb921"
+  },
+  "taller/04_taller_crear-post.qmd": {
+    "04_taller_crear-post.html": "80e8c272"
+  },
+  "materiales.qmd": {
+    "materiales.html": "46843db1"
+  },
+  "setup.qmd": {
+    "setup.html": "f97359f8"
   }
 }

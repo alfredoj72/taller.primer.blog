@@ -1,9 +1,23 @@
 ---
-title: "Ponente"
+title: Pedro J. Pérez
+image: imagenes/foto_pedro-perez.jpg
+about:
+  #- https://quarto.org/docs/websites/website-about.html#templates
+  template: trestles  #- {jolla, solana, trestles}
+  #- https://quarto.org/docs/websites/website-about.html#image
+  image-width: 10em
+  image-shape: rectangle
+  #- https://quarto.org/docs/websites/website-about.html#links
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+Yo mismo, soy un entusiasta de R que esta creando su blog con Quarto, blah blah ...

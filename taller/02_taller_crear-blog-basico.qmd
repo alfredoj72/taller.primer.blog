@@ -1,15 +1,22 @@
 ---
-title: "Taller Córdoba (blog_01)"
+title: "Creación de un blog básico con Quarto"
+subtitle: "(2ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
+abstract: "En este tutorial, vamos a ver el **proceso de creación** y la **estructura de ficheros** de un blog creado con Quarto de forma rápida. Alojaremos el blog en [Quarto Pub](https://quartopub.com). Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller."
+lang: es
 author: "Pedro J. Pérez"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 format: 
   html:
-    theme: minty  #- https://quarto.org/docs/output-formats/html-themes.html
-    #-https://quarto.org/docs/websites/website-blog.html#themes
+#- https://quarto.org/docs/output-formats/html-themes.html
+#- https://quarto.org/docs/websites/website-blog.html#themes
+    theme: minty
     backgroundcolor: "#F1F3F4"
     toc: true
     toc-depth: 3
     toc-location: left
+    toc-title: Estructura del tutorial
+    number-sections: true
+    number-depth: 3
     smooth-scroll: true
     #self-contained: true  #- ya no la usa la nueva version de pandoc
     standalone: true  
@@ -19,115 +26,204 @@ format:
     citations-hover: false
     footnotes-hover: false
     css: assets/styles.css
+    fig-cap-location: bottom
 comments:
   hypothesis: 
     theme: clean
+editor_options: 
+  chunk_output_type: console
 ---
 
-::: {.callout-note collapse="false" appearance="default" icon="false"}
-## Contexto
+::: {.callout-note collapse="true" appearance="default" icon="false"}
+#### Contexto
 
--   Tutorial preparado para el taller "Mi primer blog con Quarto" celebrado en Córdoba (Spain), 23-25 de noviembre de 2022. El taller se celebró el jueves 24, 15:15-17:00.
+-  Tutorial preparado para el taller **Mi primer blog con Quarto** impartido en Córdoba (Spain) durante el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/), 23-25 de noviembre de 2022.
+-   El taller está pensado para realizar con [R](https://cran.r-project.org/). Se utilizará el IDE [RStudio](https://www.rstudio.com/) y [Quarto](https://quarto.org/). Se recomienda tener instaladas **versiones recientes** de los 3 programas
 
--   El taller está pensado para realizar con [R](https://cran.r-project.org/). Se utilizará el IDE [RStudio](https://www.rstudio.com/) y [Quarto](https://quarto.org/), así que tendrán que estar instalados en tu ordenador
-
--   Se recomienda tener instaladas **versiones recientes** de los 3 programas
-
--   Este tutorial es sólo una parte del taller. El **taller completo** está [aquí]()
+- Este tutorial es sólo una parte del taller. El **taller completo** está [aquí](https://perezp44.github.io/taller.primer.blog/).
 :::
 
-# Setup
-
-::: {.callout-important collapse="false" appearance="default" icon="false"}
-## Instalación de R, RStudio y Quarto
-
--   Todos sabemos instalar R y Rstudio, si no fuese así, [aquí](https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html) tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.
-
--   Instalación de **Quarto**: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada
-
--   Si no fuese así, [aquí](https://quarto.org/docs/get-started/) tienes los instaladores para los principales sistemas operativos.
-:::
 
 <br>
 
-# Blog en 3 minutos
 
-Una vez tenemos instalados los programas vamos a ver el **proceso de creación** y la **estructura de ficheros** de un blog con Quarto de forma rápida. Ya tendremos tiempo de mejorarlo o tunearlo!!
 
 ## Creación de un Rproject (para un blog)
 
--   Si en RStudio sigues la siguiente ruta de menús: `File > New Project > New Directory > Quarto Blog` se te creará una carpeta, un Rproject, con todo lo necesario para crear un blog.
+Vamos a  crear el blog con R y RStudio; concretamente trabajaremos utilizando un `Rproject`, así que el primer paso para crear nuestro blog es **crear un Rproject** donde se alojaran los ficheros que necesitemos para nuestro blog.
+
+::: {.callout-important icon="false"}
+#### Tarea 1: Creación del Rproject que generará el blog
+
+-   En RStudio sigue la siguiente ruta de menús:   
+
+    `File > New Project > New Directory > Quarto Blog`
+
+- Al hacerlo se creará una carpeta, un Rproject, con todo lo necesario para crear un blog.
 
 -   El nombre que le he puesto a la carpeta/Rproject es `blog_prueba_00`
+:::
 
-- También podría crear el Rproject desde la Terminal de RStudio (panel inferior-izquierda), tecleando lo siguiente:
+De momento aún no tenemos el blog, solo hemos creado un Rproject pero, ya tenemos, dentro de la carpeta del Rproject, la estructura de carpetas y archivos necesarios para crearlo.
 
+Cuando creemos el blog, será un blog sencillito, vamos con lo mínimo, pero un blog. 
 
-```{bash, eval = FALSE}
-quarto create-project blog_prueba_00 --type website:blog
-```
-
--   Con el Rproject que acabamos de crear, podremos generar un blog, será un blog sencillito, vamos con lo mínimo, pero un blog.
-
-
--   Pero ... aún no veo el blog!! Sí, tienes razón, el blog lo crearemos despues de hacer un pequeño repaso a la estructura de carpetas y archivos del Rproject
+Antes de crear el blog hagamos un pequeño repaso al contenido del Rproject, veamos su estructura de carpetas y archivos.
 
 <br>
 
-## Estructura de ficheros del Rproject
+## Contenido del Rproject
 
--   El Rproject que acabamos de crear y que contiene nuestro blog tendrá esta estructura de archivos y carpetas:
+El Rproject que acabamos de crear y que permitirá crear el blog tiene esta estructura de archivos y carpetas:
 
-::: {#fig-quarto-blog layout-ncol="3"}
+
+::: {#fig-01 layout-ncol=1}
+![](./imagenes/tt_01/img_01.png){fig-align="center"}
+
+Estructura del Rproject `blog_prueba_00`
+:::
+
+
+
+Como ves en la figura anterior, el Rproject contiene **6 archivos y una subcarpeta**. Voy a dividirlos en dos categorías:   
+
+  1) los que no son importantes (al menos ahora mismo)  
+    
+  2) Los que sí son importantes ahora mismo, serán **3 archivos**  
+
+<br>
+
+### Archivos "no importantes"
+
+::: {layout-ncol=2}
+
+1) El archivo `blog_prueba_00.Rproj`
+
+No es un archivo importante para el blog. Este archivo simplemente permite que RStudio reconozca la carpeta `blog_prueba_00` como un Rproject.
+:::
+
+
+::: {layout-ncol=2}
+2) El archivo `styles.css`
+
+Sí será un archivo importante, pero lo veremos más adelante. Este archivo permitirá mediante CSS cambiar la estética de nuestro blog. 
+:::
+
+
+
+::: {layout-ncol=2}
+3) El archivo `profile.jpg`
+
+Es sencillamente una foto. La tendremos que sustituir por una foto nuestra en la que estemos guapetes.
+:::
+
+
+::: {layout-ncol=2}
+4) La carpeta  `posts`
+
+Será muy importante, pero la veremos más adelante. Esta carpeta es la que contendrá los posts que vayamos escribiendo.
+:::
+
+
+
+::: {layout-ncol=2}
+
 ```{r}
+#| fig-cap: Dentro de la carpeta `posts`
 #| echo: false
-#| fig.cap: "Estructura del Rproject"
-name_of_plot <- "img_01.png"
-rutita <- paste0("./imagenes/tt_01/", name_of_plot)
-knitr::include_graphics(rutita)
-```
-
-```{r}
-#| echo: false
-#| fig.cap: "Carpeta de posts: cada post en una carpeta"
 name_of_plot <- "img_02.png"
 rutita <- paste0("./imagenes/tt_01/", name_of_plot)
 knitr::include_graphics(rutita)
 ```
 
+
 ```{r}
+#| fig-cap: Dentro del post `welcome`
 #| echo: false
-#| fig.cap: "Carpeta de UN post (Welcome post)"
 name_of_plot <- "img_03.png"
 rutita <- paste0("./imagenes/tt_01/", name_of_plot)
 knitr::include_graphics(rutita)
 ```
 
-Estructura de carpetas del Rproject que creará nuestro blog
 :::
+
+
+
+
+<br>
+
+### Archivos  sí importantes
+
+Nos quedan 3 archivos que será en los que nos concentremos ahora mismo, bueno, enseguida.
+
+
+::: {layout-ncol=2}
+
+1) `_quarto_yml`
+
+Es el archivo que especifica como será la estructura y apariencia de nuestro blog.
+:::
+
+
+
+::: {layout-ncol=2}
+
+2) `about.qmd`
+
+Un archivo `.qmd` que generará el archivo `about.html` y que será una de las páginas de nuestro blog; precisamente en esta página se vera nuestra foto.
+:::
+
+
+::: {layout-ncol=2}
+
+3) `index.qmd`
+
+Otro archivo `.qmd` que generará el archivo `index.html` y que será la "landing page" o **Home** de nuestro blog.
+:::
+
+
+
+
 
 ## Creación del blog
 
-El Rproject que hemos creado tiene todo lo necesario para crear un blog para ello tenemos que:
+El Rproject que hemos creado tiene todo lo necesario para crear un blog, pero aún no lo hemos creado. Para crearlo solo tienes que: 
 
--   Ir al cuadrante superior-izquierda de RStudio, pinchar en la pestaña `Build` y pinchar en `Render Website`. Se procesarán los archivos del Rproject y se creará el blog. Podremos verlo en el cuadrante inferior-izquierda de RStudio, concretamente en la pestaña `Viewer`. Se verá algo como esto:
 
-::: {#fig-quarto-blog layout-ncol="1"}
-```{r}
-#| echo: false
-#| fig.cap: "Al pinchar en `Render Website` se creará el blog"
-name_of_plot <- "img_04.png"
-rutita <- paste0("./imagenes/tt_01/", name_of_plot)
-knitr::include_graphics(rutita)
-```
+::: {.callout-important icon="false"}
+#### Tarea 2: Generación del blog
+
+-   Ir al cuadrante superior-izquierda de RStudio, pinchar en la pestaña `Build` y pinchar en `Render Website`.
+
+- De esta forma, se procesarán los archivos del Rproject y se creará el blog.
+
+- Podremos verlo en el cuadrante inferior-izquierda de RStudio, concretamente en la pestaña `Viewer`.
+:::
+
+
+Si todo ha ido bien, verás algo como esto:
+
+
+::: {#fig-02 layout-ncol=1}
+![](./imagenes/tt_01/img_04.png){fig-align="center"}
+
 Al pinchar en `Render Website` se creará el blog
 :::
 
 
-- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/) como quedaría el blog.
 
-- También podríamos haber generado el blog usando la Consola o la terminal desde RStudio. En ambos casos hay que estar en el Rproject "blog_prueba_00"; es decir, "blog_prueba_00" es el working directory
 
+- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en internet.
+
+
+<br>
+
+::: {.callout-warning collapse="true" appearance="default" icon="false"}
+#### Extensiones: formas alternativas de generar el blog
+
+- También podríamos haber generado el blog usando la Consola o la terminal desde RStudio. 
+
+- En ambos casos hay que estar en el Rproject "blog_prueba_00"; es decir, "blog_prueba_00" es el working directory
 
   ```{r, eval = FALSE}
   #- desde la Consola
@@ -135,84 +231,187 @@ Al pinchar en `Render Website` se creará el blog
   quarto::quarto_render("index.qmd")
   ```
 
-
   ```{bash, eval = FALSE}
   #- desde la Terminal
   quarto render
   ```
+:::
+
+
+
 
 <br>
 
 
 ## Veamos otra vez la estructura de carpetas
 
--   Tras haber creado el blog, la estructura de carpeta de nuestro Rproject quedará como:
+Tras haber creado el blog, la estructura de carpetas de nuestro Rproject ha cambiado, concretamente se han generado 2 subcarpetas. Veámoslo:
 
-::: {#fig-quarto-blog layout-ncol="1"}
-```{r}
-#| echo: false
-name_of_plot <- "img_05.png"
-rutita <- paste0("./imagenes/tt_01/", name_of_plot)
-knitr::include_graphics(rutita)
-```
+
+::: {#fig-03 layout-ncol="1"}
+![](./imagenes/tt_01/img_05.png){fig-align="center"}
+
 Estructura de carpetas del Rproject tras la creación del blog
 :::
 
--   Si comparamos la estructura de carpetas antes y despúes de hacer `Render Website` vemos que **se han creado 2 carpetas**: `_freeze` y `_site`
+#### Se han creado 2 subcarpetas
 
--   La carpeta `_freeze` podemos dejarla para más adelante.
-
--   La carpeta `_site` es la que realmente contiene el blog. Si alojas el contenido de esa carpeta en un servidor web se verá el blog que hemos creado. Antes de alojarlo, si quieres verlo puedes pinchar en el fichero `./blog_prueba_00/_site/index.html`. 
-
-- De esa forma podemos ver que la Home Page del blog es la lista de posts del blog. En el blog por defecto que hemos creado solo hay 2 post: uno de bienvenida y otro de.
-
-- Como ves el blog es muy sencillo, el Home Page es el listado de posts y solo tiene una página mas: About.
+Si comparamos la estructura de carpetas antes y después de hacer `Render Website` vemos que **se han creado 2 carpetas**: 
 
 
-- No vamos a comentarla pero abajo hay un pantallazo de la carpeta `_site`.
-  
-  ::: {#fig-quarto-blog layout-ncol="1"}
-  ```{r}
-  #| echo: false
-  name_of_plot <- "img_06.png"
-  rutita <- paste0("./imagenes/tt_01/", name_of_plot)
-  knitr::include_graphics(rutita)
-  ```
-  `_site` es la carpeta que contiene el blog
-  :::
+::: {layout-ncol=2}
+
+1) `_freeze`
+
+La carpeta `_freeze` podemos dejarla para más adelante.
+:::
+
+
+
+::: {layout-ncol=2}
+
+2) `_site`
+
+La carpeta `_site` es la que realmente contiene el blog. Si alojas el contenido de esa carpeta en un servidor web se verá el blog que hemos creado.
+:::
+
+#### Contenido de `/_site/`
+
+Antes de publicar el blog, vamos a ver el contenido de la carpeta `_site` que es la que contiene realmente el blog:
+
+
+::: {#fig-04 layout-ncol="1"}
+![](./imagenes/tt_01/img_06.png){fig-align="center"}
+
+Contenido de `_site`, la carpeta que contiene el blog
+:::
+
+
+::: {.callout-important icon="false"}
+#### Tarea 3: Ver el blog
+
+- Enseguida publicaremos el blog en Quartopub, pero antes, vamos a  verlo en local; para ello solo tienes que pinchar en el archivo `./blog_prueba_00/_site/index.html`
+
+- Ese fichero es el que contiene la "Landing Page" o "Home" de nuestro blog.
+
+- Como ves el blog es muy sencillo, solo tiene 2 páginas: la Home Page (que consiste en un listado de posts) y la página `About`.
+
+:::
+
+<br>
+
+#### La página principal del blog
+
+- Hemos visto que la **página principal (Home)** del blog consiste en una lista de los posts de nuestro blog^[Ahora mismo es una lista corta porque el blog solo tiene 2 posts] 
+
+- La página principal (o Home) de nuestro blog es el archivo `index.html`.
+
+- El archivo `index.html` ha sido generado por el fichero `index.qmd`. 
+
+
+::: {.callout-warning collapse="true" appearance="default" icon="false"}
+#### Extensiones: ver el contenido  del archivo `index.qmd`
+
+Contenido del archivo  `index.qmd` que genera a `index.html`:
+
+
+::: {#fig-05 layout-ncol="1"}
+![](./imagenes/tt_01/img_08.png){fig-align="center"}
+
+Archivo `index.qmd`
+
+:::
+
+- Como vemos, el archivo `index.qmd` no tiene contenido, sólo contiene un `yaml` o encabezamiento
+
+- Ese encabezamiento genera una lista (`listing:`) con los contenidos (con los ficheros .qmd) que haya en la carpeta `posts`.
+
+- Sí, has imaginado bien, en la carpeta `posts` es donde estarán los ficheros .qmd que generarán los posts
+
+- El resto del yaml son opciones para nuestro blog. Por ejemplo, `sort: "date desc"` ordenará el listado de post de más reciente a más antiguo.
+
+- Lo iremos viendo
+:::
+
+
+<br>
+
+
+
+
 
 ## Alojando el blog
 
--   El blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es publicarlo en internet.
+El blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es **publicarlo en internet**.
 
--   Hay muchas formas de alojar nuestro blog, por ejemplo [Github Pages](https://pages.github.com/) [Netlify](https://www.netlify.com/) etc... , pero usaremos el usando el servicio [Quartopub](https://quartopub.com/)
-
--   Para publicar nuestro baby-blog en Quartopub sólo hay que teclear lo siguiente en la Terminal de RStudio (panel inferior-izquierda)  
+Hay muchas formas de alojar nuestro blog, por ejemplo [Github Pages](https://pages.github.com/) [Netlify](https://www.netlify.com/) etc... , pero, de momento, usaremos el servicio [Quartopub](https://quartopub.com/)
 
 
 
-```{bash, eval = FALSE}
-#- desde la Terminal
-quarto publish quarto-pub
-```
+::: {.callout-important icon="false"}
+#### Tarea 4: Alojar el blog en Quarto Pub
 
+Para publicar nuestro blog en Quartopub sólo hay que:
 
-- Tras ejecutar lo anterior, se te pedrirá que autorices en la Terminal. Después se abrirá el navegador, tendrás que logearte en `Quarto Pub` y volverás a autorizar. Además te preguntarán el nombre del blog.
+- teclear en la **Terminal** de RStudio (panel inferior-izquierda) lo siguiente:  
 
-- Si te fijas, tras haberse publicado el blog en "Quarto Pub", se habrá creado un nuevo fichero en nuestro Rproject: es el fichero `_publish.yml`. En él solamente están los metadatos necesarios para publicar y actualizar nuestro blog.
-
-
-  ::: {#fig-quarto-blog layout-ncol="1"}
-  ```{r}
-  #| echo: false
-  name_of_plot <- "img_07.png"
-  rutita <- paste0("./imagenes/tt_01/", name_of_plot)
-  knitr::include_graphics(rutita)
+  ```{bash, eval = FALSE}
+  #- desde la Terminal
+  quarto publish quarto-pub
   ```
-  Fichero `_publish.yml` con la información para publicar el blog en `Quarto Pub`.
-  :::
+
+- Tras ejecutar lo anterior, se te pedirá que autorices en la Terminal.
+
+- Después se abrirá el navegador, tendrás que logearte en `Quarto Pub` y volverás a autorizar. Además te preguntarán el nombre del blog.
+
+:::
+
+<br>
+
+Si te fijas, tras haberse publicado el blog en "Quarto Pub", se habrá creado un nuevo fichero en nuestro Rproject: es el fichero `_publish.yml`. En él solamente están los metadatos necesarios para publicar y **actualizar nuestro blog**.
+
+
+
+::: {#fig-07 layout-ncol=1}
+![](./imagenes/tt_01/img_07.png){fig-align="center"}
+
+Fichero `_publish.yml` con la información para publicar el blog en `Quarto Pub`.
+:::
 
 <br><br>
+
+
+## Resumen
+
+::: {.callout-tip collapse="true" appearance="default" icon="false"}
+#### Resumen
+
+En este tutorial, la segunda parte del taller, hemos visto:
+
+- Como crear un Rproject con la estructura de carpetas y archivos necesaria para generar un blog básico
+
+- Hemos visto (de forma rápida) el contenido, los archivos, que hay en el Rproject. 
+
+- El Rproject contiene 3 archivos que serán los importantes, los que trabajaremos en el próximo tutorial, concretamente:  `_quarto_yml`, `index.qmd` y `about.qmd`
+
+- Hemos aprendido a generar el blog a través de RStudio, simplemente `Build > Render Website`
+
+- Hemos visto que el blog realmente se aloja en la carpeta `_site` y que la homepage es `index.html`
+
+- La homepage del blog es un listado de post (lógicamente, es un blog!!)
+
+- La homepage (`index.html`) es generada por el archivo `index.qmd`
+
+- El archivo `index.qmd` solo tiene `yaml`
+
+- Hemos publicado el blog en Quarto Pub
+
+:::
+
+
+
+
+
 
 ## Referencias
 

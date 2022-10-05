@@ -1,0 +1,348 @@
+---
+title: "Tuneado básico del blog (parte 3ª del taller)"
+author: "Pedro J. Pérez"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+format: 
+  html:
+    theme: minty  #- https://quarto.org/docs/output-formats/html-themes.html
+    #-https://quarto.org/docs/websites/website-blog.html#themes
+    backgroundcolor: "#F1F3F4"
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    smooth-scroll: true
+    #self-contained: true  #- ya no la usa la nueva version de pandoc
+    standalone: true  
+    link-external-icon: false
+    link-external-newwindow: true
+    html-math-method: katex
+    citations-hover: false
+    footnotes-hover: false
+    css: assets/styles.css
+comments:
+  hypothesis: 
+    theme: clean
+---
+
+::: {.callout-note collapse="false" appearance="default" icon="false"}
+## Contexto
+
+-   Tutorial preparado para el taller **"Mi primer blog con Quarto"** celebrado en Córdoba (Spain), 23-25 de noviembre de 2022. El taller se celebró el jueves 24, 15:15-17:00.
+
+- Este tutorial es sólo una parte del taller. Concretamente la **tercera parte**.
+
+- En esta tercera parte del taller vamos a **mejorar/tunear un poco nuestro blog**. 
+
+- El **taller completo** está [aquí]().
+:::
+
+
+
+::: {.callout-important collapse="false" appearance="default" icon="false"}
+## Setup: instalación de R, RStudio y Quarto
+
+-   El taller está pensado para realizar con [R](https://cran.r-project.org/), el IDE [RStudio](https://www.rstudio.com/) y [Quarto](https://quarto.org/), así que tendrán que estar instalados en tu ordenador. Es recomendable tener instaladas **versiones recientes** de los 3 programas.
+
+-   Todos sabemos **instalar R y Rstudio**, si no fuese así, [aquí](https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html) tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.
+
+-   Instalación de **Quarto**: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, [aquí](https://quarto.org/docs/get-started/) tienes los instaladores para los principales sistemas operativos.
+:::
+
+
+
+::: {.callout-note collapse="false" appearance="default" icon="false"}
+## Recapitulación
+
+- En esta tercera parte del taller vamos a **mejorar/tunear un poco nuestro blog**. 
+
+- Las anteriores secciones del taller son
+
+    - Intro
+    
+    - Creación de un blog (básico) con Quarto:  en la segunda parte del taller vimos como crear un **blog básico** con RStudio y Quarto.
+:::
+
+
+
+<br>
+
+-------------
+
+<br>
+
+
+::: {.callout-tip collapse="false" appearance="default" icon="false"}
+## ¿Qué haremos en este tutorial?
+
+- En esta tutorial de **tuneado básico** del blog,  modificaremos 3 archivos, concretamente los archivos `_quarto.yml`, `index.qmd` y `about.qmg`. Iremos archivo por archivo.
+
+- Finalmente modificaremos el archivo `styles.css`
+:::
+
+
+<br>
+
+## Archivo `_quarto.yml`
+
+Este es el contenido original del fichero `_quarto.yml`
+
+```{r, eval = FALSE}
+project:
+  type: website
+
+website:
+  title: "blog_prueba_00"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+```
+
+- La **primera parte** del fichero `_quarto.yml` simplemente específica que el proyecto es para hacer una página web (`type: website`). Esta primera parte del fichero `_quarto.yml` no lo vamos a tocar, lo vamos a dejar igual. Sí, en realidad, un blog es una página web en la que la "Home page" o "landing page" es un poco especial. La "landing page" de las páginas web es el archivo `index.qmd`. Lo veremos luego. 
+
+- La **segunda parte** del fichero `_quarto.yml` sirve para decidir el formato de la página web (en nuestro caso del blog) y tiene 2 secciones: 
+
+    - title: "blog_prueba_00": aquí podemos cambiar el título de nuestro blog  
+    
+    - navbar: aquí podemos cambiar la estructura de la barra de navegación del blog. En el archivo original se especifica que los elementos/pestañas de navegación se situan a la derecha y que habrán 3 links o pestañas: `About` y 2 iconos que nos llevaran a Github y a Twitter
+    
+    
+ - En la **tercera parte** del fichero `_quarto.yml` se especifica el formato. Como toda página web el formato es html. Además se especifica un `theme` y un fichero `.css` que nos permitirán modificar el aspecto estético del blog.
+ 
+- Por ejemplo, podemos modificar el fichero `_quarto.yml` hasta dejarlo como: 
+ 
+ 
+```{r, eval = FALSE}
+project:
+  type: website
+  #output-dir: docs  #- para cambiar la carpeta donde se creará el blog
+
+website:
+  title: "Mi blog (aún en pruebas)"
+  #favicon: imagenes/ababol_redondeado.ico
+  #site-url: https://perezp44.github.io/pjperez.blog.2022/  #-Github Pages
+  #repo-url: https://github.com/perezp44/pjperez.blog.2022  #-Github Pages
+  navbar:
+    logo: "profile.jpg"
+    #background: primary    #- pink (el backgroung de la navbar)
+    left: 
+      - text: "Docencia"
+        href: docencia.qmd
+      -  text: "Más cosas"
+         menu:
+          - text: "Docencia 2"
+            href: docencia.qmd
+          - text: "Docencia 3"
+            href: docencia.qmd
+          - text: "---"
+          - text: "Docencia 4"
+            href: docencia.qmd
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/<tu-usuario-github>
+      - icon: twitter
+        href: https://twitter.com/<tu-usuario twitter>
+      - icon: envelope
+        url: "mailto:<tu-mail@uv.es>"
+  page-footer:
+    left: "© 2022 Pedro J. Pérez"
+    center: "Hecho con [Quarto](https://quarto.org)"
+    right:
+      - icon: github
+        href: https://github.com/<tu-usuario-github>
+      - icon: twitter
+        href: https://twitter.com/<tu-usuario-twitter>
+      - icon: envelope
+        url: "mailto:<tu-email@uv.es>"
+      - text: <i class="ai ai-google-scholar" role="img"></i>
+        href: https://scholar.google.de/citations?user=<tu-usuario>
+      - text: <i class="ai ai-orcid" role="img"></i>
+        href: https://orcid.org/<tu-usuario>
+
+format:
+  html:
+    #theme: ember.scss 
+    theme: 
+    - minty  #- listado de themes: https://quarto.org/docs/output-formats/html-themes.html
+    - custom.scss  #- este archivo no existe (ya pondré uno, igual!!)
+    css: 
+    - styles.css
+    toc: true
+    #- https://quarto.org/docs/output-formats/html-code.html#highlighting
+    highlight-style: a11y
+    
+#editor: visual    
+```
+
+- Fíjate que, entre otras cosas, hemos creado más pestañas en la barra de navegación del blog. Todas ellas están referenciando al archivo `docencia.qmd` que aún no existe, así que tenemos que crearlo. El contenido del archivo `docencia.qmd` será:
+
+
+```{r, eval = FALSE}
+---
+title: "Mi docencia"
+---
+
+Mi docencia es:
+
+## curso 2021-2022
+
+- [Econometría](/pdfs/econometria.pdf)
+
+## curso 2022-2023
+
+- [Algebra](/pdfs/econometria.pdf)
+```
+
+- Como puedes ver, en el archivo `docencia.qmd` se hace referencia al archivo `/pdfs/econometria.pdf`. Si quieres que el link funcione, tienes que crear dentro del Rproject, la carpeta `pdfs`, y dentro de ella el archivo `econometria.pdf`.
+
+- Una vez hecho todo esto, puedes ver como quedaría la página web (o blog) [aquí](https://pjperez.quarto.pub/blog_prueba_01/)
+
+- Como ves, hemos modificado las pestañas de la barra de navegación (ahora dos más a la izquierda) y la apariencia (theme) del blog; por ejemplo, el color de la barra de navegación. 
+    
+    
+
+<br>
+
+## Archivo `index.qmd`
+
+- El archivo `index.qmd` es la "Home Page" de nuestro blog y su contenido original tiene esta pinta:
+
+
+```{r, eval = FALSE}
+---
+title: "blog_prueba_00"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+```
+
+
+- Como ves es una página (nuestra "Home Page", porque el fichero se llama `index.qmd`) sin contenido aparente: aparte del `yaml`no hay nada más. Sin embargo, justamente en el `yaml` especifica con la opción `listing:` que la página va a ser un listado; concrétamente un listado del contenido que haya en la carpeta `posts`; o sea, un listado con los posts que haya en la carpeta `posts`.
+
+
+- Sí con el trozo `contents: posts`, se está especificando la carpeta donde estará alojado el contenido de los posts. Si miras la carpeta `posts` verás 2 subcarpetas, una para cada uno de los 2 posts del blog.
+
+- Ya hablaremos de las subcarpetas donde está el contenido de los posts más adelante, pero adelanto que en cada carpeta hay un archivo `index.qmd` con el contenido de cada post.
+
+- Otra vez se trata de modificar el archivo `index.qmd` para dejarlo como:
+
+
+
+```{r, eval = FALSE}
+---
+#title: "Mi listado de posts"  #- yo casi prefiero que no ponga nada
+listing:
+  contents: posts
+  #- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options
+  #- https://quarto.org/docs/websites/website-listings.html#sorting-items
+  sort: "date desc" 
+  #-  https://quarto.org/docs/websites/website-listings.html#listing-types
+  type: default  #- opciones: {default, grid, table}
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  date-format: long
+page-layout: full
+title-block-banner: true
+image: imagenes/thumbnail.jpg
+---
+```
+
+
+<br>
+
+## Archivo `about.qmd`
+
+- Vamos a modificar el fichero `about.qmd`. El contenido original de este fichero es: 
+
+
+```{r, eval = FALSE}
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla 
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+
+---
+
+About this blog
+
+```
+
+
+- Se trata de dejarlo comopuedes ver más abajo:
+
+
+
+```{r, eval = FALSE}
+---
+title: Yo mismo
+image: profile.jpg
+about:
+  #- https://quarto.org/docs/websites/website-about.html#templates
+  template: trestles  #- {jolla, solana}
+  #- https://quarto.org/docs/websites/website-about.html#image
+  image-width: 10em
+  image-shape: round
+  #- https://quarto.org/docs/websites/website-about.html#links
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+```
+
+
+- Para ver más posibilidades predefinidas por Quarto acerca del fichero `about.qmd` puedes mirar [aquí](https://quarto.org/docs/websites/website-about.html)
+
+
+
+
+<br>
+
+## Archivo `styles.css`
+
+
+
+## TRUCO
+
+- casi mejor hacer esto despues de crear un post
+
+- vamos a transformar nuestro blog en una página web personal con blog
+
+- para ello solo hay que :
+
+    1) cambiar el nombre del fichero `index.qmd` a `blog.qmd`
+    
+    2) cambiar el nombre del fichero `about.qmd` a `index.qmd`

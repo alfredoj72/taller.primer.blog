@@ -1,5 +1,16 @@
 ---
-title: "Taller: Mi primer blog (con Quarto)"
+title: "AAA"
+image: imagenes/portada_01.png
+about:
+  #- https://quarto.org/docs/websites/website-about.html#templates
+  template: trestles  #- {jolla, solana, trestles}
+  #- https://quarto.org/docs/websites/website-about.html#image
+  image-width: 30em
+  image-shape: rectangle
+  #- https://quarto.org/docs/websites/website-about.html#links
+  links:
+    - icon: twitter
+      text: Twitter
 ---
 
 Aqui quiero hacer solo una foto que cubra la pantalla
