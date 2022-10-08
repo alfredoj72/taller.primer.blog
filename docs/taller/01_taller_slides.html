@@ -342,15 +342,32 @@
 <section id="estructura-del-taller" class="slide level2 smaller">
 <h2>Estructura del taller</h2>
 <ul>
-<li class="fragment"><p>Intro</p></li>
-<li class="fragment"><p>¿Qué es Quarto?</p></li>
-<li class="fragment"><p>Mi blog en 2 minutos</p></li>
-<li class="fragment"><p>Creación de una web (académica??)</p></li>
+<li class="fragment"><p>Intro y ¿qué es Quarto?</p></li>
+<li class="fragment"><p>Creación de un blog básico: mi blog en 2 minutos</p></li>
+<li class="fragment"><p>Tuneado básico del blog</p></li>
+<li class="fragment"><p>Convirtiendo el blog en una web académica</p></li>
+<li class="fragment"><p>Workflow: creando posts</p></li>
+<li class="fragment"><p>Escribiendo un post largito: practicando con Quarto</p></li>
 <li class="fragment"><p>Tuneado de la web</p></li>
-<li class="fragment"><p>Creación de posts con Quarto</p></li>
-<li class="fragment"><p>Gestión y publicación de la web/blog</p></li>
+<li class="fragment"><p>Gestión y publicación de la web/blog: Quarto Pub, Github Pages</p></li>
+<li class="fragment"><p>Ejemplos de blogs</p></li>
 </ul>
 </section>
+<section id="enlaces-para-fran-y-compis" class="title-slide slide level1 smaller center">
+<h1>Enlaces para Fran y compis</h1>
+<div>
+<ul>
+<li><p><a href="https://perezp44.github.io/pjperez.blog.2022/">un blog con Quarto</a></p></li>
+<li><p>Una <a href="https://perezp44.github.io/pjperez.web/">web con 2 blogs</a></p></li>
+<li><p>Una <a href="https://openscapes.github.io/quarto-website-tutorial/">web de una asignatura</a></p></li>
+<li><p><a href="https://perezp44.github.io/intro-ds-22-23-web/">Mi intro to DS</a></p></li>
+<li><p><a href="https://perezp44.github.io/web.Econometria.GADE/">Web econometría</a> para mirar el <a href="https://perezp44.github.io/web.Econometria.GADE/materiales/cuestionario_practicas.html">cuestionario</a></p></li>
+<li><p>Taller para Cordoba<a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog</a> y uno de los <a href="https://perezp44.github.io/taller.primer.blog/taller/02_taller_crear-blog-basico.html">tutoriales</a></p></li>
+<li><p>Un bookdown <a href="https://r4ds.hadley.nz/">R4DS 2ed</a></p></li>
+</ul>
+</div>
+</section>
+
 <section>
 <section id="intro" class="title-slide slide level1 center">
 <h1>Intro</h1>
@@ -739,6 +756,20 @@
           return popup.innerHTML;
         });
       }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var filterRegex = new RegExp(/https:\/\/perezp44\.github\.io\/taller\.primer\.blog\//);
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+        var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+              // target, if specified
+              link.setAttribute("target", "_blank");
+          }
+        }
     });
     </script>
     

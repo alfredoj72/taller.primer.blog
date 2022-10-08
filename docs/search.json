@@ -165,7 +165,7 @@
     "href": "taller/01_taller_slides.html#estructura-del-taller",
     "title": "Mi primer blog con Quarto",
     "section": "Estructura del taller",
-    "text": "Estructura del taller\n\nIntro\n¿Qué es Quarto?\nMi blog en 2 minutos\nCreación de una web (académica??)\nTuneado de la web\nCreación de posts con Quarto\nGestión y publicación de la web/blog"
+    "text": "Estructura del taller\n\nIntro y ¿qué es Quarto?\nCreación de un blog básico: mi blog en 2 minutos\nTuneado básico del blog\nConvirtiendo el blog en una web académica\nWorkflow: creando posts\nEscribiendo un post largito: practicando con Quarto\nTuneado de la web\nGestión y publicación de la web/blog: Quarto Pub, Github Pages\nEjemplos de blogs"
   },
   {
     "objectID": "taller/01_taller_slides.html#sobre-el-ponente",
