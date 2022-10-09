@@ -6,9 +6,9 @@ title: "Setup"
 ::: {.callout-note collapse="false" appearance="default" icon="false"}
 ## Contexto
 
-- Setup para el taller **Mi primer blog con Quarto** impartido en el  [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target="_blank"} celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.
+- Setup para el taller **Mi primer blog con Quarto** impartido en el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target="_blank"} celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.
 
--   El taller está pensado para realizar con [R](https://cran.r-project.org/){target="_blank"}. Se utilizará el IDE [RStudio](https://www.rstudio.com/){target="_blank"} y [Quarto](https://quarto.org/){target="_blank"}. Se recomienda tener instaladas **versiones recientes** de los 3 programas.
+-   El taller está pensado para realizar con [R](https://cran.r-project.org/){target="_blank"}. Se utilizará el IDE [RStudio](https://www.rstudio.com/products/rstudio/){target="_blank"} y [Quarto](https://quarto.org/){target="_blank"}. Se recomienda tener instaladas **versiones recientes** de los 3 programas.
 :::
 
 

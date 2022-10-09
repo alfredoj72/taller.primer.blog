@@ -38,7 +38,7 @@ editor_options:
 #### Contexto
 
 -  Tutorial preparado para el taller **Mi primer blog con Quarto** impartido en Córdoba (Spain) durante el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/), 23-25 de noviembre de 2022.
--   El taller está pensado para realizar con [R](https://cran.r-project.org/). Se utilizará el IDE [RStudio](https://www.rstudio.com/) y [Quarto](https://quarto.org/). Se recomienda tener instaladas **versiones recientes** de los 3 programas
+-   El taller está pensado para realizar con [R](https://cran.r-project.org/). Se utilizará el IDE [RStudio](https://www.rstudio.com/products/rstudio/) y [Quarto](https://quarto.org/). Se recomienda tener instaladas **versiones recientes** de los 3 programas
 
 - Este tutorial es sólo una parte del taller. El **taller completo** está [aquí](https://perezp44.github.io/taller.primer.blog/).
 :::

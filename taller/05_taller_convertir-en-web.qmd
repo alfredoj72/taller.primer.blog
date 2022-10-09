@@ -85,3 +85,19 @@ comments:
 <br>
 
 ## Creando un nuevo post
+
+
+
+
+
+## TRUCO
+
+-   casi mejor hacer esto despues de crear un post
+
+-   vamos a transformar nuestro blog en una página web personal con blog
+
+-   para ello solo hay que :
+
+    1)  cambiar el nombre del fichero `index.qmd` a `blog.qmd`
+
+    2)  cambiar el nombre del fichero `about.qmd` a `index.qmd`

@@ -202,7 +202,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Estructura del tutorial</h2>
+    <h2 id="toc-title">Estructura del tutorial nº 3</h2>
    
   <ul>
   <li><a href="#archivo-_quarto.yml" id="toc-archivo-_quarto.yml" class="nav-link active" data-scroll-target="#archivo-_quarto.yml"><span class="toc-section-number">1</span>  Archivo <code>_quarto.yml</code></a>
@@ -214,7 +214,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#archivo-index.qmd" id="toc-archivo-index.qmd" class="nav-link" data-scroll-target="#archivo-index.qmd"><span class="toc-section-number">2</span>  Archivo <code>index.qmd</code></a></li>
   <li><a href="#archivo-about.qmd" id="toc-archivo-about.qmd" class="nav-link" data-scroll-target="#archivo-about.qmd"><span class="toc-section-number">3</span>  Archivo <code>about.qmd</code></a></li>
   <li><a href="#archivo-styles.css" id="toc-archivo-styles.css" class="nav-link" data-scroll-target="#archivo-styles.css"><span class="toc-section-number">4</span>  Archivo <code>styles.css</code></a></li>
-  <li><a href="#truco" id="toc-truco" class="nav-link" data-scroll-target="#truco"><span class="toc-section-number">5</span>  TRUCO</a></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="toc-section-number">5</span>  Resumen</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="toc-section-number">6</span>  Referencias</a></li>
   </ul>
 </nav>
 </nav>
@@ -244,7 +245,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Fecha de Publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">5 de octubre de 2022</p>
+      <p class="date">9 de octubre de 2022</p>
     </div>
   </div>
     
@@ -273,7 +274,7 @@ Contexto
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>Tutorial preparado para el taller <strong>Mi primer blog con Quarto</strong> impartido en Córdoba (Spain) durante el <a href="http://r-es.org/12jr/">I Congreso &amp; XII Jornadas de Usuarios de R</a>, 23-25 de noviembre de 2022.</p></li>
-<li><p>El taller está pensado para realizar con <a href="https://cran.r-project.org/">R</a>. Se utilizará el IDE <a href="https://www.rstudio.com/">RStudio</a> y <a href="https://quarto.org/">Quarto</a>. Se recomienda tener instaladas <strong>versiones recientes</strong> de los 3 programas</p></li>
+<li><p>El taller está pensado para realizar con <a href="https://cran.r-project.org/">R</a>. Se utilizará el IDE <a href="https://www.rstudio.com/products/rstudio/">RStudio</a> y <a href="https://quarto.org/">Quarto</a>. Se recomienda tener instaladas <strong>versiones recientes</strong> de los 3 programas</p></li>
 <li><p>Este tutorial es sólo una parte del taller. El <strong>taller completo</strong> está <a href="https://perezp44.github.io/taller.primer.blog/">aquí</a>.</p></li>
 </ul>
 </div>
@@ -318,8 +319,10 @@ Recapitulación
 <div id="callout-3" class="callout-3-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>En esta tutorial de <strong>tuneado básico</strong> del blog, modificaremos 3 archivos, concretamente los archivos <code>_quarto.yml</code>, <code>index.qmd</code> y <code>about.qmg</code>. Iremos archivo por archivo.</p></li>
-<li><p>Finalmente modificaremos el archivo <code>styles.css</code></p></li>
+<li><p>En esta tercera parte del taller vamos a <strong>mejorar/tunear un poco nuestro blog</strong>. Nos servirá para afianzar nuestro conocimiento de la estructura de ficheros del blog</p></li>
+<li><p>En este tutorial nº 3, para hacer un <strong>tuneado básico</strong> del blog, modificaremos 3 archivos, concretamente los archivos: <code>_quarto.yml</code>, <code>index.qmd</code> y <code>about.qmd</code>. Iremos archivo por archivo</p></li>
+<li><p>Finalmente modificaremos (un poco) el archivo <code>styles.css</code></p></li>
+<li><p>En el tutorial nº 6 se profundiza en el tuneado del blog</p></li>
 </ul>
 </div>
 </div>
@@ -403,7 +406,7 @@ Recapitulación
 <ol type="1">
 <li><p>Hemos <strong>añadido un logo</strong> a la barra de navegación con <code>logo: profile.jpg</code> (linea 7).</p></li>
 <li><p>En la parte derecha de la barra de navegación hemos <strong>añadido un icono para el email</strong> (<code>icon:envelope</code>) y hemos modificado el texto que se muestra en la pestaña about, esto último lo hemos hecho con <code>text: "About me"</code> en las lineas 9 y 10.</p></li>
-<li><p>Finalmente, hemos <strong>añadido una pestaña nueva (lineas 18 y 19)</strong> pero está vez <strong>a la izquierda</strong> de la barra de navegación: <code>left:</code> (linea 17). Fijate que esta nueva pestaña llamada “Docencia” creada con<code>- text: "Docencia"</code> (linea 18), esta referenciando a un archivo que no existe (aún) en el Rproject, está referenciando con <code>href: docencia.qmd</code> (linea 19) al archivo <code>docencia.qmd</code>. LOgicamente tendremos que crear este archivo.</p></li>
+<li><p>Finalmente, hemos <strong>añadido una pestaña nueva (lineas 18 y 19)</strong> pero está vez <strong>a la izquierda</strong> de la barra de navegación: <code>left:</code> (linea 17). Fijate que esta nueva pestaña llamada “Docencia” creada con<code>- text: "Docencia"</code> (linea 18), esta referenciando a un archivo que no existe (aún) en el Rproject, está referenciando con <code>href: docencia.qmd</code> (linea 19) al archivo <code>docencia.qmd</code>. Lógicamente tendremos que crear este archivo.</p></li>
 </ol></li>
 </ul></li>
 <li><p>En la <strong>tercera parte</strong> del fichero <code>_quarto.yml</code> hemos cambiado el <code>theme: minty</code> y hemos añadido las lineas 25 <code>toc: true</code> que creará índices en las páginas de la web/blog<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, mientras que con <code>highlight-style: a11y</code> se cambia el formato visual de los chunks de código que hayan en la página web.</p></li>
@@ -488,7 +491,6 @@ Tarea 2: Crear el archivo <code>docencia.qmd</code>
 </div>
 </div>
 </div>
-<p><br></p>
 <div class="callout-important callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -506,22 +508,73 @@ Tarea 3: Crear el archivo <code>/pdfs/econometria.pdf</code>
 </ul>
 </div>
 </div>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 4: Crear el archivo <code>/pdfs/econometria.pdf</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><br></p>
 <ul>
-<li><p>Una vez hechas las <strong>tarea 2 y 3</strong>, puedes crear de nuevo el blog con <code>Build &gt; Web page</code>.</p></li>
-<li><p><a href="https://pjperez.quarto.pub/blog_prueba_01/">Aquí</a> puedes ver como quedaría el blog tras haber modificado <code>_quarto.yml</code>. Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña <code>Docencia</code> a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda <code>theme: minty</code>): ahora el color de la barra es verdecito.</p></li>
+<li>Una vez hechas las <strong>tarea 2 y 3</strong>, puedes crear de nuevo el blog con <code>Build &gt; Web page</code>.</li>
+</ul>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li><a href="https://pjperez.quarto.pub/blog_prueba_01/">Aquí</a> puedes ver como quedaría el blog tras haber modificado <code>_quarto.yml</code>. Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña <code>Docencia</code> a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda <code>theme: minty</code>): ahora el color de la barra es verdecito.</li>
 </ul>
 <p><br></p>
 </section>
 </section>
 <section id="archivo-index.qmd" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="archivo-index.qmd"><span class="header-section-number">2</span> Archivo <code>index.qmd</code></h2>
+<p>En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero <code>index.qmd</code>. Al final dejaremos este fichero como la figura de la derecha. Como verás solo vamos a hacer cambios en la primera linea: cambiaremos el título.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_11.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Contenido original de <code>index.qmd</code></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_12.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Así dejaremos el fichero <code>index.qmd</code></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <ul>
-<li>El archivo <code>index.qmd</code> es la “Home Page” de nuestro blog y su contenido original tiene esta pinta:</li>
+<li><p>Como ves, <code>index.qmd</code> es un fichero (nuestra “Home Page”) sin contenido aparente: aparte del <code>yaml</code>no hay nada más. Sin embargo, justamente en el <code>yaml</code> especifica, con la opción <code>listing:</code> (linea 3), que la página va a ser un listado; concrétamente un listado del contenido que haya en la carpeta <code>posts</code>; o sea, un listado con los posts que haya en la carpeta <code>posts</code>.</p></li>
+<li><p>Sí, con el trozo <code>contents: posts</code> (linea 4), se está especificando la carpeta donde estará alojado el contenido de los posts. Si miras la carpeta <code>posts</code> verás 2 subcarpetas, una para cada uno de los 2 posts del blog.</p></li>
+<li><p>Ya hablaremos de las subcarpetas donde está el contenido de los posts más adelante, pero adelanto que en cada carpeta hay un archivo <code>index.qmd</code> con el contenido de cada post.</p></li>
+</ul>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 5: Modificar el contenido de <code>index.qmd</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Simplemente he cambiado la linea 1. Aunque casi queda mejor, para mi gusto, comentar (con un #) para que no haya ningún título, casi queda mejor sin título.</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"blog_prueba_00"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Mi listado de post"</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  contents<span class="sc">:</span> posts</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span></span>
@@ -533,11 +586,11 @@ Tarea 3: Crear el archivo <code>/pdfs/econometria.pdf</code>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div>
+</div>
+<p><br></p>
 <ul>
-<li><p>Como ves es una página (nuestra “Home Page”, porque el fichero se llama <code>index.qmd</code>) sin contenido aparente: aparte del <code>yaml</code>no hay nada más. Sin embargo, justamente en el <code>yaml</code> especifica con la opción <code>listing:</code> que la página va a ser un listado; concrétamente un listado del contenido que haya en la carpeta <code>posts</code>; o sea, un listado con los posts que haya en la carpeta <code>posts</code>.</p></li>
-<li><p>Sí con el trozo <code>contents: posts</code>, se está especificando la carpeta donde estará alojado el contenido de los posts. Si miras la carpeta <code>posts</code> verás 2 subcarpetas, una para cada uno de los 2 posts del blog.</p></li>
-<li><p>Ya hablaremos de las subcarpetas donde está el contenido de los posts más adelante, pero adelanto que en cada carpeta hay un archivo <code>index.qmd</code> con el contenido de cada post.</p></li>
-<li><p>Otra vez se trata de modificar el archivo <code>index.qmd</code> para dejarlo como:</p></li>
+<li>Otra vez se trata de modificar el archivo <code>index.qmd</code> para dejarlo como:</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
@@ -563,73 +616,137 @@ Tarea 3: Crear el archivo <code>/pdfs/econometria.pdf</code>
 <section id="archivo-about.qmd" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="archivo-about.qmd"><span class="header-section-number">3</span> Archivo <code>about.qmd</code></h2>
 <ul>
-<li>Vamos a modificar el fichero <code>about.qmd</code>. El contenido original de este fichero es:</li>
+<li>Vamos a modificar mínimamente el fichero <code>about.qmd</code>. En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero y en la derecha como lo dejaremos. Como verás solo vamos a hacer cambios en la quinta linea: cambios la plantilla predefinida.</li>
+</ul>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_13.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Contenido original de <code>about.qmd</code></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_14.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Así dejaremos el fichero <code>about.qmd</code></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 6: Modificar el contenido de <code>about.qmd</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Antes he dicho que solo modificaríamos la linea 5, pero mejor si lo complementamos con algunas acciones más, como el tamaño de la foto y su forma, por eso he añadido 2 lineas tras <code>template:trestles</code>.</p></li>
+<li><p>Lógicamente estaría bien que sustituyeses la foto: se trata de cambiar <code>profile.jpg</code>, en la linea 3, por la ruta a tu foto.</p></li>
+<li><p>Abajo tienes el código:</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"About"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> Yo mismo</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> profile.jpg</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>about<span class="sc">:</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  template<span class="sc">:</span> jolla </span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  links<span class="sc">:</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Twitter</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> linkedin</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> LinkedIn</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>linkedin.com</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Github</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>About this blog</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  template<span class="sc">:</span> trestles    <span class="co">#- {jolla, solana, ...}</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>width<span class="sc">:</span> 10em     <span class="co">#- https://cybmeta.com/em-y-rem</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>shape<span class="sc">:</span> round    <span class="co">#- rectangle, round, rounded</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  links<span class="sc">:</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Twitter</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> linkedin</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> LinkedIn</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>linkedin.com</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Github</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 </div>
 <ul>
-<li>Se trata de dejarlo comopuedes ver más abajo:</li>
+<li>Como has visto, si en el <code>yaml</code> se activa la opción <code>about:</code> (linea 3), entonces Quarto tiene disponibles unas plantillas para crear About’s pages. <a href="https://quarto.org/docs/websites/website-about.html">Aquí</a> tienes la documentación oficial sobre estas plantillas. Como puedes ver <a href="https://quarto.org/docs/websites/website-about.html#templates">aquí</a> hay 5 plantillas: jolla, trestles, solana, marquee y broadside.</li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> Yo mismo</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> profile.jpg</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>about<span class="sc">:</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-about.html#templates</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  template<span class="sc">:</span> trestles  <span class="co">#- {jolla, solana}</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-about.html#image</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>width<span class="sc">:</span> 10em</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>shape<span class="sc">:</span> round</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-about.html#links</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  links<span class="sc">:</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Twitter</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> linkedin</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> LinkedIn</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>linkedin.com</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Github</span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li>Para ver más posibilidades predefinidas por Quarto acerca del fichero <code>about.qmd</code> puedes mirar <a href="https://quarto.org/docs/websites/website-about.html">aquí</a></li>
-</ul>
-<p><br></p>
+<p><br><br></p>
 </section>
 <section id="archivo-styles.css" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="archivo-styles.css"><span class="header-section-number">4</span> Archivo <code>styles.css</code></h2>
-</section>
-<section id="truco" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="truco"><span class="header-section-number">5</span> TRUCO</h2>
 <ul>
-<li><p>casi mejor hacer esto despues de crear un post</p></li>
-<li><p>vamos a transformar nuestro blog en una página web personal con blog</p></li>
-<li><p>para ello solo hay que :</p>
+<li><p>Puedes cambiar la apariencia estética del blog y dejarlo a tu gusto usando los <code>themes</code> prefedinidos en Quarto o puedes usar el archivo <code>styles.css</code><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
+<li><p>De momento, el archivo <code>styles.css</code> está vacio<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p></li>
+<li><p>El tuneado del blog con .css lo veremos con algo más de detalle en el tutorial nº 8, ahora mismo solo haremos unas modificaciones mínimas: voy a justificar el texto<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p></li>
+</ul>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 7: Modificar <code>styles.css</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Simplemente sustituye el contenido original del fichero <code>styles.css</code> por el contenido del siguiente chunk:</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* css styles */</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">/* justificar el texto */</span> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>p<span class="op">,</span> ul<span class="op">,</span> ol {</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span>: <span class="dv">justify</span><span class="op">;</span> }       </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ul>
+<li>Acuérdate que para ver los cambios has de volver a generar el blog: <code>Build &gt; Render Website</code>,</li>
+</ul>
+<p><br></p>
+</section>
+<section id="resumen" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="resumen"><span class="header-section-number">5</span> Resumen</h2>
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Resumen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>En esta tercera parte del taller hemos aprendido a <strong>mejorar/tunear un poco nuestro blog</strong>.</p></li>
+<li><p>Hemos modificado 3 archivos:</p>
 <ol type="1">
-<li><p>cambiar el nombre del fichero <code>index.qmd</code> a <code>blog.qmd</code></p></li>
-<li><p>cambiar el nombre del fichero <code>about.qmd</code> a <code>index.qmd</code></p></li>
+<li><p><code>_quarto.yml</code>: hemos modificado el título del blog y la estructura de la barra de navegación; concretamente hemos añadido una página nueva.</p></li>
+<li><p><code>index.qmd</code>: construye la Home Page de nuestra web. La opción <code>listing:</code> hace que nuestra web es en realidad un blog.</p></li>
+<li><p><code>about.qmd</code>: hemos utilizado las plantillas de Quarto para configurar nuestra About page.</p></li>
 </ol></li>
+<li><p>Finalmente hemos modificado (minímamente) el archivo <code>styles.css</code>.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="referencias" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="referencias"><span class="header-section-number">6</span> Referencias</h2>
+<p>(Algunos artículos sobre creación de blogs en Quarto)</p>
+<ul>
+<li><a href="https://www.ericekholm.com/posts/demo-quarto-site/">Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure</a> es una web con blog . GOOOOD</li>
 </ul>
 
 
@@ -640,6 +757,9 @@ Tarea 3: Crear el archivo <code>/pdfs/econometria.pdf</code>
 
 <ol>
 <li id="fn1"><p>La opción <code>toc: true</code> creará un indice (o toc) en las páginas en las que hayan titulos de primer(#), segundo(##) o tercer nivel(###).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Veremos en el tutorial nº 8 que también podremos usar archivos.scss<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>En realidad no está vacio, pero solo tiene un comentario.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Esta es una modificación que tiene muchas criticas, pero, que se le va a hacer, a mi me gusta el texto jsutificado.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

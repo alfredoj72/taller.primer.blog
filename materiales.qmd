@@ -4,24 +4,29 @@ title: ""
 
 **Materiales** del taller **Mi primer blog con Quarto** preparados para el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target="_blank"} celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.
 
-El taller está pensado para realizar con [R](https://cran.r-project.org/){target="_blank"}. Se utilizará el IDE [RStudio](https://www.rstudio.com/){target="_blank"} y [Quarto](https://quarto.org/){target="_blank"}. Se recomienda tener instaladas **versiones recientes** de los 3 programas. En la sección `Setup` tienes instrucciones para instalar el software necesario para el taller
+El taller está pensado para realizar con [R](https://cran.r-project.org/){target="_blank"}. Se utilizará el IDE [RStudio](https://www.rstudio.com/products/rstudio/){target="_blank"} y [Quarto](https://quarto.org/){target="_blank"}. Se recomienda tener instaladas **versiones recientes** de los 3 programas. En la sección `Setup` tienes instrucciones para instalar el software necesario para el taller
 
 <br>
 
 
 #### 1. [Intro](./taller/01_taller_slides.html){target="_blank"}
 
-#### 2. [Creación de un blog básico](./taller/02_taller_crear-blog-basico.qmd){target="_blank"}
+#### 2. [Creación de un blog básico: mi blog en 3 minutos](./taller/02_taller_crear-blog-basico.qmd){target="_blank"}
 
-#### 3. [Tuneado básico](./taller/03_taller_tuneado-basico.qmd){target="_blank"}
+#### 3. [Tuneado básico del blog](./taller/03_taller_tuneado-basico.qmd){target="_blank"}
 
-#### 4. [Crear post](./taller/04_taller_crear-post.qmd){target="_blank"}
+#### 4. [Workflow: creando posts](./taller/04_taller_crear-post.qmd){target="_blank"}
 
-#### 5. [Convertir en web personal con blog](./taller/05_taller_convertir-en-web.qmd){target="_blank"}
+#### 5. [Convirtiendo el blog en una web académica](./taller/05_taller_convertir-en-web.qmd){target="_blank"}
 
-####  6. [Github Pages](./taller/06_taller_githubpages.qmd){target="_blank"}
+#### 6. [Escribiendo posts: practicando con Quarto](./taller/06_taller_githubpages.qmd){target="_blank"}
 
 #### 7. [Ejemplos de blogs](./taller/07_taller_ejemplos-de-blogs.qmd){target="_blank"}
+
+#### 8. [Tuneado del blog](./taller/07_taller_ejemplos-de-blogs.qmd){target="_blank"}
+
+#### 9. [Opciones de alojamiento](./taller/07_taller_ejemplos-de-blogs.qmd){target="_blank"}
+
 
 <br>
 

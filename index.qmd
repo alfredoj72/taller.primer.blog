@@ -13,4 +13,4 @@ about:
       text: Twitter
 ---
 
-Aqui quiero hacer solo una foto que cubra la pantalla
+Aquí quiero hacer solo una foto que cubra la pantalla
