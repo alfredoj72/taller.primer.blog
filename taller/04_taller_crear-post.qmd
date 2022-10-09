@@ -1,5 +1,5 @@
 ---
-title: "Tuneado básico del blog (4ª parte del taller)"
+title: "Workflow: creando posts (4ª parte del taller)"
 author: "Pedro J. Pérez"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 format: 
@@ -24,59 +24,40 @@ comments:
     theme: clean
 ---
 
-::: {.callout-note collapse="false" appearance="default" icon="false"}
-## Contexto
+::: {.callout-note collapse="true" appearance="default" icon="false"}
+#### Contexto
 
--   Tutorial preparado para el taller **"Mi primer blog con Quarto"** celebrado en Córdoba (Spain), 23-25 de noviembre de 2022. El taller se celebró el jueves 24, 15:15-17:00.
+-  Tutorial preparado para el taller **Mi primer blog con Quarto** impartido en Córdoba (Spain) durante el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/), 23-25 de noviembre de 2022.
+-   El taller está pensado para realizar con [R](https://cran.r-project.org/). Se utilizará el IDE [RStudio](https://www.rstudio.com/products/rstudio/) y [Quarto](https://quarto.org/). Se recomienda tener instaladas **versiones recientes** de los 3 programas
 
-- Este tutorial es sólo una parte del taller. Concretamente la **cuarta parte**.
-
-- En esta cuarta parte del taller vamos a **crear un nuevo post**. 
-
-- El **taller completo** está [aquí]().
+- Este tutorial es sólo una parte del taller. El **taller completo** está [aquí](https://perezp44.github.io/taller.primer.blog/).
 :::
 
 
-
-::: {.callout-important collapse="false" appearance="default" icon="false"}
-## Setup: instalación de R, RStudio y Quarto
-
--   El taller está pensado para realizar con [R](https://cran.r-project.org/), el IDE [RStudio](https://www.rstudio.com/) y [Quarto](https://quarto.org/), así que tendrán que estar instalados en tu ordenador. Es recomendable tener instaladas **versiones recientes** de los 3 programas.
-
--   Todos sabemos **instalar R y Rstudio**, si no fuese así, [aquí](https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html) tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.
-
--   Instalación de **Quarto**: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, [aquí](https://quarto.org/docs/get-started/) tienes los instaladores para los principales sistemas operativos.
-:::
-
-
-
-::: {.callout-note collapse="false" appearance="default" icon="false"}
+::: {.callout-note collapse="true" appearance="default" icon="false"}
 ## Recapitulación
 
-- En esta cuarta parte del taller vamos a **crear un nuevo post**.  
+-   En esta cuarta parte del taller veremos como crear nuevos posts para el blog.
 
-- Las anteriores secciones del taller son
+-   Las anteriores secciones del taller son:
 
-    - Intro
+    1. **Intro**: se presenta el taller
+
+    2. **Creación de un blog (básico) con Quarto**: en la segunda parte del taller vimos como crear y alojar un **blog básico** con RStudio y Quarto.
     
-    - Creación de un blog (básico) con Quarto:  en la segunda parte del taller vimos como crear un **blog básico** con RStudio y Quarto.
-    
-    - Tuneado (básico) del blog
+    3. **Tuneado básico del blog**. Modificamos ligeramente los ficheros `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
 :::
 
-
-
 <br>
 
--------------
+------------------------------------------------------------------------
 
 <br>
-
 
 ::: {.callout-tip collapse="false" appearance="default" icon="false"}
 ## ¿Qué haremos en este tutorial?
 
-- Escribir un nuevo post
+- Ver como podemos iniciar un nuevo post
 
 - Aprender a utilizar algunos truquillos de Quarto
 :::
@@ -84,4 +65,114 @@ comments:
 
 <br>
 
+El blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: "Welcome to my blog" y "Post with code". 
+
+Más adelante borraremos estos 2 posts, pero ahora mismo los vamos a utilizar de ejemplo para crear un nuevo post. Será en la sección siguiente, de momento veamos donde están los archivos que generan los posts de nuestro blog.
+
+## ¿Donde están los posts del blog?
+
+Los ficheros `.qmd` que generan los posts están en la carpeta `posts` de nuestro Rproject que genera el blog. 
+
+Cada post está en una carpeta diferente. Veámoslo:
+
+
+::: {layout-ncol=1}
+
+![Los posts residen en la carpeta `posts`](./imagenes/tt_01/img_15.png){fig-align="center"}
+:::
+
+Como ves, en la carpeta`posts` hay:
+
+  - una subcarpeta para cada post.
+    
+  - el archivo `_metadata.yml`. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los posts de la carpeta `posts`.
+
+<br>
+
+## Contenido de cada subcarpeta de `./posts/`
+
+Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la carpeta `/welcome/`:
+
+::: {layout-ncol=2}
+
+![Contenido de la carpeta `welcome` que genera el post titulado "Welcome to my blog"](./imagenes/tt_01/img_16.png){fig-align="center"}
+
+![Contenido del archivo `index.qmd`"](./imagenes/tt_01/img_17.png){fig-align="center"}
+:::
+
+Como ves, la carpeta `/welcome/` que genera el primer post del blog contiene 2 archivos: 
+
+  - `index.qmd`: es realmente el archivo que genera el post. Veremos su contenido más adelante.
+  
+  - `thumbnail.jpg`: sencillamente un archivo con una imagen que será usado al generar el post.
+  
+<br>
+
 ## Creando un nuevo post
+
+
+De momento, para generar un nuevo post lo que haremos será crear una nueva subcarpeta dentro de `./posts/`, ponerle nombre y pegar allí los archivos que hay en la carpeta de uno de los dos posts de prueba. Por ejemplo: 
+
+
+
+
+::: {.callout-important icon="false"}
+#### Tarea 1: Creando un nuevo post
+
+- Crea una nueva subcarpeta en `./posts/`
+
+- Ponle nombre, por ejemplo: "my-primer-post"
+
+- Copia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en `./posts/welcome/`  y pégalos en `./posts/my-primer-post/`; es decir, pegamos el archivo `index.qmd` y `tumbnail.jpg` en nuestra nueva carpeta.
+
+- Vuelve a regenerar el blog: `Build > Render Website` y verás que ahora nuestro blog ya tiene tres posts.
+:::
+
+
+
+- Bueno, pues ya lo tenemos, ya tenemos un nuevo post, solo que, como no hemos cambiado el contenido de `index.qmd` ni ``tumbnail.jpg`, pues nuestro tercer post de nuestro blog será idéntico al primer, al post de bienvenida.
+
+- Evidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.
+
+
+
+
+::: {.callout-important icon="false"}
+#### Tarea 2: Modificando el tercer post
+
+- Modifica el contenido de `/my-primer-post/index.qmd`
+
+- Sustituye `thumbnail.jpg` por otro archivo
+:::
+
+
+<br>
+
+
+En el **siguiente tutorial** veremos en profundidad las posibilidades que nos ofrece Quarto para escribir posts.
+
+<br>
+
+## Resumen
+
+::: {.callout-tip collapse="true" appearance="default" icon="false"}
+#### Resumen
+
+- En esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.
+
+:::
+
+
+
+
+
+<br>
+
+
+## Referencias
+
+(Algunos artículos sobre creación de blogs en Quarto)
+
+- [ Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure](https://www.ericekholm.com/posts/demo-quarto-site/)  es una web con blog . GOOOOD
+
+

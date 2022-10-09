@@ -156,16 +156,44 @@
   {
     "objectID": "taller/04_taller_crear-post.html",
     "href": "taller/04_taller_crear-post.html",
-    "title": "Tuneado básico del blog (4ª parte del taller)",
+    "title": "Workflow: creando posts (4ª parte del taller)",
     "section": "",
-    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller “Mi primer blog con Quarto” celebrado en Córdoba (Spain), 23-25 de noviembre de 2022. El taller se celebró el jueves 24, 15:15-17:00.\nEste tutorial es sólo una parte del taller. Concretamente la cuarta parte.\nEn esta cuarta parte del taller vamos a crear un nuevo post.\nEl taller completo está aquí."
+    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí.\nEl blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: “Welcome to my blog” y “Post with code”.\nMás adelante borraremos estos 2 posts, pero ahora mismo los vamos a utilizar de ejemplo para crear un nuevo post. Será en la sección siguiente, de momento veamos donde están los archivos que generan los posts de nuestro blog."
+  },
+  {
+    "objectID": "taller/04_taller_crear-post.html#donde-están-los-posts-del-blog",
+    "href": "taller/04_taller_crear-post.html#donde-están-los-posts-del-blog",
+    "title": "Workflow: creando posts (4ª parte del taller)",
+    "section": "¿Donde están los posts del blog?",
+    "text": "¿Donde están los posts del blog?\nLos ficheros .qmd que generan los posts están en la carpeta posts de nuestro Rproject que genera el blog.\nCada post está en una carpeta diferente. Veámoslo:\n\n\n\n\n\n\nLos posts residen en la carpeta posts\n\n\n\n\n\nComo ves, en la carpetaposts hay:\n\nuna subcarpeta para cada post.\nel archivo _metadata.yml. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los posts de la carpeta posts."
+  },
+  {
+    "objectID": "taller/04_taller_crear-post.html#contenido-de-cada-subcarpeta-de-.posts",
+    "href": "taller/04_taller_crear-post.html#contenido-de-cada-subcarpeta-de-.posts",
+    "title": "Workflow: creando posts (4ª parte del taller)",
+    "section": "Contenido de cada subcarpeta de ./posts/",
+    "text": "Contenido de cada subcarpeta de ./posts/\nVeamos el contenido de una de las carpetas que generan los posts, por ejemplo la carpeta /welcome/:\n\n\n\n\n\n\nContenido de la carpeta welcome que genera el post titulado “Welcome to my blog”\n\n\n\n\n\n\n\nContenido del archivo index.qmd”\n\n\n\n\n\nComo ves, la carpeta /welcome/ que genera el primer post del blog contiene 2 archivos:\n\nindex.qmd: es realmente el archivo que genera el post. Veremos su contenido más adelante.\nthumbnail.jpg: sencillamente un archivo con una imagen que será usado al generar el post."
   },
   {
     "objectID": "taller/04_taller_crear-post.html#creando-un-nuevo-post",
     "href": "taller/04_taller_crear-post.html#creando-un-nuevo-post",
-    "title": "Tuneado básico del blog (4ª parte del taller)",
+    "title": "Workflow: creando posts (4ª parte del taller)",
     "section": "Creando un nuevo post",
-    "text": "Creando un nuevo post"
+    "text": "Creando un nuevo post\nDe momento, para generar un nuevo post lo que haremos será crear una nueva subcarpeta dentro de ./posts/, ponerle nombre y pegar allí los archivos que hay en la carpeta de uno de los dos posts de prueba. Por ejemplo:\n\n\n\n\n\n\nTarea 1: Creando un nuevo post\n\n\n\n\nCrea una nueva subcarpeta en ./posts/\nPonle nombre, por ejemplo: “my-primer-post”\nCopia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en ./posts/welcome/ y pégalos en ./posts/my-primer-post/; es decir, pegamos el archivo index.qmd y tumbnail.jpg en nuestra nueva carpeta.\nVuelve a regenerar el blog: Build > Render Website y verás que ahora nuestro blog ya tiene tres posts.\n\n\n\n\nBueno, pues ya lo tenemos, ya tenemos un nuevo post, solo que, como no hemos cambiado el contenido de index.qmd ni `tumbnail.jpg, pues nuestro tercer post de nuestro blog será idéntico al primer, al post de bienvenida.\nEvidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.\n\n\n\n\n\n\n\nTarea 2: Modificando el tercer post\n\n\n\n\nModifica el contenido de /my-primer-post/index.qmd\nSustituye thumbnail.jpg por otro archivo\n\n\n\n\nEn el siguiente tutorial veremos en profundidad las posibilidades que nos ofrece Quarto para escribir posts."
+  },
+  {
+    "objectID": "taller/04_taller_crear-post.html#resumen",
+    "href": "taller/04_taller_crear-post.html#resumen",
+    "title": "Workflow: creando posts (4ª parte del taller)",
+    "section": "Resumen",
+    "text": "Resumen\n\n\n\n\n\n\nResumen\n\n\n\n\n\n\nEn esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre."
+  },
+  {
+    "objectID": "taller/04_taller_crear-post.html#referencias",
+    "href": "taller/04_taller_crear-post.html#referencias",
+    "title": "Workflow: creando posts (4ª parte del taller)",
+    "section": "Referencias",
+    "text": "Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD"
   },
   {
     "objectID": "taller/01_taller_slides.html#bienvenidos-al-taller",
