@@ -34,5 +34,17 @@
   },
   "setup.qmd": {
     "setup.html": "f97359f8"
+  },
+  "taller/06_taller_convertir-en-web.qmd": {
+    "06_taller_convertir-en-web.html": "09b4210c"
+  },
+  "taller/05_taller_escribir-posts.qmd": {
+    "05_taller_escribir-posts.html": "81b61b6d"
+  },
+  "taller/08_taller_alojamiento.qmd": {
+    "08_taller_alojamiento.html": "3eeb68c9"
+  },
+  "taller/07_taller_tuneado-del-blog.qmd": {
+    "07_taller_tuneado-del-blog.html": "422ab69e"
   }
 }

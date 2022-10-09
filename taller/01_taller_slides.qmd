@@ -41,23 +41,22 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 
 ## Estructura del taller{.smaller}
 
-- Intro y  ¿qué es Quarto?
+1. Intro y  ¿qué es Quarto?
 
-- Creación de un blog básico: mi blog en 2 minutos
+2. Creación de un blog básico: mi blog en 2 minutos
 
-- Tuneado básico del blog
+3. Tuneado básico del blog
 
-- Convirtiendo el blog en una web académica
+4. Workflow: creando posts
 
-- Workflow: creando posts
+5. Escribiendo un post largito: practicando con Quarto
 
-- Escribiendo un post largito: practicando con Quarto
+6. Convirtiendo el blog en una web académica
 
-- Tuneado de la web
+7. Tuneado de la web: ejemplos de blogs
 
-- Gestión y publicación de la web/blog: Quarto Pub, Github Pages
+8. Gestión y publicación de la web/blog: Quarto Pub, Github Pages
 
-- Ejemplos de blogs
 
 
 # Enlaces para Fran y compis{.smaller}
@@ -121,10 +120,9 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 - Productive procrastination
 
 
-
 Opiniones más elaboradas en:  [Rebeca Carter](https://www.rebeccabarter.com/blog/2020-02-03_blogger/#why-start-a-blog) o [este](https://jozef.io/r914-one-year-r-blogging/) 
 
-
+- No fear y no tiene xq estar perfecto
 
 ## Ejemplos de blogs
 

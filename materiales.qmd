@@ -15,17 +15,15 @@ El taller está pensado para realizar con [R](https://cran.r-project.org/){targe
 
 #### 3. [Tuneado básico del blog](./taller/03_taller_tuneado-basico.qmd){target="_blank"}
 
-#### 4. [Workflow: creando posts](./taller/04_taller_crear-post.qmd){target="_blank"}
+#### 4. [Workflow: ¿cómo crear un post?](./taller/04_taller_crear-post.qmd){target="_blank"}
 
-#### 5. [Convirtiendo el blog en una web académica](./taller/05_taller_convertir-en-web.qmd){target="_blank"}
+#### 5. [Escribiendo posts: practicando con Quarto](./taller/05_taller_escribir-posts.qmd){target="_blank"}
 
-#### 6. [Escribiendo posts: practicando con Quarto](./taller/06_taller_githubpages.qmd){target="_blank"}
+#### 6. [Convirtiendo el blog en una web académica](./taller/06_taller_convertir-en-web.qmd){target="_blank"}
 
-#### 7. [Ejemplos de blogs](./taller/07_taller_ejemplos-de-blogs.qmd){target="_blank"}
+#### 7. [Tuneado del blog](./taller/07_tuneado-del-blog.qmd){target="_blank"}
 
-#### 8. [Tuneado del blog](./taller/07_taller_ejemplos-de-blogs.qmd){target="_blank"}
-
-#### 9. [Opciones de alojamiento](./taller/07_taller_ejemplos-de-blogs.qmd){target="_blank"}
+#### 8. [Opciones de alojamiento](./taller/08_taller_alojamiento.qmd){target="_blank"}
 
 
 <br>

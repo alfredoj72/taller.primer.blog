@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Pedro J. Pérez">
-<meta name="dcterms.date" content="2022-10-04">
+<meta name="dcterms.date" content="2022-10-09">
 
-<title>Web del taller Mi primer blog con Quarto (WIP) - Tuneado básico del blog (4ª parte del taller)</title>
+<title>Web del taller Mi primer blog con Quarto (WIP) - Workflow: ¿cómo crear un post? (4ª parte del taller)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,9 +70,11 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/styles.css">
-<meta property="og:title" content="Web del taller Mi primer blog con Quarto (WIP) - Tuneado básico del blog (4ª parte del taller)">
+<meta property="og:title" content="Web del taller Mi primer blog con Quarto (WIP) - Workflow: ¿cómo crear un post? (4ª parte del taller)">
+<meta property="og:description" content="El blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: “Welcome to my blog” y “Post with code”.">
 <meta property="og:site-name" content="Web del taller `Mi primer blog con Quarto` (WIP)">
-<meta name="twitter:title" content="Web del taller Mi primer blog con Quarto (WIP) - Tuneado básico del blog (4ª parte del taller)">
+<meta name="twitter:title" content="Web del taller Mi primer blog con Quarto (WIP) - Workflow: ¿cómo crear un post? (4ª parte del taller)">
+<meta name="twitter:description" content="El blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: “Welcome to my blog” y “Post with code”.">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -141,7 +143,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#creando-un-nuevo-post" id="toc-creando-un-nuevo-post" class="nav-link active" data-scroll-target="#creando-un-nuevo-post">Creando un nuevo post</a></li>
+  <li><a href="#donde-están-los-posts-del-blog" id="toc-donde-están-los-posts-del-blog" class="nav-link active" data-scroll-target="#donde-están-los-posts-del-blog">¿Donde están los posts del blog?</a></li>
+  <li><a href="#contenido-de-cada-subcarpeta-de-.posts" id="toc-contenido-de-cada-subcarpeta-de-.posts" class="nav-link" data-scroll-target="#contenido-de-cada-subcarpeta-de-.posts">Contenido de cada subcarpeta de <code>./posts/</code></a></li>
+  <li><a href="#creando-un-nuevo-post" id="toc-creando-un-nuevo-post" class="nav-link" data-scroll-target="#creando-un-nuevo-post">Creando un nuevo post</a></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen">Resumen</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
   </ul>
 </nav>
 </nav>
@@ -153,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tuneado básico del blog (4ª parte del taller)</h1>
+<h1 class="title">Workflow: ¿cómo crear un post? (4ª parte del taller)</h1>
 </div>
 
 
@@ -170,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 4, 2022</p>
+      <p class="date">October 9, 2022</p>
     </div>
   </div>
     
@@ -180,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -189,39 +195,18 @@ Contexto
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>Tutorial preparado para el taller <strong>“Mi primer blog con Quarto”</strong> celebrado en Córdoba (Spain), 23-25 de noviembre de 2022. El taller se celebró el jueves 24, 15:15-17:00.</p></li>
-<li><p>Este tutorial es sólo una parte del taller. Concretamente la <strong>cuarta parte</strong>.</p></li>
-<li><p>En esta cuarta parte del taller vamos a <strong>crear un nuevo post</strong>.</p></li>
-<li><p>El <strong>taller completo</strong> está <a href="">aquí</a>.</p></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="callout-important callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Setup: instalación de R, RStudio y Quarto
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<ul>
-<li><p>El taller está pensado para realizar con <a href="https://cran.r-project.org/">R</a>, el IDE <a href="https://www.rstudio.com/">RStudio</a> y <a href="https://quarto.org/">Quarto</a>, así que tendrán que estar instalados en tu ordenador. Es recomendable tener instaladas <strong>versiones recientes</strong> de los 3 programas.</p></li>
-<li><p>Todos sabemos <strong>instalar R y Rstudio</strong>, si no fuese así, <a href="https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html">aquí</a> tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.</p></li>
-<li><p>Instalación de <strong>Quarto</strong>: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, <a href="https://quarto.org/docs/get-started/">aquí</a> tienes los instaladores para los principales sistemas operativos.</p></li>
+<li><p>Tutorial preparado para el taller <strong>Mi primer blog con Quarto</strong> impartido en Córdoba (Spain) durante el <a href="http://r-es.org/12jr/">I Congreso &amp; XII Jornadas de Usuarios de R</a>, 23-25 de noviembre de 2022.</p></li>
+<li><p>El taller está pensado para realizar con <a href="https://cran.r-project.org/">R</a>. Se utilizará el IDE <a href="https://www.rstudio.com/products/rstudio/">RStudio</a> y <a href="https://quarto.org/">Quarto</a>. Se recomienda tener instaladas <strong>versiones recientes</strong> de los 3 programas</p></li>
+<li><p>Este tutorial es sólo una parte del taller. El <strong>taller completo</strong> está <a href="https://perezp44.github.io/taller.primer.blog/">aquí</a>.</p></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -230,16 +215,16 @@ Recapitulación
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>En esta cuarta parte del taller vamos a <strong>crear un nuevo post</strong>.</p></li>
-<li><p>Las anteriores secciones del taller son</p>
-<ul>
-<li><p>Intro</p></li>
-<li><p>Creación de un blog (básico) con Quarto: en la segunda parte del taller vimos como crear un <strong>blog básico</strong> con RStudio y Quarto.</p></li>
-<li><p>Tuneado (básico) del blog</p></li>
-</ul></li>
+<li><p>En esta cuarta parte del taller veremos como crear nuevos posts para el blog.</p></li>
+<li><p>Las anteriores secciones del taller son:</p>
+<ol type="1">
+<li><p><strong>Intro</strong>: se presenta el taller</p></li>
+<li><p><strong>Creación de un blog (básico) con Quarto</strong>: en la segunda parte del taller vimos como crear y alojar un <strong>blog básico</strong> con RStudio y Quarto.</p></li>
+<li><p><strong>Tuneado básico del blog</strong>. Modificamos ligeramente los ficheros <code>_quarto.yml</code>, <code>index.qmd</code>, <code>about.qmd</code> y <code>styles.css</code>.</p></li>
+</ol></li>
 </ul>
 </div>
 </div>
@@ -248,7 +233,7 @@ Recapitulación
 <hr>
 <p><br></p>
 <div class="callout-tip callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -257,18 +242,144 @@ Recapitulación
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>Escribir un nuevo post</p></li>
+<li><p>Ver como podemos iniciar un nuevo post</p></li>
 <li><p>Aprender a utilizar algunos truquillos de Quarto</p></li>
 </ul>
 </div>
 </div>
 </div>
 <p><br></p>
+<p>El blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: “Welcome to my blog” y “Post with code”.</p>
+<p>Más adelante borraremos estos 2 posts, pero ahora mismo los vamos a utilizar de ejemplo para crear un nuevo post. Será en la sección siguiente, de momento veamos donde están los archivos que generan los posts de nuestro blog.</p>
+<section id="donde-están-los-posts-del-blog" class="level2">
+<h2 class="anchored" data-anchor-id="donde-están-los-posts-del-blog">¿Donde están los posts del blog?</h2>
+<p>Los ficheros <code>.qmd</code> que generan los posts están en la carpeta <code>posts</code> de nuestro Rproject que genera el blog.</p>
+<p>Cada post está en una carpeta diferente. Veámoslo:</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_15.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Los posts residen en la carpeta <code>posts</code></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Como ves, en la carpeta<code>posts</code> hay:</p>
+<ul>
+<li><p>una subcarpeta para cada post.</p></li>
+<li><p>el archivo <code>_metadata.yml</code>. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los posts de la carpeta <code>posts</code>.</p></li>
+</ul>
+<p><br></p>
+</section>
+<section id="contenido-de-cada-subcarpeta-de-.posts" class="level2">
+<h2 class="anchored" data-anchor-id="contenido-de-cada-subcarpeta-de-.posts">Contenido de cada subcarpeta de <code>./posts/</code></h2>
+<p>Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la carpeta <code>/welcome/</code>:</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_16.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Contenido de la carpeta <code>welcome</code> que genera el post titulado “Welcome to my blog”</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_17.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Contenido del archivo <code>index.qmd</code>”</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Como ves, la carpeta <code>/welcome/</code> que genera el primer post del blog contiene 2 archivos:</p>
+<ul>
+<li><p><code>index.qmd</code>: es realmente el archivo que genera el post. Veremos su contenido más adelante.</p></li>
+<li><p><code>thumbnail.jpg</code>: sencillamente un archivo con una imagen que será usado al generar el post.</p></li>
+</ul>
+<p><br></p>
+</section>
 <section id="creando-un-nuevo-post" class="level2">
 <h2 class="anchored" data-anchor-id="creando-un-nuevo-post">Creando un nuevo post</h2>
+<p>De momento, para generar un nuevo post lo que haremos será crear una nueva subcarpeta dentro de <code>./posts/</code>, ponerle nombre y pegar allí los archivos que hay en la carpeta de uno de los dos posts de prueba. Por ejemplo:</p>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 1: Creando un nuevo post
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Crea una nueva subcarpeta en <code>./posts/</code></p></li>
+<li><p>Ponle nombre, por ejemplo: “my-primer-post”</p></li>
+<li><p>Copia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en <code>./posts/welcome/</code> y pégalos en <code>./posts/my-primer-post/</code>; es decir, pegamos el archivo <code>index.qmd</code> y <code>tumbnail.jpg</code> en nuestra nueva carpeta.</p></li>
+<li><p>Vuelve a regenerar el blog: <code>Build &gt; Render Website</code> y verás que ahora nuestro blog ya tiene tres posts.</p></li>
+</ul>
+</div>
+</div>
+<ul>
+<li><p>Bueno, pues ya lo tenemos, ya tenemos un nuevo post, solo que, como no hemos cambiado el contenido de <code>index.qmd</code> ni `<code>tumbnail.jpg</code>, pues nuestro tercer post de nuestro blog será idéntico al primer, al post de bienvenida.</p></li>
+<li><p>Evidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.</p></li>
+</ul>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 2: Modificando el tercer post
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Modifica el contenido de <code>/my-primer-post/index.qmd</code></p></li>
+<li><p>Sustituye <code>thumbnail.jpg</code> por otro archivo</p></li>
+</ul>
+</div>
+</div>
+<p><br></p>
+<p>En el <strong>siguiente tutorial</strong> veremos en profundidad las posibilidades que nos ofrece Quarto para escribir posts.</p>
+<p><br></p>
+</section>
+<section id="resumen" class="level2">
+<h2 class="anchored" data-anchor-id="resumen">Resumen</h2>
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Resumen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>En esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>(Algunos artículos sobre creación de blogs en Quarto)</p>
+<ul>
+<li><a href="https://www.ericekholm.com/posts/demo-quarto-site/">Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure</a> es una web con blog . GOOOOD</li>
+</ul>
 
 
 </section>
