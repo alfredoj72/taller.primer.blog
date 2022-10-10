@@ -21,7 +21,7 @@ El taller está pensado para realizar con [R](https://cran.r-project.org/){targe
 
 #### 6. [Convirtiendo el blog en una web académica](./taller/06_taller_convertir-en-web.qmd){target="_blank"}
 
-#### 7. [Tuneado del blog](./taller/07_tuneado-del-blog.qmd){target="_blank"}
+#### 7. [Tuneado del blog](./taller/07_taller_tuneado-del-blog.qmd){target="_blank"}
 
 #### 8. [Opciones de alojamiento](./taller/08_taller_alojamiento.qmd){target="_blank"}
 
