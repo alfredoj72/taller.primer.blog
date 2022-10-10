@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Pedro J. Pérez">
-<meta name="dcterms.date" content="2022-10-09">
+<meta name="dcterms.date" content="2022-10-10">
 
-<title>Web del taller Mi primer blog con Quarto (WIP) - Workflow: ¿cómo crear un post? (4ª parte del taller)</title>
+<title>Web del taller Mi primer blog con Quarto (WIP) - Escribiendo posts: practicando con Quarto (5ª parte del taller)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,11 +70,11 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/styles.css">
-<meta property="og:title" content="Web del taller Mi primer blog con Quarto (WIP) - Workflow: ¿cómo crear un post? (4ª parte del taller)">
-<meta property="og:description" content="El blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: “Welcome to my blog” y “Post with code”.">
+<meta property="og:title" content="Web del taller Mi primer blog con Quarto (WIP) - Escribiendo posts: practicando con Quarto (5ª parte del taller)">
+<meta property="og:description" content="En el tutorial anterior aprendimos a generar nuevos post para nuestro blog.">
 <meta property="og:site-name" content="Web del taller `Mi primer blog con Quarto` (WIP)">
-<meta name="twitter:title" content="Web del taller Mi primer blog con Quarto (WIP) - Workflow: ¿cómo crear un post? (4ª parte del taller)">
-<meta name="twitter:description" content="El blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: “Welcome to my blog” y “Post with code”.">
+<meta name="twitter:title" content="Web del taller Mi primer blog con Quarto (WIP) - Escribiendo posts: practicando con Quarto (5ª parte del taller)">
+<meta name="twitter:description" content="En el tutorial anterior aprendimos a generar nuevos post para nuestro blog.">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -143,7 +143,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#donde-están-los-posts-del-blog" id="toc-donde-están-los-posts-del-blog" class="nav-link active" data-scroll-target="#donde-están-los-posts-del-blog">¿Donde están los posts del blog?</a></li>
+  <li><a href="#creamos-un-nuevo-post" id="toc-creamos-un-nuevo-post" class="nav-link active" data-scroll-target="#creamos-un-nuevo-post">1. Creamos un nuevo post</a></li>
+  <li><a href="#escribiendo-el-post" id="toc-escribiendo-el-post" class="nav-link" data-scroll-target="#escribiendo-el-post">2. Escribiendo el post</a></li>
   <li><a href="#contenido-de-cada-subcarpeta-de-.posts" id="toc-contenido-de-cada-subcarpeta-de-.posts" class="nav-link" data-scroll-target="#contenido-de-cada-subcarpeta-de-.posts">Contenido de cada subcarpeta de <code>./posts/</code></a></li>
   <li><a href="#creando-un-nuevo-post" id="toc-creando-un-nuevo-post" class="nav-link" data-scroll-target="#creando-un-nuevo-post">Creando un nuevo post</a></li>
   <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen">Resumen</a></li>
@@ -159,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Workflow: ¿cómo crear un post? (4ª parte del taller)</h1>
+<h1 class="title">Escribiendo posts: practicando con Quarto (5ª parte del taller)</h1>
 </div>
 
 
@@ -176,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 9, 2022</p>
+      <p class="date">October 10, 2022</p>
     </div>
   </div>
     
@@ -218,12 +219,13 @@ Recapitulación
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>En esta cuarta parte del taller veremos como crear nuevos posts para el blog.</p></li>
+<li><p>En esta quinta parte del taller veremos como escribir nuestros posts con Quarto.</p></li>
 <li><p>Las anteriores secciones del taller son:</p>
 <ol type="1">
 <li><p><strong>Intro</strong>: se presenta el taller</p></li>
 <li><p><strong>Creación de un blog (básico) con Quarto</strong>: en la segunda parte del taller vimos como crear y alojar un <strong>blog básico</strong> con RStudio y Quarto.</p></li>
 <li><p><strong>Tuneado básico del blog</strong>. Modificamos ligeramente los ficheros <code>_quarto.yml</code>, <code>index.qmd</code>, <code>about.qmd</code> y <code>styles.css</code>.</p></li>
+<li><p><strong>Workflow: ¿cómo crear un post?</strong>. Vimos como se generan nuevos posts para nuestro blog.</p></li>
 </ol></li>
 </ul>
 </div>
@@ -245,19 +247,41 @@ Recapitulación
 <div id="callout-3" class="callout-3-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>Ver como podemos iniciar un nuevo post</p></li>
+<li><p>Ver como escribir nuestro posts con Quarto, con ficheros <code>.qmd</code></p></li>
 <li><p>Aprender a utilizar algunos truquillos de Quarto</p></li>
 </ul>
 </div>
 </div>
 </div>
 <p><br></p>
-<p>El blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: “Welcome to my blog” y “Post with code”.</p>
-<p>Más adelante borraremos estos 2 posts, pero ahora mismo los vamos a utilizar de ejemplo para crear un nuevo post. Será en la sección siguiente, de momento veamos donde están los archivos que generan los posts de nuestro blog.</p>
-<section id="donde-están-los-posts-del-blog" class="level2">
-<h2 class="anchored" data-anchor-id="donde-están-los-posts-del-blog">¿Donde están los posts del blog?</h2>
-<p>Los ficheros <code>.qmd</code> que generan los posts están en la carpeta <code>posts</code> de nuestro Rproject que genera el blog.</p>
-<p>Cada post está en una carpeta diferente. Veámoslo:</p>
+<p>En el tutorial anterior aprendimos a generar nuevos post para nuestro blog. Ahora <strong>aprenderemos a escribir esos post</strong>; veremos las <strong>posibilidades que nos ofrece Quarto</strong> a la hora de escribir y formatear nuestros posts.</p>
+<section id="creamos-un-nuevo-post" class="level2">
+<h2 class="anchored" data-anchor-id="creamos-un-nuevo-post">1. Creamos un nuevo post</h2>
+<p>Vamos a crear un nuevo post y esta vez si dedicaremos un tiempo a escribirlo para documentar algunas de las posibilidades que nos ofrece Quarto para escribir documentos <code>.html</code>.</p>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 1: Creamos un nuevo post
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ya sabemos que para crear un nuevo post tenemos que:</p>
+<ul>
+<li><p>Crear una nueva subcarpeta en <code>./posts/</code></p></li>
+<li><p>Ponerle nombre, por ejemplo: “escribir-con-Quarto”</p></li>
+<li><p>Copia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en <code>./posts/welcome/</code> y pégalos en <code>./posts/escribir-con-Quarto/</code>.</p></li>
+<li><p>Vuelve a regenerar el blog: <code>Build &gt; Render Website</code> y verás que ahora nuestro blog ya tiene cuatro posts.</p></li>
+</ul>
+</div>
+</div>
+<p>Bien, ya tenemos un nuevo post. Vamos a darle contenido.</p>
+<p><br></p>
+</section>
+<section id="escribiendo-el-post" class="level2">
+<h2 class="anchored" data-anchor-id="escribiendo-el-post">2. Escribiendo el post</h2>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
@@ -355,7 +379,7 @@ Tarea 2: Modificando el tercer post
 <section id="resumen" class="level2">
 <h2 class="anchored" data-anchor-id="resumen">Resumen</h2>
 <div class="callout-tip callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -364,7 +388,7 @@ Resumen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>En esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.</li>

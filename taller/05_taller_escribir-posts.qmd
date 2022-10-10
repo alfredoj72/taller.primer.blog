@@ -1,5 +1,5 @@
 ---
-title: "Workflow: ¿cómo crear un post? (4ª parte del taller)"
+title: "Escribiendo posts: practicando con Quarto (5ª parte del taller)"
 author: "Pedro J. Pérez"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 format: 
@@ -37,7 +37,7 @@ comments:
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
 ## Recapitulación
 
--   En esta cuarta parte del taller veremos como crear nuevos posts para el blog.
+-   En esta quinta parte del taller veremos como escribir nuestros posts con Quarto.
 
 -   Las anteriores secciones del taller son:
 
@@ -46,6 +46,8 @@ comments:
     2. **Creación de un blog (básico) con Quarto**: en la segunda parte del taller vimos como crear y alojar un **blog básico** con RStudio y Quarto.
     
     3. **Tuneado básico del blog**. Modificamos ligeramente los ficheros `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
+    
+    4. **Workflow: ¿cómo crear un post?**. Vimos como se generan nuevos posts para nuestro blog.
 :::
 
 <br>
@@ -57,7 +59,7 @@ comments:
 ::: {.callout-tip collapse="false" appearance="default" icon="false"}
 ## ¿Qué haremos en este tutorial?
 
-- Ver como podemos iniciar un nuevo post
+- Ver como escribir nuestro posts con Quarto, con ficheros `.qmd`
 
 - Aprender a utilizar algunos truquillos de Quarto
 :::
@@ -65,15 +67,38 @@ comments:
 
 <br>
 
-El blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: "Welcome to my blog" y "Post with code". 
+En el tutorial anterior aprendimos a generar nuevos post para nuestro blog. Ahora **aprenderemos a escribir esos post**; veremos las **posibilidades que nos ofrece Quarto** a la hora de escribir y formatear nuestros posts. 
 
-Más adelante borraremos estos 2 posts, pero ahora mismo los vamos a utilizar de ejemplo para crear un nuevo post. Será en la sección siguiente, de momento veamos donde están los archivos que generan los posts de nuestro blog.
 
-## ¿Donde están los posts del blog?
 
-Los ficheros `.qmd` que generan los posts están en la carpeta `posts` de nuestro Rproject que genera el blog. 
+## 1. Creamos un nuevo post
 
-Cada post está en una carpeta diferente. Veámoslo:
+Vamos a crear un nuevo post y esta vez si dedicaremos un tiempo a escribirlo para documentar algunas de las posibilidades que nos ofrece Quarto para escribir documentos `.html`.
+
+
+::: {.callout-important icon="false"}
+#### Tarea 1: Creamos un nuevo post
+
+Ya sabemos que para crear un nuevo post tenemos que: 
+
+- Crear una nueva subcarpeta en `./posts/`
+
+- Ponerle nombre, por ejemplo: "escribir-con-Quarto"
+
+- Copia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en `./posts/welcome/`  y pégalos en `./posts/escribir-con-Quarto/`.
+
+- Vuelve a regenerar el blog: `Build > Render Website` y verás que ahora nuestro blog ya tiene cuatro posts.
+:::
+
+
+Bien, ya tenemos un nuevo post. Vamos a darle contenido.
+
+<br>
+
+## 2. Escribiendo el post
+
+
+
 
 
 ::: {layout-ncol=1}

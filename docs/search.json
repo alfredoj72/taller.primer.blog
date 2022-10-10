@@ -1,66 +1,17 @@
 [
   {
-    "objectID": "taller/06_taller_convertir-en-web.html",
-    "href": "taller/06_taller_convertir-en-web.html",
-    "title": "Tuneado básico del blog (4ª parte del taller)",
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Setup",
     "section": "",
-    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller “Mi primer blog con Quarto” celebrado en Córdoba (Spain), 23-25 de noviembre de 2022. El taller se celebró el jueves 24, 15:15-17:00.\nEste tutorial es sólo una parte del taller. Concretamente la cuarta parte.\nEn esta cuarta parte del taller vamos a crear un nuevo post.\nEl taller completo está aquí."
+    "text": "Instalación de R, RStudio y Quarto\n\n\n\n\n\n\nTodos sabemos instalar R y Rstudio, si no fuese así, aquí tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.\nInstalación de Quarto: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, aquí tienes los instaladores para los principales sistemas operativos."
   },
   {
-    "objectID": "taller/06_taller_convertir-en-web.html#creando-un-nuevo-post",
-    "href": "taller/06_taller_convertir-en-web.html#creando-un-nuevo-post",
-    "title": "Tuneado básico del blog (4ª parte del taller)",
-    "section": "Creando un nuevo post",
-    "text": "Creando un nuevo post"
-  },
-  {
-    "objectID": "taller/06_taller_convertir-en-web.html#truco",
-    "href": "taller/06_taller_convertir-en-web.html#truco",
-    "title": "Tuneado básico del blog (4ª parte del taller)",
-    "section": "TRUCO",
-    "text": "TRUCO\n\ncasi mejor hacer esto despues de crear un post\nvamos a transformar nuestro blog en una página web personal con blog\npara ello solo hay que :\n\ncambiar el nombre del fichero index.qmd a blog.qmd\ncambiar el nombre del fichero about.qmd a index.qmd"
-  },
-  {
-    "objectID": "taller/05_taller_escribir-posts.html",
-    "href": "taller/05_taller_escribir-posts.html",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "objectID": "materiales.html",
+    "href": "materiales.html",
+    "title": "Web del taller `Mi primer blog con Quarto` (WIP)",
     "section": "",
-    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí.\nEl blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: “Welcome to my blog” y “Post with code”.\nMás adelante borraremos estos 2 posts, pero ahora mismo los vamos a utilizar de ejemplo para crear un nuevo post. Será en la sección siguiente, de momento veamos donde están los archivos que generan los posts de nuestro blog."
-  },
-  {
-    "objectID": "taller/05_taller_escribir-posts.html#donde-están-los-posts-del-blog",
-    "href": "taller/05_taller_escribir-posts.html#donde-están-los-posts-del-blog",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
-    "section": "¿Donde están los posts del blog?",
-    "text": "¿Donde están los posts del blog?\nLos ficheros .qmd que generan los posts están en la carpeta posts de nuestro Rproject que genera el blog.\nCada post está en una carpeta diferente. Veámoslo:\n\n\n\n\n\n\nLos posts residen en la carpeta posts\n\n\n\n\n\nComo ves, en la carpetaposts hay:\n\nuna subcarpeta para cada post.\nel archivo _metadata.yml. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los posts de la carpeta posts."
-  },
-  {
-    "objectID": "taller/05_taller_escribir-posts.html#contenido-de-cada-subcarpeta-de-.posts",
-    "href": "taller/05_taller_escribir-posts.html#contenido-de-cada-subcarpeta-de-.posts",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
-    "section": "Contenido de cada subcarpeta de ./posts/",
-    "text": "Contenido de cada subcarpeta de ./posts/\nVeamos el contenido de una de las carpetas que generan los posts, por ejemplo la carpeta /welcome/:\n\n\n\n\n\n\nContenido de la carpeta welcome que genera el post titulado “Welcome to my blog”\n\n\n\n\n\n\n\nContenido del archivo index.qmd”\n\n\n\n\n\nComo ves, la carpeta /welcome/ que genera el primer post del blog contiene 2 archivos:\n\nindex.qmd: es realmente el archivo que genera el post. Veremos su contenido más adelante.\nthumbnail.jpg: sencillamente un archivo con una imagen que será usado al generar el post."
-  },
-  {
-    "objectID": "taller/05_taller_escribir-posts.html#creando-un-nuevo-post",
-    "href": "taller/05_taller_escribir-posts.html#creando-un-nuevo-post",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
-    "section": "Creando un nuevo post",
-    "text": "Creando un nuevo post\nDe momento, para generar un nuevo post lo que haremos será crear una nueva subcarpeta dentro de ./posts/, ponerle nombre y pegar allí los archivos que hay en la carpeta de uno de los dos posts de prueba. Por ejemplo:\n\n\n\n\n\n\nTarea 1: Creando un nuevo post\n\n\n\n\nCrea una nueva subcarpeta en ./posts/\nPonle nombre, por ejemplo: “my-primer-post”\nCopia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en ./posts/welcome/ y pégalos en ./posts/my-primer-post/; es decir, pegamos el archivo index.qmd y tumbnail.jpg en nuestra nueva carpeta.\nVuelve a regenerar el blog: Build > Render Website y verás que ahora nuestro blog ya tiene tres posts.\n\n\n\n\nBueno, pues ya lo tenemos, ya tenemos un nuevo post, solo que, como no hemos cambiado el contenido de index.qmd ni `tumbnail.jpg, pues nuestro tercer post de nuestro blog será idéntico al primer, al post de bienvenida.\nEvidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.\n\n\n\n\n\n\n\nTarea 2: Modificando el tercer post\n\n\n\n\nModifica el contenido de /my-primer-post/index.qmd\nSustituye thumbnail.jpg por otro archivo\n\n\n\n\nEn el siguiente tutorial veremos en profundidad las posibilidades que nos ofrece Quarto para escribir posts."
-  },
-  {
-    "objectID": "taller/05_taller_escribir-posts.html#resumen",
-    "href": "taller/05_taller_escribir-posts.html#resumen",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
-    "section": "Resumen",
-    "text": "Resumen\n\n\n\n\n\n\nResumen\n\n\n\n\n\n\nEn esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre."
-  },
-  {
-    "objectID": "taller/05_taller_escribir-posts.html#referencias",
-    "href": "taller/05_taller_escribir-posts.html#referencias",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
-    "section": "Referencias",
-    "text": "Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD"
+    "text": "El taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas. En la sección Setup tienes instrucciones para instalar el software necesario para el taller\n\n\n1. Intro\n\n\n2. Creación de un blog básico: mi blog en 3 minutos\n\n\n3. Tuneado básico del blog\n\n\n4. Workflow: ¿cómo crear un post?\n\n\n5. Escribiendo posts: practicando con Quarto\n\n\n6. Convirtiendo el blog en una web académica\n\n\n7. Tuneado del blog\n\n\n8. Opciones de alojamiento\n\nSeguramente usaremos esta Etherpad."
   },
   {
     "objectID": "taller/08_taller_alojamiento.html",
@@ -77,149 +28,51 @@
     "text": "Creando un nuevo post"
   },
   {
-    "objectID": "taller/02_taller_crear-blog-basico.html",
-    "href": "taller/02_taller_crear-blog-basico.html",
-    "title": "Creación de un blog básico con Quarto",
+    "objectID": "taller/05_taller_escribir-posts.html",
+    "href": "taller/05_taller_escribir-posts.html",
+    "title": "Escribiendo posts: practicando con Quarto (5ª parte del taller)",
     "section": "",
-    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí."
+    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí.\nEn el tutorial anterior aprendimos a generar nuevos post para nuestro blog. Ahora aprenderemos a escribir esos post; veremos las posibilidades que nos ofrece Quarto a la hora de escribir y formatear nuestros posts."
   },
   {
-    "objectID": "taller/02_taller_crear-blog-basico.html#creación-de-un-rproject-para-un-blog",
-    "href": "taller/02_taller_crear-blog-basico.html#creación-de-un-rproject-para-un-blog",
-    "title": "Creación de un blog básico con Quarto",
-    "section": "1 Creación de un Rproject (para un blog)",
-    "text": "1 Creación de un Rproject (para un blog)\nVamos a crear el blog con R y RStudio; concretamente trabajaremos utilizando un Rproject, así que el primer paso para crear nuestro blog es crear un Rproject donde se alojaran los ficheros que necesitemos para nuestro blog.\n\n\n\n\n\n\nTarea 1: Creación del Rproject que generará el blog\n\n\n\n\nEn RStudio sigue la siguiente ruta de menús:\nFile > New Project > New Directory > Quarto Blog\nAl hacerlo se creará una carpeta, un Rproject, con todo lo necesario para crear un blog.\nEl nombre que le he puesto a la carpeta/Rproject es blog_prueba_00\n\n\n\nDe momento aún no tenemos el blog, solo hemos creado un Rproject pero, ya tenemos, dentro de la carpeta del Rproject, la estructura de carpetas y archivos necesarios para crearlo.\nCuando creemos el blog, será un blog sencillito, vamos con lo mínimo, pero un blog.\nAntes de crear el blog hagamos un pequeño repaso al contenido del Rproject, veamos su estructura de carpetas y archivos."
+    "objectID": "taller/05_taller_escribir-posts.html#creamos-un-nuevo-post",
+    "href": "taller/05_taller_escribir-posts.html#creamos-un-nuevo-post",
+    "title": "Escribiendo posts: practicando con Quarto (5ª parte del taller)",
+    "section": "1. Creamos un nuevo post",
+    "text": "1. Creamos un nuevo post\nVamos a crear un nuevo post y esta vez si dedicaremos un tiempo a escribirlo para documentar algunas de las posibilidades que nos ofrece Quarto para escribir documentos .html.\n\n\n\n\n\n\nTarea 1: Creamos un nuevo post\n\n\n\nYa sabemos que para crear un nuevo post tenemos que:\n\nCrear una nueva subcarpeta en ./posts/\nPonerle nombre, por ejemplo: “escribir-con-Quarto”\nCopia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en ./posts/welcome/ y pégalos en ./posts/escribir-con-Quarto/.\nVuelve a regenerar el blog: Build > Render Website y verás que ahora nuestro blog ya tiene cuatro posts.\n\n\n\nBien, ya tenemos un nuevo post. Vamos a darle contenido."
   },
   {
-    "objectID": "taller/02_taller_crear-blog-basico.html#contenido-del-rproject",
-    "href": "taller/02_taller_crear-blog-basico.html#contenido-del-rproject",
-    "title": "Creación de un blog básico con Quarto",
-    "section": "2 Contenido del Rproject",
-    "text": "2 Contenido del Rproject\nEl Rproject que acabamos de crear y que permitirá crear el blog tiene esta estructura de archivos y carpetas:\n\n\n\n\n\n\n\n\n\n\n\nFigura 1: Estructura del Rproject blog_prueba_00\n\n\nComo ves en la figura anterior, el Rproject contiene 6 archivos y una subcarpeta. Voy a dividirlos en dos categorías:\n\nlos que no son importantes (al menos ahora mismo)\nLos que sí son importantes ahora mismo, serán 3 archivos\n\n\n\n2.1 Archivos “no importantes”\n\n\n\n\nEl archivo blog_prueba_00.Rproj\n\n\n\nNo es un archivo importante para el blog. Este archivo simplemente permite que RStudio reconozca la carpeta blog_prueba_00 como un Rproject.\n\n\n\n\n\n\n\nEl archivo styles.css\n\n\n\nSí será un archivo importante, pero lo veremos más adelante. Este archivo permitirá mediante CSS cambiar la estética de nuestro blog.\n\n\n\n\n\n\n\nEl archivo profile.jpg\n\n\n\nEs sencillamente una foto. La tendremos que sustituir por una foto nuestra en la que estemos guapetes.\n\n\n\n\n\n\n\nLa carpeta posts\n\n\n\nSerá muy importante, pero la veremos más adelante. Esta carpeta es la que contendrá los posts que vayamos escribiendo.\n\n\n\n\n\n\n\n\n\n\nDentro de la carpeta posts\n\n\n\n\n\n\n\n\n\nDentro del post welcome\n\n\n\n\n\n\n\n\n\n2.2 Archivos sí importantes\nNos quedan 3 archivos que será en los que nos concentremos ahora mismo, bueno, enseguida.\n\n\n\n\n_quarto_yml\n\n\n\nEs el archivo que especifica como será la estructura y apariencia de nuestro blog.\n\n\n\n\n\n\n\nabout.qmd\n\n\n\nUn archivo .qmd que generará el archivo about.html y que será una de las páginas de nuestro blog; precisamente en esta página se vera nuestra foto.\n\n\n\n\n\n\n\nindex.qmd\n\n\n\nOtro archivo .qmd que generará el archivo index.html y que será la “landing page” o Home de nuestro blog."
+    "objectID": "taller/05_taller_escribir-posts.html#escribiendo-el-post",
+    "href": "taller/05_taller_escribir-posts.html#escribiendo-el-post",
+    "title": "Escribiendo posts: practicando con Quarto (5ª parte del taller)",
+    "section": "2. Escribiendo el post",
+    "text": "2. Escribiendo el post\n\n\n\n\n\n\nLos posts residen en la carpeta posts\n\n\n\n\n\nComo ves, en la carpetaposts hay:\n\nuna subcarpeta para cada post.\nel archivo _metadata.yml. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los posts de la carpeta posts."
   },
   {
-    "objectID": "taller/02_taller_crear-blog-basico.html#creación-del-blog",
-    "href": "taller/02_taller_crear-blog-basico.html#creación-del-blog",
-    "title": "Creación de un blog básico con Quarto",
-    "section": "3 Creación del blog",
-    "text": "3 Creación del blog\nEl Rproject que hemos creado tiene todo lo necesario para crear un blog, pero aún no lo hemos creado. Para crearlo solo tienes que:\n\n\n\n\n\n\nTarea 2: Generación del blog\n\n\n\n\nIr al cuadrante superior-izquierda de RStudio, pinchar en la pestaña Build y pinchar en Render Website.\nDe esta forma, se procesarán los archivos del Rproject y se creará el blog.\nPodremos verlo en el cuadrante inferior-izquierda de RStudio, concretamente en la pestaña Viewer.\n\n\n\nSi todo ha ido bien, verás algo como esto:\n\n\n\n\n\n\n\n\n\n\n\nFigura 2: Al pinchar en Render Website se creará el blog\n\n\n\nPuedes ver aquí, como quedaría el blog una vez alojado en internet.\n\n\n\n\n\n\n\n\nExtensiones: formas alternativas de generar el blog\n\n\n\n\n\n\nTambién podríamos haber generado el blog usando la Consola o la terminal desde RStudio.\nEn ambos casos hay que estar en el Rproject “blog_prueba_00”; es decir, “blog_prueba_00” es el working directory\n\n#- desde la Consola\ninstall.packages(\"quarto\")\nquarto::quarto_render(\"index.qmd\")\n\n\n#- desde la Terminal\nquarto render"
-  },
-  {
-    "objectID": "taller/02_taller_crear-blog-basico.html#veamos-otra-vez-la-estructura-de-carpetas",
-    "href": "taller/02_taller_crear-blog-basico.html#veamos-otra-vez-la-estructura-de-carpetas",
-    "title": "Creación de un blog básico con Quarto",
-    "section": "4 Veamos otra vez la estructura de carpetas",
-    "text": "4 Veamos otra vez la estructura de carpetas\nTras haber creado el blog, la estructura de carpetas de nuestro Rproject ha cambiado, concretamente se han generado 2 subcarpetas. Veámoslo:\n\n\n\n\n\n\n\n\n\n\n\nFigura 3: Estructura de carpetas del Rproject tras la creación del blog\n\n\n\nSe han creado 2 subcarpetas\nSi comparamos la estructura de carpetas antes y después de hacer Render Website vemos que se han creado 2 carpetas:\n\n\n\n\n_freeze\n\n\n\nLa carpeta _freeze podemos dejarla para más adelante.\n\n\n\n\n\n\n\n_site\n\n\n\nLa carpeta _site es la que realmente contiene el blog. Si alojas el contenido de esa carpeta en un servidor web se verá el blog que hemos creado.\n\n\n\n\n\nContenido de /_site/\nAntes de publicar el blog, vamos a ver el contenido de la carpeta _site que es la que contiene realmente el blog:\n\n\n\n\n\n\n\n\n\n\n\nFigura 4: Contenido de _site, la carpeta que contiene el blog\n\n\n\n\n\n\n\n\nTarea 3: Ver el blog\n\n\n\n\nEnseguida publicaremos el blog en Quartopub, pero antes, vamos a verlo en local; para ello solo tienes que pinchar en el archivo ./blog_prueba_00/_site/index.html\nEse fichero es el que contiene la “Landing Page” o “Home” de nuestro blog.\nComo ves el blog es muy sencillo, solo tiene 2 páginas: la Home Page (que consiste en un listado de posts) y la página About.\n\n\n\n\n\n\nLa página principal del blog\n\nHemos visto que la página principal (Home) del blog consiste en una lista de los posts de nuestro blog1\nLa página principal (o Home) de nuestro blog es el archivo index.html.\nEl archivo index.html ha sido generado por el fichero index.qmd.\n\n\n\n\n\n\n\nExtensiones: ver el contenido del archivo index.qmd\n\n\n\n\n\nContenido del archivo index.qmd que genera a index.html:\n\n\n\n\n\n\n\n\n\n\n\nFigura 5: Archivo index.qmd\n\n\n\nComo vemos, el archivo index.qmd no tiene contenido, sólo contiene un yaml o encabezamiento\nEse encabezamiento genera una lista (listing:) con los contenidos (con los ficheros .qmd) que haya en la carpeta posts.\nSí, has imaginado bien, en la carpeta posts es donde estarán los ficheros .qmd que generarán los posts\nEl resto del yaml son opciones para nuestro blog. Por ejemplo, sort: \"date desc\" ordenará el listado de post de más reciente a más antiguo.\nLo iremos viendo"
-  },
-  {
-    "objectID": "taller/02_taller_crear-blog-basico.html#alojando-el-blog",
-    "href": "taller/02_taller_crear-blog-basico.html#alojando-el-blog",
-    "title": "Creación de un blog básico con Quarto",
-    "section": "5 Alojando el blog",
-    "text": "5 Alojando el blog\nEl blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es publicarlo en internet.\nHay muchas formas de alojar nuestro blog, por ejemplo Github Pages Netlify etc… , pero, de momento, usaremos el servicio Quartopub\n\n\n\n\n\n\nTarea 4: Alojar el blog en Quarto Pub\n\n\n\nPara publicar nuestro blog en Quartopub sólo hay que:\n\nteclear en la Terminal de RStudio (panel inferior-izquierda) lo siguiente:\n\n#- desde la Terminal\nquarto publish quarto-pub\n\nTras ejecutar lo anterior, se te pedirá que autorices en la Terminal.\nDespués se abrirá el navegador, tendrás que logearte en Quarto Pub y volverás a autorizar. Además te preguntarán el nombre del blog.\n\n\n\n\nSi te fijas, tras haberse publicado el blog en “Quarto Pub”, se habrá creado un nuevo fichero en nuestro Rproject: es el fichero _publish.yml. En él solamente están los metadatos necesarios para publicar y actualizar nuestro blog.\n\n\n\n\n\n\n\n\n\n\n\nFigura 6: Fichero _publish.yml con la información para publicar el blog en Quarto Pub."
-  },
-  {
-    "objectID": "taller/02_taller_crear-blog-basico.html#resumen",
-    "href": "taller/02_taller_crear-blog-basico.html#resumen",
-    "title": "Creación de un blog básico con Quarto",
-    "section": "6 Resumen",
-    "text": "6 Resumen\n\n\n\n\n\n\nResumen\n\n\n\n\n\nEn este tutorial, la segunda parte del taller, hemos visto:\n\nComo crear un Rproject con la estructura de carpetas y archivos necesaria para generar un blog básico\nHemos visto (de forma rápida) el contenido, los archivos, que hay en el Rproject.\nEl Rproject contiene 3 archivos que serán los importantes, los que trabajaremos en el próximo tutorial, concretamente: _quarto_yml, index.qmd y about.qmd\nHemos aprendido a generar el blog a través de RStudio, simplemente Build > Render Website\nHemos visto que el blog realmente se aloja en la carpeta _site y que la homepage es index.html\nLa homepage del blog es un listado de post (lógicamente, es un blog!!)\nLa homepage (index.html) es generada por el archivo index.qmd\nEl archivo index.qmd solo tiene yaml\nHemos publicado el blog en Quarto Pub"
-  },
-  {
-    "objectID": "taller/02_taller_crear-blog-basico.html#referencias",
-    "href": "taller/02_taller_crear-blog-basico.html#referencias",
-    "title": "Creación de un blog básico con Quarto",
-    "section": "7 Referencias",
-    "text": "7 Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD\nBea Milz. 2022. Creating a Blog with Quarto in 10 Steps\nNavarro, Danielle. 2022. “Notes from a Data Witch - Porting a Distill Blog to Quarto\nQuarto - Creating a Blog\nAlison Hill. 2022. We Don’t Talk about Quarto"
-  },
-  {
-    "objectID": "taller/03_taller_tuneado-basico.html",
-    "href": "taller/03_taller_tuneado-basico.html",
-    "title": "Tuneado básico del blog con Quarto",
-    "section": "",
-    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí."
-  },
-  {
-    "objectID": "taller/03_taller_tuneado-basico.html#archivo-_quarto.yml",
-    "href": "taller/03_taller_tuneado-basico.html#archivo-_quarto.yml",
-    "title": "Tuneado básico del blog con Quarto",
-    "section": "1 Archivo _quarto.yml",
-    "text": "1 Archivo _quarto.yml\nEn la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero _quarto.yml. Al final dejaremos este fichero como la figura de la derecha.\n\n\n\n\n\n\nContenido original de _quarto.yml\n\n\n\n\n\n\n\nAsí dejaremos el fichero _quarto.yml\n\n\n\n\n\n\n1.1 _quarto.yml original\n\n\n\n\n\n\n\n\n\n\n\nFigura 1: Contenido original de _quarto.yml\n\n\nComo puedes ver arriba en la Figura 1, el fichero _quarto.yml original tiene 3 partes:\n\nLa primera parte del fichero _quarto.yml (lineas 1 y 2) simplemente específica que el proyecto es para hacer una página web (type: website). Esta primera parte del fichero _quarto.yml no lo vamos a tocar, lo vamos a dejar igual. Sí, en realidad, un blog es una página web en la que la “Home page” o “landing page” es un poco especial, es un poco especial porque es una página con un listado de posts, PERO, en definitiva un blog es una página web.\nLa segunda parte del fichero _quarto.yml (lineas 4 a 12) sirve para decidir la estructura de la página web (en nuestro caso del blog). Esta segunda parte tiene 2 secciones\n\ntitle: “blog_prueba_00”: aquí podemos cambiar el título de nuestro blog\nnavbar: aquí podemos cambiar la estructura de la barra de navegación del blog. En el archivo original se especifica que los elementos/pestañas de navegación se situan a la derecha y que habrán 3 links o pestañas: About y 2 iconos que nos llevaran a Github y a Twitter\n\nEn la tercera parte del fichero _quarto.yml se especifica el formato. Como toda página web el formato es html. Además se especifica un theme y un fichero .css que nos permitirán modificar el aspecto estético del blog.\n\n\n\n\n1.2 _quarto.yml modificado\nPor ejemplo, podemos modificar el fichero _quarto.yml hasta dejarlo como:\n\n\n\n\n\n\n\n\n\n\n\nFigura 2: Dejaremos así el contenido de _quarto.yml\n\n\nComo puedes ver arriba en la Figura 2, al compararla con la Figura 1, hemos modificado el fichero _quarto.yml. Concretamente:\n\nLa primera parte del fichero _quarto.yml (lineas 1 y 2) la hemos dejado igual. Seguimos queriendo hacer una web/blog.\nLa segunda parte del fichero _quarto.yml (ahora lineas 4 a 19) si la hemos modificado:\n\nHemos cambiado el título del blog, ahora title: \"Mi blog (aún en pruebas)\". Está en la linea 5.\nEn la navbar (lineas 6 a 19): hemos cambiado la estructura de la barra de navegación del blog. Hemos hecho 3 cosas:\n\nHemos añadido un logo a la barra de navegación con logo: profile.jpg (linea 7).\nEn la parte derecha de la barra de navegación hemos añadido un icono para el email (icon:envelope) y hemos modificado el texto que se muestra en la pestaña about, esto último lo hemos hecho con text: \"About me\" en las lineas 9 y 10.\nFinalmente, hemos añadido una pestaña nueva (lineas 18 y 19) pero está vez a la izquierda de la barra de navegación: left: (linea 17). Fijate que esta nueva pestaña llamada “Docencia” creada con- text: \"Docencia\" (linea 18), esta referenciando a un archivo que no existe (aún) en el Rproject, está referenciando con href: docencia.qmd (linea 19) al archivo docencia.qmd. Lógicamente tendremos que crear este archivo.\n\n\nEn la tercera parte del fichero _quarto.yml hemos cambiado el theme: minty y hemos añadido las lineas 25 toc: true que creará índices en las páginas de la web/blog1, mientras que con highlight-style: a11y se cambia el formato visual de los chunks de código que hayan en la página web.\n\n\n\n\n\n\n\n\nTarea 1: Modificar el contenido de _quarto.yml\n\n\n\n\nSimplemente sustituye el contenido original del fichero _quarto.yml por el contenido del siguiente chunk:\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Mi blog (aún en pruebas)\"\n  navbar:\n    logo: \"profile.jpg\"\n    right:\n      - text: \"About me\"\n        href: about.qmd\n      - icon: github\n        href: https://github.com/<tu-usuario-github>\n      - icon: twitter\n        href: https://twitter.com/<tu-usuario twitter>\n      - icon: envelope\n        url: \"mailto:<tu-mail@uv.es>\"\n    left: \n      - text: \"Docencia\"\n        href: docencia.qmd\n \nformat:\n  html:\n    theme: minty  \n    css: styles.css\n    toc: true\n    highlight-style: a11y\n\n\n\n\n\n1.3 Crear docencia.qmd\n\n\nEn el nuevo archivo quarto.yml(linea 19) se hace referencia al archivo docencia.qmd, así que tendremos que crearlo. Para ello:\n\n\n\n\n\n\n\nTarea 2: Crear el archivo docencia.qmd\n\n\n\n\nPodríamos crear el archivo docencia.qmd con cualquier contenido, incluso podría ser un documento sin contenido, PERO, mejor si lo creas con el siguiente contenido:\n\n\n---\ntitle: \"Mi docencia\"\n---\n\nMi docencia es:\n\n## curso 2021-2022\n\n- [Econometría](/pdfs/econometria.pdf)\n\n## curso 2022-2023\n\n- [Algebra](/pdfs/econometria.pdf)\n\n\n\n\n\n\n\n\n\nTarea 3: Crear el archivo /pdfs/econometria.pdf\n\n\n\n\n\nComo puedes ver, en el archivo docencia.qmd se hace referencia al archivo /pdfs/econometria.pdf. Si quieres que el link funcione, tienes que crear dentro del Rproject, la subcarpeta pdfs, y dentro de ella el archivo econometria.pdf.\nPuede ser cualquier pdf, siempre que se llame econometria.pdf\n\n\n\n\n\n\n\n\n\nTarea 4: Crear el archivo /pdfs/econometria.pdf\n\n\n\n\n\nUna vez hechas las tarea 2 y 3, puedes crear de nuevo el blog con Build > Web page.\n\n\n\n\n\nAquí puedes ver como quedaría el blog tras haber modificado _quarto.yml. Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña Docencia a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda theme: minty): ahora el color de la barra es verdecito."
-  },
-  {
-    "objectID": "taller/03_taller_tuneado-basico.html#archivo-index.qmd",
-    "href": "taller/03_taller_tuneado-basico.html#archivo-index.qmd",
-    "title": "Tuneado básico del blog con Quarto",
-    "section": "2 Archivo index.qmd",
-    "text": "2 Archivo index.qmd\nEn la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero index.qmd. Al final dejaremos este fichero como la figura de la derecha. Como verás solo vamos a hacer cambios en la primera linea: cambiaremos el título.\n\n\n\n\n\n\nContenido original de index.qmd\n\n\n\n\n\n\n\nAsí dejaremos el fichero index.qmd\n\n\n\n\n\n\nComo ves, index.qmd es un fichero (nuestra “Home Page”) sin contenido aparente: aparte del yamlno hay nada más. Sin embargo, justamente en el yaml especifica, con la opción listing: (linea 3), que la página va a ser un listado; concrétamente un listado del contenido que haya en la carpeta posts; o sea, un listado con los posts que haya en la carpeta posts.\nSí, con el trozo contents: posts (linea 4), se está especificando la carpeta donde estará alojado el contenido de los posts. Si miras la carpeta posts verás 2 subcarpetas, una para cada uno de los 2 posts del blog.\nYa hablaremos de las subcarpetas donde está el contenido de los posts más adelante, pero adelanto que en cada carpeta hay un archivo index.qmd con el contenido de cada post.\n\n\n\n\n\n\n\nTarea 5: Modificar el contenido de index.qmd\n\n\n\n\nSimplemente he cambiado la linea 1. Aunque casi queda mejor, para mi gusto, comentar (con un #) para que no haya ningún título, casi queda mejor sin título.\n\n\n---\ntitle: \"Mi listado de post\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n  sort-ui: false\n  filter-ui: false\npage-layout: full\ntitle-block-banner: true\n---\n\n\n\n\n\nOtra vez se trata de modificar el archivo index.qmd para dejarlo como:\n\n\n---\n#title: \"Mi listado de posts\"  #- yo casi prefiero que no ponga nada\nlisting:\n  contents: posts\n  #- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options\n  #- https://quarto.org/docs/websites/website-listings.html#sorting-items\n  sort: \"date desc\" \n  #-  https://quarto.org/docs/websites/website-listings.html#listing-types\n  type: default  #- opciones: {default, grid, table}\n  categories: true\n  sort-ui: false\n  filter-ui: false\n  date-format: long\npage-layout: full\ntitle-block-banner: true\nimage: imagenes/thumbnail.jpg\n---"
-  },
-  {
-    "objectID": "taller/03_taller_tuneado-basico.html#archivo-about.qmd",
-    "href": "taller/03_taller_tuneado-basico.html#archivo-about.qmd",
-    "title": "Tuneado básico del blog con Quarto",
-    "section": "3 Archivo about.qmd",
-    "text": "3 Archivo about.qmd\n\nVamos a modificar mínimamente el fichero about.qmd. En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero y en la derecha como lo dejaremos. Como verás solo vamos a hacer cambios en la quinta linea: cambios la plantilla predefinida.\n\n\n\n\n\n\n\nContenido original de about.qmd\n\n\n\n\n\n\n\nAsí dejaremos el fichero about.qmd\n\n\n\n\n\n\n\n\n\n\n\nTarea 6: Modificar el contenido de about.qmd\n\n\n\n\nAntes he dicho que solo modificaríamos la linea 5, pero mejor si lo complementamos con algunas acciones más, como el tamaño de la foto y su forma, por eso he añadido 2 lineas tras template:trestles.\nLógicamente estaría bien que sustituyeses la foto: se trata de cambiar profile.jpg, en la linea 3, por la ruta a tu foto.\nAbajo tienes el código:\n\n\n---\ntitle: Yo mismo\nimage: profile.jpg\nabout:\n  template: trestles    #- {jolla, solana, ...}\n  image-width: 10em     #- https://cybmeta.com/em-y-rem\n  image-shape: round    #- rectangle, round, rounded\n  links:\n    - icon: twitter\n      text: Twitter\n      href: https://twitter.com\n    - icon: linkedin\n      text: LinkedIn\n      href: https://linkedin.com\n    - icon: github\n      text: Github\n      href: https://github.com\n---\n\n\n\n\nComo has visto, si en el yaml se activa la opción about: (linea 3), entonces Quarto tiene disponibles unas plantillas para crear About’s pages. Aquí tienes la documentación oficial sobre estas plantillas. Como puedes ver aquí hay 5 plantillas: jolla, trestles, solana, marquee y broadside."
-  },
-  {
-    "objectID": "taller/03_taller_tuneado-basico.html#archivo-styles.css",
-    "href": "taller/03_taller_tuneado-basico.html#archivo-styles.css",
-    "title": "Tuneado básico del blog con Quarto",
-    "section": "4 Archivo styles.css",
-    "text": "4 Archivo styles.css\n\nPuedes cambiar la apariencia estética del blog y dejarlo a tu gusto usando los themes prefedinidos en Quarto o puedes usar el archivo styles.css2\nDe momento, el archivo styles.css está vacio3\nEl tuneado del blog con .css lo veremos con algo más de detalle en el tutorial nº 8, ahora mismo solo haremos unas modificaciones mínimas: voy a justificar el texto4.\n\n\n\n\n\n\n\nTarea 7: Modificar styles.css\n\n\n\n\nSimplemente sustituye el contenido original del fichero styles.css por el contenido del siguiente chunk:\n\n/* css styles */\n\n\n/* justificar el texto */ \np, ul, ol {\n  text-align: justify; }       \n\n\n\nAcuérdate que para ver los cambios has de volver a generar el blog: Build > Render Website,"
-  },
-  {
-    "objectID": "taller/03_taller_tuneado-basico.html#resumen",
-    "href": "taller/03_taller_tuneado-basico.html#resumen",
-    "title": "Tuneado básico del blog con Quarto",
-    "section": "5 Resumen",
-    "text": "5 Resumen\n\n\n\n\n\n\nResumen\n\n\n\n\n\n\nEn esta tercera parte del taller hemos aprendido a mejorar/tunear un poco nuestro blog.\nHemos modificado 3 archivos:\n\n_quarto.yml: hemos modificado el título del blog y la estructura de la barra de navegación; concretamente hemos añadido una página nueva.\nindex.qmd: construye la Home Page de nuestra web. La opción listing: hace que nuestra web es en realidad un blog.\nabout.qmd: hemos utilizado las plantillas de Quarto para configurar nuestra About page.\n\nFinalmente hemos modificado (minímamente) el archivo styles.css."
-  },
-  {
-    "objectID": "taller/03_taller_tuneado-basico.html#referencias",
-    "href": "taller/03_taller_tuneado-basico.html#referencias",
-    "title": "Tuneado básico del blog con Quarto",
-    "section": "6 Referencias",
-    "text": "6 Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD"
-  },
-  {
-    "objectID": "taller/04_taller_crear-post.html",
-    "href": "taller/04_taller_crear-post.html",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
-    "section": "",
-    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí.\nEl blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: “Welcome to my blog” y “Post with code”.\nMás adelante borraremos estos 2 posts, pero ahora mismo los vamos a utilizar de ejemplo para crear un nuevo post. Será en la sección siguiente, de momento veamos donde están los archivos que generan los posts de nuestro blog."
-  },
-  {
-    "objectID": "taller/04_taller_crear-post.html#donde-están-los-posts-del-blog",
-    "href": "taller/04_taller_crear-post.html#donde-están-los-posts-del-blog",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
-    "section": "¿Donde están los posts del blog?",
-    "text": "¿Donde están los posts del blog?\nLos ficheros .qmd que generan los posts están en la carpeta posts de nuestro Rproject que genera el blog.\nCada post está en una carpeta diferente. Veámoslo:\n\n\n\n\n\n\nLos posts residen en la carpeta posts\n\n\n\n\n\nComo ves, en la carpetaposts hay:\n\nuna subcarpeta para cada post.\nel archivo _metadata.yml. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los posts de la carpeta posts."
-  },
-  {
-    "objectID": "taller/04_taller_crear-post.html#contenido-de-cada-subcarpeta-de-.posts",
-    "href": "taller/04_taller_crear-post.html#contenido-de-cada-subcarpeta-de-.posts",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "objectID": "taller/05_taller_escribir-posts.html#contenido-de-cada-subcarpeta-de-.posts",
+    "href": "taller/05_taller_escribir-posts.html#contenido-de-cada-subcarpeta-de-.posts",
+    "title": "Escribiendo posts: practicando con Quarto (5ª parte del taller)",
     "section": "Contenido de cada subcarpeta de ./posts/",
     "text": "Contenido de cada subcarpeta de ./posts/\nVeamos el contenido de una de las carpetas que generan los posts, por ejemplo la carpeta /welcome/:\n\n\n\n\n\n\nContenido de la carpeta welcome que genera el post titulado “Welcome to my blog”\n\n\n\n\n\n\n\nContenido del archivo index.qmd”\n\n\n\n\n\nComo ves, la carpeta /welcome/ que genera el primer post del blog contiene 2 archivos:\n\nindex.qmd: es realmente el archivo que genera el post. Veremos su contenido más adelante.\nthumbnail.jpg: sencillamente un archivo con una imagen que será usado al generar el post."
   },
   {
-    "objectID": "taller/04_taller_crear-post.html#creando-un-nuevo-post",
-    "href": "taller/04_taller_crear-post.html#creando-un-nuevo-post",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "objectID": "taller/05_taller_escribir-posts.html#creando-un-nuevo-post",
+    "href": "taller/05_taller_escribir-posts.html#creando-un-nuevo-post",
+    "title": "Escribiendo posts: practicando con Quarto (5ª parte del taller)",
     "section": "Creando un nuevo post",
     "text": "Creando un nuevo post\nDe momento, para generar un nuevo post lo que haremos será crear una nueva subcarpeta dentro de ./posts/, ponerle nombre y pegar allí los archivos que hay en la carpeta de uno de los dos posts de prueba. Por ejemplo:\n\n\n\n\n\n\nTarea 1: Creando un nuevo post\n\n\n\n\nCrea una nueva subcarpeta en ./posts/\nPonle nombre, por ejemplo: “my-primer-post”\nCopia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en ./posts/welcome/ y pégalos en ./posts/my-primer-post/; es decir, pegamos el archivo index.qmd y tumbnail.jpg en nuestra nueva carpeta.\nVuelve a regenerar el blog: Build > Render Website y verás que ahora nuestro blog ya tiene tres posts.\n\n\n\n\nBueno, pues ya lo tenemos, ya tenemos un nuevo post, solo que, como no hemos cambiado el contenido de index.qmd ni `tumbnail.jpg, pues nuestro tercer post de nuestro blog será idéntico al primer, al post de bienvenida.\nEvidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.\n\n\n\n\n\n\n\nTarea 2: Modificando el tercer post\n\n\n\n\nModifica el contenido de /my-primer-post/index.qmd\nSustituye thumbnail.jpg por otro archivo\n\n\n\n\nEn el siguiente tutorial veremos en profundidad las posibilidades que nos ofrece Quarto para escribir posts."
   },
   {
-    "objectID": "taller/04_taller_crear-post.html#resumen",
-    "href": "taller/04_taller_crear-post.html#resumen",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "objectID": "taller/05_taller_escribir-posts.html#resumen",
+    "href": "taller/05_taller_escribir-posts.html#resumen",
+    "title": "Escribiendo posts: practicando con Quarto (5ª parte del taller)",
     "section": "Resumen",
     "text": "Resumen\n\n\n\n\n\n\nResumen\n\n\n\n\n\n\nEn esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre."
   },
   {
-    "objectID": "taller/04_taller_crear-post.html#referencias",
-    "href": "taller/04_taller_crear-post.html#referencias",
-    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "objectID": "taller/05_taller_escribir-posts.html#referencias",
+    "href": "taller/05_taller_escribir-posts.html#referencias",
+    "title": "Escribiendo posts: practicando con Quarto (5ª parte del taller)",
     "section": "Referencias",
     "text": "Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD"
   },
@@ -294,6 +147,62 @@
     "text": "Web Docente\nCreación\nTuneado\nCreación de posts\nPublicación\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
   },
   {
+    "objectID": "taller/02_taller_crear-blog-basico.html",
+    "href": "taller/02_taller_crear-blog-basico.html",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "",
+    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí."
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#creación-de-un-rproject-para-un-blog",
+    "href": "taller/02_taller_crear-blog-basico.html#creación-de-un-rproject-para-un-blog",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "1 Creación de un Rproject (para un blog)",
+    "text": "1 Creación de un Rproject (para un blog)\nVamos a crear el blog con R y RStudio; concretamente trabajaremos utilizando un Rproject, así que el primer paso para crear nuestro blog es crear un Rproject donde se alojaran los ficheros que necesitemos para nuestro blog.\n\n\n\n\n\n\nTarea 1: Creación del Rproject que generará el blog\n\n\n\n\nEn RStudio sigue la siguiente ruta de menús:\nFile > New Project > New Directory > Quarto Blog\nAl hacerlo se creará una carpeta, un Rproject, con todo lo necesario para crear un blog.\nEl nombre que le he puesto a la carpeta/Rproject es blog_prueba_00\n\n\n\nDe momento aún no tenemos el blog, solo hemos creado un Rproject pero, ya tenemos, dentro de la carpeta del Rproject, la estructura de carpetas y archivos necesarios para crearlo.\nCuando creemos el blog, será un blog sencillito, vamos con lo mínimo, pero un blog.\nAntes de crear el blog hagamos un pequeño repaso al contenido del Rproject, veamos su estructura de carpetas y archivos."
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#contenido-del-rproject",
+    "href": "taller/02_taller_crear-blog-basico.html#contenido-del-rproject",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "2 Contenido del Rproject",
+    "text": "2 Contenido del Rproject\nEl Rproject que acabamos de crear y que permitirá crear el blog tiene esta estructura de archivos y carpetas:\n\n\n\n\n\n\n\n\n\n\n\nFigura 1: Estructura del Rproject blog_prueba_00\n\n\nComo ves en la figura anterior, el Rproject contiene 6 archivos y una subcarpeta. Voy a dividirlos en dos categorías:\n\nlos que no son importantes (al menos ahora mismo)\nLos que sí son importantes ahora mismo, serán 3 archivos\n\n\n\n2.1 Archivos “no importantes”\n\n\n\n\nEl archivo blog_prueba_00.Rproj\n\n\n\nNo es un archivo importante para el blog. Este archivo simplemente permite que RStudio reconozca la carpeta blog_prueba_00 como un Rproject.\n\n\n\n\n\n\n\nEl archivo styles.css\n\n\n\nSí será un archivo importante, pero lo veremos más adelante. Este archivo permitirá mediante CSS cambiar la estética de nuestro blog.\n\n\n\n\n\n\n\nEl archivo profile.jpg\n\n\n\nEs sencillamente una foto. La tendremos que sustituir por una foto nuestra en la que estemos guapetes.\n\n\n\n\n\n\n\nLa carpeta posts\n\n\n\nSerá muy importante, pero la veremos más adelante. Esta carpeta es la que contendrá los posts que vayamos escribiendo.\n\n\n\n\n\n\n\n\n\n\nDentro de la carpeta posts\n\n\n\n\n\n\n\n\n\nDentro del post welcome\n\n\n\n\n\n\n\n\n\n2.2 Archivos sí importantes\nNos quedan 3 archivos que será en los que nos concentremos ahora mismo, bueno, enseguida.\n\n\n\n\n_quarto_yml\n\n\n\nEs el archivo que especifica como será la estructura y apariencia de nuestro blog.\n\n\n\n\n\n\n\nabout.qmd\n\n\n\nUn archivo .qmd que generará el archivo about.html y que será una de las páginas de nuestro blog; precisamente en esta página se vera nuestra foto.\n\n\n\n\n\n\n\nindex.qmd\n\n\n\nOtro archivo .qmd que generará el archivo index.html y que será la “landing page” o Home de nuestro blog."
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#creación-del-blog",
+    "href": "taller/02_taller_crear-blog-basico.html#creación-del-blog",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "3 Creación del blog",
+    "text": "3 Creación del blog\nEl Rproject que hemos creado tiene todo lo necesario para crear un blog, pero aún no lo hemos creado. Para crearlo solo tienes que:\n\n\n\n\n\n\nTarea 2: Generación del blog\n\n\n\n\nIr al cuadrante superior-izquierda de RStudio, pinchar en la pestaña Build y pinchar en Render Website.\nDe esta forma, se procesarán los archivos del Rproject y se creará el blog.\nPodremos verlo en el cuadrante inferior-izquierda de RStudio, concretamente en la pestaña Viewer.\n\n\n\nSi todo ha ido bien, verás algo como esto:\n\n\n\n\n\n\n\n\n\n\n\nFigura 2: Al pinchar en Render Website se creará el blog\n\n\n\nPuedes ver aquí, como quedaría el blog una vez alojado en internet.\n\n\n\n\n\n\n\n\nExtensiones: formas alternativas de generar el blog\n\n\n\n\n\n\nTambién podríamos haber generado el blog usando la Consola o la terminal desde RStudio.\nEn ambos casos hay que estar en el Rproject “blog_prueba_00”; es decir, “blog_prueba_00” es el working directory\n\n#- desde la Consola\ninstall.packages(\"quarto\")\nquarto::quarto_render(\"index.qmd\")\n\n\n#- desde la Terminal\nquarto render"
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#veamos-otra-vez-la-estructura-de-carpetas",
+    "href": "taller/02_taller_crear-blog-basico.html#veamos-otra-vez-la-estructura-de-carpetas",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "4 Veamos otra vez la estructura de carpetas",
+    "text": "4 Veamos otra vez la estructura de carpetas\nTras haber creado el blog, la estructura de carpetas de nuestro Rproject ha cambiado, concretamente se han generado 2 subcarpetas. Veámoslo:\n\n\n\n\n\n\n\n\n\n\n\nFigura 3: Estructura de carpetas del Rproject tras la creación del blog\n\n\n\nSe han creado 2 subcarpetas\nSi comparamos la estructura de carpetas antes y después de hacer Render Website vemos que se han creado 2 carpetas:\n\n\n\n\n_freeze\n\n\n\nLa carpeta _freeze podemos dejarla para más adelante.\n\n\n\n\n\n\n\n_site\n\n\n\nLa carpeta _site es la que realmente contiene el blog. Si alojas el contenido de esa carpeta en un servidor web se verá el blog que hemos creado.\n\n\n\n\n\nContenido de /_site/\nAntes de publicar el blog, vamos a ver el contenido de la carpeta _site que es la que contiene realmente el blog:\n\n\n\n\n\n\n\n\n\n\n\nFigura 4: Contenido de _site, la carpeta que contiene el blog\n\n\n\n\n\n\n\n\nTarea 3: Ver el blog\n\n\n\n\nEnseguida publicaremos el blog en Quartopub, pero antes, vamos a verlo en local; para ello solo tienes que pinchar en el archivo ./blog_prueba_00/_site/index.html\nEse fichero es el que contiene la “Landing Page” o “Home” de nuestro blog.\nComo ves el blog es muy sencillo, solo tiene 2 páginas: la Home Page (que consiste en un listado de posts) y la página About.\n\n\n\n\n\n\nLa página principal del blog\n\nHemos visto que la página principal (Home) del blog consiste en una lista de los posts de nuestro blog1\nLa página principal (o Home) de nuestro blog es el archivo index.html.\nEl archivo index.html ha sido generado por el fichero index.qmd.\n\n\n\n\n\n\n\nExtensiones: ver el contenido del archivo index.qmd\n\n\n\n\n\nContenido del archivo index.qmd que genera a index.html:\n\n\n\n\n\n\n\n\n\n\n\nFigura 5: Archivo index.qmd\n\n\n\nComo vemos, el archivo index.qmd no tiene contenido, sólo contiene un yaml o encabezamiento\nEse encabezamiento genera una lista (listing:) con los contenidos (con los ficheros .qmd) que haya en la carpeta posts.\nSí, has imaginado bien, en la carpeta posts es donde estarán los ficheros .qmd que generarán los posts\nEl resto del yaml son opciones para nuestro blog. Por ejemplo, sort: \"date desc\" ordenará el listado de post de más reciente a más antiguo.\nLo iremos viendo"
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#alojando-el-blog",
+    "href": "taller/02_taller_crear-blog-basico.html#alojando-el-blog",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "5 Alojando el blog",
+    "text": "5 Alojando el blog\nEl blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es publicarlo en internet.\nHay muchas formas de alojar nuestro blog, por ejemplo Github Pages Netlify etc… , pero, de momento, usaremos el servicio Quartopub\n\n\n\n\n\n\nTarea 4: Alojar el blog en Quarto Pub\n\n\n\nPara publicar nuestro blog en Quartopub sólo hay que:\n\nteclear en la Terminal de RStudio (panel inferior-izquierda) lo siguiente:\n\n#- desde la Terminal\nquarto publish quarto-pub\n\nTras ejecutar lo anterior, se te pedirá que autorices en la Terminal.\nDespués se abrirá el navegador, tendrás que logearte en Quarto Pub y volverás a autorizar. Además te preguntarán el nombre del blog.\n\n\n\n\nSi te fijas, tras haberse publicado el blog en “Quarto Pub”, se habrá creado un nuevo fichero en nuestro Rproject: es el fichero _publish.yml. En él solamente están los metadatos necesarios para publicar y actualizar nuestro blog.\n\n\n\n\n\n\n\n\n\n\n\nFigura 6: Fichero _publish.yml con la información para publicar el blog en Quarto Pub."
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#resumen",
+    "href": "taller/02_taller_crear-blog-basico.html#resumen",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "6 Resumen",
+    "text": "6 Resumen\n\n\n\n\n\n\nResumen\n\n\n\n\n\nEn este tutorial, la segunda parte del taller, hemos visto:\n\nComo crear un Rproject con la estructura de carpetas y archivos necesaria para generar un blog básico\nHemos visto (de forma rápida) el contenido, los archivos, que hay en el Rproject.\nEl Rproject contiene 3 archivos que serán los importantes, los que trabajaremos en el próximo tutorial, concretamente: _quarto_yml, index.qmd y about.qmd\nHemos aprendido a generar el blog a través de RStudio, simplemente Build > Render Website\nHemos visto que el blog realmente se aloja en la carpeta _site y que la homepage es index.html\nLa homepage del blog es un listado de post (lógicamente, es un blog!!)\nLa homepage (index.html) es generada por el archivo index.qmd\nEl archivo index.qmd solo tiene yaml\nHemos publicado el blog en Quarto Pub"
+  },
+  {
+    "objectID": "taller/02_taller_crear-blog-basico.html#referencias",
+    "href": "taller/02_taller_crear-blog-basico.html#referencias",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "7 Referencias",
+    "text": "7 Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD\nBea Milz. 2022. Creating a Blog with Quarto in 10 Steps\nNavarro, Danielle. 2022. “Notes from a Data Witch - Porting a Distill Blog to Quarto\nQuarto - Creating a Blog\nAlison Hill. 2022. We Don’t Talk about Quarto"
+  },
+  {
     "objectID": "taller/07_taller_tuneado-del-blog.html",
     "href": "taller/07_taller_tuneado-del-blog.html",
     "title": "Tuneado básico del blog (4ª parte del taller)",
@@ -308,6 +217,118 @@
     "text": "Creando un nuevo post"
   },
   {
+    "objectID": "taller/03_taller_tuneado-basico.html",
+    "href": "taller/03_taller_tuneado-basico.html",
+    "title": "Tuneado básico del blog con Quarto",
+    "section": "",
+    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí."
+  },
+  {
+    "objectID": "taller/03_taller_tuneado-basico.html#archivo-_quarto.yml",
+    "href": "taller/03_taller_tuneado-basico.html#archivo-_quarto.yml",
+    "title": "Tuneado básico del blog con Quarto",
+    "section": "1 Archivo _quarto.yml",
+    "text": "1 Archivo _quarto.yml\nEn la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero _quarto.yml. Al final dejaremos este fichero como la figura de la derecha.\n\n\n\n\n\n\nContenido original de _quarto.yml\n\n\n\n\n\n\n\nAsí dejaremos el fichero _quarto.yml\n\n\n\n\n\n\n1.1 _quarto.yml original\n\n\n\n\n\n\n\n\n\n\n\nFigura 1: Contenido original de _quarto.yml\n\n\nComo puedes ver arriba en la Figura 1, el fichero _quarto.yml original tiene 3 partes:\n\nLa primera parte del fichero _quarto.yml (lineas 1 y 2) simplemente específica que el proyecto es para hacer una página web (type: website). Esta primera parte del fichero _quarto.yml no lo vamos a tocar, lo vamos a dejar igual. Sí, en realidad, un blog es una página web en la que la “Home page” o “landing page” es un poco especial, es un poco especial porque es una página con un listado de posts, PERO, en definitiva un blog es una página web.\nLa segunda parte del fichero _quarto.yml (lineas 4 a 12) sirve para decidir la estructura de la página web (en nuestro caso del blog). Esta segunda parte tiene 2 secciones\n\ntitle: “blog_prueba_00”: aquí podemos cambiar el título de nuestro blog\nnavbar: aquí podemos cambiar la estructura de la barra de navegación del blog. En el archivo original se especifica que los elementos/pestañas de navegación se situan a la derecha y que habrán 3 links o pestañas: About y 2 iconos que nos llevaran a Github y a Twitter\n\nEn la tercera parte del fichero _quarto.yml se especifica el formato. Como toda página web el formato es html. Además se especifica un theme y un fichero .css que nos permitirán modificar el aspecto estético del blog.\n\n\n\n\n1.2 _quarto.yml modificado\nPor ejemplo, podemos modificar el fichero _quarto.yml hasta dejarlo como:\n\n\n\n\n\n\n\n\n\n\n\nFigura 2: Dejaremos así el contenido de _quarto.yml\n\n\nComo puedes ver arriba en la Figura 2, al compararla con la Figura 1, hemos modificado el fichero _quarto.yml. Concretamente:\n\nLa primera parte del fichero _quarto.yml (lineas 1 y 2) la hemos dejado igual. Seguimos queriendo hacer una web/blog.\nLa segunda parte del fichero _quarto.yml (ahora lineas 4 a 19) si la hemos modificado:\n\nHemos cambiado el título del blog, ahora title: \"Mi blog (aún en pruebas)\". Está en la linea 5.\nEn la navbar (lineas 6 a 19): hemos cambiado la estructura de la barra de navegación del blog. Hemos hecho 3 cosas:\n\nHemos añadido un logo a la barra de navegación con logo: profile.jpg (linea 7).\nEn la parte derecha de la barra de navegación hemos añadido un icono para el email (icon:envelope) y hemos modificado el texto que se muestra en la pestaña about, esto último lo hemos hecho con text: \"About me\" en las lineas 9 y 10.\nFinalmente, hemos añadido una pestaña nueva (lineas 18 y 19) pero está vez a la izquierda de la barra de navegación: left: (linea 17). Fijate que esta nueva pestaña llamada “Docencia” creada con- text: \"Docencia\" (linea 18), esta referenciando a un archivo que no existe (aún) en el Rproject, está referenciando con href: docencia.qmd (linea 19) al archivo docencia.qmd. Lógicamente tendremos que crear este archivo.\n\n\nEn la tercera parte del fichero _quarto.yml hemos cambiado el theme: minty y hemos añadido las lineas 25 toc: true que creará índices en las páginas de la web/blog1, mientras que con highlight-style: a11y se cambia el formato visual de los chunks de código que hayan en la página web.\n\n\n\n\n\n\n\n\nTarea 1: Modificar el contenido de _quarto.yml\n\n\n\n\nSimplemente sustituye el contenido original del fichero _quarto.yml por el contenido del siguiente chunk:\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Mi blog (aún en pruebas)\"\n  navbar:\n    logo: \"profile.jpg\"\n    right:\n      - text: \"About me\"\n        href: about.qmd\n      - icon: github\n        href: https://github.com/<tu-usuario-github>\n      - icon: twitter\n        href: https://twitter.com/<tu-usuario twitter>\n      - icon: envelope\n        url: \"mailto:<tu-mail@uv.es>\"\n    left: \n      - text: \"Docencia\"\n        href: docencia.qmd\n \nformat:\n  html:\n    theme: minty  \n    css: styles.css\n    toc: true\n    highlight-style: a11y\n\n\n\n\n\n1.3 Crear docencia.qmd\n\n\nEn el nuevo archivo quarto.yml(linea 19) se hace referencia al archivo docencia.qmd, así que tendremos que crearlo. Para ello:\n\n\n\n\n\n\n\nTarea 2: Crear el archivo docencia.qmd\n\n\n\n\nPodríamos crear el archivo docencia.qmd con cualquier contenido, incluso podría ser un documento sin contenido, PERO, mejor si lo creas con el siguiente contenido:\n\n\n---\ntitle: \"Mi docencia\"\n---\n\nMi docencia es:\n\n## curso 2021-2022\n\n- [Econometría](/pdfs/econometria.pdf)\n\n## curso 2022-2023\n\n- [Algebra](/pdfs/econometria.pdf)\n\n\n\n\n\n\n\n\n\nTarea 3: Crear el archivo /pdfs/econometria.pdf\n\n\n\n\n\nComo puedes ver, en el archivo docencia.qmd se hace referencia al archivo /pdfs/econometria.pdf. Si quieres que el link funcione, tienes que crear dentro del Rproject, la subcarpeta pdfs, y dentro de ella el archivo econometria.pdf.\nPuede ser cualquier pdf, siempre que se llame econometria.pdf\n\n\n\n\n\n\n\n\n\nTarea 4: Crear el archivo /pdfs/econometria.pdf\n\n\n\n\n\nUna vez hechas las tarea 2 y 3, puedes crear de nuevo el blog con Build > Web page.\n\n\n\n\n\nAquí puedes ver como quedaría el blog tras haber modificado _quarto.yml. Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña Docencia a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda theme: minty): ahora el color de la barra es verdecito."
+  },
+  {
+    "objectID": "taller/03_taller_tuneado-basico.html#archivo-index.qmd",
+    "href": "taller/03_taller_tuneado-basico.html#archivo-index.qmd",
+    "title": "Tuneado básico del blog con Quarto",
+    "section": "2 Archivo index.qmd",
+    "text": "2 Archivo index.qmd\nEn la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero index.qmd. Al final dejaremos este fichero como la figura de la derecha. Como verás solo vamos a hacer cambios en la primera linea: cambiaremos el título.\n\n\n\n\n\n\nContenido original de index.qmd\n\n\n\n\n\n\n\nAsí dejaremos el fichero index.qmd\n\n\n\n\n\n\nComo ves, index.qmd es un fichero (nuestra “Home Page”) sin contenido aparente: aparte del yamlno hay nada más. Sin embargo, justamente en el yaml especifica, con la opción listing: (linea 3), que la página va a ser un listado; concrétamente un listado del contenido que haya en la carpeta posts; o sea, un listado con los posts que haya en la carpeta posts.\nSí, con el trozo contents: posts (linea 4), se está especificando la carpeta donde estará alojado el contenido de los posts. Si miras la carpeta posts verás 2 subcarpetas, una para cada uno de los 2 posts del blog.\nYa hablaremos de las subcarpetas donde está el contenido de los posts más adelante, pero adelanto que en cada carpeta hay un archivo index.qmd con el contenido de cada post.\n\n\n\n\n\n\n\nTarea 5: Modificar el contenido de index.qmd\n\n\n\n\nSimplemente he cambiado la linea 1. Aunque casi queda mejor, para mi gusto, comentar (con un #) para que no haya ningún título, casi queda mejor sin título.\n\n\n---\ntitle: \"Mi listado de post\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n  sort-ui: false\n  filter-ui: false\npage-layout: full\ntitle-block-banner: true\n---\n\n\n\n\n\nOtra vez se trata de modificar el archivo index.qmd para dejarlo como:\n\n\n---\n#title: \"Mi listado de posts\"  #- yo casi prefiero que no ponga nada\nlisting:\n  contents: posts\n  #- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options\n  #- https://quarto.org/docs/websites/website-listings.html#sorting-items\n  sort: \"date desc\" \n  #-  https://quarto.org/docs/websites/website-listings.html#listing-types\n  type: default  #- opciones: {default, grid, table}\n  categories: true\n  sort-ui: false\n  filter-ui: false\n  date-format: long\npage-layout: full\ntitle-block-banner: true\nimage: imagenes/thumbnail.jpg\n---"
+  },
+  {
+    "objectID": "taller/03_taller_tuneado-basico.html#archivo-about.qmd",
+    "href": "taller/03_taller_tuneado-basico.html#archivo-about.qmd",
+    "title": "Tuneado básico del blog con Quarto",
+    "section": "3 Archivo about.qmd",
+    "text": "3 Archivo about.qmd\n\nVamos a modificar mínimamente el fichero about.qmd. En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero y en la derecha como lo dejaremos. Como verás solo vamos a hacer cambios en la quinta linea: cambios la plantilla predefinida.\n\n\n\n\n\n\n\nContenido original de about.qmd\n\n\n\n\n\n\n\nAsí dejaremos el fichero about.qmd\n\n\n\n\n\n\n\n\n\n\n\nTarea 6: Modificar el contenido de about.qmd\n\n\n\n\nAntes he dicho que solo modificaríamos la linea 5, pero mejor si lo complementamos con algunas acciones más, como el tamaño de la foto y su forma, por eso he añadido 2 lineas tras template:trestles.\nLógicamente estaría bien que sustituyeses la foto: se trata de cambiar profile.jpg, en la linea 3, por la ruta a tu foto.\nAbajo tienes el código:\n\n\n---\ntitle: Yo mismo\nimage: profile.jpg\nabout:\n  template: trestles    #- {jolla, solana, ...}\n  image-width: 10em     #- https://cybmeta.com/em-y-rem\n  image-shape: round    #- rectangle, round, rounded\n  links:\n    - icon: twitter\n      text: Twitter\n      href: https://twitter.com\n    - icon: linkedin\n      text: LinkedIn\n      href: https://linkedin.com\n    - icon: github\n      text: Github\n      href: https://github.com\n---\n\n\n\n\nComo has visto, si en el yaml se activa la opción about: (linea 3), entonces Quarto tiene disponibles unas plantillas para crear About’s pages. Aquí tienes la documentación oficial sobre estas plantillas. Como puedes ver aquí hay 5 plantillas: jolla, trestles, solana, marquee y broadside."
+  },
+  {
+    "objectID": "taller/03_taller_tuneado-basico.html#archivo-styles.css",
+    "href": "taller/03_taller_tuneado-basico.html#archivo-styles.css",
+    "title": "Tuneado básico del blog con Quarto",
+    "section": "4 Archivo styles.css",
+    "text": "4 Archivo styles.css\n\nPuedes cambiar la apariencia estética del blog y dejarlo a tu gusto usando los themes prefedinidos en Quarto o puedes usar el archivo styles.css2\nDe momento, el archivo styles.css está vacio3\nEl tuneado del blog con .css lo veremos con algo más de detalle en el tutorial nº 8, ahora mismo solo haremos unas modificaciones mínimas: voy a justificar el texto4.\n\n\n\n\n\n\n\nTarea 7: Modificar styles.css\n\n\n\n\nSimplemente sustituye el contenido original del fichero styles.css por el contenido del siguiente chunk:\n\n/* css styles */\n\n\n/* justificar el texto */ \np, ul, ol {\n  text-align: justify; }       \n\n\n\nAcuérdate que para ver los cambios has de volver a generar el blog: Build > Render Website,"
+  },
+  {
+    "objectID": "taller/03_taller_tuneado-basico.html#resumen",
+    "href": "taller/03_taller_tuneado-basico.html#resumen",
+    "title": "Tuneado básico del blog con Quarto",
+    "section": "5 Resumen",
+    "text": "5 Resumen\n\n\n\n\n\n\nResumen\n\n\n\n\n\n\nEn esta tercera parte del taller hemos aprendido a mejorar/tunear un poco nuestro blog.\nHemos modificado 3 archivos:\n\n_quarto.yml: hemos modificado el título del blog y la estructura de la barra de navegación; concretamente hemos añadido una página nueva.\nindex.qmd: construye la Home Page de nuestra web. La opción listing: hace que nuestra web es en realidad un blog.\nabout.qmd: hemos utilizado las plantillas de Quarto para configurar nuestra About page.\n\nFinalmente hemos modificado (minímamente) el archivo styles.css."
+  },
+  {
+    "objectID": "taller/03_taller_tuneado-basico.html#referencias",
+    "href": "taller/03_taller_tuneado-basico.html#referencias",
+    "title": "Tuneado básico del blog con Quarto",
+    "section": "6 Referencias",
+    "text": "6 Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD"
+  },
+  {
+    "objectID": "taller/06_taller_convertir-en-web.html",
+    "href": "taller/06_taller_convertir-en-web.html",
+    "title": "Tuneado básico del blog (4ª parte del taller)",
+    "section": "",
+    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller “Mi primer blog con Quarto” celebrado en Córdoba (Spain), 23-25 de noviembre de 2022. El taller se celebró el jueves 24, 15:15-17:00.\nEste tutorial es sólo una parte del taller. Concretamente la cuarta parte.\nEn esta cuarta parte del taller vamos a crear un nuevo post.\nEl taller completo está aquí."
+  },
+  {
+    "objectID": "taller/06_taller_convertir-en-web.html#creando-un-nuevo-post",
+    "href": "taller/06_taller_convertir-en-web.html#creando-un-nuevo-post",
+    "title": "Tuneado básico del blog (4ª parte del taller)",
+    "section": "Creando un nuevo post",
+    "text": "Creando un nuevo post"
+  },
+  {
+    "objectID": "taller/06_taller_convertir-en-web.html#truco",
+    "href": "taller/06_taller_convertir-en-web.html#truco",
+    "title": "Tuneado básico del blog (4ª parte del taller)",
+    "section": "TRUCO",
+    "text": "TRUCO\n\ncasi mejor hacer esto despues de crear un post\nvamos a transformar nuestro blog en una página web personal con blog\npara ello solo hay que :\n\ncambiar el nombre del fichero index.qmd a blog.qmd\ncambiar el nombre del fichero about.qmd a index.qmd"
+  },
+  {
+    "objectID": "taller/04_taller_crear-post.html",
+    "href": "taller/04_taller_crear-post.html",
+    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "section": "",
+    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí.\nEl blog que hemos creado con Quarto y que estamos adaptando a nuestras necesidades, contiene de fábrica 2 posts muy sencillos. Sus títulos son: “Welcome to my blog” y “Post with code”.\nMás adelante borraremos estos 2 posts, pero ahora mismo los vamos a utilizar de ejemplo para crear un nuevo post. Será en la sección siguiente, de momento veamos donde están los archivos que generan los posts de nuestro blog."
+  },
+  {
+    "objectID": "taller/04_taller_crear-post.html#donde-están-los-posts-del-blog",
+    "href": "taller/04_taller_crear-post.html#donde-están-los-posts-del-blog",
+    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "section": "¿Donde están los posts del blog?",
+    "text": "¿Donde están los posts del blog?\nLos ficheros .qmd que generan los posts están en la carpeta posts de nuestro Rproject que genera el blog.\nCada post está en una carpeta diferente. Veámoslo:\n\n\n\n\n\n\nLos posts residen en la carpeta posts\n\n\n\n\n\nComo ves, en la carpetaposts hay:\n\nuna subcarpeta para cada post.\nel archivo _metadata.yml. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los posts de la carpeta posts."
+  },
+  {
+    "objectID": "taller/04_taller_crear-post.html#contenido-de-cada-subcarpeta-de-.posts",
+    "href": "taller/04_taller_crear-post.html#contenido-de-cada-subcarpeta-de-.posts",
+    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "section": "Contenido de cada subcarpeta de ./posts/",
+    "text": "Contenido de cada subcarpeta de ./posts/\nVeamos el contenido de una de las carpetas que generan los posts, por ejemplo la carpeta /welcome/:\n\n\n\n\n\n\nContenido de la carpeta welcome que genera el post titulado “Welcome to my blog”\n\n\n\n\n\n\n\nContenido del archivo index.qmd”\n\n\n\n\n\nComo ves, la carpeta /welcome/ que genera el primer post del blog contiene 2 archivos:\n\nindex.qmd: es realmente el archivo que genera el post. Veremos su contenido más adelante.\nthumbnail.jpg: sencillamente un archivo con una imagen que será usado al generar el post."
+  },
+  {
+    "objectID": "taller/04_taller_crear-post.html#creando-un-nuevo-post",
+    "href": "taller/04_taller_crear-post.html#creando-un-nuevo-post",
+    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "section": "Creando un nuevo post",
+    "text": "Creando un nuevo post\nDe momento, para generar un nuevo post lo que haremos será crear una nueva subcarpeta dentro de ./posts/, ponerle nombre y pegar allí los archivos que hay en la carpeta de uno de los dos posts de prueba. Por ejemplo:\n\n\n\n\n\n\nTarea 1: Creando un nuevo post\n\n\n\n\nCrea una nueva subcarpeta en ./posts/\nPonle nombre, por ejemplo: “my-primer-post”\nCopia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en ./posts/welcome/ y pégalos en ./posts/my-primer-post/; es decir, pegamos el archivo index.qmd y tumbnail.jpg en nuestra nueva carpeta.\nVuelve a regenerar el blog: Build > Render Website y verás que ahora nuestro blog ya tiene tres posts.\n\n\n\n\nBueno, pues ya lo tenemos, ya tenemos un nuevo post, solo que, como no hemos cambiado el contenido de index.qmd ni `tumbnail.jpg, pues nuestro tercer post de nuestro blog será idéntico al primer, al post de bienvenida.\nEvidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.\n\n\n\n\n\n\n\nTarea 2: Modificando el tercer post\n\n\n\n\nModifica el contenido de /my-primer-post/index.qmd\nSustituye thumbnail.jpg por otro archivo\n\n\n\n\nEn el siguiente tutorial veremos en profundidad las posibilidades que nos ofrece Quarto para escribir posts."
+  },
+  {
+    "objectID": "taller/04_taller_crear-post.html#resumen",
+    "href": "taller/04_taller_crear-post.html#resumen",
+    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "section": "Resumen",
+    "text": "Resumen\n\n\n\n\n\n\nResumen\n\n\n\n\n\n\nEn esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre."
+  },
+  {
+    "objectID": "taller/04_taller_crear-post.html#referencias",
+    "href": "taller/04_taller_crear-post.html#referencias",
+    "title": "Workflow: ¿cómo crear un post? (4ª parte del taller)",
+    "section": "Referencias",
+    "text": "Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "AAA",
@@ -315,24 +336,10 @@
     "text": "Aquí quiero hacer solo una foto que cubra la pantalla"
   },
   {
-    "objectID": "materiales.html",
-    "href": "materiales.html",
-    "title": "Web del taller `Mi primer blog con Quarto` (WIP)",
-    "section": "",
-    "text": "El taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas. En la sección Setup tienes instrucciones para instalar el software necesario para el taller\n\n\n1. Intro\n\n\n2. Creación de un blog básico: mi blog en 3 minutos\n\n\n3. Tuneado básico del blog\n\n\n4. Workflow: ¿cómo crear un post?\n\n\n5. Escribiendo posts: practicando con Quarto\n\n\n6. Convirtiendo el blog en una web académica\n\n\n7. Tuneado del blog\n\n\n8. Opciones de alojamiento\n\nSeguramente usaremos esta Etherpad."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Pedro J. Pérez",
     "section": "",
     "text": "Yo mismo, soy un entusiasta de R que esta creando su blog con Quarto, blah blah …"
-  },
-  {
-    "objectID": "setup.html",
-    "href": "setup.html",
-    "title": "Setup",
-    "section": "",
-    "text": "Instalación de R, RStudio y Quarto\n\n\n\n\n\n\nTodos sabemos instalar R y Rstudio, si no fuese así, aquí tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.\nInstalación de Quarto: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, aquí tienes los instaladores para los principales sistemas operativos."
   }
 ]
