@@ -105,6 +105,9 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 
 ## beneficios de tener un blog{.smaller}
 
+
+Opiniones más elaboradas en:  [Rebeca Carter](https://www.rebeccabarter.com/blog/2020-02-03_blogger/#why-start-a-blog) o [este](https://jozef.io/r914-one-year-r-blogging/) 
+
 - Es fácil y divertido
 
 - Se aprende mucho!!
@@ -119,8 +122,7 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 
 - Productive procrastination
 
-
-Opiniones más elaboradas en:  [Rebeca Carter](https://www.rebeccabarter.com/blog/2020-02-03_blogger/#why-start-a-blog) o [este](https://jozef.io/r914-one-year-r-blogging/) 
+<br>
 
 - No fear y no tiene xq estar perfecto
 
@@ -158,23 +160,4 @@ Opiniones más elaboradas en:  [Rebeca Carter](https://www.rebeccabarter.com/blo
 ## Ventajas de Quarto
 
 - [en StackOverfow](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown)
-
-
-## Blog en 100 segundos
-
-
-
-
-## Web Docente
-
-### Creación
-
-### Tuneado
-
-### Creación de posts
-
-### Publicación
-
-
-
 

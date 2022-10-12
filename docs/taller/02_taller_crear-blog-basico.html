@@ -123,10 +123,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </script><script async="" src="https://hypothes.is/embed.js"></script><link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/styles.css">
 <meta property="og:title" content="Web del taller Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto">
-<meta property="og:description" content="En este tutorial, vamos a ver el proceso de creación y la estructura de ficheros de un blog creado con Quarto de forma rápida. Alojaremos el blog en Quarto Pub. Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller.">
+<meta property="og:description" content="(2ª parte del taller Mi primer blog con Quarto)">
 <meta property="og:site-name" content="Web del taller `Mi primer blog con Quarto` (WIP)">
 <meta name="twitter:title" content="Web del taller Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto">
-<meta name="twitter:description" content="En este tutorial, vamos a ver el proceso de creación y la estructura de ficheros de un blog creado con Quarto de forma rápida. Alojaremos el blog en Quarto Pub. Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller.">
+<meta name="twitter:description" content="(2ª parte del taller Mi primer blog con Quarto)">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -704,13 +704,7 @@ Resumen
   title = {Creación de un blog básico con Quarto},
   date = {},
   url = {https://perezp44.github.io/taller.primer.blog//taller/02_taller_crear-blog-basico.html},
-  langid = {es},
-  abstract = {En este tutorial, vamos a ver el **proceso de creación** y
-    la **estructura de ficheros** de un blog creado con Quarto de forma
-    rápida. Alojaremos el blog en {[}Quarto
-    Pub{]}(https://quartopub.com). Será un blog básico pero
-    completamente operativo. Ya tendremos tiempo de mejorarlo, o
-    tunearlo, en las siguientes secciones del taller.}
+  langid = {es}
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
 Pedro J. Pérez, and Pedro J. Pérez. n.d. <span>“Creación de un blog
@@ -833,7 +827,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <pre class="markdown" data-shortcodes="false"><code>---
 title: "Creación de un blog básico con Quarto"
 subtitle: "(2ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
-abstract: "En este tutorial, vamos a ver el **proceso de creación** y la **estructura de ficheros** de un blog creado con Quarto de forma rápida. Alojaremos el blog en [Quarto Pub](https://quartopub.com). Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller."
+#abstract: "En este tutorial, vamos a ver el **proceso de creación** y la **estructura de ficheros** de un blog creado con Quarto de forma rápida. Alojaremos el blog en [Quarto Pub](https://quartopub.com). Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller."
 lang: es
 author: "Pedro J. Pérez"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
@@ -872,9 +866,31 @@ editor_options:
 
 &lt;br&gt;
 
+------------------------------------------------------------------------
+
+&lt;br&gt;
+
+::: {.callout-tip collapse="false" appearance="default" icon="false"}
+## ¿Qué haremos en este tutorial?
+
+- Veremos de forma rápida el  **proceso de creación** y la **estructura de ficheros** de un blog creado con Quarto. 
+
+- Alojaremos el blog en [Quarto Pub](https://quartopub.com). 
+
+- Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller.
+:::
+
+
+&lt;br&gt;
+
+
+
+
+&lt;br&gt;
+
 ## Creación de un Qproject (para un blog)
 
-Vamos a  crear el blog con R y RStudio utilizando  un **Quarto Project**^[Trabajar con Quarto projects tiene algunas ventajas, puedes verlas [aquí](https://quarto.org/docs/projects/quarto-projects.html)], concretamente un Quarto project prediseñado para crear blogs; por lo tanto, el primer paso para crear nuestro blog e screar el proyecto donde se alojarán los ficheros que necesitemos para nuestro blog.
+Vamos a  crear el blog con R y RStudio utilizando  un **Quarto Project**^[Trabajar con Quarto projects tiene algunas ventajas, puedes verlas [aquí](https://quarto.org/docs/projects/quarto-projects.html)], concretamente un Quarto project prediseñado para crear blogs; por lo tanto, el primer paso para crear nuestro blog es crear el proyecto donde se alojarán los ficheros que necesitemos para nuestro blog.
 
 ::: {.callout-important icon="false"}
 #### Tarea 1: Creación del Qproject que generará el blog
