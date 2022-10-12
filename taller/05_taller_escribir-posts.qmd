@@ -1,7 +1,8 @@
 ---
 title: "Escribiendo posts: practicando con Quarto (5ª parte del taller)"
 author: "Pedro J. Pérez"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: 2022-10-10
+date-format: short
 format: 
   html:
     theme: minty  #- https://quarto.org/docs/output-formats/html-themes.html
@@ -11,8 +12,8 @@ format:
     toc-depth: 3
     toc-location: left
     smooth-scroll: true
-    #self-contained: true  #- ya no la usa la nueva version de pandoc
-    standalone: true  
+    embed-resources: true  #self-contained: true 
+    #standalone: true  
     link-external-icon: false
     link-external-newwindow: true
     html-math-method: katex
@@ -24,14 +25,7 @@ comments:
     theme: clean
 ---
 
-::: {.callout-note collapse="true" appearance="default" icon="false"}
-#### Contexto
-
--  Tutorial preparado para el taller **Mi primer blog con Quarto** impartido en Córdoba (Spain) durante el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/), 23-25 de noviembre de 2022.
--   El taller está pensado para realizar con [R](https://cran.r-project.org/). Se utilizará el IDE [RStudio](https://www.rstudio.com/products/rstudio/) y [Quarto](https://quarto.org/). Se recomienda tener instaladas **versiones recientes** de los 3 programas
-
-- Este tutorial es sólo una parte del taller. El **taller completo** está [aquí](https://perezp44.github.io/taller.primer.blog/).
-:::
+{{< include _contexto.qmd >}}
 
 
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
@@ -47,7 +41,7 @@ comments:
     
     3. **Tuneado básico del blog**. Modificamos ligeramente los ficheros `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
     
-    4. **Workflow: ¿cómo crear un post?**. Vimos como se generan nuevos posts para nuestro blog.
+    4. **Workflow: ¿cómo crear un post?**. Vimos como generar nuevos posts para nuestro blog.
 :::
 
 <br>
@@ -56,10 +50,12 @@ comments:
 
 <br>
 
-::: {.callout-tip collapse="false" appearance="default" icon="false"}
+::: {.callout-tip  appearance="default" icon="false"}
 ## ¿Qué haremos en este tutorial?
 
 - Ver como escribir nuestro posts con Quarto, con ficheros `.qmd`
+
+- En concreto veremos: yaml, texto, chunks
 
 - Aprender a utilizar algunos truquillos de Quarto
 :::
@@ -69,112 +65,132 @@ comments:
 
 En el tutorial anterior aprendimos a generar nuevos post para nuestro blog. Ahora **aprenderemos a escribir esos post**; veremos las **posibilidades que nos ofrece Quarto** a la hora de escribir y formatear nuestros posts. 
 
+::: {.callout-warning  appearance="default" icon="true"}
 
+Voy a suponer que los asistentes al taller y posible lectores de estos tutoriales conocen y han escrito algún documento en Rmarkdown. En ese caso, el paso de `.Rmd` a `.qmd` es sencillo. En cualquier caso, [aquí](https://quarto.org/docs/faq/rmarkdown.html) tienes unas FAQ's para usuarios de .Rmd que se preguntan si pasarse a Quarto.
 
-## 1. Creamos un nuevo post
+Aquellos que no sepan qué es Rmarkdown pueden empezar por [aquí](https://perezp44.github.io/intro-ds-22-23-web/tutoriales/tt_07_Rmarkdown.html) o [aquí](https://perezp44.github.io/intro-ds-22-23-web/slides/slides_07_rmarkdown.html#1).
 
-Vamos a crear un nuevo post y esta vez si dedicaremos un tiempo a escribirlo para documentar algunas de las posibilidades que nos ofrece Quarto para escribir documentos `.html`.
-
-
-::: {.callout-important icon="false"}
-#### Tarea 1: Creamos un nuevo post
-
-Ya sabemos que para crear un nuevo post tenemos que: 
-
-- Crear una nueva subcarpeta en `./posts/`
-
-- Ponerle nombre, por ejemplo: "escribir-con-Quarto"
-
-- Copia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en `./posts/welcome/`  y pégalos en `./posts/escribir-con-Quarto/`.
-
-- Vuelve a regenerar el blog: `Build > Render Website` y verás que ahora nuestro blog ya tiene cuatro posts.
 :::
 
+## 1. Escribiendo con Quarto
 
-Bien, ya tenemos un nuevo post. Vamos a darle contenido.
+En el tutorial anterior creamos un nuevo post en la carpeta `./posts/my-primer-post/`. En realidad ese post es idéntico al primero (`welcome`) ya que sencillamente hicimos un copy-paste. Ahora sí que vamos a modificar el contenido (yaml/texto/chunks) del post para aprender algunos truquillos sobre Quarto.
 
-<br>
-
-## 2. Escribiendo el post
-
-
-
+Ya sabemos que la carpeta `./posts/my-primer-post/` contiene dos archivos. El importante es `index.qmd` que es el archivo que genera el post. Veámoslo:
 
 
 ::: {layout-ncol=1}
 
-![Los posts residen en la carpeta `posts`](./imagenes/tt_01/img_15.png){fig-align="center"}
-:::
-
-Como ves, en la carpeta`posts` hay:
-
-  - una subcarpeta para cada post.
-    
-  - el archivo `_metadata.yml`. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los posts de la carpeta `posts`.
-
-<br>
-
-## Contenido de cada subcarpeta de `./posts/`
-
-Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la carpeta `/welcome/`:
-
-::: {layout-ncol=2}
-
-![Contenido de la carpeta `welcome` que genera el post titulado "Welcome to my blog"](./imagenes/tt_01/img_16.png){fig-align="center"}
-
-![Contenido del archivo `index.qmd`"](./imagenes/tt_01/img_17.png){fig-align="center"}
-:::
-
-Como ves, la carpeta `/welcome/` que genera el primer post del blog contiene 2 archivos: 
-
-  - `index.qmd`: es realmente el archivo que genera el post. Veremos su contenido más adelante.
-  
-  - `thumbnail.jpg`: sencillamente un archivo con una imagen que será usado al generar el post.
-  
-<br>
-
-## Creando un nuevo post
-
-
-De momento, para generar un nuevo post lo que haremos será crear una nueva subcarpeta dentro de `./posts/`, ponerle nombre y pegar allí los archivos que hay en la carpeta de uno de los dos posts de prueba. Por ejemplo: 
-
-
-
-
-::: {.callout-important icon="false"}
-#### Tarea 1: Creando un nuevo post
-
-- Crea una nueva subcarpeta en `./posts/`
-
-- Ponle nombre, por ejemplo: "my-primer-post"
-
-- Copia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en `./posts/welcome/`  y pégalos en `./posts/my-primer-post/`; es decir, pegamos el archivo `index.qmd` y `tumbnail.jpg` en nuestra nueva carpeta.
-
-- Vuelve a regenerar el blog: `Build > Render Website` y verás que ahora nuestro blog ya tiene tres posts.
+![Contenido del fichero `index.qmd` de nuestro tercer post.](./imagenes/tt_01/img_19.png){fig-align="center"}
 :::
 
 
+Los ficheros `.qmd` tienen 3 partes: yaml, texto y chunks. Vamos a verla una a una.
 
-- Bueno, pues ya lo tenemos, ya tenemos un nuevo post, solo que, como no hemos cambiado el contenido de `index.qmd` ni ``tumbnail.jpg`, pues nuestro tercer post de nuestro blog será idéntico al primer, al post de bienvenida.
+## El `yaml`
 
-- Evidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.
+El encabezamiento o **YAML**, se utiliza para fijar determinadas opciones y metadatos de nuestro documento^[El `yaml` será  procesado varias veces durante el procesado del documento: es leído por Quarto, knitr y Pandoc e influirá en el resultado final, pudiendo afectar al código, al contenido y al procesado del documento].
+
+Una idea importante a recordar es que estamos trabajando con un **Qproject**. Trabajar con un Qproject tiene ventajas^[Puedes ver la documentación oficial de Quarto sobre proyectos [aquí](https://quarto.org/docs/projects/quarto-projects.html)], entre ellas:
+
+- poder procesar todos los archivos con un solo comando: `quarto render <myproject>`
+
+- la posibilidad de "freeze rendered output"
+
+- la posibilidad de redireccionar los documentos de salida (output) a otro directorio
+
+- posibilidad de compartir la configuración del YAML para múltiples documentos. Los metadatos compartidos se pueden definir tanto a nivel de proyecto como a nivel de directorio.
+
+
+Esta última ventaja, la posibilidad de **compartir opciones de metadatos YAML en varios documentos**, es importante ahora, porque nos da diferentes posibilidades para especificar el YAML de nuestros documentos o posts.
+
+### `ymal` de un post
+
+En un post se pueden especificar opciones YAML de 3 formas/niveles:
+
+1. En el yaml del propio post (nivel documento)
+2. En el fichero `./posts/_metadata.yml` (nivel carpeta)
+3. En el fichero `./_quarto.yml` (nivel proyecto)
+
+Los posibles 3 yaml's se fusionan en el momento de procesar cada archivo `.qmd`. Si hay conflictos prevalece las opciones del nivel documento, luego nivel carpeta y finalmente nivel proyecto.
+
+[Aquí]() puedes encontrar las opciones que se pueden fijar con el `yaml`, pero creo que la forma más operativa para el taller es mostrar ejemplos de ficheros yaml.`
+
+html: <https://quarto.org/docs/output-formats/html-basics.html>
+html-options: <https://quarto.org/docs/reference/formats/html.html>
+
+
+::: {.panel-tabset}
+
+### nivel documento
+
+```yaml
+---
+---
+title: "Mi primer post (luchando con Quarto)"
+author: "Pedro J. Pérez"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+draft: false
+format: 
+  html:
+    theme: minty  #- https://quarto.org/docs/output-formats/html-themes.html
+    #-https://quarto.org/docs/websites/website-blog.html#themes
+    backgroundcolor: "#F1F3F4"
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    number-sections: false
+    number-depth: 3
+    smooth-scroll: true
+    embed-resources: true  #self-contained: true 
+    #standalone: true  
+    link-external-icon: false
+    link-external-newwindow: true
+    html-math-method: katex  #- default: LaTeX eq rendered using MathJax
+    citations-hover: false
+    footnotes-hover: false
+    css: assets/styles.css
+comments:
+  hypothesis: 
+    theme: clean
+---
 
 
 
+---
+title: "My document"
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    css: styles.css
+---
+```
 
-::: {.callout-important icon="false"}
-#### Tarea 2: Modificando el tercer post
 
-- Modifica el contenido de `/my-primer-post/index.qmd`
+### nivel carpeta
 
-- Sustituye `thumbnail.jpg` por otro archivo
+
+### nivel proyecto
+
 :::
 
 
-<br>
 
 
-En el **siguiente tutorial** veremos en profundidad las posibilidades que nos ofrece Quarto para escribir posts.
+- todos los Qprojects contienen un archivo de configuración  llamado `_quarto.yml`: todo documento que se procese (render) dentro del directorio del proyecto heredará automáticamente los metadatos definidos en `_quarto.yml`.
+
+
+## Modificando el texto
+
+## Chunks de código
+
+
+## Extras
+
+- Create a tabset via a markdown div with the class name panel-tabset (e.g. ::: {.panel-tabset}) <https://quarto.org/docs/output-formats/html-basics.html#tabsets>
+
 
 <br>
 

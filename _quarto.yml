@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  #execute-dir: project #- https://quarto.org/docs/projects/code-execution.html#working-dir
 
 website:
   title: "Web del taller `Mi primer blog con Quarto` (WIP)"
@@ -45,6 +46,7 @@ website:
 
 format:
   html:
+    page-layout: full
     #theme: ember.scss  #- de danielle Navarro(https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/)
     theme: 
       - solar #sketchy #slate #- litera  superhero darkly
@@ -54,8 +56,12 @@ format:
       - styles.css
     toc: true
     
+
+
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
 execute:
-  freeze: auto  # re-render only when source changes
+  freeze: true  # re-render only when source changes
   
 #editor: visual
 

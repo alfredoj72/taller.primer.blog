@@ -1,1 +1,7 @@
 /* css styles */
+
+/* definiendo estilos de los párrafos */ 
+p, ul, ol {
+  text-align: justify; }        /* justificar el texto del body y listas */      
+  
+

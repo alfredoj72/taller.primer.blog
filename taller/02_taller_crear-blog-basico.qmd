@@ -34,58 +34,50 @@ editor_options:
   chunk_output_type: console
 ---
 
-::: {.callout-note collapse="true" appearance="default" icon="false"}
-#### Contexto
 
--  Tutorial preparado para el taller **Mi primer blog con Quarto** impartido en Córdoba (Spain) durante el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/), 23-25 de noviembre de 2022.
--   El taller está pensado para realizar con [R](https://cran.r-project.org/). Se utilizará el IDE [RStudio](https://www.rstudio.com/products/rstudio/) y [Quarto](https://quarto.org/). Se recomienda tener instaladas **versiones recientes** de los 3 programas
-
-- Este tutorial es sólo una parte del taller. El **taller completo** está [aquí](https://perezp44.github.io/taller.primer.blog/).
-:::
+{{< include _contexto.qmd >}}
 
 
 <br>
 
+## Creación de un Qproject (para un blog)
 
-
-## Creación de un Rproject (para un blog)
-
-Vamos a  crear el blog con R y RStudio; concretamente trabajaremos utilizando un `Rproject`, así que el primer paso para crear nuestro blog es **crear un Rproject** donde se alojaran los ficheros que necesitemos para nuestro blog.
+Vamos a  crear el blog con R y RStudio utilizando  un **Quarto Project**^[Trabajar con Quarto projects tiene algunas ventajas, puedes verlas [aquí](https://quarto.org/docs/projects/quarto-projects.html)], concretamente un Quarto project prediseñado para crear blogs; por lo tanto, el primer paso para crear nuestro blog e screar el proyecto donde se alojarán los ficheros que necesitemos para nuestro blog.
 
 ::: {.callout-important icon="false"}
-#### Tarea 1: Creación del Rproject que generará el blog
+#### Tarea 1: Creación del Qproject que generará el blog
 
 -   En RStudio sigue la siguiente ruta de menús:   
 
     `File > New Project > New Directory > Quarto Blog`
 
-- Al hacerlo se creará una carpeta, un Rproject, con todo lo necesario para crear un blog.
+- Al hacerlo se creará una carpeta, un Qproject, con todo lo necesario para crear un blog.
 
--   El nombre que le he puesto a la carpeta/Rproject es `blog_prueba_00`
+-   El nombre que le he puesto a la carpeta/Qproject es `blog_prueba_00`
 :::
 
-De momento aún no tenemos el blog, solo hemos creado un Rproject pero, ya tenemos, dentro de la carpeta del Rproject, la estructura de carpetas y archivos necesarios para crearlo.
+De momento aún no tenemos el blog, solo hemos creado un Qproject pero, ya tenemos, dentro de la carpeta del Qproject, la estructura de carpetas y archivos necesarios para crearlo.
 
 Cuando creemos el blog, será un blog sencillito, vamos con lo mínimo, pero un blog. 
 
-Antes de crear el blog hagamos un pequeño repaso al contenido del Rproject, veamos su estructura de carpetas y archivos.
+Antes de crear el blog hagamos un pequeño repaso al contenido del Qproject, veamos su estructura de carpetas y archivos.
 
 <br>
 
-## Contenido del Rproject
+## Contenido del Qproject
 
-El Rproject que acabamos de crear y que permitirá crear el blog tiene esta estructura de archivos y carpetas:
+El Qproject que acabamos de crear y que permitirá crear el blog tiene esta estructura de archivos y carpetas:
 
 
 ::: {#fig-01 layout-ncol=1}
 ![](./imagenes/tt_01/img_01.png){fig-align="center"}
 
-Estructura del Rproject `blog_prueba_00`
+Estructura del Qproject `blog_prueba_00`
 :::
 
 
 
-Como ves en la figura anterior, el Rproject contiene **6 archivos y una subcarpeta**. Voy a dividirlos en dos categorías:   
+Como ves en la figura anterior, el Qproject contiene **6 archivos y una subcarpeta**. Voy a dividirlos en dos categorías:   
 
   1) los que no son importantes (al menos ahora mismo)  
     
@@ -99,7 +91,7 @@ Como ves en la figura anterior, el Rproject contiene **6 archivos y una subcarpe
 
 1) El archivo `blog_prueba_00.Rproj`
 
-No es un archivo importante para el blog. Este archivo simplemente permite que RStudio reconozca la carpeta `blog_prueba_00` como un Rproject.
+No es un archivo importante para el blog. Este archivo simplemente permite que RStudio reconozca la carpeta `blog_prueba_00` como un Qproject.
 :::
 
 
@@ -187,7 +179,7 @@ Otro archivo `.qmd` que generará el archivo `index.html` y que será la "landin
 
 ## Creación del blog
 
-El Rproject que hemos creado tiene todo lo necesario para crear un blog, pero aún no lo hemos creado. Para crearlo solo tienes que: 
+El Qproject que hemos creado tiene todo lo necesario para crear un blog, pero aún no lo hemos creado. Para crearlo solo tienes que: 
 
 
 ::: {.callout-important icon="false"}
@@ -195,7 +187,7 @@ El Rproject que hemos creado tiene todo lo necesario para crear un blog, pero a�
 
 -   Ir al cuadrante superior-izquierda de RStudio, pinchar en la pestaña `Build` y pinchar en `Render Website`.
 
-- De esta forma, se procesarán los archivos del Rproject y se creará el blog.
+- De esta forma, se procesarán los archivos del Qproject y se creará el blog.
 
 - Podremos verlo en el cuadrante inferior-izquierda de RStudio, concretamente en la pestaña `Viewer`.
 :::
@@ -223,7 +215,7 @@ Al pinchar en `Render Website` se creará el blog
 
 - También podríamos haber generado el blog usando la Consola o la terminal desde RStudio. 
 
-- En ambos casos hay que estar en el Rproject "blog_prueba_00"; es decir, "blog_prueba_00" es el working directory
+- En ambos casos hay que estar en el Qproject "blog_prueba_00"; es decir, "blog_prueba_00" es el working directory
 
   ```{r, eval = FALSE}
   #- desde la Consola
@@ -245,13 +237,13 @@ Al pinchar en `Render Website` se creará el blog
 
 ## Veamos otra vez la estructura de carpetas
 
-Tras haber creado el blog, la estructura de carpetas de nuestro Rproject ha cambiado, concretamente se han generado 2 subcarpetas. Veámoslo:
+Tras haber creado el blog, la estructura de carpetas de nuestro Qproject ha cambiado, concretamente se han generado 2 subcarpetas. Veámoslo:
 
 
 ::: {#fig-03 layout-ncol="1"}
 ![](./imagenes/tt_01/img_05.png){fig-align="center"}
 
-Estructura de carpetas del Rproject tras la creación del blog
+Estructura de carpetas del Qproject tras la creación del blog
 :::
 
 #### Se han creado 2 subcarpetas
@@ -368,7 +360,7 @@ Para publicar nuestro blog en Quartopub sólo hay que:
 
 <br>
 
-Si te fijas, tras haberse publicado el blog en "Quarto Pub", se habrá creado un nuevo fichero en nuestro Rproject: es el fichero `_publish.yml`. En él solamente están los metadatos necesarios para publicar y **actualizar nuestro blog**.
+Si te fijas, tras haberse publicado el blog en "Quarto Pub", se habrá creado un nuevo fichero en nuestro Qproject: es el fichero `_publish.yml`. En él solamente están los metadatos necesarios para publicar y **actualizar nuestro blog**.
 
 
 
@@ -388,11 +380,11 @@ Fichero `_publish.yml` con la información para publicar el blog en `Quarto Pub`
 
 En este tutorial, la segunda parte del taller, hemos visto:
 
-- Como crear un Rproject con la estructura de carpetas y archivos necesaria para generar un blog básico
+- Como crear un Qproject con la estructura de carpetas y archivos necesaria para generar un blog básico
 
-- Hemos visto (de forma rápida) el contenido, los archivos, que hay en el Rproject. 
+- Hemos visto (de forma rápida) el contenido, los archivos, que hay en el Qproject. 
 
-- El Rproject contiene 3 archivos que serán los importantes, los que trabajaremos en el próximo tutorial, concretamente:  `_quarto_yml`, `index.qmd` y `about.qmd`
+- El Qproject contiene 3 archivos que serán los importantes, los que trabajaremos en el próximo tutorial, concretamente:  `_quarto_yml`, `index.qmd` y `about.qmd`
 
 - Hemos aprendido a generar el blog a través de RStudio, simplemente `Build > Render Website`
 

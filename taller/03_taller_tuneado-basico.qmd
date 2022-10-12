@@ -34,14 +34,8 @@ editor_options:
   chunk_output_type: console
 ---
 
-::: {.callout-note collapse="true" appearance="default" icon="false"}
-#### Contexto
+{{< include _contexto.qmd >}}
 
--  Tutorial preparado para el taller **Mi primer blog con Quarto** impartido en Córdoba (Spain) durante el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/), 23-25 de noviembre de 2022.
--   El taller está pensado para realizar con [R](https://cran.r-project.org/). Se utilizará el IDE [RStudio](https://www.rstudio.com/products/rstudio/) y [Quarto](https://quarto.org/). Se recomienda tener instaladas **versiones recientes** de los 3 programas
-
-- Este tutorial es sólo una parte del taller. El **taller completo** está [aquí](https://perezp44.github.io/taller.primer.blog/).
-:::
 
 
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
@@ -145,7 +139,7 @@ Como puedes ver arriba en la @fig-02, al compararla con la   @fig-01, hemos modi
         
         2. En la parte derecha de la barra de navegación hemos **añadido un icono para el email** (`icon:envelope`) y hemos modificado el texto que se muestra en la pestaña about, esto último lo hemos hecho con `text: "About me"` en las lineas 9 y 10.   
         
-        3. Finalmente, hemos **añadido una pestaña nueva (lineas 18 y 19)** pero está vez **a la izquierda** de la barra de navegación: `left:` (linea 17).  Fijate que esta nueva pestaña llamada "Docencia" creada con`- text: "Docencia"` (linea 18), esta referenciando a un archivo que no existe (aún) en el Rproject, está referenciando con `href: docencia.qmd` (linea 19) al archivo `docencia.qmd`. Lógicamente tendremos que crear este archivo.
+        3. Finalmente, hemos **añadido una pestaña nueva (lineas 18 y 19)** pero está vez **a la izquierda** de la barra de navegación: `left:` (linea 17).  Fijate que esta nueva pestaña llamada "Docencia" creada con`- text: "Docencia"` (linea 18), esta referenciando a un archivo que no existe (aún) en el Qproject, está referenciando con `href: docencia.qmd` (linea 19) al archivo `docencia.qmd`. Lógicamente tendremos que crear este archivo.
 
 -   En la **tercera parte** del fichero `_quarto.yml` hemos cambiado el `theme: minty` y hemos añadido las lineas 25 `toc: true` que creará índices en las páginas de la web/blog^[La opción `toc: true` creará un indice (o toc) en las páginas en las que hayan titulos de primer(#), segundo(##) o tercer nivel(###).], mientras que con `highlight-style: a11y` se cambia el formato visual de los chunks de código que hayan en la página web. 
 
@@ -230,7 +224,7 @@ Mi docencia es:
 
 <br> 
 
--   Como puedes ver, en el archivo `docencia.qmd` se hace referencia al archivo `/pdfs/econometria.pdf`. Si quieres que el link funcione, tienes que crear dentro del Rproject, la subcarpeta `pdfs`, y dentro de ella el archivo `econometria.pdf`.
+-   Como puedes ver, en el archivo `docencia.qmd` se hace referencia al archivo `/pdfs/econometria.pdf`. Si quieres que el link funcione, tienes que crear dentro del Qproject, la subcarpeta `pdfs`, y dentro de ella el archivo `econometria.pdf`.
 
 - Puede ser cualquier pdf, siempre que se llame `econometria.pdf`
 
