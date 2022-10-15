@@ -1,6 +1,5 @@
 ---
 title: "Mi primer blog con Quarto"
-author: "Pedro J. Pérez"
 format: revealjs
 title-slide-attributes: #- atributos para la slide de titulo
   data-background-color: "#562457"   #- color de R-ladies
@@ -34,14 +33,15 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 
 ## Bienvenidos al taller!!
 
-<br><br><br>
-
-#### Espero que aprendamos y nos divirtamos!!
 
 
-## Estructura del taller{.smaller}
+## Estructura del taller
 
-1. Intro y  ¿qué es Quarto?
+<br>
+
+::: {.nonincremental}
+
+1. Intro: ¿qué es Quarto?
 
 2. Creación de un blog básico: mi blog en 2 minutos
 
@@ -56,7 +56,7 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 7. Tuneado de la web: ejemplos de blogs
 
 8. Gestión y publicación de la web/blog: Quarto Pub, Github Pages
-
+:::
 
 
 # Enlaces para Fran y compis{.smaller}
@@ -88,7 +88,7 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 
 - Entusiasta de R
 
-- Creador y liquidador de blogs: [2015, R & flowers, con Jekyll](http://perezp44.github.io/), [2018, R & flowers V, con Hugo y blogdown](https://rflowers5.netlify.app/), [2020, R & flowers (o casi), con radix](https://perezp44.github.io/my_blog_R-flowers-0.1.3/), [2021, pedro.j.perez blog’s, con Distill](https://perezp44.github.io/pjperez.web/) y ... [2022, R & flowers, con Quarto](https://perezp44.github.io/pjperez.blog.2022/)
+- Creador y **liquidador de blogs**: [2015, R & flowers, con Jekyll](http://perezp44.github.io/), [2018, R & flowers V, con Hugo y blogdown](https://rflowers5.netlify.app/), [2020, R & flowers (o casi), con radix](https://perezp44.github.io/my_blog_R-flowers-0.1.3/), [2021, pedro.j.perez blog’s, con Distill](https://perezp44.github.io/pjperez.web/) y ... [2022, R & flowers, con Quarto](https://perezp44.github.io/pjperez.blog.2022/)
 
 
 
@@ -100,21 +100,24 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 
 - Que salgáis todos con el bosquejo de una web/blog!!
 
-- y, si puede ser, divertirse :bowtie: 🔥
+<br>
+
+- ... y, si puede ser, divertirse  🔥
 
 
-## beneficios de tener un blog{.smaller}
+## Beneficios de tener un blog{.smaller}
 
+<br>
 
-Opiniones más elaboradas en:  [Rebeca Carter](https://www.rebeccabarter.com/blog/2020-02-03_blogger/#why-start-a-blog) o [este](https://jozef.io/r914-one-year-r-blogging/) 
-
-- Es fácil y divertido
+::: {.nonincremental}
 
 - Se aprende mucho!!
 
+- Es fácil (pocas barreras de entrada si sabes Rmd)
+
 - Es divertido
 
-- Registrar análisis que haces 
+- Registrar análisis que haces que de otra forma se perderían 
 
 - Practicar skills de comunicación
 
@@ -124,7 +127,13 @@ Opiniones más elaboradas en:  [Rebeca Carter](https://www.rebeccabarter.com/blo
 
 <br>
 
-- No fear y no tiene xq estar perfecto
+- **Importante:** el blog y los posts **no tienen porque estar perfectos**, así que no fear!!
+
+<br>
+
+Opiniones más elaboradas [aquí](https://www.rebeccabarter.com/blog/2020-02-03_blogger/) o [aquí](https://jozef.io/r914-one-year-r-blogging/) 
+
+:::
 
 ## Ejemplos de blogs
 
@@ -138,26 +147,31 @@ Opiniones más elaboradas en:  [Rebeca Carter](https://www.rebeccabarter.com/blo
 - Webs académicas con blog: [esta](https://www.mm218.dev/) o [esta](https://ddimmery.com), o [esta](https://marioangst.com/en/)
 
 
-## Setup
-
-- Voy a trabajar con R (a través de RStudio) y Quarto
-
-- Si tienes RStudio 2022.07.1 + - ya tienes Quarto instalado 
-
-- [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV)
-
 
 # ¿Qué es Quarto?
 
 - Un nuevo sistema de publicación técnica de código abierto
 
-- Muy parecido a Rmarkdown, pero ... no requiere R, soporta más lenguejes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
+- Muy parecido a Rmarkdown, pero ... no requiere R, soporta más lenguajes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
 
-
-- Quarto is a new open-source technical publishing system from RStudio. It is similar in many ways to R Markdown (which isn’t going away, don’t worry!), except that it doesn’t require R, supports more languages, and combines the functionality of many R Markdown packages (e.g., xaringan, bookdown). 
-
+- Es ... la "segunda generación de Rmarkdown"
 
 ## Ventajas de Quarto
 
+::: {.nonincremental}
+
 - [en StackOverfow](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown)
 
+- un tweet: <https://mobile.twitter.com/DanOvand0/status/1580343517154770944>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Wow, writing first paper using <a href="https://twitter.com/quarto_pub?ref_src=twsrc%5Etfw">@quarto_pub</a> and it is amazing; almost every pain point for academic writing in <a href="https://twitter.com/hashtag/rmarkdown?src=hash&amp;ref_src=twsrc%5Etfw">#rmarkdown</a> has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching</p>&mdash; Dan Ovando (@DanOvand0) <a href="https://twitter.com/DanOvand0/status/1580343517154770944?ref_src=twsrc%5Etfw">October 12, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+:::
+
+
+## Setup para el taller
+
+- Voy a trabajar con R (a través de RStudio) y Quarto
+
+- Si tienes RStudio 2022.07.1 + - ya tienes Quarto instalado 
+
+- Instrucciones de instalación [aquí](https://perezp44.github.io/taller.primer.blog/setup.html)

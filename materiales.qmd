@@ -9,21 +9,21 @@ El taller está pensado para realizar con [R](https://cran.r-project.org/){targe
 <br>
 
 
-#### 1. [Intro](./taller/01_taller_slides.html){target="_blank"}
+#### 1. [Intro](./taller/01_taller_slides.html){target="_blank"} (5 min)
 
-#### 2. [Creación de un blog básico: mi blog en 3 minutos](./taller/02_taller_crear-blog-basico.qmd){target="_blank"}
+#### 2. [Creación de un blog básico: mi blog en 3 minutos](./taller/02_taller_crear-blog-basico.qmd){target="_blank"} (10 min)
 
-#### 3. [Tuneado básico del blog](./taller/03_taller_tuneado-basico.qmd){target="_blank"}
+#### 3. [Tuneado básico del blog](./taller/03_taller_tuneado-basico.qmd){target="_blank"} (10 min)
 
-#### 4. [Workflow: ¿cómo crear un post?](./taller/04_taller_crear-post.qmd){target="_blank"}
+#### 4. [Workflow: ¿cómo crear un post?](./taller/04_taller_crear-post.qmd){target="_blank"} (10 min)
 
-#### 5. [Escribiendo posts: practicando con Quarto](./taller/05_taller_escribir-posts.qmd){target="_blank"}
+#### 5. [Escribiendo posts: practicando con Quarto](./taller/05_taller_escribir-posts.qmd){target="_blank"} (20 min)
 
-#### 6. [Convirtiendo el blog en una web académica](./taller/06_taller_convertir-en-web.qmd){target="_blank"}
+#### 6. [Convirtiendo el blog en una web académica](./taller/06_taller_convertir-en-web.qmd){target="_blank"} (10 min)
 
-#### 7. [Tuneado del blog](./taller/07_taller_tuneado-del-blog.qmd){target="_blank"}
+#### 7. [Tuneado del blog](./taller/07_taller_tuneado-del-blog.qmd){target="_blank"} (15 min)
 
-#### 8. [Opciones de alojamiento](./taller/08_taller_alojamiento.qmd){target="_blank"}
+#### 8. [Opciones de alojamiento](./taller/08_taller_alojamiento.qmd){target="_blank"} (10 min)
 
 
 <br>

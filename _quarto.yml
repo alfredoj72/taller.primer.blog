@@ -4,7 +4,7 @@ project:
   #execute-dir: project #- https://quarto.org/docs/projects/code-execution.html#working-dir
 
 website:
-  title: "Web del taller `Mi primer blog con Quarto` (WIP)"
+  title: "Mi primer blog con Quarto (WIP)"
   favicon: imagenes/ababol_redondeado.ico
   site-url: https://perezp44.github.io/taller.primer.blog/
   repo-url: https://github.com/perezp44/taller.primer.blog
@@ -31,7 +31,7 @@ website:
         url: "mailto:pedro.j.perez@uv.es"
   page-footer:
     left: "© 2022 Pedro J. Pérez"
-    center: "Hecha con [Quarto](https://quarto.org)"
+    center: "Hecho con [Quarto](https://quarto.org)"
     right:
       - icon: github
         href: https://github.com/perezp44

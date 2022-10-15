@@ -2,47 +2,15 @@
 title: "Creación de un blog básico con Quarto"
 subtitle: "(2ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 #abstract: "En este tutorial, vamos a ver el **proceso de creación** y la **estructura de ficheros** de un blog creado con Quarto de forma rápida. Alojaremos el blog en [Quarto Pub](https://quartopub.com). Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller."
-lang: es
-author: "Pedro J. Pérez"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-format: 
-  html:
-#- https://quarto.org/docs/output-formats/html-themes.html
-#- https://quarto.org/docs/websites/website-blog.html#themes
-    theme: minty
-    backgroundcolor: "#F1F3F4"
-    toc: true
-    toc-depth: 3
-    toc-location: left
-    toc-title: Estructura del tutorial
-    number-sections: true
-    number-depth: 3
-    smooth-scroll: true
-    #self-contained: true  #- ya no la usa la nueva version de pandoc
-    standalone: true  
-    link-external-icon: false
-    link-external-newwindow: true
-    html-math-method: katex
-    citations-hover: false
-    footnotes-hover: false
-    css: assets/styles.css
-    fig-cap-location: bottom
-comments:
-  hypothesis: 
-    theme: clean
-editor_options: 
-  chunk_output_type: console
 ---
 
 
 {{< include _contexto.qmd >}}
 
 
-<br>
 
 ------------------------------------------------------------------------
 
-<br>
 
 ::: {.callout-tip collapse="false" appearance="default" icon="false"}
 ## ¿Qué haremos en este tutorial?
@@ -55,7 +23,6 @@ editor_options:
 :::
 
 
-<br>
 
 
 
@@ -78,7 +45,7 @@ Vamos a  crear el blog con R y RStudio utilizando  un **Quarto Project**^[Trabaj
 -   El nombre que le he puesto a la carpeta/Qproject es `blog_prueba_00`
 :::
 
-De momento aún no tenemos el blog, solo hemos creado un Qproject pero, ya tenemos, dentro de la carpeta del Qproject, la estructura de carpetas y archivos necesarios para crearlo.
+De momento aún no tenemos el blog, solo hemos creado un Qproject pero, ya tenemos, dentro de la carpeta del Qproject, la **estructura de carpetas y archivos** necesarios para crearlo.
 
 Cuando creemos el blog, será un blog sencillito, vamos con lo mínimo, pero un blog. 
 
@@ -88,7 +55,7 @@ Antes de crear el blog hagamos un pequeño repaso al contenido del Qproject, vea
 
 ## Contenido del Qproject
 
-El Qproject que acabamos de crear y que permitirá crear el blog tiene esta estructura de archivos y carpetas:
+El Qproject que acabamos de crear y que permitirá crear el blog tiene esta **estructura de archivos y carpetas**:
 
 
 ::: {#fig-01 layout-ncol=1}
@@ -103,7 +70,7 @@ Como ves en la figura anterior, el Qproject contiene **6 archivos y una subcarpe
 
   1) los que no son importantes (al menos ahora mismo)  
     
-  2) Los que sí son importantes ahora mismo, serán **3 archivos**  
+  2) Los que **sí son importantes** ahora mismo, serán **3 archivos**  
 
 <br>
 
@@ -140,6 +107,11 @@ Será muy importante, pero la veremos más adelante. Esta carpeta es la que cont
 
 
 
+::: {.callout-warning collapse="true" appearance="default" icon="false"}
+#### Extensiones: el contenido de la carpeta `/posts/`
+
+
+
 ::: {layout-ncol=2}
 
 ```{r}
@@ -149,7 +121,6 @@ name_of_plot <- "img_02.png"
 rutita <- paste0("./imagenes/tt_01/", name_of_plot)
 knitr::include_graphics(rutita)
 ```
-
 
 ```{r}
 #| fig-cap: Dentro del post `welcome`
@@ -161,6 +132,11 @@ knitr::include_graphics(rutita)
 
 :::
 
+:::
+
+
+
+
 
 
 
@@ -168,7 +144,7 @@ knitr::include_graphics(rutita)
 
 ### Archivos  sí importantes
 
-Nos quedan 3 archivos que será en los que nos concentremos ahora mismo, bueno, enseguida.
+Nos quedan 3 archivos que será en los que nos concentraremos en este tutorial:
 
 
 ::: {layout-ncol=2}
@@ -184,7 +160,7 @@ Es el archivo que especifica como será la estructura y apariencia de nuestro bl
 
 2) `about.qmd`
 
-Un archivo `.qmd` que generará el archivo `about.html` y que será una de las páginas de nuestro blog; precisamente en esta página se vera nuestra foto.
+Un archivo `.qmd` que generará el archivo `about.html` y que será una de las páginas de nuestro blog; precisamente en esta página se verá nuestra foto.
 :::
 
 
@@ -215,37 +191,37 @@ El Qproject que hemos creado tiene todo lo necesario para crear un blog, pero a�
 :::
 
 
-Si todo ha ido bien, verás algo como esto:
+Si todo ha ido bien, verás algo como esto en RStudio:
 
 
-::: {#fig-02 layout-ncol=1}
+
+::: {#fig-02 layout-ncol=2}
 ![](./imagenes/tt_01/img_04.png){fig-align="center"}
 
 Al pinchar en `Render Website` se creará el blog
 :::
 
 
-
-
 - Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en internet.
-
 
 <br>
 
 ::: {.callout-warning collapse="true" appearance="default" icon="false"}
 #### Extensiones: formas alternativas de generar el blog
 
-- También podríamos haber generado el blog usando la Consola o la terminal desde RStudio. 
+- También podríamos haber generado el blog usando la Consola o la **Terminal** desde RStudio. 
 
 - En ambos casos hay que estar en el Qproject "blog_prueba_00"; es decir, "blog_prueba_00" es el working directory
 
   ```{r, eval = FALSE}
+  #| code-fold: false
   #- desde la Consola
   install.packages("quarto")
   quarto::quarto_render("index.qmd")
   ```
 
   ```{bash, eval = FALSE}
+  #| code-fold: false
   #- desde la Terminal
   quarto render
   ```
@@ -259,7 +235,7 @@ Al pinchar en `Render Website` se creará el blog
 
 ## Veamos otra vez la estructura de carpetas
 
-Tras haber creado el blog, la estructura de carpetas de nuestro Qproject ha cambiado, concretamente se han generado 2 subcarpetas. Veámoslo:
+Tras haber creado el blog, la estructura de carpetas de nuestro Qproject ha cambiado, concretamente **se han generado 2 subcarpetas**. Veámoslo:
 
 
 ::: {#fig-03 layout-ncol="1"}
@@ -332,8 +308,6 @@ Contenido del archivo  `index.qmd` que genera a `index.html`:
 ::: {#fig-05 layout-ncol="1"}
 ![](./imagenes/tt_01/img_08.png){fig-align="center"}
 
-Archivo `index.qmd`
-
 :::
 
 - Como vemos, el archivo `index.qmd` no tiene contenido, sólo contiene un `yaml` o encabezamiento
@@ -347,6 +321,8 @@ Archivo `index.qmd`
 - Lo iremos viendo
 :::
 
+<br>
+El blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es **publicarlo en internet**.
 
 <br>
 
@@ -355,8 +331,6 @@ Archivo `index.qmd`
 
 
 ## Alojando el blog
-
-El blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es **publicarlo en internet**.
 
 Hay muchas formas de alojar nuestro blog, por ejemplo [Github Pages](https://pages.github.com/) [Netlify](https://www.netlify.com/) etc... , pero, de momento, usaremos el servicio [Quartopub](https://quartopub.com/)
 
@@ -370,6 +344,7 @@ Para publicar nuestro blog en Quartopub sólo hay que:
 - teclear en la **Terminal** de RStudio (panel inferior-izquierda) lo siguiente:  
 
   ```{bash, eval = FALSE}
+  #| code-fold: false
   #- desde la Terminal
   quarto publish quarto-pub
   ```
@@ -380,17 +355,25 @@ Para publicar nuestro blog en Quartopub sólo hay que:
 
 :::
 
-<br>
-
-Si te fijas, tras haberse publicado el blog en "Quarto Pub", se habrá creado un nuevo fichero en nuestro Qproject: es el fichero `_publish.yml`. En él solamente están los metadatos necesarios para publicar y **actualizar nuestro blog**.
+<br><br>
 
 
+::: {.callout-warning collapse="true" appearance="default" icon="false"}
+#### Extensiones: el fichero `_publish.yml`
 
-::: {#fig-07 layout-ncol=1}
+Si te fijas, tras haberse publicado el blog en "Quarto Pub", se habrá creado un **nuevo fichero** en nuestro Qproject: es el fichero `_publish.yml`. En él solamente están los metadatos necesarios para publicar y **actualizar nuestro blog**.
+
+::: {layout-ncol=1}
 ![](./imagenes/tt_01/img_07.png){fig-align="center"}
 
-Fichero `_publish.yml` con la información para publicar el blog en `Quarto Pub`.
 :::
+
+:::
+
+
+
+
+
 
 <br><br>
 
@@ -400,7 +383,7 @@ Fichero `_publish.yml` con la información para publicar el blog en `Quarto Pub`
 ::: {.callout-tip collapse="true" appearance="default" icon="false"}
 #### Resumen
 
-En este tutorial, la segunda parte del taller, hemos visto:
+En este tutorial, la **segunda parte del taller**, hemos visto:
 
 - Como crear un Qproject con la estructura de carpetas y archivos necesaria para generar un blog básico
 

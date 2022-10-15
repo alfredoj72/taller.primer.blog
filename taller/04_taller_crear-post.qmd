@@ -1,27 +1,6 @@
 ---
-title: "Workflow: ¿cómo crear un post? (4ª parte del taller)"
-author: "Pedro J. Pérez"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-format: 
-  html:
-    theme: minty  #- https://quarto.org/docs/output-formats/html-themes.html
-    #-https://quarto.org/docs/websites/website-blog.html#themes
-    backgroundcolor: "#F1F3F4"
-    toc: true
-    toc-depth: 3
-    toc-location: left
-    smooth-scroll: true
-    #self-contained: true  #- ya no la usa la nueva version de pandoc
-    standalone: true  
-    link-external-icon: false
-    link-external-newwindow: true
-    html-math-method: katex
-    citations-hover: false
-    footnotes-hover: false
-    css: assets/styles.css
-comments:
-  hypothesis: 
-    theme: clean
+title: "Workflow: ¿cómo crear un post?"
+subtitle: "(4ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 ---
 
 {{< include _contexto.qmd >}} 
@@ -41,7 +20,6 @@ comments:
     3. **Tuneado básico del blog**. Modificamos ligeramente los ficheros `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
 :::
 
-<br>
 
 ------------------------------------------------------------------------
 
@@ -71,7 +49,7 @@ Cada post está en una carpeta diferente. Veámoslo:
 
 ::: {layout-ncol=1}
 
-![Los posts residen en la carpeta `posts`](./imagenes/tt_01/img_15.png){fig-align="center"}
+![](./imagenes/tt_01/img_15.png){fig-align="center"}
 :::
 
 Como ves, en la carpeta`posts` hay:
@@ -95,7 +73,7 @@ Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la
 
 Como ves, la carpeta `/welcome/` que genera el primer post del blog contiene 2 archivos: 
 
-  - `index.qmd`: es realmente el archivo que genera el post. Veremos su contenido más adelante.
+  - `index.qmd`: es realmente el archivo que genera el post. Repasaremos su contenido más adelante.
   
   - `thumbnail.jpg`: sencillamente un archivo con una imagen que será usado al generar el post.
   
@@ -123,7 +101,7 @@ De momento, para generar un nuevo post lo que haremos será crear una nueva subc
 
 
 
-- Bueno, pues ya lo tenemos, ya tenemos un nuevo post, solo que, como no hemos cambiado el contenido de `index.qmd` ni ``tumbnail.jpg`, pues nuestro tercer post de nuestro blog será idéntico al primer, al post de bienvenida.
+- Bueno, pues ya lo tenemos, ya tenemos un nuevo post. Lo que ocurre es que, como no hemos cambiado el contenido de `index.qmd` ni de `tumbnail.jpg`, resulta queel tercer post de nuestro blog será idéntico al primero, al post de bienvenida.
 
 - Evidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.
 
@@ -133,9 +111,28 @@ De momento, para generar un nuevo post lo que haremos será crear una nueva subc
 ::: {.callout-important icon="false"}
 #### Tarea 2: Modificando el tercer post
 
-- Modifica el contenido de `/my-primer-post/index.qmd`
+- Modifica el contenido de `/my-primer-post/index.qmd`. Por ejemplo, puedes dejarlo así:
+
+
+  ```{r, eval = FALSE}
+  ---
+  title: "Mi primer post con Quarto"
+  author: "Pedro J. Pérez"
+  date: "2022-10-25"
+  categories: [R, quarto]
+  ---
+
+  Este es mi primer post con Quarto!!!!
+
+  ![](thumbnail.jpg)
+
+  Acabé con mi primer post. FIN
+  ```
 
 - Sustituye `thumbnail.jpg` por otro archivo
+
+
+- Vuelve a regenerar el blog: `Build > Render Website`
 :::
 
 

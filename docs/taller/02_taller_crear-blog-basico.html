@@ -5,7 +5,7 @@
 <meta name="generator" content="quarto-1.1.251">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Pedro J. Pérez">
-<title>Web del taller Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto</title>
+<title>Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -97,7 +97,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/social-share-0.1.0/social-share.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/social-share-0.1.0/all.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -122,10 +124,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }
 </script><script async="" src="https://hypothes.is/embed.js"></script><link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/styles.css">
-<meta property="og:title" content="Web del taller Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto">
+<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto">
 <meta property="og:description" content="(2ª parte del taller Mi primer blog con Quarto)">
-<meta property="og:site-name" content="Web del taller `Mi primer blog con Quarto` (WIP)">
-<meta name="twitter:title" content="Web del taller Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto">
+<meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
+<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto">
 <meta name="twitter:description" content="(2ª parte del taller Mi primer blog con Quarto)">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
@@ -138,7 +140,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Web del taller <code>Mi primer blog con Quarto</code> (WIP)</span>
+    <span class="navbar-title">Mi primer blog con Quarto (WIP)</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -181,42 +183,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full"><div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-right">
-      <div class="quarto-title-block"><div><h1 class="title">Creación de un blog básico con Quarto</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Código</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Enseñar el código</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Esconder el código</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">Ver el código</a></li></ul></div></div>
-            <p class="subtitle lead">(2ª parte del taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Autor/a</div>
-      <div class="quarto-title-meta-contents">
-               <p>Pedro J. Pérez </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Fecha de Publicación</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">11 de octubre de 2022</p>
-      </div>
-    </div>
-      
-    </div>
-    
-  <div>
-    <div class="abstract">
-      <div class="abstract-title">Resumen</div>
-      En este tutorial, vamos a ver el <strong>proceso de creación</strong> y la <strong>estructura de ficheros</strong> de un blog creado con Quarto de forma rápida. Alojaremos el blog en <a href="https://quartopub.com">Quarto Pub</a>. Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller.
-    </div>
-  </div>
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Estructura del tutorial</h2>
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Índice</h2>
    
   <ul>
 <li><a href="#creaci%C3%B3n-de-un-qproject-para-un-blog" id="toc-creación-de-un-qproject-para-un-blog" class="nav-link active" data-scroll-target="#creaci%C3%B3n-de-un-qproject-para-un-blog"><span class="toc-section-number">1</span>  Creación de un Qproject (para un blog)</a></li>
@@ -236,7 +205,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content"><div class="callout-note callout callout-style-default no-icon callout-captioned">
+<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Creación de un blog básico con Quarto</h1>
+<p class="subtitle lead">(2ª parte del taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Autor/a</div>
+  <div class="quarto-title-meta-heading">Afiliación</div>
+  
+    <div class="quarto-title-meta-contents">
+    Pedro J. Pérez <a href="https://orcid.org/0000-0001-9375-6330" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.uv.es">
+            Universitat de València
+            </a>
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de Publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">15 de octubre de 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header><div class="callout-note callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -256,10 +260,31 @@ Contexto
 </div>
 </div>
 </div>
+<hr>
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+¿Qué haremos en este tutorial?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Veremos de forma rápida el <strong>proceso de creación</strong> y la <strong>estructura de ficheros</strong> de un blog creado con Quarto.</p></li>
+<li><p>Alojaremos el blog en <a href="https://quartopub.com">Quarto Pub</a>.</p></li>
+<li><p>Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller.</p></li>
+</ul>
+</div>
+</div>
+</div>
 <p><br></p>
 <section id="creación-de-un-qproject-para-un-blog" class="level2" data-number="1"><h2 data-number="1" class="anchored" data-anchor-id="creación-de-un-qproject-para-un-blog">
 <span class="header-section-number">1</span> Creación de un Qproject (para un blog)</h2>
-<p>Vamos a crear el blog con R y RStudio utilizando un <strong>Quarto Project</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, concretamente un Quarto project prediseñado para crear blogs; por lo tanto, el primer paso para crear nuestro blog e screar el proyecto donde se alojarán los ficheros que necesitemos para nuestro blog.</p>
+<p>Vamos a crear el blog con R y RStudio utilizando un <strong>Quarto Project</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, concretamente un Quarto project prediseñado para crear blogs; por lo tanto, el primer paso para crear nuestro blog es crear el proyecto donde se alojarán los ficheros que necesitemos para nuestro blog.</p>
 <div class="callout-important callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -280,13 +305,13 @@ Tarea 1: Creación del Qproject que generará el blog
 </ul>
 </div>
 </div>
-<p>De momento aún no tenemos el blog, solo hemos creado un Qproject pero, ya tenemos, dentro de la carpeta del Qproject, la estructura de carpetas y archivos necesarios para crearlo.</p>
+<p>De momento aún no tenemos el blog, solo hemos creado un Qproject pero, ya tenemos, dentro de la carpeta del Qproject, la <strong>estructura de carpetas y archivos</strong> necesarios para crearlo.</p>
 <p>Cuando creemos el blog, será un blog sencillito, vamos con lo mínimo, pero un blog.</p>
 <p>Antes de crear el blog hagamos un pequeño repaso al contenido del Qproject, veamos su estructura de carpetas y archivos.</p>
 <p><br></p>
 </section><section id="contenido-del-qproject" class="level2" data-number="2"><h2 data-number="2" class="anchored" data-anchor-id="contenido-del-qproject">
 <span class="header-section-number">2</span> Contenido del Qproject</h2>
-<p>El Qproject que acabamos de crear y que permitirá crear el blog tiene esta estructura de archivos y carpetas:</p>
+<p>El Qproject que acabamos de crear y que permitirá crear el blog tiene esta <strong>estructura de archivos y carpetas</strong>:</p>
 <div id="fig-01" class="quarto-layout-panel">
 <figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
@@ -302,7 +327,7 @@ Tarea 1: Creación del Qproject que generará el blog
 <p>Como ves en la figura anterior, el Qproject contiene <strong>6 archivos y una subcarpeta</strong>. Voy a dividirlos en dos categorías:</p>
 <ol type="1">
 <li><p>los que no son importantes (al menos ahora mismo)</p></li>
-<li><p>Los que sí son importantes ahora mismo, serán <strong>3 archivos</strong></p></li>
+<li><p>Los que <strong>sí son importantes</strong> ahora mismo, serán <strong>3 archivos</strong></p></li>
 </ol>
 <p><br></p>
 <section id="archivos-no-importantes" class="level3" data-number="2.1"><h3 data-number="2.1" class="anchored" data-anchor-id="archivos-no-importantes">
@@ -359,6 +384,18 @@ Tarea 1: Creación del Qproject que generará el blog
 </div>
 </div>
 </div>
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Extensiones: el contenido de la carpeta <code>/posts/</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -381,10 +418,13 @@ Tarea 1: Creación del Qproject que generará el blog
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
 <p><br></p>
 </section><section id="archivos-sí-importantes" class="level3" data-number="2.2"><h3 data-number="2.2" class="anchored" data-anchor-id="archivos-sí-importantes">
 <span class="header-section-number">2.2</span> Archivos sí importantes</h3>
-<p>Nos quedan 3 archivos que será en los que nos concentremos ahora mismo, bueno, enseguida.</p>
+<p>Nos quedan 3 archivos que será en los que nos concentraremos en este tutorial:</p>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -405,7 +445,7 @@ Tarea 1: Creación del Qproject que generará el blog
 </ol>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p>Un archivo <code>.qmd</code> que generará el archivo <code>about.html</code> y que será una de las páginas de nuestro blog; precisamente en esta página se vera nuestra foto.</p>
+<p>Un archivo <code>.qmd</code> que generará el archivo <code>about.html</code> y que será una de las páginas de nuestro blog; precisamente en esta página se verá nuestra foto.</p>
 </div>
 </div>
 </div>
@@ -441,10 +481,10 @@ Tarea 2: Generación del blog
 </ul>
 </div>
 </div>
-<p>Si todo ha ido bien, verás algo como esto:</p>
+<p>Si todo ha ido bien, verás algo como esto en RStudio:</p>
 <div id="fig-02" class="quarto-layout-panel">
 <figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="./imagenes/tt_01/img_04.png" class="img-fluid figure-img"></p>
 </figure>
@@ -459,7 +499,7 @@ Tarea 2: Generación del blog
 </ul>
 <p><br></p>
 <div class="callout-warning callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -468,22 +508,20 @@ Extensiones: formas alternativas de generar el blog
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>También podríamos haber generado el blog usando la Consola o la terminal desde RStudio.</p></li>
+<li><p>También podríamos haber generado el blog usando la Consola o la <strong>Terminal</strong> desde RStudio.</p></li>
 <li>
 <p>En ambos casos hay que estar en el Qproject “blog_prueba_00”; es decir, “blog_prueba_00” es el working directory</p>
 <div class="cell">
-<details><summary>Código</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span class="co">#- desde la Consola</span>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span class="co">#- desde la Consola</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"quarto"</span><span class="op">)</span>
 <span class="fu">quarto</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/quarto/man/quarto_render.html">quarto_render</a></span><span class="op">(</span><span class="st">"index.qmd"</span><span class="op">)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell">
-<details><summary>Código</summary><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- desde la Terminal</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- desde la Terminal</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </li>
 </ul>
@@ -493,7 +531,7 @@ Extensiones: formas alternativas de generar el blog
 <p><br></p>
 </section><section id="veamos-otra-vez-la-estructura-de-carpetas" class="level2" data-number="4"><h2 data-number="4" class="anchored" data-anchor-id="veamos-otra-vez-la-estructura-de-carpetas">
 <span class="header-section-number">4</span> Veamos otra vez la estructura de carpetas</h2>
-<p>Tras haber creado el blog, la estructura de carpetas de nuestro Qproject ha cambiado, concretamente se han generado 2 subcarpetas. Veámoslo:</p>
+<p>Tras haber creado el blog, la estructura de carpetas de nuestro Qproject ha cambiado, concretamente <strong>se han generado 2 subcarpetas</strong>. Veámoslo:</p>
 <div id="fig-03" class="quarto-layout-panel">
 <figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
@@ -572,7 +610,7 @@ Tarea 3: Ver el blog
 <li><p>El archivo <code>index.html</code> ha sido generado por el fichero <code>index.qmd</code>.</p></li>
 </ul>
 <div class="callout-warning callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -581,7 +619,7 @@ Extensiones: ver el contenido del archivo <code>index.qmd</code>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Contenido del archivo <code>index.qmd</code> que genera a <code>index.html</code>:</p>
 <div id="fig-05" class="quarto-layout-panel">
@@ -593,7 +631,7 @@ Extensiones: ver el contenido del archivo <code>index.qmd</code>
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Gráfico&nbsp;5: Archivo <code>index.qmd</code></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Gráfico&nbsp;5: <strong>?(caption)</strong></figcaption><p></p>
 </figure>
 </div>
 <ul>
@@ -606,10 +644,10 @@ Extensiones: ver el contenido del archivo <code>index.qmd</code>
 </div>
 </div>
 </div>
+<p><br> El blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es <strong>publicarlo en internet</strong>.</p>
 <p><br></p>
 </section></section><section id="alojando-el-blog" class="level2" data-number="5"><h2 data-number="5" class="anchored" data-anchor-id="alojando-el-blog">
 <span class="header-section-number">5</span> Alojando el blog</h2>
-<p>El blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es <strong>publicarlo en internet</strong>.</p>
 <p>Hay muchas formas de alojar nuestro blog, por ejemplo <a href="https://pages.github.com/">Github Pages</a> <a href="https://www.netlify.com/">Netlify</a> etc… , pero, de momento, usaremos el servicio <a href="https://quartopub.com/">Quartopub</a></p>
 <div class="callout-important callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -626,9 +664,8 @@ Tarea 4: Alojar el blog en Quarto Pub
 <li>
 <p>teclear en la <strong>Terminal</strong> de RStudio (panel inferior-izquierda) lo siguiente:</p>
 <div class="cell">
-<details><summary>Código</summary><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- desde la Terminal</span></span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- desde la Terminal</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </li>
 <li><p>Tras ejecutar lo anterior, se te pedirá que autorices en la Terminal.</p></li>
@@ -636,10 +673,22 @@ Tarea 4: Alojar el blog en Quarto Pub
 </ul>
 </div>
 </div>
-<p><br></p>
-<p>Si te fijas, tras haberse publicado el blog en “Quarto Pub”, se habrá creado un nuevo fichero en nuestro Qproject: es el fichero <code>_publish.yml</code>. En él solamente están los metadatos necesarios para publicar y <strong>actualizar nuestro blog</strong>.</p>
-<div id="fig-07" class="quarto-layout-panel">
-<figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
+<p><br><br></p>
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Extensiones: el fichero <code>_publish.yml</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Si te fijas, tras haberse publicado el blog en “Quarto Pub”, se habrá creado un <strong>nuevo fichero</strong> en nuestro Qproject: es el fichero <code>_publish.yml</code>. En él solamente están los metadatos necesarios para publicar y <strong>actualizar nuestro blog</strong>.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="./imagenes/tt_01/img_07.png" class="img-fluid figure-img"></p>
@@ -647,14 +696,15 @@ Tarea 4: Alojar el blog en Quarto Pub
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Gráfico&nbsp;6: Fichero <code>_publish.yml</code> con la información para publicar el blog en <code>Quarto Pub</code>.</figcaption><p></p>
-</figure>
+</div>
+</div>
+</div>
 </div>
 <p><br><br></p>
 </section><section id="resumen" class="level2" data-number="6"><h2 data-number="6" class="anchored" data-anchor-id="resumen">
 <span class="header-section-number">6</span> Resumen</h2>
 <div class="callout-tip callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -663,9 +713,9 @@ Resumen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>En este tutorial, la segunda parte del taller, hemos visto:</p>
+<p>En este tutorial, la <strong>segunda parte del taller</strong>, hemos visto:</p>
 <ul>
 <li><p>Como crear un Qproject con la estructura de carpetas y archivos necesaria para generar un blog básico</p></li>
 <li><p>Hemos visto (de forma rápida) el contenido, los archivos, que hay en el Qproject.</p></li>
@@ -692,14 +742,12 @@ Resumen
 </ul>
 
 
-<!-- -->
-
 </section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
 <ol>
 <li id="fn1"><p>Trabajar con Quarto projects tiene algunas ventajas, puedes verlas <a href="https://quarto.org/docs/projects/quarto-projects.html">aquí</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>Ahora mismo es una lista corta porque el blog solo tiene 2 posts<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez,
-  author = {Pedro J. Pérez and Pedro J. Pérez},
+  author = {Pedro J. Pérez},
   editor = {},
   title = {Creación de un blog básico con Quarto},
   date = {},
@@ -707,8 +755,8 @@ Resumen
   langid = {es}
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Pedro J. Pérez, and Pedro J. Pérez. n.d. <span>“Creación de un blog
-básico con Quarto.”</span> <a href="https://perezp44.github.io/taller.primer.blog//taller/02_taller_crear-blog-basico.html">https://perezp44.github.io/taller.primer.blog//taller/02_taller_crear-blog-basico.html</a>.
+Pedro J. Pérez. n.d. <span>“Creación de un blog básico con
+Quarto.”</span> <a href="https://perezp44.github.io/taller.primer.blog//taller/02_taller_crear-blog-basico.html">https://perezp44.github.io/taller.primer.blog//taller/02_taller_crear-blog-basico.html</a>.
 </div></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -757,57 +805,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var filterRegex = new RegExp(/https:\/\/perezp44\.github\.io\/taller\.primer\.blog\//);
     var isInternal = (href) => {
@@ -823,458 +820,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
 });
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Ejecutar el código</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<pre class="markdown" data-shortcodes="false"><code>---
-title: "Creación de un blog básico con Quarto"
-subtitle: "(2ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
-#abstract: "En este tutorial, vamos a ver el **proceso de creación** y la **estructura de ficheros** de un blog creado con Quarto de forma rápida. Alojaremos el blog en [Quarto Pub](https://quartopub.com). Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller."
-lang: es
-author: "Pedro J. Pérez"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-format: 
-  html:
-#- https://quarto.org/docs/output-formats/html-themes.html
-#- https://quarto.org/docs/websites/website-blog.html#themes
-    theme: minty
-    backgroundcolor: "#F1F3F4"
-    toc: true
-    toc-depth: 3
-    toc-location: left
-    toc-title: Estructura del tutorial
-    number-sections: true
-    number-depth: 3
-    smooth-scroll: true
-    #self-contained: true  #- ya no la usa la nueva version de pandoc
-    standalone: true  
-    link-external-icon: false
-    link-external-newwindow: true
-    html-math-method: katex
-    citations-hover: false
-    footnotes-hover: false
-    css: assets/styles.css
-    fig-cap-location: bottom
-comments:
-  hypothesis: 
-    theme: clean
-editor_options: 
-  chunk_output_type: console
----
-
-
-{{&lt; include _contexto.qmd &gt;}}
-
-
-&lt;br&gt;
-
-------------------------------------------------------------------------
-
-&lt;br&gt;
-
-::: {.callout-tip collapse="false" appearance="default" icon="false"}
-## ¿Qué haremos en este tutorial?
-
-- Veremos de forma rápida el  **proceso de creación** y la **estructura de ficheros** de un blog creado con Quarto. 
-
-- Alojaremos el blog en [Quarto Pub](https://quartopub.com). 
-
-- Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller.
-:::
-
-
-&lt;br&gt;
-
-
-
-
-&lt;br&gt;
-
-## Creación de un Qproject (para un blog)
-
-Vamos a  crear el blog con R y RStudio utilizando  un **Quarto Project**^[Trabajar con Quarto projects tiene algunas ventajas, puedes verlas [aquí](https://quarto.org/docs/projects/quarto-projects.html)], concretamente un Quarto project prediseñado para crear blogs; por lo tanto, el primer paso para crear nuestro blog es crear el proyecto donde se alojarán los ficheros que necesitemos para nuestro blog.
-
-::: {.callout-important icon="false"}
-#### Tarea 1: Creación del Qproject que generará el blog
-
--   En RStudio sigue la siguiente ruta de menús:   
-
-    `File &gt; New Project &gt; New Directory &gt; Quarto Blog`
-
-- Al hacerlo se creará una carpeta, un Qproject, con todo lo necesario para crear un blog.
-
--   El nombre que le he puesto a la carpeta/Qproject es `blog_prueba_00`
-:::
-
-De momento aún no tenemos el blog, solo hemos creado un Qproject pero, ya tenemos, dentro de la carpeta del Qproject, la estructura de carpetas y archivos necesarios para crearlo.
-
-Cuando creemos el blog, será un blog sencillito, vamos con lo mínimo, pero un blog. 
-
-Antes de crear el blog hagamos un pequeño repaso al contenido del Qproject, veamos su estructura de carpetas y archivos.
-
-&lt;br&gt;
-
-## Contenido del Qproject
-
-El Qproject que acabamos de crear y que permitirá crear el blog tiene esta estructura de archivos y carpetas:
-
-
-::: {#fig-01 layout-ncol=1}
-![](./imagenes/tt_01/img_01.png){fig-align="center"}
-
-Estructura del Qproject `blog_prueba_00`
-:::
-
-
-
-Como ves en la figura anterior, el Qproject contiene **6 archivos y una subcarpeta**. Voy a dividirlos en dos categorías:   
-
-  1) los que no son importantes (al menos ahora mismo)  
-    
-  2) Los que sí son importantes ahora mismo, serán **3 archivos**  
-
-&lt;br&gt;
-
-### Archivos "no importantes"
-
-::: {layout-ncol=2}
-
-1) El archivo `blog_prueba_00.Rproj`
-
-No es un archivo importante para el blog. Este archivo simplemente permite que RStudio reconozca la carpeta `blog_prueba_00` como un Qproject.
-:::
-
-
-::: {layout-ncol=2}
-2) El archivo `styles.css`
-
-Sí será un archivo importante, pero lo veremos más adelante. Este archivo permitirá mediante CSS cambiar la estética de nuestro blog. 
-:::
-
-
-
-::: {layout-ncol=2}
-3) El archivo `profile.jpg`
-
-Es sencillamente una foto. La tendremos que sustituir por una foto nuestra en la que estemos guapetes.
-:::
-
-
-::: {layout-ncol=2}
-4) La carpeta  `posts`
-
-Será muy importante, pero la veremos más adelante. Esta carpeta es la que contendrá los posts que vayamos escribiendo.
-:::
-
-
-
-::: {layout-ncol=2}
-
-quarto-executable-code-5450563D
-
-```r
-#| fig-cap: Dentro de la carpeta `posts`
-#| echo: false
-name_of_plot &lt;- "img_02.png"
-rutita &lt;- paste0("./imagenes/tt_01/", name_of_plot)
-knitr::include_graphics(rutita)
-```
-
-
-quarto-executable-code-5450563D
-
-```r
-#| fig-cap: Dentro del post `welcome`
-#| echo: false
-name_of_plot &lt;- "img_03.png"
-rutita &lt;- paste0("./imagenes/tt_01/", name_of_plot)
-knitr::include_graphics(rutita)
-```
-
-:::
-
-
-
-
-&lt;br&gt;
-
-### Archivos  sí importantes
-
-Nos quedan 3 archivos que será en los que nos concentremos ahora mismo, bueno, enseguida.
-
-
-::: {layout-ncol=2}
-
-1) `_quarto_yml`
-
-Es el archivo que especifica como será la estructura y apariencia de nuestro blog.
-:::
-
-
-
-::: {layout-ncol=2}
-
-2) `about.qmd`
-
-Un archivo `.qmd` que generará el archivo `about.html` y que será una de las páginas de nuestro blog; precisamente en esta página se vera nuestra foto.
-:::
-
-
-::: {layout-ncol=2}
-
-3) `index.qmd`
-
-Otro archivo `.qmd` que generará el archivo `index.html` y que será la "landing page" o **Home** de nuestro blog.
-:::
-
-
-
-
-
-## Creación del blog
-
-El Qproject que hemos creado tiene todo lo necesario para crear un blog, pero aún no lo hemos creado. Para crearlo solo tienes que: 
-
-
-::: {.callout-important icon="false"}
-#### Tarea 2: Generación del blog
-
--   Ir al cuadrante superior-izquierda de RStudio, pinchar en la pestaña `Build` y pinchar en `Render Website`.
-
-- De esta forma, se procesarán los archivos del Qproject y se creará el blog.
-
-- Podremos verlo en el cuadrante inferior-izquierda de RStudio, concretamente en la pestaña `Viewer`.
-:::
-
-
-Si todo ha ido bien, verás algo como esto:
-
-
-::: {#fig-02 layout-ncol=1}
-![](./imagenes/tt_01/img_04.png){fig-align="center"}
-
-Al pinchar en `Render Website` se creará el blog
-:::
-
-
-
-
-- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en internet.
-
-
-&lt;br&gt;
-
-::: {.callout-warning collapse="true" appearance="default" icon="false"}
-#### Extensiones: formas alternativas de generar el blog
-
-- También podríamos haber generado el blog usando la Consola o la terminal desde RStudio. 
-
-- En ambos casos hay que estar en el Qproject "blog_prueba_00"; es decir, "blog_prueba_00" es el working directory
-
-  ```{r, eval = FALSE}
-  #- desde la Consola
-  install.packages("quarto")
-  quarto::quarto_render("index.qmd")
-  ```
-
-  ```{bash, eval = FALSE}
-  #- desde la Terminal
-  quarto render
-  ```
-:::
-
-
-
-
-&lt;br&gt;
-
-
-## Veamos otra vez la estructura de carpetas
-
-Tras haber creado el blog, la estructura de carpetas de nuestro Qproject ha cambiado, concretamente se han generado 2 subcarpetas. Veámoslo:
-
-
-::: {#fig-03 layout-ncol="1"}
-![](./imagenes/tt_01/img_05.png){fig-align="center"}
-
-Estructura de carpetas del Qproject tras la creación del blog
-:::
-
-#### Se han creado 2 subcarpetas
-
-Si comparamos la estructura de carpetas antes y después de hacer `Render Website` vemos que **se han creado 2 carpetas**: 
-
-
-::: {layout-ncol=2}
-
-1) `_freeze`
-
-La carpeta `_freeze` podemos dejarla para más adelante.
-:::
-
-
-
-::: {layout-ncol=2}
-
-2) `_site`
-
-La carpeta `_site` es la que realmente contiene el blog. Si alojas el contenido de esa carpeta en un servidor web se verá el blog que hemos creado.
-:::
-
-#### Contenido de `/_site/`
-
-Antes de publicar el blog, vamos a ver el contenido de la carpeta `_site` que es la que contiene realmente el blog:
-
-
-::: {#fig-04 layout-ncol="1"}
-![](./imagenes/tt_01/img_06.png){fig-align="center"}
-
-Contenido de `_site`, la carpeta que contiene el blog
-:::
-
-
-::: {.callout-important icon="false"}
-#### Tarea 3: Ver el blog
-
-- Enseguida publicaremos el blog en Quartopub, pero antes, vamos a  verlo en local; para ello solo tienes que pinchar en el archivo `./blog_prueba_00/_site/index.html`
-
-- Ese fichero es el que contiene la "Landing Page" o "Home" de nuestro blog.
-
-- Como ves el blog es muy sencillo, solo tiene 2 páginas: la Home Page (que consiste en un listado de posts) y la página `About`.
-
-:::
-
-&lt;br&gt;
-
-#### La página principal del blog
-
-- Hemos visto que la **página principal (Home)** del blog consiste en una lista de los posts de nuestro blog^[Ahora mismo es una lista corta porque el blog solo tiene 2 posts] 
-
-- La página principal (o Home) de nuestro blog es el archivo `index.html`.
-
-- El archivo `index.html` ha sido generado por el fichero `index.qmd`. 
-
-
-::: {.callout-warning collapse="true" appearance="default" icon="false"}
-#### Extensiones: ver el contenido  del archivo `index.qmd`
-
-Contenido del archivo  `index.qmd` que genera a `index.html`:
-
-
-::: {#fig-05 layout-ncol="1"}
-![](./imagenes/tt_01/img_08.png){fig-align="center"}
-
-Archivo `index.qmd`
-
-:::
-
-- Como vemos, el archivo `index.qmd` no tiene contenido, sólo contiene un `yaml` o encabezamiento
-
-- Ese encabezamiento genera una lista (`listing:`) con los contenidos (con los ficheros .qmd) que haya en la carpeta `posts`.
-
-- Sí, has imaginado bien, en la carpeta `posts` es donde estarán los ficheros .qmd que generarán los posts
-
-- El resto del yaml son opciones para nuestro blog. Por ejemplo, `sort: "date desc"` ordenará el listado de post de más reciente a más antiguo.
-
-- Lo iremos viendo
-:::
-
-
-&lt;br&gt;
-
-
-
-
-
-## Alojando el blog
-
-El blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que es **publicarlo en internet**.
-
-Hay muchas formas de alojar nuestro blog, por ejemplo [Github Pages](https://pages.github.com/) [Netlify](https://www.netlify.com/) etc... , pero, de momento, usaremos el servicio [Quartopub](https://quartopub.com/)
-
-
-
-::: {.callout-important icon="false"}
-#### Tarea 4: Alojar el blog en Quarto Pub
-
-Para publicar nuestro blog en Quartopub sólo hay que:
-
-- teclear en la **Terminal** de RStudio (panel inferior-izquierda) lo siguiente:  
-
-  ```{bash, eval = FALSE}
-  #- desde la Terminal
-  quarto publish quarto-pub
-  ```
-
-- Tras ejecutar lo anterior, se te pedirá que autorices en la Terminal.
-
-- Después se abrirá el navegador, tendrás que logearte en `Quarto Pub` y volverás a autorizar. Además te preguntarán el nombre del blog.
-
-:::
-
-&lt;br&gt;
-
-Si te fijas, tras haberse publicado el blog en "Quarto Pub", se habrá creado un nuevo fichero en nuestro Qproject: es el fichero `_publish.yml`. En él solamente están los metadatos necesarios para publicar y **actualizar nuestro blog**.
-
-
-
-::: {#fig-07 layout-ncol=1}
-![](./imagenes/tt_01/img_07.png){fig-align="center"}
-
-Fichero `_publish.yml` con la información para publicar el blog en `Quarto Pub`.
-:::
-
-&lt;br&gt;&lt;br&gt;
-
-
-## Resumen
-
-::: {.callout-tip collapse="true" appearance="default" icon="false"}
-#### Resumen
-
-En este tutorial, la segunda parte del taller, hemos visto:
-
-- Como crear un Qproject con la estructura de carpetas y archivos necesaria para generar un blog básico
-
-- Hemos visto (de forma rápida) el contenido, los archivos, que hay en el Qproject. 
-
-- El Qproject contiene 3 archivos que serán los importantes, los que trabajaremos en el próximo tutorial, concretamente:  `_quarto_yml`, `index.qmd` y `about.qmd`
-
-- Hemos aprendido a generar el blog a través de RStudio, simplemente `Build &gt; Render Website`
-
-- Hemos visto que el blog realmente se aloja en la carpeta `_site` y que la homepage es `index.html`
-
-- La homepage del blog es un listado de post (lógicamente, es un blog!!)
-
-- La homepage (`index.html`) es generada por el archivo `index.qmd`
-
-- El archivo `index.qmd` solo tiene `yaml`
-
-- Hemos publicado el blog en Quarto Pub
-
-:::
-
-
-
-
-
-
-## Referencias
-
-(Algunos artículos sobre creación de blogs en Quarto)
-
-- [ Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure](https://www.ericekholm.com/posts/demo-quarto-site/)  es una web con blog . GOOOOD
-
-- [Bea Milz. 2022. Creating a Blog with Quarto in 10 Steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/)
-
-- [Navarro, Danielle. 2022. “Notes from a Data Witch - Porting a Distill Blog to Quarto](https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/)
-
-- [Quarto - Creating a Blog](https://quarto.org/docs/websites/website-blog.html)
-
-- [Alison Hill. 2022. We Don’t Talk about Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/)</code></pre>
-</div></div></div></div></div>
+</script>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">© 2022 Pedro J. Pérez</div>   
-      <div class="nav-footer-center">Hecha con <a href="https://quarto.org">Quarto</a></div>
+      <div class="nav-footer-center">Hecho con <a href="https://quarto.org">Quarto</a></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
 <li class="nav-item compact">
@@ -1304,7 +854,10 @@ En este tutorial, la segunda parte del taller, hemos visto:
 </ul>
 </div>
   </div>
-</footer>
+</footer><div class="page-columns page-rows-contents page-layout-article"><div class="social-share">
+<a href="https://twitter.com/share?url=https://perezp44.github.io/taller.primer.blog/materiales.html/&amp;text=awesome%20page" target="_blank" class="twitter"><i class="fab fa-twitter fa-fw fa-lg"></i></a><a href="https://www.linkedin.com/shareArticle?url=https://perezp44.github.io/taller.primer.blog/materiales.html/&amp;title=awesome%20page" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in fa-fw fa-lg"></i></a>  <a href="mailto:?subject=awesome%20page&amp;body=Check%20out%20this%20link:https://perezp44.github.io/taller.primer.blog/materiales.html/" target="_blank" class="email"><i class="fa-solid fa-envelope fa-fw fa-lg"></i></a>
+</div></div>
+
 
 
 <script src="../site_libs/quarto-html/zenscroll-min.js"></script>
