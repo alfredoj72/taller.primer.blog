@@ -305,7 +305,7 @@
     "href": "index.html",
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "",
-    "text": "Bienvenidos a la web con los materiales para el taller Mi primer blog con Quarto impartido en el I Congreso & XII Jornadas de Usuarios de R celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.\n\nEl ponente soy yo, Pedro J. Pérez.\n\nLos materiales para seguir el taller están en Materiales. Para seguir el taller hay que tener acceso a R, RStudio y Quarto. En Setup tienes las instrucciones de instalación."
+    "text": "Bienvenidos a la web con los materiales para el taller Mi primer blog con Quarto impartido en el I Congreso & XII Jornadas de Usuarios de R celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.\n\nEl ponente soy yo, Pedro J. Pérez.\n Los materiales para seguir el taller están en Materiales. Para seguir el taller hay que tener acceso a R, RStudio y Quarto. En Setup tienes las instrucciones de instalación."
   },
   {
     "objectID": "materiales.html",
@@ -319,7 +319,7 @@
     "href": "about.html",
     "title": "Pedro J. Pérez",
     "section": "",
-    "text": "No recuerdo muy bien, pero hubo un día (allá por julio de 2022) que estando yo trasteando con R para hacer un blog con Quarto …. me debió parecer una buena idea 😅😃️ mandar una propuesta de taller para las Jornadas R de Córdoba. Es octubre y aquí estoy haciendo los materiales para el taller. El blog sigue igual que en julio: aún en pruebas. Aquí puedes verlo, con uno de mis hijos en una foto.\nA pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien creo que soy un creador y liquidador de blogs. Aquí, puedes ver un listado no exhaustivo de los blogs que he liquidado … y parece que el blog que empece en julio puede seguir el mismo camino. Vorem!!\nLa verdad es que me gusta escribir posts, tienes mucha más libertad que al escribir un informe o un artículo académico; además, los posts no tienen porque estar perfectos, cuando te apetece los puedes medio dejar. Aunque los posts no estén acabados del todo, el pensar que alguien puede leerlos te hace pensar y reflexionar sobre lo que escribes.\n\nRemember kids, the only difference between screwing around and science is writing it down — Adam Savage de MythBusters"
+    "text": "No recuerdo muy bien, pero hubo un día (allá por julio de 2022) que estando yo trasteando con R para hacer un blog con Quarto …. me debió parecer una buena idea 😅😃️ mandar una propuesta de taller para las Jornadas R de Córdoba. Es octubre y aquí estoy haciendo los materiales para el taller. El blog sigue igual que en julio: aún en pruebas. Aquí puedes verlo, con uno de mis hijos en una foto.\nA pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien soy un creador y liquidador de blogs. Aquí, puedes ver un listado no exhaustivo de los blogs que he liquidado … y parece que el blog que empece en julio puede seguir el mismo camino. Vorem!!\nLa verdad es que me gusta escribir posts, tienes mucha más libertad que al escribir un informe o un artículo académico; además, los posts no tienen porque estar perfectos, cuando te apetece los puedes medio dejar. Aunque los posts no estén acabados del todo, el pensar que alguien puede leerlos te hace pensar y reflexionar sobre lo que escribes.\n\nRemember kids, the only difference between screwing around and science is writing it down — Adam Savage de MythBusters"
   },
   {
     "objectID": "setup.html",

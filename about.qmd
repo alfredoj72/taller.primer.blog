@@ -21,7 +21,7 @@ Mi nombre es Pedro J. Pérez. Soy **profesor** del departamento de Análisis Eco
 
 No recuerdo muy bien, pero hubo un día (allá por julio de 2022) que estando yo trasteando con R para hacer un blog con Quarto .... **me debió parecer una buena idea** 😅😃️ mandar una **propuesta de taller** para las Jornadas R de Córdoba. Es octubre y aquí estoy haciendo los materiales para el taller. El blog sigue igual que en julio: **aún en pruebas**. [Aquí](https://perezp44.github.io/pjperez.blog.2022/) puedes verlo, con uno de mis hijos en una foto.
 
-A pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien creo que soy un creador y **liquidador de blogs**. [Aquí](https://perezp44.github.io/pjperez.web/03_about.html),  puedes ver un listado **no exhaustivo** de los blogs que he liquidado ... y parece que el blog que empece en julio puede seguir el mismo camino. Vorem!!
+A pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien soy un creador y **liquidador de blogs**. [Aquí](https://perezp44.github.io/pjperez.web/03_about.html),  puedes ver un listado **no exhaustivo** de los blogs que he liquidado ... y parece que el blog que empece en julio puede seguir el mismo camino. Vorem!!
 
 
 La verdad es que **me gusta escribir posts**, tienes mucha más libertad que al escribir un informe o un artículo académico; además, los posts **no tienen porque estar perfectos**, cuando te apetece los puedes medio dejar. Aunque los posts no estén acabados del todo, el pensar que alguien puede leerlos **te hace pensar y reflexionar** sobre lo que escribes.
