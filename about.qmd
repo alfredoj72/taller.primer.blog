@@ -5,19 +5,25 @@ about:
   #- https://quarto.org/docs/websites/website-about.html#templates
   template: trestles  #- {jolla, solana, trestles}
   #- https://quarto.org/docs/websites/website-about.html#image
-  image-width: 10em
+  image-width: 8em
   image-shape: rectangle
   #- https://quarto.org/docs/websites/website-about.html#links
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
     - icon: github
-      text: Github
-      href: https://github.com
+      href: https://github.com/perezp44
+    - icon: twitter
+      href: https://twitter.com/pjpv4444
+    - icon: envelope
+      url: "mailto:<tu-mail@uv.es>"
 ---
 
-Yo mismo, soy un entusiasta de R que esta creando su blog con Quarto, blah blah ...
+Mi nombre es Pedro J. Pérez. Soy **profesor** del departamento de Análisis Económico de la **Universitat de València**. Utilizo R en mi docencia e investigación, [aquí](https://perezp44.github.io/intro-ds-22-23-web/) uno de mis cursos. Me gusta aprender, jugar y trastear con `r fontawesome::fa(name = "r-project", fill = "steelblue")`; vamos, que aún soy un **entusiasta de R**. Me divierto!!
+
+No recuerdo muy bien, pero hubo un día (allá por julio de 2022) que estando yo trasteando con R para hacer un blog con Quarto .... **me debió parecer una buena idea** 😅😃️ mandar una **propuesta de taller** para las Jornadas R de Córdoba. Es octubre y aquí estoy haciendo los materiales para el taller. El blog sigue igual que en julio: **aún en pruebas**. [Aquí](https://perezp44.github.io/pjperez.blog.2022/) puedes verlo, con uno de mis hijos en una foto.
+
+A pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien creo que soy un creador y **liquidador de blogs**. [Aquí](https://perezp44.github.io/pjperez.web/03_about.html),  puedes ver un listado **no exhaustivo** de los blogs que he liquidado ... y parece que el blog que empece en julio puede seguir el mismo camino. Vorem!!
+
+
+La verdad es que **me gusta escribir posts**, tienes mucha más libertad que al escribir un informe o un artículo académico; además, los posts **no tienen porque estar perfectos**, cuando te apetece los puedes medio dejar. Aunque los posts no estén acabados del todo, el pensar que alguien puede leerlos **te hace pensar y reflexionar** sobre lo que escribes.
+
+> Remember kids, the only difference between screwing around and science is writing it down  --- Adam Savage de [MythBusters](https://es.wikipedia.org/wiki/MythBusters)
