@@ -113,7 +113,7 @@ Como puedes ver arriba en la @fig-02, al compararla con la   @fig-01, hemos modi
         
         3. Finalmente, hemos **añadido una pestaña nueva (lineas 18 y 19)** pero está vez **a la izquierda** de la barra de navegación: `left:` (linea 17).  Fijate que esta nueva pestaña llamada "Docencia" creada con`- text: "Docencia"` (linea 18), esta referenciando a un archivo que no existe (aún) en el Qproject, está referenciando con `href: docencia.qmd` (linea 19) al archivo `docencia.qmd`. Lógicamente tendremos que crear este archivo.
 
--   En la **tercera parte** del fichero `_quarto.yml` hemos cambiado el `theme: minty` y hemos añadido las lineas 25 `toc: true` que creará índices en las páginas de la web/blog^[La opción `toc: true` creará un indice (o toc) en las páginas en las que hayan titulos de primer(#), segundo(##) o tercer nivel(###).], mientras que con `highlight-style: a11y` se cambia el formato visual de los chunks de código que hayan en la página web. 
+-   En la **tercera parte** del fichero `_quarto.yml` hemos cambiado el `theme: minty` y hemos añadido las lineas 25 `toc: true` que creará índices en las páginas de la web/blog^[La opción `toc: true` creará un indice (o toc) en las páginas en las que hayan títulos de primer(#), segundo(##) o tercer nivel(###).], mientras que con `highlight-style: a11y` se cambia el formato visual de los chunks de código que hayan en la página web. 
 
 <br>
 
@@ -327,12 +327,12 @@ about:
 
 ## Archivo `styles.css`
 
-- Puedes cambiar la apariencia estética del blog y dejarlo a tu gusto usando los `themes` prefedinidos en Quarto o puedes usar el archivo `styles.css`^[Veremos en el tutorial nº 8 que también podremos usar archivos.scss]
+- Puedes cambiar la apariencia estética del blog y dejarlo a tu gusto usando los `themes` predefinidos en Quarto o puedes usar el archivo `styles.css`^[Veremos en el tutorial nº 8 que también podremos usar archivos `.scss`]
 
-- De momento, el archivo `styles.css` está vacio^[En realidad no está vacio, pero solo tiene un comentario.]
+- De momento, el archivo `styles.css` está vacío^[En realidad no está vacío, pero solo tiene un comentario.]
 
 
-- El tuneado del blog con .css lo veremos con algo más de detalle en el tutorial nº 8, ahora mismo solo haremos unas modificaciones mínimas: voy a justificar el texto^[Esta es una modificación que tiene muchas criticas, pero, que se le va a hacer, a mi me gusta el texto jsutificado.].
+- El tuneado del blog con .css lo veremos con algo más de detalle en el tutorial nº 8, ahora mismo solo haremos unas modificaciones mínimas: voy a justificar el texto^[Esta es una modificación que tiene muchas criticas, pero, que se le va a hacer, a mi me gusta el texto justificado.].
 
 
 
@@ -374,7 +374,7 @@ p, ul, ol {
     
   3. `about.qmd`: hemos utilizado las plantillas de Quarto para configurar nuestra About page.
 
-- Finalmente hemos modificado (minímamente) el archivo `styles.css`.
+- Finalmente hemos modificado (mínimamente) el archivo `styles.css`.
 
 
 :::

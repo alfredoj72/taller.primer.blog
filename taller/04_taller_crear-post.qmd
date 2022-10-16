@@ -101,7 +101,7 @@ De momento, para generar un nuevo post lo que haremos será crear una nueva subc
 
 
 
-- Bueno, pues ya lo tenemos, ya tenemos un nuevo post. Lo que ocurre es que, como no hemos cambiado el contenido de `index.qmd` ni de `tumbnail.jpg`, resulta queel tercer post de nuestro blog será idéntico al primero, al post de bienvenida.
+- Bueno, pues ya lo tenemos, ya tenemos un nuevo post. Lo que ocurre es que, como no hemos cambiado el contenido de `index.qmd` ni de `tumbnail.jpg`, resulta que el tercer post de nuestro blog será idéntico al primero, al post de bienvenida.
 
 - Evidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.
 

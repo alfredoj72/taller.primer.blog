@@ -72,7 +72,7 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 
 - [Web econometría](https://perezp44.github.io/web.Econometria.GADE/) para mirar el [cuestionario](https://perezp44.github.io/web.Econometria.GADE/materiales/cuestionario_practicas.html)
 
-- Taller para Cordoba[Mi primer blog](https://perezp44.github.io/taller.primer.blog/)  y uno de los [tutoriales](https://perezp44.github.io/taller.primer.blog/taller/02_taller_crear-blog-basico.html)
+- Taller para Córdoba[Mi primer blog](https://perezp44.github.io/taller.primer.blog/)  y uno de los [tutoriales](https://perezp44.github.io/taller.primer.blog/taller/02_taller_crear-blog-basico.html)
 
 - Un bookdown [R4DS 2ed](https://r4ds.hadley.nz/)
 

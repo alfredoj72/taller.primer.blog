@@ -51,7 +51,7 @@ Vamos a transformar nuestro blog en una **página web personal con blog**. Lo ú
 
 - Cambia el nombre del fichero `index.qmd` a `blog.qmd`
 
-- Ahora este archivo no está referenciado en `_quarto.yml`, por lo que no se mostraríasi hacemos un rebuild^[Además, como nuestro Qproject ahora no tiene fichero `index.qmd` el rebuild no funcionaría].
+- Ahora este archivo no está referenciado en `_quarto.yml`, por lo que no se mostraría si hacemos un rebuild^[Además, como nuestro Qproject ahora no tiene fichero `index.qmd` el rebuild no funcionaría].
 
 :::
 
@@ -88,7 +88,7 @@ website:
         href: docencia.qmd
 ```
 
-- Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están refrenciando al fichero `about.qmd`. Por ejmeplo podríamos dejar las lineas 8 y 9 como se ve abajo:
+- Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están refrenciando al fichero `about.qmd`. Por ejemplo podríamos dejar las lineas 8 y 9 como se ve abajo:
 
 
 ```{r, eval = FALSE}

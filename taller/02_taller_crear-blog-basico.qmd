@@ -114,6 +114,9 @@ Será muy importante, pero la veremos más adelante. Esta carpeta es la que cont
 
 ::: {layout-ncol=2}
 
+En la carpeta `/posts/` hay un archivo de configuración (`_metadata.yml`) y una subcarpeta para cada post. Ahora mismo nuestro blog solo tiene 2 posts. La carpeta de cada post es similar: tiene 2 archivos que veremos más adelante.
+
+
 ```{r}
 #| fig-cap: Dentro de la carpeta `posts`
 #| echo: false
