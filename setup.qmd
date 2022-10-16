@@ -18,6 +18,8 @@ title: "Setup"
 -   Todos sabemos instalar R y Rstudio, si no fuese así, [aquí](https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html){target="_blank"} tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.
 
 -   Instalación de **Quarto**: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, [aquí](https://quarto.org/docs/get-started/){target="_blank"} tienes los instaladores para los principales sistemas operativos.
+
+- Además, idealmente, hay que crear una cuenta en los servicios: [Github](https://github.com/), [RStudio Cloud](https://rstudio.cloud/) y [Quarto Pub](https://quartopub.com/)
 :::
 
 <br>

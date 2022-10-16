@@ -148,7 +148,11 @@ Opiniones más elaboradas [aquí](https://www.rebeccabarter.com/blog/2020-02-03_
 
 
 
-# ¿Qué es Quarto?
+## ¿Qué es Quarto?
+
+
+> Quarto is a multi-language, next generation version of R Markdown from RStudio, with many new features and capabilities. Like R Markdown, Quarto uses Knitr to execute R code, and is therefore able to render most existing Rmd files without modification.
+
 
 - Un nuevo sistema de publicación técnica de código abierto
 

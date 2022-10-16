@@ -1,18 +1,148 @@
 ---
 title: "Convertir el blog en web académica"
 subtitle: "(6ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
-title-block-banner: imagenes/economia.gif
+#title-block-banner: imagenes/economia.gif
 ---
 
 
-## TRUCO
+{{< include _contexto.qmd >}}
 
--   casi mejor hacer esto después de crear un post
+::: {.callout-note collapse="true" appearance="default" icon="false"}
+## Recapitulación
 
--   vamos a transformar nuestro blog en una página web personal con blog
+-   En esta quinta parte del taller veremos como escribir nuestros posts con Quarto.
 
--   para ello solo hay que :
+-   Las anteriores secciones del taller son:
 
-    1)  cambiar el nombre del fichero `index.qmd` a `blog.qmd`
+    1. **Intro**: se presenta el taller
 
-    2)  cambiar el nombre del fichero `about.qmd` a `index.qmd`
+    2. **Creación de un blog (básico) con Quarto**: vimos como crear y alojar un **blog básico** con RStudio y Quarto.
+    
+    3. **Tuneado básico del blog**: modificamos ligeramente los ficheros `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
+    
+    4. **Workflow: ¿cómo crear un post?**: vimos como generar nuevos posts para nuestro blog.
+    
+    5. **Escribiendo con Quarto**: repasamos las princiaples poisbilidades que nos ofrece Quarto para escribir (en este caso posts)
+:::
+
+------------------------------------------------------------------------
+
+<br>
+
+::: {.callout-tip  appearance="default" icon="false"}
+## ¿Qué haremos en este tutorial?
+
+- Convertir nuestro blog en una web "académica".
+
+- Para ello solo tendremos que cambiar el nombre de dos ficheros y referenciar uno de ellos en `_quarto.yml`.
+
+:::
+
+## Intro 
+
+Vamos a transformar nuestro blog en una **página web personal con blog**. Lo único que tendremos que hacer será que la "landing page" o Home de  nuestra web no sea una página con el listado de posts, si no que sea una página en la que se reciba a los futuros visitantes de nuestra web: lo normal es presentarnos y darles la bienvenida.
+
+<br>
+
+## Proceso
+
+::: {.callout-important icon="false"}
+#### Tarea 1: Renombrar el archivo index.qmd
+
+- Cambia el nombre del fichero `index.qmd` a `blog.qmd`
+
+- Ahora este archivo no está referenciado en `_quarto.yml`, por lo que no se mostraríasi hacemos un rebuild^[Además, como nuestro Qproject ahora no tiene fichero `index.qmd` el rebuild no funcionaría].
+
+:::
+
+<br>
+
+::: {.callout-important icon="false"}
+#### Tarea 2: Incluir `blog.qmd` en la web
+
+- Para que `blog.qmd`, la página que contiene el listado de posts, se muestre en nuestra web hay que refrenciarlo/incluirlo en `_quarto.yml`
+
+- Antes del tutorial 5 la sección de `_quarto.yml` que hacía referencia a la estructura de la web tenía esta pinta: 
+
+```{r, eval = FALSE}
+#| code-overflow: wrap   #- {scroll, wrap}
+#| code-line-numbers: true
+ 
+#- 2/ Opciones referentes a la estructura de la web -----------------
+
+website:
+  title: "Mi blog (aún en pruebas)"
+  navbar:
+    logo: "profile.jpg"
+    right:
+      - text: "About me"
+        href: about.qmd
+      - icon: github
+        href: https://github.com/<tu-usuario-github>
+      - icon: twitter
+        href: https://twitter.com/<tu-usuario twitter>
+      - icon: envelope
+        url: "mailto:<tu-mail@uv.es>"
+    left: 
+      - text: "Docencia"
+        href: docencia.qmd
+```
+
+- Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están refrenciando al fichero `about.qmd`. Por ejmeplo podríamos dejar las lineas 8 y 9 como se ve abajo:
+
+
+```{r, eval = FALSE}
+#| code-overflow: wrap   #- {scroll, wrap}
+#| code-line-numbers: true
+ 
+#- 2/ Opciones referentes a la estructura de la web -----------------
+
+website:
+  title: "Mi blog (aún en pruebas)"
+  navbar:
+    logo: "profile.jpg"
+    right:
+      - text: "Mi blog"
+        href: blog.qmd
+      - icon: github
+        href: https://github.com/<tu-usuario-github>
+      - icon: twitter
+        href: https://twitter.com/<tu-usuario twitter>
+      - icon: envelope
+        url: "mailto:<tu-mail@uv.es>"
+    left: 
+      - text: "Docencia"
+        href: docencia.qmd
+```
+
+<br>
+
+- Aún no podemos refrescar la web porque ahora no tenemos archivo `index.qmd`. 
+
+
+:::
+
+
+<br>
+
+::: {.callout-important icon="false"}
+#### Tarea 3: Renombrar el archivo about.qmd
+
+- Cambia el nombre del fichero  `about.qmd` a `index.qmd`, con lo que pasará ser nuestra "landing page". 
+
+- Como el antiguo fichero `about` contenía nuestra foto parece que es un buen candidato a ser nuestra "Home"
+
+
+:::
+
+<br>
+
+
+::: {.callout-important icon="false"}
+#### Tarea 4: Hacemos un rebuild de la web
+
+- Ahora ya tenemos fichero `index.qmd`, por lo que ya podemos hacer un rebuild de nuestra web y veremos la nueva estructura de nuestra web, con una foto nuestra en la "landing page".
+
+- Para ello: `Build > Render Website` en RStudio.
+
+:::

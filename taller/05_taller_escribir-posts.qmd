@@ -61,11 +61,11 @@ Ya sabemos que la carpeta `./posts/my-primer-post/` contiene dos archivos. El im
 :::
 
 
-Los ficheros `.qmd` tienen 3 partes: yaml, texto y chunks. Vamos a verla una a una.
+Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código. Vamos a verlas una a una.
 
-## El `yaml`
+## YAML
 
-El encabezamiento o **YAML**, se utiliza para fijar determinadas opciones y metadatos de nuestro documento^[El `yaml` será  procesado varias veces durante el procesado del documento: es leído por Quarto, knitr y Pandoc e influirá en el resultado final, pudiendo afectar al código, al contenido y al procesado del documento].
+El encabezamiento o **YAML**, se utiliza para fijar determinadas opciones y metadatos de nuestro documento^[El `YAML` será  procesado varias veces durante el procesado del documento: es leído por Quarto, knitr y Pandoc e influirá en el resultado final, pudiendo afectar al código, al contenido y al procesado del documento].
 
 Una idea importante a recordar es que estamos trabajando con un **Qproject**. Trabajar con un Qproject tiene ventajas^[Puedes ver la documentación oficial de Quarto sobre proyectos [aquí](https://quarto.org/docs/projects/quarto-projects.html)], entre ellas:
 
@@ -82,7 +82,7 @@ Esta última ventaja, la posibilidad de **compartir opciones de metadatos YAML e
 
 <br>
 
-### El `ymal` de un post
+### El `yaml` de un post
 
 En un post se pueden especificar opciones YAML de **3 formas/niveles**:
 
@@ -92,10 +92,10 @@ En un post se pueden especificar opciones YAML de **3 formas/niveles**:
 
 3. **Nivel documento**: En el yaml del propio post o documento `.qmd`
 
-De esta forma, potencialmente, un post puede recibir opciones de yaml desde los 3 niveles. Si hay conflictos **prevalecen las opciones del nivel documento**, luego nivel carpeta y finalmente nivel proyecto.
+De esta forma, potencialmente, un post puede recibir opciones de YAML desde los 3 niveles. Si hay conflictos **prevalecen las opciones del nivel documento**, luego nivel carpeta y finalmente nivel proyecto.
 
 
-Los blogs se publican en **formato html**, de forma que [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html) tienes la **documentación oficial** de Quarto con las principales opciones que se pueden fijar con el `yaml` para documentos html;  pero creo que la forma más operativa para el taller es mostrar ejemplos de ficheros yaml y revisar su contenido.
+Los blogs se publican en **formato html**, de forma que, [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html) tienes la **documentación oficial** de Quarto con las **principales opciones** que se pueden fijar con el YAML para documentos html;  pero creo que la forma más operativa para el taller es mostrar ejemplos de ficheros `.yml` y revisar su contenido.
 
 
 ::: {.panel-tabset}
@@ -103,17 +103,15 @@ Los blogs se publican en **formato html**, de forma que [aquí](https://quarto.o
 
 #### nivel proyecto (_quarto.yml)
 
+Abajo el contenido del fichero `_quarto.yml` tal y como lo tenemos ahora en nuestro blog. Solo he añadido 3 comentarios para diferenciar entre secciones:
 
 ```{r, eval = FALSE}
 #| code-overflow: wrap   #- {scroll, wrap}
 
-# 1/ Opciones referentes al proyecto ----------------------------
+# 1/ Opciones referentes al proyecto --------------------------------
 project:
   type: website
-  output-dir: docs #-- la carpeta donde se redirige el output (.html)
-  # execute-dir: project #-- the working directory for rendering files within a project is the directory of the file itself. If you prefer to use the main project directory instead, you can add the execute-dir: project https://quarto.org/docs/projects/code-execution.html#working-dir
-
-  
+ 
 #- 2/ Opciones referentes a la estructura de la web -----------------
 website:
   title: "Mi blog (aún en pruebas)"
@@ -132,7 +130,7 @@ website:
       - text: "Docencia"
         href: docencia.qmd
 
-#- 3/ Opciones referentes al formato de salida  -----------------
+#- 3/ Opciones referentes al formato de salida  ---------------------
 format:
   html:
     theme: minty  
@@ -142,10 +140,9 @@ format:
 ```
 
 
+#### nivel carpeta (_metadata.yml)
 
-
-#### nivel carpeta (./posts/_metadata.yml)
-
+Abajo el, contenido del fichero `/posts/_metadata.yml`. Afectará a todos los ficheros `.qmd` que haya en la carpeta `/posts/`
 
 ```{r, eval = FALSE}
 #| code-overflow: wrap   #- {scroll, wrap}
@@ -161,10 +158,9 @@ title-block-banner: true
 
 ```
 
+#### nivel documento (index.qmd)
 
-
-#### nivel documento (./posts/my-primer-post/index.qmd)
-
+Abajo el encabezamiento del fichero `/posts/my-primer-post/index.qmd`:
 
 ```{r, eval = FALSE}
 #| code-overflow: wrap   #- {scroll, wrap}
@@ -184,39 +180,151 @@ Acabé con mi primer post. FIN
 
 ```
 
-
-
-
 :::
 
+<br>
 
+### Distintas opciones YAML
 
+<br>
 
-- todos los Qprojects contienen un archivo de configuración  llamado `_quarto.yml`: todo documento que se procese (render) dentro del directorio del proyecto heredará automáticamente los metadatos definidos en `_quarto.yml`.
+#### Opciones referentes al proyecto 
 
-
-
-### Opciones 
+Estas opciones, en principio, sólo se pueden poner una vez y, por tanto, se especifican en el fichero `_quarto.yml` (nivel proyecto).
 
 ```{r, eval = FALSE}
+#| code-line-numbers: true
+#| code-overflow: wrap
+
 # 1/ Opciones referentes al proyecto ----------------------------
 project:
   type: website
-  output-dir: docs #-- la carpeta donde se redirige el output (.html)
-  # execute-dir: project #-- the working directory for rendering files within a project is the directory of the file itself. If you prefer to use the main project directory instead, you can add the execute-dir: project https://quarto.org/docs/projects/code-execution.html#working-dir
-
+  output-dir: docs    #- podemos cambiar la carpeta donde se redirige el output (.html)
+  # execute-dir: project    #- the working directory for rendering files within a project is the directory of the file itself. If you prefer to use the main project directory instead, you can add the execute-dir: project 
+  #- https://quarto.org/docs/projects/code-execution.html#working-dir
+  
 ```
 
+Como vemos, podemos cambiar:
+
+- la **carpeta** donde se generará el **output del proyecto** (linea 4: output_dir : docs). 
+
+- el **directorio de trabajo** en el que se procesan los `.qmd` (linea 5: execute-dir: project). Yo no lo haría, estoy muy acostumbrado a que el directorio de trabajo de los `.Rmd` sea la carpeta donde se procesan.
+
+<br>
+
+#### Opciones referentes a la estructura de la página web 
 
 
+Ya vimos algunas opciones en el 2º tutorial, veremos algunas más, pero será en el 7º tutorial. Como ejemplo, podríamos modificar esa sección de `_quarto.yml` para dejarla como:
 
-## Modificando el texto
 
-- El texto (o narrativa) de un documento `.qmd` se escribe, al igual que en los documentos `.Rmd` en `markdown`.
+```{r, eval = FALSE}
+#| code-overflow: wrap   #- {scroll, wrap}
+#| code-line-numbers: true
 
-- [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) tienes las reglas principales de para escribir en `markdown`.
 
-- Adicionalmente, hay muchas mas posibilidades en los documentos `.qmd`
+#- 2/ Opciones referentes a la estructura de la web -----------------
+website:
+  title: "Mi blog (aún en pruebas)"
+  favicon: imagenes/ababol_redondeado.ico
+  site-url: https://perezp44.github.io/taller.primer.blog/
+  repo-url: https://github.com/perezp44/taller.primer.blog
+  open-graph: true #-https://quarto.org/docs/websites/website-tools.html#twitter-cards
+  twitter-card:
+    creator: "@tu-usuario-twitter"
+    card-style: summary_large_image
+  navbar:
+    logo: "profile.jpg"
+    #background: primary    #- pink
+    right:
+      - text: "About me"
+        href: about.qmd
+      - icon: github
+        href: https://github.com/<tu-usuario-github>
+      - icon: twitter
+        href: https://twitter.com/<tu-usuario twitter>
+      - icon: envelope
+        url: "mailto:<tu-mail@uv.es>"
+    left: 
+      - icon: house-door
+        href: index.html
+      - text: "Docencia"
+        href: docencia.qmd
+  page-footer:
+    left: "© 2022 Pedro J. Pérez"
+    center: "Hecho con [Quarto](https://quarto.org)"
+    right:
+      - icon: github
+        href: https://github.com/perezp44
+      - icon: twitter
+        href: https://twitter.com/pjpv4444
+      - icon: envelope
+        url: "mailto:<tu-mail>@uv.es"
+      - text: <i class="ai ai-google-scholar" role="img"></i>
+        href: https://scholar.google.de/citations?user=<tu-user>&hl=en
+      - text: <i class="ai ai-orcid" role="img"></i>
+        href: https://orcid.org/<tu-numero-orcid>
+```
+
+Como ves, se añadirían elementos como:
+
+- Un pie de página (lineas 28 a 41)^[Puedes ver un ejemplo de cómo quedaría el pie de página en la web del taller, [aquí](https://perezp44.github.io/taller.primer.blog/materiales.html)]
+
+- Hemos añadido un elemento a la `navbar` concretamente el icono `Home` (lineas 24 y 25). La documentación oficial para elementos de navegación está [aquí](https://quarto.org/docs/websites/website-navigation.html)
+
+- Elementos de redes sociales como un favicon (linea 4), el url de la web y del repo en Github (lineas 5 y 6) y más elementos de redes sociales  (lineas 7 a 10). La documentación oficial para estos elementos está [aquí](https://quarto.org/docs/websites/website-tools.html)
+
+
+<br>
+
+## Texto
+
+El texto (o narrativa) de un documento `.qmd` se escribe, al igual que en los documentos `.Rmd` en `markdown`. [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) la documentación oficial de Quarto.
+
+<br>
+
+### Sintaxis básica de `markdown`
+
+-  [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) puedes ver o recordar la sintaxis básica, las principales reglas para escribir en `markdown`.
+
+- Como ejemplo:
+
++-----------------------------------+-------------------------------+
+| SI ESCRIBES ESTO:                 | SE VERÁ ESTO (output):        |
++===================================+===============================+
+| **Formato de texto**                                              |
++===================================+===============================+
+|     *italics* and **bold**        | *italics* and **bold**        |
++-----------------------------------+-------------------------------+
+|     superscript^2^ / subscript~2~ | superscript^2^ / subscript~2~ |
++-----------------------------------+-------------------------------+
+|     ~~strikethrough~~             | ~~strikethrough~~             |
++-----------------------------------+-------------------------------+
+|     `verbatim code`               | `verbatim code`               |
++===================================+===============================+
+| **TÍTULOS**                                                       |
++===================================+===============================+
+
+
+<br>
+
+### Más elementos para "escribir" 
+
+Además de los elementos de escritura que nos ofrece la sintaxis básica de `markdown`. Quarto nos ofrece más posibilidades, veamos algunas de ellas:
+
+#### Figuras
+
+<https://quarto.org/docs/authoring/figures.html>
+
+#### Tablas
+
+<https://quarto.org/docs/authoring/tables.html>
+
+
+- Escribir con el editor visual: <https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/>
+
+<br><br>
 
 ## Chunks de código
 
