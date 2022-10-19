@@ -46,5 +46,14 @@
   },
   "taller/07_taller_tuneado-del-blog.qmd": {
     "07_taller_tuneado-del-blog.html": "422ab69e"
+  },
+  "mas-cosas/inline-code.qmd": {
+    "inline-code.html": "88df3813"
+  },
+  "taller/02b_taller_slides.qmd": {
+    "02b_taller_slides.html": "775ddcb9"
+  },
+  "taller/imagenes/tt_01/ejemplo_1.Rmd": {
+    "ejemplo_1.html": "17aabb59"
   }
 }

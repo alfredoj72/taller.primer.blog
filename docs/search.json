@@ -140,6 +140,13 @@
     "text": "7 Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD\nBea Milz. 2022. Creating a Blog with Quarto in 10 Steps\nNavarro, Danielle. 2022. “Notes from a Data Witch - Porting a Distill Blog to Quarto\nQuarto - Creating a Blog\nAlison Hill. 2022. We Don’t Talk about Quarto"
   },
   {
+    "objectID": "taller/imagenes/tt_01/ejemplo_1.html",
+    "href": "taller/imagenes/tt_01/ejemplo_1.html",
+    "title": "El título de mi informe",
+    "section": "",
+    "text": "summary(iris)\n\n  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   \n Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  \n 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  \n Median :5.800   Median :3.000   Median :4.350   Median :1.300  \n Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  \n 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  \n Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  \n       Species  \n setosa    :50  \n versicolor:50  \n virginica :50  \n                \n                \n                \n\n\nEl trozo de arriba es un chunk de código R. Cuando compile el documento, knitr ejecutará el código y mostrará los resultados en el documento final.\nCon esto finalizamos este informe.\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2017,\n  author = {Pedro J. Pérez and Yo mismo},\n  editor = {},\n  title = {El título de mi informe},\n  date = {2017-03-01},\n  url = {https://perezp44.github.io/taller.primer.blog//taller/imagenes/tt_01/ejemplo_1.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez, and Yo mismo. 2017. “El título de mi\ninforme.” March 1, 2017. https://perezp44.github.io/taller.primer.blog//taller/imagenes/tt_01/ejemplo_1.html."
+  },
+  {
     "objectID": "taller/03_taller_tuneado-basico.html",
     "href": "taller/03_taller_tuneado-basico.html",
     "title": "Tuneado básico del blog con Quarto",
@@ -231,25 +238,25 @@
     "text": "5 Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD"
   },
   {
-    "objectID": "taller/01_taller_slides.html#bienvenidos-al-taller",
-    "href": "taller/01_taller_slides.html#bienvenidos-al-taller",
-    "title": "Mi primer blog con Quarto",
-    "section": "Bienvenidos al taller!!",
-    "text": "Bienvenidos al taller!!"
-  },
-  {
     "objectID": "taller/01_taller_slides.html#estructura-del-taller",
     "href": "taller/01_taller_slides.html#estructura-del-taller",
     "title": "Mi primer blog con Quarto",
     "section": "Estructura del taller",
-    "text": "Estructura del taller\n\n\n\nIntro: ¿qué es Quarto?\nCreación de un blog básico: mi blog en 2 minutos\nTuneado básico del blog\nWorkflow: creando posts\nEscribiendo un post largito: practicando con Quarto\nConvirtiendo el blog en una web académica\nTuneado de la web: ejemplos de blogs\nGestión y publicación de la web/blog: Quarto Pub, Github Pages"
+    "text": "Estructura del taller\n\nIntro: ¿qué es Quarto?\n\n\n\nCreación de un blog básico: mi blog en 2 minutos\nTuneado básico del blog\n\n\n\n\nWorkflow: creando posts\nEscribiendo un post largito: practicando con Quarto\n\n\n\n\nConvirtiendo el blog en una web académica\n\n\n\n\nTuneado de la web: ejemplos de blogs\n\n\n\n\nGestión y publicación de la web/blog: Quarto Pub, Github Pages"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#enlaces-para-fran-y-compis",
+    "href": "taller/01_taller_slides.html#enlaces-para-fran-y-compis",
+    "title": "Mi primer blog con Quarto",
+    "section": "Enlaces para Fran y compis",
+    "text": "Enlaces para Fran y compis\n\n\nun blog con Quarto\nUna web con 2 blogs\nUna web de una asignatura\nMi intro to DS\nWeb econometría para mirar el cuestionario\nTaller para CórdobaMi primer blog y uno de los tutoriales\nUn bookdown R4DS 2ed"
   },
   {
     "objectID": "taller/01_taller_slides.html#sobre-el-ponente",
     "href": "taller/01_taller_slides.html#sobre-el-ponente",
     "title": "Mi primer blog con Quarto",
     "section": "Sobre el ponente",
-    "text": "Sobre el ponente\n\nProfesor en la UV\nEntusiasta de R\nCreador y liquidador de blogs: 2015, R & flowers, con Jekyll, 2018, R & flowers V, con Hugo y blogdown, 2020, R & flowers (o casi), con radix, 2021, pedro.j.perez blog’s, con Distill y … 2022, R & flowers, con Quarto"
+    "text": "Sobre el ponente\n\nProfesor en la UV: Intro a DS, Econometría\nEntusiasta de R\n\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n\n2015, R & flowers , con Jekyll\n\n2018, R & flowers V, con Hugo y blogdown\n\n2020, R & flowers (o casi), con radix\n\n2021, pedro.j.perez blog’s, con Distill\n\n2022, R & flowers, con Quarto"
   },
   {
     "objectID": "taller/01_taller_slides.html#objetivos-del-taller",
@@ -263,35 +270,35 @@
     "href": "taller/01_taller_slides.html#beneficios-de-tener-un-blog",
     "title": "Mi primer blog con Quarto",
     "section": "Beneficios de tener un blog",
-    "text": "Beneficios de tener un blog\n\n\n\nSe aprende mucho!!\nEs fácil (pocas barreras de entrada si sabes Rmd)\nEs divertido\nRegistrar análisis que haces que de otra forma se perderían\nPracticar skills de comunicación\nPortfolio y contactos\nProductive procrastination\n\n\n\nImportante: el blog y los posts no tienen porque estar perfectos, así que no fear!!\n\n\nOpiniones más elaboradas aquí o aquí"
+    "text": "Beneficios de tener un blog\n(Opiniones más elaboradas aquí o aquí )\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma se perderían\nPracticar skills de comunicación\nPortfolio y contactos\n\n\n\n\nProductive procrastination\n\n\n\n\nImportante:\n\nel blog y los posts no tienen porque estar perfectos, así que no fear!!"
   },
   {
     "objectID": "taller/01_taller_slides.html#ejemplos-de-blogs",
     "href": "taller/01_taller_slides.html#ejemplos-de-blogs",
     "title": "Mi primer blog con Quarto",
     "section": "Ejemplos de blogs",
-    "text": "Ejemplos de blogs\n\nPor ejemplo algo así, el repo , o así, o este\nO este, o este repo:\nOtras web/blogs como inspiración: este o la Gallery de Quarto\nWebs académicas con blog: esta o esta, o esta"
+    "text": "Ejemplos de blogs\n\nMike Mahoney: el repo\nLayton R blog: el repo\nR Lille: el repo\nDrew Dimmery\nPA blog: el repo\nMario Angst\nMatt Worthington: el repo\n\n\nMás opciones:\n\nLa Gallery de Quarto"
   },
   {
-    "objectID": "taller/01_taller_slides.html#qué-es-quarto",
-    "href": "taller/01_taller_slides.html#qué-es-quarto",
+    "objectID": "taller/01_taller_slides.html#qué-es-quarto-1",
+    "href": "taller/01_taller_slides.html#qué-es-quarto-1",
     "title": "Mi primer blog con Quarto",
     "section": "¿Qué es Quarto?",
-    "text": "¿Qué es Quarto?\n\nQuarto is a multi-language, next generation version of R Markdown from RStudio, with many new features and capabilities. Like R Markdown, Quarto uses Knitr to execute R code, and is therefore able to render most existing Rmd files without modification.\n\n\nUn nuevo sistema de publicación técnica de código abierto\nMuy parecido a Rmarkdown, pero … no requiere R, soporta más lenguajes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\nEs … la “segunda generación de Rmarkdown”"
+    "text": "¿Qué es Quarto?\n\nUn nuevo sistema de publicación técnica de código abierto\nMuy parecido a Rmarkdown, pero … no requiere R, soporta más lenguajes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\nEs … la “segunda generación de Rmarkdown”"
   },
   {
     "objectID": "taller/01_taller_slides.html#ventajas-de-quarto",
     "href": "taller/01_taller_slides.html#ventajas-de-quarto",
     "title": "Mi primer blog con Quarto",
     "section": "Ventajas de Quarto",
-    "text": "Ventajas de Quarto\n\n\nen StackOverfow\nun tweet: https://mobile.twitter.com/DanOvand0/status/1580343517154770944\n\n\n\nWow, writing first paper using @quarto_pub and it is amazing; almost every pain point for academic writing in #rmarkdown has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching\n\n— Dan Ovando (@DanOvand0) October 12, 2022"
+    "text": "Ventajas de Quarto\n\nWe don’t talk about Quarto. Until now\nEn StackOverfow: benefits of Quarto\nun tweet: https://mobile.twitter.com/DanOvand0/status/1580343517154770944\n\n\n\nWow, writing first paper using @quarto_pub and it is amazing; almost every pain point for academic writing in #rmarkdown has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching\n\n— Dan Ovando (@DanOvand0) October 12, 2022"
   },
   {
-    "objectID": "taller/01_taller_slides.html#setup-para-el-taller",
-    "href": "taller/01_taller_slides.html#setup-para-el-taller",
+    "objectID": "taller/01_taller_slides.html#code-chunks",
+    "href": "taller/01_taller_slides.html#code-chunks",
     "title": "Mi primer blog con Quarto",
-    "section": "Setup para el taller",
-    "text": "Setup para el taller\n\nVoy a trabajar con R (a través de RStudio) y Quarto\nSi tienes RStudio 2022.07.1 + - ya tienes Quarto instalado\nInstrucciones de instalación aquí\n\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
+    "section": "Code Chunks",
+    "text": "Code Chunks\n\nAhora, con .qmd, se usa YAML style: echo: false y, cada opción en una linea con #|\n\n\n\n\n\n.Rmd\n```{r sumando, echo = TRUE, eval = FALSE}\n2 + 2\n4 + 4\n```\n\n.qmd\n```{r}\n#| label: \"sumando\"\n#| echo: true\n#| eval: false\n2 + 2\n4 + 4\n```\n\n\n\n\n\nNo hace falta chunk inicial, ahora se pueden poner las opciones de chunk en el YAML\n\n\n\n\n\n\nnice, you can set knitr defaults in the main yaml configuration header pic.twitter.com/fUPdnqBFdc\n\n— tj nightmahr 🧟‍♂️ (@tjmahr) October 4, 2022"
   },
   {
     "objectID": "taller/07_taller_tuneado-del-blog.html",
@@ -299,6 +306,20 @@
     "title": "Tuneado del blog",
     "section": "",
     "text": "Reutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez,\n  author = {Pedro J. Pérez},\n  editor = {},\n  title = {Tuneado del blog},\n  date = {},\n  url = {https://perezp44.github.io/taller.primer.blog//taller/07_taller_tuneado-del-blog.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez. n.d. “Tuneado del blog.” https://perezp44.github.io/taller.primer.blog//taller/07_taller_tuneado-del-blog.html."
+  },
+  {
+    "objectID": "taller/02b_taller_slides.html#estructura-del-taller",
+    "href": "taller/02b_taller_slides.html#estructura-del-taller",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "Estructura del taller",
+    "text": "Estructura del taller\nHola\nHola pepe como estas bien siiii bien bien\npepeote"
+  },
+  {
+    "objectID": "taller/02b_taller_slides.html#hola-1",
+    "href": "taller/02b_taller_slides.html#hola-1",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "Hola",
+    "text": "Hola\nComo vas tete\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
   },
   {
     "objectID": "index.html",
@@ -319,13 +340,34 @@
     "href": "about.html",
     "title": "Pedro J. Pérez",
     "section": "",
-    "text": "No recuerdo muy bien, pero hubo un día (allá por julio de 2022) que estando yo trasteando con R para hacer un blog con Quarto …. me debió parecer una buena idea 😅😃️ mandar una propuesta de taller para las Jornadas R de Córdoba. Es octubre y aquí estoy haciendo los materiales para el taller. El blog sigue igual que en julio: aún en pruebas. Aquí puedes verlo, con uno de mis hijos en una foto.\nA pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien soy un creador y liquidador de blogs. Aquí, puedes ver un listado no exhaustivo de los blogs que he liquidado … y parece que el blog que empece en julio puede seguir el mismo camino. Vorem!!\nLa verdad es que me gusta escribir posts, tienes mucha más libertad que al escribir un informe o un artículo académico; además, los posts no tienen porque estar perfectos, cuando te apetece los puedes medio dejar. Aunque los posts no estén acabados del todo, el pensar que alguien puede leerlos te hace pensar y reflexionar sobre lo que escribes.\n\nRemember kids, the only difference between screwing around and science is writing it down — Adam Savage de MythBusters"
+    "text": "No recuerdo muy bien, pero hubo un día (allá por julio de 2022) que estando yo trasteando con R para hacer un blog con Quarto …. me debió parecer una buena idea 😅😃️ mandar una propuesta de taller para las Jornadas R de Córdoba. Es octubre y aquí estoy haciendo los materiales para el taller. El blog sigue igual que en julio: aún en pruebas. Aquí puedes verlo, con uno de mis hijos en una foto.\nA pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien soy un creador y liquidador de blogs. Aquí, puedes ver un listado no exhaustivo de los blogs que he liquidado … y parece que el blog que empece en julio puede seguir el mismo camino. Vorem!!\nLa verdad es que me gusta escribir posts, tienes mucha más libertad que al escribir un informe o un artículo académico; además, los posts no tienen porque estar perfectos, cuando te apetece los puedes medio dejar. Aunque los posts no estén acabados del todo, el pensar que alguien puede leerlos te hace pensar y reflexionar sobre lo que escribes.\n\nRemember kids, the only difference between screwing around and science is writing it down — Adam Savage de MythBusters\n\n Nos vemos en las Jornadas, nos vemos en Córdoba."
   },
   {
     "objectID": "setup.html",
     "href": "setup.html",
     "title": "Setup",
     "section": "",
-    "text": "Instalación de R, RStudio y Quarto\n\n\n\n\n\n\nTodos sabemos instalar R y Rstudio, si no fuese así, aquí tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.\nInstalación de Quarto: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, aquí tienes los instaladores para los principales sistemas operativos.\nAdemás, idealmente, hay que crear una cuenta en los servicios: Github, RStudio Cloud y Quarto Pub"
+    "text": "Instalación de R, RStudio y Quarto\n\n\n\n\n\n\nTodos sabemos instalar R y Rstudio, si no fuese así, aquí tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.\nInstalación de Quarto: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, aquí tienes los instaladores para los principales sistemas operativos.\nAdemás, para alojar el blog necesitaréis crear una cuenta en Quarto Pub y Github.\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nVoy a suponer que los asistentes al taller, y posible lectores, de estos tutoriales conocen Rmarkdown y han escrito algún documento .Rmd. En ese caso, el paso de .Rmd a .qmd es sencillo. En cualquier caso, aquí tienes unas FAQ’s para usuarios de .Rmd que se preguntan si pasarse a Quarto.\nAquellos que no sepan qué es Rmarkdown pueden empezar por aquí o aquí."
+  },
+  {
+    "objectID": "mas-cosas/inline-code.html",
+    "href": "mas-cosas/inline-code.html",
+    "title": "Mi primer blog con Quarto (WIP)",
+    "section": "",
+    "text": "library(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──\n\n\n✔ ggplot2 3.3.6      ✔ purrr   0.3.4 \n✔ tibble  3.1.8      ✔ dplyr   1.0.10\n✔ tidyr   1.2.1      ✔ stringr 1.4.1 \n✔ readr   2.1.2      ✔ forcats 0.5.2 \n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nlibrary(palmerpenguins)\nThe dataset contains 344 penguin size measurements from Adelie, Gentoo, Chinstrap species across Torgersen, Biscoe, Dream islands.."
+  },
+  {
+    "objectID": "mas-cosas/inline-code.html#what-about-formatting",
+    "href": "mas-cosas/inline-code.html#what-about-formatting",
+    "title": "Mi primer blog con Quarto (WIP)",
+    "section": "What about formatting?",
+    "text": "What about formatting?\n\npen_summary <- penguins |> \n  group_by(species) |> \n  summarize(avg_mass = mean(body_mass_g, na.rm = TRUE))\n\nThe average body mass by species is 3700.6622517, 3733.0882353, 5076.0162602.\nWe can do better!\n\nbody_mass <- scales::label_number(big.mark = \",\", accuracy = 0.1, suffix = \"g\")(pull(pen_summary, avg_mass))\n\nbody_mass\n\n[1] \"3,700.7g\" \"3,733.1g\" \"5,076.0g\"\n\n\nThe average body mass by species is 3,700.7g, 3,733.1g, 5,076.0g.\nWe can still do better!\n\nmass_reporter <- glue::glue_collapse(body_mass, sep = \", \", last = \", and \")\n\nThe average body mass by species is 3,700.7g, 3,733.1g, and 5,076.0g."
+  },
+  {
+    "objectID": "mas-cosas/inline-code.html#reporting-with-lists",
+    "href": "mas-cosas/inline-code.html#reporting-with-lists",
+    "title": "Mi primer blog con Quarto (WIP)",
+    "section": "Reporting with lists",
+    "text": "Reporting with lists\nCredit to TJ Mahr\n\nknitted <- list(\n  when = format(Sys.Date()),\n  with = system(\"quarto --version\", intern = TRUE)\n)\n\nReported prepared on 2022-10-18 with quarto version 1.1.251."
   }
 ]

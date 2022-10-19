@@ -9,17 +9,17 @@
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/social-share-0.1.0/social-share.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/social-share-0.1.0/all.css" rel="stylesheet"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
-<meta name="author" content="Pedro J. Pérez">
-<title>Mi primer blog con Quarto (WIP) - Mi primer blog con Quarto</title>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-<link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-<link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
-<style>
+<link href="../site_libs/quarto-contrib/social-share-0.1.0/all.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.1.251">
+
+  <meta name="author" content="Pedro J. Pérez">
+  <title>Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -31,82 +31,21 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #767676;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #767676;  padding-left: 4px; }
-    div.sourceCode
-      { color: #545454; background-color: #fefefe; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #545454; } /* Normal */
-    code span.al { color: #7928a1; } /* Alert */
-    code span.an { color: #696969; } /* Annotation */
-    code span.at { color: #aa5d00; } /* Attribute */
-    code span.bn { color: #7928a1; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #d91e18; } /* ControlFlow */
-    code span.ch { color: #008000; } /* Char */
-    code span.cn { color: #d91e18; } /* Constant */
-    code span.co { color: #696969; } /* Comment */
-    code span.cv { color: #696969; font-style: italic; } /* CommentVar */
-    code span.do { color: #696969; font-style: italic; } /* Documentation */
-    code span.dt { color: #7928a1; } /* DataType */
-    code span.dv { color: #7928a1; } /* DecVal */
-    code span.er { color: #7928a1; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #aa5d00; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { } /* Import */
-    code span.in { color: #696969; } /* Information */
-    code span.kw { color: #d91e18; } /* Keyword */
-    code span.op { color: #007faa; } /* Operator */
-    code span.ot { color: #d91e18; } /* Other */
-    code span.pp { color: #7928a1; } /* Preprocessor */
-    code span.sc { color: #007faa; } /* SpecialChar */
-    code span.ss { color: #008000; } /* SpecialString */
-    code span.st { color: #008000; } /* String */
-    code span.va { color: #aa5d00; } /* Variable */
-    code span.vs { color: #008000; } /* VerbatimString */
-    code span.wa { color: #696969; font-style: italic; } /* Warning */
   </style>
-<link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css" id="theme">
-<link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-<link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-<link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-<link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-<style>html{ scroll-behavior: smooth; }</style>
-<script type="application/json" class="js-hypothesis-config">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="assets/styles_slides.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style>html{ scroll-behavior: smooth; }</style>
+  <script type="application/json" class="js-hypothesis-config">
   {
     "theme": "clean"
   }
-  </script><script async="" src="https://hypothes.is/embed.js"></script><style type="text/css">
+  </script>
+  <script async="" src="https://hypothes.is/embed.js"></script>
+  <style type="text/css">
 
   .callout {
     margin-top: 1em;
@@ -303,7 +242,7 @@
   }
 
   </style>
-<style type="text/css">
+  <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
       overflow: auto;
@@ -391,9 +330,11 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Mi primer blog con Quarto">
+<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto">
+<meta property="og:description" content="(2ª parte del taller Mi primer blog con Quarto)">
 <meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
-<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Mi primer blog con Quarto">
+<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Creación de un blog básico con Quarto">
+<meta name="twitter:description" content="(2ª parte del taller Mi primer blog con Quarto)">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -401,286 +342,48 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-color="#562457" class="center"><h1 class="title">Mi primer blog con Quarto</h1>
+<section id="title-slide" data-background-color="#562457" class="center">
+  <h1 class="title">Creación de un blog básico con Quarto</h1>
+  <p class="subtitle">(2ª parte del taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)</p>
   <p class="author">Pedro J. Pérez</p>
   <p class="date">24/10/2022</p>
-</section><section><section id="bienvenidos-al-taller" class="title-slide slide level1 center"><h1>Bienvenidos al taller!!</h1>
+</section>
 
-</section><section id="estructura-del-taller" class="slide level2 smaller"><h2>Estructura del taller</h2>
-<ol type="1">
-<li>Intro: ¿qué es Quarto?</li>
-</ol>
-<div class="fragment">
-<ol start="2" type="1">
-<li><p>Creación de un blog básico: mi blog en 2 minutos</p></li>
-<li><p>Tuneado básico del blog</p></li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="4" type="1">
-<li><p>Workflow: creando posts</p></li>
-<li><p>Escribiendo un post largito: practicando con Quarto</p></li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="6" type="1">
-<li>Convirtiendo el blog en una web académica</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="7" type="1">
-<li>Tuneado de la web: ejemplos de blogs</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="8" type="1">
-<li>Gestión y publicación de la web/blog: Quarto Pub, Github Pages</li>
-</ol>
-</div>
-</section><section id="enlaces-para-fran-y-compis" class="slide level2 smaller"><h2>Enlaces para Fran y compis</h2>
-<div>
-<ul>
-<li><p><a href="https://perezp44.github.io/pjperez.blog.2022/">un blog con Quarto</a></p></li>
-<li><p>Una <a href="https://perezp44.github.io/pjperez.web/">web con 2 blogs</a></p></li>
-<li><p>Una <a href="https://openscapes.github.io/quarto-website-tutorial/">web de una asignatura</a></p></li>
-<li><p><a href="https://perezp44.github.io/intro-ds-22-23-web/">Mi intro to DS</a></p></li>
-<li><p><a href="https://perezp44.github.io/web.Econometria.GADE/">Web econometría</a> para mirar el <a href="https://perezp44.github.io/web.Econometria.GADE/materiales/cuestionario_practicas.html">cuestionario</a></p></li>
-<li><p>Taller para Córdoba<a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog</a> y uno de los <a href="https://perezp44.github.io/taller.primer.blog/taller/02_taller_crear-blog-basico.html">tutoriales</a></p></li>
-<li><p>Un bookdown <a href="https://r4ds.hadley.nz/">R4DS 2ed</a></p></li>
-</ul>
-</div>
-</section></section><section><section id="intro" class="title-slide slide level1 center"><h1>Intro</h1>
+<section id="estructura-del-taller" class="slide level2 smaller">
+<h2>Estructura del taller</h2>
+<h5 id="hola"><span class="purple">Hola</span></h5>
+<p>Hola pepe como estas <span class="purple">bien</span> <span class="yellow-h">siiii</span> <span class="purple2">bien</span> <span class="purple3">bien</span></p>
+<p><span class="purple2"><span class="out-t">pepeote</span></span></p>
+</section>
+<section id="hola-1" class="slide level2 inverse2">
+<h2>Hola</h2>
+<p>Como vas tete</p>
 
-</section><section id="sobre-el-ponente" class="slide level2"><h2>Sobre el ponente</h2>
-<ul>
-<li><p>Profesor en la UV: <a href="https://perezp44.github.io/intro-ds-22-23-web/">Intro a DS</a>, <a href="https://perezp44.github.io/web.Econometria.GADE/">Econometría</a></p></li>
-<li><p>Entusiasta de R</p></li>
-<li>
-<p>No soy “bloguero”, más bien soy creador y <strong>liquidador de blogs</strong>:</p>
-<ul>
-<li>
-<a href="http://perezp44.github.io/">2015, R &amp; flowers</a> , con Jekyll</li>
-<li>
-<a href="https://rflowers5.netlify.app/">2018, R &amp; flowers V</a>, con Hugo y blogdown</li>
-<li>
-<a href="https://perezp44.github.io/my_blog_R-flowers-0.1.3/">2020, R &amp; flowers (o casi)</a>, con radix</li>
-<li>
-<a href="https://perezp44.github.io/pjperez.web/">2021, pedro.j.perez blog’s</a>, con Distill</li>
-<li>
-<a href="https://perezp44.github.io/pjperez.blog.2022/">2022, R &amp; flowers</a>, con Quarto</li>
-</ul>
-</li>
-</ul></section><section id="objetivos-del-taller" class="slide level2"><h2>Objetivo(s) del taller</h2>
-<ul>
-<li><p><strong>Objetivo general</strong>: Aprender sobre <strong>Quarto</strong> mientras vamos creando una web/blog</p></li>
-<li><p>Aprender sobre como usar Quarto para hacer webpages/blogs</p></li>
-<li><p>Que salgáis todos con el bosquejo de una web/blog!!</p></li>
-</ul>
-<p><br></p>
-<ul>
-<li>… y, si puede ser, divertirse 🔥</li>
-</ul></section><section id="beneficios-de-tener-un-blog" class="slide level2 smaller"><h2>Beneficios de tener un blog</h2>
-<p>(Opiniones más elaboradas <a href="https://www.rebeccabarter.com/blog/2020-02-03_blogger/">aquí</a> o <a href="https://jozef.io/r914-one-year-r-blogging/">aquí</a> )</p>
-<p><br></p>
-<ul>
-<li><strong>Se aprende mucho!!</strong></li>
-</ul>
-<div class="fragment">
-<ul>
-<li><p>Es fácil (pocas barreras de entrada si usas Rmarkdown)</p></li>
-<li><p>Es divertido</p></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li><p>Registrar análisis que haces que de otra forma se perderían</p></li>
-<li><p>Practicar skills de comunicación</p></li>
-<li><p>Portfolio y contactos</p></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Productive procrastination</li>
-</ul>
-</div>
-<div class="fragment">
-<p><br></p>
-<h3 id="importante"><strong>Importante:</strong></h3>
-<ul>
-<li>el blog y los posts <strong>no tienen porque estar perfectos</strong>, así que no fear!!</li>
-</ul>
-</div>
-</section><section id="ejemplos-de-blogs" class="slide level2"><h2>Ejemplos de blogs</h2>
-<ul>
-<li><p><a href="https://www.mm218.dev/blog.html">Mike Mahoney</a>: el <a href="https://github.com/mikemahoney218/mm218.dev">repo</a></p></li>
-<li><p><a href="https://graphdr.github.io/data-stories/">Layton R blog</a>: el <a href="https://github.com/graphdr/data-stories">repo</a></p></li>
-<li><p><a href="https://rlille.fr/">R Lille</a>: el <a href="https://github.com/RLille/rlille.fr">repo</a></p></li>
-<li><p><a href="https://ddimmery.com/">Drew Dimmery</a></p></li>
-<li><p><a href="https://www.paltmeyer.com/blog/">PA blog</a>: el <a href="https://github.com/pat-alt/pat-alt.github.io">repo</a></p></li>
-<li><p><a href="https://marioangst.com/en/">Mario Angst</a></p></li>
-<li><p><a href="https://www.mrworthington.com/">Matt Worthington</a>: el <a href="https://github.com/mrworthington/mrworthington.github.io">repo</a></p></li>
-</ul>
-<p><br></p>
-<h4 id="más-opciones">Más opciones:</h4>
-<ul>
-<li>La <a href="https://quarto.org/docs/gallery/#websites">Gallery de Quarto</a>
-</li>
-</ul></section></section><section><section id="qué-es-quarto" class="title-slide slide level1 center"><h1>¿Qué es Quarto?</h1>
-<div class="fragment">
-<blockquote>
-<p>Quarto is a multi-language, next generation version of R Markdown from RStudio, with many new features and capabilities. Like R Markdown, Quarto uses Knitr to execute R code, and is therefore able to render most existing Rmd files without modification.</p>
-</blockquote>
-</div>
-</section><section id="qué-es-quarto-1" class="slide level2"><h2>¿Qué es Quarto?</h2>
-<ul>
-<li><p>Un nuevo sistema de publicación técnica de código abierto</p></li>
-<li><p>Muy parecido a Rmarkdown, pero … no requiere R, soporta más lenguajes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …</p></li>
-<li><p>Es … la “segunda generación de Rmarkdown”</p></li>
-</ul></section><section id="ventajas-de-quarto" class="slide level2"><h2>Ventajas de Quarto</h2>
-<ul>
-<li><p><a href="https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/">We don’t talk about Quarto. Until now</a></p></li>
-<li><p><a href="https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown">En StackOverfow: benefits of Quarto</a></p></li>
-<li><p>un tweet: <a href="https://mobile.twitter.com/DanOvand0/status/1580343517154770944" class="uri">https://mobile.twitter.com/DanOvand0/status/1580343517154770944</a></p></li>
-</ul>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-Wow, writing first paper using <a href="https://twitter.com/quarto_pub?ref_src=twsrc%5Etfw"><span class="citation" data-cites="quarto_pub">@quarto_pub</span></a> and it is amazing; almost every pain point for academic writing in <a href="https://twitter.com/hashtag/rmarkdown?src=hash&amp;ref_src=twsrc%5Etfw">#rmarkdown</a> has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching
-</p>
-— Dan Ovando (<span class="citation" data-cites="DanOvand0">@DanOvand0</span>) <a href="https://twitter.com/DanOvand0/status/1580343517154770944?ref_src=twsrc%5Etfw">October 12, 2022</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></section></section><section id="setup-para-el-taller" class="title-slide slide level1 center"><h1>Setup para el taller</h1>
-<ul>
-<li><p>Voy a trabajar con R (a través de RStudio) y Quarto</p></li>
-<li><p>Si tienes RStudio 2022.07.1 + - ya tienes Quarto instalado</p></li>
-<li><p>Instrucciones de instalación <a href="https://perezp44.github.io/taller.primer.blog/setup.html">aquí</a></p></li>
-</ul></section><section><section id="refresh-de-rmarkdown-.rmd" class="title-slide slide level1 center"><h1>Refresh de Rmarkdown (<code>.Rmd</code>)</h1>
-
-</section><section class="slide level2"><h3 id="qué-es-rmarkdown-para-que-sirve">¿Qué es Rmarkdown? ¿Para que sirve?</h3>
-<ul>
-<li>Un <a href="https://vimeo.com/178485416">“entorno”</a> para hacer informes/publicaciones/transparencias REPRODUCIBLES con R.</li>
-</ul>
-<blockquote>
-<p>Is an authoring framework for data science, combining your code, its results, and your prose. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.</p>
-</blockquote>
-<h4 id="con-rmd-se-pueden-generar-multitud-de-outputs">con Rmd se pueden generar multitud de outputs</h4>
-<ul>
-<li>Por ejemplo, visita <a href="https://rmarkdown.rstudio.com/gallery.html">está galería</a> o <a href="https://rmarkdown.rstudio.com/formats.html">este listado</a>
-</li>
-</ul></section><section class="slide level2"><h3 class="smaller" id="los-documentos-.rmd-tienen-3-partes">los documentos <code>.Rmd</code> tienen 3 partes</h3>
-<ol type="1">
-<li>Encabezamiento (yaml header)<br>
-</li>
-<li>Trozos de código R (R chunks)<br>
-</li>
-<li>Texto (narratives)</li>
-</ol>
-<h3 id="un-ejemplo">Un ejemplo</h3>
-<div class="{columns}">
-<div class="column" style="width:40%;">
-<h4 id="source-code">source code</h4>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="imagenes/tt_01/ejemplo_1.png" style="width:85.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:40%;">
-<h4 id="output">output</h4>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="imagenes/tt_01/ejemplo_1b.png" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section><section class="slide level2"><h5 id="i-el-encabezamiento-o-yaml-header">(I) El encabezamiento o “yaml header”</h5>
-<ul>
-<li><p>Se (suele) poner al ppio del documento, entre estas marcas: <code>---</code></p></li>
-<li><p>En el yaml son MUY importantes los espacios y la indentación</p></li>
-<li><p>Puedes aprender más sobre el <code>yaml</code> en el <a href="https://pandoc.org/MANUAL.html">manual de Pandoc</a></p></li>
-</ul>
-<h5 id="otro-ejemplo-de-yaml">Otro ejemplo de yaml</h5>
-
-<img data-src="imagenes/tt_01/ejemplo_yaml.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section><section class="slide level2"><h4 id="iia-código-r-chunks">(IIa) Código R (chunks)</h4>
-<ul>
-<li>Para que <code>knitr</code> sepa qué partes del .Rmd es código R, deben ir dentro de estas marcas:</li>
-</ul>
-<pre><code>```{r}   
-
-```    </code></pre>
-<h5 id="por-ejemplo">Por ejemplo</h5>
-<pre><code>```{r}   
-# Se pueden poner comentarios (de la forma habitual)
-aa &lt;- c(1, 4, 16, 64)
-sqrt(aa)
-```    </code></pre>
-<ul>
-<li>Cuando <code>knitr</code> procese el chunk, lo interpretará como código R y ejecutará las instrucciones y mostrará en el documento final el output generado por el chunk.</li>
-</ul>
-<h5 id="por-ejemplo-el-anterior-chunk-generará-el-siguiente-output">Por ejemplo, el anterior chunk generará el siguiente output:</h5>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Se pueden poner comentarios (de la forma habitual)</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>aa <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">16</span>, <span class="dv">64</span>)</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">sqrt</span>(aa)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1 2 4 8</code></pre>
-</div>
-</div>
-</section><section id="code-chunks" class="slide level2 smaller"><h2>Code Chunks</h2>
-<ul>
-<li>Ahora, con <code>.qmd</code>, se usa <strong>YAML</strong> style: <code>echo: false</code> y, cada opción en una linea con <code>#|</code>
-</li>
-</ul>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:40%;">
-<h4 id="rmd">.Rmd</h4>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a><span class="in">```{r sumando, echo = TRUE, eval = FALSE}</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="dv">4</span> <span class="sc">+</span> <span class="dv">4</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="in">```</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:40%;">
-<h5 id="qmd">.qmd</h5>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a><span class="in">```{r}</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="co">#| label: "sumando"</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="co">#| echo: true</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a><span class="co">#| eval: false</span></span>
-<span id="cb6-5"><a href="#cb6-5"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span>
-<span id="cb6-6"><a href="#cb6-6"></a><span class="dv">4</span> <span class="sc">+</span> <span class="dv">4</span></span>
-<span id="cb6-7"><a href="#cb6-7"></a><span class="in">```</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<ul>
-<li>No hace falta chunk inicial, ahora <strong>se pueden poner</strong> las opciones de chunk <strong>en el YAML</strong>
-</li>
-</ul>
-</div>
-<div class="fragment">
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-nice, you can set knitr defaults in the main yaml configuration header <a href="https://t.co/fUPdnqBFdc">pic.twitter.com/fUPdnqBFdc</a>
-</p>
-— tj nightmahr 🧟‍♂️ (<span class="citation" data-cites="tjmahr">@tjmahr</span>) <a href="https://twitter.com/tjmahr/status/1577316771018817541?ref_src=twsrc%5Etfw">October 4, 2022</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-</section><section class="slide level2">
 
 <img src="imagenes/economia.gif" class="slide-logo r-stretch"><div class="footer footer-default">
 <p>Slides hechas con <a href="https://quarto.org/">Quarto</a> para las <a href="http://r-es.org/12jr/">XII Jornadas de Usuarios de R</a></p>
 </div>
-</section></section>
-</div>
+</section>
+    </div>
   </div>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="../site_libs/revealjs/dist/reveal.js"></script><!-- reveal.js plugins --><script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script><script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script><script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script><script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script><script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script><script src="../site_libs/revealjs/plugin/notes/notes.js"></script><script src="../site_libs/revealjs/plugin/search/search.js"></script><script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script><script src="../site_libs/revealjs/plugin/math/math.js"></script><script>window.define = window.backupDefine; window.backupDefine = undefined;</script><script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
@@ -871,46 +574,8 @@ nice, you can set knitr defaults in the main yaml configuration header <a href="
           RevealZoom
         ]
       });
-    </script><script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          // dispatch for htmlwidgets
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for reveal
-        if (window.Reveal) {
-          window.Reveal.addEventListener("slidechanged", function(event) {
-            fireSlideChanged(event.previousSlide, event.currentSlide);
-          });
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script><script id="quarto-html-after-body" type="application/javascript">
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
         const mode = bsSheetEl.getAttribute("data-mode");
@@ -1021,7 +686,8 @@ nice, you can set knitr defaults in the main yaml configuration header <a href="
         }
     });
     </script>
-
+    
+    
 
 <script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -13,6 +13,8 @@ website:
     creator: "@pjpv4444"
     card-style: summary_large_image
   navbar:
+    background: "#F8F8F8"   # "#C0B9A0"  # "#e9e8f0"   #- color de R-ladies    # secondary
+    collapse-below: lg
     logo: "imagenes/ababol_redondeado.png"
     #background: primary #- pink
     left: 

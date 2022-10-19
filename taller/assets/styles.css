@@ -4,7 +4,9 @@
 /* definiendo estilos de los párrafos */ 
 p, ul, ol {
   text-align: justify; }        /* justificar el texto del body */      
-  
+
+
+
 
 /* de: https://github.com/schochastics/quarto-schochastics/blob/main/styles.css */ 
 

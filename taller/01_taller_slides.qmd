@@ -1,65 +1,73 @@
 ---
 title: "Mi primer blog con Quarto"
-format: revealjs
-title-slide-attributes: #- atributos para la slide de titulo
-  data-background-color: "#562457"   #- color de R-ladies
-  #data-background-image: /imagenes/economia.gif
-  #data-background-size: contain      
-
-toc: false
-#theme: style.scss
-#multiplex: true  #- para que puedas manejar las slides del publico
-link-external-newwindow: true
-transition: fade
-height: 900
-width: 1600
-fontcolor: "#262d36"
-highlight-style: a11y
-code-line-numbers: false
-center-title-slide: true
-slide-level: 2 
-number-sections: false
-slide-number: c/t   # https://pandoc.org/MANUAL.html#structuring-the-slide-show
-incremental: true   # https://quarto.org/docs/presentations/#incremental-lists
+date: "24/10/2022"
+format: 
+  revealjs:
+    scrollable: true
+    slide-level: 2
+    height: 900
+    width: 1600
+    toc: false
+    from: markdown+emoji  #- usar emojis https://gist.github.com/rxaviers/7360908)
+    center-title-slide: true
+    title-slide-attributes: #- atributos para la slide de titulo
+      data-background-color: "#562457"   #- color de R-ladies
+      #data-background-image: /imagenes/economia.gif
+      #data-background-size: contain      
+    preview-links: auto  #- true: abre un iframe en lugar de abrir ventana
+    #multiplex: true  #- para que puedas manejar las slides del publico
+    link-external-newwindow: true
+    transition: fade
+    #height: 900
+    #width: 1600
+    fontcolor: "#262d36"
+    highlight-style: a11y
+    code-line-numbers: true
+    number-sections: false
+    slide-number: c/t   # https://pandoc.org/MANUAL.html#structuring-the-slide-show
+    incremental: false   # https://quarto.org/docs/presentations/#incremental-lists
 logo: imagenes/economia.gif
-footer: <https://quarto.org>
 footer: |
         Slides hechas con [Quarto](https://quarto.org/) para las [XII Jornadas de Usuarios de R](http://r-es.org/12jr/)
-#heme: [moon, custom.scss]
-from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
-#preview-links: true  #- abre un iframe en lugar de abrir ventana
-
+    #theme: [moon, custom.scss]
 ---
 
-## Bienvenidos al taller!!
+# Bienvenidos  al taller!!
 
 
 
-## Estructura del taller
+## Estructura del taller {.smaller}
 
-<br>
-
-::: {.nonincremental}
 
 1. Intro: ¿qué es Quarto?
+
+. . .
 
 2. Creación de un blog básico: mi blog en 2 minutos
 
 3. Tuneado básico del blog
 
+. . .
+
+
 4. Workflow: creando posts
 
 5. Escribiendo un post largito: practicando con Quarto
 
+. . .
+
 6. Convirtiendo el blog en una web académica
+
+. . .
 
 7. Tuneado de la web: ejemplos de blogs
 
+. . .
+
 8. Gestión y publicación de la web/blog: Quarto Pub, Github Pages
-:::
 
 
-# Enlaces para Fran y compis{.smaller}
+## Enlaces para Fran y compis{.smaller}
 
 ::: {.nonincremental}
 - [un blog con Quarto](https://perezp44.github.io/pjperez.blog.2022/)
@@ -84,11 +92,17 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 
 ## Sobre el ponente
 
-- Profesor en la UV
+- Profesor en la UV: [Intro a DS](https://perezp44.github.io/intro-ds-22-23-web/), [Econometría](https://perezp44.github.io/web.Econometria.GADE/)
 
 - Entusiasta de R
 
-- Creador y **liquidador de blogs**: [2015, R & flowers, con Jekyll](http://perezp44.github.io/), [2018, R & flowers V, con Hugo y blogdown](https://rflowers5.netlify.app/), [2020, R & flowers (o casi), con radix](https://perezp44.github.io/my_blog_R-flowers-0.1.3/), [2021, pedro.j.perez blog’s, con Distill](https://perezp44.github.io/pjperez.web/) y ... [2022, R & flowers, con Quarto](https://perezp44.github.io/pjperez.blog.2022/)
+- No soy "bloguero", más bien soy creador y **liquidador de blogs**:
+
+    - [2015, R & flowers](http://perezp44.github.io/) , con Jekyll 
+    - [2018, R & flowers V](https://rflowers5.netlify.app/), con Hugo y blogdown
+    - [2020, R & flowers (o casi)](https://perezp44.github.io/my_blog_R-flowers-0.1.3/), con radix
+    - [2021, pedro.j.perez blog’s](https://perezp44.github.io/pjperez.web/), con Distill
+    - [2022, R & flowers](https://perezp44.github.io/pjperez.blog.2022/), con Quarto
 
 
 
@@ -107,15 +121,20 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 
 ## Beneficios de tener un blog{.smaller}
 
+
+(Opiniones más elaboradas [aquí](https://www.rebeccabarter.com/blog/2020-02-03_blogger/) o [aquí](https://jozef.io/r914-one-year-r-blogging/) )
+
 <br>
 
-::: {.nonincremental}
+- **Se aprende mucho!!**
 
-- Se aprende mucho!!
+. . . 
 
-- Es fácil (pocas barreras de entrada si sabes Rmd)
+- Es fácil (pocas barreras de entrada si usas Rmarkdown)
 
 - Es divertido
+
+. . . 
 
 - Registrar análisis que haces que de otra forma se perderían 
 
@@ -123,35 +142,54 @@ from: markdown+emoji  #- usar emojis (https://gist.github.com/rxaviers/7360908)
 
 - Portfolio y contactos
 
+. . . 
+
 - Productive procrastination
 
-<br>
-
-- **Importante:** el blog y los posts **no tienen porque estar perfectos**, así que no fear!!
+. . . 
 
 <br>
 
-Opiniones más elaboradas [aquí](https://www.rebeccabarter.com/blog/2020-02-03_blogger/) o [aquí](https://jozef.io/r914-one-year-r-blogging/) 
+### **Importante:**
 
-:::
+- el blog y los posts **no tienen porque estar perfectos**, así que no fear!!
+
+
+
 
 ## Ejemplos de blogs
 
-- Por ejemplo algo [así](https://www.mm218.dev/blog.html), el [repo](https://github.com/mikemahoney218/mm218.dev) , o [así](https://graphdr.github.io/data-stories/), o [este](https://rlille.fr/)
 
-- O [este](https://ddimmery.com/blog.html), o [este](https://rlille.fr/) [repo:](https://github.com/RLille/rlille.fr)
+- [Mike Mahoney](https://www.mm218.dev/blog.html): el [repo](https://github.com/mikemahoney218/mm218.dev)  
+
+- [Layton R blog](https://graphdr.github.io/data-stories/): el [repo](https://github.com/graphdr/data-stories)   
+
+- [R Lille](https://rlille.fr/): el [repo](https://github.com/RLille/rlille.fr)
+
+- [Drew Dimmery](https://ddimmery.com/)
+
+- [PA blog](https://www.paltmeyer.com/blog/): el [repo](https://github.com/pat-alt/pat-alt.github.io) 
+
+- [Mario Angst](https://marioangst.com/en/)
+
+- [Matt Worthington](https://www.mrworthington.com/): el [repo](https://github.com/mrworthington/mrworthington.github.io)
+
+<br>
+
+#### Más opciones:
+
+- La [Gallery de Quarto](https://quarto.org/docs/gallery/#websites)
 
 
-- Otras web/blogs como inspiración: [este](https://www.paltmeyer.com/blog/) o la [Gallery de Quarto](https://quarto.org/docs/gallery/#websites)
-
-- Webs académicas con blog: [esta](https://www.mm218.dev/) o [esta](https://ddimmery.com), o [esta](https://marioangst.com/en/)
 
 
+# ¿Qué es Quarto?
 
-## ¿Qué es Quarto?
-
+. . .
 
 > Quarto is a multi-language, next generation version of R Markdown from RStudio, with many new features and capabilities. Like R Markdown, Quarto uses Knitr to execute R code, and is therefore able to render most existing Rmd files without modification.
+
+## ¿Qué es Quarto?
 
 
 - Un nuevo sistema de publicación técnica de código abierto
@@ -162,20 +200,175 @@ Opiniones más elaboradas [aquí](https://www.rebeccabarter.com/blog/2020-02-03_
 
 ## Ventajas de Quarto
 
-::: {.nonincremental}
+- [We don't talk about Quarto. Until now](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/)
 
-- [en StackOverfow](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown)
+
+- [En StackOverfow: benefits of Quarto](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown)
 
 - un tweet: <https://mobile.twitter.com/DanOvand0/status/1580343517154770944>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Wow, writing first paper using <a href="https://twitter.com/quarto_pub?ref_src=twsrc%5Etfw">@quarto_pub</a> and it is amazing; almost every pain point for academic writing in <a href="https://twitter.com/hashtag/rmarkdown?src=hash&amp;ref_src=twsrc%5Etfw">#rmarkdown</a> has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching</p>&mdash; Dan Ovando (@DanOvand0) <a href="https://twitter.com/DanOvand0/status/1580343517154770944?ref_src=twsrc%5Etfw">October 12, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-:::
 
 
-## Setup para el taller
+# Setup para el taller
 
 - Voy a trabajar con R (a través de RStudio) y Quarto
 
 - Si tienes RStudio 2022.07.1 + - ya tienes Quarto instalado 
 
 - Instrucciones de instalación [aquí](https://perezp44.github.io/taller.primer.blog/setup.html)
+
+
+# Refresh de Rmarkdown (`.Rmd`)
+
+---
+
+### ¿Qué es Rmarkdown? ¿Para que sirve?
+
+- Un ["entorno"](https://vimeo.com/178485416) para hacer informes/publicaciones/transparencias REPRODUCIBLES con R.
+
+
+> Is an authoring framework for data science, combining your code, its results, and your prose. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.
+
+#### con Rmd se pueden generar multitud de outputs
+
+
+- Por ejemplo, visita [está galería](https://rmarkdown.rstudio.com/gallery.html) o [este listado](https://rmarkdown.rstudio.com/formats.html)
+
+
+
+--- 
+
+### los documentos `.Rmd` tienen 3 partes {.smaller}
+
+1. Encabezamiento (yaml header)  
+2. Trozos de código R (R chunks)  
+3. Texto (narratives)
+
+. . . 
+
+### Un ejemplo
+
+
+:::: {columns}
+
+::: {.column width="40%"}
+
+#### source code
+```{r echo = FALSE, comment = "",  out.width = '85%', fig.align = 'center'}
+knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_1.png") )
+```
+
+:::
+
+::: {.column width="40%"}
+#### output
+
+```{r echo = FALSE, comment = "", out.width = '100%', fig.align = 'center'}
+knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_1b.png") )
+```
+:::
+
+::::
+
+---
+
+##### (I) El encabezamiento o "yaml header"
+
+- Se (suele) poner al ppio del documento, entre estas marcas: `---`
+
+- En el yaml son MUY importantes los espacios y la indentación
+
+- Puedes aprender más sobre el `yaml` en el [manual de Pandoc](https://pandoc.org/MANUAL.html)
+
+##### Otro ejemplo de yaml
+
+
+```{r echo = FALSE, comment = "", out.width = '80%', fig.align = 'center'}
+knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_yaml.png") )
+```
+
+--- 
+
+#### (IIa) Código R (chunks) 
+
+- Para que `knitr` sepa qué partes del .Rmd es código R, deben ir dentro de estas marcas: 
+
+````
+```{r}`r ''`   
+
+```    
+````
+
+##### Por ejemplo
+
+````
+```{r}`r ''`   
+# Se pueden poner comentarios (de la forma habitual)
+aa <- c(1, 4, 16, 64)
+sqrt(aa)
+```    
+````
+
+- Cuando `knitr` procese el chunk, lo interpretará como código R y ejecutará las instrucciones y mostrará en el documento final el output generado por el chunk.
+
+
+##### Por ejemplo, el anterior chunk generará el siguiente output:
+
+```{r, echo = TRUE}
+# Se pueden poner comentarios (de la forma habitual)
+aa <- c(1, 4, 16, 64)
+sqrt(aa)
+```
+
+
+
+
+
+## Code Chunks {.smaller}
+
+- Ahora, con `.qmd`,  se usa **YAML** style: `echo: false` y, cada opción en una linea con `#|`
+
+. . . 
+
+:::: {.columns}
+
+::: {.column width="40%"}
+#### .Rmd
+
+```` markdown
+```{{r sumando, echo = TRUE, eval = FALSE}}
+2 + 2
+4 + 4
+```
+````
+:::
+
+
+::: {.column width="40%"}
+##### .qmd
+
+
+```` markdown
+```{{r}}
+#| label: "sumando"
+#| echo: true
+#| eval: false
+2 + 2
+4 + 4
+```
+````
+
+:::
+
+::::
+
+. . . 
+
+- No hace falta chunk inicial, ahora **se pueden poner** las opciones de chunk **en el YAML**
+
+. . . 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">nice, you can set knitr defaults in the main yaml configuration header <a href="https://t.co/fUPdnqBFdc">pic.twitter.com/fUPdnqBFdc</a></p>&mdash; tj nightmahr 🧟‍♂️ (@tjmahr) <a href="https://twitter.com/tjmahr/status/1577316771018817541?ref_src=twsrc%5Etfw">October 4, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+---

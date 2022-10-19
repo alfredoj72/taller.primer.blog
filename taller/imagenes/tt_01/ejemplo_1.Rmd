@@ -1,0 +1,18 @@
+---
+title: "El título de mi informe"
+author: "Yo mismo"
+date: "Marzo de 2017"
+output: html_document
+---
+
+En este informe haremos un resumen (o summary) del conjunto de datos iris.
+
+
+```{r}
+summary(iris)
+```
+
+El trozo de arriba es un chunk de código R. Cuando compile el documento, knitr ejecutará el código y mostrará los resultados en el documento final.
+
+
+Con esto finalizamos este informe.
