@@ -9,6 +9,7 @@ El taller está pensado para realizar con [R](https://cran.r-project.org/){targe
 <br>
 
 
+
 #### 1. [Intro](./taller/01_taller_slides.html){target="_blank"} (5 min)
 
 #### 2. [Creación de un blog básico: mi blog en 3 minutos](./taller/02_taller_crear-blog-basico.qmd){target="_blank"} (10 min)
@@ -25,7 +26,14 @@ El taller está pensado para realizar con [R](https://cran.r-project.org/){targe
 
 #### 8. [Opciones de alojamiento](./taller/08_taller_alojamiento.qmd){target="_blank"} (10 min)
 
-
 <br>
 
+----------------------
+
+
+#### [Slides para presentación](./taller/slides_tareas_01.html){target="_blank"} 
+
+
 Seguramente usaremos esta [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV){target="_blank"}.
+
+

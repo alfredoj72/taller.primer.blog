@@ -1,0 +1,306 @@
+---
+title: "Mi primer blog con Quarto"
+subtitle: "(Slides para el presentador)"
+date: "24/10/2022"
+format: 
+  revealjs:
+    scrollable: true
+    slide-level: 2
+    height: 900
+    width: 1600
+    toc: false
+    from: markdown+emoji  #- usar emojis https://gist.github.com/rxaviers/7360908)
+    center-title-slide: true
+    title-slide-attributes: #- atributos para la slide de titulo
+      data-background-color: "#562457"   #- color de R-ladies
+      #data-background-image: /imagenes/economia.gif
+      #data-background-size: contain      
+    preview-links: auto  #- true: abre un iframe en lugar de abrir ventana
+    #multiplex: true  #- para que puedas manejar las slides del publico
+    link-external-newwindow: true
+    transition: fade
+    #height: 900
+    #width: 1600
+    fontcolor: "#262d36"
+    highlight-style: a11y
+    code-line-numbers: true
+    number-sections: false
+    slide-number: c/t   # https://pandoc.org/MANUAL.html#structuring-the-slide-show
+    incremental: false   # https://quarto.org/docs/presentations/#incremental-lists
+#logo: imagenes/economia.gif
+css: /assets/styles_slides_tareas.css
+---
+
+{{< include ./_includes/_contexto.qmd >}}
+
+<br>
+
+{{< include ./_includes/_tt_02_02_3-formas-seguir.qmd >}}
+
+<br>
+
+# 2. Creación de un blog básico con Quarto
+
+ (2ª parte del tutorial)
+ 
+ {{< include ./_includes/_tt_02_01_q-haremos.qmd >}}
+
+<br>
+
+
+---
+
+## Tarea 1 
+
+{{< include ./_includes/_tt_02_03_tarea_01.qmd >}}
+
+<br>
+
+---
+
+## Contenido del Qproject
+
+{{< include ./_includes/_tt_02_04_estructura-Qproject.qmd >}}
+
+ 
+Los **archivos importantes** ahora son:
+ 
+ - `_quarto.yml`: especifica la estructura (y apariencia) del blog.
+ 
+  - `about.qmd` : una de la páginas del blog
+
+ - `index.qmd` : generará la "landing page"
+ 
+<br>
+
+---
+
+## Generación del blog
+
+{{< include ./_includes/_tt_02_05_generacion-blog.qmd >}}
+
+
+- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en internet.
+
+{{< include ./_includes/_tt_02_06_extensiones.qmd >}}
+
+<br>
+
+---
+
+## Contenido del Qproject (tras procesar el blog)
+
+{{< include ./_includes/_tt_02_07_estructura-02.qmd >}}
+
+
+- Se han creado 2 subcarpetas: `_site` y `_freeze`
+
+- `_site` es la carpeta que contiene el blog.
+
+<br>
+
+---
+
+
+## Ver el blog en local
+
+- `_site` es la carpeta que contiene el blog. Veamos su contenido
+
+- La página principal (o Home) de nuestro blog es el archivo `index.html`.
+
+- El archivo `index.html` ha sido generado por el fichero `index.qmd`. 
+
+
+{{< include ./_includes/_tt_02_08_tarea-03.qmd >}}
+
+<br>
+
+---
+
+## Contenido de `index.qmd`
+
+- El archivo  `index.qmd` genera `index.html`, la página principal (o Home) de nuestro blog
+
+{{< include ./_includes/_tt_02_09_landing-page.qmd >}}
+
+<br>
+
+---
+
+## Alojando el blog
+
+{{< include ./_includes/_tt_02_10_tarea-04.qmd >}}
+
+<br>
+
+{{< include ./_includes/_tt_02_11_extensiones-02.qmd >}}
+
+<br>
+
+---
+
+## Resumen
+
+{{< include ./_includes/_tt_02_12_resumen.qmd >}}
+
+<br>
+
+---
+
+# 3. Tuneado básico del blog
+
+(3ª parte del tutorial)
+
+{{< include ./_includes/_tt_03_01_q-haremos.qmd >}}
+
+<br>
+
+---
+
+## Archivo `_quarto.yml`
+
+{{< include ./_includes/_tt_03_02_quarto-yaml.qmd >}}
+
+<br>
+
+---
+
+## Tarea 1
+
+{{< include ./_includes/_tt_03_03_tarea-01.qmd >}}
+
+<br>
+
+---
+
+## Tareas 2, 3 y 4
+
+{{< include ./_includes/_tt_03_04_tarea-02.qmd >}}
+
+{{< include ./_includes/_tt_03_05_tarea-03.qmd >}}
+
+{{< include ./_includes/_tt_03_06_tarea-04.qmd >}}
+
+
+- [Aquí](https://pjperez.quarto.pub/blog_prueba_01/) puedes ver como quedaría el blog tras haber modificado `_quarto.yml`.
+
+<br>
+
+---
+
+## Archivo `index.qmd`
+
+{{< include ./_includes/_tt_03_07_archivo-index.qmd >}}
+
+- De momento, **solo vamos a hacer cambios en la primera linea**: cambiaremos el título.
+
+<br>
+
+---
+
+## Tarea 5
+
+{{< include ./_includes/_tt_03_08_tarea-05.qmd >}}
+
+<br>
+
+---
+
+## Archivo `about.qmd`
+
+{{< include ./_includes/_tt_03_09_archivo-about.qmd >}}
+
+
+- Si en el `yaml` se activa la opción `about:` (linea 3), entonces Quarto tiene disponibles unas plantillas para crear About's pages. [Aquí](https://quarto.org/docs/websites/website-about.html) tienes la documentación oficial sobre estas plantillas. Como puedes ver [aquí](https://quarto.org/docs/websites/website-about.html#templates) hay 5 plantillas: jolla, trestles, solana, marquee y broadside.
+
+<br>
+
+---
+
+## Tarea 6
+
+{{< include ./_includes/_tt_03_10_tarea-06.qmd >}}
+
+<br>
+
+---
+
+## Archivo `styles.css`
+
+- Puedes cambiar la apariencia estética del blog usando los `themes` predefinidos en Quarto o puedes usar el archivo `styles.css`^[Veremos en el tutorial nº 8 que también podremos usar archivos `.scss`]
+
+{{< include ./_includes/_tt_03_11_tarea-07.qmd >}}
+
+<br>
+
+---
+
+## Resumen
+
+{{< include ./_includes/_tt_03_12_resumen.qmd >}}
+
+<br>
+
+# 4.  Workflow: ¿cómo crear un post? 
+
+(4ª parte del tutorial)
+
+{{< include ./_includes/_tt_04_01_q-haremos.qmd >}}
+
+<br>
+
+---
+
+## ¿Donde están los posts del blog?
+
+- Los ficheros `.qmd` que generan los posts están en la carpeta `posts` de nuestro Qproject que genera el blog. 
+
+- Cada post está en una carpeta diferente. Veámoslo:
+
+{{< include ./_includes/_tt_04_02_carpeta-posts.qmd >}}
+
+<br>
+
+---
+
+## Contenido de cada subcarpeta de `./posts/`
+
+Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la carpeta `/welcome/`:
+
+
+{{< include ./_includes/_tt_04_03_contenido-1-post.qmd >}}
+
+<br>
+
+---
+
+## Creando un nuevo post
+
+{{< include ./_includes/_tt_04_04_tarea-01.qmd >}}
+
+{{< include ./_includes/_tt_04_05_tarea-02.qmd >}}
+
+
+<br>
+
+---
+
+## Resumen
+
+{{< include ./_includes/_tt_04_06_resumen.qmd >}}
+
+
+<br>
+
+# 5. Escribiendo posts: practicando con Quarto 
+
+(5ª parte del tutorial)
+
+{{< include ./_includes/_tt_05_01_q-haremos.qmd >}}
+
+{{< include ./_includes/_tt_05_02_warning.qmd >}}
+
+<br>
+
+----
+

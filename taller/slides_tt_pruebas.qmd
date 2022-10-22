@@ -1,10 +1,9 @@
 ---
-title: "Creación de un blog básico con Quarto"
-subtitle: "(2ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
+title: "Mi primer blog con Quarto"
+subtitle: "(Slides para el presentador)"
 date: "24/10/2022"
 format: 
   revealjs:
-    css: assets/styles_slides.css
     scrollable: true
     slide-level: 2
     height: 900
@@ -31,8 +30,11 @@ format:
 logo: imagenes/economia.gif
 footer: |
         Slides hechas con [Quarto](https://quarto.org/) para las [XII Jornadas de Usuarios de R](http://r-es.org/12jr/)
-#theme: [moon, assets/styles.scss]
+#css: /assets/styles_slides_tareas.css
+css: assets/styles_slides.css
 ---
+
+
 
 
 ## Estructura del taller {.smaller}
@@ -48,4 +50,8 @@ Hola pepe como estas  [bien]{.purple}  [siiii]{.yellow-h}  [bien]{.purple2} [bie
 ## Hola {.inverse2}
 
 
-Como vas tete
+
+## ¿Cómo va? {.takeaway .center}
+
+
+[Como vas tete]{.takeaway .center}

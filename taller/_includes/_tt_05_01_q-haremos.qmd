@@ -1,0 +1,9 @@
+::: {.callout-tip  appearance="default" icon="false"}
+## ¿Qué haremos en este tutorial?
+
+- Aprender a escribir nuestro posts con Quarto: con ficheros `.qmd`
+
+- En concreto veremos: yaml, texto, chunks
+
+- Aprender a utilizar algunos truquillos de Quarto
+:::

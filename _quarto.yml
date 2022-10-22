@@ -2,8 +2,11 @@ project:
   type: website
   output-dir: docs
   #execute-dir: project #- https://quarto.org/docs/projects/code-execution.html#working-dir
-
+  #resources:
+  #  - "/taller/download/02b_taller_slides.qmd"
+    
 website:
+  #page-navigation: true
   title: "Mi primer blog con Quarto (WIP)"
   favicon: imagenes/ababol_redondeado.ico
   site-url: https://perezp44.github.io/taller.primer.blog/
@@ -13,7 +16,7 @@ website:
     creator: "@pjpv4444"
     card-style: summary_large_image
   navbar:
-    background: "#F8F8F8"   # "#C0B9A0"  # "#e9e8f0"   #- color de R-ladies    # secondary
+    background: "#F1F3F4"   # "#F8F8F8"   # "#C0B9A0"  # "#e9e8f0"   #- color de R-ladies    # secondary
     collapse-below: lg
     logo: "imagenes/ababol_redondeado.png"
     #background: primary #- pink
@@ -51,7 +54,7 @@ format:
     page-layout: full
     #theme: ember.scss  #- de danielle Navarro(https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/)
     theme: 
-      - solar #sketchy #slate #- litera  superhero darkly
+      - cosmo #sketchy #slate #- litera  superhero darkly
       - ember.scss
     #   - custom.scss
     css: 

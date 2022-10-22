@@ -49,14 +49,17 @@ citation: true
 
 #- https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/
 #- https://quarto.org/docs/output-formats/html-code.html
-code-fold: false
-code-link: true
+#code-fold: false
+#code-link: true
 code-overflow: scroll   #- {scroll, wrap}
-code-block-bg: true
+#code-block-bg: true
 highlight-style: github
 code-copy: true
+
+
 #code-block-border-left: "#31BAE9"
 #- https://quarto.org/docs/authoring/cross-references.html#options
+
 crossref:
   fig-title: Gráfico     # (default is "Figure")
   tbl-title: Tabla    # (default is "Table")
@@ -78,16 +81,18 @@ format:
     footnotes-hover: false
     css: assets/styles.css
     fig-cap-location: bottom
-comments:
-  hypothesis: 
-    theme: clean
+# comments:
+#   hypothesis: 
+#     theme: clean
 editor_options: 
   chunk_output_type: console
-filters:
-  - social-share
-share:
-  permalink: "https://perezp44.github.io/taller.primer.blog/materiales.html/"
-  description: "awesome page"
-  twitter: true
-  linkedin: true
-  email: true
+  
+# filters:
+#   - social-share
+#   
+# share:
+#   permalink: "https://perezp44.github.io/taller.primer.blog/materiales.html/"
+#   description: "awesome page"
+#   twitter: true
+#   linkedin: true
+#   email: true

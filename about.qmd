@@ -5,7 +5,7 @@ about:
   #- https://quarto.org/docs/websites/website-about.html#templates
   template: trestles  #- {jolla, solana, trestles}
   #- https://quarto.org/docs/websites/website-about.html#image
-  image-width: 8em
+  image-width: 7em
   image-shape: rectangle
   #- https://quarto.org/docs/websites/website-about.html#links
   links:

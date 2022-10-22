@@ -5,6 +5,7 @@ title-block-banner-color : "#FFDDFF"
 ---
 
 
+{{< include ./_includes/_contexto.qmd >}}
 
 
 ### Nivel proyecto (`_quarto.yml`) 
@@ -31,9 +32,29 @@ project:
 
 
 
+## SASS
+
+- GUAU: SASS y mas: @SamanthaCsik: I recently took my first baby dive into Sass & CSS for customizing @quarto_pub websites and it’s been surprisingly addicting✨If you’re also embarking on your own website beautifying journey, check out my workshop slides https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide As always, very open to feedback!
+
+- GUAU sass: <https://ucsb-meds.github.io/customizing-quarto-websites/#/tldr1>
+
+
+## colorines css
+- <https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/>
+
+- <https://www.emilhvitfeldt.com/post/slidecraft-code-output/> 
+
+- CSS,  Fantastica [esta slide](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17)      slides: https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#15  
+
+Por ejemplo:  incluir markado en azulito  
+
+.my-bg-blue {
+  background: lightblue;
+}
 
 
 
+## Mas
 
 
 - Otra vez se trata de modificar el archivo `index.qmd` para dejarlo como:

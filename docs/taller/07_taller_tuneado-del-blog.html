@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
+<meta name="generator" content="quarto-1.2.237">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
 <meta name="author" content="Pedro J. Pérez">
+
 <title>Mi primer blog con Quarto (WIP) - Tuneado del blog</title>
 <style>
 code{white-space: pre-wrap;}
@@ -83,6 +86,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -98,8 +102,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/social-share-0.1.0/social-share.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/social-share-0.1.0/all.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -117,28 +120,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar"
   }
-}</script><style>html{ scroll-behavior: smooth; }</style>
-<script type="application/json" class="js-hypothesis-config">
-{
-  "theme": "clean"
-}
-</script><script async="" src="https://hypothes.is/embed.js"></script><link rel="stylesheet" href="../styles.css">
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/styles.css">
 <meta property="og:title" content="Mi primer blog con Quarto (WIP) - Tuneado del blog">
-<meta property="og:description" content="(7ª parte del taller Mi primer blog con Quarto)">
+<meta property="og:description" content="(7ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
 <meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
 <meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Tuneado del blog">
-<meta name="twitter:description" content="(7ª parte del taller Mi primer blog con Quarto)">
+<meta name="twitter:description" content="(7ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
+
 <body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo"></a>
+    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Mi primer blog con Quarto (WIP)</span>
     </a>
@@ -148,52 +154,69 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item compact">
+  <li class="nav-item compact">
     <a class="nav-link" href="../index.html"><i class="bi bi-house-door" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item">
-    <a class="nav-link" href="../materiales.html">Materiales</a>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../materiales.html">
+ <span class="menu-text">Materiales</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../setup.html">Setup</a>
+    <a class="nav-link" href="../setup.html">
+ <span class="menu-text">Setup</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">Pedro J. Pérez</a>
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">Pedro J. Pérez</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/perezp44"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/pjpv4444"><i class="bi bi-twitter" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="mailto:pedro.j.perez@uv.es"><i class="bi bi-envelope" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
-<div id="quarto-search" class="" title="Search"></div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Índice</h2>
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
    
   <ul>
-<li><a href="#nivel-proyecto-_quarto.yml" id="toc-nivel-proyecto-_quarto.yml" class="nav-link active" data-scroll-target="#nivel-proyecto-_quarto.yml"><span class="toc-section-number">0.1</span>  Nivel proyecto (<code>_quarto.yml</code>)</a></li>
-  </ul></nav>
-</nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <li><a href="#nivel-proyecto-_quarto.yml" id="toc-nivel-proyecto-_quarto.yml" class="nav-link active" data-scroll-target="#nivel-proyecto-_quarto.yml"><span class="toc-section-number">0.1</span>  Nivel proyecto (<code>_quarto.yml</code>)</a></li>
+  <li><a href="#sass" id="toc-sass" class="nav-link" data-scroll-target="#sass"><span class="toc-section-number">1</span>  SASS</a></li>
+  <li><a href="#colorines-css" id="toc-colorines-css" class="nav-link" data-scroll-target="#colorines-css"><span class="toc-section-number">2</span>  colorines css</a></li>
+  <li><a href="#mas" id="toc-mas" class="nav-link" data-scroll-target="#mas"><span class="toc-section-number">3</span>  Mas</a></li>
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <h1 class="title">Tuneado del blog</h1>
 <p class="subtitle lead">(7ª parte del taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)</p>
 </div>
@@ -201,7 +224,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Autor/a</div>
-  <div class="quarto-title-meta-heading">Afiliación</div>
+  <div class="quarto-title-meta-heading"></div>
   
     <div class="quarto-title-meta-contents">
     <a href="https://perezp44.github.io/pjperez.web/">Pedro J. Pérez</a> <a href="https://orcid.org/0000-0001-9375-6330" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
@@ -221,25 +244,68 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Fecha de Publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">19 de octubre de 2022</p>
+      <p class="date">23 de octubre de 2022</p>
     </div>
   </div>
+  
     
   </div>
   
 
-</header><section id="nivel-proyecto-_quarto.yml" class="level3" data-number="0.1"><h3 data-number="0.1" class="anchored" data-anchor-id="nivel-proyecto-_quarto.yml">
-<span class="header-section-number">0.1</span> Nivel proyecto (<code>_quarto.yml</code>)</h3>
+</header>
+
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Contexto
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Tutorial preparado para el taller <strong>Mi primer blog con Quarto</strong> impartido en Córdoba (Spain) durante el <a href="http://r-es.org/12jr/">I Congreso &amp; XII Jornadas de Usuarios de R</a>, 23-25 de noviembre de 2022.</p></li>
+<li><p>El taller está pensado para realizar con <a href="https://cran.r-project.org/">R</a>. Se utilizará el IDE <a href="https://www.rstudio.com/products/rstudio/">RStudio</a> y <a href="https://quarto.org/">Quarto</a>. Se recomienda tener instaladas <strong>versiones recientes</strong> de los 3 programas</p></li>
+<li><p>Este tutorial es sólo una parte del taller. El <strong>taller completo</strong> está <a href="https://perezp44.github.io/taller.primer.blog/">aquí</a>.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<section id="nivel-proyecto-_quarto.yml" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="nivel-proyecto-_quarto.yml"><span class="header-section-number">0.1</span> Nivel proyecto (<code>_quarto.yml</code>)</h3>
 <ul>
 <li>Todos los Qprojects contienen un archivo de configuración llamado <code>_quarto.yml</code>: todo documento que se procese (render) dentro del directorio del proyecto heredará automáticamente los metadatos definidos en <code>_quarto.yml</code>.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span>
-<span class="va">project</span><span class="op">:</span>
-  <span class="va">type</span><span class="op">:</span> <span class="va">website</span>
-  <span class="va">output</span><span class="op">-</span><span class="va">dir</span><span class="op">:</span> <span class="va">docs</span> <span class="co">#-- la carpeta donde se redirige el output (.html)</span>
-  <span class="co"># execute-dir: project #-- the working directory for rendering files within a project is the directory of the file itself. If you prefer to use the main project directory instead, you can add the execute-dir: project https://quarto.org/docs/projects/code-execution.html#working-dir</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> docs <span class="co">#-- la carpeta donde se redirige el output (.html)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># execute-dir: project #-- the working directory for rendering files within a project is the directory of the file itself. If you prefer to use the main project directory instead, you can add the execute-dir: project https://quarto.org/docs/projects/code-execution.html#working-dir</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="sass" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="sass"><span class="header-section-number">1</span> SASS</h2>
+<ul>
+<li><p>GUAU: SASS y mas: <span class="citation" data-cites="SamanthaCsik">@SamanthaCsik</span>: I recently took my first baby dive into Sass &amp; CSS for customizing <span class="citation" data-cites="quarto_pub">@quarto_pub</span> websites and it’s been surprisingly addicting✨If you’re also embarking on your own website beautifying journey, check out my workshop slides https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide As always, very open to feedback!</p></li>
+<li><p>GUAU sass: <a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/tldr1" class="uri">https://ucsb-meds.github.io/customizing-quarto-websites/#/tldr1</a></p></li>
+</ul>
+</section>
+<section id="colorines-css" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="colorines-css"><span class="header-section-number">2</span> colorines css</h2>
+<ul>
+<li><p><a href="https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/" class="uri">https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/</a></p></li>
+<li><p><a href="https://www.emilhvitfeldt.com/post/slidecraft-code-output/" class="uri">https://www.emilhvitfeldt.com/post/slidecraft-code-output/</a></p></li>
+<li><p>CSS, Fantastica <a href="https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17">esta slide</a> slides: https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#15</p></li>
+</ul>
+<p>Por ejemplo: incluir markado en azulito</p>
+<p>.my-bg-blue { background: lightblue; }</p>
+</section>
+<section id="mas" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="mas"><span class="header-section-number">3</span> Mas</h2>
 <ul>
 <li>Otra vez se trata de modificar el archivo <code>index.qmd</code> para dejarlo como:</li>
 </ul>
@@ -274,17 +340,20 @@ title-block-banner-color : "#FFDDFF"
 </code></pre>
 
 
-</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez,
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2023,
   author = {Pedro J. Pérez},
-  editor = {},
   title = {Tuneado del blog},
-  date = {},
-  url = {https://perezp44.github.io/taller.primer.blog//taller/07_taller_tuneado-del-blog.html},
+  date = {2023-11-10},
+  url = {https://perezp44.github.io/taller.primer.blog//07_taller_tuneado-del-blog.html},
   langid = {es}
 }
-</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Pedro J. Pérez. n.d. <span>“Tuneado del blog.”</span> <a href="https://perezp44.github.io/taller.primer.blog//taller/07_taller_tuneado-del-blog.html">https://perezp44.github.io/taller.primer.blog//taller/07_taller_tuneado-del-blog.html</a>.
-</div></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2023" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
+Pedro J. Pérez. 2023. <span>“Tuneado del blog.”</span> November 10,
+2023. <a href="https://perezp44.github.io/taller.primer.blog//07_taller_tuneado-del-blog.html">https://perezp44.github.io/taller.primer.blog//07_taller_tuneado-del-blog.html</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -325,7 +394,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -338,7 +424,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -349,12 +435,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">© 2022 Pedro J. Pérez</div>   
       <div class="nav-footer-center">Hecho con <a href="https://quarto.org">Quarto</a></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-<li class="nav-item compact">
+    <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/perezp44">
       <i class="bi bi-github" role="img">
 </i> 
@@ -379,11 +466,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <a class="nav-link" href="https://orcid.org/0000-0001-9375-6330"><i class="ai ai-orcid" role="img"></i></a>
   </li>  
 </ul>
-</div>
+    </div>
   </div>
-</footer><div class="page-columns page-rows-contents page-layout-article"><div class="social-share">
-<a href="https://twitter.com/share?url=https://perezp44.github.io/taller.primer.blog/materiales.html/&amp;text=awesome%20page" target="_blank" class="twitter"><i class="fab fa-twitter fa-fw fa-lg"></i></a><a href="https://www.linkedin.com/shareArticle?url=https://perezp44.github.io/taller.primer.blog/materiales.html/&amp;title=awesome%20page" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in fa-fw fa-lg"></i></a>  <a href="mailto:?subject=awesome%20page&amp;body=Check%20out%20this%20link:https://perezp44.github.io/taller.primer.blog/materiales.html/" target="_blank" class="email"><i class="fa-solid fa-envelope fa-fw fa-lg"></i></a>
-</div></div>
+</footer>
 
 
 

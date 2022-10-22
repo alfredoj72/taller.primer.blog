@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
+<meta name="generator" content="quarto-1.2.237">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -91,33 +91,36 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item compact">
     <a class="nav-link" href="./index.html"><i class="bi bi-house-door" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./materiales.html">Materiales</a>
+    <a class="nav-link" href="./materiales.html">
+ <span class="menu-text">Materiales</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./setup.html" aria-current="page">Setup</a>
+    <a class="nav-link active" href="./setup.html" aria-current="page">
+ <span class="menu-text">Setup</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">Pedro J. Pérez</a>
+    <a class="nav-link" href="./about.html">
+ <span class="menu-text">Pedro J. Pérez</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/perezp44"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/pjpv4444"><i class="bi bi-twitter" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="mailto:pedro.j.perez@uv.es"><i class="bi bi-envelope" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -129,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
@@ -145,6 +148,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -196,11 +200,12 @@ Instalación de R, RStudio y Quarto
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Warning
+Advertencia
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Voy a <strong>suponer que los asistentes al taller</strong>, y posible lectores, de estos tutoriales <strong>conocen Rmarkdown</strong> y han escrito algún documento <code>.Rmd</code>. En ese caso, el paso de <code>.Rmd</code> a <code>.qmd</code> es sencillo. En cualquier caso, <a href="https://quarto.org/docs/faq/rmarkdown.html">aquí</a> tienes unas FAQ’s para usuarios de .Rmd que se preguntan si pasarse a Quarto.</p>
+<p>Voy a <strong>suponer que los asistentes al taller</strong>, y posible lectores, de estos tutoriales <strong>conocen Rmarkdown</strong> y han escrito algún documento <code>.Rmd</code>. En ese caso, el paso de <code>.Rmd</code> a <code>.qmd</code> es sencillo.</p>
+<p>En cualquier caso, <a href="https://quarto.org/docs/faq/rmarkdown.html">aquí</a> tienes unas FAQ’s para usuarios de .Rmd que se preguntan si pasarse a Quarto, y <a href="https://laderast.github.io/qmd_rmd/#/title-slide">aquí</a> unas slides sobre las diferencias entre <code>.qmd</code> y <code>.Rmd</code>.</p>
 <p>Aquellos que no sepan qué es Rmarkdown pueden empezar por <a href="https://perezp44.github.io/intro-ds-22-23-web/tutoriales/tt_07_Rmarkdown.html">aquí</a> o <a href="https://perezp44.github.io/intro-ds-22-23-web/slides/slides_07_rmarkdown.html#1">aquí</a>.</p>
 </div>
 </div>
@@ -250,7 +255,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -286,24 +308,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

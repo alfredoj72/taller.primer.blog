@@ -5,7 +5,7 @@ subtitle: "(6ª parte del taller [Mi primer blog con Quarto](https://perezp44.gi
 ---
 
 
-{{< include _contexto.qmd >}}
+{{< include ./_includes/_contexto.qmd >}}
 
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
 ## Recapitulación

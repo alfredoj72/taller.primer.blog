@@ -26,7 +26,7 @@ format:
     number-sections: false
     slide-number: c/t   # https://pandoc.org/MANUAL.html#structuring-the-slide-show
     incremental: false   # https://quarto.org/docs/presentations/#incremental-lists
-logo: imagenes/economia.gif
+#logo: imagenes/economia.gif
 footer: |
         Slides hechas con [Quarto](https://quarto.org/) para las [XII Jornadas de Usuarios de R](http://r-es.org/12jr/)
     #theme: [moon, custom.scss]

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
+<meta name="generator" content="quarto-1.2.237">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
 <meta name="author" content="Pedro J. Pérez">
+
 <title>Mi primer blog con Quarto (WIP) - Tuneado básico del blog con Quarto</title>
 <style>
 code{white-space: pre-wrap;}
@@ -83,6 +86,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -98,8 +102,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/social-share-0.1.0/social-share.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/social-share-0.1.0/all.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -117,28 +120,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar"
   }
-}</script><style>html{ scroll-behavior: smooth; }</style>
-<script type="application/json" class="js-hypothesis-config">
-{
-  "theme": "clean"
-}
-</script><script async="" src="https://hypothes.is/embed.js"></script><link rel="stylesheet" href="../styles.css">
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/styles.css">
 <meta property="og:title" content="Mi primer blog con Quarto (WIP) - Tuneado básico del blog con Quarto">
-<meta property="og:description" content="(3ª parte del taller Mi primer blog con Quarto)">
+<meta property="og:description" content="(3ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
 <meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
 <meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Tuneado básico del blog con Quarto">
-<meta name="twitter:description" content="(3ª parte del taller Mi primer blog con Quarto)">
+<meta name="twitter:description" content="(3ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
+
 <body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo"></a>
+    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Mi primer blog con Quarto (WIP)</span>
     </a>
@@ -148,64 +154,76 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item compact">
+  <li class="nav-item compact">
     <a class="nav-link" href="../index.html"><i class="bi bi-house-door" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item">
-    <a class="nav-link" href="../materiales.html">Materiales</a>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../materiales.html">
+ <span class="menu-text">Materiales</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../setup.html">Setup</a>
+    <a class="nav-link" href="../setup.html">
+ <span class="menu-text">Setup</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">Pedro J. Pérez</a>
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">Pedro J. Pérez</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/perezp44"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/pjpv4444"><i class="bi bi-twitter" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="mailto:pedro.j.perez@uv.es"><i class="bi bi-envelope" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
-<div id="quarto-search" class="" title="Search"></div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Índice</h2>
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
    
   <ul>
-<li>
-<a href="#archivo-_quarto.yml" id="toc-archivo-_quarto.yml" class="nav-link active" data-scroll-target="#archivo-_quarto.yml"><span class="toc-section-number">1</span>  Archivo <code>_quarto.yml</code></a>
+  <li><a href="#archivo-_quarto.yml" id="toc-archivo-_quarto.yml" class="nav-link active" data-scroll-target="#archivo-_quarto.yml"><span class="toc-section-number">1</span>  Archivo <code>_quarto.yml</code></a>
   <ul class="collapse">
-<li><a href="#quarto.yml-original" id="toc-quarto.yml-original" class="nav-link" data-scroll-target="#quarto.yml-original"><span class="toc-section-number">1.1</span>  <code>_quarto.yml</code> original</a></li>
+  <li><a href="#quarto.yml-original" id="toc-quarto.yml-original" class="nav-link" data-scroll-target="#quarto.yml-original"><span class="toc-section-number">1.1</span>  <code>_quarto.yml</code> original</a></li>
   <li><a href="#quarto.yml-modificado" id="toc-quarto.yml-modificado" class="nav-link" data-scroll-target="#quarto.yml-modificado"><span class="toc-section-number">1.2</span>  <code>_quarto.yml</code> modificado</a></li>
   <li><a href="#crear-docencia.qmd" id="toc-crear-docencia.qmd" class="nav-link" data-scroll-target="#crear-docencia.qmd"><span class="toc-section-number">1.3</span>  Crear <code>docencia.qmd</code></a></li>
-  </ul>
-</li>
+  </ul></li>
   <li><a href="#archivo-index.qmd" id="toc-archivo-index.qmd" class="nav-link" data-scroll-target="#archivo-index.qmd"><span class="toc-section-number">2</span>  Archivo <code>index.qmd</code></a></li>
   <li><a href="#archivo-about.qmd" id="toc-archivo-about.qmd" class="nav-link" data-scroll-target="#archivo-about.qmd"><span class="toc-section-number">3</span>  Archivo <code>about.qmd</code></a></li>
   <li><a href="#archivo-styles.css" id="toc-archivo-styles.css" class="nav-link" data-scroll-target="#archivo-styles.css"><span class="toc-section-number">4</span>  Archivo <code>styles.css</code></a></li>
   <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="toc-section-number">5</span>  Resumen</a></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="toc-section-number">6</span>  Referencias</a></li>
-  </ul></nav>
-</nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <h1 class="title">Tuneado básico del blog con Quarto</h1>
 <p class="subtitle lead">(3ª parte del taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)</p>
 </div>
@@ -213,7 +231,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Autor/a</div>
-  <div class="quarto-title-meta-heading">Afiliación</div>
+  <div class="quarto-title-meta-heading"></div>
   
     <div class="quarto-title-meta-contents">
     <a href="https://perezp44.github.io/pjperez.web/">Pedro J. Pérez</a> <a href="https://orcid.org/0000-0001-9375-6330" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
@@ -233,14 +251,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Fecha de Publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">19 de octubre de 2022</p>
+      <p class="date">23 de octubre de 2022</p>
     </div>
   </div>
+  
     
   </div>
   
 
-</header><div class="callout-note callout callout-style-default no-icon callout-captioned">
+</header>
+
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -274,13 +295,11 @@ Recapitulación
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>En esta tercera parte del taller vamos a <strong>mejorar/tunear un poco nuestro blog</strong>.</p></li>
-<li>
-<p>Las anteriores secciones del taller son</p>
+<li><p>Las anteriores secciones del taller son</p>
 <ol type="1">
 <li><p><strong>Intro</strong>: se presenta el taller</p></li>
 <li><p><strong>Creación de un blog (básico) con Quarto</strong>: en la segunda parte del taller vimos como crear y alojar un <strong>blog básico</strong> con RStudio y Quarto.</p></li>
-</ol>
-</li>
+</ol></li>
 </ul>
 </div>
 </div>
@@ -309,35 +328,38 @@ Recapitulación
 </div>
 </div>
 <p><br></p>
-<section id="archivo-_quarto.yml" class="level2" data-number="1"><h2 data-number="1" class="anchored" data-anchor-id="archivo-_quarto.yml">
-<span class="header-section-number">1</span> Archivo <code>_quarto.yml</code>
-</h2>
+<section id="archivo-_quarto.yml" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="archivo-_quarto.yml"><span class="header-section-number">1</span> Archivo <code>_quarto.yml</code></h2>
 <p>En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero <code>_quarto.yml</code>. Al final dejaremos este fichero como la figura de la derecha.</p>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./imagenes/tt_01/img_09.png" class="img-fluid figure-img"></p>
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_09.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Contenido original de <code>_quarto.yml</code></figcaption><p></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./imagenes/tt_01/img_10.png" class="img-fluid figure-img"></p>
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_10.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Así dejaremos el fichero <code>_quarto.yml</code></figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
-<section id="quarto.yml-original" class="level3" data-number="1.1"><h3 data-number="1.1" class="anchored" data-anchor-id="quarto.yml-original">
-<span class="header-section-number">1.1</span> <code>_quarto.yml</code> original</h3>
+<section id="quarto.yml-original" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="quarto.yml-original"><span class="header-section-number">1.1</span> <code>_quarto.yml</code> original</h3>
 <div id="fig-01" class="quarto-layout-panel">
-<figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./imagenes/tt_01/img_09.png" class="img-fluid figure-img"></p>
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_09.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -348,24 +370,25 @@ Recapitulación
 <p>Como puedes ver arriba en la <a href="#fig-01">Figura&nbsp;1</a>, el fichero <code>_quarto.yml</code> original tiene 3 partes:</p>
 <ul>
 <li><p>La <strong>primera parte</strong> del fichero <code>_quarto.yml</code> (lineas 1 y 2) simplemente específica que el proyecto es para hacer una página web (<code>type: website</code>). Esta primera parte del fichero <code>_quarto.yml</code> no lo vamos a tocar, lo vamos a dejar igual. Sí, en realidad, un blog es una página web en la que la “Home page” o “landing page” es un poco especial, es un poco especial porque es una página con un listado de posts, PERO, en definitiva un blog es una página web.</p></li>
-<li>
-<p>La <strong>segunda parte</strong> del fichero <code>_quarto.yml</code> (lineas 4 a 12) sirve para decidir la estructura de la página web (en nuestro caso del blog). Esta segunda parte tiene 2 secciones</p>
+<li><p>La <strong>segunda parte</strong> del fichero <code>_quarto.yml</code> (lineas 4 a 12) sirve para decidir la estructura de la página web (en nuestro caso del blog). Esta segunda parte tiene 2 secciones</p>
 <ul>
 <li><p>title: “blog_prueba_00”: aquí podemos cambiar el título de nuestro blog</p></li>
 <li><p>navbar: aquí podemos cambiar la estructura de la barra de navegación del blog. En el archivo original se especifica que los elementos/pestañas de navegación se situan a la derecha y que habrán 3 links o pestañas: <code>About</code> y 2 iconos que nos llevaran a Github y a Twitter</p></li>
-</ul>
-</li>
+</ul></li>
 <li><p>En la <strong>tercera parte</strong> del fichero <code>_quarto.yml</code> se especifica el formato. Como toda página web el formato es html. Además se especifica un <code>theme</code> y un fichero <code>.css</code> que nos permitirán modificar el aspecto estético del blog.</p></li>
 </ul>
 <p><br></p>
-</section><section id="quarto.yml-modificado" class="level3" data-number="1.2"><h3 data-number="1.2" class="anchored" data-anchor-id="quarto.yml-modificado">
-<span class="header-section-number">1.2</span> <code>_quarto.yml</code> modificado</h3>
+</section>
+<section id="quarto.yml-modificado" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="quarto.yml-modificado"><span class="header-section-number">1.2</span> <code>_quarto.yml</code> modificado</h3>
 <p>Por ejemplo, podemos modificar el fichero <code>_quarto.yml</code> hasta dejarlo como:</p>
 <div id="fig-02" class="quarto-layout-panel">
-<figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./imagenes/tt_01/img_10.png" class="img-fluid figure-img"></p>
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_10.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -376,20 +399,16 @@ Recapitulación
 <p>Como puedes ver arriba en la <a href="#fig-02">Figura&nbsp;2</a>, al compararla con la <a href="#fig-01">Figura&nbsp;1</a>, hemos modificado el fichero <code>_quarto.yml</code>. Concretamente:</p>
 <ul>
 <li><p>La <strong>primera parte</strong> del fichero <code>_quarto.yml</code> (lineas 1 y 2) la hemos dejado igual. Seguimos queriendo hacer una web/blog.</p></li>
-<li>
-<p>La <strong>segunda parte</strong> del fichero <code>_quarto.yml</code> (ahora lineas 4 a 19) si la hemos modificado:</p>
+<li><p>La <strong>segunda parte</strong> del fichero <code>_quarto.yml</code> (ahora lineas 4 a 19) si la hemos modificado:</p>
 <ul>
 <li><p>Hemos cambiado el <strong>título del blog</strong>, ahora <code>title: "Mi blog (aún en pruebas)"</code>. Está en la linea 5.</p></li>
-<li>
-<p>En la <strong>navbar (lineas 6 a 19)</strong>: hemos cambiado la estructura de la barra de navegación del blog. Hemos hecho 3 cosas:</p>
+<li><p>En la <strong>navbar (lineas 6 a 19)</strong>: hemos cambiado la estructura de la barra de navegación del blog. Hemos hecho 3 cosas:</p>
 <ol type="1">
 <li><p>Hemos <strong>añadido un logo</strong> a la barra de navegación con <code>logo: profile.jpg</code> (linea 7).</p></li>
 <li><p>En la parte derecha de la barra de navegación hemos <strong>añadido un icono para el email</strong> (<code>icon:envelope</code>) y hemos modificado el texto que se muestra en la pestaña about, esto último lo hemos hecho con <code>text: "About me"</code> en las lineas 9 y 10.</p></li>
 <li><p>Finalmente, hemos <strong>añadido una pestaña nueva (lineas 18 y 19)</strong> pero está vez <strong>a la izquierda</strong> de la barra de navegación: <code>left:</code> (linea 17). Fijate que esta nueva pestaña llamada “Docencia” creada con<code>- text: "Docencia"</code> (linea 18), esta referenciando a un archivo que no existe (aún) en el Qproject, está referenciando con <code>href: docencia.qmd</code> (linea 19) al archivo <code>docencia.qmd</code>. Lógicamente tendremos que crear este archivo.</p></li>
-</ol>
-</li>
-</ul>
-</li>
+</ol></li>
+</ul></li>
 <li><p>En la <strong>tercera parte</strong> del fichero <code>_quarto.yml</code> hemos cambiado el <code>theme: minty</code> y hemos añadido las lineas 25 <code>toc: true</code> que creará índices en las páginas de la web/blog<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, mientras que con <code>highlight-style: a11y</code> se cambia el formato visual de los chunks de código que hayan en la página web.</p></li>
 </ul>
 <p><br></p>
@@ -435,9 +454,9 @@ Tarea 1: Modificar el contenido de <code>_quarto.yml</code>
 </div>
 </div>
 <p><br></p>
-</section><section id="crear-docencia.qmd" class="level3" data-number="1.3"><h3 data-number="1.3" class="anchored" data-anchor-id="crear-docencia.qmd">
-<span class="header-section-number">1.3</span> Crear <code>docencia.qmd</code>
-</h3>
+</section>
+<section id="crear-docencia.qmd" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="crear-docencia.qmd"><span class="header-section-number">1.3</span> Crear <code>docencia.qmd</code></h3>
 <p><br></p>
 <ul>
 <li>En el nuevo archivo <code>quarto.yml</code>(linea 19) se hace referencia al archivo <code>docencia.qmd</code>, así que tendremos que crearlo. Para ello:</li>
@@ -505,26 +524,28 @@ Tarea 4: Crear el archivo <code>/pdfs/econometria.pdf</code>
 </div>
 <p><br></p>
 <ul>
-<li>
-<a href="https://pjperez.quarto.pub/blog_prueba_01/">Aquí</a> puedes ver como quedaría el blog tras haber modificado <code>_quarto.yml</code>. Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña <code>Docencia</code> a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda <code>theme: minty</code>): ahora el color de la barra es verdecito.</li>
+<li><a href="https://pjperez.quarto.pub/blog_prueba_01/">Aquí</a> puedes ver como quedaría el blog tras haber modificado <code>_quarto.yml</code>. Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña <code>Docencia</code> a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda <code>theme: minty</code>): ahora el color de la barra es verdecito.</li>
 </ul>
 <p><br></p>
-</section></section><section id="archivo-index.qmd" class="level2" data-number="2"><h2 data-number="2" class="anchored" data-anchor-id="archivo-index.qmd">
-<span class="header-section-number">2</span> Archivo <code>index.qmd</code>
-</h2>
+</section>
+</section>
+<section id="archivo-index.qmd" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="archivo-index.qmd"><span class="header-section-number">2</span> Archivo <code>index.qmd</code></h2>
 <p>En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero <code>index.qmd</code>. Al final dejaremos este fichero como la figura de la derecha. Como verás, de momento, <strong>solo vamos a hacer cambios en la primera linea</strong>: cambiaremos el título.</p>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./imagenes/tt_01/img_11.png" class="img-fluid figure-img"></p>
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_11.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Contenido original de <code>index.qmd</code></figcaption><p></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./imagenes/tt_01/img_12.png" class="img-fluid figure-img"></p>
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_12.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Así dejaremos el fichero <code>index.qmd</code></figcaption><p></p>
 </figure>
 </div>
@@ -566,9 +587,9 @@ Tarea 5: Modificar el contenido de <code>index.qmd</code>
 </div>
 </div>
 <p><br></p>
-</section><section id="archivo-about.qmd" class="level2" data-number="3"><h2 data-number="3" class="anchored" data-anchor-id="archivo-about.qmd">
-<span class="header-section-number">3</span> Archivo <code>about.qmd</code>
-</h2>
+</section>
+<section id="archivo-about.qmd" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="archivo-about.qmd"><span class="header-section-number">3</span> Archivo <code>about.qmd</code></h2>
 <ul>
 <li>Vamos a modificar mínimamente el fichero <code>about.qmd</code>. En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero y en la derecha como lo dejaremos. Como verás solo vamos a hacer cambios en la quinta linea: cambios la plantilla predefinida.</li>
 </ul>
@@ -576,14 +597,16 @@ Tarea 5: Modificar el contenido de <code>index.qmd</code>
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./imagenes/tt_01/img_13.png" class="img-fluid figure-img"></p>
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_13.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Contenido original de <code>about.qmd</code></figcaption><p></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./imagenes/tt_01/img_14.png" class="img-fluid figure-img"></p>
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_14.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Así dejaremos el fichero <code>about.qmd</code></figcaption><p></p>
 </figure>
 </div>
@@ -631,9 +654,9 @@ Tarea 6: Modificar el contenido de <code>about.qmd</code>
 <li>Como has visto, si en el <code>yaml</code> se activa la opción <code>about:</code> (linea 3), entonces Quarto tiene disponibles unas plantillas para crear About’s pages. <a href="https://quarto.org/docs/websites/website-about.html">Aquí</a> tienes la documentación oficial sobre estas plantillas. Como puedes ver <a href="https://quarto.org/docs/websites/website-about.html#templates">aquí</a> hay 5 plantillas: jolla, trestles, solana, marquee y broadside.</li>
 </ul>
 <p><br><br></p>
-</section><section id="archivo-styles.css" class="level2" data-number="4"><h2 data-number="4" class="anchored" data-anchor-id="archivo-styles.css">
-<span class="header-section-number">4</span> Archivo <code>styles.css</code>
-</h2>
+</section>
+<section id="archivo-styles.css" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="archivo-styles.css"><span class="header-section-number">4</span> Archivo <code>styles.css</code></h2>
 <ul>
 <li><p>Puedes cambiar la apariencia estética del blog y dejarlo a tu gusto usando los <code>themes</code> predefinidos en Quarto o puedes usar el archivo <code>styles.css</code><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
 <li><p>De momento, el archivo <code>styles.css</code> está vacío<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p></li>
@@ -664,8 +687,9 @@ Tarea 7: Modificar <code>styles.css</code>
 <li>Acuérdate que para ver los cambios has de volver a generar el blog: <code>Build &gt; Render Website</code>,</li>
 </ul>
 <p><br></p>
-</section><section id="resumen" class="level2" data-number="5"><h2 data-number="5" class="anchored" data-anchor-id="resumen">
-<span class="header-section-number">5</span> Resumen</h2>
+</section>
+<section id="resumen" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="resumen"><span class="header-section-number">5</span> Resumen</h2>
 <div class="callout-tip callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -680,47 +704,50 @@ Resumen
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>En esta tercera parte del taller hemos aprendido a <strong>mejorar/tunear un poco nuestro blog</strong>.</p></li>
-<li>
-<p>Hemos modificado 3 archivos:</p>
+<li><p>Hemos modificado 3 archivos:</p>
 <ol type="1">
 <li><p><code>_quarto.yml</code>: hemos modificado el título del blog y la estructura de la barra de navegación; concretamente hemos añadido una página nueva.</p></li>
 <li><p><code>index.qmd</code>: construye la Home Page de nuestra web. La opción <code>listing:</code> hace que nuestra web es en realidad un blog.</p></li>
 <li><p><code>about.qmd</code>: hemos utilizado las plantillas de Quarto para configurar nuestra About page.</p></li>
-</ol>
-</li>
+</ol></li>
 <li><p>Finalmente hemos modificado (mínimamente) el archivo <code>styles.css</code>.</p></li>
 </ul>
 </div>
 </div>
 </div>
 <p><br></p>
-</section><section id="referencias" class="level2" data-number="6"><h2 data-number="6" class="anchored" data-anchor-id="referencias">
-<span class="header-section-number">6</span> Referencias</h2>
+</section>
+<section id="referencias" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="referencias"><span class="header-section-number">6</span> Referencias</h2>
 <p>(Algunos artículos sobre creación de blogs en Quarto)</p>
 <ul>
-<li>
-<a href="https://www.ericekholm.com/posts/demo-quarto-site/">Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure</a> es una web con blog . GOOOOD</li>
+<li><a href="https://www.ericekholm.com/posts/demo-quarto-site/">Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure</a> es una web con blog . GOOOOD</li>
 </ul>
 
 
-</section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
 <ol>
 <li id="fn1"><p>La opción <code>toc: true</code> creará un indice (o toc) en las páginas en las que hayan títulos de primer(#), segundo(##) o tercer nivel(###).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>Veremos en el tutorial nº 8 que también podremos usar archivos <code>.scss</code><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>En realidad no está vacío, pero solo tiene un comentario.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Esta es una modificación que tiene muchas criticas, pero, que se le va a hacer, a mi me gusta el texto justificado.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez,
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2023,
   author = {Pedro J. Pérez},
-  editor = {},
   title = {Tuneado básico del blog con Quarto},
-  date = {},
-  url = {https://perezp44.github.io/taller.primer.blog//taller/03_taller_tuneado-basico.html},
+  date = {2023-11-10},
+  url = {https://perezp44.github.io/taller.primer.blog//03_taller_tuneado-basico.html},
   langid = {es}
 }
-</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Pedro J. Pérez. n.d. <span>“Tuneado básico del blog con Quarto.”</span>
-<a href="https://perezp44.github.io/taller.primer.blog//taller/03_taller_tuneado-basico.html">https://perezp44.github.io/taller.primer.blog//taller/03_taller_tuneado-basico.html</a>.
-</div></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2023" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
+Pedro J. Pérez. 2023. <span>“Tuneado básico del blog con Quarto.”</span>
+November 10, 2023. <a href="https://perezp44.github.io/taller.primer.blog//03_taller_tuneado-basico.html">https://perezp44.github.io/taller.primer.blog//03_taller_tuneado-basico.html</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -761,7 +788,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -774,7 +818,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -785,12 +829,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">© 2022 Pedro J. Pérez</div>   
       <div class="nav-footer-center">Hecho con <a href="https://quarto.org">Quarto</a></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-<li class="nav-item compact">
+    <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/perezp44">
       <i class="bi bi-github" role="img">
 </i> 
@@ -815,11 +860,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <a class="nav-link" href="https://orcid.org/0000-0001-9375-6330"><i class="ai ai-orcid" role="img"></i></a>
   </li>  
 </ul>
-</div>
+    </div>
   </div>
-</footer><div class="page-columns page-rows-contents page-layout-article"><div class="social-share">
-<a href="https://twitter.com/share?url=https://perezp44.github.io/taller.primer.blog/materiales.html/&amp;text=awesome%20page" target="_blank" class="twitter"><i class="fab fa-twitter fa-fw fa-lg"></i></a><a href="https://www.linkedin.com/shareArticle?url=https://perezp44.github.io/taller.primer.blog/materiales.html/&amp;title=awesome%20page" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in fa-fw fa-lg"></i></a>  <a href="mailto:?subject=awesome%20page&amp;body=Check%20out%20this%20link:https://perezp44.github.io/taller.primer.blog/materiales.html/" target="_blank" class="email"><i class="fa-solid fa-envelope fa-fw fa-lg"></i></a>
-</div></div>
+</footer>
 
 
 

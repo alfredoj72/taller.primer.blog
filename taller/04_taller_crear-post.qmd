@@ -3,7 +3,7 @@ title: "Workflow: ¿cómo crear un post?"
 subtitle: "(4ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 ---
 
-{{< include _contexto.qmd >}} 
+{{< include ./_includes/_contexto.qmd >}}
 
 
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
@@ -25,13 +25,7 @@ subtitle: "(4ª parte del taller [Mi primer blog con Quarto](https://perezp44.gi
 
 <br>
 
-::: {.callout-tip collapse="false" appearance="default" icon="false"}
-## ¿Qué haremos en este tutorial?
-
-- Ver como podemos iniciar un nuevo post
-
-- Aprender a utilizar algunos truquillos de Quarto
-:::
+{{< include ./_includes/_tt_04_01_q-haremos.qmd >}}
 
 
 <br>
@@ -46,11 +40,8 @@ Los ficheros `.qmd` que generan los posts están en la carpeta `posts` de nuestr
 
 Cada post está en una carpeta diferente. Veámoslo:
 
+{{< include ./_includes/_tt_04_02_carpeta-posts.qmd >}}
 
-::: {layout-ncol=1}
-
-![](./imagenes/tt_01/img_15.png){fig-align="center"}
-:::
 
 Como ves, en la carpeta`posts` hay:
 
@@ -64,12 +55,9 @@ Como ves, en la carpeta`posts` hay:
 
 Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la carpeta `/welcome/`:
 
-::: {layout-ncol=2}
 
-![Contenido de la carpeta `welcome` que genera el post titulado "Welcome to my blog"](./imagenes/tt_01/img_16.png){fig-align="center"}
+{{< include ./_includes/_tt_04_03_contenido-1-post.qmd >}}
 
-![Contenido del archivo `index.qmd`"](./imagenes/tt_01/img_17.png){fig-align="center"}
-:::
 
 Como ves, la carpeta `/welcome/` que genera el primer post del blog contiene 2 archivos: 
 
@@ -87,57 +75,19 @@ De momento, para generar un nuevo post lo que haremos será crear una nueva subc
 
 
 
-::: {.callout-important icon="false"}
-#### Tarea 1: Creando un nuevo post
-
-- Crea una nueva subcarpeta en `./posts/`
-
-- Ponle nombre, por ejemplo: "my-primer-post"
-
-- Copia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en `./posts/welcome/`  y pégalos en `./posts/my-primer-post/`; es decir, pegamos el archivo `index.qmd` y `tumbnail.jpg` en nuestra nueva carpeta.
-
-- Vuelve a regenerar el blog: `Build > Render Website` y verás que ahora nuestro blog ya tiene tres posts.
-:::
-
 
 
 - Bueno, pues ya lo tenemos, ya tenemos un nuevo post. Lo que ocurre es que, como no hemos cambiado el contenido de `index.qmd` ni de `tumbnail.jpg`, resulta que el tercer post de nuestro blog será idéntico al primero, al post de bienvenida.
 
 - Evidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.
 
+{{< include ./_includes/_tt_04_04_tarea-01.qmd >}}
 
 
-
-::: {.callout-important icon="false"}
-#### Tarea 2: Modificando el tercer post
-
-- Modifica el contenido de `/my-primer-post/index.qmd`. Por ejemplo, puedes dejarlo así:
-
-
-  ```{r, eval = FALSE}
-  ---
-  title: "Mi primer post con Quarto"
-  author: "Pedro J. Pérez"
-  date: "2022-10-25"
-  categories: [R, quarto]
-  ---
-
-  Este es mi primer post con Quarto!!!!
-
-  ![](thumbnail.jpg)
-
-  Acabé con mi primer post. FIN
-  ```
-
-- Sustituye `thumbnail.jpg` por otro archivo
-
-
-- Vuelve a regenerar el blog: `Build > Render Website`
-:::
+{{< include ./_includes/_tt_04_05_tarea-02.qmd >}}
 
 
 <br>
-
 
 En el **siguiente tutorial** veremos en profundidad las posibilidades que nos ofrece Quarto para escribir nuestros posts.
 
@@ -145,12 +95,9 @@ En el **siguiente tutorial** veremos en profundidad las posibilidades que nos of
 
 ## Resumen
 
-::: {.callout-tip collapse="true" appearance="default" icon="false"}
-#### Resumen
+{{< include ./_includes/_tt_04_06_resumen.qmd >}}
 
-- En esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.
 
-:::
 
 
 

@@ -1,0 +1,8 @@
+::: {.callout-tip collapse="true" appearance="default" icon="false"}
+#### Resumen
+
+- En esta **cuarta parte del taller** hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.
+
+- En el **siguiente tutorial** veremos en profundidad las posibilidades que nos ofrece Quarto para escribir nuestros posts.
+
+:::

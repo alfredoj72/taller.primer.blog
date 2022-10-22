@@ -3,5 +3,9 @@ title: "Alojamiento del blog"
 subtitle: "(8ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 ---
 
+{{< include ./_includes/_contexto.qmd >}}
+
 
 - tutorial Git en un curso de reproducibilidad: <https://eliocamp.github.io/reproducibility-with-r/materials/day2/01-git/#git-and-github>
+
+- Guía de instalacion de Git: <https://ucsb-meds.github.io/meds-install-windows.html>

@@ -36,10 +36,12 @@
     "setup.html": "f97359f8"
   },
   "taller/06_taller_convertir-en-web.qmd": {
-    "06_taller_convertir-en-web.html": "09b4210c"
+    "06_taller_convertir-en-web.html": "09b4210c",
+    "06_taller_convertir-en-web.epub": "1d8936d0"
   },
   "taller/05_taller_escribir-posts.qmd": {
-    "05_taller_escribir-posts.html": "81b61b6d"
+    "05_taller_escribir-posts.html": "81b61b6d",
+    "05_taller_escribir-posts.epub": "923cf20b"
   },
   "taller/08_taller_alojamiento.qmd": {
     "08_taller_alojamiento.html": "3eeb68c9"
@@ -55,5 +57,15 @@
   },
   "taller/imagenes/tt_01/ejemplo_1.Rmd": {
     "ejemplo_1.html": "17aabb59"
+  },
+  "taller/01b_taller_slides.qmd": {
+    "01b_taller_slides.html": "7391e702",
+    "01b_taller_slides.epub": "f9f239a0"
+  },
+  "taller/slides_tareas_01.qmd": {
+    "slides_tareas_01.html": "866824a6"
+  },
+  "taller/slides_tt_pruebas.qmd": {
+    "slides_tt_pruebas.html": "ef4a807a"
   }
 }

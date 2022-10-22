@@ -1,0 +1,7 @@
+::: {.callout-tip collapse="false" appearance="default" icon="false"}
+## ¿Qué haremos en este tutorial?
+
+- Ver como podemos iniciar un nuevo post
+
+- Aprender a utilizar algunos truquillos de Quarto
+:::

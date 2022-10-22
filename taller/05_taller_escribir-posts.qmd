@@ -3,7 +3,7 @@ title: "Escribiendo posts: practicando con Quarto"
 subtitle: "(5ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 ---
 
-{{< include _contexto.qmd >}}
+{{< include ./_includes/_contexto.qmd >}}
 
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
 ## Recapitulación
@@ -25,24 +25,12 @@ subtitle: "(5ª parte del taller [Mi primer blog con Quarto](https://perezp44.gi
 
 <br>
 
-::: {.callout-tip  appearance="default" icon="false"}
-## ¿Qué haremos en este tutorial?
 
-- Aprender a escribir nuestro posts con Quarto: con ficheros `.qmd`
-
-- En concreto veremos: yaml, texto, chunks
-
-- Aprender a utilizar algunos truquillos de Quarto
-:::
+{{< include ./_includes/_tt_05_01_q-haremos.qmd >}}
 
 
-::: {.callout-warning  appearance="default" icon="true"}
+{{< include ./_includes/_tt_05_02_warning.qmd >}}
 
-Voy a **suponer que los asistentes al taller**, y posible lectores, de estos tutoriales **conocen Rmarkdown** y han escrito algún documento `.Rmd`. En ese caso, el paso de `.Rmd` a `.qmd` es sencillo. En cualquier caso, [aquí](https://quarto.org/docs/faq/rmarkdown.html) tienes unas FAQ's para usuarios de .Rmd que se preguntan si pasarse a Quarto.
-
-Aquellos que no sepan qué es Rmarkdown pueden empezar por [aquí](https://perezp44.github.io/intro-ds-22-23-web/tutoriales/tt_07_Rmarkdown.html) o [aquí](https://perezp44.github.io/intro-ds-22-23-web/slides/slides_07_rmarkdown.html#1).
-
-:::
 
 <br>
 
@@ -59,6 +47,7 @@ Ya sabemos que la carpeta `./posts/my-primer-post/` contiene dos archivos. El im
 
 ![](./imagenes/tt_01/img_19b.png){fig-align="center"}
 :::
+
 
 
 Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código. Vamos a verlas una a una.
@@ -95,7 +84,9 @@ En un post se pueden especificar opciones YAML de **3 formas/niveles**:
 De esta forma, potencialmente, un post puede recibir opciones de YAML desde los 3 niveles. Si hay conflictos **prevalecen las opciones del nivel documento**, luego nivel carpeta y finalmente nivel proyecto.
 
 
-Los blogs se publican en **formato html**, de forma que, [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html) tienes la **documentación oficial** de Quarto con las **principales opciones** que se pueden fijar con el YAML para documentos html;  pero creo que la forma más operativa para el taller es mostrar ejemplos de ficheros `.yml` y revisar su contenido.
+Los blogs se publican en **formato html**, de forma que, [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html) tienes la **documentación oficial** de Quarto con las **principales opciones** que se pueden fijar con el YAML para documentos html.
+
+Como ves, es imposible repasar todas las opciones en el taller, solamente veremos algunas. Para ello, creo que la forma más operativa para el taller es mostrar ejemplos de ficheros `.yml` y revisar su contenido.
 
 
 ::: {.panel-tabset}
@@ -243,7 +234,7 @@ website:
       - icon: github
         href: https://github.com/<tu-usuario-github>
       - icon: twitter
-        href: https://twitter.com/<tu-usuario twitter>
+        href: https://twitter.com/<tu-usuario-twitter>
       - icon: envelope
         url: "mailto:<tu-mail@uv.es>"
     left: 
@@ -256,9 +247,9 @@ website:
     center: "Hecho con [Quarto](https://quarto.org)"
     right:
       - icon: github
-        href: https://github.com/perezp44
+        href: https://github.com/<tu-usuario-github>
       - icon: twitter
-        href: https://twitter.com/pjpv4444
+        href: https://twitter.com/<tu-usuario-twitter>
       - icon: envelope
         url: "mailto:<tu-mail>@uv.es"
       - text: <i class="ai ai-google-scholar" role="img"></i>
