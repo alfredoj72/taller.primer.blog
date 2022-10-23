@@ -44,7 +44,8 @@ date : today
 # Default fields for citation
 citation: true
 # Footnotes 
-footnotes-hover: true
+footnotes-hover: true 
+
 # image as thumbnail
 # image: "imagenes/thumbnail.png"
 
@@ -78,8 +79,7 @@ format:
     link-external-icon: false
     link-external-newwindow: true
     html-math-method: katex
-    citations-hover: false
-    footnotes-hover: false
+    citations-hover: true
     css: assets/styles.css
     fig-cap-location: bottom
     #title-block-banner: "red"
