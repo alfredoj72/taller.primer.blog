@@ -196,7 +196,7 @@ Los **archivos importantes** ahora son:
 
 {{< include ./_includes/_tt_03_07_archivo-index.qmd >}}
 
-- De momento, **solo vamos a hacer cambios en la primera linea**: cambiaremos el título.
+- De momento, **solo vamos a hacer cambios en la segunda linea**: cambiaremos el título.
 
 <br>
 
@@ -215,7 +215,7 @@ Los **archivos importantes** ahora son:
 {{< include ./_includes/_tt_03_09_archivo-about.qmd >}}
 
 
-- Si en el `yaml` se activa la opción `about:` (linea 3), entonces puedes usar unas **plantillas** que Quarto tiene disponibles para **crear About's pages**.
+- Si en el `yaml` se activa la opción `about:` (linea 4), entonces puedes usar unas **plantillas** que Quarto tiene disponibles para **crear About's pages**.
 
 - Como puedes ver [aquí](https://quarto.org/docs/websites/website-about.html#templates) hay **5 plantillas**: jolla, trestles, solana, marquee y broadside.
 

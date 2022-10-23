@@ -123,7 +123,7 @@ Como puedes ver arriba en la @fig-02, al compararla con la   @fig-01, hemos modi
 ## Archivo `index.qmd`
 
 
-En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero `index.qmd`. Al final dejaremos este fichero como la figura de la derecha. Como verás, de momento, **solo vamos a hacer cambios en la primera linea**: cambiaremos el título.
+En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero `index.qmd`. Al final dejaremos este fichero como la figura de la derecha. Como verás, de momento, **solo vamos a hacer cambios en la segunda linea**: cambiaremos el título.
 
 
 {{< include ./_includes/_tt_03_07_archivo-index.qmd >}}
