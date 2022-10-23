@@ -36,9 +36,9 @@ Más adelante borraremos estos 2 posts, pero ahora mismo los vamos a utilizar de
 
 ## ¿Donde están los posts del blog?
 
-Los ficheros `.qmd` que generan los posts están en la carpeta `posts` de nuestro Qproject que genera el blog. 
+Los ficheros `.qmd` que generan los posts están en la carpeta `posts` de nuestro Qproject con el que generamos el blog. 
 
-Cada post está en una carpeta diferente. Veámoslo:
+Cada post está en una subcarpeta diferente. Veámoslo:
 
 {{< include ./_includes/_tt_04_02_carpeta-posts.qmd >}}
 
@@ -47,7 +47,7 @@ Como ves, en la carpeta`posts` hay:
 
   - una subcarpeta para cada post.
     
-  - el archivo `_metadata.yml`. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los posts de la carpeta `posts`.
+  - el archivo `_metadata.yml`. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los ficheros `.qmd` de la carpeta `posts`.
 
 <br>
 
@@ -73,15 +73,13 @@ Como ves, la carpeta `/welcome/` que genera el primer post del blog contiene 2 a
 De momento, para generar un nuevo post lo que haremos será crear una nueva subcarpeta dentro de `./posts/`, ponerle nombre y pegar allí los archivos que hay en la carpeta de uno de los dos posts de prueba. Por ejemplo: 
 
 
-
-
+{{< include ./_includes/_tt_04_04_tarea-01.qmd >}}
 
 
 - Bueno, pues ya lo tenemos, ya tenemos un nuevo post. Lo que ocurre es que, como no hemos cambiado el contenido de `index.qmd` ni de `tumbnail.jpg`, resulta que el tercer post de nuestro blog será idéntico al primero, al post de bienvenida.
 
 - Evidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.
 
-{{< include ./_includes/_tt_04_04_tarea-01.qmd >}}
 
 
 {{< include ./_includes/_tt_04_05_tarea-02.qmd >}}

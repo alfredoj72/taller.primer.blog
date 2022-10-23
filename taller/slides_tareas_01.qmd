@@ -74,7 +74,7 @@ Los **archivos importantes** ahora son:
  
   - `about.qmd` : una de la páginas del blog
 
- - `index.qmd` : generará la "landing page"
+ - `index.qmd` : generará la "landing page" o Home
  
 <br>
 
@@ -85,7 +85,7 @@ Los **archivos importantes** ahora son:
 {{< include ./_includes/_tt_02_05_generacion-blog.qmd >}}
 
 
-- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en internet.
+- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en Internet.
 
 {{< include ./_includes/_tt_02_06_extensiones.qmd >}}
 
@@ -285,6 +285,11 @@ Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la
 ## Creando un nuevo post
 
 {{< include ./_includes/_tt_04_04_tarea-01.qmd >}}
+
+
+---
+
+## Modificando el nuevo post
 
 {{< include ./_includes/_tt_04_05_tarea-02.qmd >}}
 

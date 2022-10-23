@@ -224,7 +224,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Autor/a</div>
+  <div class="quarto-title-meta-heading">Autor</div>
   <div class="quarto-title-meta-heading"></div>
   
     <div class="quarto-title-meta-contents">
@@ -325,8 +325,8 @@ Recapitulación
 <p>Más adelante borraremos estos 2 posts, pero ahora mismo los vamos a utilizar de ejemplo para crear un nuevo post. Será en la sección siguiente, de momento veamos donde están los archivos que generan los posts de nuestro blog.</p>
 <section id="donde-están-los-posts-del-blog" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="donde-están-los-posts-del-blog"><span class="header-section-number">1</span> ¿Donde están los posts del blog?</h2>
-<p>Los ficheros <code>.qmd</code> que generan los posts están en la carpeta <code>posts</code> de nuestro Qproject que genera el blog.</p>
-<p>Cada post está en una carpeta diferente. Veámoslo:</p>
+<p>Los ficheros <code>.qmd</code> que generan los posts están en la carpeta <code>posts</code> de nuestro Qproject con el que generamos el blog.</p>
+<p>Cada post está en una subcarpeta diferente. Veámoslo:</p>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
@@ -341,7 +341,7 @@ Recapitulación
 <p>Como ves, en la carpeta<code>posts</code> hay:</p>
 <ul>
 <li><p>una subcarpeta para cada post.</p></li>
-<li><p>el archivo <code>_metadata.yml</code>. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los posts de la carpeta <code>posts</code>.</p></li>
+<li><p>el archivo <code>_metadata.yml</code>. Lo veremos más adelante, pero sirve para generar opciones comunes a todos los ficheros <code>.qmd</code> de la carpeta <code>posts</code>.</p></li>
 </ul>
 <p><br></p>
 </section>
@@ -378,10 +378,6 @@ Recapitulación
 <section id="creando-un-nuevo-post" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="creando-un-nuevo-post"><span class="header-section-number">3</span> Creando un nuevo post</h2>
 <p>De momento, para generar un nuevo post lo que haremos será crear una nueva subcarpeta dentro de <code>./posts/</code>, ponerle nombre y pegar allí los archivos que hay en la carpeta de uno de los dos posts de prueba. Por ejemplo:</p>
-<ul>
-<li><p>Bueno, pues ya lo tenemos, ya tenemos un nuevo post. Lo que ocurre es que, como no hemos cambiado el contenido de <code>index.qmd</code> ni de <code>tumbnail.jpg</code>, resulta que el tercer post de nuestro blog será idéntico al primero, al post de bienvenida.</p></li>
-<li><p>Evidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.</p></li>
-</ul>
 <div class="callout-important callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -400,6 +396,10 @@ Tarea 1: Creando un nuevo post
 </ul>
 </div>
 </div>
+<ul>
+<li><p>Bueno, pues ya lo tenemos, ya tenemos un nuevo post. Lo que ocurre es que, como no hemos cambiado el contenido de <code>index.qmd</code> ni de <code>tumbnail.jpg</code>, resulta que el tercer post de nuestro blog será idéntico al primero, al post de bienvenida.</p></li>
+<li><p>Evidentemente puedes cambiar estos archivos para que el tercer post no sea idéntico al primero. Hagámoslo.</p></li>
+</ul>
 <div class="callout-important callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -450,7 +450,8 @@ Resumen
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li>En esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.</li>
+<li><p>En esta <strong>cuarta parte del taller</strong> hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.</p></li>
+<li><p>En el <strong>siguiente tutorial</strong> veremos en profundidad las posibilidades que nos ofrece Quarto para escribir nuestros posts.</p></li>
 </ul>
 </div>
 </div>

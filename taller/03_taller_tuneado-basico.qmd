@@ -121,9 +121,9 @@ Como puedes ver arriba en la @fig-02, al compararla con la   @fig-01, hemos modi
 <br>
 
 ::: {.callout-warning collapse="true" appearance="default" icon="false"}
-#### Extensiones: Pongamos una pestaña más a la web
+#### Extensiones: Pongamos una pestaña más a nuestro blog
 
-Si copias adecuadamente el chunk de abjao en el archivo `_quarto.yml` se creará una pestaña más en la barra de navegación de nuestra web. La pestaña se llamará "Más cosas" y tiene la particularidad de que se convertirá en un desplegable con acceso a varias páginas: "Docencia 2", "Docencia 3" y "Docencia 4".
+Si copias adecuadamente el chunk de abajo en el archivo `_quarto.yml` se creará una pestaña más en la barra de navegación de nuestra web. La pestaña se llamará "Más cosas" y tiene la particularidad de que cuando hagamos Render se convertirá en un desplegable con acceso a varias páginas: "Docencia 2", "Docencia 3" y "Docencia 4".
 
 ```yaml
   navbar:
@@ -198,6 +198,7 @@ En la figura siguiente, en el lado izquierdo puedes ver el contenido original de
 
 
 {{< include ./_includes/_tt_03_11_tarea-07.qmd >}}
+
 
 
 - Acuérdate que para ver los cambios has de volver a generar el blog: `Build > Render Website`,
