@@ -43,7 +43,8 @@ date : today
 
 # Default fields for citation
 citation: true
-
+# Footnotes 
+footnotes-hover: true
 # image as thumbnail
 # image: "imagenes/thumbnail.png"
 

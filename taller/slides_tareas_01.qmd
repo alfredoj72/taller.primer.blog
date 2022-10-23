@@ -317,3 +317,10 @@ Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la
 
 ----
 
+## Ficheros `.qmd`
+
+- Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código. 
+
+
+
+

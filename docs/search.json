@@ -217,11 +217,25 @@
     "text": "Creando un nuevo post\n\n\n\nTarea 1: Creando un nuevo post\n\n\n\nCrea una nueva subcarpeta en ./posts/\nPonle nombre, por ejemplo: “my-primer-post”\nCopia en la carpeta que hemos creado el contenido de la carpeta de uno de los 2 posts. Por ejemplo copia los 2 archivos que hay en ./posts/welcome/ y pégalos en ./posts/my-primer-post/; es decir, pegamos el archivo index.qmd y tumbnail.jpg en nuestra nueva carpeta.\nVuelve a regenerar el blog: Build > Render Website y verás que ahora nuestro blog ya tiene tres posts."
   },
   {
+    "objectID": "taller/slides_tareas_01.html#modificando-el-nuevo-post",
+    "href": "taller/slides_tareas_01.html#modificando-el-nuevo-post",
+    "title": "Mi primer blog con Quarto",
+    "section": "Modificando el nuevo post",
+    "text": "Modificando el nuevo post\n\n\n\nTarea 2: Modificando el tercer post\n\n\n\nModifica el contenido de /my-primer-post/index.qmd. Por ejemplo, puedes dejarlo así:\n\n---\ntitle: \"Mi primer post con Quarto\"\nauthor: \"Pedro J. Pérez\"\ndate: \"2022-10-25\"\ncategories: [R, quarto]\n---\n\nEste es mi primer post con Quarto!!!!\n\n![](thumbnail.jpg)\n\nAcabé con mi primer post. FIN\n\nSustituye thumbnail.jpg por otro archivo\nVuelve a regenerar el blog: Build > Render Website"
+  },
+  {
     "objectID": "taller/slides_tareas_01.html#resumen-4",
     "href": "taller/slides_tareas_01.html#resumen-4",
     "title": "Mi primer blog con Quarto",
     "section": "Resumen",
     "text": "Resumen\n\n\n\nResumen\n\n\n\nEn esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.\nEn el siguiente tutorial veremos en profundidad las posibilidades que nos ofrece Quarto para escribir nuestros posts."
+  },
+  {
+    "objectID": "taller/slides_tareas_01.html#ficheros-.qmd",
+    "href": "taller/slides_tareas_01.html#ficheros-.qmd",
+    "title": "Mi primer blog con Quarto",
+    "section": "Ficheros .qmd",
+    "text": "Ficheros .qmd\n\nLos ficheros .qmd tienen 3 partes: YAML, texto y chunks de código."
   },
   {
     "objectID": "taller/08_taller_alojamiento.html",
@@ -544,12 +558,5 @@
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "Reporting with lists",
     "text": "Reporting with lists\nCredit to TJ Mahr\n\nknitted <- list(\n  when = format(Sys.Date()),\n  with = system(\"quarto --version\", intern = TRUE)\n)\n\nReported prepared on 2022-10-18 with quarto version 1.1.251."
-  },
-  {
-    "objectID": "taller/slides_tareas_01.html#modificando-el-nuevo-post",
-    "href": "taller/slides_tareas_01.html#modificando-el-nuevo-post",
-    "title": "Mi primer blog con Quarto",
-    "section": "Modificando el nuevo post",
-    "text": "Modificando el nuevo post\n\n\n\nTarea 2: Modificando el tercer post\n\n\n\nModifica el contenido de /my-primer-post/index.qmd. Por ejemplo, puedes dejarlo así:\n\n---\ntitle: \"Mi primer post con Quarto\"\nauthor: \"Pedro J. Pérez\"\ndate: \"2022-10-25\"\ncategories: [R, quarto]\n---\n\nEste es mi primer post con Quarto!!!!\n\n![](thumbnail.jpg)\n\nAcabé con mi primer post. FIN\n\nSustituye thumbnail.jpg por otro archivo\nVuelve a regenerar el blog: Build > Render Website"
   }
 ]

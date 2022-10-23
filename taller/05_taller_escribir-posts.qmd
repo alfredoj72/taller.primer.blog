@@ -50,7 +50,7 @@ Ya sabemos que la carpeta `./posts/my-primer-post/` contiene dos archivos. El im
 
 
 
-Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código. Vamos a verlas una a una.
+Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código^[En realidad el fichero que vemos arriba no tiene ningún chunk de código.]. Vamos a verlas una a una.
 
 ## YAML
 
