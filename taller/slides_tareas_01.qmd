@@ -31,7 +31,12 @@ format:
 css: /assets/styles_slides_tareas.css
 ---
 
-{{< include ./_includes/_contexto.qmd >}}
+::: {.callout-note collapse="true" appearance="default" icon="false"}
+#### Contexto
+
+-   El taller está pensado para realizar con [R](https://cran.r-project.org/). Se utilizará el IDE [RStudio](https://www.rstudio.com/products/rstudio/) y [Quarto](https://quarto.org/). Se recomienda tener instaladas **versiones recientes** de los 3 programas
+
+:::
 
 <br>
 
@@ -145,7 +150,6 @@ Los **archivos importantes** ahora son:
 
 <br>
 
----
 
 # 3. Tuneado básico del blog
 
@@ -211,7 +215,11 @@ Los **archivos importantes** ahora son:
 {{< include ./_includes/_tt_03_09_archivo-about.qmd >}}
 
 
-- Si en el `yaml` se activa la opción `about:` (linea 3), entonces Quarto tiene disponibles unas plantillas para crear About's pages. [Aquí](https://quarto.org/docs/websites/website-about.html) tienes la documentación oficial sobre estas plantillas. Como puedes ver [aquí](https://quarto.org/docs/websites/website-about.html#templates) hay 5 plantillas: jolla, trestles, solana, marquee y broadside.
+- Si en el `yaml` se activa la opción `about:` (linea 3), entonces puedes usar unas **plantillas** que Quarto tiene disponibles para **crear About's pages**.
+
+- Como puedes ver [aquí](https://quarto.org/docs/websites/website-about.html#templates) hay **5 plantillas**: jolla, trestles, solana, marquee y broadside.
+
+- [Aquí](https://quarto.org/docs/websites/website-about.html) tienes la documentación oficial sobre estas plantillas. 
 
 <br>
 
@@ -253,9 +261,9 @@ Los **archivos importantes** ahora son:
 
 ## ¿Donde están los posts del blog?
 
-- Los ficheros `.qmd` que generan los posts están en la carpeta `posts` de nuestro Qproject que genera el blog. 
+- Los ficheros `.qmd` que generan los posts están **en la carpeta `posts`** de nuestro Qproject que genera el blog. 
 
-- Cada post está en una carpeta diferente. Veámoslo:
+- **Cada post** está en **una carpeta diferente**. Veámoslo:
 
 {{< include ./_includes/_tt_04_02_carpeta-posts.qmd >}}
 

@@ -226,14 +226,7 @@ Contenido de `_site`, la carpeta que contiene el blog
 
 {{< include ./_includes/_tt_02_08_tarea-03.qmd >}}
 
-
-
 <br>
-
-
-{{< include ./_includes/_tt_02_09_landing-page.qmd >}}
-
-
 
 #### La página principal del blog
 

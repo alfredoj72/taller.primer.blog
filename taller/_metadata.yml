@@ -81,6 +81,8 @@ format:
     footnotes-hover: false
     css: assets/styles.css
     fig-cap-location: bottom
+    #title-block-banner: "red"
+    #title-block-banner-color: "red"
 # comments:
 #   hypothesis: 
 #     theme: clean

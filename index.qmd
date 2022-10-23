@@ -14,7 +14,7 @@ about:
     - icon: twitter
       href: https://twitter.com/pjpv4444
     - icon: envelope
-      url: "mailto:<tu-mail@uv.es>"
+      url: "mailto:<pedro.j.perez@uv.es>"
 ---
 
 
