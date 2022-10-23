@@ -1,0 +1,83 @@
+::: {.panel-tabset}
+
+
+#### 1. nivel proyecto (_quarto.yml)
+
+Abajo el contenido del fichero `_quarto.yml` tal y como lo tenemos ahora en nuestro blog. Solo he añadido 3 comentarios para diferenciar entre secciones:
+
+```{r, eval = FALSE}
+#| code-overflow: scroll   #- {scroll, wrap}
+
+# 1/ Opciones referentes al proyecto --------------------------------
+project:
+  type: website
+ 
+#- 2/ Opciones referentes a la estructura de la web -----------------
+website:
+  title: "Mi blog (aún en pruebas)"
+  navbar:
+    logo: "profile.jpg"
+    right:
+      - text: "About me"
+        href: about.qmd
+      - icon: github
+        href: https://github.com/<tu-usuario-github>
+      - icon: twitter
+        href: https://twitter.com/<tu-usuario-twitter>
+      - icon: envelope
+        url: "mailto:<tu-mail@uv.es>"
+    left: 
+      - text: "Docencia"
+        href: docencia.qmd
+
+#- 3/ Opciones referentes al formato de salida  ---------------------
+format:
+  html:
+    theme: flatly  
+    css: styles.css
+    toc: true
+    highlight-style: a11y
+```
+
+
+#### 2. nivel carpeta (_metadata.yml)
+
+Abajo el, contenido del fichero `/posts/_metadata.yml`. Afectará a todos los ficheros `.qmd` que haya en la carpeta `/posts/`
+
+```{r, eval = FALSE}
+#| code-overflow: scroll   #- {scroll, wrap}
+
+# options specified here will apply to all posts in this folder
+
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
+freeze: true
+
+# Enable banner style title blocks
+title-block-banner: true
+
+```
+
+#### 3. nivel documento (index.qmd)
+
+Abajo el encabezamiento del fichero `/posts/my-primer-post/index.qmd`:
+
+```{r, eval = FALSE}
+#| code-overflow: wrap   #- {scroll, wrap}
+
+---
+title: "Mi primer post con Quarto"
+author: "Pedro J. Pérez"
+date: "2022-10-25"
+categories: [R, quarto]
+---
+
+Este es mi primer post con Quarto!!!!
+
+![](thumbnail.jpg)
+
+Acabé con mi primer post. FIN
+
+```
+
+:::

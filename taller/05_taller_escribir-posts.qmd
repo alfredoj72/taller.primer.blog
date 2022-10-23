@@ -42,15 +42,11 @@ En el tutorial anterior creamos un nuevo post en la carpeta `./posts/my-primer-p
 
 Ya sabemos que la carpeta `./posts/my-primer-post/` contiene dos archivos. El importante es `index.qmd` que es el archivo que genera el post. Veámoslo:
 
-
-::: {layout-ncol=1}
-
-![](./imagenes/tt_01/img_19b.png){fig-align="center"}
-:::
+{{< include ./_includes/_tt_05_03_figura-01.qmd >}}
 
 
 
-Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código^[En realidad el fichero que vemos arriba no tiene ningún chunk de código.]. Vamos a verlas una a una.
+Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código. Vamos a verlas una a una.
 
 ## YAML
 
@@ -89,89 +85,7 @@ Los blogs se publican en **formato html**, de forma que, [aquí](https://quarto.
 Como ves, es imposible repasar todas las opciones en el taller, solamente veremos algunas. Para ello, creo que la forma más operativa para el taller es mostrar ejemplos de ficheros `.yml` y revisar su contenido.
 
 
-::: {.panel-tabset}
-
-
-#### nivel proyecto (_quarto.yml)
-
-Abajo el contenido del fichero `_quarto.yml` tal y como lo tenemos ahora en nuestro blog. Solo he añadido 3 comentarios para diferenciar entre secciones:
-
-```{r, eval = FALSE}
-#| code-overflow: wrap   #- {scroll, wrap}
-
-# 1/ Opciones referentes al proyecto --------------------------------
-project:
-  type: website
- 
-#- 2/ Opciones referentes a la estructura de la web -----------------
-website:
-  title: "Mi blog (aún en pruebas)"
-  navbar:
-    logo: "profile.jpg"
-    right:
-      - text: "About me"
-        href: about.qmd
-      - icon: github
-        href: https://github.com/<tu-usuario-github>
-      - icon: twitter
-        href: https://twitter.com/<tu-usuario twitter>
-      - icon: envelope
-        url: "mailto:<tu-mail@uv.es>"
-    left: 
-      - text: "Docencia"
-        href: docencia.qmd
-
-#- 3/ Opciones referentes al formato de salida  ---------------------
-format:
-  html:
-    theme: minty  
-    css: styles.css
-    toc: true
-    highlight-style: a11y
-```
-
-
-#### nivel carpeta (_metadata.yml)
-
-Abajo el, contenido del fichero `/posts/_metadata.yml`. Afectará a todos los ficheros `.qmd` que haya en la carpeta `/posts/`
-
-```{r, eval = FALSE}
-#| code-overflow: wrap   #- {scroll, wrap}
-
-# options specified here will apply to all posts in this folder
-
-# freeze computational output
-# (see https://quarto.org/docs/projects/code-execution.html#freeze)
-freeze: true
-
-# Enable banner style title blocks
-title-block-banner: true
-
-```
-
-#### nivel documento (index.qmd)
-
-Abajo el encabezamiento del fichero `/posts/my-primer-post/index.qmd`:
-
-```{r, eval = FALSE}
-#| code-overflow: wrap   #- {scroll, wrap}
-
----
-title: "Mi primer post con Quarto"
-author: "Pedro J. Pérez"
-date: "2022-10-25"
-categories: [R, quarto]
----
-
-Este es mi primer post con Quarto!!!!
-
-![](thumbnail.jpg)
-
-Acabé con mi primer post. FIN
-
-```
-
-:::
+{{< include ./_includes/_tt_05_04_yaml-tabset.qmd >}}
 
 <br>
 
@@ -179,84 +93,31 @@ Acabé con mi primer post. FIN
 
 <br>
 
-#### Opciones referentes al proyecto 
+#### 1. Opciones referentes al proyecto 
 
-Estas opciones, en principio, sólo se pueden poner una vez y, por tanto, se especifican en el fichero `_quarto.yml` (nivel proyecto).
+Estas opciones acerca del funcionamiento del Qproject, se especifican en el fichero `_quarto.yml` (nivel proyecto).
 
-```{r, eval = FALSE}
-#| code-line-numbers: true
-#| code-overflow: wrap
+{{< include ./_includes/_tt_05_05_yaml-proyecto.qmd >}}
 
-# 1/ Opciones referentes al proyecto ----------------------------
-project:
-  type: website
-  output-dir: docs    #- podemos cambiar la carpeta donde se redirige el output (.html)
-  # execute-dir: project    #- the working directory for rendering files within a project is the directory of the file itself. If you prefer to use the main project directory instead, you can add the execute-dir: project 
-  #- https://quarto.org/docs/projects/code-execution.html#working-dir
-  
-```
 
 Como vemos, podemos cambiar:
 
 - la **carpeta** donde se generará el **output del proyecto** (linea 4: output_dir : docs). 
 
-- el **directorio de trabajo** en el que se procesan los `.qmd` (linea 5: execute-dir: project). Yo no lo haría, estoy muy acostumbrado a que el directorio de trabajo de los `.Rmd` sea la carpeta donde se procesan.
+- el **directorio en el que se procesan los `.qmd`** (linea 5: execute-dir: project). Los ficheros `.qmd` se procesan habitualmente en el directorio en el que residen pero puedes cambiarlo al directorio principal del proyecto^[Aunque yo no lo haría: estoy muy acostumbrado a que el directorio de trabajo de los `.Rmd` sea la carpeta donde residen]. [Aquí](https://quarto.org/docs/projects/code-execution.html#working-dir) documentación oficial sobre distintos aspectos de los Qprojects y sus opciones de configuración 
+
 
 <br>
 
-#### Opciones referentes a la estructura de la página web 
+#### 2. Opciones referentes a la estructura de la página web 
 
 
 Ya vimos algunas opciones en el 2º tutorial, veremos algunas más, pero será en el 7º tutorial. Como ejemplo, podríamos modificar esa sección de `_quarto.yml` para dejarla como:
 
 
-```{r, eval = FALSE}
-#| code-overflow: wrap   #- {scroll, wrap}
-#| code-line-numbers: true
+{{< include ./_includes/_tt_05_06_yaml-estructura-web.qmd >}}
 
 
-#- 2/ Opciones referentes a la estructura de la web -----------------
-website:
-  title: "Mi blog (aún en pruebas)"
-  favicon: imagenes/ababol_redondeado.ico
-  site-url: https://perezp44.github.io/taller.primer.blog/
-  repo-url: https://github.com/perezp44/taller.primer.blog
-  open-graph: true #-https://quarto.org/docs/websites/website-tools.html#twitter-cards
-  twitter-card:
-    creator: "@tu-usuario-twitter"
-    card-style: summary_large_image
-  navbar:
-    logo: "profile.jpg"
-    #background: primary    #- pink
-    right:
-      - text: "About me"
-        href: about.qmd
-      - icon: github
-        href: https://github.com/<tu-usuario-github>
-      - icon: twitter
-        href: https://twitter.com/<tu-usuario-twitter>
-      - icon: envelope
-        url: "mailto:<tu-mail@uv.es>"
-    left: 
-      - icon: house-door
-        href: index.html
-      - text: "Docencia"
-        href: docencia.qmd
-  page-footer:
-    left: "© 2022 Pedro J. Pérez"
-    center: "Hecho con [Quarto](https://quarto.org)"
-    right:
-      - icon: github
-        href: https://github.com/<tu-usuario-github>
-      - icon: twitter
-        href: https://twitter.com/<tu-usuario-twitter>
-      - icon: envelope
-        url: "mailto:<tu-mail>@uv.es"
-      - text: <i class="ai ai-google-scholar" role="img"></i>
-        href: https://scholar.google.de/citations?user=<tu-user>&hl=en
-      - text: <i class="ai ai-orcid" role="img"></i>
-        href: https://orcid.org/<tu-numero-orcid>
-```
 
 Como ves, se añadirían elementos como:
 
@@ -266,6 +127,14 @@ Como ves, se añadirían elementos como:
 
 - Elementos de redes sociales como un favicon (linea 4), el url de la web y del repo en Github (lineas 5 y 6) y más elementos de redes sociales  (lineas 7 a 10). La documentación oficial para estos elementos está [aquí](https://quarto.org/docs/websites/website-tools.html)
 
+<br>
+
+#### 3. Opciones referentes al formato de salida de los documentos 
+
+En un blog/web el formato de salida es siempre `.html`; sin embargo podemos especificar otras opciones como por ejemplo sí los documentos (o páginas de la web, o post del blog) tienen un índice flotante, etc..., etc ....
+
+
+{{< include ./_includes/_tt_05_07_yaml-formato-salida.qmd >}}
 
 <br>
 

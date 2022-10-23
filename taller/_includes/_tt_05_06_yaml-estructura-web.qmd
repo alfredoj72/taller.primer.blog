@@ -1,0 +1,46 @@
+```{r, eval = FALSE}
+#| code-overflow: scroll   #- {scroll, wrap}
+#| code-line-numbers: true
+
+#- 2/ Opciones referentes a la estructura de la web -----------------
+website:
+  title: "Mi blog (aún en pruebas)"
+  favicon: imagenes/ababol_redondeado.ico
+  site-url: https://perezp44.github.io/taller.primer.blog/
+  repo-url: https://github.com/perezp44/taller.primer.blog
+  open-graph: true #-https://quarto.org/docs/websites/website-tools.html#twitter-cards
+  twitter-card:
+    creator: "@tu-usuario-twitter"
+    card-style: summary_large_image
+  navbar:
+    logo: "profile.jpg"
+    #background: primary    #- pink
+    right:
+      - text: "About me"
+        href: about.qmd
+      - icon: github
+        href: https://github.com/<tu-usuario-github>
+      - icon: twitter
+        href: https://twitter.com/<tu-usuario-twitter>
+      - icon: envelope
+        url: "mailto:<tu-mail@uv.es>"
+    left: 
+      - icon: house-door
+        href: index.html
+      - text: "Docencia"
+        href: docencia.qmd
+  page-footer:
+    left: "© 2022 Pedro J. Pérez"
+    center: "Hecho con [Quarto](https://quarto.org)"
+    right:
+      - icon: github
+        href: https://github.com/<tu-usuario-github>
+      - icon: twitter
+        href: https://twitter.com/<tu-usuario-twitter>
+      - icon: envelope
+        url: "mailto:<tu-mail>@uv.es"
+      - text: <i class="ai ai-google-scholar" role="img"></i>
+        href: https://scholar.google.de/citations?user=<tu-user>&hl=en
+      - text: <i class="ai ai-orcid" role="img"></i>
+        href: https://orcid.org/<tu-numero-orcid>
+```

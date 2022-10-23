@@ -7,6 +7,19 @@ p, ul, ol {
 
 
 
+.reveal p {
+    text-align: justify;
+  }
+  
+.reveal ul {
+    display: justify;
+  }
+  
+.reveal ol {
+    display: justify;
+  }
+
+
 
 /* de: https://github.com/schochastics/quarto-schochastics/blob/main/styles.css */ 
 
@@ -60,3 +73,17 @@ div.column.col-v-center{
 
 
 
+
+/* esto funciona para justificar en reveal js, PERO hay q ponerlo en el .qmd */
+
+<style type="text/css">
+  .reveal p {
+    text-align: justify;
+  }
+  .reveal ul {
+    text-align: justify;
+  }
+  .reveal ol {
+    text-align: justify;
+  }  
+</style>

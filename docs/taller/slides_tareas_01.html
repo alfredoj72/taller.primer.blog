@@ -1200,6 +1200,192 @@
 <ul>
 <li>Los ficheros <code>.qmd</code> tienen <strong>3 partes</strong>: YAML, texto y chunks de código.</li>
 </ul>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./imagenes/tt_01/img_19c.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Vámoslas una a una</li>
+</ul>
+</section>
+<section id="yaml-ideas-importantes" class="slide level2">
+<h2>YAML: ideas importantes</h2>
+<p><br></p>
+<ul>
+<li>El encabezamiento o <strong>YAML</strong> sirve para fijar <strong>opciones y metadatos</strong> de nuestro documento.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>El <code>YAML</code> será procesado varias veces durante el procesado del documento: es leído por Quarto, knitr y Pandoc e <strong>influirá en el output final</strong>.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>El hecho de estar trabajando dentro de un <strong>Qproject</strong> nos da <strong>mucha versatilidad</strong> a la hora de especificar el YAML de nuestros documentos <code>.qmd</code>. Documentación oficial <a href="https://quarto.org/docs/projects/quarto-projects.html">aquí</a></li>
+</ul>
+</section>
+<section id="el-yaml-de-un-post-se-puede-especificar-en-3-niveles" class="slide level2">
+<h2>El <code>yaml</code> de un post se puede especificar en <strong>3 niveles</strong></h2>
+<p><br></p>
+<ul>
+<li><p><strong>Nivel proyecto</strong>: los Qprojects contienen <code>_quarto.yml</code>. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en <code>_quarto.yml</code>.</p></li>
+<li><p><strong>Nivel carpeta</strong>: si en una carpeta existe un documento <code>_metadata.yml</code>, los documentos de esa carpeta heredan sus metadatos. La carpeta <code>./posts/</code> de un blog suele tener un archivo <code>_metadata.yml</code>.</p></li>
+<li><p><strong>Nivel documento</strong>: En el yaml del propio documento <code>.qmd</code></p></li>
+</ul>
+<p><br></p>
+<p>Si hay conflictos <strong>prevalecen las opciones del nivel documento</strong>, luego nivel carpeta y finalmente nivel proyecto.</p>
+<p><strong>Documentación oficial</strong> de Quarto con las <strong>principales opciones</strong> que se pueden fijar en el YAML para documentos html: <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a></p>
+</section>
+<section id="yaml-algunos-ejemplos" class="slide level2 smaller">
+<h2>YAML: algunos ejemplos</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">1. nivel proyecto (_quarto.yml)</a></li><li><a href="#tabset-1-2">2. nivel carpeta (_metadata.yml)</a></li><li><a href="#tabset-1-3">3. nivel documento (index.qmd)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<p>Abajo el contenido del fichero <code>_quarto.yml</code> tal y como lo tenemos ahora en nuestro blog. Solo he añadido 3 comentarios para diferenciar entre secciones:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># 1/ Opciones referentes al proyecto --------------------------------</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>project<span class="sc">:</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a>  type<span class="sc">:</span> website</span>
+<span id="cb10-4"><a href="#cb10-4"></a> </span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
+<span id="cb10-6"><a href="#cb10-6"></a>website<span class="sc">:</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a>  navbar<span class="sc">:</span></span>
+<span id="cb10-9"><a href="#cb10-9"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
+<span id="cb10-10"><a href="#cb10-10"></a>    right<span class="sc">:</span></span>
+<span id="cb10-11"><a href="#cb10-11"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"About me"</span></span>
+<span id="cb10-12"><a href="#cb10-12"></a>        href<span class="sc">:</span> about.qmd</span>
+<span id="cb10-13"><a href="#cb10-13"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb10-14"><a href="#cb10-14"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb10-15"><a href="#cb10-15"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb10-16"><a href="#cb10-16"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
+<span id="cb10-17"><a href="#cb10-17"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb10-18"><a href="#cb10-18"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
+<span id="cb10-19"><a href="#cb10-19"></a>    left<span class="sc">:</span> </span>
+<span id="cb10-20"><a href="#cb10-20"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
+<span id="cb10-21"><a href="#cb10-21"></a>        href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb10-22"><a href="#cb10-22"></a></span>
+<span id="cb10-23"><a href="#cb10-23"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
+<span id="cb10-24"><a href="#cb10-24"></a>format<span class="sc">:</span></span>
+<span id="cb10-25"><a href="#cb10-25"></a>  html<span class="sc">:</span></span>
+<span id="cb10-26"><a href="#cb10-26"></a>    theme<span class="sc">:</span> flatly  </span>
+<span id="cb10-27"><a href="#cb10-27"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb10-28"><a href="#cb10-28"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb10-29"><a href="#cb10-29"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-1-2">
+<p>Abajo el, contenido del fichero <code>/posts/_metadata.yml</code>. Afectará a todos los ficheros <code>.qmd</code> que haya en la carpeta <code>/posts/</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a></span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="co"># freeze computational output</span></span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="co"># (see https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a>freeze<span class="sc">:</span> true</span>
+<span id="cb11-6"><a href="#cb11-6"></a></span>
+<span id="cb11-7"><a href="#cb11-7"></a><span class="co"># Enable banner style title blocks</span></span>
+<span id="cb11-8"><a href="#cb11-8"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-1-3">
+<p>Abajo el encabezamiento del fichero <code>/posts/my-primer-post/index.qmd</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="sc">---</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a>title<span class="sc">:</span> <span class="st">"Mi primer post con Quarto"</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a>author<span class="sc">:</span> <span class="st">"Pedro J. Pérez"</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a>date<span class="sc">:</span> <span class="st">"2022-10-25"</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a>categories<span class="sc">:</span> [R, quarto]</span>
+<span id="cb12-6"><a href="#cb12-6"></a><span class="sc">---</span></span>
+<span id="cb12-7"><a href="#cb12-7"></a></span>
+<span id="cb12-8"><a href="#cb12-8"></a>Este es mi primer post con Quarto<span class="sc">!!!!</span></span>
+<span id="cb12-9"><a href="#cb12-9"></a></span>
+<span id="cb12-10"><a href="#cb12-10"></a><span class="sc">!</span>[](thumbnail.jpg)</span>
+<span id="cb12-11"><a href="#cb12-11"></a></span>
+<span id="cb12-12"><a href="#cb12-12"></a>Acabé con mi primer post. FIN</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="yaml-opciones-nivel-proyecto-_quarto.yml" class="slide level2 smaller">
+<h2>YAML: OPciones nivel proyecto (<code>_quarto.yml</code>)</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">1. Qproject</a></li><li><a href="#tabset-2-2">2. Estructura de la página web</a></li><li><a href="#tabset-2-3">3. Formato de salida de los documentos</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="true"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>project<span class="sc">:</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a>  type<span class="sc">:</span> website</span>
+<span id="cb13-4"><a href="#cb13-4"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> docs    <span class="co">#- podemos cambiar la carpeta donde se redirige el output (.html)</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a>  <span class="co"># execute-dir: project    #- cambiar el render directory: https://quarto.org/docs/projects/code-execution.html#working-dir</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-2-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="true"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a>website<span class="sc">:</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
+<span id="cb14-4"><a href="#cb14-4"></a>  favicon<span class="sc">:</span> imagenes<span class="sc">/</span>ababol_redondeado.ico</span>
+<span id="cb14-5"><a href="#cb14-5"></a>  site<span class="sc">-</span>url<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>perezp44.github.io<span class="sc">/</span>taller.primer.blog<span class="sc">/</span></span>
+<span id="cb14-6"><a href="#cb14-6"></a>  repo<span class="sc">-</span>url<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>perezp44<span class="sc">/</span>taller.primer.blog</span>
+<span id="cb14-7"><a href="#cb14-7"></a>  open<span class="sc">-</span>graph<span class="sc">:</span> true <span class="co">#-https://quarto.org/docs/websites/website-tools.html#twitter-cards</span></span>
+<span id="cb14-8"><a href="#cb14-8"></a>  twitter<span class="sc">-</span>card<span class="sc">:</span></span>
+<span id="cb14-9"><a href="#cb14-9"></a>    creator<span class="sc">:</span> <span class="st">"@tu-usuario-twitter"</span></span>
+<span id="cb14-10"><a href="#cb14-10"></a>    card<span class="sc">-</span>style<span class="sc">:</span> summary_large_image</span>
+<span id="cb14-11"><a href="#cb14-11"></a>  navbar<span class="sc">:</span></span>
+<span id="cb14-12"><a href="#cb14-12"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
+<span id="cb14-13"><a href="#cb14-13"></a>    <span class="co">#background: primary    #- pink</span></span>
+<span id="cb14-14"><a href="#cb14-14"></a>    right<span class="sc">:</span></span>
+<span id="cb14-15"><a href="#cb14-15"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"About me"</span></span>
+<span id="cb14-16"><a href="#cb14-16"></a>        href<span class="sc">:</span> about.qmd</span>
+<span id="cb14-17"><a href="#cb14-17"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb14-18"><a href="#cb14-18"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb14-19"><a href="#cb14-19"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb14-20"><a href="#cb14-20"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
+<span id="cb14-21"><a href="#cb14-21"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb14-22"><a href="#cb14-22"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
+<span id="cb14-23"><a href="#cb14-23"></a>    left<span class="sc">:</span> </span>
+<span id="cb14-24"><a href="#cb14-24"></a>      <span class="sc">-</span> icon<span class="sc">:</span> house<span class="sc">-</span>door</span>
+<span id="cb14-25"><a href="#cb14-25"></a>        href<span class="sc">:</span> index.html</span>
+<span id="cb14-26"><a href="#cb14-26"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
+<span id="cb14-27"><a href="#cb14-27"></a>        href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb14-28"><a href="#cb14-28"></a>  page<span class="sc">-</span>footer<span class="sc">:</span></span>
+<span id="cb14-29"><a href="#cb14-29"></a>    left<span class="sc">:</span> <span class="st">"© 2022 Pedro J. Pérez"</span></span>
+<span id="cb14-30"><a href="#cb14-30"></a>    center<span class="sc">:</span> <span class="st">"Hecho con [Quarto](https://quarto.org)"</span></span>
+<span id="cb14-31"><a href="#cb14-31"></a>    right<span class="sc">:</span></span>
+<span id="cb14-32"><a href="#cb14-32"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb14-33"><a href="#cb14-33"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb14-34"><a href="#cb14-34"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb14-35"><a href="#cb14-35"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
+<span id="cb14-36"><a href="#cb14-36"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb14-37"><a href="#cb14-37"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail&gt;@uv.es"</span></span>
+<span id="cb14-38"><a href="#cb14-38"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-google-scholar"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
+<span id="cb14-39"><a href="#cb14-39"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>scholar.google.de<span class="sc">/</span>citations?user<span class="ot">=</span><span class="er">&lt;</span>tu<span class="sc">-</span>user<span class="sc">&gt;</span><span class="er">&amp;</span>hl<span class="ot">=</span>en</span>
+<span id="cb14-40"><a href="#cb14-40"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-orcid"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
+<span id="cb14-41"><a href="#cb14-41"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>orcid.org<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>numero<span class="sc">-</span>orcid<span class="sc">&gt;</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-2-3">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="true"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a>format<span class="sc">:</span></span>
+<span id="cb15-3"><a href="#cb15-3"></a>  html<span class="sc">:</span></span>
+<span id="cb15-4"><a href="#cb15-4"></a>    theme<span class="sc">:</span> flatly  </span>
+<span id="cb15-5"><a href="#cb15-5"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb15-6"><a href="#cb15-6"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb15-7"><a href="#cb15-7"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="footer footer-default">
 

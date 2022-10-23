@@ -31,6 +31,8 @@ format:
 css: /assets/styles_slides_tareas.css
 ---
 
+
+
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
 #### Contexto
 
@@ -321,6 +323,70 @@ Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la
 
 - Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código. 
 
+{{< include ./_includes/_tt_05_03_figura-01.qmd >}}
+
+- Vámoslas una a una
+
+
+---
+
+##  YAML: ideas importantes
+
+<br>
+
+- El encabezamiento o **YAML** sirve para fijar **opciones y metadatos** de nuestro documento.
+
+<br>
+
+- El `YAML` será  procesado varias veces durante el procesado del documento: es leído por Quarto, knitr y Pandoc e **influirá en el output final**.
+
+<br>
+
+- El hecho de estar trabajando dentro de un **Qproject** nos da **mucha versatilidad** a la hora de especificar el YAML de nuestros documentos `.qmd`. Documentación oficial [aquí](https://quarto.org/docs/projects/quarto-projects.html)
 
 
 
+## El `yaml` de un post se puede especificar en **3 niveles**
+
+<br>
+
+-  **Nivel proyecto**: los Qprojects contienen `_quarto.yml`. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en `_quarto.yml`.
+
+-  **Nivel carpeta**: si en una carpeta existe un documento `_metadata.yml`, los documentos de esa carpeta heredan sus metadatos. La carpeta `./posts/` de un blog suele tener un archivo `_metadata.yml`.
+
+-  **Nivel documento**: En el yaml del propio documento `.qmd`
+
+<br>
+
+Si hay conflictos **prevalecen las opciones del nivel documento**, luego nivel carpeta y finalmente nivel proyecto.
+
+**Documentación oficial** de Quarto con las **principales opciones** que se pueden fijar en el YAML para documentos html: [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html)
+
+
+--- 
+
+## YAML: algunos ejemplos {.smaller}
+
+
+{{< include ./_includes/_tt_05_04_yaml-tabset.qmd >}}
+
+
+---
+
+## YAML: OPciones nivel proyecto (`_quarto.yml`) {.smaller}
+
+::: {.panel-tabset}
+
+#### 1. Qproject
+
+{{< include ./_includes/_tt_05_05_yaml-proyecto.qmd >}}
+
+#### 2. Estructura de la página web 
+
+{{< include ./_includes/_tt_05_06_yaml-estructura-web.qmd >}}
+
+#### 3. Formato de salida de los documentos 
+
+{{< include ./_includes/_tt_05_07_yaml-formato-salida.qmd >}}
+
+:::

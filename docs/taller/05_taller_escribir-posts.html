@@ -357,7 +357,7 @@ Advertencia
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./imagenes/tt_01/img_19b.png" class="img-fluid figure-img"></p>
+<p><img src="./imagenes/tt_01/img_19c.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -389,12 +389,12 @@ Advertencia
 <p>Los blogs se publican en <strong>formato html</strong>, de forma que, <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a> tienes la <strong>documentación oficial</strong> de Quarto con las <strong>principales opciones</strong> que se pueden fijar con el YAML para documentos html.</p>
 <p>Como ves, es imposible repasar todas las opciones en el taller, solamente veremos algunas. Para ello, creo que la forma más operativa para el taller es mostrar ejemplos de ficheros <code>.yml</code> y revisar su contenido.</p>
 <div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">nivel proyecto (_quarto.yml)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">nivel carpeta (_metadata.yml)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">nivel documento (index.qmd)</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">1. nivel proyecto (_quarto.yml)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">2. nivel carpeta (_metadata.yml)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">3. nivel documento (index.qmd)</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Abajo el contenido del fichero <code>_quarto.yml</code> tal y como lo tenemos ahora en nuestro blog. Solo he añadido 3 comentarios para diferenciar entre secciones:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-overflow-wrap code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1/ Opciones referentes al proyecto --------------------------------</span></span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-overflow-scroll code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1/ Opciones referentes al proyecto --------------------------------</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> </span>
@@ -409,7 +409,7 @@ Advertencia
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario twitter<span class="sc">&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    left<span class="sc">:</span> </span>
@@ -419,7 +419,7 @@ Advertencia
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> minty  </span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> flatly  </span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true</span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -428,7 +428,7 @@ Advertencia
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Abajo el, contenido del fichero <code>/posts/_metadata.yml</code>. Afectará a todos los ficheros <code>.qmd</code> que haya en la carpeta <code>/posts/</code></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-overflow-wrap code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-overflow-scroll code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># freeze computational output</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># (see https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
@@ -463,28 +463,27 @@ Advertencia
 <h3 data-number="2.2" class="anchored" data-anchor-id="distintas-opciones-yaml"><span class="header-section-number">2.2</span> Distintas opciones YAML</h3>
 <p><br></p>
 <section id="opciones-referentes-al-proyecto" class="level4">
-<h4 class="anchored" data-anchor-id="opciones-referentes-al-proyecto">Opciones referentes al proyecto</h4>
-<p>Estas opciones, en principio, sólo se pueden poner una vez y, por tanto, se especifican en el fichero <code>_quarto.yml</code> (nivel proyecto).</p>
+<h4 class="anchored" data-anchor-id="opciones-referentes-al-proyecto">1. Opciones referentes al proyecto</h4>
+<p>Estas opciones acerca del funcionamiento del Qproject, se especifican en el fichero <code>_quarto.yml</code> (nivel proyecto).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span></span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span></span>
 <span id="cb4-2"><a href="#cb4-2"></a>project<span class="sc">:</span></span>
 <span id="cb4-3"><a href="#cb4-3"></a>  type<span class="sc">:</span> website</span>
 <span id="cb4-4"><a href="#cb4-4"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> docs    <span class="co">#- podemos cambiar la carpeta donde se redirige el output (.html)</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a>  <span class="co"># execute-dir: project    #- the working directory for rendering files within a project is the directory of the file itself. If you prefer to use the main project directory instead, you can add the execute-dir: project </span></span>
-<span id="cb4-6"><a href="#cb4-6"></a>  <span class="co">#- https://quarto.org/docs/projects/code-execution.html#working-dir</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-5"><a href="#cb4-5"></a>  <span class="co"># execute-dir: project    #- cambiar el render directory: https://quarto.org/docs/projects/code-execution.html#working-dir</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Como vemos, podemos cambiar:</p>
 <ul>
 <li><p>la <strong>carpeta</strong> donde se generará el <strong>output del proyecto</strong> (linea 4: output_dir : docs).</p></li>
-<li><p>el <strong>directorio de trabajo</strong> en el que se procesan los <code>.qmd</code> (linea 5: execute-dir: project). Yo no lo haría, estoy muy acostumbrado a que el directorio de trabajo de los <code>.Rmd</code> sea la carpeta donde se procesan.</p></li>
+<li><p>el <strong>directorio en el que se procesan los <code>.qmd</code></strong> (linea 5: execute-dir: project). Los ficheros <code>.qmd</code> se procesan habitualmente en el directorio en el que residen pero puedes cambiarlo al directorio principal del proyecto<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. <a href="https://quarto.org/docs/projects/code-execution.html#working-dir">Aquí</a> documentación oficial sobre distintos aspectos de los Qprojects y sus opciones de configuración</p></li>
 </ul>
 <p><br></p>
 </section>
 <section id="opciones-referentes-a-la-estructura-de-la-página-web" class="level4">
-<h4 class="anchored" data-anchor-id="opciones-referentes-a-la-estructura-de-la-página-web">Opciones referentes a la estructura de la página web</h4>
+<h4 class="anchored" data-anchor-id="opciones-referentes-a-la-estructura-de-la-página-web">2. Opciones referentes a la estructura de la página web</h4>
 <p>Ya vimos algunas opciones en el 2º tutorial, veremos algunas más, pero será en el 7º tutorial. Como ejemplo, podríamos modificar esa sección de <code>_quarto.yml</code> para dejarla como:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a>website<span class="sc">:</span></span>
 <span id="cb5-3"><a href="#cb5-3"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
 <span id="cb5-4"><a href="#cb5-4"></a>  favicon<span class="sc">:</span> imagenes<span class="sc">/</span>ababol_redondeado.ico</span>
@@ -528,10 +527,24 @@ Advertencia
 </div>
 <p>Como ves, se añadirían elementos como:</p>
 <ul>
-<li><p>Un pie de página (lineas 28 a 41)<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p></li>
+<li><p>Un pie de página (lineas 28 a 41)<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p></li>
 <li><p>Hemos añadido un elemento a la <code>navbar</code> concretamente el icono <code>Home</code> (lineas 24 y 25). La documentación oficial para elementos de navegación está <a href="https://quarto.org/docs/websites/website-navigation.html">aquí</a></p></li>
 <li><p>Elementos de redes sociales como un favicon (linea 4), el url de la web y del repo en Github (lineas 5 y 6) y más elementos de redes sociales (lineas 7 a 10). La documentación oficial para estos elementos está <a href="https://quarto.org/docs/websites/website-tools.html">aquí</a></p></li>
 </ul>
+<p><br></p>
+</section>
+<section id="opciones-referentes-al-formato-de-salida-de-los-documentos" class="level4">
+<h4 class="anchored" data-anchor-id="opciones-referentes-al-formato-de-salida-de-los-documentos">3. Opciones referentes al formato de salida de los documentos</h4>
+<p>En un blog/web el formato de salida es siempre <code>.html</code>; sin embargo podemos especificar otras opciones como por ejemplo sí los documentos (o páginas de la web, o post del blog) tienen un índice flotante, etc…, etc ….</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>format<span class="sc">:</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>  html<span class="sc">:</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>    theme<span class="sc">:</span> flatly  </span>
+<span id="cb6-5"><a href="#cb6-5"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb6-6"><a href="#cb6-6"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb6-7"><a href="#cb6-7"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p><br></p>
 </section>
 </section>
@@ -613,8 +626,9 @@ Advertencia
 <h2 data-number="5" class="anchored" data-anchor-id="extras"><span class="header-section-number">5</span> Extras</h2>
 <ul>
 <li><p>Create a tabset via a markdown div with the class name panel-tabset (e.g.&nbsp;::: {.panel-tabset}) <a href="https://quarto.org/docs/output-formats/html-basics.html#tabsets" class="uri">https://quarto.org/docs/output-formats/html-basics.html#tabsets</a></p></li>
-<li><p>Bilio (.csl, .bib, lin-citations: yes) <br></p></li>
+<li><p>Bilio (.csl, .bib, lin-citations: yes). LatinR 1:09 R.version.string <a href="https://www.youtube.com/watch?v=d8jSN998Mtw" class="uri">https://www.youtube.com/watch?v=d8jSN998Mtw</a></p></li>
 </ul>
+<p><br></p>
 </section>
 <section id="resumen" class="level2" data-number="6">
 <h2 data-number="6" class="anchored" data-anchor-id="resumen"><span class="header-section-number">6</span> Resumen</h2>
@@ -654,7 +668,8 @@ Resumen
 <ol>
 <li id="fn1"><p>El <code>YAML</code> será procesado varias veces durante el procesado del documento: es leído por Quarto, knitr y Pandoc e influirá en el resultado final, pudiendo afectar al código, al contenido y al procesado del documento<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>Puedes ver la documentación oficial de Quarto sobre proyectos <a href="https://quarto.org/docs/projects/quarto-projects.html">aquí</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Puedes ver un ejemplo de cómo quedaría el pie de página en la web del taller, <a href="https://perezp44.github.io/taller.primer.blog/materiales.html">aquí</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Aunque yo no lo haría: estoy muy acostumbrado a que el directorio de trabajo de los <code>.Rmd</code> sea la carpeta donde residen<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Puedes ver un ejemplo de cómo quedaría el pie de página en la web del taller, <a href="https://perezp44.github.io/taller.primer.blog/materiales.html">aquí</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2023,
   author = {Pedro J. Pérez},
