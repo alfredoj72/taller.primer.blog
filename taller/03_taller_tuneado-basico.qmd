@@ -120,6 +120,34 @@ Como puedes ver arriba en la @fig-02, al compararla con la   @fig-01, hemos modi
 
 <br>
 
+::: {.callout-warning collapse="true" appearance="default" icon="false"}
+#### Extensiones: Pongamos una pestaña más a la web
+
+Si copias adecuadamente el chunk de abjao en el archivo `_quarto.yml` se creará una pestaña más en la barra de navegación de nuestra web. La pestaña se llamará "Más cosas" y tiene la particularidad de que se convertirá en un desplegable con acceso a varias páginas: "Docencia 2", "Docencia 3" y "Docencia 4".
+
+```yaml
+  navbar:
+    logo: "profile.jpg"
+    #background: primary    #- pink (el backgroung de la navbar)
+    left: 
+      - text: "Docencia"
+        href: docencia.qmd
+      -  text: "Más cosas"
+         menu:
+          - text: "Docencia 2"
+            href: docencia.qmd
+          - text: "Docencia 3"
+            href: docencia.qmd
+          - text: "---"
+          - text: "Docencia 4"
+            href: docencia.qmd
+```
+:::
+
+
+<br>
+
+
 ## Archivo `index.qmd`
 
 

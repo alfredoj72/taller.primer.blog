@@ -530,9 +530,9 @@
 </div>
 <div class="callout-content">
 <ul>
-<li><p>Ir al cuadrante superior-izquierda de RStudio, pinchar en la pestaña <code>Build</code> y pinchar en <code>Render Website</code>.</p></li>
+<li><p>Ir al cuadrante superior-derecha de RStudio, pinchar en la pestaña <code>Build</code> y pinchar en <code>Render Website</code>.</p></li>
 <li><p>De esta forma, se procesarán los archivos del Qproject y se creará el blog.</p></li>
-<li><p>Podremos verlo en el cuadrante inferior-izquierda de RStudio, concretamente en la pestaña <code>Viewer</code>.</p></li>
+<li><p>Podremos verlo en el cuadrante inferior-derecha de RStudio, concretamente en la pestaña <code>Viewer</code>.</p></li>
 </ul>
 </div>
 </div>
@@ -781,7 +781,7 @@
 <span id="cb4-11"><a href="#cb4-11"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
 <span id="cb4-12"><a href="#cb4-12"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/&lt;tu-usuario-github&gt;</span></span>
 <span id="cb4-13"><a href="#cb4-13"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
-<span id="cb4-14"><a href="#cb4-14"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://twitter.com/&lt;tu-usuario twitter&gt;</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://twitter.com/&lt;tu-usuario-twitter&gt;</span></span>
 <span id="cb4-15"><a href="#cb4-15"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> envelope</span></span>
 <span id="cb4-16"><a href="#cb4-16"></a><span class="at">        </span><span class="fu">url</span><span class="kw">:</span><span class="at"> </span><span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
 <span id="cb4-17"><a href="#cb4-17"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="at"> </span></span>
@@ -811,19 +811,19 @@
 <li>Podríamos crear el archivo <code>docencia.qmd</code> con cualquier contenido, incluso podría ser un documento sin contenido, PERO, mejor si lo creas con el siguiente contenido:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="sc">---</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>title<span class="sc">:</span> <span class="st">"Mi docencia"</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="sc">---</span></span>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="pp">---</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi docencia"</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="pp">---</span></span>
 <span id="cb5-4"><a href="#cb5-4"></a></span>
-<span id="cb5-5"><a href="#cb5-5"></a>Mi docencia es<span class="sc">:</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="fu">Mi docencia es</span><span class="kw">:</span></span>
 <span id="cb5-6"><a href="#cb5-6"></a></span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="do">## curso 2021-2022</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="co">## curso 2021-2022</span></span>
 <span id="cb5-8"><a href="#cb5-8"></a></span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="sc">-</span> [Econometría](<span class="sc">/</span>pdfs<span class="sc">/</span>econometria.pdf)</span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="kw">-</span><span class="at"> </span><span class="kw">[</span><span class="at">Econometría</span><span class="kw">]</span><span class="at">(/pdfs/econometria.pdf)</span></span>
 <span id="cb5-10"><a href="#cb5-10"></a></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="do">## curso 2022-2023</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a><span class="co">## curso 2022-2023</span></span>
 <span id="cb5-12"><a href="#cb5-12"></a></span>
-<span id="cb5-13"><a href="#cb5-13"></a><span class="sc">-</span> [Algebra](<span class="sc">/</span>pdfs<span class="sc">/</span>econometria.pdf)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-13"><a href="#cb5-13"></a><span class="kw">-</span><span class="at"> </span><span class="kw">[</span><span class="at">Algebra</span><span class="kw">]</span><span class="at">(/pdfs/econometria.pdf)</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -881,7 +881,7 @@
 </div>
 </div>
 <ul>
-<li>De momento, <strong>solo vamos a hacer cambios en la primera linea</strong>: cambiaremos el título.</li>
+<li>De momento, <strong>solo vamos a hacer cambios en la segunda linea</strong>: cambiaremos el título.</li>
 </ul>
 <p><br></p>
 </section>
@@ -894,21 +894,21 @@
 </div>
 <div class="callout-content">
 <ul>
-<li>Simplemente he cambiado la linea 1. Aunque, para mi, casi queda mejor sin ningún título. Para ello tendríamos que comentar (con un #) la primera linea del yaml.</li>
+<li>Simplemente he cambiado la linea 2. Aunque, para mi, casi queda mejor sin ningún título. Para ello tendríamos que comentar (con un #) la primera linea del yaml.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="sc">---</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a>title<span class="sc">:</span> <span class="st">"Mi listado de post"</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a>listing<span class="sc">:</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a>  contents<span class="sc">:</span> posts</span>
-<span id="cb6-5"><a href="#cb6-5"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span></span>
-<span id="cb6-6"><a href="#cb6-6"></a>  type<span class="sc">:</span> default</span>
-<span id="cb6-7"><a href="#cb6-7"></a>  categories<span class="sc">:</span> true</span>
-<span id="cb6-8"><a href="#cb6-8"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb6-9"><a href="#cb6-9"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb6-10"><a href="#cb6-10"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full</span>
-<span id="cb6-11"><a href="#cb6-11"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
-<span id="cb6-12"><a href="#cb6-12"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1"></a><span class="pp">---</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi listado de post"</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="fu">page-layout</span><span class="kw">:</span><span class="at"> full</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="fu">title-block-banner</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -938,7 +938,9 @@
 </div>
 </div>
 <ul>
-<li>Si en el <code>yaml</code> se activa la opción <code>about:</code> (linea 3), entonces Quarto tiene disponibles unas plantillas para crear About’s pages. <a href="https://quarto.org/docs/websites/website-about.html">Aquí</a> tienes la documentación oficial sobre estas plantillas. Como puedes ver <a href="https://quarto.org/docs/websites/website-about.html#templates">aquí</a> hay 5 plantillas: jolla, trestles, solana, marquee y broadside.</li>
+<li><p>Si en el <code>yaml</code> se activa la opción <code>about:</code> (linea 4), entonces puedes usar unas <strong>plantillas</strong> que Quarto tiene disponibles para <strong>crear About’s pages</strong>.</p></li>
+<li><p>Como puedes ver <a href="https://quarto.org/docs/websites/website-about.html#templates">aquí</a> hay <strong>5 plantillas</strong>: jolla, trestles, solana, marquee y broadside.</p></li>
+<li><p><a href="https://quarto.org/docs/websites/website-about.html">Aquí</a> tienes la documentación oficial sobre estas plantillas.</p></li>
 </ul>
 <p><br></p>
 </section>
@@ -1050,8 +1052,8 @@
 <section id="donde-están-los-posts-del-blog" class="slide level2">
 <h2>¿Donde están los posts del blog?</h2>
 <ul>
-<li><p>Los ficheros <code>.qmd</code> que generan los posts están en la carpeta <code>posts</code> de nuestro Qproject que genera el blog.</p></li>
-<li><p>Cada post está en una carpeta diferente. Veámoslo:</p></li>
+<li><p>Los ficheros <code>.qmd</code> que generan los posts están <strong>en la carpeta <code>posts</code></strong> de nuestro Qproject que genera el blog.</p></li>
+<li><p><strong>Cada post</strong> está en <strong>una carpeta diferente</strong>. Veámoslo:</p></li>
 </ul>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">

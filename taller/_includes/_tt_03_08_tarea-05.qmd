@@ -4,7 +4,7 @@
 - Simplemente he cambiado la linea 2. Aunque, para mi, casi queda mejor sin ningún título. Para ello tendríamos que comentar (con un #) la primera linea del yaml.
 
 
-```{r, eval = FALSE}
+```{yaml}
 ---
 title: "Mi listado de post"
 listing:
