@@ -221,7 +221,7 @@
     "href": "taller/slides_tareas_01.html#modificando-el-nuevo-post",
     "title": "Mi primer blog con Quarto",
     "section": "Modificando el nuevo post",
-    "text": "Modificando el nuevo post\n\n\n\nTarea 2: Modificando el tercer post\n\n\n\nModifica el contenido de /my-primer-post/index.qmd. Por ejemplo, puedes dejarlo así:\n\n---\ntitle: \"Mi primer post con Quarto\"\nauthor: \"Pedro J. Pérez\"\ndate: \"2022-10-25\"\ncategories: [R, quarto]\n---\n\nEste es mi primer post con Quarto!!!!\n\n![](thumbnail.jpg)\n\nAcabé con mi primer post. FIN\n\nSustituye thumbnail.jpg por otro archivo\nVuelve a regenerar el blog: Build > Render Website"
+    "text": "Modificando el nuevo post\n\n\n\nTarea 2: Modificando el tercer post\n\n\n\nModifica el contenido de /my-primer-post/index.qmd. Por ejemplo, puedes dejarlo así:\n\n---\ntitle: \"Mi primer post con Quarto\"\nauthor: \"Pedro J. Pérez\"\ndate: \"2022-10-25\"\ncategories: [R, quarto]\n---\n\nEste es mi **primer post** con Quarto!!!!\n\n```{r}\nsqrt(2 + 2)\n```\n\nAcabé con mi primer post. FIN\n  \n\nSustituye thumbnail.jpg por otro archivo\nVuelve a regenerar el blog: Build > Render Website"
   },
   {
     "objectID": "taller/slides_tareas_01.html#resumen-4",

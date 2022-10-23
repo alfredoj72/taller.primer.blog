@@ -1120,21 +1120,24 @@
 </div>
 <div class="callout-content">
 <ul>
-<li><p>Modifica el contenido de <code>/my-primer-post/index.qmd</code>. Por ejemplo, puedes dejarlo así:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="sc">---</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a>title<span class="sc">:</span> <span class="st">"Mi primer post con Quarto"</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a>author<span class="sc">:</span> <span class="st">"Pedro J. Pérez"</span></span>
-<span id="cb9-4"><a href="#cb9-4"></a>date<span class="sc">:</span> <span class="st">"2022-10-25"</span></span>
-<span id="cb9-5"><a href="#cb9-5"></a>categories<span class="sc">:</span> [R, quarto]</span>
-<span id="cb9-6"><a href="#cb9-6"></a><span class="sc">---</span></span>
+<li>Modifica el contenido de <code>/my-primer-post/index.qmd</code>. Por ejemplo, puedes dejarlo así:</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1"></a><span class="co">---</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="an">title:</span><span class="co"> "Mi primer post con Quarto"</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="an">author:</span><span class="co"> "Pedro J. Pérez"</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="an">date:</span><span class="co"> "2022-10-25"</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="an">categories:</span><span class="co"> [R, quarto]</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a><span class="co">---</span></span>
 <span id="cb9-7"><a href="#cb9-7"></a></span>
-<span id="cb9-8"><a href="#cb9-8"></a>Este es mi primer post con Quarto<span class="sc">!!!!</span></span>
+<span id="cb9-8"><a href="#cb9-8"></a>Este es mi **primer post** con Quarto!!!!</span>
 <span id="cb9-9"><a href="#cb9-9"></a></span>
-<span id="cb9-10"><a href="#cb9-10"></a><span class="sc">!</span>[](thumbnail.jpg)</span>
-<span id="cb9-11"><a href="#cb9-11"></a></span>
-<span id="cb9-12"><a href="#cb9-12"></a>Acabé con mi primer post. FIN</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></li>
+<span id="cb9-10"><a href="#cb9-10"></a><span class="in">```{r}</span></span>
+<span id="cb9-11"><a href="#cb9-11"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
+<span id="cb9-12"><a href="#cb9-12"></a><span class="in">```</span></span>
+<span id="cb9-13"><a href="#cb9-13"></a></span>
+<span id="cb9-14"><a href="#cb9-14"></a>Acabé con mi primer post. FIN</span>
+<span id="cb9-15"><a href="#cb9-15"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
 <li><p>Sustituye <code>thumbnail.jpg</code> por otro archivo</p></li>
 <li><p>Vuelve a regenerar el blog: <code>Build &gt; Render Website</code></p></li>
 </ul>
