@@ -4,6 +4,8 @@ subtitle: "(Slides para el presentador)"
 date: "24/10/2022"
 format: 
   revealjs:
+    #logo: .png
+    #smaller: true
     scrollable: true
     slide-level: 2
     height: 900
@@ -46,7 +48,7 @@ css: /assets/styles_slides_tareas.css
 
 <br>
 
-# 2. Creación de un blog básico con Quarto
+# 2. Creación de un blog básico con Quarto  {background-color="#D7E8CB"}
 
  (2ª parte del tutorial)
  
@@ -56,8 +58,6 @@ css: /assets/styles_slides_tareas.css
 
 
 ---
-
-## Tarea 1 
 
 {{< include ./_includes/_tt_02_03_tarea_01.qmd >}}
 
@@ -82,14 +82,13 @@ Los **archivos importantes** ahora son:
 
 ---
 
-## Generación del blog
-
 {{< include ./_includes/_tt_02_05_generacion-blog.qmd >}}
 
 
-- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en Internet.
-
 {{< include ./_includes/_tt_02_06_extensiones.qmd >}}
+
+
+- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en Internet.
 
 <br>
 
@@ -124,7 +123,7 @@ Los **archivos importantes** ahora son:
 
 ---
 
-## Contenido de `index.qmd`
+## Contenido de `index.qmd` {.smaller}
 
 - El archivo  `index.qmd` genera `index.html`, la página principal (o Home) de nuestro blog
 
@@ -134,7 +133,7 @@ Los **archivos importantes** ahora son:
 
 ---
 
-## Alojando el blog
+## Alojando el blog  
 
 {{< include ./_includes/_tt_02_10_tarea-04.qmd >}}
 
@@ -146,14 +145,12 @@ Los **archivos importantes** ahora son:
 
 ---
 
-## Resumen
-
 {{< include ./_includes/_tt_02_12_resumen.qmd >}}
 
 <br>
 
 
-# 3. Tuneado básico del blog
+# 3. Tuneado básico del blog  {background-color="#D7E8CB"}
 
 (3ª parte del tutorial)
 
@@ -163,23 +160,25 @@ Los **archivos importantes** ahora son:
 
 ---
 
-## Archivo `_quarto.yml`
+## Archivo `_quarto.yml` {.smaller}
 
 {{< include ./_includes/_tt_03_02_quarto-yaml.qmd >}}
 
-<br>
+
+---  
+
+## 
+
+{{< include ./_includes/_tt_03_03_tarea-01.qmd >}} 
+
+- **linea 5**: título del blog
+- **lineas 17-19**: añadimos la pestaña "Docencia" a la izquierda de la navbar
+- **lineas 21-26**: modificamos el theme ...,  **CSS**, ....
+
+
+- [Aquí](https://pjperez.quarto.pub/blog_prueba_01/) puedes ver como quedaría el blog tras haber modificado `_quarto.yml`.
 
 ---
-
-## Tarea 1
-
-{{< include ./_includes/_tt_03_03_tarea-01.qmd >}}
-
-<br>
-
----
-
-## Tareas 2, 3 y 4
 
 {{< include ./_includes/_tt_03_04_tarea-02.qmd >}}
 
@@ -188,9 +187,6 @@ Los **archivos importantes** ahora son:
 {{< include ./_includes/_tt_03_06_tarea-04.qmd >}}
 
 
-- [Aquí](https://pjperez.quarto.pub/blog_prueba_01/) puedes ver como quedaría el blog tras haber modificado `_quarto.yml`.
-
-<br>
 
 ---
 
@@ -200,11 +196,11 @@ Los **archivos importantes** ahora son:
 
 - De momento, **solo vamos a hacer cambios en la segunda linea**: cambiaremos el título.
 
+- Fijaros que es un archivo especial: "sólo tiene yaml"
+
 <br>
 
 ---
-
-## Tarea 5
 
 {{< include ./_includes/_tt_03_08_tarea-05.qmd >}}
 
@@ -212,7 +208,7 @@ Los **archivos importantes** ahora son:
 
 ---
 
-## Archivo `about.qmd`
+## Archivo `about.qmd` {.smaller}
 
 {{< include ./_includes/_tt_03_09_archivo-about.qmd >}}
 
@@ -226,8 +222,6 @@ Los **archivos importantes** ahora son:
 <br>
 
 ---
-
-## Tarea 6
 
 {{< include ./_includes/_tt_03_10_tarea-06.qmd >}}
 
@@ -245,13 +239,11 @@ Los **archivos importantes** ahora son:
 
 ---
 
-## Resumen
-
 {{< include ./_includes/_tt_03_12_resumen.qmd >}}
 
 <br>
 
-# 4.  Workflow: ¿cómo crear un post? 
+# 4.  Workflow: ¿cómo crear un post?  {background-color="#D7E8CB"}
 
 (4ª parte del tutorial)
 
@@ -265,17 +257,21 @@ Los **archivos importantes** ahora son:
 
 - Los ficheros `.qmd` que generan los posts están **en la carpeta `posts`** de nuestro Qproject que genera el blog. 
 
-- **Cada post** está en **una carpeta diferente**. Veámoslo:
+- **Cada post** está en **una carpeta diferente**:
 
 {{< include ./_includes/_tt_04_02_carpeta-posts.qmd >}}
 
-<br>
+
+- Veamos (en la siguiente slide) el contenido de `./posts/welcome/`
+
 
 ---
 
 ## Contenido de cada subcarpeta de `./posts/`
 
-Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la carpeta `/welcome/`:
+<br>
+
+- Por ejemplo de  `./posts/welcome/`
 
 
 {{< include ./_includes/_tt_04_03_contenido-1-post.qmd >}}
@@ -284,14 +280,11 @@ Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la
 
 ---
 
-## Creando un nuevo post
-
 {{< include ./_includes/_tt_04_04_tarea-01.qmd >}}
 
 
 ---
 
-## Modificando el nuevo post
 
 {{< include ./_includes/_tt_04_05_tarea-02.qmd >}}
 
@@ -300,14 +293,13 @@ Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la
 
 ---
 
-## Resumen
 
 {{< include ./_includes/_tt_04_06_resumen.qmd >}}
 
 
 <br>
 
-# 5. Escribiendo posts: practicando con Quarto 
+# 5. Escribiendo posts: practicando con Quarto  {background-color="#D7E8CB"}
 
 (5ª parte del tutorial)
 

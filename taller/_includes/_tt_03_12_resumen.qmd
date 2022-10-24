@@ -1,5 +1,5 @@
 ::: {.callout-tip collapse="true" appearance="default" icon="false"}
-#### Resumen
+#### Resumen (tutorial nº 3)
 
 - En esta tercera parte del taller hemos aprendido a **mejorar/tunear un poco nuestro blog**.
 

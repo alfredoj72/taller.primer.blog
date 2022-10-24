@@ -11,6 +11,7 @@ toc-title: Tutorial nº 7
 
 ### Nivel proyecto (`_quarto.yml`) 
 
+- lenguaje
 
 
 - Todos los Qprojects contienen un archivo de configuración  llamado `_quarto.yml`: todo documento que se procese (render) dentro del directorio del proyecto heredará automáticamente los metadatos definidos en `_quarto.yml`.

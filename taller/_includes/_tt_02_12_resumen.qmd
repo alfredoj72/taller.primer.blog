@@ -1,5 +1,5 @@
 ::: {.callout-tip collapse="true" appearance="default" icon="false"}
-#### Resumen
+#### Resumen (tutorial nº 2)
 
 En este tutorial, la **segunda parte del taller**, hemos visto:
 
