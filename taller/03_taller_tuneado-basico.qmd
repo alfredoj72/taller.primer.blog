@@ -2,6 +2,7 @@
 title: "Tuneado básico del blog con Quarto"
 subtitle: "(3ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 #abstract: "En el anterior tutorial creamos un blog básico con Quarto. Ahora vamos a adaptar el blog a nuestras necesidades (tunear)"
+toc-title: Tutorial nº 3
 ---
 
 {{< include ./_includes/_contexto.qmd >}}

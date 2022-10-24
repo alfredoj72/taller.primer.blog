@@ -2,6 +2,7 @@
 title: "Tuneado del blog"
 subtitle: "(7ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 title-block-banner-color : "#FFDDFF"
+toc-title: Tutorial nº 7
 ---
 
 
