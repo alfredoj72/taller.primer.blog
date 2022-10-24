@@ -229,7 +229,7 @@ Los *chunks* de código también son muy similares en `.qmd` que en `.Rmd`
 Las principales diferencias son: 
 
 
-Link interno a las  [slides de introducción](04_taller_slides.qmd)
+Link interno a las  [slides de introducción](01_taller_slides.qmd)
 
 ## Extras
 
