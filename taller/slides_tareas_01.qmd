@@ -437,10 +437,80 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 ::::
 
 
+---
+
+{{< include ./_includes/_tt_05_08_tarea-01.qmd >}}
 
 
 ---
 
-## YAML: NIVEL CARPETA (`./<carpeta>/_metadata.yml`)  {.smaller}
+### YAML nivel carpeta
 
+- Abajo el, contenido del fichero `./posts/_metadata.yml` de nuestro blog
+
+{{< include ./_includes/_tt_05_09_yaml-nivel-carpeta.qmd >}}
+
+
+---
+
+### YAML nivel carpeta
+
+<br>
+
+{{< include ./_includes/_tt_05_10_tarea-5-02.qmd >}}
+
+
+---
+
+### YAML: nivel documento
+
+<br>
+
+{{< include ./_includes/_tt_05_11_tarea-5-03.qmd >}}
+
+
+---
+
+### Texto (o narrativas)
+
+
+- Se escribe (al igual que en los documentos `.Rmd`)  en **markdown**. [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) la documentación oficial de Quarto.
+
+
+- Practicaremos (en un ejemplo): [tablas](https://quarto.org/docs/authoring/tables.html), [figuras](https://quarto.org/docs/authoring/figures.html), ...
+
+- [Editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/)
+
+
+---
+
+### CHUNKS
+
+- **Comportamiento similar** a los chunks en documentos `.Rmd`. La documentación oficial está [aquí](https://quarto.org/docs/computations/execution-options.html)
+
+
+##### Principales diferencias
+
+- En ficheros `.qmd`, **las opciones de los chunks se pueden especificar globalmente en el YAML** y a nivel individual en cada uno de los chunks.
+
+
+
+- En los **chunks individuales** ahora se se utiliza la **sintaxis YAML** (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
+
+![](./imagenes/tt_01/img_22.png){fig-align="center"}
+
+
+---
+
+### CHUNKS
+
+
+- Las principales opciones son: **echo**, **eval**, **warning**, **error**, **output** e **include**. [Aquí](https://quarto.org/docs/computations/execution-options.html#output-options) la documentación oficial.
+
+
+- `echo`, además los típicos true y false, ahora incorpora un nuevo valor `fenced` que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo). Los llamados **unexecuted Blocks**, documentación [aquí](https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks), también facilitan mostrar las marcas de los chunks en el documento de salida.
+
+- Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
+
+![](./imagenes/tt_01/img_23.png){fig-align="center"}
 

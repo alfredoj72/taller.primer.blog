@@ -640,15 +640,10 @@ Tarea 5.1: Modificar <code>_quarto.yml</code>
 <h3 data-number="2.3" class="anchored" data-anchor-id="yaml-nivel-carpeta"><span class="header-section-number">2.3</span> Yaml nivel carpeta</h3>
 <p>Como ya sabemos, si en una carpeta hay un fichero <code>_metadata.yml</code>, todos los documentos <code>.qmd</code> que se procesen en esa carpeta se verán afectados por esas opciones. Veamos como tenemos ahora mismo ese archivo.</p>
 <p>Abajo el, contenido del fichero <code>./posts/_metadata.yml</code> de nuestro blog</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-overflow-scroll code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># freeze computational output</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># (see https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>freeze<span class="sc">:</span> true</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Enable banner style title blocks</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_24.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 <p><br></p>
 <section id="tarea-5.2" class="level4">
@@ -668,16 +663,16 @@ Tarea 5.2: Modificar <code>./posts/_metadata.yml</code>
 <li>Tenemos que dejar el archivo <code>./posts/_metadata.yml</code> así:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a></span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="co"># freeze computational output</span></span>
-<span id="cb9-4"><a href="#cb9-4"></a><span class="co"># freeze controls whether execution occurs during global project renders</span></span>
-<span id="cb9-5"><a href="#cb9-5"></a><span class="co"># (see https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
-<span id="cb9-6"><a href="#cb9-6"></a>freeze<span class="sc">:</span> auto   <span class="co">#- {false, true, auto}</span></span>
-<span id="cb9-7"><a href="#cb9-7"></a></span>
-<span id="cb9-8"><a href="#cb9-8"></a><span class="co"># Enable banner style title blocks</span></span>
-<span id="cb9-9"><a href="#cb9-9"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
-<span id="cb9-10"><a href="#cb9-10"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="co"># freeze computational output</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="co"># freeze controls whether execution occurs during global project renders</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="co"># (see https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a>freeze<span class="sc">:</span> auto   <span class="co">#- {false, true, auto}</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a></span>
+<span id="cb8-8"><a href="#cb8-8"></a><span class="co"># Enable banner style title blocks</span></span>
+<span id="cb8-9"><a href="#cb8-9"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -703,21 +698,21 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 <ul>
 <li>Tenemos que dejar el archivo <code>./posts/my-primer-post/index.qmd</code> así:</li>
 </ul>
-<div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Mi primer post con Quarto"</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Pedro J. Pérez"</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2022-10-25"</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [R, quarto]</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>Este es mi **primer post** con Quarto!!!!</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>Acabé con mi primer post. FIN</span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Mi primer post con Quarto"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Pedro J. Pérez"</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2022-10-25"</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [R, quarto]</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>Este es mi **primer post** con Quarto!!!!</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>Acabé con mi primer post. FIN</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><p>Sustituye <code>thumbnail.jpg</code> por otro archivo</p></li>
 <li><p>Vuelve a regenerar el blog: <code>Build &gt; Render Website</code></p></li>
@@ -841,19 +836,19 @@ Extensiones: mi setup chunk
 <div class="border">
 <p>This content can be styled with a border</p>
 </div>
-<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This is *some text*</span><span class="co">]</span>{.class key="val"}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This is *some text*</span><span class="co">]</span>{.class key="val"}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="call-outs" class="level4">
 <h4 class="anchored" data-anchor-id="call-outs">Call-outs</h4>
 <p><a href="https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd">Call-outs bervatim</a></p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="inline" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="inline"><span class="header-section-number">5.1</span> Inline</h3>
