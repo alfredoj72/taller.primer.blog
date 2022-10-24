@@ -767,7 +767,7 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 </section>
 <section id="chunks-de-código" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="chunks-de-código"><span class="header-section-number">4</span> Chunks de código</h2>
-<p>Los <em>chunks</em> de código en <code>.qmd</code> también son similares a lo que ocurría en <code>.Rmd</code>. La <strong>documentación oficial</strong> está <a href="https://quarto.org/docs/computations/execution-options.html">aquí</a></p>
+<p>Los <em>chunks</em> de código en <code>.qmd</code> también <strong>son similares</strong> a lo que ocurría en <code>.Rmd</code>. La <strong>documentación oficial</strong> está <a href="https://quarto.org/docs/computations/execution-options.html">aquí</a></p>
 <p>Las <strong>principales diferencias</strong> son:</p>
 <ul>
 <li>En <code>.Rmd</code> las opciones de los chunks se podían especificar de forma global en un chunk inicial (generalmente llamado setup) y a nivel individual en cada uno de los chunks; mientras que ahora, <strong>las opciones de los chunks se pueden especificar globalmente en el YAML</strong> y a nivel individual en cada uno de los chunks.</li>
@@ -804,8 +804,8 @@ Extensiones: mi setup chunk
 <ul>
 <li><p>Las principales opciones son: <strong>echo</strong>, <strong>eval</strong>, <strong>warning</strong>, <strong>error</strong>, <strong>output</strong> e <strong>include</strong>. <a href="https://quarto.org/docs/computations/execution-options.html#output-options">Aquí</a> la documentación oficial.</p></li>
 <li><p><code>output</code>, además de true y false, puede tomar el valor <code>asis</code> para indicar que el output es “raw markdown”.</p></li>
-<li><p><code>echo</code>, además los típicos true y false, incorpora un nuevo valor <code>fenced</code> que facilita mostrar las marcas de los chunks.</p></li>
-<li><p>Además, si usamos <code>knitr</code> para ejecutar los chunks, entonces podemos usar todas las <a href="https://yihui.org/knitr/options/">opciones nativas de <code>knitr</code></a>, como: collapse, fig.withd, comment, etc … Más información <a href="https://quarto.org/docs/computations/execution-options.html#knitr-options">aquí</a>. Un ejemplo:</p></li>
+<li><p><code>echo</code>, además los típicos true y false, incorpora un nuevo valor <code>fenced</code> que facilita mostrar las marcas de los chunks. Documentación <a href="https://quarto.org/docs/computations/execution-options.html#fenced-echo">aquí</a>. También facilita mostrar las marcas de los chunks los llamados <strong>unexecuted Blocks</strong>. Documentación <a href="https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks">aquí</a></p></li>
+<li><p>Además, si usamos <code>knitr</code> para ejecutar los chunks, entonces podemos usar todas las <a href="https://yihui.org/knitr/options/">opciones nativas de <code>knitr</code></a>, como: collapse, fig.width, comment, etc … Más información <a href="https://quarto.org/docs/computations/execution-options.html#knitr-options">aquí</a>. Un ejemplo:</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

@@ -228,7 +228,7 @@ Además de los elementos de escritura que nos ofrece la sintaxis básica de `mar
 ## Chunks de código
 
 
-Los *chunks* de código en `.qmd`  también son  similares a lo que ocurría en `.Rmd`. La **documentación oficial** está [aquí](https://quarto.org/docs/computations/execution-options.html)
+Los *chunks* de código en `.qmd` también **son similares** a lo que ocurría en `.Rmd`. La **documentación oficial** está [aquí](https://quarto.org/docs/computations/execution-options.html)
 
 Las **principales diferencias** son:
 

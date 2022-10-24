@@ -12,7 +12,7 @@
 
 #- SLIDES ----------------------------------------------------------------------
 #- poner en una esquinar el nº de tutorial x el q vamos
-#- areglar títulos de las slides (color, centrado , tamaño y más espacio abajo)
+#- arreglar títulos de las slides (color, centrado , tamaño y más espacio abajo)
 
 
 ## Inline

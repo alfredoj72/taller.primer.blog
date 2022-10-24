@@ -1098,7 +1098,7 @@
 <div class="callout callout-important no-icon callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
-<p><strong>Tarea 1: Creando un nuevo post</strong></p>
+<p><strong>Tarea 4.1: Creando un nuevo post</strong></p>
 </div>
 <div class="callout-content">
 <ul>
@@ -1116,7 +1116,7 @@
 <div class="callout callout-important no-icon callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
-<p><strong>Tarea 2: Modificando el tercer post</strong></p>
+<p><strong>Tarea 4.2: Modificando el tercer post</strong></p>
 </div>
 <div class="callout-content">
 <ul>
@@ -1285,7 +1285,7 @@
 </div>
 </div>
 <div id="tabset-1-2">
-<p>Abajo el, contenido del fichero <code>/posts/_metadata.yml</code>. Afectará a todos los ficheros <code>.qmd</code> que haya en la carpeta <code>/posts/</code></p>
+<p>Abajo el, contenido del fichero <code>./posts/_metadata.yml</code>. Afectará a todos los ficheros <code>.qmd</code> que haya en la carpeta <code>./posts/</code></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
 <span id="cb11-2"><a href="#cb11-2"></a></span>
@@ -1298,21 +1298,22 @@
 </div>
 </div>
 <div id="tabset-1-3">
-<p>Abajo el encabezamiento del fichero <code>/posts/my-primer-post/index.qmd</code>:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="sc">---</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a>title<span class="sc">:</span> <span class="st">"Mi primer post con Quarto"</span></span>
-<span id="cb12-3"><a href="#cb12-3"></a>author<span class="sc">:</span> <span class="st">"Pedro J. Pérez"</span></span>
-<span id="cb12-4"><a href="#cb12-4"></a>date<span class="sc">:</span> <span class="st">"2022-10-25"</span></span>
-<span id="cb12-5"><a href="#cb12-5"></a>categories<span class="sc">:</span> [R, quarto]</span>
-<span id="cb12-6"><a href="#cb12-6"></a><span class="sc">---</span></span>
+<p>Abajo el encabezamiento del fichero <code>./posts/my-primer-post/index.qmd</code>:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">---</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="an">title:</span><span class="co"> "Mi primer post con Quarto"</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="an">author:</span><span class="co"> "Pedro J. Pérez"</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="an">date:</span><span class="co"> "2022-10-25"</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="an">categories:</span><span class="co"> [R, quarto]</span></span>
+<span id="cb12-6"><a href="#cb12-6"></a><span class="co">---</span></span>
 <span id="cb12-7"><a href="#cb12-7"></a></span>
-<span id="cb12-8"><a href="#cb12-8"></a>Este es mi primer post con Quarto<span class="sc">!!!!</span></span>
+<span id="cb12-8"><a href="#cb12-8"></a>Este es mi **primer post** con Quarto!!!!</span>
 <span id="cb12-9"><a href="#cb12-9"></a></span>
-<span id="cb12-10"><a href="#cb12-10"></a><span class="sc">!</span>[](thumbnail.jpg)</span>
-<span id="cb12-11"><a href="#cb12-11"></a></span>
-<span id="cb12-12"><a href="#cb12-12"></a>Acabé con mi primer post. FIN</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<span id="cb12-10"><a href="#cb12-10"></a><span class="in">```{r}</span></span>
+<span id="cb12-11"><a href="#cb12-11"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
+<span id="cb12-12"><a href="#cb12-12"></a><span class="in">```</span></span>
+<span id="cb12-13"><a href="#cb12-13"></a></span>
+<span id="cb12-14"><a href="#cb12-14"></a>Acabé con mi primer post. FIN</span>
+<span id="cb12-15"><a href="#cb12-15"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
