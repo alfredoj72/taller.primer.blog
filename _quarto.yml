@@ -27,9 +27,9 @@ website:
       - text: "Materiales"
         href: materiales.qmd
       - setup.qmd
-      - about.qmd
       - text: "Recursos"
         href: recursos.qmd
+      - about.qmd
       - icon: github
         href: https://github.com/perezp44
       - icon: twitter
