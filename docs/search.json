@@ -46,14 +46,14 @@
     "href": "taller/05_taller_escribir-posts.html#texto",
     "title": "Escribiendo posts: practicando con Quarto",
     "section": "3 Texto",
-    "text": "3 Texto\nEl texto (o narrativa) de un documento .qmd se escribe, al igual que en los documentos .Rmd en markdown. Aquí la documentación oficial de Quarto.\n\n\n3.1 Sintaxis básica de markdown\n\nAquí puedes ver o recordar la sintaxis básica, las principales reglas para escribir en markdown.\nComo ejemplo:\n\n\n\n\n\n\n\n\nSI ESCRIBES ESTO:\nSE VERÁ ESTO (output):\n\n\n\n\nFormato de texto\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code\n\n\nTÍTULOS\n\n\n\n\n\n\n3.2 Más elementos para “escribir”\nAdemás de los elementos de escritura que nos ofrece la sintaxis básica de markdown. Quarto nos ofrece más posibilidades, veamos algunas de ellas:\n\nFiguras\nhttps://quarto.org/docs/authoring/figures.html\n\n\nTablas\nhttps://quarto.org/docs/authoring/tables.html\n\nEscribir con el editor visual: https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
+    "text": "3 Texto\nEl texto (o narrativa) de un documento .qmd se escribe, al igual que en los documentos .Rmd en markdown. Aquí la documentación oficial de Quarto.\nNo lo vamos a practicar ahora. Lo haremos (un poco) luego cuando hagamos un post de ejemplo. \n\n3.1 Sintaxis básica de markdown\n\nAquí puedes ver o recordar la sintaxis básica, las principales reglas para escribir en markdown.\nComo ejemplo:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.2 Más elementos para “escribir”\nAdemás de los elementos de escritura que nos ofrece la sintaxis básica de markdown. Quarto nos ofrece más posibilidades, veamos algunas de ellas:\n\nFiguras\nhttps://quarto.org/docs/authoring/figures.html\n\n\nTablas\nhttps://quarto.org/docs/authoring/tables.html\n\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
   },
   {
     "objectID": "taller/05_taller_escribir-posts.html#chunks-de-código",
     "href": "taller/05_taller_escribir-posts.html#chunks-de-código",
     "title": "Escribiendo posts: practicando con Quarto",
     "section": "4 Chunks de código",
-    "text": "4 Chunks de código\n\nLos chunks de código también son muy similares en .qmdque en `.Rmd\nLas principales diferencias son:\n\nLink interno al 4º tutorial"
+    "text": "4 Chunks de código\nLos chunks de código también son muy similares en .qmd que en .Rmd\nLas principales diferencias son:\nLink interno a las slides de introducción"
   },
   {
     "objectID": "taller/05_taller_escribir-posts.html#extras",

@@ -724,49 +724,24 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 <section id="texto" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="texto"><span class="header-section-number">3</span> Texto</h2>
 <p>El texto (o narrativa) de un documento <code>.qmd</code> se escribe, al igual que en los documentos <code>.Rmd</code> en <code>markdown</code>. <a href="https://quarto.org/docs/authoring/markdown-basics.html">Aquí</a> la documentación oficial de Quarto.</p>
-<p><br></p>
+<p>No lo vamos a practicar ahora. Lo haremos (un poco) luego cuando hagamos un post de ejemplo. <br></p>
 <section id="sintaxis-básica-de-markdown" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="sintaxis-básica-de-markdown"><span class="header-section-number">3.1</span> Sintaxis básica de <code>markdown</code></h3>
 <ul>
 <li><p><a href="https://quarto.org/docs/authoring/markdown-basics.html">Aquí</a> puedes ver o recordar la sintaxis básica, las principales reglas para escribir en <code>markdown</code>.</p></li>
 <li><p>Como ejemplo:</p></li>
 </ul>
-<table class="table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 44%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>SI ESCRIBES ESTO:</th>
-<th>SE VERÁ ESTO (output):</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td colspan="2"><strong>Formato de texto</strong></td>
-</tr>
-<tr class="even">
-<td><pre><code>*italics* and **bold**</code></pre></td>
-<td><em>italics</em> and <strong>bold</strong></td>
-</tr>
-<tr class="odd">
-<td><pre><code>superscript^2^ / subscript~2~</code></pre></td>
-<td>superscript<sup>2</sup> / subscript<sub>2</sub></td>
-</tr>
-<tr class="even">
-<td><pre><code>~~strikethrough~~</code></pre></td>
-<td><del>strikethrough</del></td>
-</tr>
-<tr class="odd">
-<td><pre><code>`verbatim code`</code></pre></td>
-<td><code>verbatim code</code></td>
-</tr>
-<tr class="even">
-<td colspan="2"><strong>TÍTULOS</strong></td>
-</tr>
-</tbody>
-</table>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_20.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <p><br></p>
 </section>
 <section id="más-elementos-para-escribir" class="level3" data-number="3.2">
@@ -779,20 +754,19 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 <section id="tablas" class="level4">
 <h4 class="anchored" data-anchor-id="tablas">Tablas</h4>
 <p><a href="https://quarto.org/docs/authoring/tables.html" class="uri">https://quarto.org/docs/authoring/tables.html</a></p>
-<ul>
-<li>Escribir con el editor visual: <a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/" class="uri">https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/</a></li>
-</ul>
-<p><br><br></p>
+</section>
+<section id="editor-visual" class="level4">
+<h4 class="anchored" data-anchor-id="editor-visual">Editor visual</h4>
+<p><a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/" class="uri">https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/</a></p>
+<p><br></p>
 </section>
 </section>
 </section>
 <section id="chunks-de-código" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="chunks-de-código"><span class="header-section-number">4</span> Chunks de código</h2>
-<ul>
-<li><p>Los <em>chunks</em> de código también son muy similares en <code>.qmd</code>que en `.Rmd</p></li>
-<li><p>Las principales diferencias son:</p></li>
-</ul>
-<p>Link interno al <a href="../taller/04_taller_crear-post.html">4º tutorial</a></p>
+<p>Los <em>chunks</em> de código también son muy similares en <code>.qmd</code> que en <code>.Rmd</code></p>
+<p>Las principales diferencias son:</p>
+<p>Link interno a las <a href="04_taller_slides.qmd">slides de introducción</a></p>
 </section>
 <section id="extras" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="extras"><span class="header-section-number">5</span> Extras</h2>
@@ -809,19 +783,19 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 <div class="border">
 <p>This content can be styled with a border</p>
 </div>
-<div class="sourceCode" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This is *some text*</span><span class="co">]</span>{.class key="val"}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This is *some text*</span><span class="co">]</span>{.class key="val"}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="call-outs" class="level4">
 <h4 class="anchored" data-anchor-id="call-outs">Call-outs</h4>
 <p><a href="https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd">Call-outs bervatim</a></p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="inline" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="inline"><span class="header-section-number">5.1</span> Inline</h3>
