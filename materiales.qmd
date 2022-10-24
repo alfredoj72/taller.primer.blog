@@ -26,6 +26,9 @@ El taller está pensado para realizar con [R](https://cran.r-project.org/){targe
 
 #### 8. [Opciones de alojamiento](./taller/08_taller_alojamiento.qmd){target="_blank"} (10 min)
 
+
+#### 9. [Plantilla para escribir con Quarto](./taller/09_taller_plantilla_escribir_quarto.qmd){target="_blank"} (xxx min)
+
 <br>
 
 ----------------------

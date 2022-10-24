@@ -1,0 +1,8 @@
+---
+title: ""
+---
+
+Desde que **Quarto** se hizo publico con [We don't talk about Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) ha sido un no parar de workshops, posts, etc... en esta página tienes una selección de recursos sobre Quarto.
+
+
+

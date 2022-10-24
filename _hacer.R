@@ -17,7 +17,20 @@
 
 ## Inline
 
+esto esta en R4DS
+comma <- function(x) format(x, digits = 2, big.mark = ",")
+comma(3452345)
+#> [1] "3,452,345"
+comma(.12358124331)
 
+
+
+sel-contained se hace ahora con:
+
+format:
+  html:
+  embed-resources: true
+#> [1] "0.12"
 ```markdown
 ## Circle
 

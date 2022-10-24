@@ -322,6 +322,7 @@ Note that there are five types of callouts, including:
 ## Resumen
 
 ::: {.callout-tip collapse="true" appearance="default" icon="false"}
+
 #### Resumen
 
 - En esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.

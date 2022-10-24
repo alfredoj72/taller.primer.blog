@@ -70,5 +70,17 @@
   },
   "taller/feo.qmd": {
     "feo.html": "38d78d2a"
+  },
+  "taller/09_ejemplo_post.qmd": {
+    "09_ejemplo_post.html": "deea1787"
+  },
+  "taller/09_platilla_escribir_quarto.qmd": {
+    "09_platilla_escribir_quarto.html": "74dc0bb7"
+  },
+  "recursos.qmd": {
+    "recursos.html": "a7cc3139"
+  },
+  "taller/09_taller_plantilla_escribir_quarto.qmd": {
+    "09_taller_plantilla_escribir_quarto.html": "93b30806"
   }
 }
