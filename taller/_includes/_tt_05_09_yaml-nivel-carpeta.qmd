@@ -1,4 +1,4 @@
-Abajo el, contenido del fichero `./posts/_metadata.yml`. Afectará a todos los ficheros `.qmd` que haya en la carpeta `./posts/`
+
 
 ```{r, eval = FALSE}
 #| code-overflow: scroll   #- {scroll, wrap}

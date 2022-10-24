@@ -1,4 +1,4 @@
 ::: { layout-ncol=1}
-![](./imagenes/tt_01/img_20.png){fig-align="center"}
+![](./imagenes/tt_01/img_20_markdown.png){fig-align="center"}
 
 :::

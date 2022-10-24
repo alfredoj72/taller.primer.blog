@@ -217,8 +217,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#sintaxis-básica-de-markdown" id="toc-sintaxis-básica-de-markdown" class="nav-link" data-scroll-target="#sintaxis-básica-de-markdown"><span class="toc-section-number">3.1</span>  Sintaxis básica de <code>markdown</code></a></li>
   <li><a href="#más-elementos-para-escribir" id="toc-más-elementos-para-escribir" class="nav-link" data-scroll-target="#más-elementos-para-escribir"><span class="toc-section-number">3.2</span>  Más elementos para “escribir”</a></li>
   </ul></li>
-  <li><a href="#chunks-de-código" id="toc-chunks-de-código" class="nav-link" data-scroll-target="#chunks-de-código"><span class="toc-section-number">4</span>  Chunks de código</a></li>
-  <li><a href="#extras" id="toc-extras" class="nav-link" data-scroll-target="#extras"><span class="toc-section-number">5</span>  Extras</a>
+  <li><a href="#chunks-de-código" id="toc-chunks-de-código" class="nav-link" data-scroll-target="#chunks-de-código"><span class="toc-section-number">4</span>  Chunks de código</a>
+  <ul class="collapse">
+  <li><a href="#diferencias-con-.rmd" id="toc-diferencias-con-.rmd" class="nav-link" data-scroll-target="#diferencias-con-.rmd"><span class="toc-section-number">4.1</span>  Diferencias con .Rmd</a></li>
+  </ul></li>
+  <li><a href="#un-ejemplo" id="toc-un-ejemplo" class="nav-link" data-scroll-target="#un-ejemplo"><span class="toc-section-number">5</span>  Un ejemplo</a>
   <ul class="collapse">
   <li><a href="#inline" id="toc-inline" class="nav-link" data-scroll-target="#inline"><span class="toc-section-number">5.1</span>  Inline</a></li>
   </ul></li>
@@ -392,7 +395,10 @@ Advertencia
 </ol>
 <p>De esta forma, potencialmente, un post puede recibir opciones de YAML desde los 3 niveles. Si hay conflictos <strong>prevalecen las opciones del nivel documento</strong>, luego nivel carpeta y finalmente nivel proyecto.</p>
 <p>Los blogs se publican en <strong>formato html</strong>, de forma que, <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a> tienes la <strong>documentación oficial</strong> de Quarto con las <strong>principales opciones</strong> que se pueden fijar con el YAML para documentos html.</p>
-<p>Como ves, es imposible repasar todas las opciones en el taller, solamente veremos algunas. Para ello, creo que la forma más operativa para el taller es mostrar ejemplos de ficheros <code>.yml</code> y revisar su contenido.</p>
+<p>Es imposible repasar todas las opciones de YAML en el taller, veremos solamente algunas. Para ello, creo que la forma más operativa consistirá en mostrar ejemplos de ficheros <code>.yml</code> y revisar su contenido. Por ejemplo veamos las opciones YAML que tiene ahora nuestro blog:</p>
+<p><br></p>
+<section id="opciones-yaml-de-nuestro-blog" class="level4">
+<h4 class="anchored" data-anchor-id="opciones-yaml-de-nuestro-blog">Opciones YAML de nuestro blog</h4>
 <div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">1. nivel proyecto (_quarto.yml)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">2. nivel carpeta (_metadata.yml)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">3. nivel documento (index.qmd)</a></li></ul>
 <div class="tab-content">
@@ -464,6 +470,7 @@ Advertencia
 </div>
 </div>
 <p><br></p>
+</section>
 </section>
 <section id="yaml-nivel-proyecto" class="level3" data-number="2.2">
 <h3 data-number="2.2" class="anchored" data-anchor-id="yaml-nivel-proyecto"><span class="header-section-number">2.2</span> Yaml nivel proyecto</h3>
@@ -632,7 +639,7 @@ Tarea 5.1: Modificar <code>_quarto.yml</code>
 <section id="yaml-nivel-carpeta" class="level3" data-number="2.3">
 <h3 data-number="2.3" class="anchored" data-anchor-id="yaml-nivel-carpeta"><span class="header-section-number">2.3</span> Yaml nivel carpeta</h3>
 <p>Como ya sabemos, si en una carpeta hay un fichero <code>_metadata.yml</code>, todos los documentos <code>.qmd</code> que se procesen en esa carpeta se verán afectados por esas opciones. Veamos como tenemos ahora mismo ese archivo.</p>
-<p>Abajo el, contenido del fichero <code>./posts/_metadata.yml</code>. Afectará a todos los ficheros <code>.qmd</code> que haya en la carpeta <code>./posts/</code></p>
+<p>Abajo el, contenido del fichero <code>./posts/_metadata.yml</code> de nuestro blog</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-overflow-scroll code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -736,7 +743,7 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./imagenes/tt_01/img_20.png" class="img-fluid figure-img"></p>
+<p><img src="./imagenes/tt_01/img_20_markdown.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -767,10 +774,12 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 </section>
 <section id="chunks-de-código" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="chunks-de-código"><span class="header-section-number">4</span> Chunks de código</h2>
-<p>Los <em>chunks</em> de código en <code>.qmd</code> también <strong>son similares</strong> a lo que ocurría en <code>.Rmd</code>. La <strong>documentación oficial</strong> está <a href="https://quarto.org/docs/computations/execution-options.html">aquí</a></p>
+<p>Los <em>chunks</em> de código en <code>.qmd</code> también tienen un <strong>comportamiento similar</strong> a lo que ocurría en los chunks en documentos <code>.Rmd</code>. La documentación oficial está <a href="https://quarto.org/docs/computations/execution-options.html">aquí</a></p>
+<section id="diferencias-con-.rmd" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="diferencias-con-.rmd"><span class="header-section-number">4.1</span> Diferencias con .Rmd</h3>
 <p>Las <strong>principales diferencias</strong> son:</p>
 <ul>
-<li>En <code>.Rmd</code> las opciones de los chunks se podían especificar de forma global en un chunk inicial (generalmente llamado setup) y a nivel individual en cada uno de los chunks; mientras que ahora, <strong>las opciones de los chunks se pueden especificar globalmente en el YAML</strong> y a nivel individual en cada uno de los chunks.</li>
+<li>En <code>.Rmd</code> las opciones de los chunks se podían especificar de forma global en un chunk inicial (generalmente llamado setup) y a nivel individual en cada uno de los chunks; mientras que ahora, con <code>.qmd</code>, <strong>las opciones de los chunks se pueden especificar globalmente en el YAML</strong> y a nivel individual en cada uno de los chunks.</li>
 </ul>
 <div class="callout-warning callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
@@ -794,7 +803,7 @@ Extensiones: mi setup chunk
 </div>
 </div>
 <ul>
-<li>En los chunks individuales también se utiliza la sintaxis YAML (<code>key: value</code>) en lineas dentro del chunk que empiezan con <code>#|</code>. Por ejemplo:</li>
+<li>En los <strong>chunks individuales</strong> ahora se se utiliza la <strong>sintaxis YAML</strong> (<code>key: value</code>) en lineas dentro del chunk que empiezan con <code>#|</code>. Por ejemplo:</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -803,8 +812,7 @@ Extensiones: mi setup chunk
 </div>
 <ul>
 <li><p>Las principales opciones son: <strong>echo</strong>, <strong>eval</strong>, <strong>warning</strong>, <strong>error</strong>, <strong>output</strong> e <strong>include</strong>. <a href="https://quarto.org/docs/computations/execution-options.html#output-options">Aquí</a> la documentación oficial.</p></li>
-<li><p><code>output</code>, además de true y false, puede tomar el valor <code>asis</code> para indicar que el output es “raw markdown”.</p></li>
-<li><p><code>echo</code>, además los típicos true y false, incorpora un nuevo valor <code>fenced</code> que facilita mostrar las marcas de los chunks. Documentación <a href="https://quarto.org/docs/computations/execution-options.html#fenced-echo">aquí</a>. También facilita mostrar las marcas de los chunks los llamados <strong>unexecuted Blocks</strong>. Documentación <a href="https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks">aquí</a></p></li>
+<li><p><code>echo</code>, además los típicos true y false, ahora incorpora un nuevo valor <code>fenced</code> que facilita mostrar las marcas de los chunks en el documento final. Documentación <a href="https://quarto.org/docs/computations/execution-options.html#fenced-echo">aquí</a>. Los llamados <strong>unexecuted Blocks</strong>, documentación <a href="https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks">aquí</a>, también facilitan mostrar las marcas de los chunks en el documento de salida.</p></li>
 <li><p>Además, si usamos <code>knitr</code> para ejecutar los chunks, entonces podemos usar todas las <a href="https://yihui.org/knitr/options/">opciones nativas de <code>knitr</code></a>, como: collapse, fig.width, comment, etc … Más información <a href="https://quarto.org/docs/computations/execution-options.html#knitr-options">aquí</a>. Un ejemplo:</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
@@ -813,14 +821,18 @@ Extensiones: mi setup chunk
 </figure>
 </div>
 </section>
-<section id="extras" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="extras"><span class="header-section-number">5</span> Extras</h2>
+</section>
+<section id="un-ejemplo" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="un-ejemplo"><span class="header-section-number">5</span> Un ejemplo</h2>
+<p>Usaremos un ejemplo para <strong>practicar la sintaxis y nuevas posibilidades de Quarto</strong> a la hora de generar documentos <code>.html</code>: o sea, para escribir posts para nuestro blog.</p>
+<p>Incorporaremos los siguientes elementos:</p>
 <ul>
 <li><p>Link interno a las <a href="../taller/01_taller_slides.html">slides de introducción</a></p></li>
 <li><p>Create a tabset via a markdown div with the class name panel-tabset (e.g.&nbsp;::: {.panel-tabset}) <a href="https://quarto.org/docs/output-formats/html-basics.html#tabsets" class="uri">https://quarto.org/docs/output-formats/html-basics.html#tabsets</a></p></li>
 <li><p>Bilio (.csl, .bib, lin-citations: yes). LatinR 1:09 R.version.string <a href="https://www.youtube.com/watch?v=d8jSN998Mtw" class="uri">https://www.youtube.com/watch?v=d8jSN998Mtw</a></p></li>
 <li><p><a href="https://quarto.org/docs/authoring/videos.html">Videos</a></p></li>
 </ul>
+<p>-Extensiones</p>
 <section id="divs-y-spans" class="level4">
 <h4 class="anchored" data-anchor-id="divs-y-spans">Divs y Spans</h4>
 <ul>

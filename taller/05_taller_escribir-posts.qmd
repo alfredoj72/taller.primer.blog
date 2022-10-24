@@ -83,8 +83,11 @@ De esta forma, potencialmente, un post puede recibir opciones de YAML desde los 
 
 Los blogs se publican en **formato html**, de forma que, [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html) tienes la **documentación oficial** de Quarto con las **principales opciones** que se pueden fijar con el YAML para documentos html.
 
-Como ves, es imposible repasar todas las opciones en el taller, solamente veremos algunas. Para ello, creo que la forma más operativa para el taller es mostrar ejemplos de ficheros `.yml` y revisar su contenido.
+Es imposible repasar todas las opciones de YAML en el taller, veremos solamente algunas. Para ello, creo que la forma más operativa consistirá en mostrar ejemplos de ficheros `.yml` y revisar su contenido. Por ejemplo veamos las opciones YAML que tiene ahora nuestro blog:
 
+<br>
+
+#### Opciones YAML de nuestro blog
 
 {{< include ./_includes/_tt_05_04_yaml-tabset.qmd >}}
 
@@ -157,6 +160,8 @@ Bien, una vez hemos repasado las principales opciones referentes a `_quarto.yml`
 
 Como ya sabemos, si en una carpeta hay un fichero `_metadata.yml`, todos los documentos `.qmd` que se procesen en esa carpeta se verán afectados por esas opciones. Veamos como tenemos ahora mismo ese archivo.
 
+Abajo el, contenido del fichero `./posts/_metadata.yml` de nuestro blog
+
 {{< include ./_includes/_tt_05_09_yaml-nivel-carpeta.qmd >}}
 
 <br>
@@ -228,36 +233,40 @@ Además de los elementos de escritura que nos ofrece la sintaxis básica de `mar
 ## Chunks de código
 
 
-Los *chunks* de código en `.qmd` también **son similares** a lo que ocurría en `.Rmd`. La **documentación oficial** está [aquí](https://quarto.org/docs/computations/execution-options.html)
+Los *chunks* de código en `.qmd` también tienen un **comportamiento similar** a lo que ocurría en los chunks en documentos `.Rmd`. La documentación oficial está [aquí](https://quarto.org/docs/computations/execution-options.html)
+
+### Diferencias con .Rmd
 
 Las **principales diferencias** son:
 
-- En `.Rmd` las opciones de los chunks se podían especificar de forma global en un chunk inicial (generalmente llamado setup) y a nivel individual en cada uno de los chunks; mientras que ahora, **las opciones de los chunks se pueden especificar globalmente en el YAML** y a nivel individual en cada uno de los chunks.
+- En `.Rmd` las opciones de los chunks se podían especificar de forma global en un chunk inicial (generalmente llamado setup) y a nivel individual en cada uno de los chunks; mientras que ahora, con `.qmd`, **las opciones de los chunks se pueden especificar globalmente en el YAML** y a nivel individual en cada uno de los chunks.
 
- {{< include ./_includes/_tt_05_13_extensiones-01.qmd >}}
+    {{< include ./_includes/_tt_05_13_extensiones-01.qmd >}}
 
 
 
-- En los chunks individuales también se utiliza la sintaxis YAML (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
+- En los **chunks individuales** ahora se se utiliza la **sintaxis YAML** (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
 
 ![](./imagenes/tt_01/img_22.png){fig-align="center"}
 
 
 - Las principales opciones son: **echo**, **eval**, **warning**, **error**, **output** e **include**. [Aquí](https://quarto.org/docs/computations/execution-options.html#output-options) la documentación oficial.
 
-- `output`, además de true y false, puede tomar el valor `asis` para indicar que el output es "raw markdown".
 
-- `echo`, además los típicos true y false, incorpora un nuevo valor `fenced` que facilita mostrar las marcas de los chunks. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo). También facilita mostrar las marcas de los chunks los llamados **unexecuted Blocks**. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks)
+- `echo`, además los típicos true y false, ahora incorpora un nuevo valor `fenced` que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo). Los llamados **unexecuted Blocks**, documentación [aquí](https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks), también facilitan mostrar las marcas de los chunks en el documento de salida.
 
 - Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
 
 ![](./imagenes/tt_01/img_23.png){fig-align="center"}
 
 
-## Extras
+## Un ejemplo
+
+Usaremos un ejemplo para **practicar la sintaxis y nuevas posibilidades de Quarto** a la hora de generar documentos `.html`: o sea, para escribir posts para nuestro blog.
+
+Incorporaremos los siguientes elementos:
 
 - Link interno a las  [slides de introducción](01_taller_slides.qmd)
-
 
 - Create a tabset via a markdown div with the class name panel-tabset (e.g. ::: {.panel-tabset}) <https://quarto.org/docs/output-formats/html-basics.html#tabsets>
 
@@ -265,6 +274,8 @@ Las **principales diferencias** son:
 
 - [Videos](https://quarto.org/docs/authoring/videos.html) 
 
+
+-Extensiones
 
 
 
