@@ -46,21 +46,21 @@
     "href": "taller/05_taller_escribir-posts.html#texto",
     "title": "Escribiendo posts: practicando con Quarto",
     "section": "3 Texto",
-    "text": "3 Texto\nEl texto (o narrativa) de un documento .qmd se escribe, al igual que en los documentos .Rmd en markdown. Aquí la documentación oficial de Quarto.\nNo lo vamos a practicar ahora. Lo haremos (un poco) luego cuando hagamos un post de ejemplo. \n\n3.1 Sintaxis básica de markdown\n\nAquí puedes ver o recordar la sintaxis básica, las principales reglas para escribir en markdown.\nComo ejemplo:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.2 Más elementos para “escribir”\nAdemás de los elementos de escritura que nos ofrece la sintaxis básica de markdown. Quarto nos ofrece más posibilidades, veamos algunas de ellas:\n\nFiguras\nhttps://quarto.org/docs/authoring/figures.html\n\n\nTablas\nhttps://quarto.org/docs/authoring/tables.html\n\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
+    "text": "3 Texto\nEl texto (o narrativa) de un documento .qmd se escribe, al igual que en los documentos .Rmd en markdown. Aquí la documentación oficial de Quarto.\nNo lo vamos a practicar ahora. Lo haremos (un poco) luego cuando hagamos un post de ejemplo. \n\n3.1 Sintaxis básica de markdown\n\nAquí puedes ver o recordar la sintaxis básica, las principales reglas para escribir en markdown.\nComo ejemplo:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.2 Más elementos para “escribir”\nAdemás de los elementos de escritura que nos ofrece la sintaxis básica de markdown. Quarto nos ofrece más posibilidades, veamos algunas de ellas:\n\nFiguras\nhttps://quarto.org/docs/authoring/figures.html\n\ntamaño por defecto: https://quarto.org/docs/computations/execution-options.html#figure-options\n\n\n\nTablas\nhttps://quarto.org/docs/authoring/tables.html\n\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
   },
   {
     "objectID": "taller/05_taller_escribir-posts.html#chunks-de-código",
     "href": "taller/05_taller_escribir-posts.html#chunks-de-código",
     "title": "Escribiendo posts: practicando con Quarto",
     "section": "4 Chunks de código",
-    "text": "4 Chunks de código\nLos chunks de código también son muy similares en .qmd que en .Rmd\nLas principales diferencias son:\nLink interno a las slides de introducción"
+    "text": "4 Chunks de código\nLos chunks de código en .qmd también son similares a lo que ocurría en .Rmd. La documentación oficial está aquí\nLas principales diferencias son:\n\nEn .Rmd las opciones de los chunks se podían especificar de forma global en un chunk inicial (generalmente llamado setup) y a nivel individual en cada uno de los chunks; mientras que ahora, las opciones de los chunks se pueden especificar globalmente en el YAML y a nivel individual en cada uno de los chunks.\n\n\n\n\n\n\n\nExtensiones: mi setup chunk\n\n\n\n\n\nCuando usaba .Rmd este era habitualmente mi chunk de setup\n\n\n\n\n\n\n\n\n\nEn los chunks individuales también se utiliza la sintaxis YAML (key: value) en lineas dentro del chunk que empiezan con #|. Por ejemplo:\n\n\n\n\n\n\n\nLas principales opciones son: echo, eval, warning, error, output e include. Aquí la documentación oficial.\noutput, además de true y false, puede tomar el valor asis para indicar que el output es “raw markdown”.\necho, además los típicos true y false, incorpora un nuevo valor fenced que facilita mostrar las marcas de los chunks.\nAdemás, si usamos knitr para ejecutar los chunks, entonces podemos usar todas las opciones nativas de knitr, como: collapse, fig.withd, comment, etc … Más información aquí. Un ejemplo:"
   },
   {
     "objectID": "taller/05_taller_escribir-posts.html#extras",
     "href": "taller/05_taller_escribir-posts.html#extras",
     "title": "Escribiendo posts: practicando con Quarto",
     "section": "5 Extras",
-    "text": "5 Extras\n\nCreate a tabset via a markdown div with the class name panel-tabset (e.g. ::: {.panel-tabset}) https://quarto.org/docs/output-formats/html-basics.html#tabsets\nBilio (.csl, .bib, lin-citations: yes). LatinR 1:09 R.version.string https://www.youtube.com/watch?v=d8jSN998Mtw\nVideos\n\n\nDivs y Spans\n\nDivs y Spans\n\n\nThis content can be styled with a border\n\n:::{.callout-note}\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n:::\n[This is *some text*]{.class key=\"val\"}\n\n\nCall-outs\nCall-outs bervatim\n:::{.callout-note}\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n:::\n\n\n5.1 Inline\n\npara inline has de `r `."
+    "text": "5 Extras\n\nLink interno a las slides de introducción\nCreate a tabset via a markdown div with the class name panel-tabset (e.g. ::: {.panel-tabset}) https://quarto.org/docs/output-formats/html-basics.html#tabsets\nBilio (.csl, .bib, lin-citations: yes). LatinR 1:09 R.version.string https://www.youtube.com/watch?v=d8jSN998Mtw\nVideos\n\n\nDivs y Spans\n\nDivs y Spans\n\n\nThis content can be styled with a border\n\n:::{.callout-note}\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n:::\n[This is *some text*]{.class key=\"val\"}\n\n\nCall-outs\nCall-outs bervatim\n:::{.callout-note}\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n:::\n\n\n5.1 Inline\n\npara inline has de `r `."
   },
   {
     "objectID": "taller/05_taller_escribir-posts.html#resumen",
@@ -439,6 +439,13 @@
     "title": "Workflow: ¿cómo crear un post?",
     "section": "5 Referencias",
     "text": "5 Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD"
+  },
+  {
+    "objectID": "taller/feo.html",
+    "href": "taller/feo.html",
+    "title": "Mi segundo post",
+    "section": "",
+    "text": "```{r}\n#| eval: true\nsqrt(2 + 2)\n4 + 4\n```\n\n#> [1] 2\n#> [1] 8\n\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2023,\n  author = {Pedro J. Pérez},\n  title = {Mi segundo post},\n  date = {2023-12-10},\n  url = {https://perezp44.github.io/taller.primer.blog//feo.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez. 2023. “Mi segundo post.” December 10, 2023.\nhttps://perezp44.github.io/taller.primer.blog//feo.html."
   },
   {
     "objectID": "taller/01_taller_slides.html#estructura-del-taller",

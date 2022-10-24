@@ -213,6 +213,8 @@ Además de los elementos de escritura que nos ofrece la sintaxis básica de `mar
 
 <https://quarto.org/docs/authoring/figures.html>
 
+- tamaño por defecto: <https://quarto.org/docs/computations/execution-options.html#figure-options>
+
 #### Tablas
 
 <https://quarto.org/docs/authoring/tables.html>
@@ -225,14 +227,37 @@ Además de los elementos de escritura que nos ofrece la sintaxis básica de `mar
 
 ## Chunks de código
 
-Los *chunks* de código también son muy similares en `.qmd` que en `.Rmd`
 
-Las principales diferencias son: 
+Los *chunks* de código en `.qmd`  también son  similares a lo que ocurría en `.Rmd`. La **documentación oficial** está [aquí](https://quarto.org/docs/computations/execution-options.html)
+
+Las **principales diferencias** son:
+
+- En `.Rmd` las opciones de los chunks se podían especificar de forma global en un chunk inicial (generalmente llamado setup) y a nivel individual en cada uno de los chunks; mientras que ahora, **las opciones de los chunks se pueden especificar globalmente en el YAML** y a nivel individual en cada uno de los chunks.
+
+ {{< include ./_includes/_tt_05_13_extensiones-01.qmd >}}
 
 
-Link interno a las  [slides de introducción](01_taller_slides.qmd)
+
+- En los chunks individuales también se utiliza la sintaxis YAML (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
+
+![](./imagenes/tt_01/img_22.png){fig-align="center"}
+
+
+- Las principales opciones son: **echo**, **eval**, **warning**, **error**, **output** e **include**. [Aquí](https://quarto.org/docs/computations/execution-options.html#output-options) la documentación oficial.
+
+- `output`, además de true y false, puede tomar el valor `asis` para indicar que el output es "raw markdown".
+
+- `echo`, además los típicos true y false, incorpora un nuevo valor `fenced` que facilita mostrar las marcas de los chunks. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo). También facilita mostrar las marcas de los chunks los llamados **unexecuted Blocks**. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks)
+
+- Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
+
+![](./imagenes/tt_01/img_23.png){fig-align="center"}
+
 
 ## Extras
+
+- Link interno a las  [slides de introducción](01_taller_slides.qmd)
+
 
 - Create a tabset via a markdown div with the class name panel-tabset (e.g. ::: {.panel-tabset}) <https://quarto.org/docs/output-formats/html-basics.html#tabsets>
 

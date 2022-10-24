@@ -750,6 +750,9 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 <section id="figuras" class="level4">
 <h4 class="anchored" data-anchor-id="figuras">Figuras</h4>
 <p><a href="https://quarto.org/docs/authoring/figures.html" class="uri">https://quarto.org/docs/authoring/figures.html</a></p>
+<ul>
+<li>tamaño por defecto: <a href="https://quarto.org/docs/computations/execution-options.html#figure-options" class="uri">https://quarto.org/docs/computations/execution-options.html#figure-options</a></li>
+</ul>
 </section>
 <section id="tablas" class="level4">
 <h4 class="anchored" data-anchor-id="tablas">Tablas</h4>
@@ -764,13 +767,56 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 </section>
 <section id="chunks-de-código" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="chunks-de-código"><span class="header-section-number">4</span> Chunks de código</h2>
-<p>Los <em>chunks</em> de código también son muy similares en <code>.qmd</code> que en <code>.Rmd</code></p>
-<p>Las principales diferencias son:</p>
-<p>Link interno a las <a href="04_taller_slides.qmd">slides de introducción</a></p>
+<p>Los <em>chunks</em> de código en <code>.qmd</code> también son similares a lo que ocurría en <code>.Rmd</code>. La <strong>documentación oficial</strong> está <a href="https://quarto.org/docs/computations/execution-options.html">aquí</a></p>
+<p>Las <strong>principales diferencias</strong> son:</p>
+<ul>
+<li>En <code>.Rmd</code> las opciones de los chunks se podían especificar de forma global en un chunk inicial (generalmente llamado setup) y a nivel individual en cada uno de los chunks; mientras que ahora, <strong>las opciones de los chunks se pueden especificar globalmente en el YAML</strong> y a nivel individual en cada uno de los chunks.</li>
+</ul>
+<div class="callout-warning callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Extensiones: mi setup chunk
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Cuando usaba <code>.Rmd</code> este era habitualmente mi chunk de setup</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_21.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>En los chunks individuales también se utiliza la sintaxis YAML (<code>key: value</code>) en lineas dentro del chunk que empiezan con <code>#|</code>. Por ejemplo:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_22.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<ul>
+<li><p>Las principales opciones son: <strong>echo</strong>, <strong>eval</strong>, <strong>warning</strong>, <strong>error</strong>, <strong>output</strong> e <strong>include</strong>. <a href="https://quarto.org/docs/computations/execution-options.html#output-options">Aquí</a> la documentación oficial.</p></li>
+<li><p><code>output</code>, además de true y false, puede tomar el valor <code>asis</code> para indicar que el output es “raw markdown”.</p></li>
+<li><p><code>echo</code>, además los típicos true y false, incorpora un nuevo valor <code>fenced</code> que facilita mostrar las marcas de los chunks.</p></li>
+<li><p>Además, si usamos <code>knitr</code> para ejecutar los chunks, entonces podemos usar todas las <a href="https://yihui.org/knitr/options/">opciones nativas de <code>knitr</code></a>, como: collapse, fig.withd, comment, etc … Más información <a href="https://quarto.org/docs/computations/execution-options.html#knitr-options">aquí</a>. Un ejemplo:</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_23.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </section>
 <section id="extras" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="extras"><span class="header-section-number">5</span> Extras</h2>
 <ul>
+<li><p>Link interno a las <a href="../taller/01_taller_slides.html">slides de introducción</a></p></li>
 <li><p>Create a tabset via a markdown div with the class name panel-tabset (e.g.&nbsp;::: {.panel-tabset}) <a href="https://quarto.org/docs/output-formats/html-basics.html#tabsets" class="uri">https://quarto.org/docs/output-formats/html-basics.html#tabsets</a></p></li>
 <li><p>Bilio (.csl, .bib, lin-citations: yes). LatinR 1:09 R.version.string <a href="https://www.youtube.com/watch?v=d8jSN998Mtw" class="uri">https://www.youtube.com/watch?v=d8jSN998Mtw</a></p></li>
 <li><p><a href="https://quarto.org/docs/authoring/videos.html">Videos</a></p></li>
@@ -808,7 +854,7 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 <section id="resumen" class="level2" data-number="6">
 <h2 data-number="6" class="anchored" data-anchor-id="resumen"><span class="header-section-number">6</span> Resumen</h2>
 <div class="callout-tip callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -817,7 +863,7 @@ Resumen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>En esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.</li>

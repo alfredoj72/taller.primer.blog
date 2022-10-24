@@ -1,0 +1,17 @@
+---
+title: "Mi segundo post"
+execute:
+  echo: fenced
+knitr:
+  opts_chunk: 
+    collapse: false
+    comment: "#>" 
+---
+
+```{r}
+#| eval: true
+sqrt(2 + 2)
+4 + 4
+```
+
+
