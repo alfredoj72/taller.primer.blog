@@ -26,7 +26,7 @@ El primer paso para crear nuestro blog es crear el proyecto (o carpeta) donde se
 
 Vamos a  crear el blog con Quarto pero interactuando con él a través de **RStudio**. Desde RStudio crearemos un **Quarto Project**^[Trabajar con Quarto projects tiene algunas ventajas, puedes verlas [aquí](https://quarto.org/docs/projects/quarto-projects.html)], concretamente un Quarto project prediseñado para crear blogs.
 
-
+#### Tarea 2.1
 
 {{< include ./_includes/_tt_02_03_tarea_01.qmd >}}
 
@@ -97,9 +97,6 @@ En la carpeta `/posts/` hay un archivo de configuración (`_metadata.yml`) y una
 
 ::: {layout-ncol=2}
 
-
-
-
 ```{r}
 #| fig-cap: Dentro de la carpeta `posts`
 #| echo: false
@@ -160,6 +157,7 @@ Otro archivo `.qmd` que generará el archivo `index.html` y que será la "landin
 
 El Qproject que hemos creado tiene todo lo necesario para crear un blog, pero aún no lo hemos creado. Para crearlo solo tienes que: 
 
+#### Tarea 2.2
 
 {{< include ./_includes/_tt_02_05_generacion-blog.qmd >}}
 
@@ -224,6 +222,7 @@ Antes de publicar el blog, vamos a ver el contenido de la carpeta `_site` que es
 Contenido de `_site`, la carpeta que contiene el blog
 :::
 
+#### Tarea 2.3
 
 {{< include ./_includes/_tt_02_08_tarea-03.qmd >}}
 
@@ -249,6 +248,7 @@ El blog que hemos creado no es muy interesante, pero vamos a ver lo fácil que e
 
 Hay muchas formas de alojar nuestro blog, por ejemplo [Github Pages](https://pages.github.com/) [Netlify](https://www.netlify.com/) etc... , pero, de momento, usaremos el servicio [Quartopub](https://quartopub.com/)
 
+#### Tarea 2.4
 
 {{< include ./_includes/_tt_02_10_tarea-04.qmd >}}
 

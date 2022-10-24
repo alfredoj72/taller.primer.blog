@@ -1,5 +1,5 @@
 ::: {.callout-important icon="false"}
-#### Tarea 1: Modificar el contenido de `_quarto.yml`
+#### Tarea 3.1: Modificar el contenido de `_quarto.yml`
 
 - Simplemente sustituye el contenido original del fichero `_quarto.yml` por el contenido del siguiente chunk:
 

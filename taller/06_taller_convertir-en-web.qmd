@@ -47,6 +47,10 @@ Vamos a transformar nuestro blog en una **página web personal con blog**. Lo ú
 
 ## Proceso
 
+
+#### Tarea 6.1
+
+
 ::: {.callout-important icon="false"}
 #### Tarea 1: Renombrar el archivo index.qmd
 
@@ -57,6 +61,9 @@ Vamos a transformar nuestro blog en una **página web personal con blog**. Lo ú
 :::
 
 <br>
+
+#### Tarea 6.2
+
 
 ::: {.callout-important icon="false"}
 #### Tarea 2: Incluir `blog.qmd` en la web
@@ -126,6 +133,9 @@ website:
 
 <br>
 
+#### Tarea 6.3
+
+
 ::: {.callout-important icon="false"}
 #### Tarea 3: Renombrar el archivo about.qmd
 
@@ -137,6 +147,8 @@ website:
 :::
 
 <br>
+
+#### Tarea 6.4
 
 
 ::: {.callout-important icon="false"}

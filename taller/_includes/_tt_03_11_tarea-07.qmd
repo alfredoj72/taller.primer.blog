@@ -1,5 +1,5 @@
 ::: {.callout-important icon="false"}
-#### Tarea 7: Modificar `styles.css`
+#### Tarea 3.7: Modificar `styles.css`
 
 - Simplemente sustituye el contenido original del fichero `styles.css` por el contenido del siguiente chunk:
 

@@ -1,5 +1,5 @@
 ::: {.callout-important icon="false"}
-#### Tarea 2: Generación del blog
+#### Tarea 2.2: Generación del blog
 
 -   Ir al cuadrante superior-derecha de RStudio, pinchar en la pestaña `Build` y pinchar en `Render Website`.
 

@@ -97,6 +97,8 @@ Como puedes ver arriba en la @fig-02, al compararla con la   @fig-01, hemos modi
 
 <br>
 
+#### Tarea 3.1
+
 {{< include ./_includes/_tt_03_03_tarea-01.qmd >}}
 
 <br>
@@ -107,10 +109,15 @@ Como puedes ver arriba en la @fig-02, al compararla con la   @fig-01, hemos modi
 
 - En el nuevo archivo `quarto.yml`(linea 19) se hace referencia al archivo `docencia.qmd`, así que tendremos que crearlo. Para ello:
 
+#### Tarea 3.2
 
 {{< include ./_includes/_tt_03_04_tarea-02.qmd >}}
 
+#### Tarea 3.3
+
 {{< include ./_includes/_tt_03_05_tarea-03.qmd >}}
+
+#### Tarea 3.4
 
 {{< include ./_includes/_tt_03_06_tarea-04.qmd >}}
 
@@ -164,6 +171,7 @@ En la figura siguiente, en el lado izquierdo puedes ver el contenido original de
 
 - Ya hablaremos de las subcarpetas donde está el contenido de los posts más adelante, pero adelanto que en cada carpeta hay un archivo `index.qmd` con el contenido de cada post.
 
+#### Tarea 3.5
 
 {{< include ./_includes/_tt_03_08_tarea-05.qmd >}}
 
@@ -178,6 +186,7 @@ En la figura siguiente, en el lado izquierdo puedes ver el contenido original de
 
 {{< include ./_includes/_tt_03_09_archivo-about.qmd >}}
 
+#### Tarea 3.6
 
 {{< include ./_includes/_tt_03_10_tarea-06.qmd >}}
 
@@ -197,6 +206,7 @@ En la figura siguiente, en el lado izquierdo puedes ver el contenido original de
 
 - El tuneado del blog con .css lo veremos con algo más de detalle en el tutorial nº 8, ahora mismo solo haremos unas modificaciones mínimas: voy a justificar el texto^[Esta es una modificación que tiene muchas criticas, pero, que se le va a hacer, a mi me gusta el texto justificado.].
 
+#### Tarea 3.7
 
 {{< include ./_includes/_tt_03_11_tarea-07.qmd >}}
 

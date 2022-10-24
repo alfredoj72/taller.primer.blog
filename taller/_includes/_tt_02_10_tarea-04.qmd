@@ -1,5 +1,5 @@
 ::: {.callout-important icon="false"}
-#### Tarea 4: Alojar el blog en Quarto Pub
+#### Tarea 2.4: Alojar el blog en Quarto Pub
 
 Para publicar nuestro blog en Quartopub sólo hay que:
 

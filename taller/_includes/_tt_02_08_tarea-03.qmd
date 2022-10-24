@@ -1,5 +1,5 @@
 ::: {.callout-important icon="false"}
-#### Tarea 3: Ver el blog
+#### Tarea 2.3: Ver el blog
 
 - Enseguida publicaremos el blog en Quartopub, pero antes, vamos a  verlo en local; para ello solo tienes que pinchar en el archivo `./blog_prueba_00/_site/index.html`
 

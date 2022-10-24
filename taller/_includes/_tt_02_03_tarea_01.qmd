@@ -1,5 +1,5 @@
 ::: {.callout-important icon="false"}
-#### Tarea 1: Creación de la carpeta que contendrá nuestro blog (3 formas de hacerlo)
+#### Tarea 2.1: Creación de la carpeta que contendrá nuestro blog (3 formas de hacerlo)
 
 
 ###### A) Crear la carpeta (o Qproject) desde **RStudio**

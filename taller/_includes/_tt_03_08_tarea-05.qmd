@@ -1,5 +1,5 @@
 ::: {.callout-important icon="false"}
-#### Tarea 5: Modificar el contenido de `index.qmd`
+#### Tarea 3.5: Modificar el contenido de `index.qmd`
 
 - Simplemente he cambiado la linea 2. Aunque, para mi, casi queda mejor sin ningún título. Para ello tendríamos que comentar (con un #) la primera linea del yaml.
 

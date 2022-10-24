@@ -1,5 +1,5 @@
 ::: {.callout-important icon="false"}
-#### Tarea 6: Modificar el contenido de `about.qmd`
+#### Tarea 3.6: Modificar el contenido de `about.qmd`
 
 - Antes he dicho que solo modificaríamos la linea 5, pero mejor si lo complementamos con algunas acciones más, como el tamaño de la foto y su forma, por eso he añadido 2 lineas tras `template:trestles`.
 
