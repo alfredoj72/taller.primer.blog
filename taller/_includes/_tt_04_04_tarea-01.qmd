@@ -1,5 +1,5 @@
 ::: {.callout-important icon="false"}
-#### Tarea 1: Creando un nuevo post
+#### Tarea 4.1: Creando un nuevo post
 
 - Crea una nueva subcarpeta en `./posts/`
 

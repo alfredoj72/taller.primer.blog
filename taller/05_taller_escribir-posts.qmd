@@ -89,11 +89,16 @@ Como ves, es imposible repasar todas las opciones en el taller, solamente veremo
 
 <br>
 
-### Distintas opciones YAML
 
-<br>
+### Yaml nivel proyecto 
 
-#### 1. Opciones referentes al proyecto 
+En el fichero `_quarto.yml` se especifican opciones y metadatos que afectaran a todos los documentos del proyecto. En el caso que nos ocupa (un Qproject para crear una web/blog) allí se suelen especificar metadatos acerca de 3 aspectos: 
+
+  1. Funcionamiento del Qproject 
+  2. Estructura de la web  
+  3. Formato de salida de los documentos 
+  
+#### 2.2.1 Funcionamiento del Qproject
 
 Estas opciones acerca del funcionamiento del Qproject, se especifican en el fichero `_quarto.yml` (nivel proyecto).
 
@@ -109,7 +114,7 @@ Como vemos, podemos cambiar:
 
 <br>
 
-#### 2. Opciones referentes a la estructura de la página web 
+#### 2.2.2 Estructura de la web 
 
 
 Ya vimos algunas opciones en el 2º tutorial, veremos algunas más, pero será en el 7º tutorial. Como ejemplo, podríamos modificar esa sección de `_quarto.yml` para dejarla como:
@@ -129,7 +134,7 @@ Como ves, se añadirían elementos como:
 
 <br>
 
-#### 3. Opciones referentes al formato de salida de los documentos 
+#### 2.2.3 Formato de salida de los documentos 
 
 En un blog/web el formato de salida es siempre `.html`; sin embargo podemos especificar otras opciones como por ejemplo sí los documentos (o páginas de la web, o post del blog) tienen un índice flotante, etc..., etc ....
 
@@ -138,10 +143,53 @@ En un blog/web el formato de salida es siempre `.html`; sin embargo podemos espe
 
 <br>
 
+#### Tarea  5.1
+
+Bien, una vez hemos repasado las principales opciones referentes a `_quarto.yml`, vamos a incorporar esas modificaciones a nuestro blog.
+
+{{< include ./_includes/_tt_05_08_tarea-01.qmd >}}
+
+
+<br>
+
+### Yaml nivel carpeta
+
+Como ya sabemos, si en una carpeta hay un fichero `_metadata.yml`, todos los documentos `.qmd` que se procesen en esa carpeta se verán afectados por esas opciones. Veamos como tenemos ahora mismo ese archivo.
+
+{{< include ./_includes/_tt_05_09_yaml-nivel-carpeta.qmd >}}
+
+<br>
+
+#### Tarea  5.2
+
+Vamos a cambiar un poco el archivo `./posts/_metadata.yml`, simplemente cambiaremos el valor de `freeze: true` a `freeze: auto` lo que hará que cuando hagamos un render global del proyecto, solo se vuelvan a ejecutar los archivos que hayan visto cambiado su contenido, el resto no se volverán a procesar.
+
+
+{{< include ./_includes/_tt_05_10_tarea-5-02.qmd >}}
+
+<br>
+
+### Yaml nivel documento
+
+Como dijimos, también podemos especificar metadatos y opciones para un documento `.qmd` en el encabezamiento del documento. Lógicamente esas opciones sólo afectarán a ese documento. 
+
+
+#### Tarea 5.3
+
+Probemos a cambiar el `yaml` o encabezamiento de `./posts/my-primer-post/index.qmd`
+
+{{< include ./_includes/_tt_05_11_tarea-5-03.qmd >}}
+
+
+
+<br>
+
 ## Texto
 
 El texto (o narrativa) de un documento `.qmd` se escribe, al igual que en los documentos `.Rmd` en `markdown`. [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) la documentación oficial de Quarto.
 
+
+No lo vamos a practicar ahora. Lo haremos (un poco) luego cuando hagamos un post de ejemplo.
 <br>
 
 ### Sintaxis básica de `markdown`
@@ -213,6 +261,7 @@ Link interno al [4º tutorial](04_taller_crear-post.qmd)
 
 ::: {.border}
 This content can be styled with a border
+
 :::
 
 ``` markdown
@@ -239,7 +288,9 @@ Note that there are five types of callouts, including:
 `note`, `tip`, `warning`, `caution`, and `important`.
 :::
 ```
+### Inline
 
+-  para inline has de `` `r ` ``.
 
 <br>
 

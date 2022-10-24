@@ -350,7 +350,7 @@ Veamos el contenido de una de las carpetas que generan los posts, por ejemplo la
 
 <br>
 
--  **Nivel proyecto**: los Qprojects contienen `_quarto.yml`. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en `_quarto.yml`.
+-  **Nivel proyecto**:todo Qproject tiene archivo `_quarto.yml`. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en `_quarto.yml`.
 
 -  **Nivel carpeta**: si en una carpeta existe un documento `_metadata.yml`, los documentos de esa carpeta heredan sus metadatos. La carpeta `./posts/` de un blog suele tener un archivo `_metadata.yml`.
 
@@ -365,7 +365,7 @@ Si hay conflictos **prevalecen las opciones del nivel documento**, luego nivel c
 
 --- 
 
-## YAML: algunos ejemplos {.smaller}
+## YAML: tal como lo tenemos ahora {.smaller}
 
 
 {{< include ./_includes/_tt_05_04_yaml-tabset.qmd >}}
@@ -373,20 +373,82 @@ Si hay conflictos **prevalecen las opciones del nivel documento**, luego nivel c
 
 ---
 
-## YAML: OPciones nivel proyecto (`_quarto.yml`) {.smaller}
+## YAML: NIVEL PROYECTO (opciones en `_quarto.yml`)  {.smaller}
+
+Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml). Pertenece a la [web de Quarto](https://quarto.org/docs/websites/). En `_quarto.yml` se suelen poner opciones referentes a 3 aspectos:
 
 ::: {.panel-tabset}
 
-#### 1. Qproject
+#### 1. Sobre el propio Qproject
 
 {{< include ./_includes/_tt_05_05_yaml-proyecto.qmd >}}
+
+<br>
+
+- linea 4: podemos elegir la carpeta de destino de nuestro blog
+- linea 5: podemos cambiar el render directory de los `.qmd`
+
+<br>
+
+Documentación oficial [aquí](https://quarto.org/docs/projects/quarto-projects.html).
 
 #### 2. Estructura de la página web 
 
 {{< include ./_includes/_tt_05_06_yaml-estructura-web.qmd >}}
 
+<br>
+
+
+Como ves, se añadirían elementos como:
+
+- lineas 28 a 41: se añade un pie de página al blog
+
+- lineas 24 y 25: Hemos añadido un elemento a la `navbar` concretamente el icono `Home`. La documentación oficial para elementos de navegación está [aquí](https://quarto.org/docs/websites/website-navigation.html)
+
+- lineas 4 y 7-10: elementos de redes sociales como un favicon (linea 4), el url de la web y del repo en Github (lineas 5 y 6) y más elementos de redes sociales  (lineas 7 a 10). La documentación oficial para estos elementos está [aquí](https://quarto.org/docs/websites/website-tools.html)
+
+<br>
+
 #### 3. Formato de salida de los documentos 
 
 {{< include ./_includes/_tt_05_07_yaml-formato-salida.qmd >}}
 
+<br>
+
+En un blog/web el formato de salida es siempre `.html`; sin embargo podemos especificar otras opciones como por ejemplo sí los documentos (o páginas de la web, o post del blog) tienen un índice flotante, etc... Documentación oficial [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html)
+
 :::
+
+---
+
+## Un ejemplo "completito" de `_quarto.yml`  {.smaller}
+
+Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml). Pertenece a la [web de Quarto](https://quarto.org/docs/websites/). 
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"></iframe>
+```
+:::
+
+::: {.column width="50%"}
+
+{{< include ./_includes/_include_quarto_completito.qmd >}}
+
+:::
+
+::::
+
+
+
+
+---
+
+## YAML: NIVEL CARPETA (`./<carpeta>/_metadata.yml`)  {.smaller}
+
+

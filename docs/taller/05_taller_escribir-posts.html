@@ -208,7 +208,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#yaml" id="toc-yaml" class="nav-link" data-scroll-target="#yaml"><span class="toc-section-number">2</span>  YAML</a>
   <ul class="collapse">
   <li><a href="#el-yaml-de-un-post" id="toc-el-yaml-de-un-post" class="nav-link" data-scroll-target="#el-yaml-de-un-post"><span class="toc-section-number">2.1</span>  El <code>yaml</code> de un post</a></li>
-  <li><a href="#distintas-opciones-yaml" id="toc-distintas-opciones-yaml" class="nav-link" data-scroll-target="#distintas-opciones-yaml"><span class="toc-section-number">2.2</span>  Distintas opciones YAML</a></li>
+  <li><a href="#yaml-nivel-proyecto" id="toc-yaml-nivel-proyecto" class="nav-link" data-scroll-target="#yaml-nivel-proyecto"><span class="toc-section-number">2.2</span>  Yaml nivel proyecto</a></li>
+  <li><a href="#yaml-nivel-carpeta" id="toc-yaml-nivel-carpeta" class="nav-link" data-scroll-target="#yaml-nivel-carpeta"><span class="toc-section-number">2.3</span>  Yaml nivel carpeta</a></li>
+  <li><a href="#yaml-nivel-documento" id="toc-yaml-nivel-documento" class="nav-link" data-scroll-target="#yaml-nivel-documento"><span class="toc-section-number">2.4</span>  Yaml nivel documento</a></li>
   </ul></li>
   <li><a href="#texto" id="toc-texto" class="nav-link" data-scroll-target="#texto"><span class="toc-section-number">3</span>  Texto</a>
   <ul class="collapse">
@@ -216,7 +218,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#más-elementos-para-escribir" id="toc-más-elementos-para-escribir" class="nav-link" data-scroll-target="#más-elementos-para-escribir"><span class="toc-section-number">3.2</span>  Más elementos para “escribir”</a></li>
   </ul></li>
   <li><a href="#chunks-de-código" id="toc-chunks-de-código" class="nav-link" data-scroll-target="#chunks-de-código"><span class="toc-section-number">4</span>  Chunks de código</a></li>
-  <li><a href="#extras" id="toc-extras" class="nav-link" data-scroll-target="#extras"><span class="toc-section-number">5</span>  Extras</a></li>
+  <li><a href="#extras" id="toc-extras" class="nav-link" data-scroll-target="#extras"><span class="toc-section-number">5</span>  Extras</a>
+  <ul class="collapse">
+  <li><a href="#inline" id="toc-inline" class="nav-link" data-scroll-target="#inline"><span class="toc-section-number">5.1</span>  Inline</a></li>
+  </ul></li>
   <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="toc-section-number">6</span>  Resumen</a></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="toc-section-number">7</span>  Referencias</a></li>
   </ul>
@@ -257,7 +262,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Fecha de Publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">23 de octubre de 2022</p>
+      <p class="date">24 de octubre de 2022</p>
     </div>
   </div>
   
@@ -426,7 +431,7 @@ Advertencia
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Abajo el, contenido del fichero <code>/posts/_metadata.yml</code>. Afectará a todos los ficheros <code>.qmd</code> que haya en la carpeta <code>/posts/</code></p>
+<p>Abajo el, contenido del fichero <code>./posts/_metadata.yml</code>. Afectará a todos los ficheros <code>.qmd</code> que haya en la carpeta <code>./posts/</code></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-overflow-scroll code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -439,31 +444,38 @@ Advertencia
 </div>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Abajo el encabezamiento del fichero <code>/posts/my-primer-post/index.qmd</code>:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-overflow-wrap code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Mi primer post con Quarto"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>author<span class="sc">:</span> <span class="st">"Pedro J. Pérez"</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>date<span class="sc">:</span> <span class="st">"2022-10-25"</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>categories<span class="sc">:</span> [R, quarto]</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<p>Abajo el encabezamiento del fichero <code>./posts/my-primer-post/index.qmd</code>:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Mi primer post con Quarto"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Pedro J. Pérez"</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2022-10-25"</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [R, quarto]</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>Este es mi primer post con Quarto<span class="sc">!!!!</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>Este es mi **primer post** con Quarto!!!!</span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[](thumbnail.jpg)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>Acabé con mi primer post. FIN</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>Acabé con mi primer post. FIN</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 <p><br></p>
 </section>
-<section id="distintas-opciones-yaml" class="level3" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="distintas-opciones-yaml"><span class="header-section-number">2.2</span> Distintas opciones YAML</h3>
-<p><br></p>
-<section id="opciones-referentes-al-proyecto" class="level4">
-<h4 class="anchored" data-anchor-id="opciones-referentes-al-proyecto">1. Opciones referentes al proyecto</h4>
+<section id="yaml-nivel-proyecto" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="yaml-nivel-proyecto"><span class="header-section-number">2.2</span> Yaml nivel proyecto</h3>
+<p>En el fichero <code>_quarto.yml</code> se especifican opciones y metadatos que afectaran a todos los documentos del proyecto. En el caso que nos ocupa (un Qproject para crear una web/blog) allí se suelen especificar metadatos acerca de 3 aspectos:</p>
+<ol type="1">
+<li>Funcionamiento del Qproject</li>
+<li>Estructura de la web<br>
+</li>
+<li>Formato de salida de los documentos</li>
+</ol>
+<section id="funcionamiento-del-qproject" class="level4">
+<h4 class="anchored" data-anchor-id="funcionamiento-del-qproject">2.2.1 Funcionamiento del Qproject</h4>
 <p>Estas opciones acerca del funcionamiento del Qproject, se especifican en el fichero <code>_quarto.yml</code> (nivel proyecto).</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span></span>
@@ -479,8 +491,8 @@ Advertencia
 </ul>
 <p><br></p>
 </section>
-<section id="opciones-referentes-a-la-estructura-de-la-página-web" class="level4">
-<h4 class="anchored" data-anchor-id="opciones-referentes-a-la-estructura-de-la-página-web">2. Opciones referentes a la estructura de la página web</h4>
+<section id="estructura-de-la-web" class="level4">
+<h4 class="anchored" data-anchor-id="estructura-de-la-web">2.2.2 Estructura de la web</h4>
 <p>Ya vimos algunas opciones en el 2º tutorial, veremos algunas más, pero será en el 7º tutorial. Como ejemplo, podríamos modificar esa sección de <code>_quarto.yml</code> para dejarla como:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
@@ -533,8 +545,8 @@ Advertencia
 </ul>
 <p><br></p>
 </section>
-<section id="opciones-referentes-al-formato-de-salida-de-los-documentos" class="level4">
-<h4 class="anchored" data-anchor-id="opciones-referentes-al-formato-de-salida-de-los-documentos">3. Opciones referentes al formato de salida de los documentos</h4>
+<section id="formato-de-salida-de-los-documentos" class="level4">
+<h4 class="anchored" data-anchor-id="formato-de-salida-de-los-documentos">2.2.3 Formato de salida de los documentos</h4>
 <p>En un blog/web el formato de salida es siempre <code>.html</code>; sin embargo podemos especificar otras opciones como por ejemplo sí los documentos (o páginas de la web, o post del blog) tienen un índice flotante, etc…, etc ….</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
@@ -544,6 +556,166 @@ Advertencia
 <span id="cb6-5"><a href="#cb6-5"></a>    css<span class="sc">:</span> styles.css</span>
 <span id="cb6-6"><a href="#cb6-6"></a>    toc<span class="sc">:</span> true</span>
 <span id="cb6-7"><a href="#cb6-7"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+</section>
+<section id="tarea-5.1" class="level4">
+<h4 class="anchored" data-anchor-id="tarea-5.1">Tarea 5.1</h4>
+<p>Bien, una vez hemos repasado las principales opciones referentes a <code>_quarto.yml</code>, vamos a incorporar esas modificaciones a nuestro blog.</p>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 5.1: Modificar <code>_quarto.yml</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Tenemos que dejar el archivo <code>_quarto.yml</code> así:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>project<span class="sc">:</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>  type<span class="sc">:</span> website</span>
+<span id="cb7-4"><a href="#cb7-4"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> _site    </span>
+<span id="cb7-5"><a href="#cb7-5"></a> </span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a>website<span class="sc">:</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a>  navbar<span class="sc">:</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
+<span id="cb7-11"><a href="#cb7-11"></a>    <span class="co">#background: primary    #- pink</span></span>
+<span id="cb7-12"><a href="#cb7-12"></a>    right<span class="sc">:</span></span>
+<span id="cb7-13"><a href="#cb7-13"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"About me"</span></span>
+<span id="cb7-14"><a href="#cb7-14"></a>        href<span class="sc">:</span> about.qmd</span>
+<span id="cb7-15"><a href="#cb7-15"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb7-16"><a href="#cb7-16"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb7-17"><a href="#cb7-17"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb7-18"><a href="#cb7-18"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
+<span id="cb7-19"><a href="#cb7-19"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb7-20"><a href="#cb7-20"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
+<span id="cb7-21"><a href="#cb7-21"></a>    left<span class="sc">:</span> </span>
+<span id="cb7-22"><a href="#cb7-22"></a>      <span class="sc">-</span> icon<span class="sc">:</span> house<span class="sc">-</span>door</span>
+<span id="cb7-23"><a href="#cb7-23"></a>        href<span class="sc">:</span> index.html</span>
+<span id="cb7-24"><a href="#cb7-24"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
+<span id="cb7-25"><a href="#cb7-25"></a>        href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb7-26"><a href="#cb7-26"></a>  page<span class="sc">-</span>footer<span class="sc">:</span></span>
+<span id="cb7-27"><a href="#cb7-27"></a>    left<span class="sc">:</span> <span class="st">"© 2022 Pedro J. Pérez"</span></span>
+<span id="cb7-28"><a href="#cb7-28"></a>    center<span class="sc">:</span> <span class="st">"Hecho con [Quarto](https://quarto.org)"</span></span>
+<span id="cb7-29"><a href="#cb7-29"></a>    right<span class="sc">:</span></span>
+<span id="cb7-30"><a href="#cb7-30"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb7-31"><a href="#cb7-31"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb7-32"><a href="#cb7-32"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb7-33"><a href="#cb7-33"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
+<span id="cb7-34"><a href="#cb7-34"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb7-35"><a href="#cb7-35"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail&gt;@uv.es"</span></span>
+<span id="cb7-36"><a href="#cb7-36"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-google-scholar"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
+<span id="cb7-37"><a href="#cb7-37"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>scholar.google.de<span class="sc">/</span>citations?user<span class="ot">=</span><span class="er">&lt;</span>tu<span class="sc">-</span>user<span class="sc">&gt;</span><span class="er">&amp;</span>hl<span class="ot">=</span>en</span>
+<span id="cb7-38"><a href="#cb7-38"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-orcid"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
+<span id="cb7-39"><a href="#cb7-39"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>orcid.org<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>numero<span class="sc">-</span>orcid<span class="sc">&gt;</span></span>
+<span id="cb7-40"><a href="#cb7-40"></a></span>
+<span id="cb7-41"><a href="#cb7-41"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
+<span id="cb7-42"><a href="#cb7-42"></a>format<span class="sc">:</span></span>
+<span id="cb7-43"><a href="#cb7-43"></a>  html<span class="sc">:</span></span>
+<span id="cb7-44"><a href="#cb7-44"></a>    theme<span class="sc">:</span> flatly  </span>
+<span id="cb7-45"><a href="#cb7-45"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb7-46"><a href="#cb7-46"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb7-47"><a href="#cb7-47"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y          </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="yaml-nivel-carpeta" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="yaml-nivel-carpeta"><span class="header-section-number">2.3</span> Yaml nivel carpeta</h3>
+<p>Como ya sabemos, si en una carpeta hay un fichero <code>_metadata.yml</code>, todos los documentos <code>.qmd</code> que se procesen en esa carpeta se verán afectados por esas opciones. Veamos como tenemos ahora mismo ese archivo.</p>
+<p>Abajo el, contenido del fichero <code>./posts/_metadata.yml</code>. Afectará a todos los ficheros <code>.qmd</code> que haya en la carpeta <code>./posts/</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-overflow-scroll code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># freeze computational output</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># (see https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>freeze<span class="sc">:</span> true</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Enable banner style title blocks</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<section id="tarea-5.2" class="level4">
+<h4 class="anchored" data-anchor-id="tarea-5.2">Tarea 5.2</h4>
+<p>Vamos a cambiar un poco el archivo <code>./posts/_metadata.yml</code>, simplemente cambiaremos el valor de <code>freeze: true</code> a <code>freeze: auto</code> lo que hará que cuando hagamos un render global del proyecto, solo se vuelvan a ejecutar los archivos que hayan visto cambiado su contenido, el resto no se volverán a procesar.</p>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 5.2: Modificar <code>./posts/_metadata.yml</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Tenemos que dejar el archivo <code>./posts/_metadata.yml</code> así:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="co"># freeze computational output</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="co"># freeze controls whether execution occurs during global project renders</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="co"># (see https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a>freeze<span class="sc">:</span> auto   <span class="co">#- {false, true, auto}</span></span>
+<span id="cb9-7"><a href="#cb9-7"></a></span>
+<span id="cb9-8"><a href="#cb9-8"></a><span class="co"># Enable banner style title blocks</span></span>
+<span id="cb9-9"><a href="#cb9-9"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
+<span id="cb9-10"><a href="#cb9-10"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="yaml-nivel-documento" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="yaml-nivel-documento"><span class="header-section-number">2.4</span> Yaml nivel documento</h3>
+<p>Como dijimos, también podemos especificar metadatos y opciones para un documento <code>.qmd</code> en el encabezamiento del documento. Lógicamente esas opciones sólo afectarán a ese documento.</p>
+<section id="tarea-5.3" class="level4">
+<h4 class="anchored" data-anchor-id="tarea-5.3">Tarea 5.3</h4>
+<p>Probemos a cambiar el <code>yaml</code> o encabezamiento de <code>./posts/my-primer-post/index.qmd</code></p>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Tenemos que dejar el archivo <code>./posts/my-primer-post/index.qmd</code> así:</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Mi primer post con Quarto"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Pedro J. Pérez"</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2022-10-25"</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [R, quarto]</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>Este es mi **primer post** con Quarto!!!!</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>Acabé con mi primer post. FIN</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>Sustituye <code>thumbnail.jpg</code> por otro archivo</p></li>
+<li><p>Vuelve a regenerar el blog: <code>Build &gt; Render Website</code></p></li>
+</ul>
+</div>
 </div>
 <p><br></p>
 </section>
@@ -637,17 +809,32 @@ Advertencia
 <div class="border">
 <p>This content can be styled with a border</p>
 </div>
-<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This is *some text*</span><span class="co">]</span>{.class key="val"}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="call-outs" class="level4">
+<h4 class="anchored" data-anchor-id="call-outs">Call-outs</h4>
+<p><a href="https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd">Call-outs bervatim</a></p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="inline" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="inline"><span class="header-section-number">5.1</span> Inline</h3>
+<ul>
+<li>para inline has de <code>`r `</code>.</li>
+</ul>
 <p><br></p>
 </section>
 </section>
 <section id="resumen" class="level2" data-number="6">
 <h2 data-number="6" class="anchored" data-anchor-id="resumen"><span class="header-section-number">6</span> Resumen</h2>
 <div class="callout-tip callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -656,7 +843,7 @@ Resumen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>En esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.</li>
@@ -688,13 +875,13 @@ Resumen
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2023,
   author = {Pedro J. Pérez},
   title = {Escribiendo posts: practicando con Quarto},
-  date = {2023-11-10},
+  date = {2023-12-10},
   url = {https://perezp44.github.io/taller.primer.blog//05_taller_escribir-posts.html},
   langid = {es}
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2023" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
 Pedro J. Pérez. 2023. <span>“Escribiendo posts: practicando con
-Quarto.”</span> November 10, 2023. <a href="https://perezp44.github.io/taller.primer.blog//05_taller_escribir-posts.html">https://perezp44.github.io/taller.primer.blog//05_taller_escribir-posts.html</a>.
+Quarto.”</span> December 10, 2023. <a href="https://perezp44.github.io/taller.primer.blog//05_taller_escribir-posts.html">https://perezp44.github.io/taller.primer.blog//05_taller_escribir-posts.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

@@ -1237,7 +1237,7 @@
 <h2>El <code>yaml</code> de un post se puede especificar en <strong>3 niveles</strong></h2>
 <p><br></p>
 <ul>
-<li><p><strong>Nivel proyecto</strong>: los Qprojects contienen <code>_quarto.yml</code>. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en <code>_quarto.yml</code>.</p></li>
+<li><p><strong>Nivel proyecto</strong>:todo Qproject tiene archivo <code>_quarto.yml</code>. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en <code>_quarto.yml</code>.</p></li>
 <li><p><strong>Nivel carpeta</strong>: si en una carpeta existe un documento <code>_metadata.yml</code>, los documentos de esa carpeta heredan sus metadatos. La carpeta <code>./posts/</code> de un blog suele tener un archivo <code>_metadata.yml</code>.</p></li>
 <li><p><strong>Nivel documento</strong>: En el yaml del propio documento <code>.qmd</code></p></li>
 </ul>
@@ -1245,8 +1245,8 @@
 <p>Si hay conflictos <strong>prevalecen las opciones del nivel documento</strong>, luego nivel carpeta y finalmente nivel proyecto.</p>
 <p><strong>Documentación oficial</strong> de Quarto con las <strong>principales opciones</strong> que se pueden fijar en el YAML para documentos html: <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a></p>
 </section>
-<section id="yaml-algunos-ejemplos" class="slide level2 smaller">
-<h2>YAML: algunos ejemplos</h2>
+<section id="yaml-tal-como-lo-tenemos-ahora" class="slide level2 smaller">
+<h2>YAML: tal como lo tenemos ahora</h2>
 <div class="panel-tabset">
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">1. nivel proyecto (_quarto.yml)</a></li><li><a href="#tabset-1-2">2. nivel carpeta (_metadata.yml)</a></li><li><a href="#tabset-1-3">3. nivel documento (index.qmd)</a></li></ul>
 <div class="tab-content">
@@ -1317,10 +1317,11 @@
 </div>
 </div>
 </section>
-<section id="yaml-opciones-nivel-proyecto-_quarto.yml" class="slide level2 smaller">
-<h2>YAML: OPciones nivel proyecto (<code>_quarto.yml</code>)</h2>
+<section id="yaml-nivel-proyecto-opciones-en-_quarto.yml" class="slide level2 smaller">
+<h2>YAML: NIVEL PROYECTO (opciones en <code>_quarto.yml</code>)</h2>
+<p>Si quieres ver un documento <code>_quarto.yml</code> completito, ve <a href="https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml">aquí</a>. Pertenece a la <a href="https://quarto.org/docs/websites/">web de Quarto</a>. En <code>_quarto.yml</code> se suelen poner opciones referentes a 3 aspectos:</p>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">1. Qproject</a></li><li><a href="#tabset-2-2">2. Estructura de la página web</a></li><li><a href="#tabset-2-3">3. Formato de salida de los documentos</a></li></ul>
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">1. Sobre el propio Qproject</a></li><li><a href="#tabset-2-2">2. Estructura de la página web</a></li><li><a href="#tabset-2-3">3. Formato de salida de los documentos</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1">
 <div class="cell">
@@ -1330,6 +1331,13 @@
 <span id="cb13-4"><a href="#cb13-4"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> docs    <span class="co">#- podemos cambiar la carpeta donde se redirige el output (.html)</span></span>
 <span id="cb13-5"><a href="#cb13-5"></a>  <span class="co"># execute-dir: project    #- cambiar el render directory: https://quarto.org/docs/projects/code-execution.html#working-dir</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><br></p>
+<ul>
+<li>linea 4: podemos elegir la carpeta de destino de nuestro blog</li>
+<li>linea 5: podemos cambiar el render directory de los <code>.qmd</code></li>
+</ul>
+<p><br></p>
+<p>Documentación oficial <a href="https://quarto.org/docs/projects/quarto-projects.html">aquí</a>.</p>
 </div>
 <div id="tabset-2-2">
 <div class="cell">
@@ -1375,6 +1383,14 @@
 <span id="cb14-40"><a href="#cb14-40"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-orcid"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
 <span id="cb14-41"><a href="#cb14-41"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>orcid.org<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>numero<span class="sc">-</span>orcid<span class="sc">&gt;</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><br></p>
+<p>Como ves, se añadirían elementos como:</p>
+<ul>
+<li><p>lineas 28 a 41: se añade un pie de página al blog</p></li>
+<li><p>lineas 24 y 25: Hemos añadido un elemento a la <code>navbar</code> concretamente el icono <code>Home</code>. La documentación oficial para elementos de navegación está <a href="https://quarto.org/docs/websites/website-navigation.html">aquí</a></p></li>
+<li><p>lineas 4 y 7-10: elementos de redes sociales como un favicon (linea 4), el url de la web y del repo en Github (lineas 5 y 6) y más elementos de redes sociales (lineas 7 a 10). La documentación oficial para estos elementos está <a href="https://quarto.org/docs/websites/website-tools.html">aquí</a></p></li>
+</ul>
+<p><br></p>
 </div>
 <div id="tabset-2-3">
 <div class="cell">
@@ -1386,9 +1402,474 @@
 <span id="cb15-6"><a href="#cb15-6"></a>    toc<span class="sc">:</span> true</span>
 <span id="cb15-7"><a href="#cb15-7"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><br></p>
+<p>En un blog/web el formato de salida es siempre <code>.html</code>; sin embargo podemos especificar otras opciones como por ejemplo sí los documentos (o páginas de la web, o post del blog) tienen un índice flotante, etc… Documentación oficial <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a></p>
 </div>
 </div>
 </div>
+</section>
+<section id="un-ejemplo-completito-de-_quarto.yml" class="slide level2 smaller">
+<h2>Un ejemplo “completito” de <code>_quarto.yml</code></h2>
+<p>Si quieres ver un documento <code>_quarto.yml</code> completito, ve <a href="https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml">aquí</a>. Pertenece a la <a href="https://quarto.org/docs/websites/">web de Quarto</a>.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"></iframe>
+</div><div class="column" style="width:50%;">
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb16-3"><a href="#cb16-3"></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> _site</span></span>
+<span id="cb16-4"><a href="#cb16-4"></a><span class="at">  </span><span class="fu">resources</span><span class="kw">:</span></span>
+<span id="cb16-5"><a href="#cb16-5"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"/docs/download/_download.json"</span></span>
+<span id="cb16-6"><a href="#cb16-6"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"/docs/download/_prerelease.json"</span></span>
+<span id="cb16-7"><a href="#cb16-7"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"/_redirects"</span></span>
+<span id="cb16-8"><a href="#cb16-8"></a></span>
+<span id="cb16-9"><a href="#cb16-9"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb16-10"><a href="#cb16-10"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto"</span></span>
+<span id="cb16-11"><a href="#cb16-11"></a><span class="at">  </span><span class="fu">image</span><span class="kw">:</span><span class="at"> </span><span class="st">"quarto.png"</span></span>
+<span id="cb16-12"><a href="#cb16-12"></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> </span><span class="st">"favicon.png"</span></span>
+<span id="cb16-13"><a href="#cb16-13"></a><span class="at">  </span><span class="fu">google-analytics</span><span class="kw">:</span><span class="at"> </span><span class="st">"G-FV9Z7SDZ0M"</span></span>
+<span id="cb16-14"><a href="#cb16-14"></a><span class="at">  </span><span class="fu">open-graph</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb16-15"><a href="#cb16-15"></a><span class="at">  </span><span class="fu">twitter-card</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb16-16"><a href="#cb16-16"></a><span class="at">  </span><span class="fu">site-url</span><span class="kw">:</span><span class="at"> https://quarto.org</span></span>
+<span id="cb16-17"><a href="#cb16-17"></a><span class="at">  </span><span class="fu">repo-url</span><span class="kw">:</span><span class="at"> https://github.com/quarto-dev/quarto-web</span></span>
+<span id="cb16-18"><a href="#cb16-18"></a><span class="at">  </span><span class="fu">repo-actions</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">edit</span><span class="kw">,</span><span class="at"> issue</span><span class="kw">]</span></span>
+<span id="cb16-19"><a href="#cb16-19"></a><span class="at">  </span><span class="fu">page-navigation</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb16-20"><a href="#cb16-20"></a><span class="at">  </span><span class="fu">search</span><span class="kw">:</span></span>
+<span id="cb16-21"><a href="#cb16-21"></a><span class="at">    </span><span class="fu">algolia</span><span class="kw">:</span></span>
+<span id="cb16-22"><a href="#cb16-22"></a><span class="at">      </span><span class="fu">index-name</span><span class="kw">:</span><span class="at"> prod_QUARTO</span></span>
+<span id="cb16-23"><a href="#cb16-23"></a><span class="at">      </span><span class="fu">application-id</span><span class="kw">:</span><span class="at"> ZPJB5I1QN7</span></span>
+<span id="cb16-24"><a href="#cb16-24"></a><span class="at">      </span><span class="fu">search-only-api-key</span><span class="kw">:</span><span class="at"> 41be6c1e0a7fea4a51b107810facf577</span></span>
+<span id="cb16-25"><a href="#cb16-25"></a><span class="at">      </span><span class="fu">analytics-events</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb16-26"><a href="#cb16-26"></a><span class="at">      </span><span class="fu">show-logo</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb16-27"><a href="#cb16-27"></a><span class="at">  </span><span class="fu">page-footer</span><span class="kw">:</span></span>
+<span id="cb16-28"><a href="#cb16-28"></a><span class="fu">    left</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb16-29"><a href="#cb16-29"></a>      Proudly supported by</span>
+<span id="cb16-30"><a href="#cb16-30"></a>      [![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg){fig-alt="RStudio" width=65px}](https://www.rstudio.com)</span>
+<span id="cb16-31"><a href="#cb16-31"></a><span class="at">    </span><span class="fu">center</span><span class="kw">:</span></span>
+<span id="cb16-32"><a href="#cb16-32"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"About"</span></span>
+<span id="cb16-33"><a href="#cb16-33"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> about.qmd</span></span>
+<span id="cb16-34"><a href="#cb16-34"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"FAQ"</span></span>
+<span id="cb16-35"><a href="#cb16-35"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/faq/index.qmd</span></span>
+<span id="cb16-36"><a href="#cb16-36"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"License"</span></span>
+<span id="cb16-37"><a href="#cb16-37"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> license.qmd</span></span>
+<span id="cb16-38"><a href="#cb16-38"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Trademark"</span></span>
+<span id="cb16-39"><a href="#cb16-39"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> trademark.qmd</span></span>
+<span id="cb16-40"><a href="#cb16-40"></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
+<span id="cb16-41"><a href="#cb16-41"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
+<span id="cb16-42"><a href="#cb16-42"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://twitter.com/quarto_pub</span></span>
+<span id="cb16-43"><a href="#cb16-43"></a><span class="at">        </span><span class="fu">aria-label</span><span class="kw">:</span><span class="at"> Quarto Twitter</span></span>
+<span id="cb16-44"><a href="#cb16-44"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb16-45"><a href="#cb16-45"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/quarto-dev/quarto-cli</span></span>
+<span id="cb16-46"><a href="#cb16-46"></a><span class="at">        </span><span class="fu">aria-label</span><span class="kw">:</span><span class="at"> Quarto GitHub</span></span>
+<span id="cb16-47"><a href="#cb16-47"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb16-48"><a href="#cb16-48"></a><span class="at">    </span><span class="fu">background</span><span class="kw">:</span><span class="at"> light</span></span>
+<span id="cb16-49"><a href="#cb16-49"></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> quarto.png</span></span>
+<span id="cb16-50"><a href="#cb16-50"></a><span class="at">    </span><span class="fu">logo-alt</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto logo."</span></span>
+<span id="cb16-51"><a href="#cb16-51"></a><span class="at">    </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb16-52"><a href="#cb16-52"></a><span class="at">    </span><span class="fu">collapse-below</span><span class="kw">:</span><span class="at"> lg</span></span>
+<span id="cb16-53"><a href="#cb16-53"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb16-54"><a href="#cb16-54"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Overview"</span></span>
+<span id="cb16-55"><a href="#cb16-55"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb16-56"><a href="#cb16-56"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Get Started"</span></span>
+<span id="cb16-57"><a href="#cb16-57"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/get-started/index.qmd</span></span>
+<span id="cb16-58"><a href="#cb16-58"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Guide"</span></span>
+<span id="cb16-59"><a href="#cb16-59"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/guide/index.qmd</span></span>
+<span id="cb16-60"><a href="#cb16-60"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Extensions</span></span>
+<span id="cb16-61"><a href="#cb16-61"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/index.qmd</span></span>
+<span id="cb16-62"><a href="#cb16-62"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Reference"</span></span>
+<span id="cb16-63"><a href="#cb16-63"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/index.qmd</span></span>
+<span id="cb16-64"><a href="#cb16-64"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Gallery"</span></span>
+<span id="cb16-65"><a href="#cb16-65"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/gallery/index.qmd</span></span>
+<span id="cb16-66"><a href="#cb16-66"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Blog"</span></span>
+<span id="cb16-67"><a href="#cb16-67"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/blog/index.qmd</span></span>
+<span id="cb16-68"><a href="#cb16-68"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Help"</span></span>
+<span id="cb16-69"><a href="#cb16-69"></a><span class="at">        </span><span class="fu">menu</span><span class="kw">:</span></span>
+<span id="cb16-70"><a href="#cb16-70"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Report a Bug"</span></span>
+<span id="cb16-71"><a href="#cb16-71"></a><span class="at">            </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> </span><span class="st">"bug"</span></span>
+<span id="cb16-72"><a href="#cb16-72"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://github.com/quarto-dev/quarto-cli/issues"</span></span>
+<span id="cb16-73"><a href="#cb16-73"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Ask a Question"</span></span>
+<span id="cb16-74"><a href="#cb16-74"></a><span class="at">            </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> </span><span class="st">"chat-right-text"</span></span>
+<span id="cb16-75"><a href="#cb16-75"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://github.com/quarto-dev/quarto-cli/discussions"</span></span>
+<span id="cb16-76"><a href="#cb16-76"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"FAQ"</span></span>
+<span id="cb16-77"><a href="#cb16-77"></a><span class="at">            </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> </span><span class="st">"question-circle"</span></span>
+<span id="cb16-78"><a href="#cb16-78"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/faq/index.qmd</span></span>
+<span id="cb16-79"><a href="#cb16-79"></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
+<span id="cb16-80"><a href="#cb16-80"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
+<span id="cb16-81"><a href="#cb16-81"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://twitter.com/quarto_pub</span></span>
+<span id="cb16-82"><a href="#cb16-82"></a><span class="at">        </span><span class="fu">aria-label</span><span class="kw">:</span><span class="at"> Quarto Twitter</span></span>
+<span id="cb16-83"><a href="#cb16-83"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb16-84"><a href="#cb16-84"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/quarto-dev/quarto-cli</span></span>
+<span id="cb16-85"><a href="#cb16-85"></a><span class="at">        </span><span class="fu">aria-label</span><span class="kw">:</span><span class="at"> Quarto GitHub</span></span>
+<span id="cb16-86"><a href="#cb16-86"></a></span>
+<span id="cb16-87"><a href="#cb16-87"></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
+<span id="cb16-88"><a href="#cb16-88"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> get-started</span></span>
+<span id="cb16-89"><a href="#cb16-89"></a><span class="at">      </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Get Started"</span></span>
+<span id="cb16-90"><a href="#cb16-90"></a><span class="at">      </span><span class="fu">style</span><span class="kw">:</span><span class="at"> </span><span class="st">"floating"</span></span>
+<span id="cb16-91"><a href="#cb16-91"></a><span class="at">      </span><span class="fu">collapse-level</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb16-92"><a href="#cb16-92"></a><span class="at">      </span><span class="fu">align</span><span class="kw">:</span><span class="at"> left</span></span>
+<span id="cb16-93"><a href="#cb16-93"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-94"><a href="#cb16-94"></a><span class="at">        </span><span class="kw">-</span><span class="at"> docs/get-started/index.qmd</span></span>
+<span id="cb16-95"><a href="#cb16-95"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Tutorial: Hello, Quarto"</span></span>
+<span id="cb16-96"><a href="#cb16-96"></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/get-started/hello/</span></span>
+<span id="cb16-97"><a href="#cb16-97"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Tutorial: Computations"</span></span>
+<span id="cb16-98"><a href="#cb16-98"></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/get-started/computations/</span></span>
+<span id="cb16-99"><a href="#cb16-99"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Tutorial: Authoring"</span></span>
+<span id="cb16-100"><a href="#cb16-100"></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/get-started/authoring/</span></span>
+<span id="cb16-101"><a href="#cb16-101"></a></span>
+<span id="cb16-102"><a href="#cb16-102"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> guide</span></span>
+<span id="cb16-103"><a href="#cb16-103"></a><span class="at">      </span><span class="fu">collapse-level</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
+<span id="cb16-104"><a href="#cb16-104"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-105"><a href="#cb16-105"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Guide"</span></span>
+<span id="cb16-106"><a href="#cb16-106"></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/guide/index.qmd</span></span>
+<span id="cb16-107"><a href="#cb16-107"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Authoring"</span></span>
+<span id="cb16-108"><a href="#cb16-108"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-109"><a href="#cb16-109"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/markdown-basics.qmd</span></span>
+<span id="cb16-110"><a href="#cb16-110"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/figures.qmd</span></span>
+<span id="cb16-111"><a href="#cb16-111"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/tables.qmd</span></span>
+<span id="cb16-112"><a href="#cb16-112"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/diagrams.qmd</span></span>
+<span id="cb16-113"><a href="#cb16-113"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/videos.qmd</span></span>
+<span id="cb16-114"><a href="#cb16-114"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/callouts.qmd</span></span>
+<span id="cb16-115"><a href="#cb16-115"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/article-layout.qmd</span></span>
+<span id="cb16-116"><a href="#cb16-116"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Scholarly Writing"</span></span>
+<span id="cb16-117"><a href="#cb16-117"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-118"><a href="#cb16-118"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/authoring/title-blocks.qmd</span></span>
+<span id="cb16-119"><a href="#cb16-119"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/authoring/footnotes-and-citations.qmd</span></span>
+<span id="cb16-120"><a href="#cb16-120"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/authoring/cross-references.qmd</span></span>
+<span id="cb16-121"><a href="#cb16-121"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/authoring/create-citeable-articles.qmd</span></span>
+<span id="cb16-122"><a href="#cb16-122"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/authoring/appendices.qmd</span></span>
+<span id="cb16-123"><a href="#cb16-123"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Computations"</span></span>
+<span id="cb16-124"><a href="#cb16-124"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-125"><a href="#cb16-125"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/computations/python.qmd</span></span>
+<span id="cb16-126"><a href="#cb16-126"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/computations/r.qmd</span></span>
+<span id="cb16-127"><a href="#cb16-127"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/computations/julia.qmd</span></span>
+<span id="cb16-128"><a href="#cb16-128"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/computations/ojs.qmd</span></span>
+<span id="cb16-129"><a href="#cb16-129"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/computations/execution-options.qmd</span></span>
+<span id="cb16-130"><a href="#cb16-130"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/computations/parameters.qmd</span></span>
+<span id="cb16-131"><a href="#cb16-131"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Tools"</span></span>
+<span id="cb16-132"><a href="#cb16-132"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-133"><a href="#cb16-133"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/tools/jupyter-lab.qmd</span></span>
+<span id="cb16-134"><a href="#cb16-134"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/tools/rstudio.qmd</span></span>
+<span id="cb16-135"><a href="#cb16-135"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/tools/vscode.qmd</span></span>
+<span id="cb16-136"><a href="#cb16-136"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/tools/text-editors.qmd</span></span>
+<span id="cb16-137"><a href="#cb16-137"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Visual Editor"</span></span>
+<span id="cb16-138"><a href="#cb16-138"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-139"><a href="#cb16-139"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Editor Basics</span></span>
+<span id="cb16-140"><a href="#cb16-140"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/visual-editor/index.qmd</span></span>
+<span id="cb16-141"><a href="#cb16-141"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/visual-editor/technical.qmd</span></span>
+<span id="cb16-142"><a href="#cb16-142"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/visual-editor/content.qmd</span></span>
+<span id="cb16-143"><a href="#cb16-143"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/visual-editor/options.qmd</span></span>
+<span id="cb16-144"><a href="#cb16-144"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/visual-editor/markdown.qmd</span></span>
+<span id="cb16-145"><a href="#cb16-145"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Documents"</span></span>
+<span id="cb16-146"><a href="#cb16-146"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-147"><a href="#cb16-147"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"HTML"</span></span>
+<span id="cb16-148"><a href="#cb16-148"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-149"><a href="#cb16-149"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/html-basics.qmd</span></span>
+<span id="cb16-150"><a href="#cb16-150"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/html-code.qmd</span></span>
+<span id="cb16-151"><a href="#cb16-151"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/html-themes.qmd</span></span>
+<span id="cb16-152"><a href="#cb16-152"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/html-publishing.qmd</span></span>
+<span id="cb16-153"><a href="#cb16-153"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"PDF"</span></span>
+<span id="cb16-154"><a href="#cb16-154"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-155"><a href="#cb16-155"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/pdf-basics.qmd</span></span>
+<span id="cb16-156"><a href="#cb16-156"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/pdf-engine.qmd</span></span>
+<span id="cb16-157"><a href="#cb16-157"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"MS Word"</span></span>
+<span id="cb16-158"><a href="#cb16-158"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-159"><a href="#cb16-159"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/ms-word.qmd</span></span>
+<span id="cb16-160"><a href="#cb16-160"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/ms-word-templates.qmd</span></span>
+<span id="cb16-161"><a href="#cb16-161"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Markdown"</span></span>
+<span id="cb16-162"><a href="#cb16-162"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-163"><a href="#cb16-163"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/gfm.qmd</span></span>
+<span id="cb16-164"><a href="#cb16-164"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/hugo.qmd</span></span>
+<span id="cb16-165"><a href="#cb16-165"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/output-formats/docusaurus.qmd</span></span>
+<span id="cb16-166"><a href="#cb16-166"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/output-formats/all-formats.qmd</span></span>
+<span id="cb16-167"><a href="#cb16-167"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Presentations"</span></span>
+<span id="cb16-168"><a href="#cb16-168"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-169"><a href="#cb16-169"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Overview"</span></span>
+<span id="cb16-170"><a href="#cb16-170"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/presentations/index.qmd</span></span>
+<span id="cb16-171"><a href="#cb16-171"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> docs/presentations/revealjs/index.qmd</span></span>
+<span id="cb16-172"><a href="#cb16-172"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-173"><a href="#cb16-173"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Reveal Basics"</span></span>
+<span id="cb16-174"><a href="#cb16-174"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/presentations/revealjs/index.qmd</span></span>
+<span id="cb16-175"><a href="#cb16-175"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/presentations/revealjs/presenting.qmd</span></span>
+<span id="cb16-176"><a href="#cb16-176"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/presentations/revealjs/advanced.qmd</span></span>
+<span id="cb16-177"><a href="#cb16-177"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/presentations/revealjs/themes.qmd</span></span>
+<span id="cb16-178"><a href="#cb16-178"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/presentations/powerpoint.qmd</span></span>
+<span id="cb16-179"><a href="#cb16-179"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/presentations/beamer.qmd</span></span>
+<span id="cb16-180"><a href="#cb16-180"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Websites"</span></span>
+<span id="cb16-181"><a href="#cb16-181"></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/websites/website-basics.qmd</span></span>
+<span id="cb16-182"><a href="#cb16-182"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-183"><a href="#cb16-183"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/websites/website-basics.qmd</span></span>
+<span id="cb16-184"><a href="#cb16-184"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/websites/website-navigation.qmd</span></span>
+<span id="cb16-185"><a href="#cb16-185"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/websites/website-blog.qmd</span></span>
+<span id="cb16-186"><a href="#cb16-186"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/websites/website-search.qmd</span></span>
+<span id="cb16-187"><a href="#cb16-187"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/websites/website-tools.qmd</span></span>
+<span id="cb16-188"><a href="#cb16-188"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/websites/website-about.qmd</span></span>
+<span id="cb16-189"><a href="#cb16-189"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Listing Pages"</span></span>
+<span id="cb16-190"><a href="#cb16-190"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/websites/website-listings.qmd</span></span>
+<span id="cb16-191"><a href="#cb16-191"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-192"><a href="#cb16-192"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/websites/website-listings.qmd</span></span>
+<span id="cb16-193"><a href="#cb16-193"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/websites/website-listings-custom.qmd</span></span>
+<span id="cb16-194"><a href="#cb16-194"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Books"</span></span>
+<span id="cb16-195"><a href="#cb16-195"></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/books/book-basics.qmd</span></span>
+<span id="cb16-196"><a href="#cb16-196"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-197"><a href="#cb16-197"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/books/book-basics.qmd</span></span>
+<span id="cb16-198"><a href="#cb16-198"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/books/book-structure.qmd</span></span>
+<span id="cb16-199"><a href="#cb16-199"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/books/book-crossrefs.qmd</span></span>
+<span id="cb16-200"><a href="#cb16-200"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Customizing Output"</span></span>
+<span id="cb16-201"><a href="#cb16-201"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/books/book-output.qmd</span></span>
+<span id="cb16-202"><a href="#cb16-202"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Interactivity"</span></span>
+<span id="cb16-203"><a href="#cb16-203"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-204"><a href="#cb16-204"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Overview"</span></span>
+<span id="cb16-205"><a href="#cb16-205"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/interactive/index.qmd</span></span>
+<span id="cb16-206"><a href="#cb16-206"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> docs/interactive/ojs/index.qmd</span></span>
+<span id="cb16-207"><a href="#cb16-207"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-208"><a href="#cb16-208"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Introduction"</span></span>
+<span id="cb16-209"><a href="#cb16-209"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/interactive/ojs/index.qmd</span></span>
+<span id="cb16-210"><a href="#cb16-210"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/libraries.qmd</span></span>
+<span id="cb16-211"><a href="#cb16-211"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/data-sources.qmd</span></span>
+<span id="cb16-212"><a href="#cb16-212"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/ojs-cells.qmd</span></span>
+<span id="cb16-213"><a href="#cb16-213"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/shiny.qmd</span></span>
+<span id="cb16-214"><a href="#cb16-214"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/code-reuse.qmd</span></span>
+<span id="cb16-215"><a href="#cb16-215"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Examples"</span></span>
+<span id="cb16-216"><a href="#cb16-216"></a><span class="at">                  </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-217"><a href="#cb16-217"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/penguins.qmd</span></span>
+<span id="cb16-218"><a href="#cb16-218"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/sunburst.qmd</span></span>
+<span id="cb16-219"><a href="#cb16-219"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/arquero.qmd</span></span>
+<span id="cb16-220"><a href="#cb16-220"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/population.qmd</span></span>
+<span id="cb16-221"><a href="#cb16-221"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/noaa-co2.qmd</span></span>
+<span id="cb16-222"><a href="#cb16-222"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/github.qmd</span></span>
+<span id="cb16-223"><a href="#cb16-223"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/layout.qmd</span></span>
+<span id="cb16-224"><a href="#cb16-224"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Shiny"</span></span>
+<span id="cb16-225"><a href="#cb16-225"></a><span class="at">                      </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-226"><a href="#cb16-226"></a><span class="at">                        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"K-Means"</span></span>
+<span id="cb16-227"><a href="#cb16-227"></a><span class="at">                          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/kmeans-shiny-ojs/</span></span>
+<span id="cb16-228"><a href="#cb16-228"></a><span class="at">                        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Binning"</span></span>
+<span id="cb16-229"><a href="#cb16-229"></a><span class="at">                          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/binning-shiny-ojs/</span></span>
+<span id="cb16-230"><a href="#cb16-230"></a><span class="at">                        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Data Binding"</span></span>
+<span id="cb16-231"><a href="#cb16-231"></a><span class="at">                          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/data-shiny-ojs/</span></span>
+<span id="cb16-232"><a href="#cb16-232"></a><span class="at">                        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Covid Map"</span></span>
+<span id="cb16-233"><a href="#cb16-233"></a><span class="at">                          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/covid19-bicartogram/</span></span>
+<span id="cb16-234"><a href="#cb16-234"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> docs/interactive/shiny/index.qmd</span></span>
+<span id="cb16-235"><a href="#cb16-235"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-236"><a href="#cb16-236"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Introduction"</span></span>
+<span id="cb16-237"><a href="#cb16-237"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/interactive/shiny/index.qmd</span></span>
+<span id="cb16-238"><a href="#cb16-238"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/interactive/shiny/running.qmd</span></span>
+<span id="cb16-239"><a href="#cb16-239"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/interactive/shiny/execution.qmd</span></span>
+<span id="cb16-240"><a href="#cb16-240"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/interactive/shiny/resources.qmd</span></span>
+<span id="cb16-241"><a href="#cb16-241"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Examples"</span></span>
+<span id="cb16-242"><a href="#cb16-242"></a><span class="at">                  </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-243"><a href="#cb16-243"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Old Faithful"</span></span>
+<span id="cb16-244"><a href="#cb16-244"></a><span class="at">                      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/shiny-old-faithful/</span></span>
+<span id="cb16-245"><a href="#cb16-245"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"K-Means"</span></span>
+<span id="cb16-246"><a href="#cb16-246"></a><span class="at">                      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/shiny-k-means/</span></span>
+<span id="cb16-247"><a href="#cb16-247"></a><span class="at">                    </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Diamonds"</span></span>
+<span id="cb16-248"><a href="#cb16-248"></a><span class="at">                      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/shiny-diamonds/</span></span>
+<span id="cb16-249"><a href="#cb16-249"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Widgets"</span></span>
+<span id="cb16-250"><a href="#cb16-250"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-251"><a href="#cb16-251"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/interactive/widgets/jupyter.qmd</span></span>
+<span id="cb16-252"><a href="#cb16-252"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/interactive/widgets/htmlwidgets.qmd</span></span>
+<span id="cb16-253"><a href="#cb16-253"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/interactive/layout.qmd</span></span>
+<span id="cb16-254"><a href="#cb16-254"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Publishing"</span></span>
+<span id="cb16-255"><a href="#cb16-255"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-256"><a href="#cb16-256"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/publishing/index.qmd</span></span>
+<span id="cb16-257"><a href="#cb16-257"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/publishing/quarto-pub.qmd</span></span>
+<span id="cb16-258"><a href="#cb16-258"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/publishing/github-pages.qmd</span></span>
+<span id="cb16-259"><a href="#cb16-259"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/publishing/rstudio-connect.qmd</span></span>
+<span id="cb16-260"><a href="#cb16-260"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/publishing/netlify.qmd</span></span>
+<span id="cb16-261"><a href="#cb16-261"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/publishing/other.qmd</span></span>
+<span id="cb16-262"><a href="#cb16-262"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Publishing with CI"</span></span>
+<span id="cb16-263"><a href="#cb16-263"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/publishing/ci.qmd</span></span>
+<span id="cb16-264"><a href="#cb16-264"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Projects"</span></span>
+<span id="cb16-265"><a href="#cb16-265"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-266"><a href="#cb16-266"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/projects/quarto-projects.qmd</span></span>
+<span id="cb16-267"><a href="#cb16-267"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/projects/code-execution.qmd</span></span>
+<span id="cb16-268"><a href="#cb16-268"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/projects/profiles.qmd</span></span>
+<span id="cb16-269"><a href="#cb16-269"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/projects/environment.qmd</span></span>
+<span id="cb16-270"><a href="#cb16-270"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/projects/scripts.qmd</span></span>
+<span id="cb16-271"><a href="#cb16-271"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/projects/virtual-environments.qmd</span></span>
+<span id="cb16-272"><a href="#cb16-272"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Advanced"</span></span>
+<span id="cb16-273"><a href="#cb16-273"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-274"><a href="#cb16-274"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/includes.qmd</span></span>
+<span id="cb16-275"><a href="#cb16-275"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/variables.qmd</span></span>
+<span id="cb16-276"><a href="#cb16-276"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/output-formats/page-layout.qmd</span></span>
+<span id="cb16-277"><a href="#cb16-277"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/language.qmd</span></span>
+<span id="cb16-278"><a href="#cb16-278"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/authoring/conditional.qmd</span></span>
+<span id="cb16-279"><a href="#cb16-279"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/nbfilter.qmd</span></span>
+<span id="cb16-280"><a href="#cb16-280"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> extensions</span></span>
+<span id="cb16-281"><a href="#cb16-281"></a><span class="at">      </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Extensions"</span></span>
+<span id="cb16-282"><a href="#cb16-282"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-283"><a href="#cb16-283"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="st">"---"</span></span>
+<span id="cb16-284"><a href="#cb16-284"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> docs/extensions/index.qmd</span></span>
+<span id="cb16-285"><a href="#cb16-285"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb16-286"><a href="#cb16-286"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Shortcodes &amp; Filters"</span></span>
+<span id="cb16-287"><a href="#cb16-287"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/listing-filters.qmd</span></span>
+<span id="cb16-288"><a href="#cb16-288"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Journal Articles"</span></span>
+<span id="cb16-289"><a href="#cb16-289"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/listing-journals.qmd</span></span>
+<span id="cb16-290"><a href="#cb16-290"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Custom Formats"</span></span>
+<span id="cb16-291"><a href="#cb16-291"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/listing-formats.qmd</span></span>
+<span id="cb16-292"><a href="#cb16-292"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Revealjs Extensions"</span></span>
+<span id="cb16-293"><a href="#cb16-293"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/listing-revealjs.qmd</span></span>
+<span id="cb16-294"><a href="#cb16-294"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/managing.qmd</span></span>
+<span id="cb16-295"><a href="#cb16-295"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="st">"---"</span></span>
+<span id="cb16-296"><a href="#cb16-296"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> docs/extensions/creating.qmd</span></span>
+<span id="cb16-297"><a href="#cb16-297"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-298"><a href="#cb16-298"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Overview"</span></span>
+<span id="cb16-299"><a href="#cb16-299"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/creating.qmd</span></span>
+<span id="cb16-300"><a href="#cb16-300"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/lua.qmd</span></span>
+<span id="cb16-301"><a href="#cb16-301"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/lua-api.qmd</span></span>
+<span id="cb16-302"><a href="#cb16-302"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Distribution"</span></span>
+<span id="cb16-303"><a href="#cb16-303"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/distributing.qmd</span></span>
+<span id="cb16-304"><a href="#cb16-304"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="st">"---"</span></span>
+<span id="cb16-305"><a href="#cb16-305"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Shortcodes"</span></span>
+<span id="cb16-306"><a href="#cb16-306"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/shortcodes.qmd</span></span>
+<span id="cb16-307"><a href="#cb16-307"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Filters"</span></span>
+<span id="cb16-308"><a href="#cb16-308"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/filters.qmd</span></span>
+<span id="cb16-309"><a href="#cb16-309"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Journal Articles"</span></span>
+<span id="cb16-310"><a href="#cb16-310"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/journals/formats.qmd</span></span>
+<span id="cb16-311"><a href="#cb16-311"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-312"><a href="#cb16-312"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/journals/formats.qmd</span></span>
+<span id="cb16-313"><a href="#cb16-313"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/journals/templates.qmd</span></span>
+<span id="cb16-314"><a href="#cb16-314"></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/journals/authors.qmd</span></span>
+<span id="cb16-315"><a href="#cb16-315"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/formats.qmd</span></span>
+<span id="cb16-316"><a href="#cb16-316"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/revealjs.qmd</span></span>
+<span id="cb16-317"><a href="#cb16-317"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/project-types.qmd</span></span>
+<span id="cb16-318"><a href="#cb16-318"></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/starter-templates.qmd</span></span>
+<span id="cb16-319"><a href="#cb16-319"></a></span>
+<span id="cb16-320"><a href="#cb16-320"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> reference</span></span>
+<span id="cb16-321"><a href="#cb16-321"></a><span class="at">      </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Reference"</span></span>
+<span id="cb16-322"><a href="#cb16-322"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-323"><a href="#cb16-323"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Reference"</span></span>
+<span id="cb16-324"><a href="#cb16-324"></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/index.qmd</span></span>
+<span id="cb16-325"><a href="#cb16-325"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Formats"</span></span>
+<span id="cb16-326"><a href="#cb16-326"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-327"><a href="#cb16-327"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"HTML"</span></span>
+<span id="cb16-328"><a href="#cb16-328"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/html.qmd</span></span>
+<span id="cb16-329"><a href="#cb16-329"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"PDF"</span></span>
+<span id="cb16-330"><a href="#cb16-330"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/pdf.qmd</span></span>
+<span id="cb16-331"><a href="#cb16-331"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"MS Word"</span></span>
+<span id="cb16-332"><a href="#cb16-332"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/docx.qmd</span></span>
+<span id="cb16-333"><a href="#cb16-333"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"OpenOffice"</span></span>
+<span id="cb16-334"><a href="#cb16-334"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/odt.qmd</span></span>
+<span id="cb16-335"><a href="#cb16-335"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"ePub"</span></span>
+<span id="cb16-336"><a href="#cb16-336"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/epub.qmd</span></span>
+<span id="cb16-337"><a href="#cb16-337"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Presentations"</span></span>
+<span id="cb16-338"><a href="#cb16-338"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-339"><a href="#cb16-339"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Revealjs"</span></span>
+<span id="cb16-340"><a href="#cb16-340"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/presentations/revealjs.qmd</span></span>
+<span id="cb16-341"><a href="#cb16-341"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"PowerPoint"</span></span>
+<span id="cb16-342"><a href="#cb16-342"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/presentations/pptx.qmd</span></span>
+<span id="cb16-343"><a href="#cb16-343"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Beamer"</span></span>
+<span id="cb16-344"><a href="#cb16-344"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/presentations/beamer.qmd</span></span>
+<span id="cb16-345"><a href="#cb16-345"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Markdown"</span></span>
+<span id="cb16-346"><a href="#cb16-346"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-347"><a href="#cb16-347"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"GitHub"</span></span>
+<span id="cb16-348"><a href="#cb16-348"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/markdown/gfm.qmd</span></span>
+<span id="cb16-349"><a href="#cb16-349"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"CommonMark"</span></span>
+<span id="cb16-350"><a href="#cb16-350"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/markdown/commonmark.qmd</span></span>
+<span id="cb16-351"><a href="#cb16-351"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Markua"</span></span>
+<span id="cb16-352"><a href="#cb16-352"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/markdown/markua.qmd</span></span>
+<span id="cb16-353"><a href="#cb16-353"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Wikis"</span></span>
+<span id="cb16-354"><a href="#cb16-354"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-355"><a href="#cb16-355"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"MediaWiki"</span></span>
+<span id="cb16-356"><a href="#cb16-356"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/wiki/mediawiki.qmd</span></span>
+<span id="cb16-357"><a href="#cb16-357"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"DokuWiki"</span></span>
+<span id="cb16-358"><a href="#cb16-358"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/wiki/dokuwiki.qmd</span></span>
+<span id="cb16-359"><a href="#cb16-359"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"ZimWiki"</span></span>
+<span id="cb16-360"><a href="#cb16-360"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/wiki/zimwiki.qmd</span></span>
+<span id="cb16-361"><a href="#cb16-361"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Jira Wiki"</span></span>
+<span id="cb16-362"><a href="#cb16-362"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/wiki/jira.qmd</span></span>
+<span id="cb16-363"><a href="#cb16-363"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"XWiki"</span></span>
+<span id="cb16-364"><a href="#cb16-364"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/wiki/xwiki.qmd</span></span>
+<span id="cb16-365"><a href="#cb16-365"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"More Formats"</span></span>
+<span id="cb16-366"><a href="#cb16-366"></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-367"><a href="#cb16-367"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"JATS"</span></span>
+<span id="cb16-368"><a href="#cb16-368"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/jats.qmd</span></span>
+<span id="cb16-369"><a href="#cb16-369"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Jupyter"</span></span>
+<span id="cb16-370"><a href="#cb16-370"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/ipynb.qmd</span></span>
+<span id="cb16-371"><a href="#cb16-371"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"ConTeXt"</span></span>
+<span id="cb16-372"><a href="#cb16-372"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/context.qmd</span></span>
+<span id="cb16-373"><a href="#cb16-373"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"RTF"</span></span>
+<span id="cb16-374"><a href="#cb16-374"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/rtf.qmd</span></span>
+<span id="cb16-375"><a href="#cb16-375"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"reST"</span></span>
+<span id="cb16-376"><a href="#cb16-376"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/rst.qmd</span></span>
+<span id="cb16-377"><a href="#cb16-377"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"AsciiDoc"</span></span>
+<span id="cb16-378"><a href="#cb16-378"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/asciidoc.qmd</span></span>
+<span id="cb16-379"><a href="#cb16-379"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Org-Mode"</span></span>
+<span id="cb16-380"><a href="#cb16-380"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/org.qmd</span></span>
+<span id="cb16-381"><a href="#cb16-381"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Muse"</span></span>
+<span id="cb16-382"><a href="#cb16-382"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/muse.qmd</span></span>
+<span id="cb16-383"><a href="#cb16-383"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"GNU TexInfo"</span></span>
+<span id="cb16-384"><a href="#cb16-384"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/texinfo.qmd</span></span>
+<span id="cb16-385"><a href="#cb16-385"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Groff Man Page"</span></span>
+<span id="cb16-386"><a href="#cb16-386"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/man.qmd</span></span>
+<span id="cb16-387"><a href="#cb16-387"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Groff Manuscript"</span></span>
+<span id="cb16-388"><a href="#cb16-388"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/ms.qmd</span></span>
+<span id="cb16-389"><a href="#cb16-389"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Haddock markup"</span></span>
+<span id="cb16-390"><a href="#cb16-390"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/haddock.qmd</span></span>
+<span id="cb16-391"><a href="#cb16-391"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"OPML"</span></span>
+<span id="cb16-392"><a href="#cb16-392"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/opml.qmd</span></span>
+<span id="cb16-393"><a href="#cb16-393"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Textile"</span></span>
+<span id="cb16-394"><a href="#cb16-394"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/textile.qmd</span></span>
+<span id="cb16-395"><a href="#cb16-395"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"DocBook"</span></span>
+<span id="cb16-396"><a href="#cb16-396"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/docbook.qmd</span></span>
+<span id="cb16-397"><a href="#cb16-397"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"InDesign"</span></span>
+<span id="cb16-398"><a href="#cb16-398"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/icml.qmd</span></span>
+<span id="cb16-399"><a href="#cb16-399"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"TEI Simple"</span></span>
+<span id="cb16-400"><a href="#cb16-400"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/tei.qmd</span></span>
+<span id="cb16-401"><a href="#cb16-401"></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"FictionBook"</span></span>
+<span id="cb16-402"><a href="#cb16-402"></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/fb2.qmd</span></span>
+<span id="cb16-403"><a href="#cb16-403"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Code Cells"</span></span>
+<span id="cb16-404"><a href="#cb16-404"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-405"><a href="#cb16-405"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Jupyter"</span></span>
+<span id="cb16-406"><a href="#cb16-406"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/cells/cells-jupyter.qmd</span></span>
+<span id="cb16-407"><a href="#cb16-407"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Knitr"</span></span>
+<span id="cb16-408"><a href="#cb16-408"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/cells/cells-knitr.qmd</span></span>
+<span id="cb16-409"><a href="#cb16-409"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Observable"</span></span>
+<span id="cb16-410"><a href="#cb16-410"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/cells/cells-ojs.qmd</span></span>
+<span id="cb16-411"><a href="#cb16-411"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Projects"</span></span>
+<span id="cb16-412"><a href="#cb16-412"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-413"><a href="#cb16-413"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Options"</span></span>
+<span id="cb16-414"><a href="#cb16-414"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/projects/options.qmd</span></span>
+<span id="cb16-415"><a href="#cb16-415"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Websites"</span></span>
+<span id="cb16-416"><a href="#cb16-416"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/projects/websites.qmd</span></span>
+<span id="cb16-417"><a href="#cb16-417"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Books"</span></span>
+<span id="cb16-418"><a href="#cb16-418"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/projects/books.qmd</span></span>
+<span id="cb16-419"><a href="#cb16-419"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"More"</span></span>
+<span id="cb16-420"><a href="#cb16-420"></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb16-421"><a href="#cb16-421"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Dates"</span></span>
+<span id="cb16-422"><a href="#cb16-422"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/dates.qmd</span></span>
+<span id="cb16-423"><a href="#cb16-423"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Globs"</span></span>
+<span id="cb16-424"><a href="#cb16-424"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/globs.qmd</span></span>
+<span id="cb16-425"><a href="#cb16-425"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Citations"</span></span>
+<span id="cb16-426"><a href="#cb16-426"></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/metadata/citation.qmd</span></span>
+<span id="cb16-427"><a href="#cb16-427"></a></span>
+<span id="cb16-428"><a href="#cb16-428"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb16-429"><a href="#cb16-429"></a></span>
+<span id="cb16-430"><a href="#cb16-430"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb16-431"><a href="#cb16-431"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb16-432"><a href="#cb16-432"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb16-433"><a href="#cb16-433"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span></span>
+<span id="cb16-434"><a href="#cb16-434"></a><span class="at">      </span><span class="fu">light</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">cosmo</span><span class="kw">,</span><span class="at"> theme.scss</span><span class="kw">]</span></span>
+<span id="cb16-435"><a href="#cb16-435"></a><span class="at">    </span><span class="fu">code-copy</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb16-436"><a href="#cb16-436"></a><span class="at">    </span><span class="fu">code-overflow</span><span class="kw">:</span><span class="at"> wrap</span></span>
+<span id="cb16-437"><a href="#cb16-437"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
+<span id="cb16-438"><a href="#cb16-438"></a><span class="at">    </span><span class="fu">include-after-body</span><span class="kw">:</span><span class="at"> js.html</span></span>
+<span id="cb16-439"><a href="#cb16-439"></a></span>
+<span id="cb16-440"><a href="#cb16-440"></a><span class="fu">filters</span><span class="kw">:</span></span>
+<span id="cb16-441"><a href="#cb16-441"></a><span class="at">  </span><span class="kw">-</span><span class="at"> filters/tools-tabset.lua</span></span>
+<span id="cb16-442"><a href="#cb16-442"></a></span>
+<span id="cb16-443"><a href="#cb16-443"></a></span>
+<span id="cb16-444"><a href="#cb16-444"></a><span class="fu">freeze</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb16-445"><a href="#cb16-445"></a></span>
+<span id="cb16-446"><a href="#cb16-446"></a><span class="fu">editor</span><span class="kw">:</span><span class="at"> visual</span></span>
+<span id="cb16-447"><a href="#cb16-447"></a></span>
+<span id="cb16-448"><a href="#cb16-448"></a><span class="fu">profile</span><span class="kw">:</span></span>
+<span id="cb16-449"><a href="#cb16-449"></a><span class="at">  </span><span class="fu">group</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb16-450"><a href="#cb16-450"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="kw">[</span><span class="at">rc</span><span class="kw">,</span><span class="at"> prerelease</span><span class="kw">]</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="yaml-nivel-carpeta-.carpeta_metadata.yml" class="slide level2 smaller">
+<h2>YAML: NIVEL CARPETA (<code>./&lt;carpeta&gt;/_metadata.yml</code>)</h2>
 
 <div class="footer footer-default">
 

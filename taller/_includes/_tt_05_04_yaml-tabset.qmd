@@ -42,7 +42,7 @@ format:
 
 #### 2. nivel carpeta (_metadata.yml)
 
-Abajo el, contenido del fichero `/posts/_metadata.yml`. Afectará a todos los ficheros `.qmd` que haya en la carpeta `/posts/`
+Abajo el, contenido del fichero `./posts/_metadata.yml`. Afectará a todos los ficheros `.qmd` que haya en la carpeta `./posts/`
 
 ```{r, eval = FALSE}
 #| code-overflow: scroll   #- {scroll, wrap}
@@ -60,11 +60,9 @@ title-block-banner: true
 
 #### 3. nivel documento (index.qmd)
 
-Abajo el encabezamiento del fichero `/posts/my-primer-post/index.qmd`:
+Abajo el encabezamiento del fichero `./posts/my-primer-post/index.qmd`:
 
-```{r, eval = FALSE}
-#| code-overflow: wrap   #- {scroll, wrap}
-
+````markdown
 ---
 title: "Mi primer post con Quarto"
 author: "Pedro J. Pérez"
@@ -72,12 +70,14 @@ date: "2022-10-25"
 categories: [R, quarto]
 ---
 
-Este es mi primer post con Quarto!!!!
+Este es mi **primer post** con Quarto!!!!
 
-![](thumbnail.jpg)
+```{{r}}
+sqrt(2 + 2)
+```
 
 Acabé con mi primer post. FIN
-
-```
+  
+````
 
 :::

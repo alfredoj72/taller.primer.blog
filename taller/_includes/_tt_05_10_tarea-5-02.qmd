@@ -1,0 +1,24 @@
+::: {.callout-important icon="false"}
+#### Tarea 5.2: Modificar `./posts/_metadata.yml` 
+
+- Tenemos que dejar el archivo `./posts/_metadata.yml`  así:
+
+
+```{r, eval = FALSE}
+#| code-line-numbers: true
+#| code-overflow: scroll   #- {scroll, wrap}
+
+# options specified here will apply to all posts in this folder
+
+# freeze computational output
+# freeze controls whether execution occurs during global project renders
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
+freeze: auto   #- {false, true, auto}
+
+# Enable banner style title blocks
+# https://quarto.org/docs/authoring/title-blocks.html#title-banners
+title-block-banner: true
+
+```
+
+:::

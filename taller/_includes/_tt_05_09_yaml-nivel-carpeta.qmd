@@ -1,0 +1,15 @@
+Abajo el, contenido del fichero `./posts/_metadata.yml`. Afectará a todos los ficheros `.qmd` que haya en la carpeta `./posts/`
+
+```{r, eval = FALSE}
+#| code-overflow: scroll   #- {scroll, wrap}
+
+# options specified here will apply to all posts in this folder
+
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
+freeze: true
+
+# Enable banner style title blocks
+title-block-banner: true
+
+```
