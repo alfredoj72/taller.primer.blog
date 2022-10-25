@@ -4,6 +4,8 @@ subtitle: "(9ª parte del taller [Mi primer blog con Quarto](https://perezp44.gi
 toc-title: Tutorial nº 9
 ---
 
+<!--This is a comment. Comments are not displayed in the browser-->
+
 <br>
 
 En este tutorial sirve de plantilla para ir escribiendo un post que contenga distintos elementos disponibles en Quarto para escribir con archivos `.qmd`.
@@ -170,10 +172,7 @@ Documentación [aquí](https://quarto.org/docs/authoring/callouts.html)
 
 
 
-
-
-
-#### Tablas
+## Tablas
 
 <https://quarto.org/docs/authoring/tables.html>
 
@@ -182,3 +181,8 @@ Documentación [aquí](https://quarto.org/docs/authoring/callouts.html)
 <https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/>
 
 <br>
+
+
+## Bibliografía
+
+Para aprender puedes ir a [este Quarto tip](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/), a  [este video](https://youtu.be/d8jSN998Mtw?t=3757). La documentación oficial está [aquí](https://quarto.org/docs/authoring/footnotes-and-citations.html) y [aquí](https://quarto.org/docs/visual-editor/technical.html#citations) para usar el editor visual.

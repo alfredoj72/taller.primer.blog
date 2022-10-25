@@ -1,10 +1,14 @@
 ---
-title: ""
+title: "Recursos sobre Quarto"
 ---
 
-Desde que **Quarto** se hizo publico con [We don't talk about Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) ha sido un no parar de workshops, posts, etc... en esta página tienes una selección de recursos sobre Quarto. Obviamente la principal referencia es la [web de Quarto](https://quarto.org/). En ella hay, entre otras secciones, una [Guide](https://quarto.org/docs/guide/), una [Reference](https://quarto.org/docs/reference/) y una [Gallery](https://quarto.org/docs/gallery/).
+Desde que **Quarto** se hizo publico con [We don't talk about Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) ha sido un no parar de workshops, posts, etc... Aquí tienes una selección de recursos sobre Quarto.
 
-Entre los materiales que he visto destacar lo siguientes:
+Obviamente la **principal referencia** es la [web de Quarto](https://quarto.org/). En ella hay, entre otras secciones, una [Guide](https://quarto.org/docs/guide/), una [Reference](https://quarto.org/docs/reference/) y una [Gallery](https://quarto.org/docs/gallery/).
+
+<br>
+
+Entre los materiales que he visto **destacar los siguientes**:
 
 
 - [AWESOME Quarto](https://github.com/mcanouil/awesome-quarto): un listado muy extenso de recursos Quarto hecho por Mickaël Canouil.
@@ -18,10 +22,16 @@ Entre los materiales que he visto destacar lo siguientes:
 
 - [Beautiful Reports and Presentations with Quarto](https://thomasmock.quarto.pub/reports-presentations/#/title-slide): un workshop de Thomas Mock. El [video](https://www.youtube.com/watch?v=hbf7Ai3jnxY) y el [repo](https://github.com/jthomasmock/quarto-reporting). 
 
-- [100 seconds from zero to public site](https://youtube.com/watch?v=t8qtcDyCRFA&t=1s): video de Thomas Mock donde crea una web con Quarto en 100 segundos.
+- [100 seconds from zero to public site](https://youtube.com/watch?v=t8qtcDyCRFA&t=1s): vídeo de Thomas Mock donde crea una web con Quarto en 100 segundos.
 
 - [Introducción a RMarkdown, creando reportes con R y Python en RStudio](https://www.youtube.com/watch?v=d8jSN998Mtw): workshop de Renzo Cáceres para LatinR 2022.
 
-- [Making shareable documents with Quarto](https://openscapes.github.io/quarto-website-tutorial/): una web de Openscapes. 
+- [Making shareable documents with Quarto](https://openscapes.github.io/quarto-website-tutorial/): una web de Openscapes.
+
+- [Quarto/RMarkdown - What’s Different?](https://laderast.github.io/qmd_rmd/#/title-slide): unas slides de Ted Laderas.
+
+- [Rstudio::conf(2022) Playlist](https://www.youtube.com/playlist?list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH):  la presentación en sociedad de Quarto con varias charlas sobre Quarto, [Hello Quarto: Share, Collaborate, Teach, Reimagine](https://www.youtube.com/watch?v=p7Hxu4coDl8&list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH&index=4), [Websites & Books & Blogs, oh my! Creating Rich Content with Quarto](https://www.youtube.com/watch?v=A9QRN4cpsDY&list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH&index=49), [Quarto for the Curious ](https://www.youtube.com/watch?v=mrvhk2XUfWo&list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH&index=55) entre otros.
+-  [Rstudio::conf(2022) Workshops](https://github.com/rstudio-conf-2022): por ejemplo, [Get Started with Quarto](https://github.com/rstudio-conf-2022/get-started-quarto) o [Rmarkdown to Quarto](https://github.com/rstudio-conf-2022/rmd-to-quarto)
+
 
 

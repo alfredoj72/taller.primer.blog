@@ -15,6 +15,11 @@
 #- arreglar títulos de las slides (color, centrado , tamaño y más espacio abajo)
 
 
+#- el fichero de lang: es
+
+https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language-es.yml
+
+
 ## Inline
 
 esto esta en R4DS

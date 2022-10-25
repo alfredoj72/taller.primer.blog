@@ -160,19 +160,21 @@ footer: |
 ## Ejemplos de blogs
 
 
-- [Mike Mahoney](https://www.mm218.dev/blog.html): el [repo](https://github.com/mikemahoney218/mm218.dev)  
+- [Mike Mahoney](https://www.mm218.dev/blog.html). El [repo](https://github.com/mikemahoney218/mm218.dev). El [repo] (https://github.com/ivelasq/pipedream).
 
-- [Layton R blog](https://graphdr.github.io/data-stories/): el [repo](https://github.com/graphdr/data-stories)   
+- [Isabella Velásquez](https://ivelasq.rbind.io/about.html)
 
-- [R Lille](https://rlille.fr/): el [repo](https://github.com/RLille/rlille.fr)
+- [Layton R blog](https://graphdr.github.io/data-stories/). El [repo](https://github.com/graphdr/data-stories).  
+
+- [R Lille](https://rlille.fr/). El [repo](https://github.com/RLille/rlille.fr).
 
 - [Drew Dimmery](https://ddimmery.com/)
 
-- [PA blog](https://www.paltmeyer.com/blog/): el [repo](https://github.com/pat-alt/pat-alt.github.io) 
+- [PA blog](https://www.paltmeyer.com/blog/). El [repo](https://github.com/pat-alt/pat-alt.github.io).
 
 - [Mario Angst](https://marioangst.com/en/)
 
-- [Matt Worthington](https://www.mrworthington.com/): el [repo](https://github.com/mrworthington/mrworthington.github.io)
+- [Matt Worthington](https://www.mrworthington.com/). El [repo](https://github.com/mrworthington/mrworthington.github.io).
 
 <br>
 

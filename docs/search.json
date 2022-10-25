@@ -284,7 +284,7 @@
     "href": "taller/09_taller_plantilla_escribir_quarto.html#callouts",
     "title": "Escribiendo posts: un ejemplo de post",
     "section": "2 Callouts",
-    "text": "2 Callouts\nDocumentación aquí\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\nTarea xx\n\n\n\n\nTendremos que hacer esto\ny esto otro\n\n\n\n\n\n::: {.callout-important icon=\"false\"}\n\n#### Tarea xx\n- Tendremos que hacer esto \n\n- y esto otro\n:::\n\n\n\n\nTablas\nhttps://quarto.org/docs/authoring/tables.html\n\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
+    "text": "2 Callouts\nDocumentación aquí\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\nTarea xx\n\n\n\n\nTendremos que hacer esto\ny esto otro\n\n\n\n\n\n::: {.callout-important icon=\"false\"}\n\n#### Tarea xx\n- Tendremos que hacer esto \n\n- y esto otro\n:::"
   },
   {
     "objectID": "taller/imagenes/tt_01/ejemplo_1.html",
@@ -506,9 +506,9 @@
   {
     "objectID": "recursos.html",
     "href": "recursos.html",
-    "title": "Mi primer blog con Quarto (WIP)",
+    "title": "Recursos sobre Quarto",
     "section": "",
-    "text": "Desde que Quarto se hizo publico con We don’t talk about Quarto ha sido un no parar de workshops, posts, etc… en esta página tienes una selección de recursos sobre Quarto. Obviamente la principal referencia es la web de Quarto. En ella hay, entre otras secciones, una Guide, una Reference y una Gallery.\nEntre los materiales que he visto destacar lo siguientes:\n\nAWESOME Quarto: un listado muy extenso de recursos Quarto hecho por Mickaël Canouil.\nQuarto tip a day: Un blog de Mine Çetinkaya-Rundel con consejos y tips sobre Quarto.\nBuilding a blog with Quarto: un workshop de Isabella Velásquez acerca de cómo construir un blog con Quarto. El repo de los ejercicios, video y RStudioCloud project .\nGet Started with Quarto: un workshop de Thomas Mock. El video, y otro video de 3h.\nBeautiful Reports and Presentations with Quarto: un workshop de Thomas Mock. El video y el repo.\n100 seconds from zero to public site: video de Thomas Mock donde crea una web con Quarto en 100 segundos.\nIntroducción a RMarkdown, creando reportes con R y Python en RStudio: workshop de Renzo Cáceres para LatinR 2022.\nMaking shareable documents with Quarto: una web de Openscapes."
+    "text": "Desde que Quarto se hizo publico con We don’t talk about Quarto ha sido un no parar de workshops, posts, etc… Aquí tienes una selección de recursos sobre Quarto.\nObviamente la principal referencia es la web de Quarto. En ella hay, entre otras secciones, una Guide, una Reference y una Gallery.\n\nEntre los materiales que he visto destacar los siguientes:\n\nAWESOME Quarto: un listado muy extenso de recursos Quarto hecho por Mickaël Canouil.\nQuarto tip a day: Un blog de Mine Çetinkaya-Rundel con consejos y tips sobre Quarto.\nBuilding a blog with Quarto: un workshop de Isabella Velásquez acerca de cómo construir un blog con Quarto. El repo de los ejercicios, video y RStudioCloud project .\nGet Started with Quarto: un workshop de Thomas Mock. El video, y otro video de 3h.\nBeautiful Reports and Presentations with Quarto: un workshop de Thomas Mock. El video y el repo.\n100 seconds from zero to public site: vídeo de Thomas Mock donde crea una web con Quarto en 100 segundos.\nIntroducción a RMarkdown, creando reportes con R y Python en RStudio: workshop de Renzo Cáceres para LatinR 2022.\nMaking shareable documents with Quarto: una web de Openscapes.\nQuarto/RMarkdown - What’s Different?: unas slides de Ted Laderas.\nRstudio::conf(2022) Playlist: la presentación en sociedad de Quarto con varias charlas sobre Quarto, Hello Quarto: Share, Collaborate, Teach, Reimagine, Websites & Books & Blogs, oh my! Creating Rich Content with Quarto, Quarto for the Curious entre otros.\nRstudio::conf(2022) Workshops: por ejemplo, Get Started with Quarto o Rmarkdown to Quarto"
   },
   {
     "objectID": "index.html",
@@ -558,5 +558,19 @@
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "Reporting with lists",
     "text": "Reporting with lists\nCredit to TJ Mahr\n\nknitted <- list(\n  when = format(Sys.Date()),\n  with = system(\"quarto --version\", intern = TRUE)\n)\n\nReported prepared on 2022-10-18 with quarto version 1.1.251."
+  },
+  {
+    "objectID": "taller/09_taller_plantilla_escribir_quarto.html#tablas",
+    "href": "taller/09_taller_plantilla_escribir_quarto.html#tablas",
+    "title": "Escribiendo posts: un ejemplo de post",
+    "section": "3 Tablas",
+    "text": "3 Tablas\nhttps://quarto.org/docs/authoring/tables.html\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
+  },
+  {
+    "objectID": "taller/09_taller_plantilla_escribir_quarto.html#bibliografía",
+    "href": "taller/09_taller_plantilla_escribir_quarto.html#bibliografía",
+    "title": "Escribiendo posts: un ejemplo de post",
+    "section": "4 Bibliografía",
+    "text": "4 Bibliografía\nPara aprender puedes ir a este Quarto tip, a este video. La documentación oficial está aquí y aquí para usar el editor visual."
   }
 ]
