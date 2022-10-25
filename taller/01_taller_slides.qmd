@@ -265,21 +265,24 @@ Puedes ver [este video ](https://www.youtube.com/watch?v=_20US068pzk) de 100 seg
 
 ### ¿Qué es Rmarkdown? ¿Para que sirve?
 
-<br>
+. . . 
 
 - Un ["entorno"](https://vimeo.com/178485416) para hacer informes/publicaciones/transparencias REPRODUCIBLES con R.
 
 
 > Is an authoring framework for data science, combining your code, its results, and your prose. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.
 
-#### con Rmd se pueden generar multitud de outputs
+. . . 
 
+#### Con Rmd se pueden generar multitud de outputs
 
 - Por ejemplo, visita [está galería](https://rmarkdown.rstudio.com/gallery.html) o [este listado](https://rmarkdown.rstudio.com/formats.html)
 
+. . . 
+
 #### Una oda a Rmarkdown
 
-- [How Rmarkdown changed my life](https://www.youtube.com/watch?v=_D-ux3MqGug&list=PLXKlQEvIRus-qu1hjc8SyElSamAcT-KaE&index=6): charla de Rob Hyndman sobre su proceso hasta llegar a usar Rmarkdown para hacer sus documentos científicos
+- [How Rmarkdown changed my life](https://www.youtube.com/watch?v=_D-ux3MqGug&list=PLXKlQEvIRus-qu1hjc8SyElSamAcT-KaE&index=6): charla de Rob Hyndman sobre su proceso hasta llegar a usar Rmarkdown para hacer sus documentos científicos y webs.
 
 --- 
 
