@@ -341,33 +341,39 @@ Hay 3 formas de seguir el tutorial
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Tarea 2.1: Creación de la carpeta que contendrá nuestro blog (3 formas de hacerlo)
+Tarea 2.1: Hemos de crear la carpeta que contendrá nuestro blog.
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p><strong>La carpeta la creará Quarto, pero tenemos 3 formas de hacerlo</strong>:</p>
+<p><br></p>
 <section id="a-crear-la-carpeta-o-qproject-desde-rstudio" class="level6">
 <h6 class="anchored" data-anchor-id="a-crear-la-carpeta-o-qproject-desde-rstudio">A) Crear la carpeta (o Qproject) desde <strong>RStudio</strong></h6>
 <ul>
 <li><p>En RStudio sigue la siguiente ruta de menús:</p>
 <p><code>File &gt; New Project &gt; New Directory &gt; Quarto Blog</code></p></li>
-<li><p>Al hacerlo se creará una carpeta, un Qproject, con todo lo necesario para crear un blog.</p></li>
-<li><p>El nombre que le he puesto a la carpeta/Qproject es <code>blog_prueba_00</code></p></li>
+<li><p>Mejor si llamas a la carpeta: <code>blog_prueba_00</code></p></li>
 </ul>
 <p><br></p>
 </section>
 <section id="b-crear-la-carpeta-desde-la-terminal" class="level6">
 <h6 class="anchored" data-anchor-id="b-crear-la-carpeta-desde-la-terminal">B) Crear la carpeta desde la <strong>Terminal</strong></h6>
 <ul>
-<li>Has de ejecutar <code>quarto create-project blog_prueba_00 --type website --template blog</code> en la Terminal</li>
+<li>Has de ejecutar desde la Terminal:</li>
 </ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="false"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>quarto create<span class="sc">-</span>project blog_prueba_00 <span class="sc">--</span>type website <span class="sc">--</span>template blog</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p><br></p>
 </section>
-<section id="c-usando-un-qproject-creado-con-rstudio-cloud" class="level6">
-<h6 class="anchored" data-anchor-id="c-usando-un-qproject-creado-con-rstudio-cloud">C) Usando un Qproject creado con <strong>RStudio Cloud</strong></h6>
+<section id="c-usando-un-qproject-ya-creado-con-rstudio-cloud" class="level6">
+<h6 class="anchored" data-anchor-id="c-usando-un-qproject-ya-creado-con-rstudio-cloud">C) Usando un Qproject ya creado con <strong>RStudio Cloud</strong></h6>
 <ul>
-<li><p>Tienes que ir <a href="https://rstudio.cloud/content/4743159">aquí</a>. Se abrirá Rstudio con un Qproject llamado <code>blog_prueba_00</code>.</p></li>
+<li><p>Tienes que ir <a href="https://rstudio.cloud/content/4743159">aquí</a>. Se abrirá Rstudio en el navegador con un Qproject llamado <code>blog_prueba_00</code>.</p></li>
 <li><p>Has de tener cuenta en <a href="https://rstudio.cloud/">RStudio Cloud</a>. Haz una copia permanente y trabaja sobre ella</p></li>
 </ul>
+<p><br></p>
+<p>De cualquiera de las 3 maneras <strong>acabaremos teniendo una carpeta con todo o necesario para crear un blog</strong>.</p>
 </section>
 </div>
 </div>
@@ -589,12 +595,12 @@ Extensiones: formas alternativas de generar el blog
 <li><p>En ambos casos hay que estar en el Qproject “blog_prueba_00”; es decir, “blog_prueba_00” es el working directory</p></li>
 <li><p>Desde la <strong>Terminal</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p>desde la <strong>Consola</strong> de R</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"quarto"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">"index.qmd"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"quarto"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">"index.qmd"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 </ul>
 </div>
@@ -612,7 +618,6 @@ Extensiones: formas alternativas de generar el blog
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./imagenes/tt_01/img_05.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Estructura de carpetas del Qproject tras la creación del blog</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -749,8 +754,8 @@ Tarea 2.4: Alojar el blog en Quarto Pub
 <ul>
 <li><p>teclear en la <strong>Terminal</strong> de RStudio (panel inferior-izquierda) lo siguiente:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- desde la Terminal</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- desde la Terminal</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p>Tras ejecutar lo anterior, se te pedirá que autorices en la Terminal.</p></li>
 <li><p>Después se abrirá el navegador, tendrás que logearte en <code>Quarto Pub</code> y volverás a autorizar. Además te preguntarán el nombre del blog.</p></li>
@@ -796,7 +801,7 @@ Extensiones: el fichero <code>_publish.yml</code>
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Resumen
+Resumen (tutorial nº 2)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>

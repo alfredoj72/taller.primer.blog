@@ -7,18 +7,20 @@
 
 - Desde la **Terminal**
 
-  ```{bash, eval = FALSE}
-  #| code-fold: false
-  quarto render
+  ```{bash}
+  #| code-line-numbers: false
+  #| eval: false  #| code-fold: false
+  quarto render        
   ```
   
 - desde la **Consola** de R
 
 
   ```{r, eval = FALSE}
+  #| code-line-numbers: false
   #| code-fold: false
-  install.packages("quarto")
-  quarto::quarto_render("index.qmd")
+  install.packages("quarto")    
+  quarto::quarto_render("index.qmd")    
   ```
 
 :::

@@ -34,7 +34,6 @@ css: /assets/styles_slides_tareas.css
 ---
 
 
-
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
 #### Contexto
 
@@ -54,14 +53,12 @@ css: /assets/styles_slides_tareas.css
  
  {{< include ./_includes/_tt_02_01_q-haremos.qmd >}}
 
-<br>
 
 
----
+--- 
 
 {{< include ./_includes/_tt_02_03_tarea_01.qmd >}}
 
-<br>
 
 ---
 

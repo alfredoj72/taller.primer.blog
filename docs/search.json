@@ -95,7 +95,7 @@
     "href": "taller/slides_tareas_01.html#ver-el-blog-en-local",
     "title": "Mi primer blog con Quarto",
     "section": "Ver el blog en local",
-    "text": "Ver el blog en local\n\n_site es la carpeta que contiene el blog. Veamos su contenido\nLa página principal (o Home) de nuestro blog es el archivo index.html.\nEl archivo index.html ha sido generado por el fichero index.qmd.\n\n\n\n\nTarea 2.3: Ver el blog\n\n\n\nEnseguida publicaremos el blog en Quartopub, pero antes, vamos a verlo en local; para ello solo tienes que pinchar en el archivo ./blog_prueba_00/_site/index.html\nEse fichero es el que contiene la “Landing Page” o “Home” de nuestro blog.\nComo ves el blog es muy sencillo, solo tiene 2 páginas: la Home Page (que consiste en un listado de posts) y la página About."
+    "text": "Ver el blog en local\n\n_site es la carpeta que contiene el blog. Veamos su contenido\nLa página principal (o Home) de nuestro blog es el archivo index.html.\nEl archivo index.html ha sido generado por el fichero index.qmd.\n\n\n\n\nTarea 2.3: Ver el blog\n\n\n\nEnseguida publicaremos el blog en Quartopub, pero antes vamos a verlo en local.\nPara ello solo tienes que pinchar en el archivo ./blog_prueba_00/_site/index.html\nEse fichero es el que contiene la “Landing Page” o “Home” de nuestro blog.\nComo ves el blog es muy sencillo, solo tiene 2 páginas:\n\nla Home Page (que consiste en un listado de posts)\nla página About"
   },
   {
     "objectID": "taller/slides_tareas_01.html#contenido-de-index.qmd",
@@ -221,7 +221,7 @@
     "href": "taller/02_taller_crear-blog-basico.html#creación-de-la-carpeta-o-qproject-que-contendrá-nuestro-blog",
     "title": "Creación de un blog básico con Quarto",
     "section": "1 Creación de la carpeta (o Qproject) que contendrá nuestro blog",
-    "text": "1 Creación de la carpeta (o Qproject) que contendrá nuestro blog\nEl primer paso para crear nuestro blog es crear el proyecto (o carpeta) donde se alojarán los ficheros que necesitemos para nuestro blog.\nVamos a crear el blog con Quarto pero interactuando con él a través de RStudio. Desde RStudio crearemos un Quarto Project1, concretamente un Quarto project prediseñado para crear blogs.\n\nTarea 2.1\n\n\n\n\n\n\nTarea 2.1: Creación de la carpeta que contendrá nuestro blog (3 formas de hacerlo)\n\n\n\n\nA) Crear la carpeta (o Qproject) desde RStudio\n\nEn RStudio sigue la siguiente ruta de menús:\nFile > New Project > New Directory > Quarto Blog\nAl hacerlo se creará una carpeta, un Qproject, con todo lo necesario para crear un blog.\nEl nombre que le he puesto a la carpeta/Qproject es blog_prueba_00\n\n\n\n\nB) Crear la carpeta desde la Terminal\n\nHas de ejecutar quarto create-project blog_prueba_00 --type website --template blog en la Terminal\n\n\n\n\nC) Usando un Qproject creado con RStudio Cloud\n\nTienes que ir aquí. Se abrirá Rstudio con un Qproject llamado blog_prueba_00.\nHas de tener cuenta en RStudio Cloud. Haz una copia permanente y trabaja sobre ella\n\n\n\n\n\nDe momento aún no tenemos el blog, solo hemos creado una carpeta/Qproject pero, ya tenemos, dentro de la carpeta, la estructura de carpetas y archivos necesarios para crearlo.\nCuando creemos el blog, será un blog sencillito, vamos con lo mínimo, pero un blog.\nAntes de crear el blog hagamos un pequeño repaso al contenido del Qproject, veamos su estructura de carpetas y archivos."
+    "text": "1 Creación de la carpeta (o Qproject) que contendrá nuestro blog\nEl primer paso para crear nuestro blog es crear el proyecto (o carpeta) donde se alojarán los ficheros que necesitemos para nuestro blog.\nVamos a crear el blog con Quarto pero interactuando con él a través de RStudio. Desde RStudio crearemos un Quarto Project1, concretamente un Quarto project prediseñado para crear blogs.\n\nTarea 2.1\n\n\n\n\n\n\nTarea 2.1: Hemos de crear la carpeta que contendrá nuestro blog.\n\n\n\nLa carpeta la creará Quarto, pero tenemos 3 formas de hacerlo:\n\n\nA) Crear la carpeta (o Qproject) desde RStudio\n\nEn RStudio sigue la siguiente ruta de menús:\nFile > New Project > New Directory > Quarto Blog\nMejor si llamas a la carpeta: blog_prueba_00\n\n\n\n\nB) Crear la carpeta desde la Terminal\n\nHas de ejecutar desde la Terminal:\n\n\nquarto create-project blog_prueba_00 --type website --template blog\n\n\n\n\nC) Usando un Qproject ya creado con RStudio Cloud\n\nTienes que ir aquí. Se abrirá Rstudio en el navegador con un Qproject llamado blog_prueba_00.\nHas de tener cuenta en RStudio Cloud. Haz una copia permanente y trabaja sobre ella\n\n\nDe cualquiera de las 3 maneras acabaremos teniendo una carpeta con todo o necesario para crear un blog.\n\n\n\n\nDe momento aún no tenemos el blog, solo hemos creado una carpeta/Qproject pero, ya tenemos, dentro de la carpeta, la estructura de carpetas y archivos necesarios para crearlo.\nCuando creemos el blog, será un blog sencillito, vamos con lo mínimo, pero un blog.\nAntes de crear el blog hagamos un pequeño repaso al contenido del Qproject, veamos su estructura de carpetas y archivos."
   },
   {
     "objectID": "taller/02_taller_crear-blog-basico.html#contenido-del-qproject",
@@ -242,7 +242,7 @@
     "href": "taller/02_taller_crear-blog-basico.html#veamos-otra-vez-la-estructura-de-carpetas",
     "title": "Creación de un blog básico con Quarto",
     "section": "4 Veamos otra vez la estructura de carpetas",
-    "text": "4 Veamos otra vez la estructura de carpetas\nTras haber creado el blog, la estructura de carpetas de nuestro Qproject ha cambiado, concretamente se han generado 2 subcarpetas. Veámoslo:\n\n\n\n\n\n\nEstructura de carpetas del Qproject tras la creación del blog\n\n\n\n\n\n\nSe han creado 2 subcarpetas\nSi comparamos la estructura de carpetas antes y después de hacer Render Website vemos que se han creado 2 carpetas:\n\n\n\n\n_freeze\n\n\n\nLa carpeta _freeze podemos dejarla para más adelante.\n\n\n\n\n\n\n\n_site\n\n\n\nLa carpeta _site es la que realmente contiene el blog. Si alojas el contenido de esa carpeta en un servidor web se verá el blog que hemos creado.\n\n\n\n\n\nContenido de /_site/\nAntes de publicar el blog, vamos a ver el contenido de la carpeta _site que es la que contiene realmente el blog:\n\n\n\n\n\n\n\n\n\n\n\nGráfico 2: Contenido de _site, la carpeta que contiene el blog\n\n\n\n\nTarea 2.3\n\n\n\n\n\n\nTarea 2.3: Ver el blog\n\n\n\n\nEnseguida publicaremos el blog en Quartopub, pero antes, vamos a verlo en local; para ello solo tienes que pinchar en el archivo ./blog_prueba_00/_site/index.html\nEse fichero es el que contiene la “Landing Page” o “Home” de nuestro blog.\nComo ves el blog es muy sencillo, solo tiene 2 páginas: la Home Page (que consiste en un listado de posts) y la página About.\n\n\n\n\n\n\nLa página principal del blog\n\nHemos visto que la página principal (Home) del blog consiste en una lista de los posts de nuestro blog2\nLa página principal (o Home) de nuestro blog es el archivo index.html.\nEl archivo index.html ha sido generado por el fichero index.qmd.\n\n\n\n\n\n\n\nExtensiones: ver el contenido del archivo index.qmd\n\n\n\n\n\nContenido del archivo index.qmd que genera a index.html:\n\n\n\n\n\n\n\n\n\n\n\n\nComo vemos, el archivo index.qmd no tiene contenido, sólo contiene un yaml o encabezamiento\nEse encabezamiento genera una lista (listing:) con los contenidos (con los ficheros .qmd) que haya en la carpeta posts.\nSí, has imaginado bien, en la carpeta posts es donde estarán los ficheros .qmd que generarán los posts\nEl resto del yaml son opciones para nuestro blog. Por ejemplo, sort: \"date desc\" ordenará el listado de post de más reciente a más antiguo.\nLo iremos viendo"
+    "text": "4 Veamos otra vez la estructura de carpetas\nTras haber creado el blog, la estructura de carpetas de nuestro Qproject ha cambiado, concretamente se han generado 2 subcarpetas. Veámoslo:\n\n\n\n\n\n\n\n\n\n\n\n\nSe han creado 2 subcarpetas\nSi comparamos la estructura de carpetas antes y después de hacer Render Website vemos que se han creado 2 carpetas:\n\n\n\n\n_freeze\n\n\n\nLa carpeta _freeze podemos dejarla para más adelante.\n\n\n\n\n\n\n\n_site\n\n\n\nLa carpeta _site es la que realmente contiene el blog. Si alojas el contenido de esa carpeta en un servidor web se verá el blog que hemos creado.\n\n\n\n\n\nContenido de /_site/\nAntes de publicar el blog, vamos a ver el contenido de la carpeta _site que es la que contiene realmente el blog:\n\n\n\n\n\n\n\n\n\n\n\nGráfico 2: Contenido de _site, la carpeta que contiene el blog\n\n\n\n\nTarea 2.3\n\n\n\n\n\n\nTarea 2.3: Ver el blog\n\n\n\n\nEnseguida publicaremos el blog en Quartopub, pero antes, vamos a verlo en local; para ello solo tienes que pinchar en el archivo ./blog_prueba_00/_site/index.html\nEse fichero es el que contiene la “Landing Page” o “Home” de nuestro blog.\nComo ves el blog es muy sencillo, solo tiene 2 páginas: la Home Page (que consiste en un listado de posts) y la página About.\n\n\n\n\n\n\nLa página principal del blog\n\nHemos visto que la página principal (Home) del blog consiste en una lista de los posts de nuestro blog2\nLa página principal (o Home) de nuestro blog es el archivo index.html.\nEl archivo index.html ha sido generado por el fichero index.qmd.\n\n\n\n\n\n\n\nExtensiones: ver el contenido del archivo index.qmd\n\n\n\n\n\nContenido del archivo index.qmd que genera a index.html:\n\n\n\n\n\n\n\n\n\n\n\n\nComo vemos, el archivo index.qmd no tiene contenido, sólo contiene un yaml o encabezamiento\nEse encabezamiento genera una lista (listing:) con los contenidos (con los ficheros .qmd) que haya en la carpeta posts.\nSí, has imaginado bien, en la carpeta posts es donde estarán los ficheros .qmd que generarán los posts\nEl resto del yaml son opciones para nuestro blog. Por ejemplo, sort: \"date desc\" ordenará el listado de post de más reciente a más antiguo.\nLo iremos viendo"
   },
   {
     "objectID": "taller/02_taller_crear-blog-basico.html#alojando-el-blog",
@@ -256,7 +256,7 @@
     "href": "taller/02_taller_crear-blog-basico.html#resumen",
     "title": "Creación de un blog básico con Quarto",
     "section": "6 Resumen",
-    "text": "6 Resumen\n\n\n\n\n\n\nResumen\n\n\n\n\n\nEn este tutorial, la segunda parte del taller, hemos visto:\n\nComo crear un Qproject con la estructura de carpetas y archivos necesaria para generar un blog básico\nHemos visto (de forma rápida) el contenido, los archivos, que hay en el Qproject.\nEl Qproject contiene 3 archivos que serán los importantes, los que trabajaremos en el próximo tutorial, concretamente: _quarto_yml, index.qmd y about.qmd\nHemos aprendido a generar el blog a través de RStudio, simplemente Build > Render Website\nHemos visto que el blog realmente se aloja en la carpeta _site y que la homepage es index.html\nLa homepage del blog es un listado de post (lógicamente, es un blog!!)\nLa homepage (index.html) es generada por el archivo index.qmd\nEl archivo index.qmd solo tiene yaml\nHemos publicado el blog en Quarto Pub"
+    "text": "6 Resumen\n\n\n\n\n\n\nResumen (tutorial nº 2)\n\n\n\n\n\nEn este tutorial, la segunda parte del taller, hemos visto:\n\nComo crear un Qproject con la estructura de carpetas y archivos necesaria para generar un blog básico\nHemos visto (de forma rápida) el contenido, los archivos, que hay en el Qproject.\nEl Qproject contiene 3 archivos que serán los importantes, los que trabajaremos en el próximo tutorial, concretamente: _quarto_yml, index.qmd y about.qmd\nHemos aprendido a generar el blog a través de RStudio, simplemente Build > Render Website\nHemos visto que el blog realmente se aloja en la carpeta _site y que la homepage es index.html\nLa homepage del blog es un listado de post (lógicamente, es un blog!!)\nLa homepage (index.html) es generada por el archivo index.qmd\nEl archivo index.qmd solo tiene yaml\nHemos publicado el blog en Quarto Pub"
   },
   {
     "objectID": "taller/02_taller_crear-blog-basico.html#referencias",
@@ -438,7 +438,7 @@
     "href": "taller/01_taller_slides.html#estructura-del-taller",
     "title": "Mi primer blog con Quarto",
     "section": "Estructura del taller",
-    "text": "Estructura del taller\n\nIntro: ¿qué es Quarto?\n\n\n\nCreación de un blog básico: mi blog en 2 minutos\nTuneado básico del blog\n\n\n\n\nWorkflow: creando posts\nEscribiendo un post largito: practicando con Quarto\n\n\n\n\nConvirtiendo el blog en una web académica\n\n\n\n\nTuneado de la web: ejemplos de blogs\n\n\n\n\nGestión y publicación de la web/blog: Quarto Pub, Github Pages"
+    "text": "Estructura del taller\n\n\nIntro: presentación del taller y ¿qué es Quarto?\n\n\n\n\nCreación de un blog básico: mi blog en 2 minutos\nTuneado básico del blog\n\n\n\n\n\nWorkflow: creando posts\nEscribiendo un post: practicando con Quarto\nConvirtiendo el blog en una web personal\n\n\n\n\n\nTuneado: mejorando la web (ejemplos de blogs)\n\n\n\n\nGestión y publicación de la web/blog"
   },
   {
     "objectID": "taller/01_taller_slides.html#enlaces-para-fran-y-compis",
@@ -448,11 +448,11 @@
     "text": "Enlaces para Fran y compis\n\n\nun blog con Quarto\nUna web con 2 blogs\nUna web de una asignatura\nMi intro to DS\nWeb econometría para mirar el cuestionario\nTaller para CórdobaMi primer blog y uno de los tutoriales\nUn bookdown R4DS 2ed"
   },
   {
-    "objectID": "taller/01_taller_slides.html#sobre-el-ponente",
-    "href": "taller/01_taller_slides.html#sobre-el-ponente",
+    "objectID": "taller/01_taller_slides.html#sobre-mi",
+    "href": "taller/01_taller_slides.html#sobre-mi",
     "title": "Mi primer blog con Quarto",
-    "section": "Sobre el ponente",
-    "text": "Sobre el ponente\n\nProfesor en la UV: Econometría e Intro a la Ciencia de datos con R\nEntusiasta de R\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto"
+    "section": "Sobre mi",
+    "text": "Sobre mi\n\n\nProfesor en la UV: Econometría e Intro a la Ciencia de datos con R\nEntusiasta de R\n\n\n\n\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto"
   },
   {
     "objectID": "taller/01_taller_slides.html#objetivos-del-taller",
@@ -466,14 +466,14 @@
     "href": "taller/01_taller_slides.html#beneficios-de-tener-un-blog",
     "title": "Mi primer blog con Quarto",
     "section": "Beneficios de tener un blog",
-    "text": "Beneficios de tener un blog\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma olvidarías\nPortfolio y contactos\n\n\n\n\nProductive procrastination\n\n\n\n(Discursos más elaborados aquí o aquí )\n\n\n\nImportante:\n\nel blog y los posts no tienen porque estar perfectos, así que no hay que tener miedo a escribir!! no fear!!"
+    "text": "Beneficios de tener un blog\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma olvidarías\nPortfolio y contactos\n\n\n\n\nProductive procrastination (!!)\n\n\n\n(Discursos más elaborados aquí o aquí )\n\n\n\nImportante:\n\nel blog y los posts no tienen porque estar perfectos, así que no hay que tener miedo a escribir!! no fear!!"
   },
   {
     "objectID": "taller/01_taller_slides.html#ejemplos-de-blogs-hechos-con-quarto",
     "href": "taller/01_taller_slides.html#ejemplos-de-blogs-hechos-con-quarto",
     "title": "Mi primer blog con Quarto",
     "section": "Ejemplos de blogs (hechos con Quarto)",
-    "text": "Ejemplos de blogs (hechos con Quarto)\n\nMike Mahoney. El repo.\nIsabella Velásquez. El repo.\nLayton R blog. El repo.\nR Lille. El repo.\nDrew Dimmery\nPA blog. El repo.\nMario Angst\nMatt Worthington. El repo.\n\n\nMás opciones:\n\nLa Gallery de Quarto"
+    "text": "Ejemplos de blogs (hechos con Quarto)\n\nMike Mahoney (el repo aqui)\nIsabella Velásquez (el repo aqui)\nDanielle Navarro (el repo aqui)\nJeff y Marc Dotson (el repo aqui)\nLayton R blog (el repo aqui)\nR Lille (el repo aqui)\nDrew Dimmery\nPA blog (el repo aqui)\nMario Angst\nMatt Worthington (el repo aqui)\n\n\nMás opciones:\n\nLa Gallery de Quarto"
   },
   {
     "objectID": "taller/01_taller_slides.html#qué-es-quarto-otra-vez",
@@ -487,7 +487,7 @@
     "href": "taller/01_taller_slides.html#ventajas-de-quarto",
     "title": "Mi primer blog con Quarto",
     "section": "Ventajas de Quarto",
-    "text": "Ventajas de Quarto\n\nUnifica algunas de las funcionalidades de Rmarkdown\nNuevas funcionalidades: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\nWe don’t talk about Quarto. Until now\nEn StackOverfow: benefits of Quarto\nun tweet: https://mobile.twitter.com/DanOvand0/status/1580343517154770944\n\n\n\nWow, writing first paper using @quarto_pub and it is amazing; almost every pain point for academic writing in #rmarkdown has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching\n\n— Dan Ovando (@DanOvand0) October 12, 2022"
+    "text": "Ventajas de Quarto\n\nProyecto en desarrollo activo … mientras que Rmarkdown …\nUnifica algunas de las funcionalidades de Rmarkdown\nNuevas funcionalidades: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\nQuarto questions\nPorting a distill blog to quarto\nWe don’t talk about Quarto. Until now\nEn StackOverfow: benefits of Quarto\nun tweet: https://mobile.twitter.com/DanOvand0/status/1580343517154770944\n\n\n\nWow, writing first paper using @quarto_pub and it is amazing; almost every pain point for academic writing in #rmarkdown has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching\n\n— Dan Ovando (@DanOvand0) October 12, 2022"
   },
   {
     "objectID": "taller/01_taller_slides.html#documentos-.rmd-tienen-3-partes",
@@ -495,6 +495,13 @@
     "title": "Mi primer blog con Quarto",
     "section": "Documentos .Rmd tienen 3 partes",
     "text": "Documentos .Rmd tienen 3 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (narratives)\n\n\nUn ejemplo\n\n\nsource code\n\n\n\n\n\n\n\n\n\n\n\noutput"
+  },
+  {
+    "objectID": "taller/01_taller_slides.html#iii-texto-narrativa",
+    "href": "taller/01_taller_slides.html#iii-texto-narrativa",
+    "title": "Mi primer blog con Quarto",
+    "section": "(III) Texto (narrativa)",
+    "text": "(III) Texto (narrativa)\n\nTodo lo que no es YAML o CHUNKS de código, es TEXTO.\nEl texto se escribe en Markdown (concretamente en Pandoc’s Markdown)\n\n\nSintaxis básica de markdown\n\nAquí puedes ver (o recordar) la sintaxis básica para escribir en markdown. Como ejemplo:"
   },
   {
     "objectID": "taller/07_taller_tuneado-del-blog.html",

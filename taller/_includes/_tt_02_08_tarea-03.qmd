@@ -1,10 +1,16 @@
 ::: {.callout-important icon="false"}
 #### Tarea 2.3: Ver el blog
 
-- Enseguida publicaremos el blog en Quartopub, pero antes, vamos a  verlo en local; para ello solo tienes que pinchar en el archivo `./blog_prueba_00/_site/index.html`
+- Enseguida publicaremos el blog en Quartopub, pero antes vamos a  verlo en local.
+
+- Para ello solo tienes que pinchar en el archivo  `./blog_prueba_00/_site/index.html`
 
 - Ese fichero es el que contiene la "Landing Page" o "Home" de nuestro blog.
 
-- Como ves el blog es muy sencillo, solo tiene 2 páginas: la Home Page (que consiste en un listado de posts) y la página `About`.
+- Como ves el blog es muy sencillo, solo tiene 2 páginas: 
+
+    - la Home Page (que consiste en un listado de posts) 
+    
+    - la página `About`
 
 :::
