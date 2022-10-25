@@ -1,0 +1,195 @@
+---
+title: "Escribiendo slides con Reveals.jst"
+subtitle: "(10ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
+toc-title: Tutorial nº 9
+---
+
+<!--This is a comment. Comments are not displayed in the browser-->
+
+<br>
+
+En este tutorial sirve de plantilla para recordar lo q aprendo de Reveals.js
+
+--------------------------------------------------------------------------------
+
+
+
+- Para hacer pausas en una slide: poner  `. . . ` o poner `::: {.incremental}`
+
+- 
+
+
+
+## Figuras
+
+Documentación [aquí](https://quarto.org/docs/authoring/figures.html).
+
+Las imágenes (o figuras) se pueden insertar de múltiples maneras:
+
+
+1. La sintaxis de Pandoc:
+
+::: panel-tabset
+#### Para hacer esto ...
+
+![Mi imagen](thumbnail.jpg){#fig1}{fig-align="left"}
+
+#### Has de escribir
+
+``` markdown
+![Mi imagen](thumbnail.jpg){#fig-1, fig-align="left"}
+```
+
+:::
+
+
+### Subfiguras
+
+
+Documentación [aquí](https://quarto.org/docs/authoring/figures.html#subfigures).
+
+::: panel-tabset
+#### Para hacer esto ...
+
+
+::: {#fig-elephants layout-ncol=2}
+
+![Imágen 1](thumbnail.jpg){#fig-2.1}
+
+![Imágen 2](thumbnail.jpg){#fig-2.2}
+
+Dos imágenes alineadas
+:::
+
+
+#### Has de escribir
+
+
+``` markdown
+::: {#fig-elephants layout-ncol=2}
+
+![Imágen 1](thumbnail.jpg){#fig-2.1}
+
+![Imágen 2](thumbnail.jpg){#fig-2.2}
+
+2 imágenes alineadas
+:::
+```
+
+:::
+
+### Panel de imágenes
+
+Documentación [aquí](https://quarto.org/docs/authoring/figures.html#figure-panels).
+
+::: panel-tabset
+#### Para hacer esto ...
+
+::: {layout-nrow=2}
+![(A)](thumbnail.jpg)
+
+![(B)](thumbnail.jpg)
+
+![(C)](thumbnail.jpg)
+
+![(D)](thumbnail.jpg)
+:::
+
+#### Has de escribir
+
+``` markdown
+::: {layout-nrow=2}
+![(A)](thumbnail.jpg)
+
+![(B)](thumbnail.jpg)
+
+![(C)](thumbnail.jpg)
+
+![(D)](thumbnail.jpg)
+:::
+```
+
+:::
+
+
+### Custom layouts
+
+Documentación [aquí](https://quarto.org/docs/authoring/figures.html#complex-layouts).
+
+::: panel-tabset
+#### Para hacer esto ...
+
+
+::: {layout="[[40,-20,40], [100]]"}
+![(A)](thumbnail.jpg)
+
+![(B)](thumbnail.jpg)
+
+![(C)](thumbnail.jpg)
+:::
+
+
+#### Has de escribir
+
+``` markdown
+::: {layout="[[40,-20,40], [100]]"}
+![(A)](thumbnail.jpg)
+
+![(B)](thumbnail.jpg)
+
+![(C)](thumbnail.jpg)
+:::
+```
+:::
+
+
+- tamaño por defecto: <https://quarto.org/docs/computations/execution-options.html#figure-options>
+
+
+## Callouts
+
+Documentación [aquí](https://quarto.org/docs/authoring/callouts.html)
+
+
+:::: panel-tabset
+#### Para hacer esto ...
+
+::: {.callout-important icon="false"}
+#### Tarea xx
+- Tendremos que hacer esto 
+
+- y esto otro
+:::
+
+#### Has de escribir
+
+``` markdown
+::: {.callout-important icon="false"}
+
+#### Tarea xx
+- Tendremos que hacer esto 
+
+- y esto otro
+:::
+```
+
+::::
+
+
+
+
+
+## Tablas
+
+<https://quarto.org/docs/authoring/tables.html>
+
+#### Editor visual
+
+<https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/>
+
+<br>
+
+
+## Bibliografía
+
+Para aprender puedes ir a [este Quarto tip](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/), a  [este video](https://youtu.be/d8jSN998Mtw?t=3757). La documentación oficial está [aquí](https://quarto.org/docs/authoring/footnotes-and-citations.html) y [aquí](https://quarto.org/docs/visual-editor/technical.html#citations) para usar el editor visual.

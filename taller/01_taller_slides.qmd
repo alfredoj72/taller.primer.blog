@@ -92,7 +92,7 @@ footer: |
 
 ## Sobre el ponente
 
-- Profesor en la UV: [Intro a DS](https://perezp44.github.io/intro-ds-22-23-web/), [Econometría](https://perezp44.github.io/web.Econometria.GADE/)
+- Profesor en la UV: [Econometría](https://perezp44.github.io/web.Econometria.GADE/) e  [Intro a la Ciencia de datos con R](https://perezp44.github.io/intro-ds-22-23-web/)
 
 - Entusiasta de R
 
@@ -108,21 +108,30 @@ footer: |
 
 ## Objetivo(s) del taller 
 
-- **Objetivo general**: Aprender sobre **Quarto** mientras vamos creando una web/blog
+<br>
 
-- Aprender sobre como usar Quarto para hacer webpages/blogs
+::: {.incremental}
 
-- Que salgáis todos con el bosquejo de una web/blog!!
+
+- Aprender a **hacer webpages/blogs con Quarto**
 
 <br>
 
-- ... y, si puede ser, divertirse  🔥
+- **Aprender sobre Quarto** mientras vamos creando una web/blog
+
+<br>
+
+- Que salgáis todos con el bosquejo o la intención de hacer una web/blog!!
+
+<br>
+
+- ... y, si puede ser, **divertirnos** mientras aprendemos.
+
+:::
 
 
 ## Beneficios de tener un blog{.smaller}
 
-
-(Opiniones más elaboradas [aquí](https://www.rebeccabarter.com/blog/2020-02-03_blogger/) o [aquí](https://jozef.io/r914-one-year-r-blogging/) )
 
 <br>
 
@@ -136,9 +145,8 @@ footer: |
 
 . . . 
 
-- Registrar análisis que haces que de otra forma se perderían 
+- Registrar análisis que haces que de otra forma olvidarías 
 
-- Practicar skills de comunicación
 
 - Portfolio y contactos
 
@@ -148,11 +156,19 @@ footer: |
 
 . . . 
 
+
+(Opiniones más elaboradas [aquí](https://www.rebeccabarter.com/blog/2020-02-03_blogger/) o [aquí](https://jozef.io/r914-one-year-r-blogging/) )
+
+. . .
+
 <br>
 
 ### **Importante:**
 
-- el blog y los posts **no tienen porque estar perfectos**, así que no fear!!
+- el blog y los posts **no tienen porque estar perfectos**, así que no hay que tener miedo!! no fear!!
+
+<br>
+
 
 
 
@@ -189,16 +205,34 @@ footer: |
 
 . . .
 
-> Quarto is a multi-language, next generation version of R Markdown from RStudio, with many new features and capabilities. Like R Markdown, Quarto uses Knitr to execute R code, and is therefore able to render most existing Rmd files without modification.
+> Quarto is a multi-language, next generation version of R Markdown, with many new features and capabilities. 
 
-## ¿Qué es Quarto?
+Puedes ver [este video ](https://www.youtube.com/watch?v=_20US068pzk) de 100 segundos 
 
 
-- Un nuevo sistema de publicación técnica de código abierto
 
-- Muy parecido a Rmarkdown, pero ... no requiere R, soporta más lenguajes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
 
-- Es ... la "segunda generación de Rmarkdown"
+## ¿Qué es Quarto? (otra vez)
+
+<br>
+
+. . . 
+
+- Un **nuevo sistema de publicación científica y técnica** de código abierto basado en Pandoc
+
+. . .
+
+- Muy **parecido a Rmarkdown**, pero ... no requiere R, soporta más lenguajes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
+
+- Es ... la "**segunda generación de Rmarkdown**"
+
+- Quarto utiliza Knitr para ejecutar el código R; así que es **capaz de procesar también los ficheros .Rmd** sin modificarlos
+
+. . .
+
+<br>
+
+- Quarto no es un paquete, **es un programa independiente**, un CLI
 
 ## Ventajas de Quarto
 
@@ -214,7 +248,11 @@ footer: |
 
 # Setup para el taller
 
-- Voy a trabajar con R (a través de RStudio) y Quarto
+<br>
+
+. . . 
+
+- Vamos a trabajar con R (a través de RStudio) y Quarto
 
 - Si tienes RStudio 2022.07.1 + - ya tienes Quarto instalado 
 
@@ -227,6 +265,8 @@ footer: |
 
 ### ¿Qué es Rmarkdown? ¿Para que sirve?
 
+<br>
+
 - Un ["entorno"](https://vimeo.com/178485416) para hacer informes/publicaciones/transparencias REPRODUCIBLES con R.
 
 
@@ -237,11 +277,13 @@ footer: |
 
 - Por ejemplo, visita [está galería](https://rmarkdown.rstudio.com/gallery.html) o [este listado](https://rmarkdown.rstudio.com/formats.html)
 
+#### Una oda a Rmarkdown
 
+- [How Rmarkdown changed my life](https://www.youtube.com/watch?v=_D-ux3MqGug&list=PLXKlQEvIRus-qu1hjc8SyElSamAcT-KaE&index=6): charla de Rob Hyndman sobre su proceso hasta llegar a usar Rmarkdown para hacer sus documentos científicos
 
 --- 
 
-### los documentos `.Rmd` tienen 3 partes {.smaller}
+## Documentos `.Rmd` tienen 3 partes {.smaller}
 
 1. Encabezamiento (yaml header)  
 2. Trozos de código R (R chunks)  
@@ -250,7 +292,6 @@ footer: |
 . . . 
 
 ### Un ejemplo
-
 
 :::: {columns}
 
@@ -325,13 +366,14 @@ sqrt(aa)
 
 
 
+---
 
+#### (IIa) Chunks: diferencias con Quarto
 
-## Code Chunks {.smaller}
+. . . 
 
 - Ahora, con `.qmd`,  se usa **YAML** style: `echo: false` y, cada opción en una linea con `#|`
 
-. . . 
 
 :::: {.columns}
 
@@ -341,9 +383,9 @@ sqrt(aa)
 ```` markdown
 ```{{r sumando, echo = TRUE, eval = FALSE}}
 2 + 2
-4 + 4
 ```
 ````
+
 :::
 
 
@@ -357,7 +399,6 @@ sqrt(aa)
 #| echo: true
 #| eval: false
 2 + 2
-4 + 4
 ```
 ````
 
@@ -366,6 +407,7 @@ sqrt(aa)
 ::::
 
 . . . 
+
 
 - No hace falta chunk inicial, ahora **se pueden poner** las opciones de chunk **en el YAML**
 

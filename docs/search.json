@@ -207,7 +207,7 @@
     "href": "taller/08_taller_alojamiento.html",
     "title": "Alojamiento del blog",
     "section": "",
-    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí.\n\n\n\n\n\nNetlify drop\nRpubs\ntutorial Git en un curso de reproducibilidad: https://eliocamp.github.io/reproducibility-with-r/materials/day2/01-git/#git-and-github\nGuía de instalacion de Git: https://ucsb-meds.github.io/meds-install-windows.html\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2023,\n  author = {Pedro J. Pérez},\n  title = {Alojamiento del blog},\n  date = {2023-12-10},\n  url = {https://perezp44.github.io/taller.primer.blog//08_taller_alojamiento.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez. 2023. “Alojamiento del blog.” December 10,\n2023. https://perezp44.github.io/taller.primer.blog//08_taller_alojamiento.html."
+    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí.\n\n\n\n\n\nNetlify drop\nRpubs\ntutorial Git en un curso de reproducibilidad: https://eliocamp.github.io/reproducibility-with-r/materials/day2/01-git/#git-and-github\nGuía de instalacion de Git: https://ucsb-meds.github.io/meds-install-windows.html\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2024,\n  author = {Pedro J. Pérez},\n  title = {Alojamiento del blog},\n  date = {2024-01-10},\n  url = {https://perezp44.github.io/taller.primer.blog//08_taller_alojamiento.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez. 2024. “Alojamiento del blog.” January 10,\n2024. https://perezp44.github.io/taller.primer.blog//08_taller_alojamiento.html."
   },
   {
     "objectID": "taller/02_taller_crear-blog-basico.html",
@@ -287,11 +287,60 @@
     "text": "2 Callouts\nDocumentación aquí\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\nTarea xx\n\n\n\n\nTendremos que hacer esto\ny esto otro\n\n\n\n\n\n::: {.callout-important icon=\"false\"}\n\n#### Tarea xx\n- Tendremos que hacer esto \n\n- y esto otro\n:::"
   },
   {
+    "objectID": "taller/09_taller_plantilla_escribir_quarto.html#tablas",
+    "href": "taller/09_taller_plantilla_escribir_quarto.html#tablas",
+    "title": "Escribiendo posts: un ejemplo de post",
+    "section": "3 Tablas",
+    "text": "3 Tablas\nhttps://quarto.org/docs/authoring/tables.html\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
+  },
+  {
+    "objectID": "taller/09_taller_plantilla_escribir_quarto.html#bibliografía",
+    "href": "taller/09_taller_plantilla_escribir_quarto.html#bibliografía",
+    "title": "Escribiendo posts: un ejemplo de post",
+    "section": "4 Bibliografía",
+    "text": "4 Bibliografía\nPara aprender puedes ir a este Quarto tip, a este video. La documentación oficial está aquí y aquí para usar el editor visual."
+  },
+  {
     "objectID": "taller/imagenes/tt_01/ejemplo_1.html",
     "href": "taller/imagenes/tt_01/ejemplo_1.html",
     "title": "El título de mi informe",
     "section": "",
     "text": "En este informe haremos un resumen (o summary) del conjunto de datos iris.\n\nsummary(iris)\n\n  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   \n Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  \n 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  \n Median :5.800   Median :3.000   Median :4.350   Median :1.300  \n Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  \n 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  \n Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  \n       Species  \n setosa    :50  \n versicolor:50  \n virginica :50  \n                \n                \n                \n\n\nEl trozo de arriba es un chunk de código R. Cuando compile el documento, knitr ejecutará el código y mostrará los resultados en el documento final.\nCon esto finalizamos este informe.\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2017,\n  author = {Pedro J. Pérez and Yo mismo},\n  title = {El título de mi informe},\n  date = {2017-01-03},\n  url = {https://perezp44.github.io/taller.primer.blog//ejemplo_1.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez, and Yo mismo. 2017. “El título de mi\ninforme.” January 3, 2017. https://perezp44.github.io/taller.primer.blog//ejemplo_1.html."
+  },
+  {
+    "objectID": "taller/10_taller_plantilla_revealjs.html",
+    "href": "taller/10_taller_plantilla_revealjs.html",
+    "title": "Escribiendo slides con Reveals.jst",
+    "section": "",
+    "text": "En este tutorial sirve de plantilla para recordar lo q aprendo de Reveals.js"
+  },
+  {
+    "objectID": "taller/10_taller_plantilla_revealjs.html#figuras",
+    "href": "taller/10_taller_plantilla_revealjs.html#figuras",
+    "title": "Escribiendo slides con Reveals.jst",
+    "section": "1 Figuras",
+    "text": "1 Figuras\nDocumentación aquí.\nLas imágenes (o figuras) se pueden insertar de múltiples maneras:\n\nLa sintaxis de Pandoc:\n\n\nPara hacer esto …Has de escribir\n\n\n{fig-align=“left”}\n\n\n![Mi imagen](thumbnail.jpg){#fig-1, fig-align=\"left\"}\n\n\n\n\n1.1 Subfiguras\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n\n(a) Imágen 1\n\n\n\n\n\n\n\n(b) Imágen 2\n\n\n\n\nGráfico 1: Dos imágenes alineadas\n\n\n\n\n::: {#fig-elephants layout-ncol=2}\n\n![Imágen 1](thumbnail.jpg){#fig-2.1}\n\n![Imágen 2](thumbnail.jpg){#fig-2.2}\n\n2 imágenes alineadas\n:::\n\n\n\n\n\n1.2 Panel de imágenes\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n(A)\n\n\n\n\n\n\n\n(B)\n\n\n\n\n\n\n\n\n\n(C)\n\n\n\n\n\n\n\n(D)\n\n\n\n\n\n\n\n::: {layout-nrow=2}\n![(A)](thumbnail.jpg)\n\n![(B)](thumbnail.jpg)\n\n![(C)](thumbnail.jpg)\n\n![(D)](thumbnail.jpg)\n:::\n\n\n\n\n\n1.3 Custom layouts\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n(A)\n\n\n\n\n \n\n\n\n\n\n(B)\n\n\n\n\n\n\n\n\n\n(C)\n\n\n\n\n\n\n\n::: {layout=\"[[40,-20,40], [100]]\"}\n![(A)](thumbnail.jpg)\n\n![(B)](thumbnail.jpg)\n\n![(C)](thumbnail.jpg)\n:::\n\n\n\n\ntamaño por defecto: https://quarto.org/docs/computations/execution-options.html#figure-options"
+  },
+  {
+    "objectID": "taller/10_taller_plantilla_revealjs.html#callouts",
+    "href": "taller/10_taller_plantilla_revealjs.html#callouts",
+    "title": "Escribiendo slides con Reveals.jst",
+    "section": "2 Callouts",
+    "text": "2 Callouts\nDocumentación aquí\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\nTarea xx\n\n\n\n\nTendremos que hacer esto\ny esto otro\n\n\n\n\n\n::: {.callout-important icon=\"false\"}\n\n#### Tarea xx\n- Tendremos que hacer esto \n\n- y esto otro\n:::"
+  },
+  {
+    "objectID": "taller/10_taller_plantilla_revealjs.html#tablas",
+    "href": "taller/10_taller_plantilla_revealjs.html#tablas",
+    "title": "Escribiendo slides con Reveals.jst",
+    "section": "3 Tablas",
+    "text": "3 Tablas\nhttps://quarto.org/docs/authoring/tables.html\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
+  },
+  {
+    "objectID": "taller/10_taller_plantilla_revealjs.html#bibliografía",
+    "href": "taller/10_taller_plantilla_revealjs.html#bibliografía",
+    "title": "Escribiendo slides con Reveals.jst",
+    "section": "4 Bibliografía",
+    "text": "4 Bibliografía\nPara aprender puedes ir a este Quarto tip, a este video. La documentación oficial está aquí y aquí para usar el editor visual."
   },
   {
     "objectID": "taller/03_taller_tuneado-basico.html",
@@ -389,7 +438,7 @@
     "href": "taller/feo.html",
     "title": "Mi segundo post",
     "section": "",
-    "text": "```{r}\n#| eval: true\nsqrt(2 + 2)\n4 + 4\n```\n\n#> [1] 2\n#> [1] 8\n\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2023,\n  author = {Pedro J. Pérez},\n  title = {Mi segundo post},\n  date = {2023-12-10},\n  url = {https://perezp44.github.io/taller.primer.blog//feo.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez. 2023. “Mi segundo post.” December 10, 2023.\nhttps://perezp44.github.io/taller.primer.blog//feo.html."
+    "text": "```{r}\n#| eval: true\nsqrt(2 + 2)\n4 + 4\n```\n\n#> [1] 2\n#> [1] 8\n\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2024,\n  author = {Pedro J. Pérez},\n  title = {Mi segundo post},\n  date = {2024-01-10},\n  url = {https://perezp44.github.io/taller.primer.blog//feo.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez. 2024. “Mi segundo post.” January 10, 2024.\nhttps://perezp44.github.io/taller.primer.blog//feo.html."
   },
   {
     "objectID": "taller/01_taller_slides.html#estructura-del-taller",
@@ -410,35 +459,35 @@
     "href": "taller/01_taller_slides.html#sobre-el-ponente",
     "title": "Mi primer blog con Quarto",
     "section": "Sobre el ponente",
-    "text": "Sobre el ponente\n\nProfesor en la UV: Intro a DS, Econometría\nEntusiasta de R\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto"
+    "text": "Sobre el ponente\n\nProfesor en la UV: Econometría e Intro a la Ciencia de datos con R\nEntusiasta de R\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto"
   },
   {
     "objectID": "taller/01_taller_slides.html#objetivos-del-taller",
     "href": "taller/01_taller_slides.html#objetivos-del-taller",
     "title": "Mi primer blog con Quarto",
     "section": "Objetivo(s) del taller",
-    "text": "Objetivo(s) del taller\n\nObjetivo general: Aprender sobre Quarto mientras vamos creando una web/blog\nAprender sobre como usar Quarto para hacer webpages/blogs\nQue salgáis todos con el bosquejo de una web/blog!!\n\n\n\n… y, si puede ser, divertirse 🔥"
+    "text": "Objetivo(s) del taller\n\n\n\nAprender a hacer webpages/blogs con Quarto\n\n\n\nAprender sobre Quarto mientras vamos creando una web/blog\n\n\n\nQue salgáis todos con el bosquejo o la intención de hacer una web/blog!!\n\n\n\n… y, si puede ser, divertirnos mientras aprendemos."
   },
   {
     "objectID": "taller/01_taller_slides.html#beneficios-de-tener-un-blog",
     "href": "taller/01_taller_slides.html#beneficios-de-tener-un-blog",
     "title": "Mi primer blog con Quarto",
     "section": "Beneficios de tener un blog",
-    "text": "Beneficios de tener un blog\n(Opiniones más elaboradas aquí o aquí )\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma se perderían\nPracticar skills de comunicación\nPortfolio y contactos\n\n\n\n\nProductive procrastination\n\n\n\n\nImportante:\n\nel blog y los posts no tienen porque estar perfectos, así que no fear!!"
+    "text": "Beneficios de tener un blog\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma olvidarías\nPortfolio y contactos\n\n\n\n\nProductive procrastination\n\n\n\n(Opiniones más elaboradas aquí o aquí )\n\n\n\nImportante:\n\nel blog y los posts no tienen porque estar perfectos, así que no hay que tener miedo!! no fear!!"
   },
   {
     "objectID": "taller/01_taller_slides.html#ejemplos-de-blogs",
     "href": "taller/01_taller_slides.html#ejemplos-de-blogs",
     "title": "Mi primer blog con Quarto",
     "section": "Ejemplos de blogs",
-    "text": "Ejemplos de blogs\n\nMike Mahoney: el repo\nLayton R blog: el repo\nR Lille: el repo\nDrew Dimmery\nPA blog: el repo\nMario Angst\nMatt Worthington: el repo\n\n\nMás opciones:\n\nLa Gallery de Quarto"
+    "text": "Ejemplos de blogs\n\nMike Mahoney. El repo. El [repo] (https://github.com/ivelasq/pipedream).\nIsabella Velásquez\nLayton R blog. El repo.\nR Lille. El repo.\nDrew Dimmery\nPA blog. El repo.\nMario Angst\nMatt Worthington. El repo.\n\n\nMás opciones:\n\nLa Gallery de Quarto"
   },
   {
-    "objectID": "taller/01_taller_slides.html#qué-es-quarto-1",
-    "href": "taller/01_taller_slides.html#qué-es-quarto-1",
+    "objectID": "taller/01_taller_slides.html#qué-es-quarto-otra-vez",
+    "href": "taller/01_taller_slides.html#qué-es-quarto-otra-vez",
     "title": "Mi primer blog con Quarto",
-    "section": "¿Qué es Quarto?",
-    "text": "¿Qué es Quarto?\n\nUn nuevo sistema de publicación técnica de código abierto\nMuy parecido a Rmarkdown, pero … no requiere R, soporta más lenguajes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\nEs … la “segunda generación de Rmarkdown”"
+    "section": "¿Qué es Quarto? (otra vez)",
+    "text": "¿Qué es Quarto? (otra vez)\n\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R, soporta más lenguajes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\nEs … la “segunda generación de Rmarkdown”\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI"
   },
   {
     "objectID": "taller/01_taller_slides.html#ventajas-de-quarto",
@@ -448,11 +497,11 @@
     "text": "Ventajas de Quarto\n\nWe don’t talk about Quarto. Until now\nEn StackOverfow: benefits of Quarto\nun tweet: https://mobile.twitter.com/DanOvand0/status/1580343517154770944\n\n\n\nWow, writing first paper using @quarto_pub and it is amazing; almost every pain point for academic writing in #rmarkdown has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching\n\n— Dan Ovando (@DanOvand0) October 12, 2022"
   },
   {
-    "objectID": "taller/01_taller_slides.html#code-chunks",
-    "href": "taller/01_taller_slides.html#code-chunks",
+    "objectID": "taller/01_taller_slides.html#documentos-.rmd-tienen-3-partes",
+    "href": "taller/01_taller_slides.html#documentos-.rmd-tienen-3-partes",
     "title": "Mi primer blog con Quarto",
-    "section": "Code Chunks",
-    "text": "Code Chunks\n\nAhora, con .qmd, se usa YAML style: echo: false y, cada opción en una linea con #|\n\n\n\n\n.Rmd\n```{r sumando, echo = TRUE, eval = FALSE}\n2 + 2\n4 + 4\n```\n\n.qmd\n```{r}\n#| label: \"sumando\"\n#| echo: true\n#| eval: false\n2 + 2\n4 + 4\n```\n\n\n\n\n\nNo hace falta chunk inicial, ahora se pueden poner las opciones de chunk en el YAML\n\n\n\n\n\nnice, you can set knitr defaults in the main yaml configuration header pic.twitter.com/fUPdnqBFdc\n\n— tj nightmahr 🧟‍♂️ (@tjmahr) October 4, 2022"
+    "section": "Documentos .Rmd tienen 3 partes",
+    "text": "Documentos .Rmd tienen 3 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (narratives)\n\n\nUn ejemplo\n\n\nsource code\n\n\n\n\n\n\n\n\n\n\n\noutput"
   },
   {
     "objectID": "taller/07_taller_tuneado-del-blog.html",
@@ -508,7 +557,7 @@
     "href": "recursos.html",
     "title": "Recursos sobre Quarto",
     "section": "",
-    "text": "Desde que Quarto se hizo publico con We don’t talk about Quarto ha sido un no parar de workshops, posts, etc… Aquí tienes una selección de recursos sobre Quarto.\nObviamente la principal referencia es la web de Quarto. En ella hay, entre otras secciones, una Guide, una Reference y una Gallery.\n\nEntre los materiales que he visto destacar los siguientes:\n\nAWESOME Quarto: un listado muy extenso de recursos Quarto hecho por Mickaël Canouil.\nQuarto tip a day: Un blog de Mine Çetinkaya-Rundel con consejos y tips sobre Quarto.\nBuilding a blog with Quarto: un workshop de Isabella Velásquez acerca de cómo construir un blog con Quarto. El repo de los ejercicios, video y RStudioCloud project .\nGet Started with Quarto: un workshop de Thomas Mock. El video, y otro video de 3h.\nBeautiful Reports and Presentations with Quarto: un workshop de Thomas Mock. El video y el repo.\n100 seconds from zero to public site: vídeo de Thomas Mock donde crea una web con Quarto en 100 segundos.\nIntroducción a RMarkdown, creando reportes con R y Python en RStudio: workshop de Renzo Cáceres para LatinR 2022.\nMaking shareable documents with Quarto: una web de Openscapes.\nQuarto/RMarkdown - What’s Different?: unas slides de Ted Laderas.\nRstudio::conf(2022) Playlist: la presentación en sociedad de Quarto con varias charlas sobre Quarto, Hello Quarto: Share, Collaborate, Teach, Reimagine, Websites & Books & Blogs, oh my! Creating Rich Content with Quarto, Quarto for the Curious entre otros.\nRstudio::conf(2022) Workshops: por ejemplo, Get Started with Quarto o Rmarkdown to Quarto"
+    "text": "Desde que Quarto se hizo publico con We don’t talk about Quarto ha sido un no parar de workshops, posts, etc… En esta página tienes una selección de recursos sobre Quarto.\nObviamente la principal referencia es la web de Quarto. En ella hay, entre otras secciones, una Guide, una Reference y una Gallery.\n\nEntre los materiales que he visto destacar los siguientes:\n\nAWESOME Quarto: un listado muy extenso de recursos Quarto hecho por Mickaël Canouil.\nQuarto tip a day: Un blog de Mine Çetinkaya-Rundel con consejos y tips sobre Quarto.\nBuilding a blog with Quarto: un workshop de Isabella Velásquez acerca de cómo construir un blog con Quarto. El repo de los ejercicios, video y RStudioCloud project .\nGet Started with Quarto: un workshop de Thomas Mock. El video, y otro video de 3h.\nBeautiful Reports and Presentations with Quarto: un workshop de Thomas Mock. El video y el repo.\n100 seconds from zero to public site: vídeo de Thomas Mock donde crea una web con Quarto en 100 segundos.\nIntroducción a RMarkdown, creando reportes con R y Python en RStudio: workshop de Renzo Cáceres para LatinR 2022.\nMaking shareable documents with Quarto: una web de Openscapes.\nQuarto/RMarkdown - What’s Different?: unas slides de Ted Laderas.\nRstudio::conf(2022) Playlist: la presentación en sociedad de Quarto con varias charlas sobre Quarto, Hello Quarto: Share, Collaborate, Teach, Reimagine, Websites & Books & Blogs, oh my! Creating Rich Content with Quarto, Quarto for the Curious entre otras.\nRstudio::conf(2022) Workshops: por ejemplo, Get Started with Quarto o Rmarkdown to Quarto"
   },
   {
     "objectID": "index.html",
@@ -558,19 +607,5 @@
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "Reporting with lists",
     "text": "Reporting with lists\nCredit to TJ Mahr\n\nknitted <- list(\n  when = format(Sys.Date()),\n  with = system(\"quarto --version\", intern = TRUE)\n)\n\nReported prepared on 2022-10-18 with quarto version 1.1.251."
-  },
-  {
-    "objectID": "taller/09_taller_plantilla_escribir_quarto.html#tablas",
-    "href": "taller/09_taller_plantilla_escribir_quarto.html#tablas",
-    "title": "Escribiendo posts: un ejemplo de post",
-    "section": "3 Tablas",
-    "text": "3 Tablas\nhttps://quarto.org/docs/authoring/tables.html\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
-  },
-  {
-    "objectID": "taller/09_taller_plantilla_escribir_quarto.html#bibliografía",
-    "href": "taller/09_taller_plantilla_escribir_quarto.html#bibliografía",
-    "title": "Escribiendo posts: un ejemplo de post",
-    "section": "4 Bibliografía",
-    "text": "4 Bibliografía\nPara aprender puedes ir a este Quarto tip, a este video. La documentación oficial está aquí y aquí para usar el editor visual."
   }
 ]

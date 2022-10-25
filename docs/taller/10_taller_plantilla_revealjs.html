@@ -8,7 +8,7 @@
 
 <meta name="author" content="Pedro J. Pérez">
 
-<title>Mi primer blog con Quarto (WIP) - Tuneado del blog</title>
+<title>Mi primer blog con Quarto (WIP) - Escribiendo slides con Reveals.jst</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -128,11 +128,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/styles.css">
-<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Tuneado del blog">
-<meta property="og:description" content="(7ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
+<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Escribiendo slides con Reveals.jst">
+<meta property="og:description" content="(10ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
+<meta property="og:image" content="https://perezp44.github.io/taller.primer.blog/taller/thumbnail.jpg">
 <meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
-<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Tuneado del blog">
-<meta name="twitter:description" content="(7ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
+<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Escribiendo slides con Reveals.jst">
+<meta name="twitter:description" content="(10ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
+<meta name="twitter:image" content="https://perezp44.github.io/taller.primer.blog/taller/thumbnail.jpg">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -205,13 +207,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tutorial nº 7</h2>
+    <h2 id="toc-title">Tutorial nº 9</h2>
    
   <ul>
-  <li><a href="#nivel-proyecto-_quarto.yml" id="toc-nivel-proyecto-_quarto.yml" class="nav-link active" data-scroll-target="#nivel-proyecto-_quarto.yml"><span class="toc-section-number">0.1</span>  Nivel proyecto (<code>_quarto.yml</code>)</a></li>
-  <li><a href="#sass" id="toc-sass" class="nav-link" data-scroll-target="#sass"><span class="toc-section-number">1</span>  SASS</a></li>
-  <li><a href="#colorines-css" id="toc-colorines-css" class="nav-link" data-scroll-target="#colorines-css"><span class="toc-section-number">2</span>  colorines css</a></li>
-  <li><a href="#mas" id="toc-mas" class="nav-link" data-scroll-target="#mas"><span class="toc-section-number">3</span>  Mas</a></li>
+  <li><a href="#figuras" id="toc-figuras" class="nav-link active" data-scroll-target="#figuras"><span class="toc-section-number">1</span>  Figuras</a>
+  <ul class="collapse">
+  <li><a href="#subfiguras" id="toc-subfiguras" class="nav-link" data-scroll-target="#subfiguras"><span class="toc-section-number">1.1</span>  Subfiguras</a></li>
+  <li><a href="#panel-de-imágenes" id="toc-panel-de-imágenes" class="nav-link" data-scroll-target="#panel-de-imágenes"><span class="toc-section-number">1.2</span>  Panel de imágenes</a></li>
+  <li><a href="#custom-layouts" id="toc-custom-layouts" class="nav-link" data-scroll-target="#custom-layouts"><span class="toc-section-number">1.3</span>  Custom layouts</a></li>
+  </ul></li>
+  <li><a href="#callouts" id="toc-callouts" class="nav-link" data-scroll-target="#callouts"><span class="toc-section-number">2</span>  Callouts</a></li>
+  <li><a href="#tablas" id="toc-tablas" class="nav-link" data-scroll-target="#tablas"><span class="toc-section-number">3</span>  Tablas</a></li>
+  <li><a href="#bibliografía" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliografía"><span class="toc-section-number">4</span>  Bibliografía</a></li>
   </ul>
 </nav>
 </nav>
@@ -223,8 +230,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tuneado del blog</h1>
-<p class="subtitle lead">(7ª parte del taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)</p>
+<h1 class="title">Escribiendo slides con Reveals.jst</h1>
+<p class="subtitle lead">(10ª parte del taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)</p>
 </div>
 
 
@@ -260,104 +267,255 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<div class="callout-note callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<!--This is a comment. Comments are not displayed in the browser-->
+<p><br></p>
+<p>En este tutorial sirve de plantilla para recordar lo q aprendo de Reveals.js</p>
+<hr>
+<ul>
+<li><p>Para hacer pausas en una slide: poner <code>. . .</code> o poner <code>::: {.incremental}</code></p></li>
+<li></li>
+</ul>
+<section id="figuras" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="figuras"><span class="header-section-number">1</span> Figuras</h2>
+<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>.</p>
+<p>Las imágenes (o figuras) se pueden insertar de múltiples maneras:</p>
+<ol type="1">
+<li>La sintaxis de Pandoc:</li>
+</ol>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Has de escribir</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><img src="thumbnail.jpg" id="fig1" class="img-fluid" alt="Mi imagen">{fig-align=“left”}</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Mi imagen](thumbnail.jpg)</span>{#fig-1, fig-align="left"}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<section id="subfiguras" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="subfiguras"><span class="header-section-number">1.1</span> Subfiguras</h3>
+<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html#subfigures">aquí</a>.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Has de escribir</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="fig-elephants" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-2.1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="thumbnail.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants"></p>
+<p></p><figcaption class="figure-caption">(a) Imágen 1</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-2.2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="thumbnail.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants"></p>
+<p></p><figcaption class="figure-caption">(b) Imágen 2</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Gráfico&nbsp;1: Dos imágenes alineadas</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>::: {#fig-elephants layout-ncol=2}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="al">![Imágen 1](thumbnail.jpg)</span>{#fig-2.1}</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="al">![Imágen 2](thumbnail.jpg)</span>{#fig-2.2}</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>2 imágenes alineadas</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="panel-de-imágenes" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="panel-de-imágenes"><span class="header-section-number">1.2</span> Panel de imágenes</h3>
+<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html#figure-panels">aquí</a>.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Has de escribir</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(A)</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(B)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(C)</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(D)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>::: {layout-nrow=2}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="al">![(A)](thumbnail.jpg)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="al">![(B)](thumbnail.jpg)</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="al">![(C)](thumbnail.jpg)</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="al">![(D)](thumbnail.jpg)</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="custom-layouts" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="custom-layouts"><span class="header-section-number">1.3</span> Custom layouts</h3>
+<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html#complex-layouts">aquí</a>.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Has de escribir</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(A)</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(B)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(C)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>::: {layout="[<span class="co">[</span><span class="ot">40,-20,40</span><span class="co">]</span>, <span class="co">[</span><span class="ot">100</span><span class="co">]</span>]"}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="al">![(A)](thumbnail.jpg)</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="al">![(B)](thumbnail.jpg)</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="al">![(C)](thumbnail.jpg)</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<ul>
+<li>tamaño por defecto: <a href="https://quarto.org/docs/computations/execution-options.html#figure-options" class="uri">https://quarto.org/docs/computations/execution-options.html#figure-options</a></li>
+</ul>
+</section>
+</section>
+<section id="callouts" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="callouts"><span class="header-section-number">2</span> Callouts</h2>
+<p>Documentación <a href="https://quarto.org/docs/authoring/callouts.html">aquí</a></p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Has de escribir</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Contexto
+Tarea xx
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>Tutorial preparado para el taller <strong>Mi primer blog con Quarto</strong> impartido en Córdoba (Spain) durante el <a href="http://r-es.org/12jr/">I Congreso &amp; XII Jornadas de Usuarios de R</a>, 23-25 de noviembre de 2022.</p></li>
-<li><p>El taller está pensado para realizar con <a href="https://cran.r-project.org/">R</a>. Se utilizará el IDE <a href="https://www.rstudio.com/products/rstudio/">RStudio</a> y <a href="https://quarto.org/">Quarto</a>. Se recomienda tener instaladas <strong>versiones recientes</strong> de los 3 programas</p></li>
-<li><p>Este tutorial es sólo una parte del taller. El <strong>taller completo</strong> está <a href="https://perezp44.github.io/taller.primer.blog/">aquí</a>.</p></li>
+<li><p>Tendremos que hacer esto</p></li>
+<li><p>y esto otro</p></li>
 </ul>
 </div>
 </div>
 </div>
-<section id="nivel-proyecto-_quarto.yml" class="level3" data-number="0.1">
-<h3 data-number="0.1" class="anchored" data-anchor-id="nivel-proyecto-_quarto.yml"><span class="header-section-number">0.1</span> Nivel proyecto (<code>_quarto.yml</code>)</h3>
-<ul>
-<li>Todos los Qprojects contienen un archivo de configuración llamado <code>_quarto.yml</code>: todo documento que se procese (render) dentro del directorio del proyecto heredará automáticamente los metadatos definidos en <code>_quarto.yml</code>.</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> docs <span class="co">#-- la carpeta donde se redirige el output (.html)</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># execute-dir: project #-- the working directory for rendering files within a project is the directory of the file itself. If you prefer to use the main project directory instead, you can add the execute-dir: project https://quarto.org/docs/projects/code-execution.html#working-dir</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>::: {.callout-important icon="false"}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Tarea xx</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tendremos que hacer esto </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>y esto otro</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 </div>
 </section>
-<section id="sass" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="sass"><span class="header-section-number">1</span> SASS</h2>
-<ul>
-<li><p>GUAU: SASS y mas: <span class="citation" data-cites="SamanthaCsik">@SamanthaCsik</span>: I recently took my first baby dive into Sass &amp; CSS for customizing <span class="citation" data-cites="quarto_pub">@quarto_pub</span> websites and it’s been surprisingly addicting✨If you’re also embarking on your own website beautifying journey, check out my workshop slides https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide As always, very open to feedback!</p></li>
-<li><p>GUAU sass: <a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/tldr1" class="uri">https://ucsb-meds.github.io/customizing-quarto-websites/#/tldr1</a></p></li>
-</ul>
-</section>
-<section id="colorines-css" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="colorines-css"><span class="header-section-number">2</span> colorines css</h2>
-<ul>
-<li><p><a href="https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/" class="uri">https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/</a></p></li>
-<li><p><a href="https://www.emilhvitfeldt.com/post/slidecraft-code-output/" class="uri">https://www.emilhvitfeldt.com/post/slidecraft-code-output/</a></p></li>
-<li><p>CSS, Fantastica <a href="https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17">esta slide</a> slides: https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#15</p></li>
-</ul>
-<p>Por ejemplo: incluir markado en azulito</p>
-<p>.my-bg-blue { background: lightblue; }</p>
-</section>
-<section id="mas" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="mas"><span class="header-section-number">3</span> Mas</h2>
-<ul>
-<li>Otra vez se trata de modificar el archivo <code>index.qmd</code> para dejarlo como:</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#title: "Mi listado de posts"  #- yo casi prefiero que no ponga nada</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  contents<span class="sc">:</span> posts</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-listings.html#sorting-items</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span> </span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#-  https://quarto.org/docs/websites/website-listings.html#listing-types</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> default  <span class="co">#- opciones: {default, grid, table}</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  categories<span class="sc">:</span> true</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  date<span class="sc">-</span>format<span class="sc">:</span> long</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> imagenes<span class="sc">/</span>thumbnail.jpg</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<section id="tablas" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="tablas"><span class="header-section-number">3</span> Tablas</h2>
+<p><a href="https://quarto.org/docs/authoring/tables.html" class="uri">https://quarto.org/docs/authoring/tables.html</a></p>
+<section id="editor-visual" class="level4">
+<h4 class="anchored" data-anchor-id="editor-visual">Editor visual</h4>
+<p><a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/" class="uri">https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/</a></p>
 <p><br></p>
-<pre><code>
-#- https://quarto.org/docs/authoring/title-blocks.html
-#title-block-banner: true   #- no me funciona
-#title-block-style : plain
-title-block-banner: imagenes/economia.gif
-
-title-block-banner-color : "#FFDDFF"
-
-</code></pre>
+</section>
+</section>
+<section id="bibliografía" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="bibliografía"><span class="header-section-number">4</span> Bibliografía</h2>
+<p>Para aprender puedes ir a <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/">este Quarto tip</a>, a <a href="https://youtu.be/d8jSN998Mtw?t=3757">este video</a>. La documentación oficial está <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">aquí</a> y <a href="https://quarto.org/docs/visual-editor/technical.html#citations">aquí</a> para usar el editor visual.</p>
 
 
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2024,
   author = {Pedro J. Pérez},
-  title = {Tuneado del blog},
+  title = {Escribiendo slides con Reveals.jst},
   date = {2024-01-10},
-  url = {https://perezp44.github.io/taller.primer.blog//07_taller_tuneado-del-blog.html},
+  url = {https://perezp44.github.io/taller.primer.blog//10_taller_plantilla_revealjs.html},
   langid = {es}
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2024" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Pedro J. Pérez. 2024. <span>“Tuneado del blog.”</span> January 10, 2024.
-<a href="https://perezp44.github.io/taller.primer.blog//07_taller_tuneado-del-blog.html">https://perezp44.github.io/taller.primer.blog//07_taller_tuneado-del-blog.html</a>.
+Pedro J. Pérez. 2024. <span>“Escribiendo slides con Reveals.jst.”</span>
+January 10, 2024. <a href="https://perezp44.github.io/taller.primer.blog//10_taller_plantilla_revealjs.html">https://perezp44.github.io/taller.primer.blog//10_taller_plantilla_revealjs.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

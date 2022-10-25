@@ -2,7 +2,7 @@
 title: "Recursos sobre Quarto"
 ---
 
-Desde que **Quarto** se hizo publico con [We don't talk about Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) ha sido un no parar de workshops, posts, etc... Aquí tienes una selección de recursos sobre Quarto.
+Desde que **Quarto** se hizo publico con [We don't talk about Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) ha sido un no parar de workshops, posts, etc... En esta página tienes una selección de recursos sobre Quarto.
 
 Obviamente la **principal referencia** es la [web de Quarto](https://quarto.org/). En ella hay, entre otras secciones, una [Guide](https://quarto.org/docs/guide/), una [Reference](https://quarto.org/docs/reference/) y una [Gallery](https://quarto.org/docs/gallery/).
 
@@ -30,7 +30,7 @@ Entre los materiales que he visto **destacar los siguientes**:
 
 - [Quarto/RMarkdown - What’s Different?](https://laderast.github.io/qmd_rmd/#/title-slide): unas slides de Ted Laderas.
 
-- [Rstudio::conf(2022) Playlist](https://www.youtube.com/playlist?list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH):  la presentación en sociedad de Quarto con varias charlas sobre Quarto, [Hello Quarto: Share, Collaborate, Teach, Reimagine](https://www.youtube.com/watch?v=p7Hxu4coDl8&list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH&index=4), [Websites & Books & Blogs, oh my! Creating Rich Content with Quarto](https://www.youtube.com/watch?v=A9QRN4cpsDY&list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH&index=49), [Quarto for the Curious ](https://www.youtube.com/watch?v=mrvhk2XUfWo&list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH&index=55) entre otros.
+- [Rstudio::conf(2022) Playlist](https://www.youtube.com/playlist?list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH):  la presentación en sociedad de Quarto con varias charlas sobre Quarto, [Hello Quarto: Share, Collaborate, Teach, Reimagine](https://www.youtube.com/watch?v=p7Hxu4coDl8&list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH&index=4), [Websites & Books & Blogs, oh my! Creating Rich Content with Quarto](https://www.youtube.com/watch?v=A9QRN4cpsDY&list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH&index=49), [Quarto for the Curious ](https://www.youtube.com/watch?v=mrvhk2XUfWo&list=PL9HYL-VRX0oTOwqzVtL_q5T8MNrzn0mdH&index=55) entre otras.
 -  [Rstudio::conf(2022) Workshops](https://github.com/rstudio-conf-2022): por ejemplo, [Get Started with Quarto](https://github.com/rstudio-conf-2022/get-started-quarto) o [Rmarkdown to Quarto](https://github.com/rstudio-conf-2022/rmd-to-quarto)
 
 
