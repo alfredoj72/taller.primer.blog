@@ -434,13 +434,6 @@
     "text": "5 Referencias\n(Algunos artículos sobre creación de blogs en Quarto)\n\nEric Ekholm. 2022. Modifying the Default Quarto Blog Structure es una web con blog . GOOOOD"
   },
   {
-    "objectID": "taller/feo.html",
-    "href": "taller/feo.html",
-    "title": "Mi segundo post",
-    "section": "",
-    "text": "```{r}\n#| eval: true\nsqrt(2 + 2)\n4 + 4\n```\n\n#> [1] 2\n#> [1] 8\n\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2024,\n  author = {Pedro J. Pérez},\n  title = {Mi segundo post},\n  date = {2024-01-10},\n  url = {https://perezp44.github.io/taller.primer.blog//feo.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez. 2024. “Mi segundo post.” January 10, 2024.\nhttps://perezp44.github.io/taller.primer.blog//feo.html."
-  },
-  {
     "objectID": "taller/01_taller_slides.html#estructura-del-taller",
     "href": "taller/01_taller_slides.html#estructura-del-taller",
     "title": "Mi primer blog con Quarto",
@@ -473,28 +466,28 @@
     "href": "taller/01_taller_slides.html#beneficios-de-tener-un-blog",
     "title": "Mi primer blog con Quarto",
     "section": "Beneficios de tener un blog",
-    "text": "Beneficios de tener un blog\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma olvidarías\nPortfolio y contactos\n\n\n\n\nProductive procrastination\n\n\n\n(Opiniones más elaboradas aquí o aquí )\n\n\n\nImportante:\n\nel blog y los posts no tienen porque estar perfectos, así que no hay que tener miedo!! no fear!!"
+    "text": "Beneficios de tener un blog\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma olvidarías\nPortfolio y contactos\n\n\n\n\nProductive procrastination\n\n\n\n(Discursos más elaborados aquí o aquí )\n\n\n\nImportante:\n\nel blog y los posts no tienen porque estar perfectos, así que no hay que tener miedo a escribir!! no fear!!"
   },
   {
-    "objectID": "taller/01_taller_slides.html#ejemplos-de-blogs",
-    "href": "taller/01_taller_slides.html#ejemplos-de-blogs",
+    "objectID": "taller/01_taller_slides.html#ejemplos-de-blogs-hechos-con-quarto",
+    "href": "taller/01_taller_slides.html#ejemplos-de-blogs-hechos-con-quarto",
     "title": "Mi primer blog con Quarto",
-    "section": "Ejemplos de blogs",
-    "text": "Ejemplos de blogs\n\nMike Mahoney. El repo. El [repo] (https://github.com/ivelasq/pipedream).\nIsabella Velásquez\nLayton R blog. El repo.\nR Lille. El repo.\nDrew Dimmery\nPA blog. El repo.\nMario Angst\nMatt Worthington. El repo.\n\n\nMás opciones:\n\nLa Gallery de Quarto"
+    "section": "Ejemplos de blogs (hechos con Quarto)",
+    "text": "Ejemplos de blogs (hechos con Quarto)\n\nMike Mahoney. El repo.\nIsabella Velásquez. El repo.\nLayton R blog. El repo.\nR Lille. El repo.\nDrew Dimmery\nPA blog. El repo.\nMario Angst\nMatt Worthington. El repo.\n\n\nMás opciones:\n\nLa Gallery de Quarto"
   },
   {
     "objectID": "taller/01_taller_slides.html#qué-es-quarto-otra-vez",
     "href": "taller/01_taller_slides.html#qué-es-quarto-otra-vez",
     "title": "Mi primer blog con Quarto",
     "section": "¿Qué es Quarto? (otra vez)",
-    "text": "¿Qué es Quarto? (otra vez)\n\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R, soporta más lenguajes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\nEs … la “segunda generación de Rmarkdown”\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI"
+    "text": "¿Qué es Quarto? (otra vez)\n\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R, soporta más lenguajes (Phyton, Julia, Observable) y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\nEs … la “segunda generación de Rmarkdown”\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI"
   },
   {
     "objectID": "taller/01_taller_slides.html#ventajas-de-quarto",
     "href": "taller/01_taller_slides.html#ventajas-de-quarto",
     "title": "Mi primer blog con Quarto",
     "section": "Ventajas de Quarto",
-    "text": "Ventajas de Quarto\n\nWe don’t talk about Quarto. Until now\nEn StackOverfow: benefits of Quarto\nun tweet: https://mobile.twitter.com/DanOvand0/status/1580343517154770944\n\n\n\nWow, writing first paper using @quarto_pub and it is amazing; almost every pain point for academic writing in #rmarkdown has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching\n\n— Dan Ovando (@DanOvand0) October 12, 2022"
+    "text": "Ventajas de Quarto\n\nUnifica algunas de las funcionalidades de Rmarkdown\nNuevas funcionalidades: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\nWe don’t talk about Quarto. Until now\nEn StackOverfow: benefits of Quarto\nun tweet: https://mobile.twitter.com/DanOvand0/status/1580343517154770944\n\n\n\nWow, writing first paper using @quarto_pub and it is amazing; almost every pain point for academic writing in #rmarkdown has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching\n\n— Dan Ovando (@DanOvand0) October 12, 2022"
   },
   {
     "objectID": "taller/01_taller_slides.html#documentos-.rmd-tienen-3-partes",

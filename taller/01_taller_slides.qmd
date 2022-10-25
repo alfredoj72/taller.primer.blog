@@ -157,7 +157,7 @@ footer: |
 . . . 
 
 
-(Opiniones más elaboradas [aquí](https://www.rebeccabarter.com/blog/2020-02-03_blogger/) o [aquí](https://jozef.io/r914-one-year-r-blogging/) )
+(Discursos más elaborados [aquí](https://www.rebeccabarter.com/blog/2020-02-03_blogger/) o [aquí](https://jozef.io/r914-one-year-r-blogging/) )
 
 . . .
 
@@ -165,20 +165,15 @@ footer: |
 
 ### **Importante:**
 
-- el blog y los posts **no tienen porque estar perfectos**, así que no hay que tener miedo!! no fear!!
-
-<br>
+- el blog y los posts **no tienen porque estar perfectos**, así que no hay que tener miedo a escribir!! no fear!!
 
 
+## Ejemplos de blogs (hechos con Quarto)
 
 
+- [Mike Mahoney](https://www.mm218.dev/blog.html). El [repo](https://github.com/mikemahoney218/mm218.dev). 
 
-## Ejemplos de blogs
-
-
-- [Mike Mahoney](https://www.mm218.dev/blog.html). El [repo](https://github.com/mikemahoney218/mm218.dev). El [repo] (https://github.com/ivelasq/pipedream).
-
-- [Isabella Velásquez](https://ivelasq.rbind.io/about.html)
+- [Isabella Velásquez](https://ivelasq.rbind.io/about.html). El [repo](https://github.com/ivelasq/pipedream).
 
 - [Layton R blog](https://graphdr.github.io/data-stories/). El [repo](https://github.com/graphdr/data-stories).  
 
@@ -222,7 +217,7 @@ Puedes ver [este video ](https://www.youtube.com/watch?v=_20US068pzk) de 100 seg
 
 . . .
 
-- Muy **parecido a Rmarkdown**, pero ... no requiere R, soporta más lenguajes y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
+- Muy **parecido a Rmarkdown**, pero ... **no requiere R**, soporta más lenguajes (Phyton, Julia, Observable) y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
 
 - Es ... la "**segunda generación de Rmarkdown**"
 
@@ -235,6 +230,10 @@ Puedes ver [este video ](https://www.youtube.com/watch?v=_20US068pzk) de 100 seg
 - Quarto no es un paquete, **es un programa independiente**, un CLI
 
 ## Ventajas de Quarto
+
+- Unifica algunas de las funcionalidades de Rmarkdown
+
+- Nuevas funcionalidades: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans
 
 - [We don't talk about Quarto. Until now](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/)
 
@@ -263,11 +262,11 @@ Puedes ver [este video ](https://www.youtube.com/watch?v=_20US068pzk) de 100 seg
 
 ---
 
-### ¿Qué es Rmarkdown? ¿Para que sirve?
+### ¿Qué es Rmarkdown? ¿Para qué sirve?
 
 . . . 
 
-- Un ["entorno"](https://vimeo.com/178485416) para hacer informes/publicaciones/transparencias REPRODUCIBLES con R.
+- Un ["entorno"](https://vimeo.com/178485416) para hacer informes/publicaciones/transparencias **REPRODUCIBLES** con R.
 
 
 > Is an authoring framework for data science, combining your code, its results, and your prose. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.
@@ -321,9 +320,9 @@ knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_1b.pn
 
 ##### (I) El encabezamiento o "yaml header"
 
-- Se (suele) poner al ppio del documento, entre estas marcas: `---`
+- Se (suele) poner al ppio del documento, entre estas marcas: **`---`**
 
-- En el yaml son MUY importantes los espacios y la indentación
+- En el yaml son MUY importantes los **espacios y la indentación**
 
 - Puedes aprender más sobre el `yaml` en el [manual de Pandoc](https://pandoc.org/MANUAL.html)
 
@@ -340,40 +339,20 @@ knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_yaml.
 
 - Para que `knitr` sepa qué partes del .Rmd es código R, deben ir dentro de estas marcas: 
 
-````
-```{r}`r ''`   
+![](./imagenes/tt_01/img_01_dd.png){fig-align="left"}
 
-```    
-````
 
 ##### Por ejemplo
 
-````
-```{r}`r ''`   
-# Se pueden poner comentarios (de la forma habitual)
-aa <- c(1, 4, 16, 64)
-sqrt(aa)
-```    
-````
-
-- Cuando `knitr` procese el chunk, lo interpretará como código R y ejecutará las instrucciones y mostrará en el documento final el output generado por el chunk.
+![](./imagenes/tt_01/img_01_ee.png){fig-align="left"}
 
 
-##### Por ejemplo, el anterior chunk generará el siguiente output:
-
-```{r, echo = TRUE}
-# Se pueden poner comentarios (de la forma habitual)
-aa <- c(1, 4, 16, 64)
-sqrt(aa)
-```
+- Cuando `knitr` procese el chunk, lo interpretará como código R y **ejecutará las instrucciones y mostrará en el documento final el output** generado por el chunk.
 
 
+--- 
 
----
-
-#### (IIa) Chunks: diferencias con Quarto
-
-. . . 
+#### (IIa) Chunks: diferencias con Quarto {.smaller}
 
 - Ahora, con `.qmd`,  se usa **YAML** style: `echo: false` y, cada opción en una linea con `#|`
 
@@ -383,27 +362,14 @@ sqrt(aa)
 ::: {.column width="40%"}
 #### .Rmd
 
-```` markdown
-```{{r sumando, echo = TRUE, eval = FALSE}}
-2 + 2
-```
-````
-
+![](./imagenes/tt_01/img_01_ff.png){fig-align="left"}
 :::
 
 
 ::: {.column width="40%"}
 ##### .qmd
 
-
-```` markdown
-```{{r}}
-#| label: "sumando"
-#| echo: true
-#| eval: false
-2 + 2
-```
-````
+![](./imagenes/tt_01/img_01_gg.png){fig-align="left"}
 
 :::
 
@@ -412,10 +378,28 @@ sqrt(aa)
 . . . 
 
 
-- No hace falta chunk inicial, ahora **se pueden poner** las opciones de chunk **en el YAML**
+- No hace falta chunk inicial, ahora se pueden poner **las opciones de chunk en el YAML**
 
-. . . 
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">nice, you can set knitr defaults in the main yaml configuration header <a href="https://t.co/fUPdnqBFdc">pic.twitter.com/fUPdnqBFdc</a></p>&mdash; tj nightmahr 🧟‍♂️ (@tjmahr) <a href="https://twitter.com/tjmahr/status/1577316771018817541?ref_src=twsrc%5Etfw">October 4, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+:::: {.columns}
+
+::: {.column width="40%"}
+#### .Rmd
+
+![](./imagenes/tt_01/img_01_h1.png){fig-align="left"}
+:::
+
+
+::: {.column width="40%"}
+##### .qmd
+
+![](./imagenes/tt_01/img_01_h2.png){fig-align="left"}
+
+:::
+
+::::
 
 ---
+
+{{< youtube yvi5uXQMvu4 >}}
