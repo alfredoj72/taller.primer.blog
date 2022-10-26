@@ -1,6 +1,6 @@
 ---
 title: "Mi primer blog con Quarto"
-subtitle: "(Slides para el presentador)"
+subtitle: "(Slides para el taller)"
 date: "24/10/2022"
 format: 
   revealjs:
@@ -71,7 +71,7 @@ Los **archivos importantes** ahora son 3:
  
  - `_quarto.yml`: especifica la estructura (y apariencia) de la web
  
- - `index.qmd` : generará (y dará formato) la "landing page" o Home. Esta página será un listado de páginas (un blog)
+ - `index.qmd` : generará (y dará formato) a la "landing page" o Home. Esta página será un listado de páginas (un blog)
  
  - `about.qmd` : una de la páginas del blog
 
