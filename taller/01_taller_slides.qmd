@@ -32,7 +32,9 @@ footer: |
     #theme: [moon, custom.scss]
 ---
 
-# primero ... Bienvenidos al taller!!
+# Bienvenidos al taller!!  🖖:rose:
+
+
 
 ## Estructura del taller {.smaller}
 
@@ -46,7 +48,7 @@ footer: |
 
 2.  Creación de un blog básico: **mi blog en 2 minutos** (10 min)
 
-3.  **Tuneado básico** del blog (20 min)
+3.  **Tuneado básico** del blog (15 min). **Práctica** (15 min)
 
 <br>
 
@@ -54,13 +56,14 @@ footer: |
 
 4.  Workflow: **creando posts** (5 min)
 
-5.  Escribiendo un post: **practicando con Quarto** (20 min)
+5.  **Escribiendo** un post **con Quarto** (15 min).   **Práctica** (15 min)
+
+
+. . .
 
 6.  Convirtiendo el blog en una **web personal** (5 min)
 
-
 <br>
-
 
 . . .
 
@@ -69,6 +72,7 @@ footer: |
 . . .
 
 8.  Gestión y **publicación** de la web/blog (5 min)
+
 
 ## Enlaces para Fran y compis {.smaller}
 
@@ -115,7 +119,7 @@ footer: |
 <br>
 
 ::: incremental
--   Aprender a **hacer webpages/blogs con Quarto**
+-   Aprender a **hacer websites/blogs con Quarto**
 
 <br>
 
@@ -123,7 +127,7 @@ footer: |
 
 <br>
 
--   Que salgáis todos con el bosquejo o la **intención de hacer** una web/blog!!
+-   Que salgáis todos con el bosquejo y la **intención de hacer** una web/blog!!
 
 <br>
 
@@ -162,7 +166,11 @@ footer: |
 
 ### **Importante:**
 
--   el blog y los posts **no tienen porque estar perfectos**, así que no hay que tener miedo a escribir!! no fear!!
+- El blog **no tiene que ser perfecto**. Mejor empezar con un blog sencillo
+
+. . .
+
+- Los posts **tampoco tienen porqué estar perfectos**, así que no hay que tener miedo a escribir!! 
 
 ## Ejemplos de blogs (hechos con Quarto) {.smaller}
 
@@ -417,4 +425,4 @@ knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_yaml.
 
 {{< youtube yvi5uXQMvu4 >}}
 
-# Comenzamos el taller !!!!  :computer:🤞 💪 💪
+# Comenzamos el taller !!!! :computer::crossed_fingers: :muscle: :muscle:

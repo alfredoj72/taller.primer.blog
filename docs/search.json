@@ -438,7 +438,7 @@
     "href": "taller/01_taller_slides.html#estructura-del-taller",
     "title": "Mi primer blog con Quarto",
     "section": "Estructura del taller",
-    "text": "Estructura del taller\n\n\nIntro: presentación del taller y ¿qué es Quarto? (15 min)\n\n\n\n\nCreación de un blog básico: mi blog en 2 minutos (10 min)\nTuneado básico del blog (20 min)\n\n\n\n\n\nWorkflow: creando posts (5 min)\nEscribiendo un post: practicando con Quarto (20 min)\nConvirtiendo el blog en una web personal (5 min)\n\n\n\n\n\nTuneado: mejorando la web (15 min)\n\n\n\n\nGestión y publicación de la web/blog (5 min)"
+    "text": "Estructura del taller\n\n\nIntro: presentación del taller y ¿qué es Quarto? (15 min)\n\n\n\n\nCreación de un blog básico: mi blog en 2 minutos (10 min)\nTuneado básico del blog (15 min). Práctica (15 min)\n\n\n\n\n\nWorkflow: creando posts (5 min)\nEscribiendo un post con Quarto (15 min). Práctica (15 min)\n\n\n\n\nConvirtiendo el blog en una web personal (5 min)\n\n\n\n\n\nTuneado: mejorando la web (15 min)\n\n\n\n\nGestión y publicación de la web/blog (5 min)"
   },
   {
     "objectID": "taller/01_taller_slides.html#enlaces-para-fran-y-compis",
@@ -459,14 +459,14 @@
     "href": "taller/01_taller_slides.html#objetivos-del-taller",
     "title": "Mi primer blog con Quarto",
     "section": "Objetivo(s) del taller",
-    "text": "Objetivo(s) del taller\n\n\n\nAprender a hacer webpages/blogs con Quarto\n\n\n\nAprender sobre Quarto mientras vamos creando una web/blog\n\n\n\nQue salgáis todos con el bosquejo o la intención de hacer una web/blog!!\n\n\n\n… y, si puede ser, divertirnos mientras aprendemos."
+    "text": "Objetivo(s) del taller\n\n\n\nAprender a hacer websites/blogs con Quarto\n\n\n\nAprender sobre Quarto mientras vamos creando una web/blog\n\n\n\nQue salgáis todos con el bosquejo y la intención de hacer una web/blog!!\n\n\n\n… y, si puede ser, divertirnos mientras aprendemos."
   },
   {
     "objectID": "taller/01_taller_slides.html#beneficios-de-tener-un-blog",
     "href": "taller/01_taller_slides.html#beneficios-de-tener-un-blog",
     "title": "Mi primer blog con Quarto",
     "section": "Beneficios de tener un blog",
-    "text": "Beneficios de tener un blog\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma olvidarías\nPortfolio y contactos\n\n\n\n\nProductive procrastination (!!)\n\n\n\n(Discursos más elaborados aquí o aquí )\n\n\n\nImportante:\n\nel blog y los posts no tienen porque estar perfectos, así que no hay que tener miedo a escribir!! no fear!!"
+    "text": "Beneficios de tener un blog\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma olvidarías\nPortfolio y contactos\n\n\n\n\nProductive procrastination (!!)\n\n\n\n(Discursos más elaborados aquí o aquí )\n\n\n\nImportante:\n\nEl blog no tiene que ser perfecto. Mejor empezar con un blog sencillo\n\n\n\nLos posts tampoco tienen porqué estar perfectos, así que no hay que tener miedo a escribir!!"
   },
   {
     "objectID": "taller/01_taller_slides.html#ejemplos-de-blogs-hechos-con-quarto",
