@@ -347,7 +347,7 @@ En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes e
 
 {{< include ./_includes/_tt_05_03_figura-01.qmd >}}
 
-- Vámoslas una a una
+- Veámoslas una a una
 
 
 ---
@@ -397,7 +397,8 @@ Si hay conflictos **prevalecen las opciones del nivel documento**, luego nivel c
 
 ## YAML: NIVEL PROYECTO (opciones en `_quarto.yml`)  {.smaller}
 
-Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml). Pertenece a la [web de Quarto](https://quarto.org/docs/websites/). En `_quarto.yml` se suelen poner opciones referentes a 3 aspectos:
+
+En `_quarto.yml` se suelen poner opciones referentes a 3 aspectos:
 
 ::: {.panel-tabset}
 
@@ -447,7 +448,7 @@ En un blog/web el formato de salida es siempre `.html`; sin embargo podemos espe
 
 Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml). Pertenece a la [web de Quarto](https://quarto.org/docs/websites/). 
 
-
+<br>
 
 :::: {.columns}
 
@@ -501,13 +502,33 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 ---
 
-### Texto (o narrativas)
+### Texto (o narrativas) {.smaller}
 
 
-- Se escribe (al igual que en los documentos `.Rmd`)  en **markdown**. [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) la documentación oficial de Quarto.
+- Se escribe (al igual que `.Rmd`)  en **markdown**. [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) la documentación oficial de Quarto.
 
 
-- Practicaremos (en un ejemplo): [tablas](https://quarto.org/docs/authoring/tables.html), [figuras](https://quarto.org/docs/authoring/figures.html), ...
+- Practicaremos (con un ejemplo): 
+
+  - Links (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#links-images))
+
+  - Imágenes (documentación [aquí](https://quarto.org/docs/authoring/figures.html)) y sus [opciones](https://quarto.org/docs/computations/execution-options.html#figure-options)
+
+  - Listas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#lists))  
+
+  - Tablas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#tables))  
+
+  - Código  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#source-code))  
+
+  - Ecuaciones  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#equations)) 
+    
+  - Listas  (documentación [aquí]())  
+
+  - Callout blocks  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks))  
+
+  - Divs & spans  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans))  
+
+
 
 - [Editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/)
 
@@ -516,8 +537,9 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 ### CHUNKS
 
-- **Comportamiento similar** a los chunks en documentos `.Rmd`. La documentación oficial está [aquí](https://quarto.org/docs/computations/execution-options.html)
+**Comportamiento similar** a los documentos `.Rmd`. La documentación oficial está [aquí](https://quarto.org/docs/computations/execution-options.html)
 
+<br>
 
 ##### Principales diferencias
 

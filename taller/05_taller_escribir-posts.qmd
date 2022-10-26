@@ -279,6 +279,34 @@ Las **principales diferencias** son:
 
 <br>
 
+----------------------
+
+<br>
+
+
+
+## Práctica
+
+En esta sección dedicaremos un tiempo a la práctica libre para que adaptes el blog a tus necesidades y gustos. Por ejemplo puedes probar:
+
+- Añadir una nueva página a la web (`quarto.yml`)
+
+{{< include ./_includes/_tt_03_13_practica-01.qmd >}}
+
+
+- Modificar la apariencia del blog jugando con las opciones que nos proporciona Quarto (`index.qmd`)
+
+{{< include ./_includes/_tt_03_13_practica-02.qmd >}}
+
+
+- Modificar la apariencia de la página About (`about.qmd`)
+
+{{< include ./_includes/_tt_03_13_practica-03.qmd >}}
+
+
+
+
+
 ## Un ejemplo
 
 Usaremos un ejemplo para **practicar la sintaxis y nuevas posibilidades de Quarto** a la hora de generar documentos `.html`: o sea, para escribir posts para nuestro blog.
