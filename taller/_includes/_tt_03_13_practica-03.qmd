@@ -1,0 +1,14 @@
+::: {.callout-tip collapse="true" appearance="default" icon="false"}
+
+#### Práctica 3.3: Modificar la **página About** (`about.qmd`)
+
+- Se trata de cambiar las opciones predefinidas de tu archivo **about.qmd**
+
+- Estaría bien que pusieses una foto tuya
+
+- Puedes poner texto y dar algo de formato a la página
+
+![](./imagenes/tt_01/img_12_aa.png){fig-align="center"}
+
+:::
+

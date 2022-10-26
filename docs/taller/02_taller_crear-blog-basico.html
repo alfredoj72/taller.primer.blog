@@ -218,7 +218,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#veamos-otra-vez-la-estructura-de-carpetas" id="toc-veamos-otra-vez-la-estructura-de-carpetas" class="nav-link" data-scroll-target="#veamos-otra-vez-la-estructura-de-carpetas"><span class="toc-section-number">4</span>  Veamos otra vez la estructura de carpetas</a></li>
   <li><a href="#alojando-el-blog" id="toc-alojando-el-blog" class="nav-link" data-scroll-target="#alojando-el-blog"><span class="toc-section-number">5</span>  Alojando el blog</a></li>
   <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="toc-section-number">6</span>  Resumen</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="toc-section-number">7</span>  Referencias</a></li>
   </ul>
 </nav>
 </nav>
@@ -257,7 +256,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Fecha de Publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">25 de octubre de 2022</p>
+      <p class="date">26 de octubre de 2022</p>
     </div>
   </div>
   
@@ -359,11 +358,11 @@ Tarea 2.1: Hemos de crear la carpeta que contendrá nuestro blog.
 <section id="b-crear-la-carpeta-desde-la-terminal" class="level6">
 <h6 class="anchored" data-anchor-id="b-crear-la-carpeta-desde-la-terminal">B) Crear la carpeta desde la <strong>Terminal</strong></h6>
 <ul>
-<li>Has de ejecutar desde la Terminal:</li>
-</ul>
+<li><p>Has de ejecutar desde la Terminal:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="false"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>quarto create<span class="sc">-</span>project blog_prueba_00 <span class="sc">--</span>type website <span class="sc">--</span>template blog</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> create-project blog_prueba_00 <span class="at">--type</span> website <span class="at">--template</span> blog         </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
 <p><br></p>
 </section>
 <section id="c-usando-un-qproject-ya-creado-con-rstudio-cloud" class="level6">
@@ -595,12 +594,12 @@ Extensiones: formas alternativas de generar el blog
 <li><p>En ambos casos hay que estar en el Qproject “blog_prueba_00”; es decir, “blog_prueba_00” es el working directory</p></li>
 <li><p>Desde la <strong>Terminal</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render        </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p>desde la <strong>Consola</strong> de R</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"quarto"</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">"index.qmd"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="false"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"quarto"</span>)    </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">"index.qmd"</span>)    </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 </ul>
 </div>
@@ -682,9 +681,14 @@ Tarea 2.3: Ver el blog
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>Enseguida publicaremos el blog en Quartopub, pero antes, vamos a verlo en local; para ello solo tienes que pinchar en el archivo <code>./blog_prueba_00/_site/index.html</code></p></li>
+<li><p>Enseguida publicaremos el blog en Quartopub, pero antes vamos a verlo en local.</p></li>
+<li><p>Para ello solo tienes que pinchar en el archivo <code>./blog_prueba_00/_site/index.html</code></p></li>
 <li><p>Ese fichero es el que contiene la “Landing Page” o “Home” de nuestro blog.</p></li>
-<li><p>Como ves el blog es muy sencillo, solo tiene 2 páginas: la Home Page (que consiste en un listado de posts) y la página <code>About</code>.</p></li>
+<li><p>Como ves el blog es muy sencillo, solo tiene 2 páginas:</p>
+<ul>
+<li><p>la Home Page (que consiste en un listado de posts)</p></li>
+<li><p>la página <code>About</code></p></li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -822,17 +826,6 @@ Resumen (tutorial nº 2)
 </div>
 </div>
 </div>
-</section>
-<section id="referencias" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="referencias"><span class="header-section-number">7</span> Referencias</h2>
-<p>(Algunos artículos sobre creación de blogs en Quarto)</p>
-<ul>
-<li><p><a href="https://www.ericekholm.com/posts/demo-quarto-site/">Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure</a> es una web con blog . GOOOOD</p></li>
-<li><p><a href="https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/">Bea Milz. 2022. Creating a Blog with Quarto in 10 Steps</a></p></li>
-<li><p><a href="https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/">Navarro, Danielle. 2022. “Notes from a Data Witch - Porting a Distill Blog to Quarto</a></p></li>
-<li><p><a href="https://quarto.org/docs/websites/website-blog.html">Quarto - Creating a Blog</a></p></li>
-<li><p><a href="https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/">Alison Hill. 2022. We Don’t Talk about Quarto</a></p></li>
-</ul>
 
 
 </section>
@@ -847,13 +840,13 @@ Resumen (tutorial nº 2)
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2024,
   author = {Pedro J. Pérez},
   title = {Creación de un blog básico con Quarto},
-  date = {2024-01-10},
+  date = {2024-02-10},
   url = {https://perezp44.github.io/taller.primer.blog//02_taller_crear-blog-basico.html},
   langid = {es}
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2024" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
 Pedro J. Pérez. 2024. <span>“Creación de un blog básico con
-Quarto.”</span> January 10, 2024. <a href="https://perezp44.github.io/taller.primer.blog//02_taller_crear-blog-basico.html">https://perezp44.github.io/taller.primer.blog//02_taller_crear-blog-basico.html</a>.
+Quarto.”</span> February 10, 2024. <a href="https://perezp44.github.io/taller.primer.blog//02_taller_crear-blog-basico.html">https://perezp44.github.io/taller.primer.blog//02_taller_crear-blog-basico.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

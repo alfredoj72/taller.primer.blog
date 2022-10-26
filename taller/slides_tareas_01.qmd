@@ -67,13 +67,14 @@ css: /assets/styles_slides_tareas.css
 {{< include ./_includes/_tt_02_04_estructura-Qproject.qmd >}}
 
  
-Los **archivos importantes** ahora son:
+Los **archivos importantes** ahora son 3:
  
- - `_quarto.yml`: especifica la estructura (y apariencia) del blog.
+ - `_quarto.yml`: especifica la estructura (y apariencia) de la web
  
-  - `about.qmd` : una de la páginas del blog
+ - `index.qmd` : generará (y dará formato) la "landing page" o Home. Esta página será un listado de páginas (un blog)
+ 
+ - `about.qmd` : una de la páginas del blog
 
- - `index.qmd` : generará la "landing page" o Home
  
 <br>
 
@@ -237,6 +238,38 @@ Los **archivos importantes** ahora son:
 ---
 
 {{< include ./_includes/_tt_03_12_resumen.qmd >}}
+
+
+---
+
+## Práctica (tutorial nº 3)
+
+En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes el blog a tus necesidades y gustos**. Por ejemplo puedes probar:
+
+<br>
+
+1. Añadir una **nueva página a la web** (`quarto.yml`). Os doy una posibilidad en la siguiente slide
+
+<br>
+
+2. Modificar la **apariencia del blog** jugando con las opciones que nos proporciona Quarto (`index.qmd`). Gracias YAML inteligence!!
+
+<br>
+
+3. Modificar la apariencia de la **página About** (`about.qmd`)
+
+---
+
+{{< include ./_includes/_tt_03_13_practica-01.qmd >}}
+
+---
+
+{{< include ./_includes/_tt_03_13_practica-02.qmd >}}
+
+
+---
+
+{{< include ./_includes/_tt_03_13_practica-03.qmd >}}
 
 <br>
 

@@ -124,46 +124,18 @@ Como puedes ver arriba en la @fig-02, al compararla con la   @fig-01, hemos modi
 
 <br>
 
-- [Aquí](https://pjperez.quarto.pub/blog_prueba_01/) puedes ver como quedaría el blog tras haber modificado `_quarto.yml`.  Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña `Docencia` a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda `theme: minty`): ahora el color de la barra es verdecito.
+- [Aquí](https://pjperez.quarto.pub/blog_prueba_01/) puedes ver como quedaría el blog tras haber modificado `_quarto.yml`.  Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña `Docencia` a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda `theme: minty`): ahora el color de la barra es verdecito. 
+
+- La verdad es que la barra de navegación en verde no me gusta mucho!! Enseguida dejaremos tiempo para que lo adaptes a tus gustos: será en la última sección de este tutorial.
 
 <br>
-
-::: {.callout-warning collapse="true" appearance="default" icon="false"}
-#### Extensiones: Pongamos una pestaña más a nuestro blog
-
-Si copias adecuadamente el chunk de abajo en el archivo `_quarto.yml` se creará una pestaña más en la barra de navegación de nuestra web. La pestaña se llamará "Más cosas" y tiene la particularidad de que cuando hagamos Render se convertirá en un desplegable con acceso a varias páginas: "Docencia 2", "Docencia 3" y "Docencia 4".
-
-```yaml
-  navbar:
-    logo: "profile.jpg"
-    #background: primary    #- pink (el backgroung de la navbar)
-    left: 
-      - text: "Docencia"
-        href: docencia.qmd
-      -  text: "Más cosas"
-         menu:
-          - text: "Docencia 2"
-            href: docencia.qmd
-          - text: "Docencia 3"
-            href: docencia.qmd
-          - text: "---"
-          - text: "Docencia 4"
-            href: docencia.qmd
-```
-:::
-
-
-<br>
-
 
 ## Archivo `index.qmd`
 
 
 En la figura siguiente, en el lado izquierdo puedes ver el contenido original del fichero `index.qmd`. Al final dejaremos este fichero como la figura de la derecha. Como verás, de momento, **solo vamos a hacer cambios en la segunda linea**: cambiaremos el título.
 
-
 {{< include ./_includes/_tt_03_07_archivo-index.qmd >}}
-
 
 -   Como ves, `index.qmd` es un fichero (nuestra "Home Page") sin contenido aparente: aparte del `yaml`no hay nada más. Sin embargo, justamente en el `yaml` se especifica, con la opción `listing:` (linea 3), que la página va a ser un listado; concrétamente un listado del contenido que haya en la carpeta `posts`; o sea, un listado con los posts que haya en la carpeta `posts`.
 
@@ -224,10 +196,22 @@ En la figura siguiente, en el lado izquierdo puedes ver el contenido original de
 <br>
 
 
-## Referencias
+## Práctica
 
-(Algunos artículos sobre creación de blogs en Quarto)
+En esta sección dedicaremos un tiempo a la práctica libre para que adaptes el blog a tus necesidades y gustos. Por ejemplo puedes probar:
 
-- [ Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure](https://www.ericekholm.com/posts/demo-quarto-site/)  es una web con blog . GOOOOD
+- Añadir una nueva página a la web (`quarto.yml`)
+
+{{< include ./_includes/_tt_03_13_practica-01.qmd >}}
+
+
+- Modificar la apariencia del blog jugando con las opciones que nos proporciona Quarto (`index.qmd`)
+
+{{< include ./_includes/_tt_03_13_practica-02.qmd >}}
+
+
+- Modificar la apariencia de la página About (`about.qmd`)
+
+{{< include ./_includes/_tt_03_13_practica-03.qmd >}}
 
 

@@ -218,7 +218,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#archivo-about.qmd" id="toc-archivo-about.qmd" class="nav-link" data-scroll-target="#archivo-about.qmd"><span class="toc-section-number">3</span>  Archivo <code>about.qmd</code></a></li>
   <li><a href="#archivo-styles.css" id="toc-archivo-styles.css" class="nav-link" data-scroll-target="#archivo-styles.css"><span class="toc-section-number">4</span>  Archivo <code>styles.css</code></a></li>
   <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="toc-section-number">5</span>  Resumen</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="toc-section-number">6</span>  Referencias</a></li>
+  <li><a href="#práctica" id="toc-práctica" class="nav-link" data-scroll-target="#práctica"><span class="toc-section-number">6</span>  Práctica</a></li>
   </ul>
 </nav>
 </nav>
@@ -257,7 +257,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Fecha de Publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">25 de octubre de 2022</p>
+      <p class="date">26 de octubre de 2022</p>
     </div>
   </div>
   
@@ -431,7 +431,9 @@ Tarea 3.1: Modificar el contenido de <code>_quarto.yml</code>
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Simplemente sustituye el contenido original del fichero <code>_quarto.yml</code> por el contenido del siguiente chunk:</li>
+<li><p>Sustituye el contenido original del fichero <code>_quarto.yml</code> por el contenido del siguiente chunk.</p></li>
+<li><p>Pon un título a tu blog(<code>title: "titulo-de-mi-blog"</code>)</p></li>
+<li><p>Pon tu e-mail, usuario de Github y cuenta de Twitter (<code>href:</code>)</p></li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
@@ -541,40 +543,9 @@ Tarea 3.4: Volver a generar el blog
 </div>
 <p><br></p>
 <ul>
-<li><a href="https://pjperez.quarto.pub/blog_prueba_01/">Aquí</a> puedes ver como quedaría el blog tras haber modificado <code>_quarto.yml</code>. Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña <code>Docencia</code> a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda <code>theme: minty</code>): ahora el color de la barra es verdecito.</li>
+<li><p><a href="https://pjperez.quarto.pub/blog_prueba_01/">Aquí</a> puedes ver como quedaría el blog tras haber modificado <code>_quarto.yml</code>. Como ves, tal como hemos dicho, hemos modificado las pestañas de la barra de navegación (por ejemplo ahora tenemos la pestaña <code>Docencia</code> a la derecha de la barra de navegación) y la apariencia (theme) del blog ha cambiado (recuerda <code>theme: minty</code>): ahora el color de la barra es verdecito.</p></li>
+<li><p>La verdad es que la barra de navegación en verde no me gusta mucho!! Enseguida dejaremos tiempo para que lo adaptes a tus gustos: será en la última sección de este tutorial.</p></li>
 </ul>
-<p><br></p>
-<div class="callout-warning callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Extensiones: Pongamos una pestaña más a nuestro blog
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Si copias adecuadamente el chunk de abajo en el archivo <code>_quarto.yml</code> se creará una pestaña más en la barra de navegación de nuestra web. La pestaña se llamará “Más cosas” y tiene la particularidad de que cuando hagamos Render se convertirá en un desplegable con acceso a varias páginas: “Docencia 2”, “Docencia 3” y “Docencia 4”.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"profile.jpg"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">    #background: primary    #- pink (el backgroung de la navbar)</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia"</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at">  </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Más cosas"</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="at">         </span><span class="fu">menu</span><span class="kw">:</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia 2"</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia 3"</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"---"</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia 4"</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
 <p><br></p>
 </section>
 </section>
@@ -623,18 +594,18 @@ Tarea 3.5: Modificar el contenido de <code>index.qmd</code>
 <li>Simplemente he cambiado la linea 2. Aunque, para mi, casi queda mejor sin ningún título. Para ello tendríamos que comentar (con un #) la primera linea del yaml.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi listado de post"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> default</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">page-layout</span><span class="kw">:</span><span class="at"> full</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">title-block-banner</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi listado de post"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">page-layout</span><span class="kw">:</span><span class="at"> full</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">title-block-banner</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -684,24 +655,24 @@ Tarea 3.6: Modificar el contenido de <code>about.qmd</code>
 <li><p>Abajo tienes el código:</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> Yo mismo</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> profile.jpg</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>about<span class="sc">:</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  template<span class="sc">:</span> trestles    <span class="co">#- {jolla, solana, ...}</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>width<span class="sc">:</span> 10em     <span class="co">#- https://cybmeta.com/em-y-rem</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>shape<span class="sc">:</span> round    <span class="co">#- rectangle, round, rounded</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  links<span class="sc">:</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Twitter</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> linkedin</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> LinkedIn</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>linkedin.com</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Github</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> Yo mismo</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> profile.jpg</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>about<span class="sc">:</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  template<span class="sc">:</span> trestles    <span class="co">#- {jolla, solana, ...}</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>width<span class="sc">:</span> 10em     <span class="co">#- https://cybmeta.com/em-y-rem</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  image<span class="sc">-</span>shape<span class="sc">:</span> round    <span class="co">#- rectangle, round, rounded</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  links<span class="sc">:</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Twitter</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> linkedin</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> LinkedIn</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>linkedin.com</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>      text<span class="sc">:</span> Github</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -733,12 +704,12 @@ Tarea 3.7: Modificar <code>styles.css</code>
 <ul>
 <li>Simplemente sustituye el contenido original del fichero <code>styles.css</code> por el contenido del siguiente chunk:</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* css styles */</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">/* justificar el texto */</span> </span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>p<span class="op">,</span> ul<span class="op">,</span> ol {</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span>: <span class="dv">justify</span><span class="op">;</span> }       </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* css styles */</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">/* justificar el texto */</span> </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>p<span class="op">,</span> ul<span class="op">,</span> ol {</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span>: <span class="dv">justify</span><span class="op">;</span> }       </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <ul>
@@ -749,17 +720,17 @@ Tarea 3.7: Modificar <code>styles.css</code>
 </section>
 <section id="resumen" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="resumen"><span class="header-section-number">5</span> Resumen</h2>
-<div class="callout-tip callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Resumen
+Resumen (tutorial nº 3)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>En esta tercera parte del taller hemos aprendido a <strong>mejorar/tunear un poco nuestro blog</strong>.</p></li>
@@ -776,12 +747,100 @@ Resumen
 </div>
 <p><br></p>
 </section>
-<section id="referencias" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="referencias"><span class="header-section-number">6</span> Referencias</h2>
-<p>(Algunos artículos sobre creación de blogs en Quarto)</p>
+<section id="práctica" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="práctica"><span class="header-section-number">6</span> Práctica</h2>
+<p>En esta sección dedicaremos un tiempo a la práctica libre para que adaptes el blog a tus necesidades y gustos. Por ejemplo puedes probar:</p>
 <ul>
-<li><a href="https://www.ericekholm.com/posts/demo-quarto-site/">Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure</a> es una web con blog . GOOOOD</li>
+<li>Añadir una nueva página a la web (<code>quarto.yml</code>)</li>
 </ul>
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Práctica 3.1: añadir una página más a nuestra web (<code>_quarto.yml</code>)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Evidentemente puedes probar a añadir la página que quieras, pero te ofrezco la siguiente posibilidad.</p>
+<p>Si copias adecuadamente el chunk de abajo en el archivo <code>_quarto.yml</code> se creará una pestaña más en la barra de navegación de nuestra web. La pestaña se llamará “Más cosas” y tiene la particularidad de que cuando hagamos Render se convertirá en un desplegable con acceso a varias páginas: “Docencia 2”, “Docencia 3” y “Docencia 4”.</p>
+<p>Adecuadamente significa que has de sustituir la actual <code>navbar:</code> por el contenido que ves abajo.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"profile.jpg"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">    #background: primary    #- pink (el backgroung de la navbar)</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia"</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at">  </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Más cosas"</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="at">         </span><span class="fu">menu</span><span class="kw">:</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia 2"</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia 3"</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"---"</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia 4"</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<ul>
+<li>Modificar la apariencia del blog jugando con las opciones que nos proporciona Quarto (<code>index.qmd</code>)</li>
+</ul>
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Práctica 3.2: Modificar la <strong>apariencia del blog</strong> (<code>index.qmd</code>)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Se trata de cambiar las opciones predefinidas de tu archivo <strong>index.qmd</strong></p></li>
+<li><p>la YAML inteligence te ayudará!!</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_12.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Modificar la apariencia de la página About (<code>about.qmd</code>)</li>
+</ul>
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Práctica 3.3: Modificar la <strong>página About</strong> (<code>about.qmd</code>)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Se trata de cambiar las opciones predefinidas de tu archivo <strong>about.qmd</strong></p></li>
+<li><p>Estaría bien que pusieses una foto tuya</p></li>
+<li><p>Puedes poner texto y dar algo de formato a la página</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_12_aa.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -798,13 +857,13 @@ Resumen
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2024,
   author = {Pedro J. Pérez},
   title = {Tuneado básico del blog con Quarto},
-  date = {2024-01-10},
+  date = {2024-02-10},
   url = {https://perezp44.github.io/taller.primer.blog//03_taller_tuneado-basico.html},
   langid = {es}
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2024" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
 Pedro J. Pérez. 2024. <span>“Tuneado básico del blog con Quarto.”</span>
-January 10, 2024. <a href="https://perezp44.github.io/taller.primer.blog//03_taller_tuneado-basico.html">https://perezp44.github.io/taller.primer.blog//03_taller_tuneado-basico.html</a>.
+February 10, 2024. <a href="https://perezp44.github.io/taller.primer.blog//03_taller_tuneado-basico.html">https://perezp44.github.io/taller.primer.blog//03_taller_tuneado-basico.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

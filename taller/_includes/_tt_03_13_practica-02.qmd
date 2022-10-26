@@ -1,0 +1,12 @@
+::: {.callout-tip collapse="true" appearance="default" icon="false"}
+
+#### Práctica 3.2: Modificar la **apariencia del blog** (`index.qmd`)
+
+- Se trata de cambiar las opciones predefinidas de tu archivo **index.qmd**
+
+- la YAML inteligence te ayudará!!
+
+![](./imagenes/tt_01/img_12.png){fig-align="center"}
+
+:::
+

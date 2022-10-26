@@ -1,4 +1,4 @@
-::: {.callout-tip collapse="true" appearance="default" icon="false"}
+::: {.callout-note collapse="true" appearance="default" icon="false"}
 #### Resumen (tutorial nº 4)
 
 - En esta **cuarta parte del taller** hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.

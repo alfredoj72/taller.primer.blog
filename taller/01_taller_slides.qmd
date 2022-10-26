@@ -38,37 +38,37 @@ footer: |
 
 <br>
 
-1.  **Intro**: presentación del taller y **¿qué es Quarto?**
+1.  **Intro**: presentación del taller y **¿qué es Quarto?** (15 min)
 
 <br>
 
 . . .
 
-2.  Creación de un blog básico: **mi blog en 2 minutos**
+2.  Creación de un blog básico: **mi blog en 2 minutos** (10 min)
 
-3.  **Tuneado básico** del blog
-
-<br>
-
-. . .
-
-4.  Workflow: **creando posts**
-
-5.  Escribiendo un post: **practicando con Quarto**
-
-6.  Convirtiendo el blog en una **web personal**
-
+3.  **Tuneado básico** del blog (20 min)
 
 <br>
 
+. . .
+
+4.  Workflow: **creando posts** (5 min)
+
+5.  Escribiendo un post: **practicando con Quarto** (20 min)
+
+6.  Convirtiendo el blog en una **web personal** (5 min)
+
+
+<br>
+
 
 . . .
 
-7.  Tuneado: **mejorando la web** (ejemplos de blogs)
+7.  Tuneado: **mejorando la web** (15 min)
 
 . . .
 
-8.  Gestión y **publicación** de la web/blog
+8.  Gestión y **publicación** de la web/blog (5 min)
 
 ## Enlaces para Fran y compis {.smaller}
 
