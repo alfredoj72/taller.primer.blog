@@ -1,7 +1,7 @@
 ::: {.callout-important icon="false"}
 #### Tarea 4.2: Modificando el tercer post
 
-- Modifica el contenido de `/.posts//my-primer-post/index.qmd`. Por ejemplo, puedes dejarlo así:
+- Modifica el contenido de `/.posts/my-primer-post/index.qmd`. Por ejemplo, puedes dejarlo así:
 
 
 ````markdown

@@ -35,7 +35,7 @@ toc-title: Tutorial nº 5
 
 <br>
 
-En el tutorial anterior aprendimos a generar nuevos post para nuestro blog. Ahora **aprenderemos a escribir esos post**; veremos las **posibilidades que nos ofrece Quarto** a la hora de escribir y formatear nuestros posts. 
+En el tutorial anterior aprendimos a generar nuevos post para nuestro blog. Ahora **aprenderemos a escribir esos post**: veremos las **posibilidades que nos ofrece Quarto** a la hora de escribir y formatear nuestros posts. 
 
 ## Escribiendo con Quarto
 
@@ -214,19 +214,30 @@ No lo vamos a practicar ahora. Lo haremos (un poco) luego cuando hagamos un post
 
 Además de los elementos de escritura que nos ofrece la sintaxis básica de `markdown`. Quarto nos ofrece más posibilidades, veamos algunas de ellas:
 
-#### Figuras
+- Links (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#links-images))
 
-<https://quarto.org/docs/authoring/figures.html>
+- Imágenes (documentación [aquí](https://quarto.org/docs/authoring/figures.html)) y sus [opciones](https://quarto.org/docs/computations/execution-options.html#figure-options)
 
-- tamaño por defecto: <https://quarto.org/docs/computations/execution-options.html#figure-options>
+- Listas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#lists))  
 
-#### Tablas
+- Tablas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#tables))  
 
-<https://quarto.org/docs/authoring/tables.html>
+- Código  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#source-code))  
 
-#### Editor visual
+- Ecuaciones  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#equations))    
+- Listas  (documentación [aquí]())  
 
-<https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/>
+
+- Callout blocks  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks))  
+
+- Divs & spans  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans))  
+
+
+<br>
+
+
+El [editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/) facilita la introducción de estos elementos en tus documentos.
+
 
 <br>
 
@@ -259,6 +270,14 @@ Las **principales diferencias** son:
 
 ![](./imagenes/tt_01/img_23.png){fig-align="center"}
 
+
+<br>
+
+## Resumen
+
+{{< include ./_includes/_tt_05_14_resumen.qmd >}}
+
+<br>
 
 ## Un ejemplo
 
@@ -319,27 +338,6 @@ Note that there are five types of callouts, including:
 
 <br>
 
-## Resumen
 
-::: {.callout-tip collapse="true" appearance="default" icon="false"}
-
-#### Resumen
-
-- En esta cuarta parte del taller hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.
-
-:::
-
-
-
-
-
-<br>
-
-
-## Referencias
-
-(Algunos artículos sobre creación de blogs en Quarto)
-
-- [ Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure](https://www.ericekholm.com/posts/demo-quarto-site/)  es una web con blog . GOOOOD
 
 

@@ -6,7 +6,7 @@ Evidentemente puedes probar a añadir la página que quieras, pero te ofrezco la
 
 - Crear una página llamada "Más cosas" que tenga la particularidad de que cuando recreemos el blog se convertirá en un desplegable con acceso a varias páginas: "Docencia 2", "Docencia 3" y "Docencia 4".
 
-- Fijate que he puesto la nueva página a la izquierda (`left: `)
+- Fíjate que he puesto la nueva página a la izquierda (`left: `)
 
 
 ```yaml

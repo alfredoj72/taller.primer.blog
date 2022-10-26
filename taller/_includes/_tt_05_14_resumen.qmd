@@ -1,0 +1,20 @@
+::: {.callout-note collapse="true" appearance="default" icon="false"}
+#### Resumen (tutorial nº 5)
+
+- La **quinta parte del taller** se ocupa de la **escritura de posts** para el blog. 
+
+- Estos documentos **se han de escribir en formato `.qmd`**, por lo que se repasan  los conocimientos "teóricos" necesarios para escribir este tipo.
+
+- Para ello se apoya en nuestro **conocimiento previo de la sintaxis Rmarkdown**.
+
+- Se repasan las posibilidades de configurar los documentos por medio de los **YAML's**
+
+- A un solo documento `.qmd` le pueden afectar 3 niveles de YAML
+
+- Nivel proyecto (`_quarto.yml`), nivel carpeta (`_metadata.yml`) y nivel documento (en el propio encabezamiento del archivo)
+
+- El texto en ficheros `.qmd` es muy similar al de los documentos `.qmd`. Aparecen algunos elementos nuevos que repasaremos en la Práctica
+
+- El código presenta novedades: nueva sintaxis y posibilidad de determinar opciones en el YAML
+
+:::

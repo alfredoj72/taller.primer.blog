@@ -285,9 +285,9 @@ En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes e
 
 ## ¿Donde están los posts del blog?
 
-- Los ficheros `.qmd` que generan los posts están **en la carpeta `posts`** de nuestro Qproject que genera el blog. 
+- Los ficheros `.qmd` que generan los posts están **en la carpeta `posts`** (de nuestro Qproject que genera el blog). 
 
-- **Cada post** está en **una carpeta diferente**:
+- **Cada post** está en **una carpeta diferente**^[No es necesario que los posts estén cada uno en una carpeta, pero me parece una buena práctica.]:
 
 {{< include ./_includes/_tt_04_02_carpeta-posts.qmd >}}
 

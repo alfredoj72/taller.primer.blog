@@ -14,11 +14,11 @@ El taller está pensado para realizar con [R](https://cran.r-project.org/){targe
 
 #### 2. [Creación de un blog básico: mi blog en 3 minutos](./taller/02_taller_crear-blog-basico.qmd){target="_blank"} (10 min)
 
-#### 3. [Tuneado básico del blog](./taller/03_taller_tuneado-basico.qmd){target="_blank"} (15 min). Práctica (15 min)
+#### 3. [Tuneado básico del blog](./taller/03_taller_tuneado-basico.qmd){target="_blank"} (15 min + 15 min de Práctica). 
 
 #### 4. [Workflow: ¿cómo crear un post?](./taller/04_taller_crear-post.qmd){target="_blank"} (5 min)
 
-#### 5. [Escribiendo posts: practicando con Quarto](./taller/05_taller_escribir-posts.qmd){target="_blank"} (15 min). Práctica (15 min)
+#### 5. [Escribiendo posts: practicando con Quarto](./taller/05_taller_escribir-posts.qmd){target="_blank"} (15 min + 15 min de Práctica)
 
 #### 6. [Convirtiendo el blog en una web académica](./taller/06_taller_convertir-en-web.qmd){target="_blank"} (5 min)
 
