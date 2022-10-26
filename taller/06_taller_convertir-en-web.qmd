@@ -1,5 +1,5 @@
 ---
-title: "Convertir el blog en web académica"
+title: "Convertir el blog en web personal"
 subtitle: "(6ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 #title-block-banner: imagenes/economia.gif
 toc-title: Tutorial nº 6
@@ -33,7 +33,7 @@ toc-title: Tutorial nº 6
 ::: {.callout-tip  appearance="default" icon="false"}
 ## ¿Qué haremos en este tutorial?
 
-- Convertir nuestro blog en una web "académica".
+- Convertir nuestro blog en una web personal.
 
 - Para ello solo tendremos que cambiar el nombre de dos ficheros y referenciar uno de ellos en `_quarto.yml`.
 
