@@ -5,9 +5,9 @@
 #- 2/ Opciones referentes a la estructura de la web -----------------
 website:
   title: "Mi blog (aún en pruebas)"
-  favicon: imagenes/ababol_redondeado.ico
-  site-url: https://perezp44.github.io/taller.primer.blog/
-  repo-url: https://github.com/perezp44/taller.primer.blog
+  favicon: profile.jpg
+  #site-url: https://....
+  #repo-url: https://....
   open-graph: true #-https://quarto.org/docs/websites/website-tools.html#twitter-cards
   twitter-card:
     creator: "@tu-usuario-twitter"
@@ -39,8 +39,4 @@ website:
         href: https://twitter.com/<tu-usuario-twitter>
       - icon: envelope
         url: "mailto:<tu-mail>@uv.es"
-      - text: <i class="ai ai-google-scholar" role="img"></i>
-        href: https://scholar.google.de/citations?user=<tu-user>&hl=en
-      - text: <i class="ai ai-orcid" role="img"></i>
-        href: https://orcid.org/<tu-numero-orcid>
 ```

@@ -18,6 +18,10 @@ Este es mi **primer post** con Quarto!!!!
 sqrt(2 + 2)
 ```
 
+Voy a poner una imagen:
+
+![](thumbnail.jpg)
+
 Acabé con mi primer post. FIN
   
 ````

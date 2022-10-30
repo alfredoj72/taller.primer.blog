@@ -74,23 +74,6 @@ footer: |
 8.  Gestión y **publicación** de la web/blog (5 min)
 
 
-## Enlaces para Fran y compis {.smaller}
-
-::: nonincremental
--   [un blog con Quarto](https://perezp44.github.io/pjperez.blog.2022/)
-
--   Una [web con 2 blogs](https://perezp44.github.io/pjperez.web/)
-
--   Una [web de una asignatura](https://openscapes.github.io/quarto-website-tutorial/)
-
--   [Mi intro to DS](https://perezp44.github.io/intro-ds-22-23-web/)
-
--   [Web econometría](https://perezp44.github.io/web.Econometria.GADE/) para mirar el [cuestionario](https://perezp44.github.io/web.Econometria.GADE/materiales/cuestionario_practicas.html)
-
--   Taller para Córdoba[Mi primer blog](https://perezp44.github.io/taller.primer.blog/) y uno de los [tutoriales](https://perezp44.github.io/taller.primer.blog/taller/02_taller_crear-blog-basico.html)
-
--   Un bookdown [R4DS 2ed](https://r4ds.hadley.nz/)
-:::
 
 # Intro
 

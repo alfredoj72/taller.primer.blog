@@ -3,7 +3,9 @@
 
 - Aprender a escribir nuestro posts con Quarto: con ficheros `.qmd`
 
-- En concreto veremos: yaml, texto, chunks
+- Repasaremos las 3 partes de los documentos `.qmd`: yaml, texto, chunks
+
+- Además veremos: **layout**
 
 - Aprender a utilizar algunos truquillos de Quarto
 :::

@@ -450,7 +450,7 @@
 <p><br></p>
 </section>
 <section>
-<section id="creación-de-un-blog-básico-con-quarto" class="title-slide slide level1 center" data-background-color="#D7E8CB">
+<section id="creación-de-un-blog-básico-con-quarto" class="title-slide slide level1 center" data-background-color="#EEBF8B">
 <h1>2. Creación de un blog básico con Quarto</h1>
 <p>(2ª parte del tutorial)</p>
 <div class="callout callout-tip no-icon callout-captioned callout-style-default">
@@ -721,7 +721,7 @@
 <p><br></p>
 </section></section>
 <section>
-<section id="tuneado-básico-del-blog" class="title-slide slide level1 center" data-background-color="#D7E8CB">
+<section id="tuneado-básico-del-blog" class="title-slide slide level1 center" data-background-color="#EEBF8B">
 <h1>3. Tuneado básico del blog</h1>
 <p>(3ª parte del tutorial)</p>
 <div class="callout callout-tip no-icon callout-captioned callout-style-default">
@@ -799,7 +799,7 @@
 <span id="cb5-20"><a href="#cb5-20"></a><span class="at"> </span></span>
 <span id="cb5-21"><a href="#cb5-21"></a><span class="fu">format</span><span class="kw">:</span></span>
 <span id="cb5-22"><a href="#cb5-22"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb5-23"><a href="#cb5-23"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> minty  </span></span>
+<span id="cb5-23"><a href="#cb5-23"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> flatly  </span></span>
 <span id="cb5-24"><a href="#cb5-24"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
 <span id="cb5-25"><a href="#cb5-25"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb5-26"><a href="#cb5-26"></a><span class="at">    </span><span class="fu">highlight-style</span><span class="kw">:</span><span class="at"> a11y</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -807,10 +807,9 @@
 </div>
 </div>
 <ul>
-<li><p><strong>linea 5</strong>: título del blog</p></li>
-<li><p><strong>lineas 17-19</strong>: añadimos la pestaña “Docencia” a la izquierda de la navbar</p></li>
-<li><p><strong>lineas 21-26</strong>: modificamos el theme …, <strong>CSS</strong>, ….</p></li>
-<li><p><a href="https://pjperez.quarto.pub/blog_prueba_01/">Aquí</a> puedes ver como quedaría el blog tras haber modificado <code>_quarto.yml</code>.</p></li>
+<li><strong>linea 5</strong>: título del blog</li>
+<li><strong>lineas 17-19</strong>: añadimos la pestaña “Docencia” a la izquierda de la navbar</li>
+<li><strong>lineas 21-26</strong>: modificamos el theme …, <strong>CSS</strong>, ….</li>
 </ul>
 </section>
 <section class="slide level2">
@@ -1039,8 +1038,12 @@
 </div>
 </div>
 </div>
+<p><br></p>
+<ul>
+<li><a href="https://pjperez.quarto.pub/blog_prueba_01/">Aquí</a> puedes ver <strong>como quedaría el blog</strong> tras haber modificado <code>_quarto.yml</code>, <code>index.qmd</code>, <code>about.qmd</code> y <code>styles.css</code>.</li>
+</ul>
 </section>
-<section id="práctica-tutorial-nº-3" class="slide level2">
+<section id="práctica-tutorial-nº-3" class="slide level2" data-background-color="#D3F3E7">
 <h2>Práctica (tutorial nº 3)</h2>
 <p>En esta sección dedicaremos un tiempo a la <strong>práctica libre para que adaptes el blog a tus necesidades y gustos</strong>. Por ejemplo puedes probar:</p>
 <p><br></p>
@@ -1049,7 +1052,7 @@
 </ol>
 <p><br></p>
 <ol start="2" type="1">
-<li>Modificar la <strong>apariencia del blog</strong> jugando con las opciones que nos proporciona Quarto (<code>index.qmd</code>). Gracias YAML inteligence!!</li>
+<li>Modificar la <strong>apariencia del blog</strong> (realmente del listado de posts) jugando con las opciones que nos proporciona Quarto (<code>index.qmd</code>). Gracias YAML inteligence!!</li>
 </ol>
 <p><br></p>
 <ol start="3" type="1">
@@ -1068,6 +1071,7 @@
 <ul>
 <li><p>Crear una página llamada “Más cosas” que tenga la particularidad de que cuando recreemos el blog se convertirá en un desplegable con acceso a varias páginas: “Docencia 2”, “Docencia 3” y “Docencia 4”.</p></li>
 <li><p>Fíjate que he puesto la nueva página a la izquierda (<code>left:</code>)</p></li>
+<li><p>Además, puedes probar distintas opciones de <code>theme</code> y de <code>highlighting</code></p></li>
 </ul>
 <div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">project</span><span class="kw">:</span></span>
 <span id="cb10-2"><a href="#cb10-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
@@ -1101,10 +1105,12 @@
 <span id="cb10-30"><a href="#cb10-30"></a></span>
 <span id="cb10-31"><a href="#cb10-31"></a><span class="fu">format</span><span class="kw">:</span></span>
 <span id="cb10-32"><a href="#cb10-32"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb10-33"><a href="#cb10-33"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> minty  </span></span>
-<span id="cb10-34"><a href="#cb10-34"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
-<span id="cb10-35"><a href="#cb10-35"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb10-36"><a href="#cb10-36"></a><span class="at">    </span><span class="fu">highlight-style</span><span class="kw">:</span><span class="at"> a11y</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-33"><a href="#cb10-33"></a><span class="co">    #- https://quarto.org/docs/output-formats/html-themes.html</span></span>
+<span id="cb10-34"><a href="#cb10-34"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> flatly  </span></span>
+<span id="cb10-35"><a href="#cb10-35"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
+<span id="cb10-36"><a href="#cb10-36"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb10-37"><a href="#cb10-37"></a><span class="co">    #- https://quarto.org/docs/output-formats/html-code.html#highlighting</span></span>
+<span id="cb10-38"><a href="#cb10-38"></a><span class="at">    </span><span class="fu">highlight-style</span><span class="kw">:</span><span class="at"> a11y</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1119,7 +1125,9 @@
 <div class="callout-content">
 <ul>
 <li><p>Se trata de cambiar las opciones predefinidas de tu archivo <strong>index.qmd</strong></p></li>
-<li><p>la YAML inteligence te ayudará!!</p></li>
+<li><p>Con ello podremos cambiar la <strong>apariencia del listado de posts</strong></p></li>
+<li><p>Para ello tienes que ir jugando con las opciones que nos ha proporcionado la plantilla de Quarto en el fichero <code>index.qmd</code>.</p></li>
+<li><p>la YAML inteligence te ayudará!! (vamos el autocompletado en el YAML)</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1183,7 +1191,7 @@
 <p><br></p>
 </section></section>
 <section>
-<section id="workflow-cómo-crear-un-post" class="title-slide slide level1 center" data-background-color="#D7E8CB">
+<section id="workflow-cómo-crear-un-post" class="title-slide slide level1 center" data-background-color="#EEBF8B">
 <h1>4. Workflow: ¿cómo crear un post?</h1>
 <p>(4ª parte del tutorial)</p>
 <div class="callout callout-tip no-icon callout-captioned callout-style-default">
@@ -1194,7 +1202,7 @@
 <div class="callout-content">
 <ul>
 <li><p>Ver como podemos iniciar un nuevo post</p></li>
-<li><p>Aprender a utilizar algunos truquillos de Quarto</p></li>
+<li><p>(podemos marcar post todavía no acabados con <code>draft: true</code> en el yaml del post)</p></li>
 </ul>
 </div>
 </div>
@@ -1284,18 +1292,25 @@
 <span id="cb12-3"><a href="#cb12-3"></a><span class="an">author:</span><span class="co"> "Pedro J. Pérez"</span></span>
 <span id="cb12-4"><a href="#cb12-4"></a><span class="an">date:</span><span class="co"> "2022-10-25"</span></span>
 <span id="cb12-5"><a href="#cb12-5"></a><span class="an">categories:</span><span class="co"> [R, quarto]</span></span>
-<span id="cb12-6"><a href="#cb12-6"></a><span class="co">---</span></span>
-<span id="cb12-7"><a href="#cb12-7"></a></span>
-<span id="cb12-8"><a href="#cb12-8"></a>Este es mi **primer post** con Quarto!!!!</span>
-<span id="cb12-9"><a href="#cb12-9"></a></span>
-<span id="cb12-10"><a href="#cb12-10"></a><span class="in">```{r}</span></span>
-<span id="cb12-11"><a href="#cb12-11"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
-<span id="cb12-12"><a href="#cb12-12"></a><span class="in">```</span></span>
-<span id="cb12-13"><a href="#cb12-13"></a></span>
-<span id="cb12-14"><a href="#cb12-14"></a>Acabé con mi primer post. FIN</span>
-<span id="cb12-15"><a href="#cb12-15"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-6"><a href="#cb12-6"></a><span class="an">image:</span><span class="co"> "thumbnail.jpg"</span></span>
+<span id="cb12-7"><a href="#cb12-7"></a><span class="co">---</span></span>
+<span id="cb12-8"><a href="#cb12-8"></a></span>
+<span id="cb12-9"><a href="#cb12-9"></a>Este es mi **primer post** con Quarto!!!!</span>
+<span id="cb12-10"><a href="#cb12-10"></a></span>
+<span id="cb12-11"><a href="#cb12-11"></a><span class="in">```{r}</span></span>
+<span id="cb12-12"><a href="#cb12-12"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
+<span id="cb12-13"><a href="#cb12-13"></a><span class="in">```</span></span>
+<span id="cb12-14"><a href="#cb12-14"></a></span>
+<span id="cb12-15"><a href="#cb12-15"></a>Voy a poner una imagen:</span>
+<span id="cb12-16"><a href="#cb12-16"></a></span>
+<span id="cb12-17"><a href="#cb12-17"></a><span class="al">![](thumbnail.jpg)</span></span>
+<span id="cb12-18"><a href="#cb12-18"></a></span>
+<span id="cb12-19"><a href="#cb12-19"></a></span>
+<span id="cb12-20"><a href="#cb12-20"></a>Acabé con mi primer post. FIN</span>
+<span id="cb12-21"><a href="#cb12-21"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><p>Sustituye <code>thumbnail.jpg</code> por otro archivo</p></li>
+<li><p>La opción de yaml (linea 6): <code>image: "thumbnail.jpg"</code> nos permite elegir la imagen que acompañara al post en la listing page.</p></li>
 <li><p>Vuelve a regenerar el blog: <code>Build &gt; Render Website</code></p></li>
 </ul>
 </div>
@@ -1312,8 +1327,16 @@
 </div>
 <div class="callout-content">
 <ul>
-<li><p>En esta <strong>cuarta parte del taller</strong> hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.</p></li>
-<li><p>En el <strong>siguiente tutorial</strong> veremos en profundidad las posibilidades que nos ofrece Quarto para escribir nuestros posts.</p></li>
+<li>En esta <strong>cuarta parte del taller</strong> hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Hemos visto como cambiar la imagen que acompaña a los posts en la “listing page”.</li>
+<li>Recuerda que podemos marcar un post con <code>draft: true</code> en el yaml del post.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>En el <strong>siguiente tutorial</strong> veremos en profundidad las posibilidades que nos ofrece Quarto para escribir nuestros posts.</li>
 </ul>
 </div>
 </div>
@@ -1321,7 +1344,7 @@
 <p><br></p>
 </section></section>
 <section>
-<section id="escribiendo-posts-practicando-con-quarto" class="title-slide slide level1 center" data-background-color="#D7E8CB">
+<section id="escribiendo-posts-practicando-con-quarto" class="title-slide slide level1 center" data-background-color="#EEBF8B">
 <h1>5. Escribiendo posts: practicando con Quarto</h1>
 <p>(5ª parte del tutorial)</p>
 <div class="callout callout-tip no-icon callout-captioned callout-style-default">
@@ -1332,7 +1355,8 @@
 <div class="callout-content">
 <ul>
 <li><p>Aprender a escribir nuestro posts con Quarto: con ficheros <code>.qmd</code></p></li>
-<li><p>En concreto veremos: yaml, texto, chunks</p></li>
+<li><p>Repasaremos las 3 partes de los documentos <code>.qmd</code>: yaml, texto, chunks</p></li>
+<li><p>Además veremos: <strong>layout</strong></p></li>
 <li><p>Aprender a utilizar algunos truquillos de Quarto</p></li>
 </ul>
 </div>
@@ -1502,9 +1526,9 @@
 <div class="sourceCode cell-code" id="cb17" data-code-line-numbers="true"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
 <span id="cb17-2"><a href="#cb17-2"></a>website<span class="sc">:</span></span>
 <span id="cb17-3"><a href="#cb17-3"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
-<span id="cb17-4"><a href="#cb17-4"></a>  favicon<span class="sc">:</span> imagenes<span class="sc">/</span>ababol_redondeado.ico</span>
-<span id="cb17-5"><a href="#cb17-5"></a>  site<span class="sc">-</span>url<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>perezp44.github.io<span class="sc">/</span>taller.primer.blog<span class="sc">/</span></span>
-<span id="cb17-6"><a href="#cb17-6"></a>  repo<span class="sc">-</span>url<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>perezp44<span class="sc">/</span>taller.primer.blog</span>
+<span id="cb17-4"><a href="#cb17-4"></a>  favicon<span class="sc">:</span> profile.jpg</span>
+<span id="cb17-5"><a href="#cb17-5"></a>  <span class="co">#site-url: https://....</span></span>
+<span id="cb17-6"><a href="#cb17-6"></a>  <span class="co">#repo-url: https://....</span></span>
 <span id="cb17-7"><a href="#cb17-7"></a>  open<span class="sc">-</span>graph<span class="sc">:</span> true <span class="co">#-https://quarto.org/docs/websites/website-tools.html#twitter-cards</span></span>
 <span id="cb17-8"><a href="#cb17-8"></a>  twitter<span class="sc">-</span>card<span class="sc">:</span></span>
 <span id="cb17-9"><a href="#cb17-9"></a>    creator<span class="sc">:</span> <span class="st">"@tu-usuario-twitter"</span></span>
@@ -1535,18 +1559,16 @@
 <span id="cb17-34"><a href="#cb17-34"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
 <span id="cb17-35"><a href="#cb17-35"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
 <span id="cb17-36"><a href="#cb17-36"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
-<span id="cb17-37"><a href="#cb17-37"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail&gt;@uv.es"</span></span>
-<span id="cb17-38"><a href="#cb17-38"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-google-scholar"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
-<span id="cb17-39"><a href="#cb17-39"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>scholar.google.de<span class="sc">/</span>citations?user<span class="ot">=</span><span class="er">&lt;</span>tu<span class="sc">-</span>user<span class="sc">&gt;</span><span class="er">&amp;</span>hl<span class="ot">=</span>en</span>
-<span id="cb17-40"><a href="#cb17-40"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-orcid"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
-<span id="cb17-41"><a href="#cb17-41"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>orcid.org<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>numero<span class="sc">-</span>orcid<span class="sc">&gt;</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-37"><a href="#cb17-37"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail&gt;@uv.es"</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <p>Como ves, se añadirían elementos como:</p>
 <ul>
-<li><p>lineas 28 a 41: se añade un pie de página al blog</p></li>
+<li><p>lineas 28 a 37: se añade un pie de página al blog</p></li>
 <li><p>lineas 24 y 25: Hemos añadido un elemento a la <code>navbar</code> concretamente el icono <code>Home</code>. La documentación oficial para elementos de navegación está <a href="https://quarto.org/docs/websites/website-navigation.html">aquí</a></p></li>
-<li><p>lineas 4 y 7-10: elementos de redes sociales como un favicon (linea 4), el url de la web y del repo en Github (lineas 5 y 6) y más elementos de redes sociales (lineas 7 a 10). La documentación oficial para estos elementos está <a href="https://quarto.org/docs/websites/website-tools.html">aquí</a></p></li>
+<li><p>linea 4: añadimos un como un favicon</p></li>
+<li><p>lineas 5 y 6: el url de la web y del repo en Github</p></li>
+<li><p>lineas 7-10: elementos de redes sociales. La documentación oficial para estos elementos esta <a href="https://quarto.org/docs/websites/website-tools.html">aquí</a></p></li>
 </ul>
 <p><br></p>
 </div>
@@ -2074,18 +2096,14 @@
 <span id="cb20-33"><a href="#cb20-33"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
 <span id="cb20-34"><a href="#cb20-34"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
 <span id="cb20-35"><a href="#cb20-35"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail&gt;@uv.es"</span></span>
-<span id="cb20-36"><a href="#cb20-36"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-google-scholar"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
-<span id="cb20-37"><a href="#cb20-37"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>scholar.google.de<span class="sc">/</span>citations?user<span class="ot">=</span><span class="er">&lt;</span>tu<span class="sc">-</span>user<span class="sc">&gt;</span><span class="er">&amp;</span>hl<span class="ot">=</span>en</span>
-<span id="cb20-38"><a href="#cb20-38"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="er">&lt;</span>i class<span class="ot">=</span><span class="st">"ai ai-orcid"</span> role<span class="ot">=</span><span class="st">"img"</span><span class="sc">&gt;</span><span class="er">&lt;/</span>i<span class="sc">&gt;</span></span>
-<span id="cb20-39"><a href="#cb20-39"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>orcid.org<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>numero<span class="sc">-</span>orcid<span class="sc">&gt;</span></span>
-<span id="cb20-40"><a href="#cb20-40"></a></span>
-<span id="cb20-41"><a href="#cb20-41"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
-<span id="cb20-42"><a href="#cb20-42"></a>format<span class="sc">:</span></span>
-<span id="cb20-43"><a href="#cb20-43"></a>  html<span class="sc">:</span></span>
-<span id="cb20-44"><a href="#cb20-44"></a>    theme<span class="sc">:</span> flatly  </span>
-<span id="cb20-45"><a href="#cb20-45"></a>    css<span class="sc">:</span> styles.css</span>
-<span id="cb20-46"><a href="#cb20-46"></a>    toc<span class="sc">:</span> true</span>
-<span id="cb20-47"><a href="#cb20-47"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y          </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-36"><a href="#cb20-36"></a></span>
+<span id="cb20-37"><a href="#cb20-37"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
+<span id="cb20-38"><a href="#cb20-38"></a>format<span class="sc">:</span></span>
+<span id="cb20-39"><a href="#cb20-39"></a>  html<span class="sc">:</span></span>
+<span id="cb20-40"><a href="#cb20-40"></a>    theme<span class="sc">:</span> flatly  </span>
+<span id="cb20-41"><a href="#cb20-41"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb20-42"><a href="#cb20-42"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb20-43"><a href="#cb20-43"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y          </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -2113,17 +2131,33 @@
 <li>Tenemos que dejar el archivo <code>./posts/_metadata.yml</code> así:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21" data-code-line-numbers="true"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
+<div class="sourceCode cell-code" id="cb21" data-code-line-numbers="true"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="co"># IMPORTANTE: options specified here will apply to all posts in this folder</span></span>
 <span id="cb21-2"><a href="#cb21-2"></a></span>
-<span id="cb21-3"><a href="#cb21-3"></a><span class="co"># freeze computational output</span></span>
-<span id="cb21-4"><a href="#cb21-4"></a><span class="co"># freeze controls whether execution occurs during global project renders</span></span>
-<span id="cb21-5"><a href="#cb21-5"></a><span class="co"># (see https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
-<span id="cb21-6"><a href="#cb21-6"></a>freeze<span class="sc">:</span> auto   <span class="co">#- {false, true, auto}</span></span>
+<span id="cb21-3"><a href="#cb21-3"></a><span class="co"># freeze: controla la ejecución de los .qmd durante un global project render</span></span>
+<span id="cb21-4"><a href="#cb21-4"></a><span class="co"># https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
+<span id="cb21-5"><a href="#cb21-5"></a>freeze<span class="sc">:</span> auto   <span class="co">#- {false, true, auto}</span></span>
+<span id="cb21-6"><a href="#cb21-6"></a></span>
 <span id="cb21-7"><a href="#cb21-7"></a></span>
-<span id="cb21-8"><a href="#cb21-8"></a><span class="co"># Enable banner style title blocks</span></span>
-<span id="cb21-9"><a href="#cb21-9"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
-<span id="cb21-10"><a href="#cb21-10"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-8"><a href="#cb21-8"></a><span class="co">#- Quarto incluye un title-block al principio de los artículos con: title, subtitle, authors, date, doi, and abstract.</span></span>
+<span id="cb21-9"><a href="#cb21-9"></a></span>
+<span id="cb21-10"><a href="#cb21-10"></a><span class="co"># title-block-style: modifica el estilo del title-block</span></span>
+<span id="cb21-11"><a href="#cb21-11"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html</span></span>
+<span id="cb21-12"><a href="#cb21-12"></a>title<span class="sc">-</span>block<span class="sc">-</span>style<span class="sc">:</span> default <span class="co">#- {default, plain, none}</span></span>
+<span id="cb21-13"><a href="#cb21-13"></a></span>
+<span id="cb21-14"><a href="#cb21-14"></a><span class="co"># title-block-banner: pone un banner en el title-block: pondrá el title, subtitle, description, y categories dentro del banner</span></span>
+<span id="cb21-15"><a href="#cb21-15"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
+<span id="cb21-16"><a href="#cb21-16"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true  <span class="co">#- {true, false, "#FFDDFF",  "image.jpg"}</span></span>
+<span id="cb21-17"><a href="#cb21-17"></a></span>
+<span id="cb21-18"><a href="#cb21-18"></a><span class="co"># tb se puede especificar el color del texto dentro del banner</span></span>
+<span id="cb21-19"><a href="#cb21-19"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">-</span>color<span class="sc">:</span> red</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><strong>IMPORTANTE</strong>: las opciones que especifiques en <code>_metadata.yml</code> afectarán a todos los .qmd de la carpeta.</p>
+<ul>
+<li><p><code>freeze (linea 5): {false, true, auto}</code> controla la ejecución de los .qmd durante el procesado completo del Qproject. Documentación <a href="https://quarto.org/docs/projects/code-execution.html#freeze">aquí</a>.</p></li>
+<li><p><code>title-block-style (linea 12):  {default, plain, none}</code>modifica el estilo del title-block</p></li>
+<li><p><code>title-block-banner (linea 16): {true, false, "#FFDDFF",  "image.jpg"}</code> controla la presencia y apariencia de los “banners” para dar más importancia a los títulos de los posts. Puedes controlar el color, incluso poner una imagen. Documentación <a href="https://quarto.org/docs/authoring/title-blocks.html#title-banners">aquí</a>.</p></li>
+<li><p><code>title-block-banner-color(linea 19): {black, "#FFDDFF"}</code> controla el color del título del post</p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -2154,8 +2188,12 @@
 <span id="cb22-11"><a href="#cb22-11"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
 <span id="cb22-12"><a href="#cb22-12"></a><span class="in">```</span></span>
 <span id="cb22-13"><a href="#cb22-13"></a></span>
-<span id="cb22-14"><a href="#cb22-14"></a>Acabé con mi primer post. FIN</span>
-<span id="cb22-15"><a href="#cb22-15"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb22-14"><a href="#cb22-14"></a>Voy a poner una imagen:</span>
+<span id="cb22-15"><a href="#cb22-15"></a></span>
+<span id="cb22-16"><a href="#cb22-16"></a><span class="al">![](thumbnail.jpg)</span></span>
+<span id="cb22-17"><a href="#cb22-17"></a></span>
+<span id="cb22-18"><a href="#cb22-18"></a>Acabé con mi primer post. FIN</span>
+<span id="cb22-19"><a href="#cb22-19"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><p>Sustituye <code>thumbnail.jpg</code> por otro archivo</p></li>
 <li><p>Vuelve a regenerar el blog: <code>Build &gt; Render Website</code></p></li>
@@ -2169,7 +2207,23 @@
 <h3 class="smaller" id="texto-o-narrativas">Texto (o narrativas)</h3>
 <ul>
 <li><p>Se escribe (al igual que <code>.Rmd</code>) en <strong>markdown</strong>. <a href="https://quarto.org/docs/authoring/markdown-basics.html">Aquí</a> la documentación oficial de Quarto.</p></li>
-<li><p>Practicaremos (con un ejemplo):</p>
+<li><p>Sintaxis básica de <code>markdown</code></p></li>
+</ul>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./imagenes/tt_01/img_20_markdown.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="texto-practicaremos-con-un-ejemplo">Texto: practicaremos (con un ejemplo)</h3>
 <ul>
 <li><p>Links (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#links-images">aquí</a>)</p></li>
 <li><p>Imágenes (documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>) y sus <a href="https://quarto.org/docs/computations/execution-options.html#figure-options">opciones</a></p></li>
@@ -2177,19 +2231,18 @@
 <li><p>Tablas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#tables">aquí</a>)</p></li>
 <li><p>Código (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#source-code">aquí</a>)</p></li>
 <li><p>Ecuaciones (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#equations">aquí</a>)</p></li>
-<li><p>Listas (documentación <a href="">aquí</a>)</p></li>
 <li><p>Callout blocks (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks">aquí</a>)</p></li>
 <li><p>Divs &amp; spans (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans">aquí</a>)</p></li>
-</ul></li>
-<li><p><a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/">Editor visual</a></p></li>
 </ul>
+<p><br></p>
+<h5 id="conviene-conocer-el-editor-visual">Conviene conocer el <a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/">Editor visual</a></h5>
 </section>
 <section class="slide level2">
 
 <h3 id="chunks">CHUNKS</h3>
 <p><strong>Comportamiento similar</strong> a los documentos <code>.Rmd</code>. La documentación oficial está <a href="https://quarto.org/docs/computations/execution-options.html">aquí</a></p>
 <p><br></p>
-<h5 id="principales-diferencias">Principales diferencias</h5>
+<h5 id="principales-diferencias-con-.rmd">Principales diferencias con .Rmd</h5>
 <ul>
 <li><p>En ficheros <code>.qmd</code>, <strong>las opciones de los chunks se pueden especificar globalmente en el YAML</strong> y a nivel individual en cada uno de los chunks.</p></li>
 <li><p>En los <strong>chunks individuales</strong> ahora se se utiliza la <strong>sintaxis YAML</strong> (<code>key: value</code>) en lineas dentro del chunk que empiezan con <code>#|</code>. Por ejemplo:</p></li>
@@ -2201,12 +2254,24 @@
 <h3 id="chunks-1">CHUNKS</h3>
 <ul>
 <li><p>Las principales opciones son: <strong>echo</strong>, <strong>eval</strong>, <strong>warning</strong>, <strong>error</strong>, <strong>output</strong> e <strong>include</strong>. <a href="https://quarto.org/docs/computations/execution-options.html#output-options">Aquí</a> la documentación oficial.</p></li>
-<li><p><code>echo</code>, además los típicos true y false, ahora incorpora un nuevo valor <code>fenced</code> que facilita mostrar las marcas de los chunks en el documento final. Documentación <a href="https://quarto.org/docs/computations/execution-options.html#fenced-echo">aquí</a>. Los llamados <strong>unexecuted Blocks</strong>, documentación <a href="https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks">aquí</a>, también facilitan mostrar las marcas de los chunks en el documento de salida.</p></li>
+<li><p><code>echo</code>: además de los típicos true y false, ahora <strong>incorpora un nuevo valor <code>fenced</code></strong> que facilita mostrar las marcas de los chunks en el documento final. Documentación <a href="https://quarto.org/docs/computations/execution-options.html#fenced-echo">aquí</a>.</p></li>
 <li><p>Además, si usamos <code>knitr</code> para ejecutar los chunks, entonces podemos usar todas las <a href="https://yihui.org/knitr/options/">opciones nativas de <code>knitr</code></a>, como: collapse, fig.width, comment, etc … Más información <a href="https://quarto.org/docs/computations/execution-options.html#knitr-options">aquí</a>. Un ejemplo:</p></li>
 </ul>
 
+<img data-src="./imagenes/tt_01/img_23.png" class="r-stretch quarto-figure-center"><ul>
+<li><p>Hay más opciones para los chunks. Por ejemplo:</p>
+<ul>
+<li><p>hacer <strong>folding code</strong> con <code>#| code-fold: true</code></p></li>
+<li><p>si el código es muy largo, puedes usar <code>#| code-overflow: wrap</code> y <code>#| code-overflow: scroll</code></p></li>
+<li><p>puedes hacer que se muestre el número de linea con <code>#| code-line-numbers: true</code></p></li>
+</ul></li>
+</ul>
+<p>La documentación oficial la tienes <a href="https://quarto.org/docs/output-formats/html-code.html">aquí</a>.</p>
+</section>
+<section class="slide level2">
 
-<img data-src="./imagenes/tt_01/img_23.png" class="r-stretch quarto-figure-center"><div class="footer footer-default">
+
+<div class="footer footer-default">
 
 </div>
 </section></section>

@@ -8,6 +8,8 @@ Evidentemente puedes probar a añadir la página que quieras, pero te ofrezco la
 
 - Fíjate que he puesto la nueva página a la izquierda (`left: `)
 
+- Además, puedes probar distintas opciones de `theme` y de `highlighting`
+
 
 ```yaml
 project:
@@ -42,9 +44,11 @@ website:
 
 format:
   html:
-    theme: minty  
+    #- https://quarto.org/docs/output-formats/html-themes.html
+    theme: flatly  
     css: styles.css
     toc: true
+    #- https://quarto.org/docs/output-formats/html-code.html#highlighting
     highlight-style: a11y
 ```
 :::

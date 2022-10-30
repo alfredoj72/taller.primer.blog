@@ -212,7 +212,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#contenido-de-cada-subcarpeta-de-.posts" id="toc-contenido-de-cada-subcarpeta-de-.posts" class="nav-link" data-scroll-target="#contenido-de-cada-subcarpeta-de-.posts"><span class="toc-section-number">2</span>  Contenido de cada subcarpeta de <code>./posts/</code></a></li>
   <li><a href="#creando-un-nuevo-post" id="toc-creando-un-nuevo-post" class="nav-link" data-scroll-target="#creando-un-nuevo-post"><span class="toc-section-number">3</span>  Creando un nuevo post</a></li>
   <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="toc-section-number">4</span>  Resumen</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="toc-section-number">5</span>  Referencias</a></li>
   </ul>
 </nav>
 </nav>
@@ -251,7 +250,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Fecha de Publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">26 de octubre de 2022</p>
+      <p class="date">30 de octubre de 2022</p>
     </div>
   </div>
   
@@ -321,7 +320,7 @@ Recapitulación
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>Ver como podemos iniciar un nuevo post</p></li>
-<li><p>Aprender a utilizar algunos truquillos de Quarto</p></li>
+<li><p>(podemos marcar post todavía no acabados con <code>draft: true</code> en el yaml del post)</p></li>
 </ul>
 </div>
 </div>
@@ -429,18 +428,25 @@ Tarea 4.2: Modificando el tercer post
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Pedro J. Pérez"</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2022-10-25"</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [R, quarto]</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Este es mi **primer post** con Quarto!!!!</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Acabé con mi primer post. FIN</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "thumbnail.jpg"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Este es mi **primer post** con Quarto!!!!</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Voy a poner una imagen:</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="al">![](thumbnail.jpg)</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Acabé con mi primer post. FIN</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><p>Sustituye <code>thumbnail.jpg</code> por otro archivo</p></li>
+<li><p>La opción de yaml (linea 6): <code>image: "thumbnail.jpg"</code> nos permite elegir la imagen que acompañara al post en la listing page.</p></li>
 <li><p>Vuelve a regenerar el blog: <code>Build &gt; Render Website</code></p></li>
 </ul>
 </div>
@@ -465,20 +471,20 @@ Resumen (tutorial nº 4)
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>En esta <strong>cuarta parte del taller</strong> hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.</p></li>
-<li><p>En el <strong>siguiente tutorial</strong> veremos en profundidad las posibilidades que nos ofrece Quarto para escribir nuestros posts.</p></li>
+<li>En esta <strong>cuarta parte del taller</strong> hemos visto como podemos generar/escribir nuevos posts para nuestro blog: solo hay replicar una de las carpetas de anteriores posts y cambiarle el nombre.</li>
 </ul>
-</div>
-</div>
-</div>
 <p><br></p>
-</section>
-<section id="referencias" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="referencias"><span class="header-section-number">5</span> Referencias</h2>
-<p>(Algunos artículos sobre creación de blogs en Quarto)</p>
 <ul>
-<li><a href="https://www.ericekholm.com/posts/demo-quarto-site/">Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure</a> es una web con blog . GOOOOD</li>
+<li>Hemos visto como cambiar la imagen que acompaña a los posts en la “listing page”.</li>
+<li>Recuerda que podemos marcar un post con <code>draft: true</code> en el yaml del post.</li>
 </ul>
+<p><br></p>
+<ul>
+<li>En el <strong>siguiente tutorial</strong> veremos en profundidad las posibilidades que nos ofrece Quarto para escribir nuestros posts.</li>
+</ul>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -486,13 +492,13 @@ Resumen (tutorial nº 4)
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2024,
   author = {Pedro J. Pérez},
   title = {Workflow: ¿cómo crear un post?},
-  date = {2024-02-10},
+  date = {2024-06-10},
   url = {https://perezp44.github.io/taller.primer.blog//04_taller_crear-post.html},
   langid = {es}
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2024" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Pedro J. Pérez. 2024. <span>“Workflow: ¿cómo crear un post?”</span>
-February 10, 2024. <a href="https://perezp44.github.io/taller.primer.blog//04_taller_crear-post.html">https://perezp44.github.io/taller.primer.blog//04_taller_crear-post.html</a>.
+Pedro J. Pérez. 2024. <span>“Workflow: ¿cómo crear un post?”</span> June
+10, 2024. <a href="https://perezp44.github.io/taller.primer.blog//04_taller_crear-post.html">https://perezp44.github.io/taller.primer.blog//04_taller_crear-post.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

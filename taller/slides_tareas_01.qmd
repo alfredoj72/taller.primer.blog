@@ -47,7 +47,7 @@ css: /assets/styles_slides_tareas.css
 
 <br>
 
-# 2. Creación de un blog básico con Quarto  {background-color="#D7E8CB"}
+# 2. Creación de un blog básico con Quarto  {background-color="#EEBF8B"}
 
  (2ª parte del tutorial)
  
@@ -131,6 +131,7 @@ Los **archivos importantes** ahora son 3:
 
 ---
 
+
 ## Alojando el blog  
 
 {{< include ./_includes/_tt_02_10_tarea-04.qmd >}}
@@ -148,7 +149,7 @@ Los **archivos importantes** ahora son 3:
 <br>
 
 
-# 3. Tuneado básico del blog  {background-color="#D7E8CB"}
+# 3. Tuneado básico del blog  {background-color="#EEBF8B"}
 
 (3ª parte del tutorial)
 
@@ -173,8 +174,6 @@ Los **archivos importantes** ahora son 3:
 - **lineas 17-19**: añadimos la pestaña "Docencia" a la izquierda de la navbar
 - **lineas 21-26**: modificamos el theme ...,  **CSS**, ....
 
-
-- [Aquí](https://pjperez.quarto.pub/blog_prueba_01/) puedes ver como quedaría el blog tras haber modificado `_quarto.yml`.
 
 ---
 
@@ -239,10 +238,15 @@ Los **archivos importantes** ahora son 3:
 
 {{< include ./_includes/_tt_03_12_resumen.qmd >}}
 
+<br>
+
+
+- [Aquí](https://pjperez.quarto.pub/blog_prueba_01/) puedes ver **como quedaría el blog** tras haber modificado `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
+
 
 ---
 
-## Práctica (tutorial nº 3)
+## Práctica (tutorial nº 3)  {background-color="#D3F3E7"}
 
 En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes el blog a tus necesidades y gustos**. Por ejemplo puedes probar:
 
@@ -252,7 +256,7 @@ En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes e
 
 <br>
 
-2. Modificar la **apariencia del blog** jugando con las opciones que nos proporciona Quarto (`index.qmd`). Gracias YAML inteligence!!
+2. Modificar la **apariencia del blog** (realmente del listado de posts) jugando con las opciones que nos proporciona Quarto (`index.qmd`). Gracias YAML inteligence!!
 
 <br>
 
@@ -273,7 +277,7 @@ En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes e
 
 <br>
 
-# 4.  Workflow: ¿cómo crear un post?  {background-color="#D7E8CB"}
+# 4.  Workflow: ¿cómo crear un post?  {background-color="#EEBF8B"}
 
 (4ª parte del tutorial)
 
@@ -329,7 +333,7 @@ En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes e
 
 <br>
 
-# 5. Escribiendo posts: practicando con Quarto  {background-color="#D7E8CB"}
+# 5. Escribiendo posts: practicando con Quarto  {background-color="#EEBF8B"}
 
 (5ª parte del tutorial)
 
@@ -424,11 +428,15 @@ Documentación oficial [aquí](https://quarto.org/docs/projects/quarto-projects.
 
 Como ves, se añadirían elementos como:
 
-- lineas 28 a 41: se añade un pie de página al blog
+- lineas 28 a 37: se añade un pie de página al blog
 
 - lineas 24 y 25: Hemos añadido un elemento a la `navbar` concretamente el icono `Home`. La documentación oficial para elementos de navegación está [aquí](https://quarto.org/docs/websites/website-navigation.html)
 
-- lineas 4 y 7-10: elementos de redes sociales como un favicon (linea 4), el url de la web y del repo en Github (lineas 5 y 6) y más elementos de redes sociales  (lineas 7 a 10). La documentación oficial para estos elementos está [aquí](https://quarto.org/docs/websites/website-tools.html)
+- linea 4: añadimos un como un favicon
+
+- lineas 5 y 6: el url de la web y del repo en Github 
+
+- lineas 7-10: elementos de redes sociales. La documentación oficial para estos elementos esta  [aquí](https://quarto.org/docs/websites/website-tools.html)
 
 <br>
 
@@ -507,8 +515,14 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 - Se escribe (al igual que `.Rmd`)  en **markdown**. [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) la documentación oficial de Quarto.
 
+- Sintaxis básica de `markdown`
 
-- Practicaremos (con un ejemplo): 
+{{< include ./_includes/_tt_05_12_sintaxis-markdown.qmd >}}
+
+
+---
+
+### Texto: practicaremos (con un ejemplo)
 
   - Links (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#links-images))
 
@@ -522,15 +536,15 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
   - Ecuaciones  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#equations)) 
     
-  - Listas  (documentación [aquí]())  
 
   - Callout blocks  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks))  
 
   - Divs & spans  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans))  
 
 
+<br>
 
-- [Editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/)
+##### Conviene conocer el [Editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/)
 
 
 ---
@@ -541,15 +555,15 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 <br>
 
-##### Principales diferencias
+##### Principales diferencias con .Rmd
 
 - En ficheros `.qmd`, **las opciones de los chunks se pueden especificar globalmente en el YAML** y a nivel individual en cada uno de los chunks.
 
-
-
 - En los **chunks individuales** ahora se se utiliza la **sintaxis YAML** (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
 
-![](./imagenes/tt_01/img_22.png){fig-align="center"}
+{{< include ./_includes/_tt_05_44_img-22.qmd >}}
+
+
 
 
 ---
@@ -560,9 +574,24 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 - Las principales opciones son: **echo**, **eval**, **warning**, **error**, **output** e **include**. [Aquí](https://quarto.org/docs/computations/execution-options.html#output-options) la documentación oficial.
 
 
-- `echo`, además los típicos true y false, ahora incorpora un nuevo valor `fenced` que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo). Los llamados **unexecuted Blocks**, documentación [aquí](https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks), también facilitan mostrar las marcas de los chunks en el documento de salida.
+- `echo`: además de los típicos true y false, ahora **incorpora un nuevo valor `fenced`** que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo). 
+
 
 - Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
 
-![](./imagenes/tt_01/img_23.png){fig-align="center"}
+{{< include ./_includes/_tt_05_45_img-23.qmd >}}
+
+- Hay más opciones para los chunks. Por ejemplo: 
+
+    - hacer **folding code** con `#| code-fold: true`  
+    
+    - si el código es muy largo, puedes usar  `#| code-overflow: wrap`  y `#| code-overflow: scroll`  
+    
+    - puedes hacer que se muestre el número de linea con `#| code-line-numbers: true`
+    
+    
+La documentación oficial la tienes [aquí](https://quarto.org/docs/output-formats/html-code.html).
+
+
+---
 

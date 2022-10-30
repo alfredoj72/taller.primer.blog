@@ -105,14 +105,3 @@ En el **siguiente tutorial** veremos en profundidad las posibilidades que nos of
 
 
 
-
-<br>
-
-
-## Referencias
-
-(Algunos artículos sobre creación de blogs en Quarto)
-
-- [ Eric Ekholm. 2022. Modifying the Default Quarto Blog Structure](https://www.ericekholm.com/posts/demo-quarto-site/)  es una web con blog . GOOOOD
-
-

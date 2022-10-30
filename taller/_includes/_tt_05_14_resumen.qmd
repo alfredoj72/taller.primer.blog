@@ -15,6 +15,6 @@
 
 - El código sí presenta novedades: nueva sintaxis (`#|`) y posibilidad de determinar opciones en el YAML.
 
-- Para poder escribir en `.qmd` **hay que practicar**.
+- Para poder escribir en `.qmd` **hay que practicar**. Vamos a ello
 
 :::

@@ -30,7 +30,7 @@ website:
  
 format:
   html:
-    theme: minty  
+    theme: flatly  
     css: styles.css
     toc: true
     highlight-style: a11y

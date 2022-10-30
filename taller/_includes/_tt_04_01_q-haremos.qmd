@@ -3,5 +3,5 @@
 
 - Ver como podemos iniciar un nuevo post
 
-- Aprender a utilizar algunos truquillos de Quarto
+- (podemos marcar post todavía no acabados con `draft: true` en el yaml del post)
 :::

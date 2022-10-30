@@ -31,7 +31,7 @@ logo: imagenes/economia.gif
 footer: |
         Slides hechas con [Quarto](https://quarto.org/) para las [XII Jornadas de Usuarios de R](http://r-es.org/12jr/)
 #css: /assets/styles_slides_tareas.css
-css: assets/styles_slides.css
+css: assets/styles_slides_tareas.css
 ---
 
 
