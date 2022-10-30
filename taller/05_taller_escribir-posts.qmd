@@ -461,17 +461,15 @@ desc-position="left"}
 En esta sección dedicaremos un tiempo a la práctica libre para que practiques la creación y escritura de un post. Para ello te ofrezco la siguiente un ejemplo/plantilla para elaborar un post con diferentes elementos.
 
 
+Usaremos un ejemplo para **practicar la sintaxis y nuevas posibilidades de Quarto** a la hora de generar documentos `.html`: o sea, para escribir posts para nuestro blog.
+
+
 {{< include ./_includes/_tt_05_47_practica-01.qmd >}}
 
 
 
 ## Un ejemplo
 
-Usaremos un ejemplo para **practicar la sintaxis y nuevas posibilidades de Quarto** a la hora de generar documentos `.html`: o sea, para escribir posts para nuestro blog.
-
-Incorporaremos los siguientes elementos:
-
-- Link interno a las  [slides de introducción](01_taller_slides.qmd)
 
 - Create a tabset via a markdown div with the class name panel-tabset (e.g. ::: {.panel-tabset}) <https://quarto.org/docs/output-formats/html-basics.html#tabsets>
 

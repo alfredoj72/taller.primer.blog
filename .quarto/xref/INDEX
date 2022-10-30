@@ -91,5 +91,11 @@
   },
   "taller/ejemplo-de-post.qmd": {
     "ejemplo-de-post.html": "cfd22a2a"
+  },
+  "blog.qmd": {
+    "blog.html": "e99f28c9"
+  },
+  "posts/ejemplo-de-post.qmd": {
+    "ejemplo-de-post.html": "858c7110"
   }
 }

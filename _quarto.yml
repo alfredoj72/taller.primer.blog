@@ -29,6 +29,8 @@ website:
       - setup.qmd
       - text: "Recursos"
         href: recursos.qmd
+      - text: "Blog"
+        href: blog.qmd        
       - about.qmd
       - icon: github
         href: https://github.com/perezp44
