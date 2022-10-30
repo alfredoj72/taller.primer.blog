@@ -35,6 +35,9 @@ El taller está pensado para realizar con [R](https://cran.r-project.org/){targe
 #### [Slides para presentación](./taller/slides_tareas_01.html){target="_blank"} 
 
 
+#### [Post de ejemplo](./taller/ejemplo-de-post.html){target="_blank"} 
+
+
 #### [Plantilla para escribir con Quarto](./taller/09_taller_plantilla_escribir_quarto.qmd){target="_blank"} 
 
 <br>

@@ -1,0 +1,11 @@
+---
+title: "Mi segundo post"
+author: "Nosotros"
+date: "2022-10-26"
+categories: [quarto, pruebas]
+image: "thumbnail.jpg"
+title-block-banner: true #- {true, false }
+---
+
+Este post nos va a servir para prácticar con Quarto.
+

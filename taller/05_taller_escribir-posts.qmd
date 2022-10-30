@@ -414,10 +414,25 @@ Con Rmd ponía algún vídeo en mis slides o tutoriales usando un paquete de R (
 
 {{< include ./_includes/_tt_05_46_tarea-5-04-extensiones.qmd >}}
 
+Aunque esta extensión se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. solo hay que usar el siguiente shortcode:
 
-[Aquí](https://github.com/mcanouil/awesome-quarto#extensions) tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están [aquí](https://quarto.org/docs/extensions/listing-filters.html).
+```{r, eval = FALSE}
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+```
 
-Vamos a instalar y usar una nueva extensión, concretamente la extensión "Lightbox". Lo que hace esta extensión es que podamos pinchar en una imagen y ampliarla. [aquí](https://quarto-ext.github.io/lightbox/) un ejemplo de lo que se puede hacer con "Lightbox". Su repo [aquí](https://github.com/quarto-ext/lightbox)
+
+
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+
+[Aquí](https://quarto.org/docs/authoring/videos.html) la documentación oficial del shortcode `{{ < video   >}}`.
+
+
+<br>
+
+
+[Aquí](https://github.com/mcanouil/awesome-quarto#extensions) tienes un **listado de extensiones disponibles**. Las extensiones oficiales de Quarto están [aquí](https://quarto.org/docs/extensions/listing-filters.html).
+
+Vamos a **instalar y usar una nueva extensión**, concretamente la extensión "Lightbox". Lo que hace esta extensión es que podamos pinchar en una imagen y ampliarla. [aquí](https://quarto-ext.github.io/lightbox/) un ejemplo de lo que se puede hacer con "Lightbox". Su repo [aquí](https://github.com/quarto-ext/lightbox)
 
 {{< include ./_includes/_tt_05_46_tarea-5-05-extensiones-2.qmd >}}
 
@@ -425,7 +440,7 @@ Vamos a instalar y usar una nueva extensión, concretamente la extensión "Light
 ![Mi imagen con Lighbox activado](./imagenes/economia.gif){.lightbox description="El logo-nano de la facultad de Economía de la Universtat de València"
 desc-position="left"}
 
----
+<br>
 
 ## Resumen
 
@@ -443,23 +458,10 @@ desc-position="left"}
 
 ## Práctica
 
-En esta sección dedicaremos un tiempo a la práctica libre para que practiques la creación y escritura de un post. Para ello te ofrezco la siguiente plantilla para elaborar un post con diferentes elementos:
-
-- Añadir una nueva página a la web (`quarto.yml`)
-
-{{< include ./_includes/_tt_03_13_practica-01.qmd >}}
+En esta sección dedicaremos un tiempo a la práctica libre para que practiques la creación y escritura de un post. Para ello te ofrezco la siguiente un ejemplo/plantilla para elaborar un post con diferentes elementos.
 
 
-- Modificar la apariencia del blog jugando con las opciones que nos proporciona Quarto (`index.qmd`)
-
-{{< include ./_includes/_tt_03_13_practica-02.qmd >}}
-
-
-- Modificar la apariencia de la página About (`about.qmd`)
-
-{{< include ./_includes/_tt_03_13_practica-03.qmd >}}
-
-
+{{< include ./_includes/_tt_05_47_practica-01.qmd >}}
 
 
 

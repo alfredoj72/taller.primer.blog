@@ -1,0 +1,15 @@
+::: {.callout-tip collapse="true" appearance="default" icon="false"}
+
+#### Práctica 5.1: Crear un post para tu blog con la siguiente plantilla.
+
+Vamos a usar el ejemplo/plantilla de abajo para elaborar un nuevo post. Para ello:
+
+- Crea una nueva subcarpeta en la carpeta `./posts/`. Por ejemplo llámala: `./posts/my-segundo-post` y copia allí los documentos que haya en la carpeta de otro blog. Es decir, en la nueva subcarpeta que has creado debe haber un fichero `index.qmd` y otro `thumbnail.jpg`.
+
+- Sustituye el contenido del archivo `index.qmd` por el contenido del siguiente chunk uy haz un render de `./posts/my-segundo-post/index.qmd`.
+
+###### Contenido para sustituir en `./posts/my-segundo-post/index.qmd`
+
+
+:::
+
