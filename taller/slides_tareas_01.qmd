@@ -622,8 +622,7 @@ Documentación oficial para **article-layout** [aquí](https://quarto.org/docs/a
 
 - [Aquí](https://quarto.org/docs/extensions/starter-templates.html) la documentación oficial.
 
-- 
-[Aquí](https://github.com/mcanouil/awesome-quarto#extensions) tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están [aquí](https://quarto.org/docs/extensions/listing-filters.html).
+- [Aquí](https://github.com/mcanouil/awesome-quarto#extensions) tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están [aquí](https://quarto.org/docs/extensions/listing-filters.html).
 
 - Para ver como instalar y usar extensiones vamos a ir al **tutorial nº 5 del taller**, concretamente [aquí](https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#extensiones){target="_blank"}
 
