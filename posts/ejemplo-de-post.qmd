@@ -1,11 +1,69 @@
 ---
 title: "Mi segundo post"
-author: "Nosotros"
-date: "2022-10-26"
-categories: [quarto, pruebas]
+#author: "Nosotros"
+subtitle: | 
+   (un post de ejemplo)
+description: |
+  Un post de ejemplo para practicar la escritura de documentos `.qmd` durante el taller "Mi primer blog con Quarto" en el marco de las XII Jornadas de ususarios de R.
+author:
+  - name: Pedro J. Pérez
+    affiliation: Universitat de València
+date: 2022-10-26"
+categories: [quarto, pruebas, ejemplo]
 image: "thumbnail.jpg"
 title-block-banner: true #- {true, false }
+draft: false
+toc: true
+toc-location: left
+toc-depth: 3
+#css: assets/my_css_file.css
+#bibliography: references.bib
+#nocite: |
+#  @*
 ---
 
-Este post nos va a servir para practicar con Quarto.
 
+## Intro
+
+Este post trata de servir de ejemplo para usar durante el taller "Mi primer blog con Quarto" celebrado en el marco del [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target="_blank"} celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.
+
+::: column-margin
+**Objetivo**: post de ejemplo.
+:::
+
+
+## Figuras
+
+Para poner 2 figuras side-by-side debes escribir
+
+```{r, eval = FALSE}
+::: {#fig-01 layout-ncol=2}
+
+![Imágen 1](thumbnail.jpg){#fig-2.1}
+
+![Imágen 2](thumbnail.jpg){#fig-2.2}
+
+2 imágenes alineadas
+:::
+```
+
+
+
+
+::: {#fig-01 layout-ncol=2}
+
+![Imágen 1](thumbnail.jpg){#fig-2.1}
+
+![Imágen 2](thumbnail.jpg){#fig-2.2}
+
+2 imágenes alineadas
+:::
+
+
+## ¿Cuantos municipios han existido en España?
+
+Debería ser una pregunta fácil de responder pero no lo es; como ejemplo [este documento](https://www.hacienda.gob.es/Documentacion/Publico/SGT/CATALOGO_SEFP/100_Variaciones-INTERNET.pdf). Hasta donde yo sé, no existe en España un registro del que pueda obtenerse el número de municipios que han existido en el tiempo; así que, trataré de dar una respuesta utilizando los datos de los Censos históricos y del Padrón.
+
+::: column-margin
+No es una pregunta fácil.
+:::

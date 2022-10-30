@@ -1,0 +1,14 @@
+{
+  "hash": "e1e665eb93835cf44445726122453c23",
+  "result": {
+    "markdown": "---\ntitle: \"Mi segundo post\"\n#author: \"Nosotros\"\nsubtitle: | \n   (un post de ejemplo)\ndescription: |\n  Un post de ejemplo para practicar la escritura de documentos `.qmd` durante el taller \"Mi primer blog con Quarto\" en el marco de las XII Jornadas de ususarios de R.\nauthor:\n  - name: Pedro J. Pérez\n    affiliation: Universitat de València\ndate: 2022-10-26\"\ncategories: [quarto, pruebas, ejemplo]\nimage: \"thumbnail.jpg\"\ntitle-block-banner: true #- {true, false }\ndraft: false\ntoc: true\ntoc-location: left\ntoc-depth: 3\n#css: assets/my_css_file.css\n#bibliography: references.bib\n#nocite: |\n#  @*\n---\n\n\n\n## Intro\n\nEste post trata de servir de ejemplo para usar durante el taller \"Mi primer blog con Quarto\" celebrado en el marco del [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target=\"_blank\"} celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.\n\n::: column-margin\n**Objetivo**: post de ejemplo.\n:::\n\n\n## Figuras\n\nPara poner 2 figuras side-by-side debes escribir\n\n\n::: {.cell}\n\n```{.r .cell-code}\n::: {#fig-01 layout-ncol=2}\n\n![Imágen 1](thumbnail.jpg){#fig-2.1}\n\n![Imágen 2](thumbnail.jpg){#fig-2.2}\n\n2 imágenes alineadas\n:::\n```\n:::\n\n\n\n\n\n::: {#fig-01 layout-ncol=2}\n\n![Imágen 1](thumbnail.jpg){#fig-2.1}\n\n![Imágen 2](thumbnail.jpg){#fig-2.2}\n\n2 imágenes alineadas\n:::\n\n\n## ¿Cuantos municipios han existido en España?\n\nDebería ser una pregunta fácil de responder pero no lo es; como ejemplo [este documento](https://www.hacienda.gob.es/Documentacion/Publico/SGT/CATALOGO_SEFP/100_Variaciones-INTERNET.pdf). Hasta donde yo sé, no existe en España un registro del que pueda obtenerse el número de municipios que han existido en el tiempo; así que, trataré de dar una respuesta utilizando los datos de los Censos históricos y del Padrón.\n\n::: column-margin\nNo es una pregunta fácil.\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

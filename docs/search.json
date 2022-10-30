@@ -567,13 +567,6 @@
     "text": "¿Cómo va?\nComo vas tete\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
   },
   {
-    "objectID": "taller/ejemplo-de-post.html",
-    "href": "taller/ejemplo-de-post.html",
-    "title": "Mi segundo post",
-    "section": "",
-    "text": "Este post nos va a servir para practicar con Quarto.\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2024,\n  author = {Pedro J. Pérez and Nosotros},\n  title = {Mi segundo post},\n  date = {2024-02-10},\n  url = {https://perezp44.github.io/taller.primer.blog//ejemplo-de-post.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez, and Nosotros. 2024. “Mi segundo post.”\nFebruary 10, 2024. https://perezp44.github.io/taller.primer.blog//ejemplo-de-post.html."
-  },
-  {
     "objectID": "recursos.html",
     "href": "recursos.html",
     "title": "Recursos sobre Quarto",
@@ -590,23 +583,72 @@
   {
     "objectID": "blog.html",
     "href": "blog.html",
-    "title": "Notes From A Spreadsheet",
+    "title": "Fake blog para el taller ‘mi primer blog con Quarto’",
     "section": "",
-    "text": "Mi segundo post\n\n\n\n\n\n\n\nquarto\n\n\npruebas\n\n\n\n\n\n\n\n\n\n\n\nOct 26, 2022\n\n\nNosotros\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Escribiendo posts: un ejemplo de post\n\n\n(9ª parte del taller Mi primer blog con Quarto)\n\n\n\n\n\n\n\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nMi segundo post\n\n\n(un post de ejemplo)\n\n\n\n\nquarto\n\n\npruebas\n\n\nejemplo\n\n\n\n\nUn post de ejemplo para practicar la escritura de documentos .qmd durante el taller “Mi primer blog con Quarto” en el marco de las XII Jornadas de ususarios de R.\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/ejemplo-de-post-02.html",
+    "href": "posts/ejemplo-de-post-02.html",
+    "title": "Escribiendo posts: un ejemplo de post",
+    "section": "",
+    "text": "En este tutorial sirve de plantilla para ir escribiendo un post que contenga distintos elementos disponibles en Quarto para escribir con archivos .qmd."
+  },
+  {
+    "objectID": "posts/ejemplo-de-post-02.html#figuras",
+    "href": "posts/ejemplo-de-post-02.html#figuras",
+    "title": "Escribiendo posts: un ejemplo de post",
+    "section": "Figuras",
+    "text": "Figuras\nDocumentación aquí.\nLas imágenes (o figuras) se pueden insertar de múltiples maneras:\n\nLa sintaxis de Pandoc:\n\n\nPara hacer esto …Has de escribir\n\n\n{fig-align=“left”}\n\n\n![Mi imagen](thumbnail.jpg){#fig-1, fig-align=\"left\"}\n\n\n\n\nSubfiguras\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n\n(a) Imágen 1\n\n\n\n\n\n\n\n(b) Imágen 2\n\n\n\n\nFigure 1: Dos imágenes alineadas\n\n\n\n\n::: {#fig-elephants layout-ncol=2}\n\n![Imágen 1](thumbnail.jpg){#fig-2.1}\n\n![Imágen 2](thumbnail.jpg){#fig-2.2}\n\n2 imágenes alineadas\n:::\n\n\n\n\n\nPanel de imágenes\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n(A)\n\n\n\n\n\n\n\n(B)\n\n\n\n\n\n\n\n\n\n(C)\n\n\n\n\n\n\n\n(D)\n\n\n\n\n\n\n\n::: {layout-nrow=2}\n![(A)](thumbnail.jpg)\n\n![(B)](thumbnail.jpg)\n\n![(C)](thumbnail.jpg)\n\n![(D)](thumbnail.jpg)\n:::\n\n\n\n\n\nCustom layouts\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n(A)\n\n\n\n\n \n\n\n\n\n\n(B)\n\n\n\n\n\n\n\n\n\n(C)\n\n\n\n\n\n\n\n::: {layout=\"[[40,-20,40], [100]]\"}\n![(A)](thumbnail.jpg)\n\n![(B)](thumbnail.jpg)\n\n![(C)](thumbnail.jpg)\n:::\n\n\n\n\ntamaño por defecto: https://quarto.org/docs/computations/execution-options.html#figure-options"
+  },
+  {
+    "objectID": "posts/ejemplo-de-post-02.html#callouts",
+    "href": "posts/ejemplo-de-post-02.html#callouts",
+    "title": "Escribiendo posts: un ejemplo de post",
+    "section": "Callouts",
+    "text": "Callouts\nDocumentación aquí\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\nTarea xx\n\n\n\n\nTendremos que hacer esto\ny esto otro\n\n\n\n\n\n::: {.callout-important icon=\"false\"}\n\n#### Tarea xx\n- Tendremos que hacer esto \n\n- y esto otro\n:::"
+  },
+  {
+    "objectID": "posts/ejemplo-de-post-02.html#tablas",
+    "href": "posts/ejemplo-de-post-02.html#tablas",
+    "title": "Escribiendo posts: un ejemplo de post",
+    "section": "Tablas",
+    "text": "Tablas\nhttps://quarto.org/docs/authoring/tables.html\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
+  },
+  {
+    "objectID": "posts/ejemplo-de-post-02.html#bibliografía",
+    "href": "posts/ejemplo-de-post-02.html#bibliografía",
+    "title": "Escribiendo posts: un ejemplo de post",
+    "section": "Bibliografía",
+    "text": "Bibliografía\nPara aprender puedes ir a este Quarto tip, a este video. La documentación oficial está aquí y aquí para usar el editor visual."
   },
   {
     "objectID": "posts/ejemplo-de-post.html",
     "href": "posts/ejemplo-de-post.html",
     "title": "Mi segundo post",
     "section": "",
-    "text": "Este post nos va a servir para practicar con Quarto."
+    "text": "Este post trata de servir de ejemplo para usar durante el taller “Mi primer blog con Quarto” celebrado en el marco del I Congreso & XII Jornadas de Usuarios de R celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.\n\n\nObjetivo: post de ejemplo."
+  },
+  {
+    "objectID": "posts/ejemplo-de-post.html#figuras",
+    "href": "posts/ejemplo-de-post.html#figuras",
+    "title": "Mi segundo post",
+    "section": "Figuras",
+    "text": "Figuras\nPara poner 2 figuras side-by-side debes escribir\n\n::: {#fig-01 layout-ncol=2}\n\n![Imágen 1](thumbnail.jpg){#fig-2.1}\n\n![Imágen 2](thumbnail.jpg){#fig-2.2}\n\n2 imágenes alineadas\n:::\n\n\n\n\n\n\n\n\n(a) Imágen 1\n\n\n\n\n\n\n\n(b) Imágen 2\n\n\n\n\nFigure 1: 2 imágenes alineadas"
+  },
+  {
+    "objectID": "posts/ejemplo-de-post.html#cuantos-municipios-han-existido-en-españa",
+    "href": "posts/ejemplo-de-post.html#cuantos-municipios-han-existido-en-españa",
+    "title": "Mi segundo post",
+    "section": "¿Cuantos municipios han existido en España?",
+    "text": "¿Cuantos municipios han existido en España?\nDebería ser una pregunta fácil de responder pero no lo es; como ejemplo este documento. Hasta donde yo sé, no existe en España un registro del que pueda obtenerse el número de municipios que han existido en el tiempo; así que, trataré de dar una respuesta utilizando los datos de los Censos históricos y del Padrón.\n\n\n\n\nNo es una pregunta fácil."
   },
   {
     "objectID": "materiales.html",
     "href": "materiales.html",
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "",
-    "text": "Materiales del taller Mi primer blog con Quarto preparados para el I Congreso & XII Jornadas de Usuarios de R celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas. En la sección Setup tienes instrucciones para instalar el software necesario para el taller\n\n\n1. Intro (15 min)\n\n\n2. Creación de un blog básico: mi blog en 3 minutos (10 min)\n\n\n3. Tuneado básico del blog (15 min + 15 min de Práctica).\n\n\n4. Workflow: ¿cómo crear un post? (5 min)\n\n\n5. Escribiendo posts: practicando con Quarto (15 min + 15 min de Práctica)\n\n\n6. Convirtiendo el blog en una web académica (5 min)\n\n\n7. Tuneado del blog (15 min)\n\n\n8. Opciones de alojamiento (10 min)\n\n\n\n\nSlides para presentación\n\n\nPost de ejemplo\n\n\nPlantilla para escribir con Quarto\n\nSeguramente usaremos esta Etherpad."
+    "text": "Materiales del taller Mi primer blog con Quarto preparados para el I Congreso & XII Jornadas de Usuarios de R celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas. En la sección Setup tienes instrucciones para instalar el software necesario para el taller\n\n\n1. Intro (15 min)\n\n\n2. Creación de un blog básico: mi blog en 3 minutos (10 min)\n\n\n3. Tuneado básico del blog (15 min + 15 min de Práctica).\n\n\n4. Workflow: ¿cómo crear un post? (5 min)\n\n\n5. Escribiendo posts: practicando con Quarto (15 min + 15 min de Práctica)\n\n\n6. Convirtiendo el blog en una web académica (5 min)\n\n\n7. Tuneado del blog (15 min)\n\n\n8. Opciones de alojamiento (10 min)\n\n\n\n\nSlides para presentación\n\n\nPlantilla para escribir con Quarto\n\nSeguramente usaremos esta Etherpad."
   },
   {
     "objectID": "about.html",

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mi primer blog con Quarto (WIP) - Notes From A Spreadsheet</title>
+<title>Mi primer blog con Quarto (WIP) - Fake blog para el taller ‘mi primer blog con Quarto’</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-date','listing-description','listing-categories','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -94,10 +94,10 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Mi primer blog con Quarto (WIP)" href="blog.xml"><meta property="og:title" content="Mi primer blog con Quarto (WIP) - Notes From A Spreadsheet">
+<link rel="alternate" type="application/rss+xml" title="Mi primer blog con Quarto (WIP)" href="blog.xml"><meta property="og:title" content="Mi primer blog con Quarto (WIP) - Fake blog para el taller ‘mi primer blog con Quarto’">
 <meta property="og:image" content="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg">
 <meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
-<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Notes From A Spreadsheet">
+<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Fake blog para el taller ‘mi primer blog con Quarto’">
 <meta name="twitter:image" content="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
@@ -174,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Notes From A Spreadsheet</h1>
+      <h1 class="title">Fake blog para el taller ‘mi primer blog con Quarto’</h1>
                       </div>
   </div>
     
@@ -192,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="pruebas">pruebas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="quarto">quarto <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ejemplo">ejemplo <span class="quarto-category-count">(1)</span></div><div class="category" data-category="pruebas">pruebas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="quarto">quarto <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -205,7 +205,32 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="quarto,pruebas" data-listing-date-sort="1666735200000" data-listing-file-modified-sort="1667159068818" data-listing-reading-time-sort="0.05">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1667167496818" data-listing-reading-time-sort="0.895">
+<div class="thumbnail">
+<p><a href="./posts/ejemplo-de-post-02.html"> <img src="./posts/thumbnail.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/ejemplo-de-post-02.html">
+<h3 class="no-anchor listing-title">
+Escribiendo posts: un ejemplo de post
+</h3>
+</a><div class="listing-subtitle"><a href="./posts/ejemplo-de-post-02.html">
+(9ª parte del taller </a><a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)
+</div>
+<div class="listing-description">
+<br>
+</div>
+
+</div>
+<div class="metadata">
+<a href="./posts/ejemplo-de-post-02.html">
+<div class="listing-reading-time">
+0 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="quarto,pruebas,ejemplo" data-listing-date-sort="1666735200000" data-listing-file-modified-sort="1667167294339" data-listing-reading-time-sort="0.66">
 <div class="thumbnail">
 <p><a href="./posts/ejemplo-de-post.html"> <img src="./posts/thumbnail.jpg" class="thumnail-image"> </a></p>
 </div>
@@ -215,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 Mi segundo post
 </h3>
 <div class="listing-subtitle">
-
+<p>(un post de ejemplo)</p>
 </div>
 </a>
 <div class="listing-categories">
@@ -225,10 +250,13 @@ quarto
 <div class="listing-category" onclick="window.quartoListingCategory('pruebas'); return false;">
 pruebas
 </div>
+<div class="listing-category" onclick="window.quartoListingCategory('ejemplo'); return false;">
+ejemplo
+</div>
 </div>
 <a href="./posts/ejemplo-de-post.html">
 <div class="listing-description">
-Este post nos va a servir para practicar con Quarto.
+<p>Un post de ejemplo para practicar la escritura de documentos <code>.qmd</code> durante el taller “Mi primer blog con Quarto” en el marco de las XII Jornadas de ususarios de R.</p>
 </div>
 </a>
 </div>
@@ -238,7 +266,7 @@ Este post nos va a servir para practicar con Quarto.
 Oct 26, 2022
 </div>
 <div class="listing-author">
-Nosotros
+Pedro J. Pérez
 </div>
 <div class="listing-reading-time">
 0 min

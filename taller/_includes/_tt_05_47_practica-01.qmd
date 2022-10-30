@@ -10,7 +10,7 @@ Vamos a usar el ejemplo/plantilla de abajo para elaborar un nuevo post. Para ell
 
 - [Aquí](https://perezp44.github.io/taller.primer.blog/taller/ejemplo-de-post.html){target="_blank"} puedes ver como quedaría (más o menos) el post tras procesarlo con Quarto.
 
-- Si quieres que se incluyan más elementos en el title-block has de poner en el archivo `./index.qmd`, anidado en `listing:`  lo siguiente: `  fields: [image, date, description, categories, title, author, reading-time]`
+- Si quieres que se incluyan más elementos en el title-block has de poner en el archivo `./index.qmd`, anidado en `listing:`  lo siguiente: `fields: [image, date, description, categories, title, author, reading-time]`
 
 
 
