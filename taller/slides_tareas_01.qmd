@@ -607,9 +607,30 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 - Usando **divs** se puede hacer que alguna sección ocupe un espacio mayor al habitual, mayor al espacio habitualmente reservado para el body.
 
 
-- Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es mejor  verlas en los tutoriales del taller, concretamente [aquí](https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#layout) 
+- Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es **mejor  verlas en los tutoriales del taller**, concretamente [aquí](https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#layout){target="_blank"} 
 <br>
 
 Documentación oficial para **article-layout** [aquí](https://quarto.org/docs/authoring/article-layout.html) y para **page-layout** [aquí](https://quarto.org/docs/output-formats/page-layout.html)
 
 
+
+---
+
+## Extensiones
+
+- Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en el lenguaje `Lua`. 
+
+- [Aquí](https://quarto.org/docs/extensions/starter-templates.html) la documentación oficial.
+
+- 
+[Aquí](https://github.com/mcanouil/awesome-quarto#extensions) tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están [aquí](https://quarto.org/docs/extensions/listing-filters.html).
+
+- Para ver como instalar y usar extensiones vamos a ir al **tutorial nº 5 del taller**, concretamente [aquí](https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#extensiones){target="_blank"}
+
+
+---
+
+
+{{< include ./_includes/_tt_05_14_resumen.qmd >}}
+
+<br>

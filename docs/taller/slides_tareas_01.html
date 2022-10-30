@@ -904,21 +904,24 @@
 </div>
 <div class="callout-content">
 <ul>
-<li>Simplemente he cambiado la linea 2. Aunque, para mi, casi queda mejor sin ningún título. Para ello tendríamos que comentar (con un #) la primera linea del yaml.</li>
+<li><p>He cambiado la primera linea (<strong>title:</strong>) para poner un nombre a la página con el listado de posts.</p></li>
+<li><p>También podemos añadir una descripción con <strong>description:</strong>.</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1"></a><span class="pp">---</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi listado de post"</span></span>
-<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">listing</span><span class="kw">:</span></span>
-<span id="cb7-4"><a href="#cb7-4"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
-<span id="cb7-5"><a href="#cb7-5"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
-<span id="cb7-6"><a href="#cb7-6"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> default</span></span>
-<span id="cb7-7"><a href="#cb7-7"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb7-8"><a href="#cb7-8"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb7-9"><a href="#cb7-9"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb7-10"><a href="#cb7-10"></a><span class="fu">page-layout</span><span class="kw">:</span><span class="at"> full</span></span>
-<span id="cb7-11"><a href="#cb7-11"></a><span class="fu">title-block-banner</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb7-12"><a href="#cb7-12"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">description</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a>  Estoy tratando de hacer mi blog</span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb7-11"><a href="#cb7-11"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb7-12"><a href="#cb7-12"></a><span class="fu">page-layout</span><span class="kw">:</span><span class="at"> full</span></span>
+<span id="cb7-13"><a href="#cb7-13"></a><span class="fu">title-block-banner</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb7-14"><a href="#cb7-14"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -2277,14 +2280,48 @@
 <p><br></p>
 <ul>
 <li><p>Usando <strong>divs</strong> se puede hacer que alguna sección ocupe un espacio mayor al habitual, mayor al espacio habitualmente reservado para el body.</p></li>
-<li><p>Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es mejor verlas en los tutoriales del taller, concretamente <a href="https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#layout">aquí</a> <br></p></li>
+<li><p>Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es <strong>mejor verlas en los tutoriales del taller</strong>, concretamente <a href="https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#layout" target="_blank">aquí</a> <br></p></li>
 </ul>
 <p>Documentación oficial para <strong>article-layout</strong> <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a> y para <strong>page-layout</strong> <a href="https://quarto.org/docs/output-formats/page-layout.html">aquí</a></p>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>Además, el layout puede venir afectado por la opción <code>page-layout: custom   #- {article, full, custom}</code></p></li></ol></aside></section>
+<section id="extensiones" class="slide level2">
+<h2>Extensiones</h2>
+<ul>
+<li><p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en el lenguaje <code>Lua</code>.</p></li>
+<li><p><a href="https://quarto.org/docs/extensions/starter-templates.html">Aquí</a> la documentación oficial.</p></li>
+<li><p><a href="https://github.com/mcanouil/awesome-quarto#extensions">Aquí</a> tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están <a href="https://quarto.org/docs/extensions/listing-filters.html">aquí</a>.</p></li>
+<li><p>Para ver como instalar y usar extensiones vamos a ir al <strong>tutorial nº 5 del taller</strong>, concretamente <a href="https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#extensiones" target="_blank">aquí</a></p></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div class="callout callout-note no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Resumen (tutorial nº 5)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>La <strong>quinta parte del taller</strong> se ocupa de la <strong>escritura de posts</strong> para el blog.</p></li>
+<li><p>Los posts <strong>se han de escribir en formato <code>.qmd</code></strong>; por lo tanto, se repasan los fundamentos “teóricos” necesarios para escribir este tipo de documentos.</p></li>
+<li><p>Nos apoyamos en nuestro <strong>conocimiento previo de la sintaxis Rmarkdown</strong>.</p></li>
+<li><p>Se repasan las posibilidades de configurar los documentos por medio de <strong>los 3 YAML’s</strong> que pueden afectar a un documento.</p></li>
+<li><p><strong>Los 3 YAML’s</strong> son: Nivel proyecto (<code>_quarto.yml</code>), nivel carpeta (<code>_metadata.yml</code>) y nivel documento (en el propio encabezamiento del archivo)</p></li>
+<li><p>El <strong>texto</strong> en ficheros <code>.qmd</code> es muy similar al de los documentos <code>.qmd</code>. Aparecen algunos elementos nuevos como los Call-outs.</p></li>
+<li><p>El <strong>código</strong> sí presenta novedades: nueva sintaxis con <code>#|</code> y posibilidad de determinar opciones en el YAML.</p></li>
+<li><p>Repasamos también algunas de las opciones de <strong>layout</strong>.</p></li>
+<li><p>Vimos como instalar y usar <strong>extensiones</strong></p></li>
+<li><p>Para poder escribir en <code>.qmd</code> <strong>hay que practicar</strong>. Vamos a ello</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
 
 <div class="footer footer-default">
 
 </div>
-<aside><ol class="aside-footnotes"><li id="fn3"><p>Además, el layout puede venir afectado por la opción <code>page-layout: custom   #- {article, full, custom}</code></p></li></ol></aside></section></section>
+</section></section>
 
     </div>
   </div>

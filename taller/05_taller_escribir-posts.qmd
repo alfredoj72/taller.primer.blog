@@ -2,6 +2,8 @@
 title: "Escribiendo posts: practicando con Quarto"
 subtitle: "(5ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 toc-title: Tutorial nº 5
+filters:
+   - lightbox
 ---
 
 {{< include ./_includes/_contexto.qmd >}}
@@ -398,9 +400,38 @@ Como no puede ser de otro modo, aún hay más opciones para el layout. Documenta
 <br>
 
 
+
+<br>
+
+## Extensiones
+
+Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en el lenguaje `Lua`. [Aquí](https://quarto.org/docs/extensions/starter-templates.html) la documentación oficial.
+
+Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión "quarto-youtube-embed".
+Con Rmd ponía algún vídeo en mis slides o tutoriales usando un paquete de R (ahora mismo no recuerdo el nombre del pkg). Ahora, con Quarto, podemos hacerlo usando la extensión  "quarto-youtube-embed". [Aquí](https://github.com/sellorm/quarto-youtube-embed) está el repo de la extensión. Veamos cómo.
+
+
+
+{{< include ./_includes/_tt_05_46_tarea-5-04-extensiones.qmd >}}
+
+
+[Aquí](https://github.com/mcanouil/awesome-quarto#extensions) tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están [aquí](https://quarto.org/docs/extensions/listing-filters.html).
+
+Vamos a instalar y usar una nueva extensión, concretamente la extensión "Lightbox". Lo que hace esta extensión es que podamos pinchar en una imagen y ampliarla. [aquí](https://quarto-ext.github.io/lightbox/) un ejemplo de lo que se puede hacer con "Lightbox". Su repo [aquí](https://github.com/quarto-ext/lightbox)
+
+{{< include ./_includes/_tt_05_46_tarea-5-05-extensiones-2.qmd >}}
+
+
+![Mi imagen con Lighbox activado](./imagenes/economia.gif){.lightbox description="El logo-nano de la facultad de Economía de la Universtat de València"
+desc-position="left"}
+
+---
+
 ## Resumen
 
 {{< include ./_includes/_tt_05_14_resumen.qmd >}}
+
+
 
 <br>
 

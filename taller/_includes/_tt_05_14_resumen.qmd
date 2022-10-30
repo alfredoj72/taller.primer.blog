@@ -17,6 +17,8 @@
 
 - Repasamos también algunas de las opciones de **layout**.
 
+- Vimos como instalar y usar **extensiones**
+
 - Para poder escribir en `.qmd` **hay que practicar**. Vamos a ello
 
 :::
