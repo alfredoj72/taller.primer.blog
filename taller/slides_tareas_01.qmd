@@ -581,17 +581,35 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 {{< include ./_includes/_tt_05_45_img-23.qmd >}}
 
-- Hay más opciones para los chunks. Por ejemplo: 
+- Hay **más opciones para los chunks**. Por ejemplo: 
 
     - hacer **folding code** con `#| code-fold: true`  
     
     - si el código es muy largo, puedes usar  `#| code-overflow: wrap`  y `#| code-overflow: scroll`  
     
-    - puedes hacer que se muestre el número de linea con `#| code-line-numbers: true`
+    - puedes hacer que se muestren los **números de linea** con `#| code-line-numbers: true`
     
     
 La documentación oficial la tienes [aquí](https://quarto.org/docs/output-formats/html-code.html).
 
 
 ---
+
+## Layout's
+
+- Además de yaml, texto y chunk, para escribir con Quarto **conviene conocer la estructura o layout de los artículos** que se generan con él.
+
+
+- Las "artículos" tienen un **body**, un **margin** y un área para las **sidebars**, que en nuestro caso contiene un TOC^[Además, el layout puede venir afectado por la opción `page-layout: custom   #- {article, full, custom}`]. 
+
+<br>
+
+- Usando **divs** se puede hacer que alguna sección ocupe un espacio mayor al habitual, mayor al espacio habitualmente reservado para el body.
+
+
+- Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es mejor  verlas en los tutoriales del taller, concretamente [aquí](https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#layout) 
+<br>
+
+Documentación oficial para **article-layout** [aquí](https://quarto.org/docs/authoring/article-layout.html) y para **page-layout** [aquí](https://quarto.org/docs/output-formats/page-layout.html)
+
 

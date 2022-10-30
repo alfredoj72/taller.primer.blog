@@ -11,9 +11,11 @@
 
 -  **Los 3 YAML's** son: Nivel proyecto (`_quarto.yml`), nivel carpeta (`_metadata.yml`) y nivel documento (en el propio encabezamiento del archivo)
 
-- El texto en ficheros `.qmd` es muy similar al de los documentos `.qmd`. Aparecen algunos elementos nuevos que repasaremos en la Práctica
+- El **texto** en ficheros `.qmd` es muy similar al de los documentos `.qmd`. Aparecen algunos elementos nuevos como los Call-outs.
 
-- El código sí presenta novedades: nueva sintaxis (`#|`) y posibilidad de determinar opciones en el YAML.
+- El **código** sí presenta novedades: nueva sintaxis con `#|` y posibilidad de determinar opciones en el YAML.
+
+- Repasamos también algunas de las opciones de **layout**.
 
 - Para poder escribir en `.qmd` **hay que practicar**. Vamos a ello
 
