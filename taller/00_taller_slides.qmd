@@ -32,9 +32,7 @@ footer: |
     #theme: [moon, custom.scss]
 ---
 
-# Bienvenidos al taller!!  🖖:rose:
-
-
+# Bienvenidos al taller!! :vulcan_salute::rose:
 
 ## Estructura del taller {.smaller}
 
@@ -52,15 +50,13 @@ footer: |
 
 3.  Convirtiendo el blog en una **web personal** (5 min)
 
-
 <br>
 
 . . .
 
 4.  Workflow: **creando posts** (5 min)
 
-5.  **Escribiendo** un post **con Quarto** (15 min).   **Práctica** (15 min)
-
+5.  **Escribiendo** un post **con Quarto** (15 min). **Práctica** (15 min)
 
 <br>
 
@@ -71,8 +67,6 @@ footer: |
 . . .
 
 7.  Gestión y **publicación** de la web/blog (5 min)
-
-
 
 # Intro
 
@@ -113,7 +107,7 @@ footer: |
 
 <br>
 
--   ... y, si puede ser, **divertirnos** mientras aprendemos.
+-   ... y, si puede ser, **pasar un buen rato** :slightly_smiling_face: mientras aprendemos
 :::
 
 ## Beneficios de tener un blog {.smaller}
@@ -148,11 +142,11 @@ footer: |
 
 ### **Importante:**
 
-- El blog **no tiene que ser perfecto**. Mejor empezar con un blog sencillo
+-   El blog **no tiene que ser perfecto**. Mejor empezar con un blog sencillo
 
 . . .
 
-- Los posts **tampoco tienen porqué estar perfectos**, así que no hay que tener miedo a escribir!! 
+-   Los posts **tampoco tienen porqué estar perfectos**, así que no hay que tener miedo a escribir!!
 
 ## Ejemplos de blogs (hechos con Quarto) {.smaller}
 
@@ -407,4 +401,4 @@ knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_yaml.
 
 {{< youtube yvi5uXQMvu4 >}}
 
-# Comenzamos el taller !!!! :computer::crossed_fingers: :muscle: :muscle:
+# Comenzamos el taller !!!! :computer::crossed_fingers: 💪🏼 💪🏼 

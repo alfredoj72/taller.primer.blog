@@ -33,7 +33,7 @@ title-block-banner-color: red
 
 - `freeze (linea 5): {false, true, auto}` controla la ejecución de los .qmd durante el procesado completo del Qproject. Documentación [aquí](https://quarto.org/docs/projects/code-execution.html#freeze).
 
-- `title-block-style (linea 12):  {default, plain, none}`modifica el estilo del title-block
+- `title-block-style (linea 12):  {default, plain, none}` modifica el estilo del title-block
 
 - `title-block-banner (linea 16): {true, false, "#FFDDFF",  "image.jpg"}` controla la presencia y apariencia de los "banners" para dar más importancia a los títulos de los posts. Puedes controlar el color, incluso poner una imagen. Documentación [aquí](https://quarto.org/docs/authoring/title-blocks.html#title-banners). 
 

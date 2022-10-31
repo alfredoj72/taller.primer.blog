@@ -129,10 +129,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/styles.css">
 <meta property="og:title" content="Mi primer blog con Quarto (WIP) - Tuneado del blog">
-<meta property="og:description" content="(7ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
+<meta property="og:description" content="(6ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
 <meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
 <meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Tuneado del blog">
-<meta name="twitter:description" content="(7ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
+<meta name="twitter:description" content="(6ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -209,11 +209,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tutorial nº 7</h2>
+    <h2 id="toc-title">Tutorial nº 6</h2>
    
   <ul>
-  <li><a href="#nivel-proyecto-_quarto.yml" id="toc-nivel-proyecto-_quarto.yml" class="nav-link active" data-scroll-target="#nivel-proyecto-_quarto.yml"><span class="toc-section-number">0.1</span>  Nivel proyecto (<code>_quarto.yml</code>)</a></li>
-  <li><a href="#sass" id="toc-sass" class="nav-link" data-scroll-target="#sass"><span class="toc-section-number">1</span>  SASS</a></li>
+  <li><a href="#sass" id="toc-sass" class="nav-link active" data-scroll-target="#sass"><span class="toc-section-number">1</span>  SASS</a></li>
   <li><a href="#colorines-css" id="toc-colorines-css" class="nav-link" data-scroll-target="#colorines-css"><span class="toc-section-number">2</span>  colorines css</a></li>
   <li><a href="#mas" id="toc-mas" class="nav-link" data-scroll-target="#mas"><span class="toc-section-number">3</span>  Mas</a></li>
   </ul>
@@ -228,7 +227,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Tuneado del blog</h1>
-<p class="subtitle lead">(7ª parte del taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)</p>
+<p class="subtitle lead">(6ª parte del taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)</p>
 </div>
 
 
@@ -284,20 +283,6 @@ Contexto
 </div>
 </div>
 </div>
-<section id="nivel-proyecto-_quarto.yml" class="level3" data-number="0.1">
-<h3 data-number="0.1" class="anchored" data-anchor-id="nivel-proyecto-_quarto.yml"><span class="header-section-number">0.1</span> Nivel proyecto (<code>_quarto.yml</code>)</h3>
-<ul>
-<li><p>lenguaje</p></li>
-<li><p>Todos los Qprojects contienen un archivo de configuración llamado <code>_quarto.yml</code>: todo documento que se procese (render) dentro del directorio del proyecto heredará automáticamente los metadatos definidos en <code>_quarto.yml</code>.</p></li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> docs <span class="co">#-- la carpeta donde se redirige el output (.html)</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># execute-dir: project #-- the working directory for rendering files within a project is the directory of the file itself. If you prefer to use the main project directory instead, you can add the execute-dir: project https://quarto.org/docs/projects/code-execution.html#working-dir</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
 <section id="sass" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="sass"><span class="header-section-number">1</span> SASS</h2>
 <ul>
@@ -321,23 +306,23 @@ Contexto
 <li>Otra vez se trata de modificar el archivo <code>index.qmd</code> para dejarlo como:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#title: "Mi listado de posts"  #- yo casi prefiero que no ponga nada</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  contents<span class="sc">:</span> posts</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-listings.html#sorting-items</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span> </span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#-  https://quarto.org/docs/websites/website-listings.html#listing-types</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> default  <span class="co">#- opciones: {default, grid, table}</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  categories<span class="sc">:</span> true</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  date<span class="sc">-</span>format<span class="sc">:</span> long</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> imagenes<span class="sc">/</span>thumbnail.jpg</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#title: "Mi listado de posts"  #- yo casi prefiero que no ponga nada</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  contents<span class="sc">:</span> posts</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-listings.html#sorting-items</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span> </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#-  https://quarto.org/docs/websites/website-listings.html#listing-types</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> default  <span class="co">#- opciones: {default, grid, table}</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  categories<span class="sc">:</span> true</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  date<span class="sc">-</span>format<span class="sc">:</span> long</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> imagenes<span class="sc">/</span>thumbnail.jpg</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <pre><code>

@@ -4,9 +4,11 @@
 
 - Se trata de cambiar las opciones predefinidas de tu archivo **about.qmd**
 
-- Estaría bien que pusieses una foto tuya
+- Estaría bien que pusieses una foto tuya.
 
-- Puedes poner texto y dar algo de formato a la página
+- POner los enlaces a tus redes sociales y email
+
+- Puedes adaptar el texto y dar algo de formato a la página.
 
 
 ::: {layout="[45,-10,45]"}
@@ -32,6 +34,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com
+    - icon: envelope
+      text: email
+      url: "mailto:<tu-mail@uv.es>"
 ---
 
 ```

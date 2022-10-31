@@ -1,12 +1,11 @@
 ::: {.callout-important icon="false"}
 #### Tarea 2.6: Modificar el contenido de `about.qmd`
 
-- Antes he dicho que solo modificaríamos la linea 5, pero mejor si lo complementamos con algunas acciones más, como el tamaño de la foto y su forma, por eso he añadido 2 lineas tras `template:trestles`.
+-   Antes he dicho que solo modificaríamos la linea 5, pero mejor si lo complementamos con algunas acciones más, como el tamaño de la foto y su forma, por eso he añadido 2 lineas tras `template:trestles`.
 
-- Lógicamente estaría bien que sustituyeses la foto: se trata de cambiar `profile.jpg`, en la linea 3, por la ruta a tu foto.
+-   Lógicamente estaría bien que sustituyeses la foto: se trata de cambiar `profile.jpg`, en la linea 3, por la ruta a tu foto.
 
-
-- Abajo tienes el código:
+-   Abajo tienes el código:
 
 ```{r, eval = FALSE}
 ---
@@ -27,7 +26,11 @@ about:
       text: Github
       href: https://github.com
 ---
+        
+Hola, soy "Yo mismo". 
+      
+Estoy asistiendo al taller **Mi primer blog con Quarto** impartido en el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target="_blank"} celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.
+      
+En un ratito ya piloto Quarto y genero my blog!!! 🙂
 ```
-
 :::
-

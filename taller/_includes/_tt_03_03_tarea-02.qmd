@@ -3,7 +3,7 @@
 
 - Para que `blog.qmd`, la página que contiene el listado de posts, se muestre en nuestra web hay que refrenciarlo/incluirlo en `_quarto.yml`
 
-- Antes del tutorial 5 la sección de `_quarto.yml` que hacía referencia a la estructura de la web tenía esta pinta: 
+- Antes de la Práctica del tutorial 2, el principio de la sección de `_quarto.yml` que hacía referencia a la estructura de la web, tenía esta pinta: 
 
 ```{r, eval = FALSE}
 #| code-overflow: wrap   #- {scroll, wrap}
@@ -29,7 +29,7 @@ website:
         href: docencia.qmd
 ```
 
-- Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están referenciando al fichero `about.qmd`. Por ejemplo podríamos dejar las lineas 8 y 9 como se ve abajo:
+- Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están referenciando al fichero `about.qmd`. Por ejemplo podríamos **dejar las lineas 8 y 9 como se ve abajo**:
 
 
 ```{r, eval = FALSE}

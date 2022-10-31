@@ -1,34 +1,12 @@
 ---
 title: "Tuneado del blog"
-subtitle: "(7ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
+subtitle: "(6ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 title-block-banner-color : "#FFDDFF"
-toc-title: Tutorial nº 7
+toc-title: Tutorial nº 6
 ---
 
 
 {{< include ./_includes/_contexto.qmd >}}
-
-
-### Nivel proyecto (`_quarto.yml`) 
-
-- lenguaje
-
-
-- Todos los Qprojects contienen un archivo de configuración  llamado `_quarto.yml`: todo documento que se procese (render) dentro del directorio del proyecto heredará automáticamente los metadatos definidos en `_quarto.yml`.
-
-
-```{r, eval = FALSE}
-# 1/ Opciones referentes al proyecto ----------------------------
-project:
-  type: website
-  output-dir: docs #-- la carpeta donde se redirige el output (.html)
-  # execute-dir: project #-- the working directory for rendering files within a project is the directory of the file itself. If you prefer to use the main project directory instead, you can add the execute-dir: project https://quarto.org/docs/projects/code-execution.html#working-dir
-
-```
-
-
-
-
 
 
 

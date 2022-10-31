@@ -86,7 +86,6 @@ Los **archivos importantes** ahora son 3:
 {{< include ./_includes/_tt_01_06_extensiones.qmd >}}
 
 
-- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en Internet.
 
 <br>
 
@@ -136,6 +135,9 @@ Los **archivos importantes** ahora son 3:
 
 {{< include ./_includes/_tt_01_10_tarea-04.qmd >}}
 
+
+- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en Internet.
+
 <br>
 
 {{< include ./_includes/_tt_01_11_extensiones-02.qmd >}}
@@ -170,8 +172,8 @@ Los **archivos importantes** ahora son 3:
 
 {{< include ./_includes/_tt_02_03_tarea-01.qmd >}} 
 
-- **linea 5**: título del blog
-- **lineas 17-19**: añadimos la pestaña "Docencia" a la izquierda de la navbar
+- **linea 5**: cambiamos el título del blog
+- **lineas 17-19**: añadimos la página/pestaña "Docencia" a la izquierda de la navbar
 - **lineas 21-26**: modificamos el theme ...,  **CSS**, ....
 
 
@@ -241,7 +243,7 @@ Los **archivos importantes** ahora son 3:
 <br>
 
 
-- [Aquí](https://pjperez.quarto.pub/blog_prueba_01/) puedes ver **como quedaría el blog** tras haber modificado `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
+- [Aquí](https://pjperez.quarto.pub/blog_pruebas_01/) puedes ver **como quedaría el blog** tras haber modificado `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
 
 
 ---
@@ -460,7 +462,7 @@ Como ves, se añadirían elementos como:
 
 - lineas 24 y 25: Hemos añadido un elemento a la `navbar` concretamente el icono `Home`. La documentación oficial para elementos de navegación está [aquí](https://quarto.org/docs/websites/website-navigation.html)
 
-- linea 4: añadimos un como un favicon
+- linea 4: añadimos un favicon
 
 - lineas 5 y 6: el url de la web y del repo en Github 
 

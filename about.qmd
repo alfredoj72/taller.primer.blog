@@ -14,7 +14,7 @@ about:
     - icon: twitter
       href: https://twitter.com/pjpv4444
     - icon: envelope
-      url: "mailto:<tu-mail@uv.es>"
+      url: "mailto:<pedro.j.perez@uv.es>"
 ---
 
 Mi nombre es Pedro J. Pérez. Soy **profesor** del departamento de Análisis Económico de la **Universitat de València**. Utilizo R en mi docencia e investigación, [aquí](https://perezp44.github.io/intro-ds-22-23-web/) uno de mis cursos. Me gusta aprender, jugar y trastear con `r fontawesome::fa(name = "r-project", fill = "steelblue")`; vamos, que aún soy un **entusiasta de R**. Me divierto!!

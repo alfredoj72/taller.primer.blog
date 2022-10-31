@@ -8,7 +8,6 @@ Para publicar nuestro blog en Quartopub sólo hay que:
   ```{bash, eval = FALSE}
   #| code-line-numbers: false
   #| code-fold: false
-  #- desde la Terminal
   quarto publish quarto-pub
   ```
 

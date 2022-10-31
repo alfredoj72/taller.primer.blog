@@ -563,9 +563,6 @@
 </div>
 </div>
 </div>
-<ul>
-<li>Puedes ver <a href="https://pjperez.quarto.pub/blog_prueba_00/">aquí</a>, como quedaría el blog una vez alojado en Internet.</li>
-</ul>
 <p><br></p>
 </section>
 <section id="contenido-del-qproject-tras-procesar-el-blog" class="slide level2">
@@ -662,8 +659,7 @@
 <ul>
 <li><p>teclear en la <strong>Terminal</strong> de RStudio (panel inferior-izquierda) lo siguiente:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- desde la Terminal</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></li>
 <li><p>Tras ejecutar lo anterior, se te pedirá que autorices en la Terminal.</p></li>
 <li><p>Después se abrirá el navegador, tendrás que logearte en <code>Quarto Pub</code> y volverás a autorizar. Además te preguntarán el nombre del blog.</p></li>
@@ -671,6 +667,9 @@
 </div>
 </div>
 </div>
+<ul>
+<li>Puedes ver <a href="https://pjperez.quarto.pub/blog_prueba_00/">aquí</a>, como quedaría el blog una vez alojado en Internet.</li>
+</ul>
 <p><br></p>
 <div class="callout callout-warning no-icon callout-captioned callout-style-default">
 <div class="callout-body">
@@ -731,7 +730,7 @@
 </div>
 <div class="callout-content">
 <ul>
-<li><p>En esta tercera parte del taller vamos a <strong>mejorar/tunear un poco nuestro blog</strong>. Nos servirá para afianzar nuestro conocimiento de la estructura de ficheros del blog</p></li>
+<li><p>En esta segunda parte del taller vamos a <strong>mejorar/tunear un poco nuestro blog</strong>. Nos servirá para afianzar nuestro conocimiento de la estructura de ficheros del blog</p></li>
 <li><p>En este tutorial nº 2, para hacer un <strong>tuneado básico</strong> del blog, modificaremos 3 archivos, concretamente los archivos: <code>_quarto.yml</code>, <code>index.qmd</code> y <code>about.qmd</code>. Iremos archivo por archivo</p></li>
 <li><p>Finalmente modificaremos (un poco) el archivo <code>styles.css</code></p></li>
 <li><p>En el tutorial nº 6 se profundiza en el tuneado del blog</p></li>
@@ -807,8 +806,8 @@
 </div>
 </div>
 <ul>
-<li><strong>linea 5</strong>: título del blog</li>
-<li><strong>lineas 17-19</strong>: añadimos la pestaña “Docencia” a la izquierda de la navbar</li>
+<li><strong>linea 5</strong>: cambiamos el título del blog</li>
+<li><strong>lineas 17-19</strong>: añadimos la página/pestaña “Docencia” a la izquierda de la navbar</li>
 <li><strong>lineas 21-26</strong>: modificamos el theme …, <strong>CSS</strong>, ….</li>
 </ul>
 </section>
@@ -988,7 +987,13 @@
 <span id="cb8-15"><a href="#cb8-15"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
 <span id="cb8-16"><a href="#cb8-16"></a>      text<span class="sc">:</span> Github</span>
 <span id="cb8-17"><a href="#cb8-17"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
-<span id="cb8-18"><a href="#cb8-18"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-18"><a href="#cb8-18"></a><span class="sc">---</span></span>
+<span id="cb8-19"><a href="#cb8-19"></a>        </span>
+<span id="cb8-20"><a href="#cb8-20"></a>Hola, soy <span class="st">"Yo mismo"</span>. </span>
+<span id="cb8-21"><a href="#cb8-21"></a>      </span>
+<span id="cb8-22"><a href="#cb8-22"></a>Estoy asistiendo al taller <span class="sc">**</span>Mi primer blog con Quarto<span class="sc">**</span> impartido en el [I Congreso <span class="sc">&amp;</span> XII Jornadas de Usuarios de R](http<span class="sc">:</span><span class="er">//</span>r<span class="sc">-</span>es.org<span class="sc">/</span>12jr<span class="sc">/</span>){target<span class="ot">=</span><span class="st">"_blank"</span>} celebradas en Córdoba (Spain), <span class="dv">23-25</span> de noviembre de <span class="fl">2022.</span></span>
+<span id="cb8-23"><a href="#cb8-23"></a>      </span>
+<span id="cb8-24"><a href="#cb8-24"></a>En un ratito ya piloto Quarto y genero my blog<span class="sc">!!!</span> 🙂</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1043,7 +1048,7 @@
 </div>
 <p><br></p>
 <ul>
-<li><a href="https://pjperez.quarto.pub/blog_prueba_01/">Aquí</a> puedes ver <strong>como quedaría el blog</strong> tras haber modificado <code>_quarto.yml</code>, <code>index.qmd</code>, <code>about.qmd</code> y <code>styles.css</code>.</li>
+<li><a href="https://pjperez.quarto.pub/blog_pruebas_01/">Aquí</a> puedes ver <strong>como quedaría el blog</strong> tras haber modificado <code>_quarto.yml</code>, <code>index.qmd</code>, <code>about.qmd</code> y <code>styles.css</code>.</li>
 </ul>
 </section>
 <section id="práctica-tutorial-nº-2" class="slide level2" data-background-color="#D3F3E7">
@@ -1151,8 +1156,9 @@
 <div class="callout-content">
 <ul>
 <li><p>Se trata de cambiar las opciones predefinidas de tu archivo <strong>about.qmd</strong></p></li>
-<li><p>Estaría bien que pusieses una foto tuya</p></li>
-<li><p>Puedes poner texto y dar algo de formato a la página</p></li>
+<li><p>Estaría bien que pusieses una foto tuya.</p></li>
+<li><p>POner los enlaces a tus redes sociales y email</p></li>
+<li><p>Puedes adaptar el texto y dar algo de formato a la página.</p></li>
 </ul>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -1184,7 +1190,10 @@
 <span id="cb11-15"><a href="#cb11-15"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
 <span id="cb11-16"><a href="#cb11-16"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Github</span></span>
 <span id="cb11-17"><a href="#cb11-17"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com</span></span>
-<span id="cb11-18"><a href="#cb11-18"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-18"><a href="#cb11-18"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> envelope</span></span>
+<span id="cb11-19"><a href="#cb11-19"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> email</span></span>
+<span id="cb11-20"><a href="#cb11-20"></a><span class="at">      </span><span class="fu">url</span><span class="kw">:</span><span class="at"> </span><span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
+<span id="cb11-21"><a href="#cb11-21"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1239,7 +1248,7 @@
 <div class="callout-content">
 <ul>
 <li><p>Para que <code>blog.qmd</code>, la página que contiene el listado de posts, se muestre en nuestra web hay que refrenciarlo/incluirlo en <code>_quarto.yml</code></p></li>
-<li><p>Antes del tutorial 5 la sección de <code>_quarto.yml</code> que hacía referencia a la estructura de la web tenía esta pinta:</p></li>
+<li><p>Antes de la Práctica del tutorial 2, el principio de la sección de <code>_quarto.yml</code> que hacía referencia a la estructura de la web, tenía esta pinta:</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12" data-code-line-numbers="true"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
@@ -1262,7 +1271,7 @@
 <span id="cb12-18"><a href="#cb12-18"></a>        href<span class="sc">:</span> docencia.qmd</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li>Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están referenciando al fichero <code>about.qmd</code>. Por ejemplo podríamos dejar las lineas 8 y 9 como se ve abajo:</li>
+<li>Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están referenciando al fichero <code>about.qmd</code>. Por ejemplo podríamos <strong>dejar las lineas 8 y 9 como se ve abajo</strong>:</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13" data-code-line-numbers="true"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
@@ -1700,7 +1709,7 @@
 <ul>
 <li><p>lineas 28 a 37: se añade un pie de página al blog</p></li>
 <li><p>lineas 24 y 25: Hemos añadido un elemento a la <code>navbar</code> concretamente el icono <code>Home</code>. La documentación oficial para elementos de navegación está <a href="https://quarto.org/docs/websites/website-navigation.html">aquí</a></p></li>
-<li><p>linea 4: añadimos un como un favicon</p></li>
+<li><p>linea 4: añadimos un favicon</p></li>
 <li><p>lineas 5 y 6: el url de la web y del repo en Github</p></li>
 <li><p>lineas 7-10: elementos de redes sociales. La documentación oficial para estos elementos esta <a href="https://quarto.org/docs/websites/website-tools.html">aquí</a></p></li>
 </ul>
@@ -2288,7 +2297,7 @@
 <p><strong>IMPORTANTE</strong>: las opciones que especifiques en <code>_metadata.yml</code> afectarán a todos los .qmd de la carpeta.</p>
 <ul>
 <li><p><code>freeze (linea 5): {false, true, auto}</code> controla la ejecución de los .qmd durante el procesado completo del Qproject. Documentación <a href="https://quarto.org/docs/projects/code-execution.html#freeze">aquí</a>.</p></li>
-<li><p><code>title-block-style (linea 12):  {default, plain, none}</code>modifica el estilo del title-block</p></li>
+<li><p><code>title-block-style (linea 12):  {default, plain, none}</code> modifica el estilo del title-block</p></li>
 <li><p><code>title-block-banner (linea 16): {true, false, "#FFDDFF",  "image.jpg"}</code> controla la presencia y apariencia de los “banners” para dar más importancia a los títulos de los posts. Puedes controlar el color, incluso poner una imagen. Documentación <a href="https://quarto.org/docs/authoring/title-blocks.html#title-banners">aquí</a>.</p></li>
 <li><p><code>title-block-banner-color(linea 19): {black, "#FFDDFF"}</code> controla el color del título del post</p></li>
 </ul>
