@@ -655,21 +655,21 @@
     "href": "materiales.html",
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "",
-    "text": "El taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas. En la sección Setup tienes instrucciones para instalar el software necesario para el taller"
+    "text": "Contexto\n\n\n\n\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas.\nEn la sección Setup tienes instrucciones para instalar el software necesario para el taller\nEl taller consta de una introducción y 7 secciones. Cada sección tiene un tutorial asociado, que sirve de apoyo, pero durante el taller solo se utilizarán 2 conjuntos de slides."
   },
   {
     "objectID": "materiales.html#materiales-para-el-taller",
     "href": "materiales.html#materiales-para-el-taller",
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "Materiales para el Taller",
-    "text": "Materiales para el Taller\n\nSlides para la Intro\n\n\nSlides para la presentación (se utilizarán para presentar las restantes secciones del taller)"
+    "text": "Materiales para el Taller\n\nSlides para la Intro\n\n\nSlides para el Taller (para las restantes secciones)"
   },
   {
     "objectID": "materiales.html#estructura-del-taller",
     "href": "materiales.html#estructura-del-taller",
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "Estructura del taller",
-    "text": "Estructura del taller\nEl taller consta de una introducción y 7 secciones. Cada una de ellas tiene un tutorial asociado.\n\n0. Introducción (15 min)\n\n\n1. Creación de un blog básico: mi blog en 3 minutos (10 min). Tutorial nº 1\n\n\n2. Tuneado básico del blog (15 min + 15 min de Práctica). Tutorial nº 2\n\n\n3. Convirtiendo el blog en una web académica (5 min). Tutorial nº 3\n\n\n4. Workflow: ¿cómo crear un post? (5 min). Tutorial nº 4\n\n\n5. Escribiendo posts con Quarto (15 min + 15 min de Práctica). Tutorial nº 5\n\n\n6. Tuneado del blog (15 min). Tutorial nº 6\n\n\n7. Opciones de alojamiento (5 min). Tutorial nº 7\n \n\nSeguramente usaremos esta Etherpad."
+    "text": "Estructura del taller\n(El taller consta de una introducción y 7 secciones)\n\n0. Introducción (15 min)\n\n\n1. Creación de un blog básico: mi blog en 3 minutos (10 min) [tutorial 1]\n\n\n2. Tuneado básico del blog (15 min + 15 min de Práctica) [tutorial 2]\n\n\n3. Convirtiendo el blog en una web académica (5 min) [tutorial 3]\n\n\n4. Workflow: ¿cómo crear un post? (5 min) [tutorial 4]\n\n\n5. Escribiendo posts con Quarto (15 min + 15 min de Práctica) [tutorial 5]\n\n\n6. Tuneado del blog (15 min) [tutorial 6]\n\n\n7. Opciones de alojamiento (5 min) [tutorial 7]\n \n\nSeguramente usaremos esta Etherpad."
   },
   {
     "objectID": "about.html",
