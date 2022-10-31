@@ -238,7 +238,7 @@ Además de los elementos de escritura que nos ofrece la sintaxis básica de `mar
 <br>
 
 
-El [editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/) facilita la introducción de estos elementos en tus documentos.
+El [editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/) facilita la introducción de estos elementos en tus documentos. En [esta charla](https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide) de Mine Çetinkaya-Rundel se aprecia fácilmente la **utilidad del editor visual**.
 
 
 <br>
