@@ -20,14 +20,14 @@ about:
 
 # **Taller**
 
-Bienvenidos a la web con los materiales para el taller **Mi primer blog con Quarto** impartido en el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target="_blank"} celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.
+Bienvenidos a la web del taller **Mi primer blog con Quarto** impartido en el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target="_blank"} celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.
 
 <br>
 
 El **ponente** soy yo, [Pedro J. Pérez](about.qmd).
 
 <br>
-Los materiales para seguir el taller están en [Materiales](materiales.qmd). Para seguir el taller hay que tener acceso a R, RStudio y Quarto. En [Setup](setup.qmd) tienes las instrucciones de instalación.
+Los materiales para seguir el taller están en [Taller](materiales.qmd). Para seguir el taller hay que tener acceso a R, RStudio y Quarto. En [Setup](setup.qmd) tienes las instrucciones de instalación.
 
 
 

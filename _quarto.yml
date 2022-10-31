@@ -24,7 +24,7 @@ website:
       - icon: house-door
         href: index.html
     right:
-      - text: "Materiales"
+      - text: "Taller"
         href: materiales.qmd
       - setup.qmd
       - text: "Recursos"
