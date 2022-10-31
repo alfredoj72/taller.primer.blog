@@ -100,5 +100,23 @@
   },
   "posts/ejemplo-de-post-02.qmd": {
     "ejemplo-de-post-02.html": "6bec7e0e"
+  },
+  "taller/01_taller_crear-blog-basico.qmd": {
+    "01_taller_crear-blog-basico.html": "dd7faa04"
+  },
+  "taller/03_taller_convertir-en-web.qmd": {
+    "03_taller_convertir-en-web.html": "9137ba3d"
+  },
+  "taller/00_taller_slides.qmd": {
+    "00_taller_slides.html": "4d5c649e"
+  },
+  "taller/07_taller_alojamiento.qmd": {
+    "07_taller_alojamiento.html": "ee94225e"
+  },
+  "taller/02_taller_tuneado-basico.qmd": {
+    "02_taller_tuneado-basico.html": "93149a45"
+  },
+  "taller/06_taller_tuneado-del-blog.qmd": {
+    "06_taller_tuneado-del-blog.html": "4809159d"
   }
 }

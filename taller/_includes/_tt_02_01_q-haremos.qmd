@@ -1,9 +1,11 @@
 ::: {.callout-tip collapse="false" appearance="default" icon="false"}
 ## ¿Qué haremos en este tutorial?
 
-- Veremos de forma rápida el  **proceso de creación** y la **estructura de ficheros** de un blog creado con Quarto. 
+-   En esta tercera parte del taller vamos a **mejorar/tunear un poco nuestro blog**. Nos servirá para afianzar nuestro conocimiento de la estructura de ficheros del blog
 
-- Alojaremos el blog en [Quarto Pub](https://quartopub.com). 
+-   En este tutorial nº 2, para hacer un **tuneado básico** del blog, modificaremos 3 archivos, concretamente los archivos: `_quarto.yml`, `index.qmd` y `about.qmd`. Iremos archivo por archivo
 
-- Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller.
+- Finalmente modificaremos (un poco) el archivo `styles.css`
+
+- En el tutorial nº 6 se profundiza en el tuneado del blog
 :::

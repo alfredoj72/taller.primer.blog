@@ -1,7 +1,7 @@
 ---
 title: "Workflow: ¿cómo crear un post?"
-subtitle: "(4ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
-toc-title: Tutorial nº 4
+subtitle: "(3ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
+toc-title: Tutorial nº 3
 ---
 
 {{< include ./_includes/_contexto.qmd >}}
@@ -10,15 +10,15 @@ toc-title: Tutorial nº 4
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
 ## Recapitulación
 
--   En esta cuarta parte del taller veremos como crear nuevos posts para el blog.
+-   En esta tercera parte del taller veremos como crear nuevos posts para el blog.
 
 -   Las anteriores secciones del taller son:
 
-    1. **Intro**: se presenta el taller
+    0. **Intro**: se presenta el taller
 
-    2. **Creación de un blog (básico) con Quarto**: en la segunda parte del taller vimos como crear y alojar un **blog básico** con RStudio y Quarto.
+    1. **Creación de un blog (básico) con Quarto**: vimos como crear y alojar un **blog básico** con RStudio y Quarto.
     
-    3. **Tuneado básico del blog**. Modificamos ligeramente los ficheros `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
+    2. **Tuneado básico del blog**. Modificamos ligeramente los ficheros `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
 :::
 
 

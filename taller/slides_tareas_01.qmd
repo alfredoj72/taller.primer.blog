@@ -43,28 +43,28 @@ css: /assets/styles_slides_tareas.css
 
 <br>
 
-{{< include ./_includes/_tt_02_02_3-formas-seguir.qmd >}}
+{{< include ./_includes/_tt_01_02_3-formas-seguir.qmd >}}
 
 <br>
 
-# 2. Creación de un blog básico con Quarto  {background-color="#EEBF8B"}
+# 1. Creación de un blog básico con Quarto  {background-color="#EEBF8B"}
 
- (2ª parte del tutorial)
+ (1ª parte del tutorial)
  
- {{< include ./_includes/_tt_02_01_q-haremos.qmd >}}
+ {{< include ./_includes/_tt_01_01_q-haremos.qmd >}}
 
 
 
 --- 
 
-{{< include ./_includes/_tt_02_03_tarea_01.qmd >}}
+{{< include ./_includes/_tt_01_03_tarea_01.qmd >}}
 
 
 ---
 
 ## Contenido del Qproject
 
-{{< include ./_includes/_tt_02_04_estructura-Qproject.qmd >}}
+{{< include ./_includes/_tt_01_04_estructura-Qproject.qmd >}}
 
  
 Los **archivos importantes** ahora son 3:
@@ -80,10 +80,10 @@ Los **archivos importantes** ahora son 3:
 
 ---
 
-{{< include ./_includes/_tt_02_05_generacion-blog.qmd >}}
+{{< include ./_includes/_tt_01_05_generacion-blog.qmd >}}
 
 
-{{< include ./_includes/_tt_02_06_extensiones.qmd >}}
+{{< include ./_includes/_tt_01_06_extensiones.qmd >}}
 
 
 - Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en Internet.
@@ -94,7 +94,7 @@ Los **archivos importantes** ahora son 3:
 
 ## Contenido del Qproject (tras procesar el blog)
 
-{{< include ./_includes/_tt_02_07_estructura-02.qmd >}}
+{{< include ./_includes/_tt_01_07_estructura-02.qmd >}}
 
 
 - Se han creado 2 subcarpetas: `_site` y `_freeze`
@@ -115,7 +115,7 @@ Los **archivos importantes** ahora son 3:
 - El archivo `index.html` ha sido generado por el fichero `index.qmd`. 
 
 
-{{< include ./_includes/_tt_02_08_tarea-03.qmd >}}
+{{< include ./_includes/_tt_01_08_tarea-03.qmd >}}
 
 <br>
 
@@ -125,7 +125,7 @@ Los **archivos importantes** ahora son 3:
 
 - El archivo  `index.qmd` genera `index.html`, la página principal (o Home) de nuestro blog
 
-{{< include ./_includes/_tt_02_09_landing-page.qmd >}}
+{{< include ./_includes/_tt_01_09_landing-page.qmd >}}
 
 <br>
 
@@ -134,26 +134,26 @@ Los **archivos importantes** ahora son 3:
 
 ## Alojando el blog  
 
-{{< include ./_includes/_tt_02_10_tarea-04.qmd >}}
+{{< include ./_includes/_tt_01_10_tarea-04.qmd >}}
 
 <br>
 
-{{< include ./_includes/_tt_02_11_extensiones-02.qmd >}}
+{{< include ./_includes/_tt_01_11_extensiones-02.qmd >}}
 
 <br>
 
 ---
 
-{{< include ./_includes/_tt_02_12_resumen.qmd >}}
+{{< include ./_includes/_tt_01_12_resumen.qmd >}}
 
 <br>
 
 
-# 3. Tuneado básico del blog  {background-color="#EEBF8B"}
+# 2. Tuneado básico del blog  {background-color="#EEBF8B"}
 
-(3ª parte del tutorial)
+(2ª parte del tutorial)
 
-{{< include ./_includes/_tt_03_01_q-haremos.qmd >}}
+{{< include ./_includes/_tt_02_01_q-haremos.qmd >}}
 
 <br>
 
@@ -161,14 +161,14 @@ Los **archivos importantes** ahora son 3:
 
 ## Archivo `_quarto.yml` {.smaller}
 
-{{< include ./_includes/_tt_03_02_quarto-yaml.qmd >}}
+{{< include ./_includes/_tt_02_02_quarto-yaml.qmd >}}
 
 
 ---  
 
 ## 
 
-{{< include ./_includes/_tt_03_03_tarea-01.qmd >}} 
+{{< include ./_includes/_tt_02_03_tarea-01.qmd >}} 
 
 - **linea 5**: título del blog
 - **lineas 17-19**: añadimos la pestaña "Docencia" a la izquierda de la navbar
@@ -177,11 +177,11 @@ Los **archivos importantes** ahora son 3:
 
 ---
 
-{{< include ./_includes/_tt_03_04_tarea-02.qmd >}}
+{{< include ./_includes/_tt_02_04_tarea-02.qmd >}}
 
-{{< include ./_includes/_tt_03_05_tarea-03.qmd >}}
+{{< include ./_includes/_tt_02_05_tarea-03.qmd >}}
 
-{{< include ./_includes/_tt_03_06_tarea-04.qmd >}}
+{{< include ./_includes/_tt_02_06_tarea-04.qmd >}}
 
 
 
@@ -189,7 +189,7 @@ Los **archivos importantes** ahora son 3:
 
 ## Archivo `index.qmd`
 
-{{< include ./_includes/_tt_03_07_archivo-index.qmd >}}
+{{< include ./_includes/_tt_02_07_archivo-index.qmd >}}
 
 - De momento, **solo vamos a hacer cambios en la segunda linea**: cambiaremos el título.
 
@@ -199,7 +199,7 @@ Los **archivos importantes** ahora son 3:
 
 ---
 
-{{< include ./_includes/_tt_03_08_tarea-05.qmd >}}
+{{< include ./_includes/_tt_02_08_tarea-05.qmd >}}
 
 <br>
 
@@ -207,7 +207,7 @@ Los **archivos importantes** ahora son 3:
 
 ## Archivo `about.qmd` {.smaller}
 
-{{< include ./_includes/_tt_03_09_archivo-about.qmd >}}
+{{< include ./_includes/_tt_02_09_archivo-about.qmd >}}
 
 
 - Si en el `yaml` se activa la opción `about:` (linea 4), entonces puedes usar unas **plantillas** que Quarto tiene disponibles para **crear About's pages**.
@@ -220,7 +220,7 @@ Los **archivos importantes** ahora son 3:
 
 ---
 
-{{< include ./_includes/_tt_03_10_tarea-06.qmd >}}
+{{< include ./_includes/_tt_02_10_tarea-06.qmd >}}
 
 <br>
 
@@ -228,15 +228,15 @@ Los **archivos importantes** ahora son 3:
 
 ## Archivo `styles.css`
 
-- Puedes cambiar la apariencia estética del blog usando los `themes` predefinidos en Quarto o puedes usar el archivo `styles.css`^[Veremos en el tutorial nº 8 que también podremos usar archivos `.scss`]
+- Puedes cambiar la apariencia estética del blog usando los `themes` predefinidos en Quarto o puedes usar el archivo `styles.css`^[Veremos en el tutorial nº 6 que también podremos usar archivos `.scss`]
 
-{{< include ./_includes/_tt_03_11_tarea-07.qmd >}}
+{{< include ./_includes/_tt_02_11_tarea-07.qmd >}}
 
 <br>
 
 ---
 
-{{< include ./_includes/_tt_03_12_resumen.qmd >}}
+{{< include ./_includes/_tt_02_12_resumen.qmd >}}
 
 <br>
 
@@ -246,7 +246,7 @@ Los **archivos importantes** ahora son 3:
 
 ---
 
-## Práctica (tutorial nº 3)  {background-color="#D3F3E7"}
+## Práctica (tutorial nº 2)  {background-color="#D3F3E7"}
 
 En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes el blog a tus necesidades y gustos**. Por ejemplo puedes probar:
 
@@ -264,20 +264,48 @@ En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes e
 
 ---
 
-{{< include ./_includes/_tt_03_13_practica-01.qmd >}}
+{{< include ./_includes/_tt_02_13_practica-01.qmd >}}
 
 ---
 
-{{< include ./_includes/_tt_03_13_practica-02.qmd >}}
+{{< include ./_includes/_tt_02_13_practica-02.qmd >}}
 
 
 ---
 
-{{< include ./_includes/_tt_03_13_practica-03.qmd >}}
+{{< include ./_includes/_tt_02_13_practica-03.qmd >}}
 
 <br>
 
-# 4.  Workflow: ¿cómo crear un post?  {background-color="#EEBF8B"}
+
+
+# 3. Convertir el blog en web personal  {background-color="#EEBF8B"}
+
+(3ª parte del tutorial)
+
+{{< include ./_includes/_tt_03_01_q-haremos.qmd >}}
+
+<br>
+
+---
+
+{{< include ./_includes/_tt_03_02_tarea-01.qmd >}}
+
+---
+
+{{< include ./_includes/_tt_03_03_tarea-02.qmd >}}
+
+---
+
+{{< include ./_includes/_tt_03_04_tarea-03.qmd >}}
+
+---
+
+{{< include ./_includes/_tt_03_05_tarea-04.qmd >}}
+
+
+
+# 4. Workflow: ¿cómo crear un post?  {background-color="#EEBF8B"}
 
 (4ª parte del tutorial)
 

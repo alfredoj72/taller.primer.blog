@@ -25,12 +25,12 @@ Las imágenes (o figuras) se pueden insertar de múltiples maneras:
 ::: panel-tabset
 #### Para hacer esto ...
 
-![Mi imagen](thumbnail.jpg){#fig1}{fig-align="left"}
+![Mi imagen](thumbnail.jpg){#fig-01 fig-align="left"}
 
 #### Has de escribir
 
 ``` markdown
-![Mi imagen](thumbnail.jpg){#fig-1, fig-align="left"}
+![Mi imagen](thumbnail.jpg){#fig-01 fig-align="left"}
 ```
 
 :::

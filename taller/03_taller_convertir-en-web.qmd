@@ -1,0 +1,77 @@
+---
+title: "Convertir el blog en web personal"
+subtitle: "(3ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
+#title-block-banner: imagenes/economia.gif
+toc-title: Tutorial nº 3
+---
+
+
+{{< include ./_includes/_contexto.qmd >}}
+
+
+
+::: {.callout-note collapse="true" appearance="default" icon="false"}
+## Recapitulación
+
+-   En esta tercera parte del taller vamos a "convertir" nuestro blog en una **web personal**.
+
+-   Las anteriores secciones del taller son
+
+    0. **Intro**: se presenta el taller
+
+    1. **Creación de un blog (básico) con Quarto**: vimos como crear y alojar un **blog básico** con RStudio y Quarto.
+    
+    2. **Tuneado básico del blog**. Modificamos ligeramente los ficheros `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`. 
+:::
+
+------------------------------------------------------------------------
+
+<br>
+
+{{< include ./_includes/_tt_03_01_q-haremos.qmd >}}
+
+
+## Intro 
+
+Vamos a transformar nuestro blog en una **página web personal con blog**. Lo único que tendremos que hacer será que la "landing page" o Home de  nuestra web no sea una página con el listado de posts, si no que sea una página en la que se reciba a los futuros visitantes de nuestra web: lo normal es presentarnos y darles la bienvenida.
+
+<br>
+
+## Proceso
+
+
+#### Tarea 3.1
+
+{{< include ./_includes/_tt_03_02_tarea-01.qmd >}}
+
+
+<br>
+
+#### Tarea 3.2
+
+{{< include ./_includes/_tt_03_03_tarea-02.qmd >}}
+
+
+
+<br>
+
+#### Tarea 3.3
+
+{{< include ./_includes/_tt_03_04_tarea-03.qmd >}}
+
+
+<br>
+
+#### Tarea 3.4
+
+{{< include ./_includes/_tt_03_05_tarea-04.qmd >}}
+
+<br>
+
+
+
+## Resumen
+
+{{< include ./_includes/_tt_03_06_resumen.qmd >}}
+
+

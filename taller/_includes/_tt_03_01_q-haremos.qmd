@@ -1,11 +1,10 @@
-::: {.callout-tip collapse="false" appearance="default" icon="false"}
+::: {.callout-tip  appearance="default" icon="false"}
 ## ¿Qué haremos en este tutorial?
 
--   En esta tercera parte del taller vamos a **mejorar/tunear un poco nuestro blog**. Nos servirá para afianzar nuestro conocimiento de la estructura de ficheros del blog
+- Convertir nuestro blog en una web personal.
 
--   En este tutorial nº 3, para hacer un **tuneado básico** del blog, modificaremos 3 archivos, concretamente los archivos: `_quarto.yml`, `index.qmd` y `about.qmd`. Iremos archivo por archivo
+- Haremos que la "landing page" o Home de  nuestra web no sea una página con el listado de posts, sino que sea una página en la que se reciba a los futuros visitantes de nuestra web
 
-- Finalmente modificaremos (un poco) el archivo `styles.css`
+- Para ello solo tendremos que cambiar el nombre de dos ficheros y referenciar uno de ellos en `_quarto.yml`.
 
-- En el tutorial nº 6 se profundiza en el tuneado del blog
 :::
