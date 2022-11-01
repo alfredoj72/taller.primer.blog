@@ -609,6 +609,7 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 - Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
 
+
 {{< include ./_includes/_tt_05_45_img-23.qmd >}}
 
 - Hay **más opciones para los chunks**. Por ejemplo: 

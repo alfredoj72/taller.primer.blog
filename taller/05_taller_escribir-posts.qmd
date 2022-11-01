@@ -260,7 +260,8 @@ Las **principales diferencias** son:
 
 - En los **chunks individuales** ahora se se utiliza la **sintaxis YAML** (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
 
-![](./imagenes/tt_01/img_22.png){fig-align="center"}
+{{< include ./_includes/_tt_05_44_img-22.qmd >}}
+
 
 
 - Las principales opciones son: **echo**, **eval**, **warning**, **error**, **output** e **include**. [Aquí](https://quarto.org/docs/computations/execution-options.html#output-options) la documentación oficial.
@@ -270,7 +271,7 @@ Las **principales diferencias** son:
 
 - Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
 
-![](./imagenes/tt_01/img_23.png){fig-align="center"}
+{{< include ./_includes/_tt_05_45_img-23.qmd >}}
 
 <br>
 

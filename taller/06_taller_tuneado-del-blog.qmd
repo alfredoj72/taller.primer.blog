@@ -1,14 +1,25 @@
 ---
 title: "Tuneado del blog"
 subtitle: "(6ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
-title-block-banner-color : "#FFDDFF"
+title-block-banner: true
+title-block-banner-color : "#562457"
 toc-title: Tutorial nº 6
 ---
 
 
 {{< include ./_includes/_contexto.qmd >}}
 
+<br>
 
+Podemos tunear nuestro blog de 3 formas:
+
+    - utilizando las opciones disponibles en Quarto para el `yaml`
+    
+    - utilizando CSS
+    
+    - utilizando SASS
+    
+## Opciones disponibles en el `yaml`
 
 
 
