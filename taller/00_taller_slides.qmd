@@ -1,6 +1,7 @@
 ---
-title: "Mi primer blog con Quarto"
-date: "24/10/2022"
+title: "Mi primer blog con Quarto [(y Rmd)]{.fragment  .strike}"
+date: 2022-11-24  #- ISO8601 YYYY-MM-DD format 
+date-format: short
 format: 
   revealjs:
     scrollable: true
@@ -194,11 +195,15 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 . . .
 
--   Muy **parecido a Rmarkdown**, pero ... **no requiere R**, soporta más lenguajes (Phyton, Julia, Observable) y combina la funcionalidad de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
+-   Muy **parecido a Rmarkdown**, pero ... **no requiere R**. Soporta lenguajes como Phyton, Julia y Observable.
 
--   Es ... la "**segunda generación de Rmarkdown**"
+. . . 
 
--   Quarto utiliza Knitr para ejecutar el código R; así que es **capaz de procesar también los ficheros .Rmd** sin modificarlos
+- Unifica las funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
+
+- Es ... la "**segunda generación de Rmarkdown**"
+
+- Quarto utiliza Knitr para ejecutar el código R; así que es **capaz de procesar también los ficheros .Rmd** sin modificarlos
 
 . . .
 
@@ -210,19 +215,13 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 -   Proyecto en desarrollo activo ... mientras que Rmarkdown ...
 
--   Unifica algunas de las funcionalidades de Rmarkdown
+-   **Unifica** algunas de las funcionalidades de Rmarkdown
 
--   Nuevas funcionalidades: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans
+-   Por ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans
 
--   [Quarto questions](https://occasionaldivergences.com/posts/quarto-questions/)
 
--   [Porting a distill blog to quarto](https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/)
+- Para ver si estas ventajas merecen la pena para ti puedes leer a  [Occasional Divergences](https://occasionaldivergences.com/posts/quarto-questions/#what-are-the-benefits-of-using-quarto-for-_____), [Nick Tierney](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/), [Alison Hill](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/), [Danielle Navarro](https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/), o [Stack Overflow](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown)
 
--   [We don't talk about Quarto. Until now](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/)
-
--   [En StackOverfow: benefits of Quarto](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown)
-
--   un tweet: <https://mobile.twitter.com/DanOvand0/status/1580343517154770944>
 
 <blockquote class="twitter-tweet">
 
@@ -239,6 +238,7 @@ Wow, writing first paper using <a href="https://twitter.com/quarto_pub?ref_src=t
 ```{=html}
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ```
+
 # Setup para el taller
 
 <br>
@@ -401,4 +401,4 @@ knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_yaml.
 
 {{< youtube yvi5uXQMvu4 >}}
 
-# Comenzamos el taller !!!! :computer::crossed_fingers: 💪🏼 💪🏼 
+# Comenzamos el taller !!!! :computer::crossed_fingers: 💪🏼 💪🏼
