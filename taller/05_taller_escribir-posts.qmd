@@ -279,30 +279,27 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 <br>
 
-## Más elementos para "escribir" 
+## Elementos para escribir 
 
-Además de los elementos de escritura que nos ofrece la sintaxis básica de `markdown`. Quarto nos ofrece más posibilidades. Por ejemplo:
+### Elementos básicos
+
+{{< include ./_includes/_tt_05_12-B_text-elementos.qmd >}}
+
+<br>
+
+
+### Más elementos para "escribir"
 
 {{< include ./_includes/_tt_05_12-B_text-mas-elementos.qmd >}}
 
-<br>
 
-Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.
 
-<br>
-
-### Layout's
-
-Los veremos con [este post](/posts/post_01_layout.qmd) en el blog del taller.
 
 <br>
 
-### Extensiones
+### Veamos algunos
 
-Las veremos con [este post](/posts/post_02_extensiones.qmd) en el blog del taller.
-
-### Callouts
-
+{{< include ./_includes/_tt_05_12-B_text-veamos.qmd >}}
 
 
 <br>
@@ -323,7 +320,7 @@ Las veremos con [este post](/posts/post_02_extensiones.qmd) en el blog del talle
 
 ## Práctica
 
-En esta sección dedicaremos un tiempo a la práctica libre para la **creación y escritura de un post**. Para ello te ofrezco más abajo una plantilla plantilla para elaborar un post con diferentes elementos.
+En esta sección dedicaremos un tiempo a la práctica libre para la **creación y escritura de un post**. Para ello te ofrezco más abajo una plantilla con la que elaborar un post. la plantilla tiene una serie de tareas/retos que has de realizar/superar.
 
 
 Usaremos un ejemplo para **practicar la sintaxis y nuevas posibilidades de Quarto** a la hora de generar documentos `.html`: o sea, para escribir posts para nuestro blog.
@@ -331,6 +328,7 @@ Usaremos un ejemplo para **practicar la sintaxis y nuevas posibilidades de Quart
 
 {{< include ./_includes/_tt_05_47_practica-01.qmd >}}
 
+<br>
 
 
 ## Un ejemplo

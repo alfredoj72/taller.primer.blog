@@ -28,7 +28,7 @@ filters:
 
 ## Intro 
 
-Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en el lenguaje `Lua`. [Aquí](https://quarto.org/docs/extensions/starter-templates.html) la documentación oficial.
+Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en el lenguaje [Lua](https://es.wikipedia.org/wiki/Lua). [Aquí](https://quarto.org/docs/extensions/starter-templates.html) la documentación oficial.
 
 Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión "quarto-youtube-embed" que sirve para incluir vídeos de youtube en un documento `.qmd`.
 

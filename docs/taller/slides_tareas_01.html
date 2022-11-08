@@ -2344,43 +2344,63 @@
 </section>
 <section class="slide level2">
 
-<h3 id="más-elementos-para-escribir"><strong>Más elementos</strong> para “escribir”</h3>
+<h3 id="elementos-básicos-para-escribir">Elementos básicos para escribir</h3>
+<p><br></p>
+<p>Para escribir en Markdown, además de texto, tenemos los siguientes elementos básicos:</p>
 <ul>
 <li><p>Links (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#links-images">aquí</a>)</p></li>
-<li><p>Imágenes (documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>) y sus <a href="https://quarto.org/docs/computations/execution-options.html#figure-options">opciones</a></p></li>
 <li><p>Listas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#lists">aquí</a>)</p></li>
 <li><p>Tablas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#tables">aquí</a>)</p></li>
 <li><p>Código (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#source-code">aquí</a>)</p></li>
-<li><p>Ecuaciones (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#equations">aquí</a>)</p></li>
+<li><p>Ecuaciones (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#equations">aquí</a>). Editor de ecuaciones <a href="https://www.latex4technics.com/">aquí</a> o <a href="http://www.sciweavers.org/free-online-latex-equation-editor">aquí</a>.</p></li>
+<li><p>Imágenes (documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>) y sus <a href="https://quarto.org/docs/computations/execution-options.html#figure-options">opciones</a></p></li>
+</ul>
+<p><br></p>
+<p>El <a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/">editor visual</a> facilita la introducción de estos elementos en tus documentos. En <a href="https://www.youtube.com/watch?v=6p4vOKS6Xls">esta charla</a> de Mine Çetinkaya-Rundel se aprecia fácilmente la <strong>utilidad del editor visual</strong>.</p>
+</section>
+<section class="slide level2">
+
+<h3 id="más-elementos-para-escribir">Más elementos para “escribir”</h3>
+<p>Además de los elementos básicos de escritura que nos ofrece la sintaxis básica de <code>markdown</code>, <strong>Quarto nos ofrece más posibilidades</strong>. Por ejemplo:</p>
+<p><br></p>
+<ul>
+<li><p>Imágenes (documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>) y sus <a href="https://quarto.org/docs/computations/execution-options.html#figure-options">opciones</a></p></li>
 <li><p>Callout blocks (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks">aquí</a>)</p></li>
 <li><p>Divs &amp; spans (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans">aquí</a>)</p></li>
 <li><p>Layout (documentación <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a> y <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a>)</p></li>
 <li><p>Extensiones (documentación <a href="https://quarto.org/docs/extensions/starter-templates.html">aquí</a>) . Listado de extensiones oficiales <a href="https://quarto.org/docs/extensions/listing-filters.html">aquí</a></p></li>
 </ul>
 <p><br></p>
-<p>El <a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/">editor visual</a> facilita la introducción de estos elementos en tus documentos. En <a href="https://www.youtube.com/watch?v=6p4vOKS6Xls">esta charla</a> de Mine Çetinkaya-Rundel se aprecia fácilmente la <strong>utilidad del editor visual</strong>.</p>
-<p><br></p>
 <p>Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.</p>
 </section>
-<section id="layouts" class="slide level2">
-<h2>Layout’s</h2>
+<section class="slide level2">
+
+<h4 id="layouts">Layouts</h4>
 <ul>
 <li><p>Además de yaml, texto y chunk, para escribir con Quarto <strong>conviene conocer la estructura o layout de los artículos</strong> que se generan con él.</p></li>
 <li><p>Los “artículos” tienen un <strong>body</strong>, un <strong>margin</strong> y un área para las <strong>sidebars</strong>, que en nuestro caso contiene el TOC<sup>1</sup>.</p></li>
-</ul>
-<p><br></p>
-<ul>
 <li><p>Usando <strong>divs</strong> se puede hacer que <strong>alguna sección de nuestra página ocupe un espacio mayor al habitual</strong>; es decir, mayor al espacio habitualmente reservado para el body.</p></li>
-<li><p>Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es <strong>mejor verlas</strong> en uno de los post del fake-blog del taller; concretamente <a href="../posts/post_01_layout.html" target="_blank">aquí</a></p></li>
+<li><p>Veamos las <strong>posibilidades que tenemos de layout</strong> con <a href="../posts/post_01_layout.html" target="_blank">este post</a></p></li>
 </ul>
 <p><br></p>
 <aside><ol class="aside-footnotes"><li id="fn4"><p>Además, el layout puede venir afectado por la opción <code>page-layout: custom   #- {article, full, custom}</code></p></li></ol></aside></section>
-<section id="extensiones" class="slide level2">
-<h2>Extensiones</h2>
+<section class="slide level2">
+
+<h4 id="extensiones">Extensiones</h4>
 <ul>
-<li><p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en lenguaje <code>Lua</code>.</p></li>
-<li><p>Para ver como instalar y usar extensiones vamos a ir, otra vez, a otro de los post del blog del taller; concretamente <a href="../posts/post_02_extensiones.html">aquí</a></p></li>
+<li><p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en lenguaje <a href="https://es.wikipedia.org/wiki/Lua">Lua</a>.</p></li>
+<li><p>Para ver como <strong>instalar y usar extensiones</strong> vamos a ir, otra vez, a otro de los post del blog del taller: concretamente <a href="../posts/post_02_extensiones.html" target="_blank">aquí</a></p></li>
 </ul>
+<p><br></p>
+</section>
+<section class="slide level2">
+
+<h4 id="imágenes">Imágenes</h4>
+<ul>
+<li><p>Conocemos la sintaxis básica para insertar imágenes <code>![](&lt;ruta-a-imagen&gt;)</code>; ahora veremos posibilidades más avanzadas</p></li>
+<li><p>Veamos como <strong>insertar imágenes</strong> con <a href="../posts/post_03_imagenes.html">este post</a> del blog del taller.</p></li>
+</ul>
+<p><br></p>
 </section>
 <section class="slide level2">
 
@@ -2397,17 +2417,74 @@
 <li><p>Se repasan las posibilidades de configurar los documentos por medio de <strong>los 3 niveles de YAML</strong> que pueden afectar a un documento.</p></li>
 <li><p><strong>Los 3 YAML’s</strong> son: Nivel proyecto (<code>_quarto.yml</code>), nivel carpeta (<code>_metadata.yml</code>) y nivel documento (en el propio encabezamiento del archivo)</p></li>
 <li><p>El <strong>texto</strong> en ficheros <code>.qmd</code> es muy similar al de los documentos <code>.qmd</code>. Aparecen algunos elementos nuevos como los Call-outs.</p></li>
-<li><p>El <strong>código</strong> sí presenta novedades: nueva sintaxis con <code>#|</code> y posibilidad de determinar opciones en el YAML.</p></li>
+<li><p>El <strong>código</strong> sí presenta novedades: nueva sintaxis con <code>#|</code> y posibilidad de determinar opciones de los chunks en el YAML.</p></li>
 <li><p>Para poder escribir en <code>.qmd</code> <strong>hay que practicar</strong>. Lo haremos con una tarea donde veremos, entre otras cosas:</p>
 <ul>
 <li><p>Algunas de las opciones de <strong>layout</strong>.</p></li>
-<li><p>Ver como instalar y usar <strong>extensiones</strong></p></li>
+<li><p>Ver como instalar y usar <strong>extensiones</strong>.</p></li>
+<li><p>Opciones avanzadas para <strong>insertar imágenes</strong>.</p></li>
 </ul></li>
 </ul>
 </div>
 </div>
 </div>
 <p><br></p>
+</section>
+<section class="slide level2">
+
+<div class="callout callout-tip no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Práctica 5.1: Crear un post para tu blog con la siguiente plantilla.</strong></p>
+</div>
+<div class="callout-content">
+<p>Vamos a crear un nuevo post para practicar algunos de los elementos de escritura que hemos visto. Para ello:</p>
+<ul>
+<li><p>Crea una nueva subcarpeta en la carpeta <code>./posts/</code>. Por ejemplo llámala: <code>./posts/my-segundo-post</code> y copia allí los documentos que haya en la carpeta de otro blog. Es decir, en la nueva subcarpeta que has creado debe haber un fichero <code>index.qmd</code> y una imágen <code>thumbnail.jpg</code>.</p></li>
+<li><p>Sustituye el contenido del archivo <code>index.qmd</code> por el contenido del siguiente chunk y haz un render de <code>./posts/my-segundo-post/index.qmd</code> para ver como quedaría una vez procesado.</p></li>
+</ul>
+<h6 id="contenido-para-sustituir-en-.postsmy-segundo-postindex.qmd">Contenido para sustituir en <code>./posts/my-segundo-post/index.qmd</code></h6>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">---</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a><span class="an">title:</span><span class="co"> "Mi Segundo post con Quarto"</span></span>
+<span id="cb21-3"><a href="#cb21-3"></a><span class="an">author:</span><span class="co"> "Nosotros"</span></span>
+<span id="cb21-4"><a href="#cb21-4"></a><span class="an">date:</span><span class="co"> 2022-10-25</span></span>
+<span id="cb21-5"><a href="#cb21-5"></a><span class="an">categories:</span><span class="co"> [R, quarto, ejemplos]</span></span>
+<span id="cb21-6"><a href="#cb21-6"></a><span class="an">image:</span><span class="co"> "thumbnail.jpg"</span></span>
+<span id="cb21-7"><a href="#cb21-7"></a><span class="co">#subtitle: | </span></span>
+<span id="cb21-8"><a href="#cb21-8"></a><span class="co">#  Practicando con Quarto</span></span>
+<span id="cb21-9"><a href="#cb21-9"></a><span class="an">description:</span><span class="co"> |</span></span>
+<span id="cb21-10"><a href="#cb21-10"></a><span class="co">  Estamos viendo algunos elementos para escribir con Quarto.</span></span>
+<span id="cb21-11"><a href="#cb21-11"></a><span class="co">---</span></span>
+<span id="cb21-12"><a href="#cb21-12"></a></span>
+<span id="cb21-13"><a href="#cb21-13"></a>Este ya es mi segundo post con Quarto. En él voy a hacer lo siguiente:</span>
+<span id="cb21-14"><a href="#cb21-14"></a></span>
+<span id="cb21-15"><a href="#cb21-15"></a></span>
+<span id="cb21-16"><a href="#cb21-16"></a><span class="fu">## Insertar 2 imágenes side-by-side</span></span>
+<span id="cb21-17"><a href="#cb21-17"></a></span>
+<span id="cb21-18"><a href="#cb21-18"></a></span>
+<span id="cb21-19"><a href="#cb21-19"></a><span class="fu">## Inserta un tweet</span></span>
+<span id="cb21-20"><a href="#cb21-20"></a></span>
+<span id="cb21-21"><a href="#cb21-21"></a></span>
+<span id="cb21-22"><a href="#cb21-22"></a><span class="fu">## Inserta un `tab-set`</span></span>
+<span id="cb21-23"><a href="#cb21-23"></a></span>
+<span id="cb21-24"><a href="#cb21-24"></a></span>
+<span id="cb21-25"><a href="#cb21-25"></a><span class="fu">## Inserta un call-out</span></span>
+<span id="cb21-26"><a href="#cb21-26"></a></span>
+<span id="cb21-27"><a href="#cb21-27"></a></span>
+<span id="cb21-28"><a href="#cb21-28"></a><span class="fu">## Inserta un gráfico en el margen</span></span>
+<span id="cb21-29"><a href="#cb21-29"></a></span>
+<span id="cb21-30"><a href="#cb21-30"></a></span>
+<span id="cb21-31"><a href="#cb21-31"></a><span class="kw">&lt;br&gt;</span></span>
+<span id="cb21-32"><a href="#cb21-32"></a></span>
+<span id="cb21-33"><a href="#cb21-33"></a>Prueba superada!!</span>
+<span id="cb21-34"><a href="#cb21-34"></a></span>
+<span id="cb21-35"><a href="#cb21-35"></a></span>
+<span id="cb21-36"><a href="#cb21-36"></a>Acabé con mi segundo post. FIN</span>
+<span id="cb21-37"><a href="#cb21-37"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<p>Las soluciones a la Práctica están <a href="../posts/post_04_practica-05.html">aquí</a></p>
 
 <div class="footer footer-default">
 

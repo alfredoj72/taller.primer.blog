@@ -600,45 +600,34 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 ---
 
-### **Más elementos**  para "escribir" 
+### Elementos básicos para escribir
+
+<br>
+
+{{< include ./_includes/_tt_05_12-B_text-elementos.qmd >}}
+
+---
+
+### Más elementos para "escribir"
+
 
 {{< include ./_includes/_tt_05_12-B_text-mas-elementos.qmd >}}
 
 
-<br>
 
-Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.
-
----
-
-## Layout's
-
-- Además de yaml, texto y chunk, para escribir con Quarto **conviene conocer la estructura o layout de los artículos** que se generan con él.
-
-- Los "artículos" tienen un **body**, un **margin** y un área para las **sidebars**, que en nuestro caso contiene el TOC^[Además, el layout puede venir afectado por la opción `page-layout: custom   #- {article, full, custom}`]. 
-
-<br>
-
-- Usando **divs** se puede hacer que **alguna sección de nuestra página ocupe un espacio mayor al habitual**; es decir, mayor al espacio habitualmente reservado para el body.
-
-
-- Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es **mejor verlas** en uno de los post del fake-blog del taller; concretamente [aquí](/posts/post_01_layout.html){target="_blank"} 
-
-<br>
+{{< include ./_includes/_tt_05_12-B_text-veamos.qmd >}}
 
 
 ---
-
-## Extensiones
-
-- Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en lenguaje `Lua`. 
-
-- Para ver como instalar y usar extensiones vamos a ir, otra vez, a otro de los post del blog del taller; concretamente [aquí](/posts/post_02_extensiones.html) 
-
-
----
-
 
 {{< include ./_includes/_tt_05_14_resumen.qmd >}}
 
 <br>
+
+
+---
+
+{{< include ./_includes/_tt_05_47_practica-01.qmd >}}
+
+
+Las soluciones a la Práctica están [aquí](/posts/post_04_practica-05.html)

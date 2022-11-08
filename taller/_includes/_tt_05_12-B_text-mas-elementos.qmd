@@ -1,15 +1,9 @@
+Además de los elementos básicos de escritura que nos ofrece la sintaxis básica de `markdown`, **Quarto nos ofrece más posibilidades**. Por ejemplo:
 
-- Links (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#links-images))
+<br>
+
 
 - Imágenes (documentación [aquí](https://quarto.org/docs/authoring/figures.html)) y sus [opciones](https://quarto.org/docs/computations/execution-options.html#figure-options)
-
-- Listas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#lists))  
-
-- Tablas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#tables))  
-
-- Código  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#source-code))  
-
-- Ecuaciones  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#equations))    
 
 - Callout blocks  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks))  
 
@@ -22,5 +16,6 @@
 
 <br>
 
+Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.
 
-El [editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/) facilita la introducción de estos elementos en tus documentos. En [esta charla](https://www.youtube.com/watch?v=6p4vOKS6Xls) de Mine Çetinkaya-Rundel se aprecia fácilmente la **utilidad del editor visual**.
+

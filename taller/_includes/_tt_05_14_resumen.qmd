@@ -13,13 +13,15 @@
 
 - El **texto** en ficheros `.qmd` es muy similar al de los documentos `.qmd`. Aparecen algunos elementos nuevos como los Call-outs.
 
-- El **código** sí presenta novedades: nueva sintaxis con `#|` y posibilidad de determinar opciones en el YAML.
+- El **código** sí presenta novedades: nueva sintaxis con `#|` y posibilidad de determinar opciones de los chunks en el YAML.
 
 - Para poder escribir en `.qmd` **hay que practicar**. Lo haremos con una tarea donde veremos, entre otras cosas:
 
     - Algunas de las opciones de **layout**.
 
-    - Ver como instalar y usar **extensiones**
+    - Ver como instalar y usar **extensiones**.
+    
+    - Opciones avanzadas para **insertar imágenes**.
 
 
 :::
