@@ -1,11 +1,11 @@
 ---
-title: "Más elementos"
+title: "Más elementos (WIP)"
 #subtitle: "(9ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
 #author: "Nosotros"
 #subtitle: | 
 #  Viendo las posibilidades de Layout que tenemos en Quarto
 description: |
-  Algunos elementos más de Quarto para escribir
+  Algunos elementos más de Quarto para escribir artículos o posts.
 author:
   - name: Pedro J. Pérez
     affiliation: Universitat de València
@@ -78,7 +78,82 @@ Documentación [aquí](https://quarto.org/docs/authoring/callouts.html)
 
 <br>
 
+## Divs y Spans
+
+En los documentos creados con Quarto, se pueden usar [Pandoc Divs and Spans](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) para agregar clases, atributos y otros identificadores a trozos de contenido. Por ejemplo, podemos agregar un borde alrededor del texto usando un `Div`:
+
+
+::: {.border}
+This content can be styled with a border
+:::
+
+
+
+<br>
 
 ## Bibliografía
 
 Para aprender puedes ir a [este Quarto tip](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/), a  [este video](https://youtu.be/d8jSN998Mtw?t=3757). La documentación oficial está [aquí](https://quarto.org/docs/authoring/footnotes-and-citations.html) y [aquí](https://quarto.org/docs/visual-editor/technical.html#citations) para usar el editor visual.
+
+
+## Shortcode (Include)
+
+Lo he usado mucho en el taller, concretamente para reusar trozos en los tutoriales y en las slides y tenerlos sincronizados.
+
+Lo explica Mine [aquí](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/)
+
+Documentación oficial [aquí](https://quarto.org/docs/extensions/shortcodes.html). Shortcodes are a type of [Quarto extension](https://quarto.org/docs/extensions/)
+
+- Además, tanbien se puede hacer que determinado contenido se muestro sólo si el formato de salida es de un determinado tipo. Lo vi [aquí]()
+
+```md
+::: {.content-visible when-format="html"}
+Will only appear in HTML.
+:::
+```
+
+<br>
+
+## Incrustar una web
+
+
+````md
+```{=html}
+<iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"></iframe>
+```
+````
+
+```{=html}
+<iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"></iframe>
+```
+
+<br>
+
+
+## Más cosas
+
+- [Shinylive](https://quarto.org/docs/blog/posts/2022-10-25-shinylive-extension/): incorporar un shiny (hecho con Phyton) sin necesidad de servidor.
+
+- Para convertir ficheros `.Rmd` a `wmd` puedes usar `knitr::convert_chunk_header()`
+
+
+- Documentos **self-contained** se hacen ahora con:
+
+
+```yaml
+#- sel-contained se hace ahora con:
+
+format:
+  html:
+  embed-resources: true
+```
+### Inline
+
+Si escribes:
+
+```{r, eval = FALSE}
+El data.frame iris tiene `r nrow(iris)` filas `r ncol(iris)` columnas.
+```
+se verá así:
+
+El data.frame iris tiene `r nrow(iris)` filas `r ncol(iris)` columnas.

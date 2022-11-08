@@ -611,30 +611,30 @@
   {
     "objectID": "blog.html",
     "href": "blog.html",
-    "title": "Fake blog para el taller ‘mi primer blog con Quarto’",
+    "title": "Blog del taller “Mi primer blog con Quarto”",
     "section": "",
-    "text": "Extensiones\n\n\n\n\n\n\n\nQuarto\n\n\nejemplos\n\n\nextensiones\n\n\n\n\nIntentando entender qué son y cómo usar las extensiones de Quarto\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nImágenes\n\n\n\n\n\n\n\nQuarto\n\n\nejemplos\n\n\nextensiones\n\n\n\n\nRepasando algunas opciones de Quarto para insertar imágenes.\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nLayout’s\n\n\n\n\n\n\n\nquarto\n\n\nlayout\n\n\nejemplos\n\n\n\n\nViendo las posibilidades de Layout que tenemos en Quarto\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nMás elementos\n\n\n\n\n\n\n\nQuarto\n\n\nejemplos\n\n\nmás elementos\n\n\n\n\nAlgunos elementos más de Quarto para escribir\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Extensiones\n\n\n\n\n\n\n\nQuarto\n\n\nejemplos\n\n\nextensiones\n\n\n\n\nIntentando entender qué son y cómo usar las extensiones de Quarto\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nImágenes\n\n\n\n\n\n\n\nQuarto\n\n\nejemplos\n\n\nextensiones\n\n\n\n\nRepasando algunas opciones de Quarto para insertar imágenes.\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nLayout’s\n\n\n\n\n\n\n\nquarto\n\n\nlayout\n\n\nejemplos\n\n\n\n\nViendo las posibilidades de Layout que tenemos en Quarto\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nMás elementos (WIP)\n\n\n\n\n\n\n\nQuarto\n\n\nejemplos\n\n\nmás elementos\n\n\n\n\nAlgunos elementos más de Quarto para escribir artículos o posts.\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post_02_extensiones.html",
     "href": "posts/post_02_extensiones.html",
     "title": "Extensiones",
     "section": "",
-    "text": "Una de las novedades de Quarto es la posibilidad de usar extensiones. Las extensiones se escriben en el lenguaje Lua. Aquí la documentación oficial.\nVamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión “quarto-youtube-embed” que sirve para incluir vídeos de youtube en un documento .qmd"
+    "text": "Una de las novedades de Quarto es la posibilidad de usar extensiones. Las extensiones se escriben en el lenguaje Lua. Aquí la documentación oficial.\nVamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión “quarto-youtube-embed” que sirve para incluir vídeos de youtube en un documento .qmd."
   },
   {
     "objectID": "posts/post_02_extensiones.html#un-ejemplo",
     "href": "posts/post_02_extensiones.html#un-ejemplo",
     "title": "Extensiones",
     "section": "Un ejemplo",
-    "text": "Un ejemplo\nCon Rmd alguna vez he puesto vídeos en mis slides o tutoriales. Usaba el paquete de R vembed. Ahora, con Quarto, también podríamos hacerlo de esa forma, solo tendríamos que insertar en nuestro documento un chunk como:\n\n```{r}\n#| eval: false\nlibrary(\"vembedr\")\nembed_url(\"https://www.youtube.com/watch?v=ACv9zaBa1A4\")\n```\n\nAhora podemos también hacerlo usando la extensión “quarto-youtube-embed”. Aquí está el repo de la extensión. Veamos cómo:\n\n\n\n\n\n\nTarea 5.4: Instalar y usar una extensión\n\n\n\nConcretamente instalaremos la extensión “quarto-youtube-embed”. El repo aquí. Aunque realmente el repo ha sido archivado. Veremos si se puede seguir instalando.\n\nLo primero es instalar la extensión de Quarto. Como pone en el repo, lo haremos desde la Terminal así:\n\n\nquarto install extension sellorm/quarto-youtube-embed\n\n\nUna vez instalada, podemos incrustar un video usando el siguiente “shortcode” en nuestro documento .qmd:\n\n\n{{< youtube zk9zHqXm6m0 >}}\n\nCon lo que habremos incrustado el video en nuestro documento .html final."
+    "text": "Un ejemplo\nCon Rmd alguna vez he puesto vídeos en mis slides o tutoriales. Usaba el paquete de R vembed. Ahora, con Quarto, también podríamos hacerlo de esa forma, solo tendríamos que insertar en nuestro documento un chunk como:\n\n```{r}\n#| eval: false\nlibrary(\"vembedr\")\nembed_url(\"https://www.youtube.com/watch?v=ACv9zaBa1A4\")\n```\n\nAhora, con Quarto, podemos también hacerlo usando la extensión “quarto-youtube-embed”. Aquí está el repo de la extensión. Veamos cómo:\n\n\n\n\n\n\nTarea 5.4: Instalar y usar una extensión\n\n\n\nConcretamente instalaremos la extensión “quarto-youtube-embed”. El repo aquí. Aunque realmente el repo ha sido archivado. Veremos si se puede seguir instalando.\n\nLo primero es instalar la extensión de Quarto. Como pone en el repo, lo haremos desde la Terminal así:\n\n\nquarto install extension sellorm/quarto-youtube-embed\n\n\nUna vez instalada, podemos incrustar un video usando el siguiente “shortcode” en nuestro documento .qmd:\n\n\n{{< youtube zk9zHqXm6m0 >}}\n\nCon lo que habremos incrustado el video en nuestro documento .html final."
   },
   {
     "objectID": "posts/post_02_extensiones.html#el-shortcode-video",
     "href": "posts/post_02_extensiones.html#el-shortcode-video",
     "title": "Extensiones",
     "section": "El shortcode << video >>",
-    "text": "El shortcode << video >>\nLa extensión “quarto-youtube-embed” funcionaba perfectamente pero se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. Solo hay que usar el siguiente shortcode:\n\n{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}\n\n\n\nAquí la documentación oficial del shortcode {{ < video   >}}. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar videos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el video y algunas cosas más."
+    "text": "El shortcode << video >>\nLa extensión “quarto-youtube-embed” funcionaba perfectamente pero se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. Solo hay que usar el siguiente shortcode:\n\n{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}\n\n\n\nAquí la documentación oficial del shortcode {{ < video   >}}. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar vídeos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el vídeo y algunas cosas más."
   },
   {
     "objectID": "posts/post_02_extensiones.html#listado-de-extensiones",
@@ -644,11 +644,18 @@
     "text": "Listado de extensiones\nAquí tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están aquí."
   },
   {
-    "objectID": "posts/post_02_extensiones.html#otro-ejemplo",
-    "href": "posts/post_02_extensiones.html#otro-ejemplo",
+    "objectID": "posts/post_02_extensiones.html#otro-ejemplo-lightbox",
+    "href": "posts/post_02_extensiones.html#otro-ejemplo-lightbox",
     "title": "Extensiones",
-    "section": "Otro ejemplo",
-    "text": "Otro ejemplo\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Lightbox”.\nLo que hace esta extensión es que podamos pinchar en una imagen y verla ampliada y con una descripción. Aquí puedes ver ejemplos de lo que se puede hacer con “Lightbox”.\nEn el repo se explica con más detalle lo que se puede hacer con “Lightbox”Su repo [aquí]\n\n\n\n\n\n\nTarea 5.5: Instalar y usar la extensión “Lightbox”\n\n\n\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Lightbox”. Su repo aquí\n\nLo primero es instalar la extensión desde la Terminal:\n\n\nquarto install extension quarto-ext/lightbox\n\nEsta vez, para poder usar la extensión en un documento .qmd hemos de incluir en el yaml del documento lo siguiente:\n---\ntitle: Simple Lightbox Example\nfilters:\n   - lightbox\n---\n\n![Mi imagen con Lighbox activado](./imagenes/economia.gif){.lightbox description=\"El logo-nano de la facultad de Economía de la Universtat de València\"\ndesc-position=\"left\"}\n\nCon lo que veríamos algo como:\n\n\n\n\nMi imagen con Lighbox activado"
+    "section": "Otro ejemplo (Lightbox)",
+    "text": "Otro ejemplo (Lightbox)\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Lightbox”.\nLo que hace esta extensión es que podamos pinchar en una imagen y verla ampliada y con una descripción. Aquí puedes ver ejemplos de lo que se puede hacer con “Lightbox”.\nEn el repo se explica con más detalle lo que se puede hacer con “Lightbox”.\n\n\n\n\n\n\nTarea 5.5: Instalar y usar la extensión “Lightbox”\n\n\n\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Lightbox”. Su repo aquí\n\nLo primero es instalar la extensión desde la Terminal:\n\n\nquarto install extension quarto-ext/lightbox\n\nEsta vez, para poder usar la extensión en un documento .qmd hemos de incluir en el yaml del documento lo siguiente:\n---\ntitle: Simple Lightbox Example\nfilters:\n   - lightbox\n---\n\n![Mi imagen con Lighbox activado](./imagenes/economia.gif){.lightbox description=\"El logo-nano de la facultad de Economía de la Universtat de València\"\ndesc-position=\"left\"}\n\nCon lo que veríamos algo como:\n\n\n\n\nMi imagen con Lighbox activado"
+  },
+  {
+    "objectID": "posts/post_02_extensiones.html#otro-ejemplo-tweets",
+    "href": "posts/post_02_extensiones.html#otro-ejemplo-tweets",
+    "title": "Extensiones",
+    "section": "Otro ejemplo (tweets)",
+    "text": "Otro ejemplo (tweets)\nVoy a instalar una nueva extensión, concretamente la extensión Quarto social embeds. Concretamente con esta extensión podremos insertar en nuestros documentos: gists de GitHub, videos de Loom, youtube y Vimeo y tweets. Realmente la instalo porque quiero tenerla disponible para insertar tweets.\nEn el repo se explica con más detalle lo que se puede hacer con Quarto social embeds.\n\n\n\n\n\n\nInstalar y usar la extensión Quarto social embeds\n\n\n\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Quarto social embeds”. Su repo está aquí.\n\nLo primero es instalar la extensión desde la Terminal:\n\n\nquarto install extension sellorm/quarto-social-embeds\n\n\nPara insertar un tweet has de:\n\n{{< tweet user=<username> id=<id> >}}\n\npor ejemplo:\n\n{{< tweet user=Culturas2_tve id=1589703143562309632 >}}\n\n\n\nPara insertar un gist de Github has de:\n\n{{< gist sellorm 20525aff669acafb975b7495b8f2066e >}}"
   },
   {
     "objectID": "posts/post_01_layout.html",
@@ -688,30 +695,58 @@
   {
     "objectID": "posts/post_00_cozitas-q-quedan.html",
     "href": "posts/post_00_cozitas-q-quedan.html",
-    "title": "Más elementos",
+    "title": "Más elementos (WIP)",
     "section": "",
     "text": "En este tutorial sirve de plantilla para ir escribiendo un post que contenga distintos elementos disponibles en Quarto para escribir con archivos .qmd."
   },
   {
     "objectID": "posts/post_00_cozitas-q-quedan.html#callouts",
     "href": "posts/post_00_cozitas-q-quedan.html#callouts",
-    "title": "Más elementos",
+    "title": "Más elementos (WIP)",
     "section": "Callouts",
     "text": "Callouts\nDocumentación aquí\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\nTarea xx\n\n\n\n\nTendremos que hacer esto\ny esto otro\n\n\n\n\n\n::: {.callout-important icon=\"false\"}\n\n#### Tarea xx\n- Tendremos que hacer esto \n\n- y esto otro\n:::"
   },
   {
     "objectID": "posts/post_00_cozitas-q-quedan.html#tablas",
     "href": "posts/post_00_cozitas-q-quedan.html#tablas",
-    "title": "Más elementos",
+    "title": "Más elementos (WIP)",
     "section": "Tablas",
     "text": "Tablas\nhttps://quarto.org/docs/authoring/tables.html\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
   },
   {
+    "objectID": "posts/post_00_cozitas-q-quedan.html#divs-y-spans",
+    "href": "posts/post_00_cozitas-q-quedan.html#divs-y-spans",
+    "title": "Más elementos (WIP)",
+    "section": "Divs y Spans",
+    "text": "Divs y Spans\nEn los documentos creados con Quarto, se pueden usar Pandoc Divs and Spans para agregar clases, atributos y otros identificadores a trozos de contenido. Por ejemplo, podemos agregar un borde alrededor del texto usando un Div:\n\nThis content can be styled with a border"
+  },
+  {
     "objectID": "posts/post_00_cozitas-q-quedan.html#bibliografía",
     "href": "posts/post_00_cozitas-q-quedan.html#bibliografía",
-    "title": "Más elementos",
+    "title": "Más elementos (WIP)",
     "section": "Bibliografía",
     "text": "Bibliografía\nPara aprender puedes ir a este Quarto tip, a este video. La documentación oficial está aquí y aquí para usar el editor visual."
+  },
+  {
+    "objectID": "posts/post_00_cozitas-q-quedan.html#shortcode-include",
+    "href": "posts/post_00_cozitas-q-quedan.html#shortcode-include",
+    "title": "Más elementos (WIP)",
+    "section": "Shortcode (Include)",
+    "text": "Shortcode (Include)\nLo he usado mucho en el taller, concretamente para reusar trozos en los tutoriales y en las slides y tenerlos sincronizados.\nLo explica Mine aquí\nDocumentación oficial aquí. Shortcodes are a type of Quarto extension\n\nAdemás, tanbien se puede hacer que determinado contenido se muestro sólo si el formato de salida es de un determinado tipo. Lo vi aquí\n\n::: {.content-visible when-format=\"html\"}\nWill only appear in HTML.\n:::"
+  },
+  {
+    "objectID": "posts/post_00_cozitas-q-quedan.html#incrustar-una-web",
+    "href": "posts/post_00_cozitas-q-quedan.html#incrustar-una-web",
+    "title": "Más elementos (WIP)",
+    "section": "Incrustar una web",
+    "text": "Incrustar una web\n```{=html}\n<iframe width=\"600px\" height=\"400px\" style=\"border:2px solid #dee2e6;\" src=\"https://quarto.org/docs/guide/\"></iframe>\n```"
+  },
+  {
+    "objectID": "posts/post_00_cozitas-q-quedan.html#más-cosas",
+    "href": "posts/post_00_cozitas-q-quedan.html#más-cosas",
+    "title": "Más elementos (WIP)",
+    "section": "Más cosas",
+    "text": "Más cosas\n\nShinylive: incorporar un shiny (hecho con Phyton) sin necesidad de servidor.\nPara convertir ficheros .Rmd a wmd puedes usar knitr::convert_chunk_header()\nDocumentos self-contained se hacen ahora con:\n\n#- sel-contained se hace ahora con:\n\nformat:\n  html:\n  embed-resources: true\n\nInline\nSi escribes:\n\nEl data.frame iris tiene `r nrow(iris)` filas `r ncol(iris)` columnas.\n\nse verá así:\nEl data.frame iris tiene 150 filas 5 columnas."
   },
   {
     "objectID": "materiales.html",

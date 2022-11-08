@@ -30,7 +30,7 @@ filters:
 
 Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en el lenguaje `Lua`. [Aquí](https://quarto.org/docs/extensions/starter-templates.html) la documentación oficial.
 
-Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión "quarto-youtube-embed" que sirve para incluir vídeos de youtube en un documento `.qmd`
+Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión "quarto-youtube-embed" que sirve para incluir vídeos de youtube en un documento `.qmd`.
 
 <br>
 
@@ -48,7 +48,7 @@ embed_url("https://www.youtube.com/watch?v=ACv9zaBa1A4")
 ```
 
 
-Ahora podemos también hacerlo usando la extensión  **"quarto-youtube-embed"**. [Aquí](https://github.com/sellorm/quarto-youtube-embed) está el repo de la extensión. Veamos cómo:
+Ahora, con Quarto, podemos también hacerlo usando la extensión  **"quarto-youtube-embed"**. [Aquí](https://github.com/sellorm/quarto-youtube-embed) está el repo de la extensión. Veamos cómo:
 
 
 
@@ -86,14 +86,23 @@ La extensión **"quarto-youtube-embed"** funcionaba perfectamente pero se ha que
 
 <br>
 
-## Otro ejemplo
+## Otro ejemplo (Lightbox)
 
 Vamos a **instalar y usar una nueva extensión**, concretamente la extensión **"Lightbox"**. 
 
 Lo que hace esta extensión es que podamos pinchar en una imagen y verla ampliada y con una descripción. [Aquí](https://quarto-ext.github.io/lightbox/) puedes ver ejemplos de lo que se puede hacer con "Lightbox". 
 
-En el [repo](https://github.com/quarto-ext/lightbox) se explica con más detalle lo que se puede hacer con "Lightbox"Su repo [aquí]
+En el [repo](https://github.com/quarto-ext/lightbox) se explica con más detalle lo que se puede hacer con "Lightbox".
 
 {{< include ./_includes/_tt_05_46_tarea-5-05-extensiones-2.qmd >}}
 
 
+<br>
+
+## Otro ejemplo (tweets)
+
+Voy a instalar una nueva extensión, concretamente la extensión **Quarto social embeds**. Concretamente con esta extensión podremos insertar en nuestros documentos: **gists de GitHub**, **videos de Loom**, youtube y Vimeo y **tweets**. Realmente la instalo porque quiero tenerla disponible para insertar tweets.
+
+En el [repo](https://github.com/sellorm/quarto-social-embeds) se explica con más detalle lo que se puede hacer con **Quarto social embeds**.
+
+{{< include ./_includes/_tt_05_47_extensiones-03.qmd >}}

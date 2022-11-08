@@ -8,9 +8,9 @@
 
 <meta name="author" content="Pedro J. Pérez">
 <meta name="dcterms.date" content="2022-10-26">
-<meta name="description" content="Algunos elementos más de Quarto para escribir">
+<meta name="description" content="Algunos elementos más de Quarto para escribir artículos o posts.">
 
-<title>Mi primer blog con Quarto (WIP) - Más elementos</title>
+<title>Mi primer blog con Quarto (WIP) - Más elementos (WIP)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -128,14 +128,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Más elementos">
-<meta property="og:description" content="Algunos elementos más de Quarto para escribir">
+<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Más elementos (WIP)">
+<meta property="og:description" content="Algunos elementos más de Quarto para escribir artículos o posts.">
 <meta property="og:image" content="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_00.png">
 <meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
 <meta property="og:image:height" content="426">
 <meta property="og:image:width" content="740">
-<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Más elementos">
-<meta name="twitter:description" content="Algunos elementos más de Quarto para escribir">
+<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Más elementos (WIP)">
+<meta name="twitter:description" content="Algunos elementos más de Quarto para escribir artículos o posts.">
 <meta name="twitter:image" content="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_00.png">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
@@ -214,10 +214,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-right">
-      <h1 class="title">Más elementos</h1>
+      <h1 class="title">Más elementos (WIP)</h1>
                   <div>
         <div class="description">
-          <p>Algunos elementos más de Quarto para escribir</p>
+          <p>Algunos elementos más de Quarto para escribir artículos o posts.</p>
         </div>
       </div>
                           <div class="quarto-categories">
@@ -265,7 +265,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul>
   <li><a href="#callouts" id="toc-callouts" class="nav-link active" data-scroll-target="#callouts">Callouts</a></li>
   <li><a href="#tablas" id="toc-tablas" class="nav-link" data-scroll-target="#tablas">Tablas</a></li>
+  <li><a href="#divs-y-spans" id="toc-divs-y-spans" class="nav-link" data-scroll-target="#divs-y-spans">Divs y Spans</a></li>
   <li><a href="#bibliografía" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliografía">Bibliografía</a></li>
+  <li><a href="#shortcode-include" id="toc-shortcode-include" class="nav-link" data-scroll-target="#shortcode-include">Shortcode (Include)</a></li>
+  <li><a href="#incrustar-una-web" id="toc-incrustar-una-web" class="nav-link" data-scroll-target="#incrustar-una-web">Incrustar una web</a></li>
+  <li><a href="#más-cosas" id="toc-más-cosas" class="nav-link" data-scroll-target="#más-cosas">Más cosas</a>
+  <ul class="collapse">
+  <li><a href="#inline" id="toc-inline" class="nav-link" data-scroll-target="#inline">Inline</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/taller.primer.blog/edit/main/posts/post_00_cozitas-q-quedan.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/perezp44/taller.primer.blog/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
 </nav>
@@ -327,11 +334,62 @@ Tarea xx
 <p><br></p>
 </section>
 </section>
+<section id="divs-y-spans" class="level2">
+<h2 class="anchored" data-anchor-id="divs-y-spans">Divs y Spans</h2>
+<p>En los documentos creados con Quarto, se pueden usar <a href="https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans">Pandoc Divs and Spans</a> para agregar clases, atributos y otros identificadores a trozos de contenido. Por ejemplo, podemos agregar un borde alrededor del texto usando un <code>Div</code>:</p>
+<div class="border">
+<p>This content can be styled with a border</p>
+</div>
+<p><br></p>
+</section>
 <section id="bibliografía" class="level2">
 <h2 class="anchored" data-anchor-id="bibliografía">Bibliografía</h2>
 <p>Para aprender puedes ir a <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/">este Quarto tip</a>, a <a href="https://youtu.be/d8jSN998Mtw?t=3757">este video</a>. La documentación oficial está <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">aquí</a> y <a href="https://quarto.org/docs/visual-editor/technical.html#citations">aquí</a> para usar el editor visual.</p>
+</section>
+<section id="shortcode-include" class="level2">
+<h2 class="anchored" data-anchor-id="shortcode-include">Shortcode (Include)</h2>
+<p>Lo he usado mucho en el taller, concretamente para reusar trozos en los tutoriales y en las slides y tenerlos sincronizados.</p>
+<p>Lo explica Mine <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/">aquí</a></p>
+<p>Documentación oficial <a href="https://quarto.org/docs/extensions/shortcodes.html">aquí</a>. Shortcodes are a type of <a href="https://quarto.org/docs/extensions/">Quarto extension</a></p>
+<ul>
+<li>Además, tanbien se puede hacer que determinado contenido se muestro sólo si el formato de salida es de un determinado tipo. Lo vi <a href="">aquí</a></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>::: {.content-visible when-format="html"}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Will only appear in HTML.</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+</section>
+<section id="incrustar-una-web" class="level2">
+<h2 class="anchored" data-anchor-id="incrustar-una-web">Incrustar una web</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"&gt;&lt;/iframe&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"></iframe>
+<p><br></p>
+</section>
+<section id="más-cosas" class="level2">
+<h2 class="anchored" data-anchor-id="más-cosas">Más cosas</h2>
+<ul>
+<li><p><a href="https://quarto.org/docs/blog/posts/2022-10-25-shinylive-extension/">Shinylive</a>: incorporar un shiny (hecho con Phyton) sin necesidad de servidor.</p></li>
+<li><p>Para convertir ficheros <code>.Rmd</code> a <code>wmd</code> puedes usar <code>knitr::convert_chunk_header()</code></p></li>
+<li><p>Documentos <strong>self-contained</strong> se hacen ahora con:</p></li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#- sel-contained se hace ahora con:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">embed-resources</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="inline" class="level3">
+<h3 class="anchored" data-anchor-id="inline">Inline</h3>
+<p>Si escribes:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>El data.frame iris tiene <span class="st">`</span><span class="at">r nrow(iris)</span><span class="st">`</span> filas <span class="st">`</span><span class="at">r ncol(iris)</span><span class="st">`</span> columnas.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>se verá así:</p>
+<p>El data.frame iris tiene 150 filas 5 columnas.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

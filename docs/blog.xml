@@ -23,7 +23,7 @@
 <section id="intro" class="level2">
 <h2 class="anchored" data-anchor-id="intro">Intro</h2>
 <p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en el lenguaje <code>Lua</code>. <a href="https://quarto.org/docs/extensions/starter-templates.html">Aquí</a> la documentación oficial.</p>
-<p>Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión “quarto-youtube-embed” que sirve para incluir vídeos de youtube en un documento <code>.qmd</code></p>
+<p>Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión “quarto-youtube-embed” que sirve para incluir vídeos de youtube en un documento <code>.qmd</code>.</p>
 <p><br></p>
 </section>
 <section id="un-ejemplo" class="level2">
@@ -36,7 +36,7 @@
 <span id="cb1-4"><span class="fu" style="color: #4758AB;">embed_url</span>(<span class="st" style="color: #20794D;">"https://www.youtube.com/watch?v=ACv9zaBa1A4"</span>)</span>
 <span id="cb1-5"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
 </div>
-<p>Ahora podemos también hacerlo usando la extensión <strong>“quarto-youtube-embed”</strong>. <a href="https://github.com/sellorm/quarto-youtube-embed">Aquí</a> está el repo de la extensión. Veamos cómo:</p>
+<p>Ahora, con Quarto, podemos también hacerlo usando la extensión <strong>“quarto-youtube-embed”</strong>. <a href="https://github.com/sellorm/quarto-youtube-embed">Aquí</a> está el repo de la extensión. Veamos cómo:</p>
 <div class="callout-important callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -74,7 +74,7 @@ Tarea 5.4: Instalar y usar una extensión
 </div>
 <div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/wo9vZccmqwc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p><br></p>
-<p><a href="https://quarto.org/docs/authoring/videos.html">Aquí</a> la documentación oficial del shortcode <code>{{ &lt; video   &gt;}}</code>. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar videos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el video y algunas cosas más.</p>
+<p><a href="https://quarto.org/docs/authoring/videos.html">Aquí</a> la documentación oficial del shortcode <code>{{ &lt; video   &gt;}}</code>. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar vídeos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el vídeo y algunas cosas más.</p>
 <p><br></p>
 </section>
 <section id="listado-de-extensiones" class="level2">
@@ -82,11 +82,11 @@ Tarea 5.4: Instalar y usar una extensión
 <p><a href="https://github.com/mcanouil/awesome-quarto#extensions">Aquí</a> tienes un <strong>listado de extensiones disponibles</strong>. Las extensiones oficiales de Quarto están <a href="https://quarto.org/docs/extensions/listing-filters.html">aquí</a>.</p>
 <p><br></p>
 </section>
-<section id="otro-ejemplo" class="level2">
-<h2 class="anchored" data-anchor-id="otro-ejemplo">Otro ejemplo</h2>
+<section id="otro-ejemplo-lightbox" class="level2">
+<h2 class="anchored" data-anchor-id="otro-ejemplo-lightbox">Otro ejemplo (Lightbox)</h2>
 <p>Vamos a <strong>instalar y usar una nueva extensión</strong>, concretamente la extensión <strong>“Lightbox”</strong>.</p>
 <p>Lo que hace esta extensión es que podamos pinchar en una imagen y verla ampliada y con una descripción. <a href="https://quarto-ext.github.io/lightbox/">Aquí</a> puedes ver ejemplos de lo que se puede hacer con “Lightbox”.</p>
-<p>En el <a href="https://github.com/quarto-ext/lightbox">repo</a> se explica con más detalle lo que se puede hacer con “Lightbox”Su repo [aquí]</p>
+<p>En el <a href="https://github.com/quarto-ext/lightbox">repo</a> se explica con más detalle lo que se puede hacer con “Lightbox”.</p>
 <div class="callout-important callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -118,10 +118,51 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./imagenes/economia.gif" class="lightbox" data-description="El logo-nano de la facultad de Economía de la Universtat de València" title="Mi imagen con Lighbox activado" data-desc-position="left" data-gallery="quarto-lightbox-gallery-1"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
+<p><a href="./imagenes/economia.gif" class="lightbox" data-description="El logo-nano de la facultad de Economía de la Universtat de València" data-gallery="quarto-lightbox-gallery-1" title="Mi imagen con Lighbox activado" data-desc-position="left"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">Mi imagen con Lighbox activado</figcaption><p></p>
 </figure>
 </div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="otro-ejemplo-tweets" class="level2">
+<h2 class="anchored" data-anchor-id="otro-ejemplo-tweets">Otro ejemplo (tweets)</h2>
+<p>Voy a instalar una nueva extensión, concretamente la extensión <strong>Quarto social embeds</strong>. Concretamente con esta extensión podremos insertar en nuestros documentos: <strong>gists de GitHub</strong>, <strong>videos de Loom</strong>, youtube y Vimeo y <strong>tweets</strong>. Realmente la instalo porque quiero tenerla disponible para insertar tweets.</p>
+<p>En el <a href="https://github.com/sellorm/quarto-social-embeds">repo</a> se explica con más detalle lo que se puede hacer con <strong>Quarto social embeds</strong>.</p>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Instalar y usar la extensión <strong>Quarto social embeds</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Vamos a instalar y usar una nueva extensión, concretamente la extensión “Quarto social embeds”. Su repo está <a href="https://github.com/sellorm/quarto-social-embeds">aquí</a>.</p>
+<ul>
+<li>Lo primero es instalar la extensión desde la Terminal:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="false" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><span class="ex" style="color: null;">quarto</span> install extension sellorm/quarto-social-embeds</span></code></pre></div>
+</div>
+<p><br></p>
+<p>Para insertar un <strong>tweet</strong> has de:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">{{<span class="sc" style="color: #5E5E5E;">&lt;</span> tweet user<span class="ot" style="color: #003B4F;">=</span><span class="er" style="color: #AD0000;">&lt;</span>username<span class="sc" style="color: #5E5E5E;">&gt;</span> id<span class="ot" style="color: #003B4F;">=</span><span class="er" style="color: #AD0000;">&lt;</span>id<span class="sc" style="color: #5E5E5E;">&gt;</span> <span class="er" style="color: #AD0000;">&gt;</span>}}</span>
+<span id="cb8-2"></span>
+<span id="cb8-3">por ejemplo<span class="sc" style="color: #5E5E5E;">:</span></span>
+<span id="cb8-4"></span>
+<span id="cb8-5">{{<span class="sc" style="color: #5E5E5E;">&lt;</span> tweet user<span class="ot" style="color: #003B4F;">=</span>Culturas2_tve id<span class="ot" style="color: #003B4F;">=</span><span class="dv" style="color: #AD0000;">1589703143562309632</span> <span class="sc" style="color: #5E5E5E;">&gt;</span>}}</span></code></pre></div>
+</div>
+<p></p><div id="tweet-98718"></div><script>tweet={"url":"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632","author_name":"Culturas 2","author_url":"https:\/\/twitter.com\/Culturas2_tve","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEn primicia en Culturas 2, así empieza el single “Abnegación”, de \u003Ca href=\"https:\/\/twitter.com\/NachoVegasTwit?ref_src=twsrc%5Etfw\"\u003E@NachoVegasTwit\u003C\/a\u003E, que lanza este viernes. La entrevista completa al artista gijonés en \u003Ca href=\"https:\/\/t.co\/d65rOJlOvY\"\u003Ehttps:\/\/t.co\/d65rOJlOvY\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/cAqUtR6rIy\"\u003Epic.twitter.com\/cAqUtR6rIy\u003C\/a\u003E\u003C\/p\u003E&mdash; Culturas 2 (@Culturas2_tve) \u003Ca href=\"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-98718").innerHTML = tweet["html"];</script><p></p>
+<p><br><br></p>
+<p>Para insertar un <strong>gist de Github</strong> has de:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">{{<span class="sc" style="color: #5E5E5E;">&lt;</span> gist sellorm 20525aff669acafb975b7495b8f2066e <span class="sc" style="color: #5E5E5E;">&gt;</span>}}</span></code></pre></div>
+</div>
+<p><script src="https://gist.github.com/sellorm/20525aff669acafb975b7495b8f2066e.js"></script></p>
 </div>
 </div>
 
@@ -499,7 +540,7 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
   <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_01.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
-  <title>Más elementos</title>
+  <title>Más elementos (WIP)</title>
   <dc:creator>Pedro J. Pérez</dc:creator>
   <link>https://perezp44.github.io/taller.primer.blog/posts/post_00_cozitas-q-quedan.html</link>
   <description><![CDATA[ 
@@ -556,11 +597,62 @@ Tarea xx
 <p><br></p>
 </section>
 </section>
+<section id="divs-y-spans" class="level2">
+<h2 class="anchored" data-anchor-id="divs-y-spans">Divs y Spans</h2>
+<p>En los documentos creados con Quarto, se pueden usar <a href="https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans">Pandoc Divs and Spans</a> para agregar clases, atributos y otros identificadores a trozos de contenido. Por ejemplo, podemos agregar un borde alrededor del texto usando un <code>Div</code>:</p>
+<div class="border">
+<p>This content can be styled with a border</p>
+</div>
+<p><br></p>
+</section>
 <section id="bibliografía" class="level2">
 <h2 class="anchored" data-anchor-id="bibliografía">Bibliografía</h2>
 <p>Para aprender puedes ir a <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/">este Quarto tip</a>, a <a href="https://youtu.be/d8jSN998Mtw?t=3757">este video</a>. La documentación oficial está <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">aquí</a> y <a href="https://quarto.org/docs/visual-editor/technical.html#citations">aquí</a> para usar el editor visual.</p>
+</section>
+<section id="shortcode-include" class="level2">
+<h2 class="anchored" data-anchor-id="shortcode-include">Shortcode (Include)</h2>
+<p>Lo he usado mucho en el taller, concretamente para reusar trozos en los tutoriales y en las slides y tenerlos sincronizados.</p>
+<p>Lo explica Mine <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/04-include/">aquí</a></p>
+<p>Documentación oficial <a href="https://quarto.org/docs/extensions/shortcodes.html">aquí</a>. Shortcodes are a type of <a href="https://quarto.org/docs/extensions/">Quarto extension</a></p>
+<ul>
+<li>Además, tanbien se puede hacer que determinado contenido se muestro sólo si el formato de salida es de un determinado tipo. Lo vi <a href="">aquí</a></li>
+</ul>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb2-1">::: {.content-visible when-format="html"}</span>
+<span id="cb2-2">Will only appear in HTML.</span>
+<span id="cb2-3">:::</span></code></pre></div>
+<p><br></p>
+</section>
+<section id="incrustar-una-web" class="level2">
+<h2 class="anchored" data-anchor-id="incrustar-una-web">Incrustar una web</h2>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="in" style="color: #5E5E5E;">```{=html}</span></span>
+<span id="cb3-2"><span class="in" style="color: #5E5E5E;">&lt;iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"&gt;&lt;/iframe&gt;</span></span>
+<span id="cb3-3"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"></iframe>
+<p><br></p>
+</section>
+<section id="más-cosas" class="level2">
+<h2 class="anchored" data-anchor-id="más-cosas">Más cosas</h2>
+<ul>
+<li><p><a href="https://quarto.org/docs/blog/posts/2022-10-25-shinylive-extension/">Shinylive</a>: incorporar un shiny (hecho con Phyton) sin necesidad de servidor.</p></li>
+<li><p>Para convertir ficheros <code>.Rmd</code> a <code>wmd</code> puedes usar <code>knitr::convert_chunk_header()</code></p></li>
+<li><p>Documentos <strong>self-contained</strong> se hacen ahora con:</p></li>
+</ul>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><span class="co" style="color: #5E5E5E;">#- sel-contained se hace ahora con:</span></span>
+<span id="cb4-2"></span>
+<span id="cb4-3"><span class="fu" style="color: #4758AB;">format</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb4-4"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">html</span><span class="kw" style="color: #003B4F;">:</span></span>
+<span id="cb4-5"><span class="at" style="color: #657422;">  </span><span class="fu" style="color: #4758AB;">embed-resources</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="ch" style="color: #20794D;">true</span></span></code></pre></div>
+<section id="inline" class="level3">
+<h3 class="anchored" data-anchor-id="inline">Inline</h3>
+<p>Si escribes:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">El data.frame iris tiene <span class="st" style="color: #20794D;">`</span><span class="at" style="color: #657422;">r nrow(iris)</span><span class="st" style="color: #20794D;">`</span> filas <span class="st" style="color: #20794D;">`</span><span class="at" style="color: #657422;">r ncol(iris)</span><span class="st" style="color: #20794D;">`</span> columnas.</span></code></pre></div>
+</div>
+<p>se verá así:</p>
+<p>El data.frame iris tiene 150 filas 5 columnas.</p>
 
 
+</section>
 </section>
 
  ]]></description>
