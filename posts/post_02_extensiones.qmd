@@ -10,7 +10,7 @@ author:
     affiliation: Universitat de València
 date: 2022-10-26
 categories: [Quarto, ejemplos, extensiones]
-image: "thumbnail.jpg"
+image: "./thumbnails/thumbnail_02.png"
 title-block-banner: true #- {true, false }
 draft: false
 toc: true

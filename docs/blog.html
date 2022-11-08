@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-description','listing-categories','listing-title','listing-author','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-categories','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -195,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ejemplos">ejemplos <span class="quarto-category-count">(2)</span></div><div class="category" data-category="extensiones">extensiones <span class="quarto-category-count">(1)</span></div><div class="category" data-category="layout">layout <span class="quarto-category-count">(1)</span></div><div class="category" data-category="quarto">quarto <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ejemplos">ejemplos <span class="quarto-category-count">(3)</span></div><div class="category" data-category="extensiones">extensiones <span class="quarto-category-count">(2)</span></div><div class="category" data-category="layout">layout <span class="quarto-category-count">(1)</span></div><div class="category" data-category="quarto">quarto <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -206,122 +206,82 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="quarto,layout,ejemplos" data-listing-date-sort="1666735200000" data-listing-file-modified-sort="1667902568182" data-listing-reading-time-sort="1.235">
-<div class="thumbnail">
-<p><a href="./posts/post_01_layout.html"> <img src="./posts/thumbnail.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/post_01_layout.html">
-<h3 class="no-anchor listing-title">
-Layout’s
-</h3>
-<div class="listing-subtitle">
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('quarto'); return false;">
-quarto
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('layout'); return false;">
-layout
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ejemplos'); return false;">
-ejemplos
-</div>
-</div>
-<a href="./posts/post_01_layout.html">
-<div class="listing-description">
-<p>Viendo las posibilidades de Layout que tenemos en Quarto</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/post_01_layout.html">
-<div class="listing-date">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+</th>
+<th>
+Date
+</th>
+<th>
+Categories
+</th>
+<th>
+Title
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-file-modified-sort="1667167787122" data-listing-reading-time-sort="0.9" data-listing-title-sort="Escribiendo posts: un ejemplo de post" data-listing-filename-sort="post_00_cozitas-q-quedan.qmd">
+<td class="listing-image">
+<img src="./posts/thumbnail.jpg" style="height: 40px;">
+</td>
+<td class="listing-date">
+</td>
+<td class="listing-categories">
+</td>
+<td class="listing-title">
+<a href="./posts/post_00_cozitas-q-quedan.html" class="title">Escribiendo posts: un ejemplo de post</a>
+</td>
+</tr>
+<tr data-index="1" data-categories="Quarto,ejemplos,extensiones" data-listing-date-sort="1666735200000" data-listing-file-modified-sort="1667912982188" data-listing-reading-time-sort="1.425" data-listing-title-sort="Extensiones" data-listing-filename-sort="post_02_extensiones.qmd">
+<td class="listing-image">
+<img src="./posts/thumbnails/thumbnail_02.png" style="height: 40px;">
+</td>
+<td class="listing-date">
 Oct 26, 2022
-</div>
-<div class="listing-author">
-Pedro J. Pérez
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Quarto,ejemplos,extensiones" data-listing-date-sort="1666735200000" data-listing-file-modified-sort="1667904902601" data-listing-reading-time-sort="1.425">
-<div class="thumbnail">
-<p><a href="./posts/post_02_extensiones.html"> <img src="./posts/thumbnail.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/post_02_extensiones.html">
-<h3 class="no-anchor listing-title">
-Extensiones
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
-Quarto
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ejemplos'); return false;">
-ejemplos
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('extensiones'); return false;">
-extensiones
-</div>
-</div>
-<a href="./posts/post_02_extensiones.html">
-<div class="listing-description">
-<p>Intentando entender qué son y cómo usar las extensiones de Quarto</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/post_02_extensiones.html">
-<div class="listing-date">
+</td>
+<td class="listing-categories">
+Quarto,ejemplos,extensiones
+</td>
+<td class="listing-title">
+<a href="./posts/post_02_extensiones.html" class="title">Extensiones</a>
+</td>
+</tr>
+<tr data-index="2" data-categories="Quarto,ejemplos,extensiones" data-listing-date-sort="1666735200000" data-listing-file-modified-sort="1667915397725" data-listing-reading-time-sort="0.985" data-listing-title-sort="Imágenes" data-listing-filename-sort="post_03_imagenes.qmd">
+<td class="listing-image">
+<img src="./posts/thumbnails/thumbnail_03.png" style="height: 40px;">
+</td>
+<td class="listing-date">
 Oct 26, 2022
-</div>
-<div class="listing-author">
-Pedro J. Pérez
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1667167787122" data-listing-reading-time-sort="0.9">
-<div class="thumbnail">
-<p><a href="./posts/ejemplo-de-post-02.html"> <img src="./posts/thumbnail.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/ejemplo-de-post-02.html">
-<h3 class="no-anchor listing-title">
-Escribiendo posts: un ejemplo de post
-</h3>
-</a><div class="listing-subtitle"><a href="./posts/ejemplo-de-post-02.html">
-(9ª parte del taller </a><a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a>)
-</div>
-<div class="listing-description">
-<br>
-</div>
+</td>
+<td class="listing-categories">
+Quarto,ejemplos,extensiones
+</td>
+<td class="listing-title">
+<a href="./posts/post_03_imagenes.html" class="title">Imágenes</a>
+</td>
+</tr>
+<tr data-index="3" data-categories="quarto,layout,ejemplos" data-listing-date-sort="1666735200000" data-listing-file-modified-sort="1667912970960" data-listing-reading-time-sort="1.235" data-listing-title-sort="Layout's" data-listing-filename-sort="post_01_layout.qmd">
+<td class="listing-image">
+<img src="./posts/thumbnails/thumbnail_01.png" style="height: 40px;">
+</td>
+<td class="listing-date">
+Oct 26, 2022
+</td>
+<td class="listing-categories">
+quarto,layout,ejemplos
+</td>
+<td class="listing-title">
+<a href="./posts/post_01_layout.html" class="title">Layout’s</a>
+</td>
+</tr>
+</tbody>
 
-</div>
-<div class="metadata">
-<a href="./posts/ejemplo-de-post-02.html">
-<div class="listing-reading-time">
-0 min
-</div>
-</a>
-</div>
-</div>
-</div>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

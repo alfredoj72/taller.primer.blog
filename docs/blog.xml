@@ -12,138 +12,6 @@
 <generator>quarto-1.2.237</generator>
 <lastBuildDate>Tue, 25 Oct 2022 22:00:00 GMT</lastBuildDate>
 <item>
-  <title>Layout’s</title>
-  <dc:creator>Pedro J. Pérez</dc:creator>
-  <link>https://perezp44.github.io/taller.primer.blog/posts/post_01_layout.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="intro" class="level3">
-<h3 class="anchored" data-anchor-id="intro">Intro</h3>
-<p>Además de yaml, texto y chunks, para escribir con Quarto <strong>conviene conocer la estructura o layout de los artículos</strong> que se generan con él. Las páginas tienen un body, un margin y un área para las sidebars, que en nuestro caso contiene un TOC<sup>1</sup>. Documentación oficial <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a>.</p>
-</section>
-<section id="ejemplo-con-imágenes" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="ejemplo-con-imágenes">Ejemplo (con imágenes)</h3>
-<p>Para ver las distintas posibilidades que tenemos, <strong>insertaremos una imagen</strong> ocupando distintas áreas del artículo. Empezaremos situando la imagen en el margen. para ello habría que hacer lo siguiente:</p>
-<pre><code>::: {.column-margin}
-
-![](imagenes/my_layout-01.png){fig-align="center"}
-
-:::</code></pre>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-01a.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div></div><div class="column-body">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-02a.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="column-body-outset">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-03.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="column-page-inset">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-04.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="column-page">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-05.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="column-screen-inset">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-06.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="column-screen">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-07.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<p>Si queremos podemos llegar a ocupar el 100% de la pantalla. Sólo habría que indicarlo en las opciones de la imagen con <code>width="100%"</code>.</p>
-<div class="column-screen">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-08.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-<p><br></p>
-</section>
-<section id="ejemplo-con-chunks" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="ejemplo-con-chunks">Ejemplo (con chunks)</h2>
-<p>El output de los chunks también puede ocupar distintas áreas. Veamos si un leaflet se puede poner en el margen:</p>
-<div class="cell page-columns page-full">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
-<span id="cb2-2"><span class="co" style="color: #5E5E5E;">#| column: margin</span></span>
-<span id="cb2-3"><span class="fu" style="color: #4758AB;">library</span>(leaflet)</span>
-<span id="cb2-4"><span class="fu" style="color: #4758AB;">leaflet</span>() <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb2-5">  <span class="fu" style="color: #4758AB;">addTiles</span>() <span class="sc" style="color: #5E5E5E;">%&gt;%</span>  <span class="co" style="color: #5E5E5E;"># Add default OpenStreetMap map tiles</span></span>
-<span id="cb2-6">  <span class="fu" style="color: #4758AB;">addMarkers</span>(<span class="at" style="color: #657422;">lng =</span> <span class="sc" style="color: #5E5E5E;">-</span><span class="fl" style="color: #AD0000;">4.7880</span>, <span class="at" style="color: #657422;">lat =</span> <span class="fl" style="color: #AD0000;">37.885</span>, <span class="at" style="color: #657422;">popup =</span> <span class="st" style="color: #20794D;">"Rectorado de la Universidad de Córdoba</span><span class="sc" style="color: #5E5E5E;">\n</span><span class="st" style="color: #20794D;"> (Sede de las XII Jornadas de usuarios de R)"</span>)</span>
-<span id="cb2-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-
-<div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div id="htmlwidget-a81cce638cfb7e27d08d" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a81cce638cfb7e27d08d">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
-</div></div></div>
-<p><br></p>
-<p>Y ahora ocupando toda la pantalla:</p>
-<div class="cell page-columns page-full">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
-<span id="cb3-2"><span class="co" style="color: #5E5E5E;">#| column: screen</span></span>
-<span id="cb3-3"><span class="fu" style="color: #4758AB;">library</span>(leaflet)</span>
-<span id="cb3-4"><span class="fu" style="color: #4758AB;">leaflet</span>() <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb3-5">  <span class="fu" style="color: #4758AB;">addTiles</span>() <span class="sc" style="color: #5E5E5E;">%&gt;%</span>  <span class="co" style="color: #5E5E5E;"># Add default OpenStreetMap map tiles</span></span>
-<span id="cb3-6"><span class="fu" style="color: #4758AB;">addMarkers</span>(<span class="at" style="color: #657422;">lng =</span> <span class="sc" style="color: #5E5E5E;">-</span><span class="fl" style="color: #AD0000;">4.7880</span>, <span class="at" style="color: #657422;">lat =</span> <span class="fl" style="color: #AD0000;">37.885</span>, <span class="at" style="color: #657422;">popup =</span> <span class="st" style="color: #20794D;">"Rectorado de la Universidad de Córdoba</span><span class="sc" style="color: #5E5E5E;">\n</span><span class="st" style="color: #20794D;"> (Sede de las XII Jornadas de usuarios de R)"</span>)</span>
-<span id="cb3-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
-<div class="cell-output-display column-screen">
-<div id="htmlwidget-dadb2e4c0d338f251e80" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dadb2e4c0d338f251e80">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<p><br></p>
-<p>Como no puede ser de otro modo, aún hay más opciones para el layout. Documentación <a href="https://quarto.org/docs/authoring/article-layout.html#overflowing-content">aquí</a></p>
-<p><br></p>
-
-
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Además, el layout puede venir afectado por la opción <code>page-layout: custom   #- {article, full, custom}</code>. Documentación oficial <a href="https://quarto.org/docs/output-formats/page-layout.html">aquí</a> ↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <category>quarto</category>
-  <category>layout</category>
-  <category>ejemplos</category>
-  <guid>https://perezp44.github.io/taller.primer.blog/posts/post_01_layout.html</guid>
-  <pubDate>Tue, 25 Oct 2022 22:00:00 GMT</pubDate>
-  <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
   <title>Extensiones</title>
   <dc:creator>Pedro J. Pérez</dc:creator>
   <link>https://perezp44.github.io/taller.primer.blog/posts/post_02_extensiones.html</link>
@@ -250,7 +118,7 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./imagenes/economia.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-description="El logo-nano de la facultad de Economía de la Universtat de València" title="Mi imagen con Lighbox activado" data-desc-position="left"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
+<p><a href="./imagenes/economia.gif" class="lightbox" data-desc-position="left" data-description="El logo-nano de la facultad de Economía de la Universtat de València" title="Mi imagen con Lighbox activado" data-gallery="quarto-lightbox-gallery-1"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">Mi imagen con Lighbox activado</figcaption><p></p>
 </figure>
 </div>
@@ -266,11 +134,373 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
   <category>extensiones</category>
   <guid>https://perezp44.github.io/taller.primer.blog/posts/post_02_extensiones.html</guid>
   <pubDate>Tue, 25 Oct 2022 22:00:00 GMT</pubDate>
-  <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_02.png" medium="image" type="image/png" height="83" width="144"/>
+</item>
+<item>
+  <title>Imágenes</title>
+  <dc:creator>Pedro J. Pérez</dc:creator>
+  <link>https://perezp44.github.io/taller.primer.blog/posts/post_03_imagenes.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="figuras-en-rmd" class="level2">
+<h2 class="anchored" data-anchor-id="figuras-en-rmd">Figuras en Rmd</h2>
+<p>Las figuras en documentos Rmarkdown se podían insertar con la sintaxis de Markdown; es decir con <code>![](&lt;ruta-a-la-imagen&gt;)</code>, aunque yo prefería hacerlo con <code>knitr::include_graphics()</code>. Era algo así, veamos si también funciona en Quarto:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;">#| fig.show: "hold"</span></span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;">#| out.width: "45%"</span></span>
+<span id="cb1-4"><span class="co" style="color: #5E5E5E;">#| fig.align: "default"</span></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;"># graficos side to side en Rmarkdown</span></span>
+<span id="cb1-6"><span class="co" style="color: #5E5E5E;"># https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941/12</span></span>
+<span id="cb1-7"></span>
+<span id="cb1-8"></span>
+<span id="cb1-9">knitr<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">include_graphics</span>(here<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">here</span>(<span class="st" style="color: #20794D;">"posts"</span>,  <span class="st" style="color: #20794D;">"thumbnail.jpg"</span>))</span>
+<span id="cb1-10"></span>
+<span id="cb1-11">knitr<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">include_graphics</span>(here<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">here</span>(<span class="st" style="color: #20794D;">"posts"</span>, <span class="st" style="color: #20794D;">"thumbnail.jpg"</span>))</span>
+<span id="cb1-12"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<div class="cell-output-display">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpgthumbnail.jpg" class="img-fluid" style="width:45.0%"></p>
+</div>
+</div>
+<p>Como veis, <strong>no me ha funcionado!!!</strong> Ya intentaré ver la razón.</p>
+</section>
+<section id="figuras-en-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="figuras-en-quarto">Figuras en Quarto</h2>
+<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>.</p>
+<p>Las imágenes (o figuras) se pueden insertar de múltiples maneras:</p>
+<ol type="1">
+<li>La sintaxis de Pandoc:</li>
+</ol>
+<div class="panel-tabset">
+<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" aria-controls="tabset-1-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" aria-controls="tabset-1-2" aria-selected="false">Has de escribir</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" aria-labelledby="tabset-1-1-tab">
+<div id="fig-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Una imagén centrada (75%)</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" aria-labelledby="tabset-1-2-tab">
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="al" style="color: #AD0000;">![Una imagén centrada (75%)](thumbnail.jpg)</span>{#fig-01 fig-align="left" width="75%"}</span></code></pre></div>
+</div>
+</div>
+</div>
+<section id="subfiguras" class="level3">
+<h3 class="anchored" data-anchor-id="subfiguras">Subfiguras</h3>
+<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html#subfigures">aquí</a>.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" aria-controls="tabset-2-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" aria-controls="tabset-2-2" aria-selected="false">Has de escribir</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" aria-labelledby="tabset-2-1-tab">
+<div id="fig-elephants" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-2.1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants"></p>
+<p></p><figcaption class="figure-caption">(a) Imágen 1</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-2.2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants"></p>
+<p></p><figcaption class="figure-caption">(b) Imágen 2</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Dos imágenes alineadas</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" aria-labelledby="tabset-2-2-tab">
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1">::: {#fig-elephants layout-ncol=2}</span>
+<span id="cb3-2"></span>
+<span id="cb3-3"><span class="al" style="color: #AD0000;">![Imágen 1](thumbnail.jpg)</span>{#fig-2.1}</span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="al" style="color: #AD0000;">![Imágen 2](thumbnail.jpg)</span>{#fig-2.2}</span>
+<span id="cb3-6"></span>
+<span id="cb3-7">2 imágenes alineadas</span>
+<span id="cb3-8">:::</span></code></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="panel-de-imágenes" class="level3">
+<h3 class="anchored" data-anchor-id="panel-de-imágenes">Panel de imágenes</h3>
+<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html#figure-panels">aquí</a>.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" aria-controls="tabset-3-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" aria-controls="tabset-3-2" aria-selected="false">Has de escribir</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" aria-labelledby="tabset-3-1-tab">
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(A)</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(B)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(C)</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(D)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" aria-labelledby="tabset-3-2-tab">
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1">::: {layout-nrow=2}</span>
+<span id="cb4-2"><span class="al" style="color: #AD0000;">![(A)](thumbnail.jpg)</span></span>
+<span id="cb4-3"></span>
+<span id="cb4-4"><span class="al" style="color: #AD0000;">![(B)](thumbnail.jpg)</span></span>
+<span id="cb4-5"></span>
+<span id="cb4-6"><span class="al" style="color: #AD0000;">![(C)](thumbnail.jpg)</span></span>
+<span id="cb4-7"></span>
+<span id="cb4-8"><span class="al" style="color: #AD0000;">![(D)](thumbnail.jpg)</span></span>
+<span id="cb4-9">:::</span></code></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="custom-layouts" class="level3">
+<h3 class="anchored" data-anchor-id="custom-layouts">Custom layouts</h3>
+<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html#complex-layouts">aquí</a>.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" aria-controls="tabset-4-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" aria-controls="tabset-4-2" aria-selected="false">Has de escribir</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" aria-labelledby="tabset-4-1-tab">
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(A)</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(B)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">(C)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-2" class="tab-pane" aria-labelledby="tabset-4-2-tab">
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1">::: {layout="[<span class="co" style="color: #5E5E5E;">[</span><span class="ot" style="color: #003B4F;">40,-20,40</span><span class="co" style="color: #5E5E5E;">]</span>, <span class="co" style="color: #5E5E5E;">[</span><span class="ot" style="color: #003B4F;">100</span><span class="co" style="color: #5E5E5E;">]</span>]"}</span>
+<span id="cb5-2"><span class="al" style="color: #AD0000;">![(A)](thumbnail.jpg)</span></span>
+<span id="cb5-3"></span>
+<span id="cb5-4"><span class="al" style="color: #AD0000;">![(B)](thumbnail.jpg)</span></span>
+<span id="cb5-5"></span>
+<span id="cb5-6"><span class="al" style="color: #AD0000;">![(C)](thumbnail.jpg)</span></span>
+<span id="cb5-7">:::</span></code></pre></div>
+</div>
+</div>
+</div>
+<p><br><br></p>
+</section>
+</section>
+<section id="tamaño-de-las-imágenes" class="level2">
+<h2 class="anchored" data-anchor-id="tamaño-de-las-imágenes">Tamaño de las imágenes</h2>
+<p>El tamaño de las imágenes es problemático (al menos para mi).</p>
+<p><a href="https://quarto.org/docs/computations/execution-options.html#figure-options">Aquí</a> puedes ver la documentación oficial de Quarto sobre el tamaño por defecto de las imágenes y como cambiarlo.</p>
+<p><a href="https://r4ds.hadley.nz/quarto.html#figure-sizing">Aquí</a> puedes ver los consejos sobre el tamaño de las imágenes de Hadley en <a href="https://r4ds.hadley.nz/">R4DS (2nd ed.)</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>Quarto</category>
+  <category>ejemplos</category>
+  <category>extensiones</category>
+  <guid>https://perezp44.github.io/taller.primer.blog/posts/post_03_imagenes.html</guid>
+  <pubDate>Tue, 25 Oct 2022 22:00:00 GMT</pubDate>
+  <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_03.png" medium="image" type="image/png" height="83" width="144"/>
+</item>
+<item>
+  <title>Layout’s</title>
+  <dc:creator>Pedro J. Pérez</dc:creator>
+  <link>https://perezp44.github.io/taller.primer.blog/posts/post_01_layout.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="intro" class="level3">
+<h3 class="anchored" data-anchor-id="intro">Intro</h3>
+<p>Además de yaml, texto y chunks, para escribir con Quarto <strong>conviene conocer la estructura o layout de los artículos</strong> que se generan con él. Las páginas tienen un body, un margin y un área para las sidebars, que en nuestro caso contiene un TOC<sup>1</sup>. Documentación oficial <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a>.</p>
+</section>
+<section id="ejemplo-con-imágenes" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="ejemplo-con-imágenes">Ejemplo (con imágenes)</h3>
+<p>Para ver las distintas posibilidades que tenemos, <strong>insertaremos una imagen</strong> ocupando distintas áreas del artículo. Empezaremos situando la imagen en el margen. para ello habría que hacer lo siguiente:</p>
+<pre><code>::: {.column-margin}
+
+![](imagenes/my_layout-01.png){fig-align="center"}
+
+:::</code></pre>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-01a.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div></div><div class="column-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-02a.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="column-body-outset">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-03.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="column-page-inset">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-04.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="column-page">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-05.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="column-screen-inset">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-06.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="column-screen">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-07.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<p>Si queremos podemos llegar a ocupar el 100% de la pantalla. Sólo habría que indicarlo en las opciones de la imagen con <code>width="100%"</code>.</p>
+<div class="column-screen">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/my_layout-08.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="ejemplo-con-chunks" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="ejemplo-con-chunks">Ejemplo (con chunks)</h2>
+<p>El output de los chunks también puede ocupar distintas áreas. Veamos si un leaflet se puede poner en el margen:</p>
+<div class="cell page-columns page-full">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
+<span id="cb2-2"><span class="co" style="color: #5E5E5E;">#| column: margin</span></span>
+<span id="cb2-3"><span class="fu" style="color: #4758AB;">library</span>(leaflet)</span>
+<span id="cb2-4"><span class="fu" style="color: #4758AB;">leaflet</span>() <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb2-5">  <span class="fu" style="color: #4758AB;">addTiles</span>() <span class="sc" style="color: #5E5E5E;">%&gt;%</span>  <span class="co" style="color: #5E5E5E;"># Add default OpenStreetMap map tiles</span></span>
+<span id="cb2-6">  <span class="fu" style="color: #4758AB;">addMarkers</span>(<span class="at" style="color: #657422;">lng =</span> <span class="sc" style="color: #5E5E5E;">-</span><span class="fl" style="color: #AD0000;">4.7880</span>, <span class="at" style="color: #657422;">lat =</span> <span class="fl" style="color: #AD0000;">37.885</span>, <span class="at" style="color: #657422;">popup =</span> <span class="st" style="color: #20794D;">"Rectorado de la Universidad de Córdoba</span><span class="sc" style="color: #5E5E5E;">\n</span><span class="st" style="color: #20794D;"> (Sede de las XII Jornadas de usuarios de R)"</span>)</span>
+<span id="cb2-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+
+<div class="no-row-height column-margin column-container"><div class="cell-output-display">
+<div id="htmlwidget-9360b6dbf6109c590ea7" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9360b6dbf6109c590ea7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
+</div></div></div>
+<p><br></p>
+<p>Y ahora ocupando toda la pantalla:</p>
+<div class="cell page-columns page-full">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
+<span id="cb3-2"><span class="co" style="color: #5E5E5E;">#| column: screen</span></span>
+<span id="cb3-3"><span class="fu" style="color: #4758AB;">library</span>(leaflet)</span>
+<span id="cb3-4"><span class="fu" style="color: #4758AB;">leaflet</span>() <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb3-5">  <span class="fu" style="color: #4758AB;">addTiles</span>() <span class="sc" style="color: #5E5E5E;">%&gt;%</span>  <span class="co" style="color: #5E5E5E;"># Add default OpenStreetMap map tiles</span></span>
+<span id="cb3-6"><span class="fu" style="color: #4758AB;">addMarkers</span>(<span class="at" style="color: #657422;">lng =</span> <span class="sc" style="color: #5E5E5E;">-</span><span class="fl" style="color: #AD0000;">4.7880</span>, <span class="at" style="color: #657422;">lat =</span> <span class="fl" style="color: #AD0000;">37.885</span>, <span class="at" style="color: #657422;">popup =</span> <span class="st" style="color: #20794D;">"Rectorado de la Universidad de Córdoba</span><span class="sc" style="color: #5E5E5E;">\n</span><span class="st" style="color: #20794D;"> (Sede de las XII Jornadas de usuarios de R)"</span>)</span>
+<span id="cb3-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+<div class="cell-output-display column-screen">
+<div id="htmlwidget-924797bba765d3b0611c" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-924797bba765d3b0611c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br></p>
+<p>Como no puede ser de otro modo, aún hay más opciones para el layout. Documentación <a href="https://quarto.org/docs/authoring/article-layout.html#overflowing-content">aquí</a></p>
+<p><br></p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Además, el layout puede venir afectado por la opción <code>page-layout: custom   #- {article, full, custom}</code>. Documentación oficial <a href="https://quarto.org/docs/output-formats/page-layout.html">aquí</a> ↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>quarto</category>
+  <category>layout</category>
+  <category>ejemplos</category>
+  <guid>https://perezp44.github.io/taller.primer.blog/posts/post_01_layout.html</guid>
+  <pubDate>Tue, 25 Oct 2022 22:00:00 GMT</pubDate>
+  <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_01.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
   <title>Escribiendo posts: un ejemplo de post</title>
-  <link>https://perezp44.github.io/taller.primer.blog/posts/ejemplo-de-post-02.html</link>
+  <link>https://perezp44.github.io/taller.primer.blog/posts/post_00_cozitas-q-quedan.html</link>
   <description><![CDATA[ 
 
 
@@ -516,8 +746,8 @@ Tarea xx
 </section>
 
  ]]></description>
-  <guid>https://perezp44.github.io/taller.primer.blog/posts/ejemplo-de-post-02.html</guid>
-  <pubDate>Tue, 08 Nov 2022 11:56:14 GMT</pubDate>
+  <guid>https://perezp44.github.io/taller.primer.blog/posts/post_00_cozitas-q-quedan.html</guid>
+  <pubDate>Tue, 08 Nov 2022 13:51:12 GMT</pubDate>
   <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
