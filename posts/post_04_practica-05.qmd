@@ -2,8 +2,8 @@
 title: "Mi Segundo post con Quarto"
 author: "Nosotros"
 date: 2022-10-25
-categories: [R, quarto, ejemplos]
-image: "thumbnail_04.png"
+categories: [Taller, soluciones practica nº 5]
+image: "./thumbnails/thumbnail_04.png"
 #subtitle: | 
 #  Practicando con Quarto
 description: |

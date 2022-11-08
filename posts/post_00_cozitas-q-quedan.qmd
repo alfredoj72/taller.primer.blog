@@ -10,7 +10,7 @@ author:
   - name: Pedro J. Pérez
     affiliation: Universitat de València
 date: 2022-10-26
-categories: [Quarto, ejemplos, más elementos]
+categories: [Quarto, más elementos, ejemplos]
 image: "./thumbnails/thumbnail_00.png"
 title-block-banner: true #- {true, false }
 draft: false
