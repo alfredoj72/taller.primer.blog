@@ -222,8 +222,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">Quarto</div>
-                <div class="quarto-category">ejemplos</div>
                 <div class="quarto-category">más elementos</div>
+                <div class="quarto-category">ejemplos</div>
               </div>
                   </div>
   </div>
@@ -271,7 +271,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#incrustar-una-web" id="toc-incrustar-una-web" class="nav-link" data-scroll-target="#incrustar-una-web">Incrustar una web</a></li>
   <li><a href="#más-cosas" id="toc-más-cosas" class="nav-link" data-scroll-target="#más-cosas">Más cosas</a>
   <ul class="collapse">
-  <li><a href="#inline" id="toc-inline" class="nav-link" data-scroll-target="#inline">Inline</a></li>
+  <li><a href="#inline-code" id="toc-inline-code" class="nav-link" data-scroll-target="#inline-code">Inline code</a></li>
+  <li><a href="#divs" id="toc-divs" class="nav-link" data-scroll-target="#divs">Divs</a></li>
+  <li><a href="#border" id="toc-border" class="nav-link" data-scroll-target="#border">Border</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/taller.primer.blog/edit/main/posts/post_00_cozitas-q-quedan.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/perezp44/taller.primer.blog/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -379,14 +381,23 @@ Tarea xx
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">embed-resources</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="inline" class="level3">
-<h3 class="anchored" data-anchor-id="inline">Inline</h3>
-<p>Si escribes:</p>
+<section id="inline-code" class="level3">
+<h3 class="anchored" data-anchor-id="inline-code">Inline code</h3>
+<p>Para escribir código entrelazado con el texto tienes que ponerlo dentro de estas marcas: <code>`r `</code>. Por ejemplo, si escribes:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>El data.frame iris tiene <span class="st">`</span><span class="at">r nrow(iris)</span><span class="st">`</span> filas <span class="st">`</span><span class="at">r ncol(iris)</span><span class="st">`</span> columnas.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>se verá así:</p>
-<p>El data.frame iris tiene 150 filas 5 columnas.</p>
+<p>Se verá así: El data.frame iris tiene 150 filas 5 columnas.</p>
+</section>
+<section id="divs" class="level3">
+<h3 class="anchored" data-anchor-id="divs">Divs</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This is *some text*</span><span class="co">]</span>{.class key="val"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="border" class="level3">
+<h3 class="anchored" data-anchor-id="border">Border</h3>
+<div class="border">
+<p>This content can be styled with a border</p>
+</div>
 
 
 </section>

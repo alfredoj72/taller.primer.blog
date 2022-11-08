@@ -96,6 +96,13 @@ This content can be styled with a border
 Para aprender puedes ir a [este Quarto tip](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/), a  [este video](https://youtu.be/d8jSN998Mtw?t=3757). La documentación oficial está [aquí](https://quarto.org/docs/authoring/footnotes-and-citations.html) y [aquí](https://quarto.org/docs/visual-editor/technical.html#citations) para usar el editor visual.
 
 
+- Bilio (.csl, .bib, lin-citations: yes). LatinR 1:09  R.version.string <https://www.youtube.com/watch?v=d8jSN998Mtw>
+
+
+- [Videos](https://quarto.org/docs/authoring/videos.html) 
+
+
+
 ## Shortcode (Include)
 
 Lo he usado mucho en el taller, concretamente para reusar trozos en los tutoriales y en las slides y tenerlos sincronizados.
@@ -147,13 +154,32 @@ format:
   html:
   embed-resources: true
 ```
-### Inline
+### Inline code
 
-Si escribes:
+Para escribir código entrelazado con el texto tienes que ponerlo dentro de estas marcas: `` `r ` ``. Por ejemplo, si escribes:
+
 
 ```{r, eval = FALSE}
 El data.frame iris tiene `r nrow(iris)` filas `r ncol(iris)` columnas.
 ```
-se verá así:
 
-El data.frame iris tiene `r nrow(iris)` filas `r ncol(iris)` columnas.
+Se verá así: El data.frame iris tiene `r nrow(iris)` filas `r ncol(iris)` columnas.
+
+### Divs y Spans
+
+- [Divs y Spans](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans)
+
+
+
+``` markdown
+[This is *some text*]{.class key="val"}
+```
+
+
+####  Border
+
+::: {.border}
+This content can be styled with a border
+:::
+
+

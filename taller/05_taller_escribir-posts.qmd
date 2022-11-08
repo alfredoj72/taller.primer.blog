@@ -330,62 +330,7 @@ Usaremos un ejemplo para **practicar la sintaxis y nuevas posibilidades de Quart
 
 <br>
 
+Las soluciones a la Práctica están [aquí](/posts/post_04_practica-05.html)
 
-## Un ejemplo
-
-
-- Create a tabset via a markdown div with the class name panel-tabset (e.g. ::: {.panel-tabset}) <https://quarto.org/docs/output-formats/html-basics.html#tabsets>
-
-- Bilio (.csl, .bib, lin-citations: yes). LatinR 1:09  R.version.string <https://www.youtube.com/watch?v=d8jSN998Mtw>
-
-- [Videos](https://quarto.org/docs/authoring/videos.html) 
-
-
-
-
-
-#### Divs y Spans
-
-
-- [Divs y Spans](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans)
-
-::: {.border}
-This content can be styled with a border
-
-:::
-
-``` markdown
-:::{.callout-note}
-Note that there are five types of callouts, including: 
-`note`, `tip`, `warning`, `caution`, and `important`.
-:::
-```
-
-
-
-``` markdown
-[This is *some text*]{.class key="val"}
-```
-
-
-#### Call-outs
-
-- cambiar el color etc....
-
-[Call-outs bervatim](https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd)
-
-``` markdown
-:::{.callout-note}
-Note that there are five types of callouts, including: 
-`note`, `tip`, `warning`, `caution`, and `important`.
-:::
-```
-### Inline
-
--  para inline has de `` `r ` ``.
 
 <br>
-
-
-
-
