@@ -29,7 +29,10 @@ Entre los materiales que he visto sobre Quarto **destacar los siguientes**:
 
 -  [Rstudio::conf(2022) Workshops](https://github.com/rstudio-conf-2022): por ejemplo, [Get Started with Quarto](https://github.com/rstudio-conf-2022/get-started-quarto) o [Rmarkdown to Quarto](https://github.com/rstudio-conf-2022/rmd-to-quarto).
 
-- [Reproducible authoring with Quarto](https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide) un video de Mine Çetinkaya-Rundel donde se hace evidente las ventajas de Quarto y la utilidad del editor visual de RStudio.
+- [Reproducible authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls): un video de Mine Çetinkaya-Rundel donde se hace evidente las ventajas de Quarto y la utilidad del editor visual de RStudio. Sus slides [aquí](https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide).
+
+
+
 
 <br>
 

@@ -104,9 +104,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -127,15 +124,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<script src="../site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="../site_libs/jquery-1.12.4/jquery.min.js"></script>
-<link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
-<script src="../site_libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-<script src="../site_libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="../site_libs/leaflet-binding-2.1.1/leaflet.js"></script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -149,7 +137,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="floating nav-fixed slimcontent">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -230,34 +218,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#el-yaml-de-un-post" id="toc-el-yaml-de-un-post" class="nav-link" data-scroll-target="#el-yaml-de-un-post"><span class="toc-section-number">2.1</span>  El <code>yaml</code> de un post</a></li>
   <li><a href="#yaml-nivel-proyecto" id="toc-yaml-nivel-proyecto" class="nav-link" data-scroll-target="#yaml-nivel-proyecto"><span class="toc-section-number">2.2</span>  Yaml nivel proyecto</a></li>
   <li><a href="#yaml-nivel-carpeta" id="toc-yaml-nivel-carpeta" class="nav-link" data-scroll-target="#yaml-nivel-carpeta"><span class="toc-section-number">2.3</span>  Yaml nivel carpeta</a></li>
-  <li><a href="#yaml-en-documento" id="toc-yaml-en-documento" class="nav-link" data-scroll-target="#yaml-en-documento"><span class="toc-section-number">2.4</span>  Yaml en documento</a></li>
+  <li><a href="#yaml-nivel-documento" id="toc-yaml-nivel-documento" class="nav-link" data-scroll-target="#yaml-nivel-documento"><span class="toc-section-number">2.4</span>  Yaml nivel documento</a></li>
   </ul></li>
   <li><a href="#texto" id="toc-texto" class="nav-link" data-scroll-target="#texto"><span class="toc-section-number">3</span>  Texto</a>
   <ul class="collapse">
   <li><a href="#sintaxis-básica-de-markdown" id="toc-sintaxis-básica-de-markdown" class="nav-link" data-scroll-target="#sintaxis-básica-de-markdown"><span class="toc-section-number">3.1</span>  Sintaxis básica de <code>markdown</code></a></li>
-  <li><a href="#más-elementos-para-escribir" id="toc-más-elementos-para-escribir" class="nav-link" data-scroll-target="#más-elementos-para-escribir"><span class="toc-section-number">3.2</span>  Más elementos para “escribir”</a></li>
   </ul></li>
   <li><a href="#chunks-de-código" id="toc-chunks-de-código" class="nav-link" data-scroll-target="#chunks-de-código"><span class="toc-section-number">4</span>  Chunks de código</a>
   <ul class="collapse">
   <li><a href="#diferencias-con-.rmd" id="toc-diferencias-con-.rmd" class="nav-link" data-scroll-target="#diferencias-con-.rmd"><span class="toc-section-number">4.1</span>  Diferencias con .Rmd</a></li>
   <li><a href="#más-opciones-para-los-chunks" id="toc-más-opciones-para-los-chunks" class="nav-link" data-scroll-target="#más-opciones-para-los-chunks"><span class="toc-section-number">4.2</span>  Más opciones para los chunks</a></li>
   </ul></li>
-  <li><a href="#layout" id="toc-layout" class="nav-link" data-scroll-target="#layout"><span class="toc-section-number">5</span>  Layout</a></li>
-  <li><a href="#extensiones" id="toc-extensiones" class="nav-link" data-scroll-target="#extensiones"><span class="toc-section-number">6</span>  Extensiones</a></li>
-  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="toc-section-number">7</span>  Resumen</a></li>
-  <li><a href="#práctica" id="toc-práctica" class="nav-link" data-scroll-target="#práctica"><span class="toc-section-number">8</span>  Práctica</a></li>
-  <li><a href="#un-ejemplo" id="toc-un-ejemplo" class="nav-link" data-scroll-target="#un-ejemplo"><span class="toc-section-number">9</span>  Un ejemplo</a>
+  <li><a href="#más-elementos-para-escribir" id="toc-más-elementos-para-escribir" class="nav-link" data-scroll-target="#más-elementos-para-escribir"><span class="toc-section-number">5</span>  Más elementos para “escribir”</a>
   <ul class="collapse">
-  <li><a href="#inline" id="toc-inline" class="nav-link" data-scroll-target="#inline"><span class="toc-section-number">9.1</span>  Inline</a></li>
+  <li><a href="#layouts" id="toc-layouts" class="nav-link" data-scroll-target="#layouts"><span class="toc-section-number">5.1</span>  Layout’s</a></li>
+  <li><a href="#extensiones" id="toc-extensiones" class="nav-link" data-scroll-target="#extensiones"><span class="toc-section-number">5.2</span>  Extensiones</a></li>
+  <li><a href="#callouts" id="toc-callouts" class="nav-link" data-scroll-target="#callouts"><span class="toc-section-number">5.3</span>  Callouts</a></li>
+  </ul></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="toc-section-number">6</span>  Resumen</a></li>
+  <li><a href="#práctica" id="toc-práctica" class="nav-link" data-scroll-target="#práctica"><span class="toc-section-number">7</span>  Práctica</a></li>
+  <li><a href="#un-ejemplo" id="toc-un-ejemplo" class="nav-link" data-scroll-target="#un-ejemplo"><span class="toc-section-number">8</span>  Un ejemplo</a>
+  <ul class="collapse">
+  <li><a href="#inline" id="toc-inline" class="nav-link" data-scroll-target="#inline"><span class="toc-section-number">8.1</span>  Inline</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/taller.primer.blog/edit/main/taller/05_taller_escribir-posts.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/taller.primer.blog/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
 </nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content page-columns page-full column-body" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -288,7 +279,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Fecha de Publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">7 de noviembre de 2022</p>
+      <p class="date">8 de noviembre de 2022</p>
     </div>
   </div>
   
@@ -669,8 +660,8 @@ Tarea 5.2: Modificar <code>./posts/_metadata.yml</code>
 <p><br></p>
 </section>
 </section>
-<section id="yaml-en-documento" class="level3" data-number="2.4">
-<h3 data-number="2.4" class="anchored" data-anchor-id="yaml-en-documento"><span class="header-section-number">2.4</span> Yaml en documento</h3>
+<section id="yaml-nivel-documento" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="yaml-nivel-documento"><span class="header-section-number">2.4</span> Yaml nivel documento</h3>
 <p>Como dijimos, también podemos especificar metadatos y opciones para un documento <code>.qmd</code> en el encabezamiento del documento. Lógicamente esas opciones sólo afectarán a ese documento.</p>
 <section id="tarea-5.3" class="level4">
 <h4 class="anchored" data-anchor-id="tarea-5.3">Tarea 5.3</h4>
@@ -738,23 +729,6 @@ Tarea 5.3: Modificar encabezamiento de <code>./posts/my-primer-post/index.qmd</c
 </div>
 </div>
 </div>
-<p><br></p>
-</section>
-<section id="más-elementos-para-escribir" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="más-elementos-para-escribir"><span class="header-section-number">3.2</span> Más elementos para “escribir”</h3>
-<p>Además de los elementos de escritura que nos ofrece la sintaxis básica de <code>markdown</code>. Quarto nos ofrece más posibilidades, veamos algunas de ellas:</p>
-<ul>
-<li><p>Links (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#links-images">aquí</a>)</p></li>
-<li><p>Imágenes (documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>) y sus <a href="https://quarto.org/docs/computations/execution-options.html#figure-options">opciones</a></p></li>
-<li><p>Listas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#lists">aquí</a>)</p></li>
-<li><p>Tablas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#tables">aquí</a>)</p></li>
-<li><p>Código (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#source-code">aquí</a>)</p></li>
-<li><p>Ecuaciones (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#equations">aquí</a>)</p></li>
-<li><p>Callout blocks (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks">aquí</a>)</p></li>
-<li><p>Divs &amp; spans (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans">aquí</a>)</p></li>
-</ul>
-<p><br></p>
-<p>El <a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/">editor visual</a> facilita la introducción de estos elementos en tus documentos. En <a href="https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide">esta charla</a> de Mine Çetinkaya-Rundel se aprecia fácilmente la <strong>utilidad del editor visual</strong>.</p>
 <p><br></p>
 </section>
 </section>
@@ -844,182 +818,47 @@ Extensiones: mi setup chunk
 <span id="cb9-5"><a href="#cb9-5"></a><span class="in">```</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
-</section>
-</section>
-<section id="layout" class="level2 page-columns page-full" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="layout"><span class="header-section-number">5</span> Layout</h2>
-<p>Además de yaml, texto y chunk, para escribir con Quarto conviene conocer la estructura o layout de los artículos que se generan con él. Las páginas tienen un body, un margin y un área para las sidebars, que en nuestro caso contiene un TOC<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. Documentación oficial <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a>.</p>
-<p>Para ver las distintas posibilidades que tenemos, insertaremos una imagen ocupando distintas áreas del artículo. Empezaremos situando la imagen en el margen. para ello habría que hacer lo siguiente:</p>
-<pre><code>::: {.column-margin}
-
-![](imagenes/my_layout-01.png){fig-align="center"}
-
-:::</code></pre>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="imagenes/my_layout-01a.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div></div><div class="column-body">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="imagenes/my_layout-02a.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="column-body-outset">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="imagenes/my_layout-03.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="column-page-inset">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="imagenes/my_layout-04.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="column-page">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="imagenes/my_layout-05.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="column-screen-inset">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="imagenes/my_layout-06.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="column-screen">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="imagenes/my_layout-07.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<p><br></p>
-<p>El output de los chunks también puede ocupar distintas áreas. Veamos si un leaflet se puede poner en el margen:</p>
-<div class="cell page-columns page-full">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: margin</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># Add default OpenStreetMap map tiles</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng=</span><span class="fl">174.768</span>, <span class="at">lat=</span><span class="sc">-</span><span class="fl">36.852</span>, <span class="at">popup=</span><span class="st">"The birthplace of R"</span>)</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-<div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div id="htmlwidget-a97339fb243c967abe14" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a97339fb243c967abe14">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-36.852,174.768,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-36.852,-36.852],"lng":[174.768,174.768]}},"evals":[],"jsHooks":[]}</script>
-</div></div></div>
-<p><br></p>
-<p>Y ahora ocupando toda la pantalla:</p>
-<div class="cell page-columns page-full">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: screen</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># Add default OpenStreetMap map tiles</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng=</span><span class="fl">174.768</span>, <span class="at">lat=</span><span class="sc">-</span><span class="fl">36.852</span>, <span class="at">popup=</span><span class="st">"The birthplace of R"</span>)</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display column-screen">
-<div id="htmlwidget-b97770badeadc538cdb2" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b97770badeadc538cdb2">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-36.852,174.768,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-36.852,-36.852],"lng":[174.768,174.768]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<p><br></p>
-<p>Como no puede ser de otro modo, aún hay más opciones para el layout. Documentación <a href="https://quarto.org/docs/authoring/article-layout.html#overflowing-content">aquí</a></p>
-<p><br></p>
 <p><br></p>
 </section>
-<section id="extensiones" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="extensiones"><span class="header-section-number">6</span> Extensiones</h2>
-<p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en el lenguaje <code>Lua</code>. <a href="https://quarto.org/docs/extensions/starter-templates.html">Aquí</a> la documentación oficial.</p>
-<p>Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión “quarto-youtube-embed”. Con Rmd ponía algún vídeo en mis slides o tutoriales usando un paquete de R (ahora mismo no recuerdo el nombre del pkg). Ahora, con Quarto, podemos hacerlo usando la extensión “quarto-youtube-embed”. <a href="https://github.com/sellorm/quarto-youtube-embed">Aquí</a> está el repo de la extensión. Veamos cómo.</p>
-<div class="callout-important callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Tarea 5.4: Instalar y usar una extensión
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Concretamente instalaremos la extensión “quarto-youtube-embed”. El repo <a href="https://github.com/sellorm/quarto-youtube-embed">aquí</a>.</p>
+</section>
+<section id="más-elementos-para-escribir" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="más-elementos-para-escribir"><span class="header-section-number">5</span> Más elementos para “escribir”</h2>
+<p>Además de los elementos de escritura que nos ofrece la sintaxis básica de <code>markdown</code>. Quarto nos ofrece más posibilidades. Por ejemplo:</p>
 <ul>
-<li>Lo primero es instalar la extensión de Quarto. Lo haremos desde la Terminal así:</li>
+<li><p>Links (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#links-images">aquí</a>)</p></li>
+<li><p>Imágenes (documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>) y sus <a href="https://quarto.org/docs/computations/execution-options.html#figure-options">opciones</a></p></li>
+<li><p>Listas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#lists">aquí</a>)</p></li>
+<li><p>Tablas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#tables">aquí</a>)</p></li>
+<li><p>Código (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#source-code">aquí</a>)</p></li>
+<li><p>Ecuaciones (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#equations">aquí</a>)</p></li>
+<li><p>Callout blocks (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks">aquí</a>)</p></li>
+<li><p>Divs &amp; spans (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans">aquí</a>)</p></li>
+<li><p>Layout (documentación <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a> y <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a>)</p></li>
+<li><p>Extensiones (documentación <a href="https://quarto.org/docs/extensions/starter-templates.html">aquí</a>) . Listado de extensiones oficiales <a href="https://quarto.org/docs/extensions/listing-filters.html">aquí</a></p></li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension sellorm/quarto-youtube-embed</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li>Una vez instalada, podemos incrustar un video usando el siguiente “shortcode” en nuestro documento .qmd:</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>{{<span class="sc">&lt;</span> youtube zk9zHqXm6m0 <span class="sc">&gt;</span>}}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Con lo que habremos incrustado el video en nuestro documento .html final.</p>
-<p></p><div id="youtube-frame" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;"><iframe width="100%" height="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/zk9zHqXm6m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
-</div>
-</div>
-<p>Aunque esta extensión se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. solo hay que usar el siguiente shortcode:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>{{<span class="sc">&lt;</span> video https<span class="sc">:</span><span class="er">//</span>www.youtube.com<span class="sc">/</span>embed<span class="sc">/</span>wo9vZccmqwc <span class="sc">&gt;</span>}}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/wo9vZccmqwc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p><a href="https://quarto.org/docs/authoring/videos.html">Aquí</a> la documentación oficial del shortcode <code>{{ &lt; video   &gt;}}</code>.</p>
 <p><br></p>
-<p><a href="https://github.com/mcanouil/awesome-quarto#extensions">Aquí</a> tienes un <strong>listado de extensiones disponibles</strong>. Las extensiones oficiales de Quarto están <a href="https://quarto.org/docs/extensions/listing-filters.html">aquí</a>.</p>
-<p>Vamos a <strong>instalar y usar una nueva extensión</strong>, concretamente la extensión “Lightbox”. Lo que hace esta extensión es que podamos pinchar en una imagen y ampliarla. <a href="https://quarto-ext.github.io/lightbox/">aquí</a> un ejemplo de lo que se puede hacer con “Lightbox”. Su repo <a href="https://github.com/quarto-ext/lightbox">aquí</a></p>
-<div class="callout-important callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Tarea 5.5: Instalar y usar la extensión “Lightbox”
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Vamos a instalar y usar una nueva extensión, concretamente la extensión “Lightbox”. Su repo <a href="https://github.com/quarto-ext/lightbox">aquí</a></p>
-<ul>
-<li>Lo primero es instalar la extensión desde la Terminal:</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension quarto-ext/lightbox</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Esta vez, para poder usar la extension en un documento <code>.qmd</code> hemos de incluir en el yaml del documento lo siguiente:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> Simple Lightbox Example</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="at">   </span><span class="kw">-</span><span class="at"> lightbox</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="at">![Mi imagen con Lighbox activado](./imagenes/economia.gif){.lightbox description="El logo-nano de la facultad de Economía de la Universtat de València"</span></span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="at">desc-position="left"}</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>y veríamos algo como:</p>
-</div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="./imagenes/economia.gif" class="lightbox" data-desc-position="left" data-description="El logo-nano de la facultad de Economía de la Universtat de València" title="Mi imagen con Lighbox activado" data-gallery="quarto-lightbox-gallery-1"><img src="./imagenes/economia.gif" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">Mi imagen con Lighbox activado</figcaption><p></p>
-</figure>
-</div>
+<p>El <a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/">editor visual</a> facilita la introducción de estos elementos en tus documentos. En <a href="https://www.youtube.com/watch?v=6p4vOKS6Xls">esta charla</a> de Mine Çetinkaya-Rundel se aprecia fácilmente la <strong>utilidad del editor visual</strong>.</p>
+<p><br></p>
+<p>Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.</p>
+<p><br></p>
+<section id="layouts" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="layouts"><span class="header-section-number">5.1</span> Layout’s</h3>
+<p>Los veremos con <a href="../posts/post_01_layout.html">este post</a> en el fake-blog del taller.</p>
 <p><br></p>
 </section>
-<section id="resumen" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="resumen"><span class="header-section-number">7</span> Resumen</h2>
+<section id="extensiones" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="extensiones"><span class="header-section-number">5.2</span> Extensiones</h3>
+<p>Las veremos con <a href="../posts/post_02_extensiones.html">este post</a> en el fake-blog del taller.</p>
+</section>
+<section id="callouts" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="callouts"><span class="header-section-number">5.3</span> Callouts</h3>
+<p><br></p>
+</section>
+</section>
+<section id="resumen" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="resumen"><span class="header-section-number">6</span> Resumen</h2>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1028,19 +867,21 @@ Resumen (tutorial nº 5)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>La <strong>quinta parte del taller</strong> se ocupa de la <strong>escritura de posts</strong> para el blog.</p></li>
 <li><p>Los posts <strong>se han de escribir en formato <code>.qmd</code></strong>; por lo tanto, se repasan los fundamentos “teóricos” necesarios para escribir este tipo de documentos.</p></li>
 <li><p>Nos apoyamos en nuestro <strong>conocimiento previo de la sintaxis Rmarkdown</strong>.</p></li>
-<li><p>Se repasan las posibilidades de configurar los documentos por medio de <strong>los 3 YAML’s</strong> que pueden afectar a un documento.</p></li>
+<li><p>Se repasan las posibilidades de configurar los documentos por medio de <strong>los 3 niveles de YAML</strong> que pueden afectar a un documento.</p></li>
 <li><p><strong>Los 3 YAML’s</strong> son: Nivel proyecto (<code>_quarto.yml</code>), nivel carpeta (<code>_metadata.yml</code>) y nivel documento (en el propio encabezamiento del archivo)</p></li>
 <li><p>El <strong>texto</strong> en ficheros <code>.qmd</code> es muy similar al de los documentos <code>.qmd</code>. Aparecen algunos elementos nuevos como los Call-outs.</p></li>
 <li><p>El <strong>código</strong> sí presenta novedades: nueva sintaxis con <code>#|</code> y posibilidad de determinar opciones en el YAML.</p></li>
-<li><p>Repasamos también algunas de las opciones de <strong>layout</strong>.</p></li>
-<li><p>Vimos como instalar y usar <strong>extensiones</strong></p></li>
-<li><p>Para poder escribir en <code>.qmd</code> <strong>hay que practicar</strong>. Vamos a ello</p></li>
+<li><p>Para poder escribir en <code>.qmd</code> <strong>hay que practicar</strong>. Lo haremos con una tarea donde veremos, entre otras cosas:</p>
+<ul>
+<li><p>Algunas de las opciones de <strong>layout</strong>.</p></li>
+<li><p>Ver como instalar y usar <strong>extensiones</strong></p></li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -1049,12 +890,12 @@ Resumen (tutorial nº 5)
 <hr>
 <p><br></p>
 </section>
-<section id="práctica" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="práctica"><span class="header-section-number">8</span> Práctica</h2>
-<p>En esta sección dedicaremos un tiempo a la práctica libre para que practiques la creación y escritura de un post. Para ello te ofrezco la siguiente un ejemplo/plantilla para elaborar un post con diferentes elementos.</p>
+<section id="práctica" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="práctica"><span class="header-section-number">7</span> Práctica</h2>
+<p>En esta sección dedicaremos un tiempo a la práctica libre para la <strong>creación y escritura de un post</strong>. Para ello te ofrezco más abajo una plantilla plantilla para elaborar un post con diferentes elementos.</p>
 <p>Usaremos un ejemplo para <strong>practicar la sintaxis y nuevas posibilidades de Quarto</strong> a la hora de generar documentos <code>.html</code>: o sea, para escribir posts para nuestro blog.</p>
 <div class="callout-tip callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1063,7 +904,7 @@ Práctica 5.1: Crear un post para tu blog con la siguiente plantilla.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Vamos a usar el ejemplo/plantilla de abajo para elaborar un nuevo post. Para ello:</p>
 <ul>
@@ -1079,14 +920,13 @@ Práctica 5.1: Crear un post para tu blog con la siguiente plantilla.
 </div>
 </div>
 </section>
-<section id="un-ejemplo" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="un-ejemplo"><span class="header-section-number">9</span> Un ejemplo</h2>
+<section id="un-ejemplo" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="un-ejemplo"><span class="header-section-number">8</span> Un ejemplo</h2>
 <ul>
 <li><p>Create a tabset via a markdown div with the class name panel-tabset (e.g.&nbsp;::: {.panel-tabset}) <a href="https://quarto.org/docs/output-formats/html-basics.html#tabsets" class="uri">https://quarto.org/docs/output-formats/html-basics.html#tabsets</a></p></li>
 <li><p>Bilio (.csl, .bib, lin-citations: yes). LatinR 1:09 R.version.string <a href="https://www.youtube.com/watch?v=d8jSN998Mtw" class="uri">https://www.youtube.com/watch?v=d8jSN998Mtw</a></p></li>
 <li><p><a href="https://quarto.org/docs/authoring/videos.html">Videos</a></p></li>
 </ul>
-<p>-Extensiones</p>
 <section id="divs-y-spans" class="level4">
 <h4 class="anchored" data-anchor-id="divs-y-spans">Divs y Spans</h4>
 <ul>
@@ -1095,22 +935,25 @@ Práctica 5.1: Crear un post para tu blog con la siguiente plantilla.
 <div class="border">
 <p>This content can be styled with a border</p>
 </div>
-<div class="sourceCode" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This is *some text*</span><span class="co">]</span>{.class key="val"}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This is *some text*</span><span class="co">]</span>{.class key="val"}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="call-outs" class="level4">
 <h4 class="anchored" data-anchor-id="call-outs">Call-outs</h4>
+<ul>
+<li>cambiar el color etc….</li>
+</ul>
 <p><a href="https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd">Call-outs bervatim</a></p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including: </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="inline" class="level3" data-number="9.1">
-<h3 data-number="9.1" class="anchored" data-anchor-id="inline"><span class="header-section-number">9.1</span> Inline</h3>
+<section id="inline" class="level3" data-number="8.1">
+<h3 data-number="8.1" class="anchored" data-anchor-id="inline"><span class="header-section-number">8.1</span> Inline</h3>
 <ul>
 <li>para inline has de <code>`r `</code>.</li>
 </ul>
@@ -1128,18 +971,17 @@ Práctica 5.1: Crear un post para tu blog con la siguiente plantilla.
 <li id="fn2"><p>Puedes ver la documentación oficial de Quarto sobre proyectos <a href="https://quarto.org/docs/projects/quarto-projects.html">aquí</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>Aunque yo no lo haría: estoy muy acostumbrado a que el directorio de trabajo de los <code>.Rmd</code> sea la carpeta donde residen<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Puedes ver un ejemplo de cómo quedaría el pie de página en la web del taller, <a href="https://perezp44.github.io/taller.primer.blog/materiales.html">aquí</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Además, el layout puede venir afectado por la opción <code>page-layout: custom   #- {article, full, custom}</code>. Documentación oficial <a href="https://quarto.org/docs/output-formats/page-layout.html">aquí</a> <a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2022,
   author = {Pedro J. Pérez},
   title = {Escribiendo posts: practicando con Quarto},
-  date = {2022-07-11},
+  date = {2022-08-11},
   url = {https://perezp44.github.io/taller.primer.blog//05_taller_escribir-posts.html},
   langid = {es}
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2022" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
 Pedro J. Pérez. 2022. <span>“Escribiendo posts: practicando con
-Quarto.”</span> July 11, 2022. <a href="https://perezp44.github.io/taller.primer.blog//05_taller_escribir-posts.html">https://perezp44.github.io/taller.primer.blog//05_taller_escribir-posts.html</a>.
+Quarto.”</span> August 11, 2022. <a href="https://perezp44.github.io/taller.primer.blog//05_taller_escribir-posts.html">https://perezp44.github.io/taller.primer.blog//05_taller_escribir-posts.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1323,7 +1165,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":true});</script>
 
 
 

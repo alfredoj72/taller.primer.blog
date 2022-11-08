@@ -118,5 +118,11 @@
   },
   "taller/06_taller_tuneado-del-blog.qmd": {
     "06_taller_tuneado-del-blog.html": "4809159d"
+  },
+  "posts/post_01_layout.qmd": {
+    "post_01_layout.html": "00c5a56b"
+  },
+  "posts/post_02_extensiones.qmd": {
+    "post_02_extensiones.html": "cbf90213"
   }
 }

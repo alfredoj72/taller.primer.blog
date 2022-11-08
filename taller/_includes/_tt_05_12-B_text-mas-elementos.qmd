@@ -1,0 +1,26 @@
+
+- Links (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#links-images))
+
+- Imágenes (documentación [aquí](https://quarto.org/docs/authoring/figures.html)) y sus [opciones](https://quarto.org/docs/computations/execution-options.html#figure-options)
+
+- Listas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#lists))  
+
+- Tablas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#tables))  
+
+- Código  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#source-code))  
+
+- Ecuaciones  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#equations))    
+
+- Callout blocks  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks))  
+
+- Divs & spans  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans))  
+
+- Layout (documentación [aquí](https://quarto.org/docs/authoring/article-layout.html)  y [aquí](https://quarto.org/docs/authoring/article-layout.html))
+
+- Extensiones (documentación [aquí](https://quarto.org/docs/extensions/starter-templates.html)) . Listado de extensiones oficiales [aquí](https://quarto.org/docs/extensions/listing-filters.html)
+
+
+<br>
+
+
+El [editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/) facilita la introducción de estos elementos en tus documentos. En [esta charla](https://www.youtube.com/watch?v=6p4vOKS6Xls) de Mine Çetinkaya-Rundel se aprecia fácilmente la **utilidad del editor visual**.

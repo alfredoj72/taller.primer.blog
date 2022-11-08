@@ -8,9 +8,9 @@
 
 <meta name="author" content="Pedro J. Pérez">
 <meta name="dcterms.date" content="2022-10-26">
-<meta name="description" content="Un post de ejemplo para practicar la escritura de documentos .qmd durante el taller “Mi primer blog con Quarto” en el marco de las XII Jornadas de ususarios de R.">
+<meta name="description" content="Intentando entender qué son y cómo usar las extensiones de Quarto">
 
-<title>Mi primer blog con Quarto (WIP) - Mi segundo post</title>
+<title>Mi primer blog con Quarto (WIP) - Extensiones</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,6 +106,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -128,18 +131,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Mi segundo post">
-<meta property="og:description" content="Un post de ejemplo para practicar la escritura de documentos `.qmd` durante el taller &quot;Mi primer blog con Quarto&quot; en el marco de las XII Jornadas de ususarios de R.">
+<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Extensiones">
+<meta property="og:description" content="Intentando entender qué son y cómo usar las extensiones de Quarto">
 <meta property="og:image" content="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg">
 <meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
-<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Mi segundo post">
-<meta name="twitter:description" content="Un post de ejemplo para practicar la escritura de documentos `.qmd` durante el taller &quot;Mi primer blog con Quarto&quot; en el marco de las XII Jornadas de ususarios de R.">
+<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Extensiones">
+<meta name="twitter:description" content="Intentando entender qué son y cómo usar las extensiones de Quarto">
 <meta name="twitter:image" content="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="floating nav-fixed slimcontent">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -209,18 +212,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Mi segundo post</h1>
-            <p class="subtitle lead"></p><p>(un post de ejemplo)</p><p></p>
+    <div class="quarto-title column-page-right">
+      <h1 class="title">Extensiones</h1>
                   <div>
         <div class="description">
-          <p>Un post de ejemplo para practicar la escritura de documentos <code>.qmd</code> durante el taller “Mi primer blog con Quarto” en el marco de las XII Jornadas de ususarios de R.</p>
+          <p>Intentando entender qué son y cómo usar las extensiones de Quarto</p>
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">quarto</div>
-                <div class="quarto-category">pruebas</div>
-                <div class="quarto-category">ejemplo</div>
+                <div class="quarto-category">Quarto</div>
+                <div class="quarto-category">ejemplos</div>
+                <div class="quarto-category">extensiones</div>
               </div>
                   </div>
   </div>
@@ -261,73 +263,129 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    
   <ul>
   <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro">Intro</a></li>
-  <li><a href="#figuras" id="toc-figuras" class="nav-link" data-scroll-target="#figuras">Figuras</a></li>
-  <li><a href="#cuantos-municipios-han-existido-en-españa" id="toc-cuantos-municipios-han-existido-en-españa" class="nav-link" data-scroll-target="#cuantos-municipios-han-existido-en-españa">¿Cuantos municipios han existido en España?</a></li>
+  <li><a href="#un-ejemplo" id="toc-un-ejemplo" class="nav-link" data-scroll-target="#un-ejemplo">Un ejemplo</a></li>
+  <li><a href="#el-shortcode-video" id="toc-el-shortcode-video" class="nav-link" data-scroll-target="#el-shortcode-video">El shortcode &lt;&lt; video &gt;&gt;</a></li>
+  <li><a href="#listado-de-extensiones" id="toc-listado-de-extensiones" class="nav-link" data-scroll-target="#listado-de-extensiones">Listado de extensiones</a></li>
+  <li><a href="#otro-ejemplo" id="toc-otro-ejemplo" class="nav-link" data-scroll-target="#otro-ejemplo">Otro ejemplo</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/taller.primer.blog/edit/main/posts/post_02_extensiones.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/perezp44/taller.primer.blog/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
 </nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 
 
 
 
-<section id="intro" class="level2 page-columns page-full">
+<section id="intro" class="level2">
 <h2 class="anchored" data-anchor-id="intro">Intro</h2>
-<p>Este post trata de servir de ejemplo para usar durante el taller “Mi primer blog con Quarto” celebrado en el marco del <a href="http://r-es.org/12jr/" target="_blank">I Congreso &amp; XII Jornadas de Usuarios de R</a> celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.</p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<p><strong>Objetivo</strong>: post de ejemplo.</p>
-</div></div></section>
-<section id="figuras" class="level2">
-<h2 class="anchored" data-anchor-id="figuras">Figuras</h2>
-<p>Para poner 2 figuras side-by-side debes escribir</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">:::</span> {<span class="co">#fig-01 layout-ncol=2}</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[Imágen <span class="dv">1</span>](thumbnail.jpg){<span class="co">#fig-2.1}</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[Imágen <span class="dv">2</span>](thumbnail.jpg){<span class="co">#fig-2.2}</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> imágenes alineadas</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="sc">:::</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="fig-01" class="quarto-layout-panel">
-<figure class="figure">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-2.1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="thumbnail.jpg" class="img-fluid figure-img" data-ref-parent="fig-01"></p>
-<p></p><figcaption class="figure-caption">(a) Imágen 1</figcaption><p></p>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-2.2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="thumbnail.jpg" class="img-fluid figure-img" data-ref-parent="fig-01"></p>
-<p></p><figcaption class="figure-caption">(b) Imágen 2</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: 2 imágenes alineadas</figcaption><p></p>
-</figure>
-</div>
+<p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en el lenguaje <code>Lua</code>. <a href="https://quarto.org/docs/extensions/starter-templates.html">Aquí</a> la documentación oficial.</p>
+<p>Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión “quarto-youtube-embed” que sirve para incluir vídeos de youtube en un documento <code>.qmd</code></p>
+<p><br></p>
 </section>
-<section id="cuantos-municipios-han-existido-en-españa" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="cuantos-municipios-han-existido-en-españa">¿Cuantos municipios han existido en España?</h2>
-<p>Debería ser una pregunta fácil de responder pero no lo es; como ejemplo <a href="https://www.hacienda.gob.es/Documentacion/Publico/SGT/CATALOGO_SEFP/100_Variaciones-INTERNET.pdf">este documento</a>. Hasta donde yo sé, no existe en España un registro del que pueda obtenerse el número de municipios que han existido en el tiempo; así que, trataré de dar una respuesta utilizando los datos de los Censos históricos y del Padrón.</p>
+<section id="un-ejemplo" class="level2">
+<h2 class="anchored" data-anchor-id="un-ejemplo">Un ejemplo</h2>
+<p>Con Rmd alguna vez he puesto vídeos en mis slides o tutoriales. Usaba el paquete de R <a href="https://github.com/ijlyttle/vembedr">vembed</a>. Ahora, con Quarto, también podríamos hacerlo de esa forma, solo tendríamos que insertar en nuestro documento un chunk como:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"vembedr"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">embed_url</span>(<span class="st">"https://www.youtube.com/watch?v=ACv9zaBa1A4"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Ahora podemos también hacerlo usando la extensión <strong>“quarto-youtube-embed”</strong>. <a href="https://github.com/sellorm/quarto-youtube-embed">Aquí</a> está el repo de la extensión. Veamos cómo:</p>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 5.4: Instalar y usar una extensión
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Concretamente instalaremos la extensión “quarto-youtube-embed”. El repo <a href="https://github.com/sellorm/quarto-youtube-embed">aquí</a>. Aunque realmente el repo ha sido <strong>archivado</strong>. Veremos si se puede seguir instalando.</p>
+<ul>
+<li>Lo primero es instalar la extensión de Quarto. Como pone en el repo, lo haremos desde la Terminal así:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension sellorm/quarto-youtube-embed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Una vez instalada, podemos incrustar un video usando el siguiente “shortcode” en nuestro documento .qmd:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>{{<span class="sc">&lt;</span> youtube zk9zHqXm6m0 <span class="sc">&gt;</span>}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Con lo que habremos incrustado el video en nuestro documento .html final.</p>
+<p></p><div id="youtube-frame" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;"><iframe width="100%" height="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/zk9zHqXm6m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="el-shortcode-video" class="level2">
+<h2 class="anchored" data-anchor-id="el-shortcode-video">El shortcode &lt;&lt; video &gt;&gt;</h2>
+<p>La extensión <strong>“quarto-youtube-embed”</strong> funcionaba perfectamente pero se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. Solo hay que usar el siguiente <a href="https://quarto.org/docs/extensions/shortcodes.html">shortcode</a>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>{{<span class="sc">&lt;</span> video https<span class="sc">:</span><span class="er">//</span>www.youtube.com<span class="sc">/</span>embed<span class="sc">/</span>wo9vZccmqwc <span class="sc">&gt;</span>}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/wo9vZccmqwc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p><br></p>
+<p><a href="https://quarto.org/docs/authoring/videos.html">Aquí</a> la documentación oficial del shortcode <code>{{ &lt; video   &gt;}}</code>. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar videos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el video y algunas cosas más.</p>
+<p><br></p>
+</section>
+<section id="listado-de-extensiones" class="level2">
+<h2 class="anchored" data-anchor-id="listado-de-extensiones">Listado de extensiones</h2>
+<p><a href="https://github.com/mcanouil/awesome-quarto#extensions">Aquí</a> tienes un <strong>listado de extensiones disponibles</strong>. Las extensiones oficiales de Quarto están <a href="https://quarto.org/docs/extensions/listing-filters.html">aquí</a>.</p>
+<p><br></p>
+</section>
+<section id="otro-ejemplo" class="level2">
+<h2 class="anchored" data-anchor-id="otro-ejemplo">Otro ejemplo</h2>
+<p>Vamos a <strong>instalar y usar una nueva extensión</strong>, concretamente la extensión <strong>“Lightbox”</strong>.</p>
+<p>Lo que hace esta extensión es que podamos pinchar en una imagen y verla ampliada y con una descripción. <a href="https://quarto-ext.github.io/lightbox/">Aquí</a> puedes ver ejemplos de lo que se puede hacer con “Lightbox”.</p>
+<p>En el <a href="https://github.com/quarto-ext/lightbox">repo</a> se explica con más detalle lo que se puede hacer con “Lightbox”Su repo [aquí]</p>
+<div class="callout-important callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tarea 5.5: Instalar y usar la extensión “Lightbox”
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Vamos a instalar y usar una nueva extensión, concretamente la extensión “Lightbox”. Su repo <a href="https://github.com/quarto-ext/lightbox">aquí</a></p>
+<ul>
+<li>Lo primero es instalar la extensión desde la Terminal:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension quarto-ext/lightbox</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Esta vez, para poder usar la extensión en un documento <code>.qmd</code> hemos de incluir en el yaml del documento lo siguiente:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> Simple Lightbox Example</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="at">   </span><span class="kw">-</span><span class="at"> lightbox</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="at">![Mi imagen con Lighbox activado](./imagenes/economia.gif){.lightbox description="El logo-nano de la facultad de Economía de la Universtat de València"</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="at">desc-position="left"}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<p><strong>Con lo que veríamos algo como:</strong></p>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./imagenes/economia.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-description="El logo-nano de la facultad de Economía de la Universtat de València" title="Mi imagen con Lighbox activado" data-desc-position="left"><img src="./imagenes/economia.gif" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">Mi imagen con Lighbox activado</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 
 
-
-<div class="no-row-height column-margin column-container"><div class="">
-<p>No es una pregunta fácil.</p>
-</div></div></section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -498,6 +556,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","loop":true,"openEffect":"zoom","descPosition":"bottom"});</script>
 
 
 

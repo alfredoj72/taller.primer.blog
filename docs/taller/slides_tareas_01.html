@@ -11,7 +11,6 @@
   <meta name="generator" content="quarto-1.2.237">
 
   <meta name="author" content="Pedro J. Pérez">
-  <meta name="dcterms.date" content="2023-10-12">
   <title>Mi primer blog con Quarto (WIP) - Mi primer blog con Quarto</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -416,7 +415,7 @@
     </div>
 </div>
 
-  <p class="date">10/12/23</p>
+  <p class="date">24/11/22</p>
 </section>
 <section class="slide level2">
 
@@ -2314,22 +2313,6 @@
 </section>
 <section class="slide level2">
 
-<h3 id="texto-practicaremos-con-un-ejemplo">Texto: practicaremos (con un ejemplo)</h3>
-<ul>
-<li><p>Links (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#links-images">aquí</a>)</p></li>
-<li><p>Imágenes (documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>) y sus <a href="https://quarto.org/docs/computations/execution-options.html#figure-options">opciones</a></p></li>
-<li><p>Listas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#lists">aquí</a>)</p></li>
-<li><p>Tablas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#tables">aquí</a>)</p></li>
-<li><p>Código (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#source-code">aquí</a>)</p></li>
-<li><p>Ecuaciones (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#equations">aquí</a>)</p></li>
-<li><p>Callout blocks (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks">aquí</a>)</p></li>
-<li><p>Divs &amp; spans (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans">aquí</a>)</p></li>
-</ul>
-<p><br></p>
-<h5 id="conviene-conocer-el-editor-visual">Conviene conocer el <a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/">Editor visual</a></h5>
-</section>
-<section class="slide level2">
-
 <h3 id="chunks">CHUNKS</h3>
 <p><strong>Comportamiento similar</strong> a los documentos <code>.Rmd</code>. La documentación oficial está <a href="https://quarto.org/docs/computations/execution-options.html">aquí</a></p>
 <p><br></p>
@@ -2359,26 +2342,44 @@
 </ul>
 <p>La documentación oficial la tienes <a href="https://quarto.org/docs/output-formats/html-code.html">aquí</a>.</p>
 </section>
+<section class="slide level2">
+
+<h3 id="más-elementos-para-escribir"><strong>Más elementos</strong> para “escribir”</h3>
+<ul>
+<li><p>Links (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#links-images">aquí</a>)</p></li>
+<li><p>Imágenes (documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>) y sus <a href="https://quarto.org/docs/computations/execution-options.html#figure-options">opciones</a></p></li>
+<li><p>Listas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#lists">aquí</a>)</p></li>
+<li><p>Tablas (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#tables">aquí</a>)</p></li>
+<li><p>Código (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#source-code">aquí</a>)</p></li>
+<li><p>Ecuaciones (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#equations">aquí</a>)</p></li>
+<li><p>Callout blocks (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks">aquí</a>)</p></li>
+<li><p>Divs &amp; spans (documentación <a href="https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans">aquí</a>)</p></li>
+<li><p>Layout (documentación <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a> y <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a>)</p></li>
+<li><p>Extensiones (documentación <a href="https://quarto.org/docs/extensions/starter-templates.html">aquí</a>) . Listado de extensiones oficiales <a href="https://quarto.org/docs/extensions/listing-filters.html">aquí</a></p></li>
+</ul>
+<p><br></p>
+<p>El <a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/">editor visual</a> facilita la introducción de estos elementos en tus documentos. En <a href="https://www.youtube.com/watch?v=6p4vOKS6Xls">esta charla</a> de Mine Çetinkaya-Rundel se aprecia fácilmente la <strong>utilidad del editor visual</strong>.</p>
+<p><br></p>
+<p>Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.</p>
+</section>
 <section id="layouts" class="slide level2">
 <h2>Layout’s</h2>
 <ul>
 <li><p>Además de yaml, texto y chunk, para escribir con Quarto <strong>conviene conocer la estructura o layout de los artículos</strong> que se generan con él.</p></li>
-<li><p>Las “artículos” tienen un <strong>body</strong>, un <strong>margin</strong> y un área para las <strong>sidebars</strong>, que en nuestro caso contiene un TOC<sup>1</sup>.</p></li>
+<li><p>Los “artículos” tienen un <strong>body</strong>, un <strong>margin</strong> y un área para las <strong>sidebars</strong>, que en nuestro caso contiene el TOC<sup>1</sup>.</p></li>
 </ul>
 <p><br></p>
 <ul>
-<li><p>Usando <strong>divs</strong> se puede hacer que alguna sección ocupe un espacio mayor al habitual, mayor al espacio habitualmente reservado para el body.</p></li>
-<li><p>Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es <strong>mejor verlas en los tutoriales del taller</strong>, concretamente <a href="https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#layout" target="_blank">aquí</a> <br></p></li>
+<li><p>Usando <strong>divs</strong> se puede hacer que <strong>alguna sección de nuestra página ocupe un espacio mayor al habitual</strong>; es decir, mayor al espacio habitualmente reservado para el body.</p></li>
+<li><p>Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es <strong>mejor verlas</strong> en uno de los post del fake-blog del taller; concretamente <a href="../posts/post_01_layout.html" target="_blank">aquí</a></p></li>
 </ul>
-<p>Documentación oficial para <strong>article-layout</strong> <a href="https://quarto.org/docs/authoring/article-layout.html">aquí</a> y para <strong>page-layout</strong> <a href="https://quarto.org/docs/output-formats/page-layout.html">aquí</a></p>
+<p><br></p>
 <aside><ol class="aside-footnotes"><li id="fn4"><p>Además, el layout puede venir afectado por la opción <code>page-layout: custom   #- {article, full, custom}</code></p></li></ol></aside></section>
 <section id="extensiones" class="slide level2">
 <h2>Extensiones</h2>
 <ul>
-<li><p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en el lenguaje <code>Lua</code>.</p></li>
-<li><p><a href="https://quarto.org/docs/extensions/starter-templates.html">Aquí</a> la documentación oficial.</p></li>
-<li><p><a href="https://github.com/mcanouil/awesome-quarto#extensions">Aquí</a> tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están <a href="https://quarto.org/docs/extensions/listing-filters.html">aquí</a>.</p></li>
-<li><p>Para ver como instalar y usar extensiones vamos a ir al <strong>tutorial nº 5 del taller</strong>, concretamente <a href="https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#extensiones" target="_blank">aquí</a></p></li>
+<li><p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en lenguaje <code>Lua</code>.</p></li>
+<li><p>Para ver como instalar y usar extensiones vamos a ir, otra vez, a otro de los post del fake-blog del taller; concretamente <a href="../posts/post_02_extensiones.html">aquí</a></p></li>
 </ul>
 </section>
 <section class="slide level2">
@@ -2393,13 +2394,15 @@
 <li><p>La <strong>quinta parte del taller</strong> se ocupa de la <strong>escritura de posts</strong> para el blog.</p></li>
 <li><p>Los posts <strong>se han de escribir en formato <code>.qmd</code></strong>; por lo tanto, se repasan los fundamentos “teóricos” necesarios para escribir este tipo de documentos.</p></li>
 <li><p>Nos apoyamos en nuestro <strong>conocimiento previo de la sintaxis Rmarkdown</strong>.</p></li>
-<li><p>Se repasan las posibilidades de configurar los documentos por medio de <strong>los 3 YAML’s</strong> que pueden afectar a un documento.</p></li>
+<li><p>Se repasan las posibilidades de configurar los documentos por medio de <strong>los 3 niveles de YAML</strong> que pueden afectar a un documento.</p></li>
 <li><p><strong>Los 3 YAML’s</strong> son: Nivel proyecto (<code>_quarto.yml</code>), nivel carpeta (<code>_metadata.yml</code>) y nivel documento (en el propio encabezamiento del archivo)</p></li>
 <li><p>El <strong>texto</strong> en ficheros <code>.qmd</code> es muy similar al de los documentos <code>.qmd</code>. Aparecen algunos elementos nuevos como los Call-outs.</p></li>
 <li><p>El <strong>código</strong> sí presenta novedades: nueva sintaxis con <code>#|</code> y posibilidad de determinar opciones en el YAML.</p></li>
-<li><p>Repasamos también algunas de las opciones de <strong>layout</strong>.</p></li>
-<li><p>Vimos como instalar y usar <strong>extensiones</strong></p></li>
-<li><p>Para poder escribir en <code>.qmd</code> <strong>hay que practicar</strong>. Vamos a ello</p></li>
+<li><p>Para poder escribir en <code>.qmd</code> <strong>hay que practicar</strong>. Lo haremos con una tarea donde veremos, entre otras cosas:</p>
+<ul>
+<li><p>Algunas de las opciones de <strong>layout</strong>.</p></li>
+<li><p>Ver como instalar y usar <strong>extensiones</strong></p></li>
+</ul></li>
 </ul>
 </div>
 </div>

@@ -1,7 +1,8 @@
 ---
 title: "Mi primer blog con Quarto"
 subtitle: "(Slides para el taller)"
-date: "24/10/2022"
+date: 2022-11-24  #- ISO8601 YYYY-MM-DD format 
+date-format: short
 format: 
   revealjs:
     #logo: .png
@@ -552,33 +553,6 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 ---
 
-### Texto: practicaremos (con un ejemplo)
-
-  - Links (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#links-images))
-
-  - Imágenes (documentación [aquí](https://quarto.org/docs/authoring/figures.html)) y sus [opciones](https://quarto.org/docs/computations/execution-options.html#figure-options)
-
-  - Listas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#lists))  
-
-  - Tablas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#tables))  
-
-  - Código  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#source-code))  
-
-  - Ecuaciones  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#equations)) 
-    
-
-  - Callout blocks  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks))  
-
-  - Divs & spans  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans))  
-
-
-<br>
-
-##### Conviene conocer el [Editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/)
-
-
----
-
 ### CHUNKS
 
 **Comportamiento similar** a los documentos `.Rmd`. La documentación oficial está [aquí](https://quarto.org/docs/computations/execution-options.html)
@@ -626,36 +600,40 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 ---
 
+### **Más elementos**  para "escribir" 
+
+{{< include ./_includes/_tt_05_12-B_text-mas-elementos.qmd >}}
+
+
+<br>
+
+Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.
+
+---
+
 ## Layout's
 
 - Además de yaml, texto y chunk, para escribir con Quarto **conviene conocer la estructura o layout de los artículos** que se generan con él.
 
-
-- Las "artículos" tienen un **body**, un **margin** y un área para las **sidebars**, que en nuestro caso contiene un TOC^[Además, el layout puede venir afectado por la opción `page-layout: custom   #- {article, full, custom}`]. 
+- Los "artículos" tienen un **body**, un **margin** y un área para las **sidebars**, que en nuestro caso contiene el TOC^[Además, el layout puede venir afectado por la opción `page-layout: custom   #- {article, full, custom}`]. 
 
 <br>
 
-- Usando **divs** se puede hacer que alguna sección ocupe un espacio mayor al habitual, mayor al espacio habitualmente reservado para el body.
+- Usando **divs** se puede hacer que **alguna sección de nuestra página ocupe un espacio mayor al habitual**; es decir, mayor al espacio habitualmente reservado para el body.
 
 
-- Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es **mejor  verlas en los tutoriales del taller**, concretamente [aquí](https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#layout){target="_blank"} 
+- Como estamos en unas slides, para ver las distintas opciones de layout que tenemos, es **mejor verlas** en uno de los post del fake-blog del taller; concretamente [aquí](/posts/post_01_layout.html){target="_blank"} 
+
 <br>
-
-Documentación oficial para **article-layout** [aquí](https://quarto.org/docs/authoring/article-layout.html) y para **page-layout** [aquí](https://quarto.org/docs/output-formats/page-layout.html)
-
 
 
 ---
 
 ## Extensiones
 
-- Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en el lenguaje `Lua`. 
+- Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en lenguaje `Lua`. 
 
-- [Aquí](https://quarto.org/docs/extensions/starter-templates.html) la documentación oficial.
-
-- [Aquí](https://github.com/mcanouil/awesome-quarto#extensions) tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están [aquí](https://quarto.org/docs/extensions/listing-filters.html).
-
-- Para ver como instalar y usar extensiones vamos a ir al **tutorial nº 5 del taller**, concretamente [aquí](https://perezp44.github.io/taller.primer.blog/taller/05_taller_escribir-posts.html#extensiones){target="_blank"}
+- Para ver como instalar y usar extensiones vamos a ir, otra vez, a otro de los post del fake-blog del taller; concretamente [aquí](/posts/post_02_extensiones.html) 
 
 
 ---

@@ -1,0 +1,99 @@
+---
+title: "Extensiones"
+#author: "Nosotros"
+#subtitle: | 
+#  Viendo las posibilidades de Layout que tenemos en Quarto
+description: |
+  Intentando entender qué son y cómo usar las extensiones de Quarto
+author:
+  - name: Pedro J. Pérez
+    affiliation: Universitat de València
+date: 2022-10-26
+categories: [Quarto, ejemplos, extensiones]
+image: "thumbnail.jpg"
+title-block-banner: true #- {true, false }
+draft: false
+toc: true
+toc-location: left
+toc-depth: 3
+filters:
+   - lightbox
+#css: assets/my_css_file.css
+#bibliography: references.bib
+#nocite: |
+#  @*
+---
+
+
+
+## Intro 
+
+Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en el lenguaje `Lua`. [Aquí](https://quarto.org/docs/extensions/starter-templates.html) la documentación oficial.
+
+Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión "quarto-youtube-embed" que sirve para incluir vídeos de youtube en un documento `.qmd`
+
+<br>
+
+## Un ejemplo
+
+
+Con Rmd alguna vez he puesto vídeos en mis slides o tutoriales. Usaba el paquete de R [vembed](https://github.com/ijlyttle/vembedr). Ahora, con Quarto, también podríamos hacerlo de esa forma, solo tendríamos que insertar en nuestro documento un chunk como:
+
+
+```{r}
+#| echo: fenced
+#| eval: false
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=ACv9zaBa1A4")
+```
+
+
+Ahora podemos también hacerlo usando la extensión  **"quarto-youtube-embed"**. [Aquí](https://github.com/sellorm/quarto-youtube-embed) está el repo de la extensión. Veamos cómo:
+
+
+
+
+
+{{< include ./_includes/_tt_05_46_tarea-5-04-extensiones.qmd >}}
+
+
+<br>
+
+## El shortcode << video >>
+
+La extensión **"quarto-youtube-embed"** funcionaba perfectamente pero se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. Solo hay que usar el siguiente [shortcode](https://quarto.org/docs/extensions/shortcodes.html):
+
+```{r, eval = FALSE}
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+```
+
+
+
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+
+<br>
+
+[Aquí](https://quarto.org/docs/authoring/videos.html) la documentación oficial del shortcode `{{ < video   >}}`. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar videos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el video y algunas cosas más.
+
+
+<br>
+
+
+## Listado de extensiones
+
+[Aquí](https://github.com/mcanouil/awesome-quarto#extensions) tienes un **listado de extensiones disponibles**. Las extensiones oficiales de Quarto están [aquí](https://quarto.org/docs/extensions/listing-filters.html).
+
+
+<br>
+
+## Otro ejemplo
+
+Vamos a **instalar y usar una nueva extensión**, concretamente la extensión **"Lightbox"**. 
+
+Lo que hace esta extensión es que podamos pinchar en una imagen y verla ampliada y con una descripción. [Aquí](https://quarto-ext.github.io/lightbox/) puedes ver ejemplos de lo que se puede hacer con "Lightbox". 
+
+En el [repo](https://github.com/quarto-ext/lightbox) se explica con más detalle lo que se puede hacer con "Lightbox"Su repo [aquí]
+
+{{< include ./_includes/_tt_05_46_tarea-5-05-extensiones-2.qmd >}}
+
+

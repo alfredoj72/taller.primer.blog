@@ -178,7 +178,7 @@ Vamos a cambiar un poco el archivo `./posts/_metadata.yml`, simplemente cambiare
 
 <br>
 
-### Yaml en documento
+### Yaml nivel documento
 
 Como dijimos, también podemos especificar metadatos y opciones para un documento `.qmd` en el encabezamiento del documento. Lógicamente esas opciones sólo afectarán a ese documento. 
 
@@ -210,37 +210,6 @@ No lo vamos a practicar ahora. Lo haremos (un poco) luego cuando hagamos un post
 {{< include ./_includes/_tt_05_12_sintaxis-markdown.qmd >}}
 
 
-
-<br>
-
-### Más elementos para "escribir" 
-
-Además de los elementos de escritura que nos ofrece la sintaxis básica de `markdown`. Quarto nos ofrece más posibilidades, veamos algunas de ellas:
-
-- Links (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#links-images))
-
-- Imágenes (documentación [aquí](https://quarto.org/docs/authoring/figures.html)) y sus [opciones](https://quarto.org/docs/computations/execution-options.html#figure-options)
-
-- Listas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#lists))  
-
-- Tablas  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#tables))  
-
-- Código  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#source-code))  
-
-- Ecuaciones  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#equations))    
-
-
-- Callout blocks  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks))  
-
-- Divs & spans  (documentación [aquí](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans))  
-
-
-<br>
-
-
-El [editor visual](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/) facilita la introducción de estos elementos en tus documentos. En [esta charla](https://mine-cetinkaya-rundel.github.io/2022-repro-toronto/#/title-slide) de Mine Çetinkaya-Rundel se aprecia fácilmente la **utilidad del editor visual**.
-
-
 <br>
 
 ## Chunks de código
@@ -256,16 +225,11 @@ Las **principales diferencias** son:
 
     {{< include ./_includes/_tt_05_13_extensiones-01.qmd >}}
 
-
-
 - En los **chunks individuales** ahora se se utiliza la **sintaxis YAML** (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
 
 {{< include ./_includes/_tt_05_44_img-22.qmd >}}
 
-
-
 - Las principales opciones son: **echo**, **eval**, **warning**, **error**, **output** e **include**. [Aquí](https://quarto.org/docs/computations/execution-options.html#output-options) la documentación oficial.
-
 
 - `echo`, además los típicos true y false, ahora incorpora un nuevo valor `fenced` que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo). Los llamados **unexecuted Blocks**, documentación [aquí](https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks), también facilitan mostrar las marcas de los chunks en el documento de salida.
 
@@ -312,134 +276,34 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 <br>
 
-## Layout 
-
-Además de yaml, texto y chunk, para escribir con Quarto conviene conocer la estructura o layout de los artículos que se generan con él. Las páginas tienen un body, un margin y un área para las sidebars, que en nuestro caso contiene un TOC^[Además, el layout puede venir afectado por la opción `page-layout: custom   #- {article, full, custom}`. Documentación oficial [aquí](https://quarto.org/docs/output-formats/page-layout.html) ].  Documentación oficial [aquí](https://quarto.org/docs/authoring/article-layout.html).
-
-Para ver las distintas posibilidades que tenemos, insertaremos una imagen ocupando distintas áreas del artículo. Empezaremos situando la imagen en el margen. para ello habría que hacer lo siguiente: 
-
-```
-::: {.column-margin}
-
-![](imagenes/my_layout-01.png){fig-align="center"}
-
-:::
-```
-
-::: {.column-margin}
-![](imagenes/my_layout-01a.png){fig-align="center"}
-:::
-
-:::{.column-body}
-![](imagenes/my_layout-02a.png){fig-align="center"}
-:::
-
-
-
-:::{.column-body-outset}
-![](imagenes/my_layout-03.png){fig-align="center"}
-:::
-
-
-:::{.column-page-inset}
-![](imagenes/my_layout-04.png){fig-align="center"}
-:::
-
-
-:::{.column-page}
-![](imagenes/my_layout-05.png){fig-align="center"}
-:::
-
-
-::: {.column-screen-inset}
-![](imagenes/my_layout-06.png){fig-align="center"}
-:::
-
-
-::: {.column-screen}
-![](imagenes/my_layout-07.png){fig-align="center"}
-:::
-
 
 <br>
 
+## Más elementos para "escribir" 
 
+Además de los elementos de escritura que nos ofrece la sintaxis básica de `markdown`. Quarto nos ofrece más posibilidades. Por ejemplo:
 
-
-El output de los chunks también puede ocupar distintas áreas. Veamos  si un leaflet se puede poner en el margen:
-
-
-```{r}
-#| column: margin
-#| echo: fenced
-library(leaflet)
-leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
-```
+{{< include ./_includes/_tt_05_12-B_text-mas-elementos.qmd >}}
 
 <br>
 
-
-Y ahora ocupando toda la pantalla:
-
-```{r}
-#| column: screen
-#| echo: fenced
-library(leaflet)
-leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
-```
-
-
+Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.
 
 <br>
 
-Como no puede ser de otro modo, aún hay más opciones para el layout. Documentación [aquí](https://quarto.org/docs/authoring/article-layout.html#overflowing-content)
+### Layout's
+
+Los veremos con [este post](/posts/post_01_layout.qmd) en el fake-blog del taller.
 
 <br>
 
+### Extensiones
+
+Las veremos con [este post](/posts/post_02_extensiones.qmd) en el fake-blog del taller.
+
+### Callouts
 
 
-<br>
-
-## Extensiones
-
-Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en el lenguaje `Lua`. [Aquí](https://quarto.org/docs/extensions/starter-templates.html) la documentación oficial.
-
-Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión "quarto-youtube-embed".
-Con Rmd ponía algún vídeo en mis slides o tutoriales usando un paquete de R (ahora mismo no recuerdo el nombre del pkg). Ahora, con Quarto, podemos hacerlo usando la extensión  "quarto-youtube-embed". [Aquí](https://github.com/sellorm/quarto-youtube-embed) está el repo de la extensión. Veamos cómo.
-
-
-
-{{< include ./_includes/_tt_05_46_tarea-5-04-extensiones.qmd >}}
-
-Aunque esta extensión se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. solo hay que usar el siguiente shortcode:
-
-```{r, eval = FALSE}
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
-```
-
-
-
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
-
-[Aquí](https://quarto.org/docs/authoring/videos.html) la documentación oficial del shortcode `{{ < video   >}}`.
-
-
-<br>
-
-
-[Aquí](https://github.com/mcanouil/awesome-quarto#extensions) tienes un **listado de extensiones disponibles**. Las extensiones oficiales de Quarto están [aquí](https://quarto.org/docs/extensions/listing-filters.html).
-
-Vamos a **instalar y usar una nueva extensión**, concretamente la extensión "Lightbox". Lo que hace esta extensión es que podamos pinchar en una imagen y ampliarla. [aquí](https://quarto-ext.github.io/lightbox/) un ejemplo de lo que se puede hacer con "Lightbox". Su repo [aquí](https://github.com/quarto-ext/lightbox)
-
-{{< include ./_includes/_tt_05_46_tarea-5-05-extensiones-2.qmd >}}
-
-
-![Mi imagen con Lighbox activado](./imagenes/economia.gif){.lightbox description="El logo-nano de la facultad de Economía de la Universtat de València"
-desc-position="left"}
 
 <br>
 
@@ -459,7 +323,7 @@ desc-position="left"}
 
 ## Práctica
 
-En esta sección dedicaremos un tiempo a la práctica libre para que practiques la creación y escritura de un post. Para ello te ofrezco la siguiente un ejemplo/plantilla para elaborar un post con diferentes elementos.
+En esta sección dedicaremos un tiempo a la práctica libre para la **creación y escritura de un post**. Para ello te ofrezco más abajo una plantilla plantilla para elaborar un post con diferentes elementos.
 
 
 Usaremos un ejemplo para **practicar la sintaxis y nuevas posibilidades de Quarto** a la hora de generar documentos `.html`: o sea, para escribir posts para nuestro blog.
@@ -479,7 +343,6 @@ Usaremos un ejemplo para **practicar la sintaxis y nuevas posibilidades de Quart
 - [Videos](https://quarto.org/docs/authoring/videos.html) 
 
 
--Extensiones
 
 
 
@@ -508,6 +371,8 @@ Note that there are five types of callouts, including:
 
 
 #### Call-outs
+
+- cambiar el color etc....
 
 [Call-outs bervatim](https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd)
 
