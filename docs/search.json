@@ -142,21 +142,21 @@
   {
     "objectID": "taller/slides_tt_para-thumbnails.html#estructura-del-taller",
     "href": "taller/slides_tt_para-thumbnails.html#estructura-del-taller",
-    "title": "Imágenes",
+    "title": "Más elementos",
     "section": "Estructura del taller",
     "text": "Estructura del taller\nHola\nHola pepe como estas bien siiii bien bien\npepeote"
   },
   {
     "objectID": "taller/slides_tt_para-thumbnails.html#hola-1",
     "href": "taller/slides_tt_para-thumbnails.html#hola-1",
-    "title": "Imágenes",
+    "title": "Más elementos",
     "section": "Hola",
     "text": "Hola"
   },
   {
     "objectID": "taller/slides_tt_para-thumbnails.html#cómo-va",
     "href": "taller/slides_tt_para-thumbnails.html#cómo-va",
-    "title": "Imágenes",
+    "title": "Más elementos",
     "section": "¿Cómo va?",
     "text": "¿Cómo va?\nComo vas tete\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
   },
@@ -368,7 +368,7 @@
     "href": "taller/slides_tareas_01.html#extensiones",
     "title": "Mi primer blog con Quarto",
     "section": "Extensiones",
-    "text": "Extensiones\n\nUna de las novedades de Quarto es la posibilidad de usar extensiones. Las extensiones se escriben en lenguaje Lua.\nPara ver como instalar y usar extensiones vamos a ir, otra vez, a otro de los post del fake-blog del taller; concretamente aquí"
+    "text": "Extensiones\n\nUna de las novedades de Quarto es la posibilidad de usar extensiones. Las extensiones se escriben en lenguaje Lua.\nPara ver como instalar y usar extensiones vamos a ir, otra vez, a otro de los post del blog del taller; concretamente aquí"
   },
   {
     "objectID": "taller/07_taller_alojamiento.html",
@@ -613,7 +613,7 @@
     "href": "blog.html",
     "title": "Fake blog para el taller ‘mi primer blog con Quarto’",
     "section": "",
-    "text": "Date\n\n\nCategories\n\n\nTitle\n\n\n\n\n\n\n\n\n\n\n\n\n\nEscribiendo posts: un ejemplo de post\n\n\n\n\n\n\n\nOct 26, 2022\n\n\nQuarto,ejemplos,extensiones\n\n\nExtensiones\n\n\n\n\n\n\n\nOct 26, 2022\n\n\nQuarto,ejemplos,extensiones\n\n\nImágenes\n\n\n\n\n\n\n\nOct 26, 2022\n\n\nquarto,layout,ejemplos\n\n\nLayout’s\n\n\n\n\n\n\nNo matching items"
+    "text": "Extensiones\n\n\n\n\n\n\n\nQuarto\n\n\nejemplos\n\n\nextensiones\n\n\n\n\nIntentando entender qué son y cómo usar las extensiones de Quarto\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nImágenes\n\n\n\n\n\n\n\nQuarto\n\n\nejemplos\n\n\nextensiones\n\n\n\n\nRepasando algunas opciones de Quarto para insertar imágenes.\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nLayout’s\n\n\n\n\n\n\n\nquarto\n\n\nlayout\n\n\nejemplos\n\n\n\n\nViendo las posibilidades de Layout que tenemos en Quarto\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nMás elementos\n\n\n\n\n\n\n\nQuarto\n\n\nejemplos\n\n\nmás elementos\n\n\n\n\nAlgunos elementos más de Quarto para escribir\n\n\n\n\n\n\nOct 26, 2022\n\n\nPedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post_02_extensiones.html",
@@ -669,7 +669,7 @@
     "href": "posts/post_03_imagenes.html",
     "title": "Imágenes",
     "section": "",
-    "text": "Las figuras en documentos Rmarkdown se podían insertar con la sintaxis de Markdown; es decir con ![](<ruta-a-la-imagen>), aunque yo prefería hacerlo con knitr::include_graphics(). Era algo así, veamos si también funciona en Quarto:\n\n```{r}\n#| fig.show: \"hold\"\n#| out.width: \"45%\"\n#| fig.align: \"default\"\n# graficos side to side en Rmarkdown\n# https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941/12\n\n\nknitr::include_graphics(here::here(\"posts\",  \"thumbnail.jpg\"))\n\nknitr::include_graphics(here::here(\"posts\", \"thumbnail.jpg\"))\n```\n\n\n\n\nComo veis, no me ha funcionado!!! Ya intentaré ver la razón."
+    "text": "Las figuras en documentos Rmarkdown se podían insertar con la sintaxis de Markdown; es decir con ![](<ruta-a-la-imagen>), aunque yo prefería hacerlo con knitr::include_graphics(). Era algo así, veamos si también funciona en Quarto:\n\n```{r}\n#| fig.show: \"hold\"\n#| out.width: \"45%\"\n#| fig.align: \"default\"\n# graficos side to side en Rmarkdown\n# https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941/12\n\n\nknitr::include_graphics(\"thumbnail.jpg\")\n\nknitr::include_graphics(here::here(\"posts\", \"thumbnail.jpg\"))\n```\n\n\n\n\nComo veis, no me ha funcionado!!! Ya intentaré ver la razón."
   },
   {
     "objectID": "posts/post_03_imagenes.html#figuras-en-quarto",
@@ -688,35 +688,28 @@
   {
     "objectID": "posts/post_00_cozitas-q-quedan.html",
     "href": "posts/post_00_cozitas-q-quedan.html",
-    "title": "Escribiendo posts: un ejemplo de post",
+    "title": "Más elementos",
     "section": "",
     "text": "En este tutorial sirve de plantilla para ir escribiendo un post que contenga distintos elementos disponibles en Quarto para escribir con archivos .qmd."
   },
   {
-    "objectID": "posts/post_00_cozitas-q-quedan.html#figuras",
-    "href": "posts/post_00_cozitas-q-quedan.html#figuras",
-    "title": "Escribiendo posts: un ejemplo de post",
-    "section": "Figuras",
-    "text": "Figuras\nDocumentación aquí.\nLas imágenes (o figuras) se pueden insertar de múltiples maneras:\n\nLa sintaxis de Pandoc:\n\n\nPara hacer esto …Has de escribir\n\n\n\n\n\nFigure 1: Mi imagen\n\n\n\n\n![Mi imagen](thumbnail.jpg){#fig-01 fig-align=\"left\"}\n\n\n\n\nSubfiguras\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n\n(a) Imágen 1\n\n\n\n\n\n\n\n(b) Imágen 2\n\n\n\n\nFigure 2: Dos imágenes alineadas\n\n\n\n\n::: {#fig-elephants layout-ncol=2}\n\n![Imágen 1](thumbnail.jpg){#fig-2.1}\n\n![Imágen 2](thumbnail.jpg){#fig-2.2}\n\n2 imágenes alineadas\n:::\n\n\n\n\n\nPanel de imágenes\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n(A)\n\n\n\n\n\n\n\n(B)\n\n\n\n\n\n\n\n\n\n(C)\n\n\n\n\n\n\n\n(D)\n\n\n\n\n\n\n\n::: {layout-nrow=2}\n![(A)](thumbnail.jpg)\n\n![(B)](thumbnail.jpg)\n\n![(C)](thumbnail.jpg)\n\n![(D)](thumbnail.jpg)\n:::\n\n\n\n\n\nCustom layouts\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n(A)\n\n\n\n\n \n\n\n\n\n\n(B)\n\n\n\n\n\n\n\n\n\n(C)\n\n\n\n\n\n\n\n::: {layout=\"[[40,-20,40], [100]]\"}\n![(A)](thumbnail.jpg)\n\n![(B)](thumbnail.jpg)\n\n![(C)](thumbnail.jpg)\n:::\n\n\n\n\ntamaño por defecto: https://quarto.org/docs/computations/execution-options.html#figure-options"
-  },
-  {
     "objectID": "posts/post_00_cozitas-q-quedan.html#callouts",
     "href": "posts/post_00_cozitas-q-quedan.html#callouts",
-    "title": "Escribiendo posts: un ejemplo de post",
+    "title": "Más elementos",
     "section": "Callouts",
     "text": "Callouts\nDocumentación aquí\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\nTarea xx\n\n\n\n\nTendremos que hacer esto\ny esto otro\n\n\n\n\n\n::: {.callout-important icon=\"false\"}\n\n#### Tarea xx\n- Tendremos que hacer esto \n\n- y esto otro\n:::"
   },
   {
     "objectID": "posts/post_00_cozitas-q-quedan.html#tablas",
     "href": "posts/post_00_cozitas-q-quedan.html#tablas",
-    "title": "Escribiendo posts: un ejemplo de post",
+    "title": "Más elementos",
     "section": "Tablas",
     "text": "Tablas\nhttps://quarto.org/docs/authoring/tables.html\n\nEditor visual\nhttps://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/"
   },
   {
     "objectID": "posts/post_00_cozitas-q-quedan.html#bibliografía",
     "href": "posts/post_00_cozitas-q-quedan.html#bibliografía",
-    "title": "Escribiendo posts: un ejemplo de post",
+    "title": "Más elementos",
     "section": "Bibliografía",
     "text": "Bibliografía\nPara aprender puedes ir a este Quarto tip, a este video. La documentación oficial está aquí y aquí para usar el editor visual."
   },

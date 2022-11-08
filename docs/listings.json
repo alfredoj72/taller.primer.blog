@@ -2,10 +2,10 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/post_00_cozitas-q-quedan.html",
       "/posts/post_02_extensiones.html",
       "/posts/post_03_imagenes.html",
-      "/posts/post_01_layout.html"
+      "/posts/post_01_layout.html",
+      "/posts/post_00_cozitas-q-quedan.html"
     ]
   }
 ]

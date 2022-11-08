@@ -118,7 +118,7 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./imagenes/economia.gif" class="lightbox" data-desc-position="left" data-description="El logo-nano de la facultad de Economía de la Universtat de València" title="Mi imagen con Lighbox activado" data-gallery="quarto-lightbox-gallery-1"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
+<p><a href="./imagenes/economia.gif" class="lightbox" data-description="El logo-nano de la facultad de Economía de la Universtat de València" title="Mi imagen con Lighbox activado" data-desc-position="left" data-gallery="quarto-lightbox-gallery-1"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">Mi imagen con Lighbox activado</figcaption><p></p>
 </figure>
 </div>
@@ -157,7 +157,7 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
 <span id="cb1-6"><span class="co" style="color: #5E5E5E;"># https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941/12</span></span>
 <span id="cb1-7"></span>
 <span id="cb1-8"></span>
-<span id="cb1-9">knitr<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">include_graphics</span>(here<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">here</span>(<span class="st" style="color: #20794D;">"posts"</span>,  <span class="st" style="color: #20794D;">"thumbnail.jpg"</span>))</span>
+<span id="cb1-9">knitr<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">include_graphics</span>(<span class="st" style="color: #20794D;">"thumbnail.jpg"</span>)</span>
 <span id="cb1-10"></span>
 <span id="cb1-11">knitr<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">include_graphics</span>(here<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">here</span>(<span class="st" style="color: #20794D;">"posts"</span>, <span class="st" style="color: #20794D;">"thumbnail.jpg"</span>))</span>
 <span id="cb1-12"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
@@ -499,9 +499,11 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
   <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_01.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
-  <title>Escribiendo posts: un ejemplo de post</title>
+  <title>Más elementos</title>
+  <dc:creator>Pedro J. Pérez</dc:creator>
   <link>https://perezp44.github.io/taller.primer.blog/posts/post_00_cozitas-q-quedan.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -509,197 +511,13 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
 <p><br></p>
 <p>En este tutorial sirve de plantilla para ir escribiendo un post que contenga distintos elementos disponibles en Quarto para escribir con archivos <code>.qmd</code>.</p>
 <hr>
-<section id="figuras" class="level2">
-<h2 class="anchored" data-anchor-id="figuras">Figuras</h2>
-<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html">aquí</a>.</p>
-<p>Las imágenes (o figuras) se pueden insertar de múltiples maneras:</p>
-<ol type="1">
-<li>La sintaxis de Pandoc:</li>
-</ol>
-<div class="panel-tabset">
-<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" aria-controls="tabset-1-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" aria-controls="tabset-1-2" aria-selected="false">Has de escribir</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" aria-labelledby="tabset-1-1-tab">
-<div id="fig-01" class="quarto-figure quarto-figure-left anchored">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: Mi imagen</figcaption><p></p>
-</figure>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" aria-labelledby="tabset-1-2-tab">
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="al" style="color: #AD0000;">![Mi imagen](thumbnail.jpg)</span>{#fig-01 fig-align="left"}</span></code></pre></div>
-</div>
-</div>
-</div>
-<section id="subfiguras" class="level3">
-<h3 class="anchored" data-anchor-id="subfiguras">Subfiguras</h3>
-<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html#subfigures">aquí</a>.</p>
-<div class="panel-tabset">
-<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" aria-controls="tabset-2-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" aria-controls="tabset-2-2" aria-selected="false">Has de escribir</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" aria-labelledby="tabset-2-1-tab">
-<div id="fig-elephants" class="quarto-layout-panel">
-<figure class="figure">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-2.1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants"></p>
-<p></p><figcaption class="figure-caption">(a) Imágen 1</figcaption><p></p>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-2.2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants"></p>
-<p></p><figcaption class="figure-caption">(b) Imágen 2</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2: Dos imágenes alineadas</figcaption><p></p>
-</figure>
-</div>
-</div>
-<div id="tabset-2-2" class="tab-pane" aria-labelledby="tabset-2-2-tab">
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1">::: {#fig-elephants layout-ncol=2}</span>
-<span id="cb2-2"></span>
-<span id="cb2-3"><span class="al" style="color: #AD0000;">![Imágen 1](thumbnail.jpg)</span>{#fig-2.1}</span>
-<span id="cb2-4"></span>
-<span id="cb2-5"><span class="al" style="color: #AD0000;">![Imágen 2](thumbnail.jpg)</span>{#fig-2.2}</span>
-<span id="cb2-6"></span>
-<span id="cb2-7">2 imágenes alineadas</span>
-<span id="cb2-8">:::</span></code></pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="panel-de-imágenes" class="level3">
-<h3 class="anchored" data-anchor-id="panel-de-imágenes">Panel de imágenes</h3>
-<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html#figure-panels">aquí</a>.</p>
-<div class="panel-tabset">
-<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" aria-controls="tabset-3-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" aria-controls="tabset-3-2" aria-selected="false">Has de escribir</a></li></ul>
-<div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" aria-labelledby="tabset-3-1-tab">
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">(A)</figcaption><p></p>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">(B)</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">(C)</figcaption><p></p>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">(D)</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-2" class="tab-pane" aria-labelledby="tabset-3-2-tab">
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1">::: {layout-nrow=2}</span>
-<span id="cb3-2"><span class="al" style="color: #AD0000;">![(A)](thumbnail.jpg)</span></span>
-<span id="cb3-3"></span>
-<span id="cb3-4"><span class="al" style="color: #AD0000;">![(B)](thumbnail.jpg)</span></span>
-<span id="cb3-5"></span>
-<span id="cb3-6"><span class="al" style="color: #AD0000;">![(C)](thumbnail.jpg)</span></span>
-<span id="cb3-7"></span>
-<span id="cb3-8"><span class="al" style="color: #AD0000;">![(D)](thumbnail.jpg)</span></span>
-<span id="cb3-9">:::</span></code></pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="custom-layouts" class="level3">
-<h3 class="anchored" data-anchor-id="custom-layouts">Custom layouts</h3>
-<p>Documentación <a href="https://quarto.org/docs/authoring/figures.html#complex-layouts">aquí</a>.</p>
-<div class="panel-tabset">
-<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" aria-controls="tabset-4-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" aria-controls="tabset-4-2" aria-selected="false">Has de escribir</a></li></ul>
-<div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" aria-labelledby="tabset-4-1-tab">
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">(A)</figcaption><p></p>
-</figure>
-</div>
-</div>
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
-<p>&nbsp;</p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">(B)</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">(C)</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-4-2" class="tab-pane" aria-labelledby="tabset-4-2-tab">
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1">::: {layout="[<span class="co" style="color: #5E5E5E;">[</span><span class="ot" style="color: #003B4F;">40,-20,40</span><span class="co" style="color: #5E5E5E;">]</span>, <span class="co" style="color: #5E5E5E;">[</span><span class="ot" style="color: #003B4F;">100</span><span class="co" style="color: #5E5E5E;">]</span>]"}</span>
-<span id="cb4-2"><span class="al" style="color: #AD0000;">![(A)](thumbnail.jpg)</span></span>
-<span id="cb4-3"></span>
-<span id="cb4-4"><span class="al" style="color: #AD0000;">![(B)](thumbnail.jpg)</span></span>
-<span id="cb4-5"></span>
-<span id="cb4-6"><span class="al" style="color: #AD0000;">![(C)](thumbnail.jpg)</span></span>
-<span id="cb4-7">:::</span></code></pre></div>
-</div>
-</div>
-</div>
-<ul>
-<li>tamaño por defecto: <a href="https://quarto.org/docs/computations/execution-options.html#figure-options" class="uri">https://quarto.org/docs/computations/execution-options.html#figure-options</a></li>
-</ul>
-</section>
-</section>
 <section id="callouts" class="level2">
 <h2 class="anchored" data-anchor-id="callouts">Callouts</h2>
 <p>Documentación <a href="https://quarto.org/docs/authoring/callouts.html">aquí</a></p>
 <div class="panel-tabset">
-<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" aria-controls="tabset-5-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" aria-controls="tabset-5-2" aria-selected="false">Has de escribir</a></li></ul>
+<ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" aria-controls="tabset-1-1" aria-selected="true">Para hacer esto …</a></li><li class="nav-item"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" aria-controls="tabset-1-2" aria-selected="false">Has de escribir</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1" class="tab-pane active" aria-labelledby="tabset-5-1-tab">
+<div id="tabset-1-1" class="tab-pane active" aria-labelledby="tabset-1-1-tab">
 <div class="callout-important callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -717,14 +535,14 @@ Tarea xx
 </div>
 </div>
 </div>
-<div id="tabset-5-2" class="tab-pane" aria-labelledby="tabset-5-2-tab">
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1">::: {.callout-important icon="false"}</span>
-<span id="cb5-2"></span>
-<span id="cb5-3"><span class="fu" style="color: #4758AB;">#### Tarea xx</span></span>
-<span id="cb5-4"><span class="ss" style="color: #20794D;">- </span>Tendremos que hacer esto </span>
-<span id="cb5-5"></span>
-<span id="cb5-6"><span class="ss" style="color: #20794D;">- </span>y esto otro</span>
-<span id="cb5-7">:::</span></code></pre></div>
+<div id="tabset-1-2" class="tab-pane" aria-labelledby="tabset-1-2-tab">
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1">::: {.callout-important icon="false"}</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;">#### Tarea xx</span></span>
+<span id="cb1-4"><span class="ss" style="color: #20794D;">- </span>Tendremos que hacer esto </span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="ss" style="color: #20794D;">- </span>y esto otro</span>
+<span id="cb1-7">:::</span></code></pre></div>
 </div>
 </div>
 </div>
@@ -746,9 +564,12 @@ Tarea xx
 </section>
 
  ]]></description>
+  <category>Quarto</category>
+  <category>ejemplos</category>
+  <category>más elementos</category>
   <guid>https://perezp44.github.io/taller.primer.blog/posts/post_00_cozitas-q-quedan.html</guid>
-  <pubDate>Tue, 08 Nov 2022 13:51:12 GMT</pubDate>
-  <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnail.jpg" medium="image" type="image/jpeg"/>
+  <pubDate>Tue, 25 Oct 2022 22:00:00 GMT</pubDate>
+  <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_00.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 </channel>
 </rss>

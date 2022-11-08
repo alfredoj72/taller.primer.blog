@@ -1,7 +1,28 @@
 ---
-title: "Escribiendo posts: un ejemplo de post"
-subtitle: "(9ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
-toc-title: Tutorial nº 9
+title: "Más elementos"
+#subtitle: "(9ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
+#author: "Nosotros"
+#subtitle: | 
+#  Viendo las posibilidades de Layout que tenemos en Quarto
+description: |
+  Algunos elementos más de Quarto para escribir
+author:
+  - name: Pedro J. Pérez
+    affiliation: Universitat de València
+date: 2022-10-26
+categories: [Quarto, ejemplos, más elementos]
+image: "./thumbnails/thumbnail_00.png"
+title-block-banner: true #- {true, false }
+draft: false
+toc: true
+toc-location: left
+toc-depth: 3
+filters:
+   - lightbox
+#css: assets/my_css_file.css
+#bibliography: references.bib
+#nocite: |
+#  @*
 ---
 
 <!--This is a comment. Comments are not displayed in the browser-->
@@ -12,131 +33,6 @@ En este tutorial sirve de plantilla para ir escribiendo un post que contenga dis
 
 --------------------------------------------------------------------------------
 
-
-## Figuras
-
-Documentación [aquí](https://quarto.org/docs/authoring/figures.html).
-
-Las imágenes (o figuras) se pueden insertar de múltiples maneras:
-
-
-1. La sintaxis de Pandoc:
-
-::: panel-tabset
-#### Para hacer esto ...
-
-![Mi imagen](thumbnail.jpg){#fig-01 fig-align="left"}
-
-#### Has de escribir
-
-``` markdown
-![Mi imagen](thumbnail.jpg){#fig-01 fig-align="left"}
-```
-
-:::
-
-
-### Subfiguras
-
-
-Documentación [aquí](https://quarto.org/docs/authoring/figures.html#subfigures).
-
-::: panel-tabset
-#### Para hacer esto ...
-
-
-::: {#fig-elephants layout-ncol=2}
-
-![Imágen 1](thumbnail.jpg){#fig-2.1}
-
-![Imágen 2](thumbnail.jpg){#fig-2.2}
-
-Dos imágenes alineadas
-:::
-
-
-#### Has de escribir
-
-
-``` markdown
-::: {#fig-elephants layout-ncol=2}
-
-![Imágen 1](thumbnail.jpg){#fig-2.1}
-
-![Imágen 2](thumbnail.jpg){#fig-2.2}
-
-2 imágenes alineadas
-:::
-```
-
-:::
-
-### Panel de imágenes
-
-Documentación [aquí](https://quarto.org/docs/authoring/figures.html#figure-panels).
-
-::: panel-tabset
-#### Para hacer esto ...
-
-::: {layout-nrow=2}
-![(A)](thumbnail.jpg)
-
-![(B)](thumbnail.jpg)
-
-![(C)](thumbnail.jpg)
-
-![(D)](thumbnail.jpg)
-:::
-
-#### Has de escribir
-
-``` markdown
-::: {layout-nrow=2}
-![(A)](thumbnail.jpg)
-
-![(B)](thumbnail.jpg)
-
-![(C)](thumbnail.jpg)
-
-![(D)](thumbnail.jpg)
-:::
-```
-
-:::
-
-
-### Custom layouts
-
-Documentación [aquí](https://quarto.org/docs/authoring/figures.html#complex-layouts).
-
-::: panel-tabset
-#### Para hacer esto ...
-
-
-::: {layout="[[40,-20,40], [100]]"}
-![(A)](thumbnail.jpg)
-
-![(B)](thumbnail.jpg)
-
-![(C)](thumbnail.jpg)
-:::
-
-
-#### Has de escribir
-
-``` markdown
-::: {layout="[[40,-20,40], [100]]"}
-![(A)](thumbnail.jpg)
-
-![(B)](thumbnail.jpg)
-
-![(C)](thumbnail.jpg)
-:::
-```
-:::
-
-
-- tamaño por defecto: <https://quarto.org/docs/computations/execution-options.html#figure-options>
 
 
 ## Callouts

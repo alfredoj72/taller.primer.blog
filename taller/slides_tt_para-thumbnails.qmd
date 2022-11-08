@@ -1,5 +1,5 @@
 ---
-title: "Imágenes"
+title: "Más elementos"
 author: ""
 #subtitle: "(Slides para el presentador)"
 date: ""
@@ -13,7 +13,7 @@ format:
     from: markdown+emoji  #- usar emojis https://gist.github.com/rxaviers/7360908)
     center-title-slide: true
     title-slide-attributes: #- atributos para la slide de titulo
-      data-background-color: "#B7C4B4"    #- color de R-ladies "#562457" 
+      data-background-color: "#EDED80"    #- color de R-ladies "#562457" 
       #data-background-image: /imagenes/economia.gif
       #data-background-size: contain      
     preview-links: auto  #- true: abre un iframe en lugar de abrir ventana

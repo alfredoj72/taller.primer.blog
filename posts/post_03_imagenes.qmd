@@ -40,7 +40,7 @@ Las figuras en documentos Rmarkdown se podían insertar con la sintaxis de Markd
 # https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941/12
 
 
-knitr::include_graphics(here::here("posts",  "thumbnail.jpg"))
+knitr::include_graphics("thumbnail.jpg")
 
 knitr::include_graphics(here::here("posts", "thumbnail.jpg"))
 

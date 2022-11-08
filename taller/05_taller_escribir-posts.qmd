@@ -293,13 +293,13 @@ Veamos algunos de estos elementos con un poco de detalle. Después lo recordarem
 
 ### Layout's
 
-Los veremos con [este post](/posts/post_01_layout.qmd) en el fake-blog del taller.
+Los veremos con [este post](/posts/post_01_layout.qmd) en el blog del taller.
 
 <br>
 
 ### Extensiones
 
-Las veremos con [este post](/posts/post_02_extensiones.qmd) en el fake-blog del taller.
+Las veremos con [este post](/posts/post_02_extensiones.qmd) en el blog del taller.
 
 ### Callouts
 

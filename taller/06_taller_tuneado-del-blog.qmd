@@ -35,7 +35,7 @@ Podemos tunear nuestro blog de 3 formas:
 
 - <https://www.emilhvitfeldt.com/post/slidecraft-code-output/> 
 
-- CSS,  Fantastica [esta slide](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17)      slides: https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#15  
+- CSS,  Fantástica [esta slide](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17)      slides: https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#15  
 
 Por ejemplo:  incluir markado en azulito  
 

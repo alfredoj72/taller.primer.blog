@@ -73,7 +73,7 @@ La extensión **"quarto-youtube-embed"** funcionaba perfectamente pero se ha que
 
 <br>
 
-[Aquí](https://quarto.org/docs/authoring/videos.html) la documentación oficial del shortcode `{{ < video   >}}`. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar videos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el video y algunas cosas más.
+[Aquí](https://quarto.org/docs/authoring/videos.html) la documentación oficial del shortcode `{{ < video   >}}`. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar vídeos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el vídeo y algunas cosas más.
 
 
 <br>

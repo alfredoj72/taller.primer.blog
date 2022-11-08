@@ -633,7 +633,7 @@ Veamos algunos de estos elementos con un poco de detalle. Después lo recordarem
 
 - Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en lenguaje `Lua`. 
 
-- Para ver como instalar y usar extensiones vamos a ir, otra vez, a otro de los post del fake-blog del taller; concretamente [aquí](/posts/post_02_extensiones.html) 
+- Para ver como instalar y usar extensiones vamos a ir, otra vez, a otro de los post del blog del taller; concretamente [aquí](/posts/post_02_extensiones.html) 
 
 
 ---
