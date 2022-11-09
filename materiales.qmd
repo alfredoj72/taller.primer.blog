@@ -25,6 +25,9 @@ El taller consta de una introducción y 7 secciones. Cada sección tiene un tuto
 
 #### [Slides para el Taller](./taller/slides_tareas_01.html){target="_blank"} (para las restantes secciones)
 
+
+
+
 <br>
 
 ## Estructura del taller
@@ -58,4 +61,8 @@ El taller consta de una introducción y 7 secciones. Cada sección tiene un tuto
 
 
 Seguramente usaremos esta [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV){target="_blank"}.
+
+
+
+#### [Slides para clase BigData](./taller/slides_clase_01.html){target="_blank"} (para usar en curso BigData)
 

@@ -1,0 +1,871 @@
+---
+title: "Intro a Quarto"
+subtitle: "(también haremos un blog)"
+date: 2022-11-09  #- ISO8601 YYYY-MM-DD format 
+date-format: short
+format: 
+  revealjs:
+    #logo: .png
+    #smaller: true
+    scrollable: true
+    slide-level: 2
+    height: 900
+    width: 1600
+    toc: false
+    from: markdown+emoji  #- usar emojis https://gist.github.com/rxaviers/7360908)
+    center-title-slide: true
+    title-slide-attributes: #- atributos para la slide de titulo
+      data-background-color: "#562457"   #- color de R-ladies
+      #data-background-image: /imagenes/economia.gif
+      #data-background-size: contain      
+    preview-links: auto  #- true: abre un iframe en lugar de abrir ventana
+    #multiplex: true  #- para que puedas manejar las slides del publico
+    link-external-newwindow: true
+    transition: fade
+    #height: 900
+    #width: 1600
+    fontcolor: "#262d36"
+    highlight-style: a11y
+    code-line-numbers: true
+    number-sections: false
+    slide-number: c/t   # https://pandoc.org/MANUAL.html#structuring-the-slide-show
+    incremental: false   # https://quarto.org/docs/presentations/#incremental-lists
+#logo: imagenes/economia.gif
+css: /assets/styles_slides_tareas.css
+#embed-resources: true 
+---
+
+
+
+
+
+
+
+# 1. Creación de un blog básico con Quarto  {background-color="#EEBF8B"}
+
+
+ Objetivo: **Aprender sobre Quarto** mientras vamos creando una web/blog
+
+---
+
+## Ejemplos de blogs (hechos con Quarto) {.smaller}
+
+-   [Mike Mahoney](https://www.mm218.dev/blog.html) (el repo [aqui](https://github.com/mikemahoney218/mm218.dev))
+
+-   [Isabella Velásquez](https://ivelasq.rbind.io/about.html) (el repo [aqui](https://github.com/ivelasq/pipedream))
+
+-   [Danielle Navarro](https://blog.djnavarro.net/) (el repo [aqui](https://github.com/djnavarro/quarto-blog))
+
+-   [Jeff y Marc Dotson](https://occasionaldivergences.com/) (el repo [aqui](https://github.com/marcdotson/occasional-divergences))
+
+-   [Layton R blog](https://graphdr.github.io/data-stories/) (el repo [aqui](https://github.com/graphdr/data-stories))
+
+-   [R Lille](https://rlille.fr/) (el repo [aqui](https://github.com/RLille/rlille.fr))
+
+-   [Drew Dimmery](https://ddimmery.com/)
+
+-   [PA blog](https://www.paltmeyer.com/blog/) (el repo [aqui](https://github.com/pat-alt/pat-alt.github.io))
+
+-   [Mario Angst](https://marioangst.com/en/)
+
+
+
+#### Más opciones:
+
+-   La [Gallery de Quarto](https://quarto.org/docs/gallery/#websites)
+
+# ¿Qué es Quarto?
+
+. . .
+
+> Quarto is a multi-language, next generation version of R Markdown, with many new features and capabilities.
+
+Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segundos
+
+## ¿Qué es Quarto? (otra vez)
+
+<br>
+
+. . .
+
+-   Un **nuevo sistema de publicación científica y técnica** de código abierto basado en Pandoc
+
+. . .
+
+-   Muy **parecido a Rmarkdown**, pero ... **no requiere R**. Soporta lenguajes como Phyton, Julia y Observable.
+
+. . . 
+
+- Unifica las funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
+
+- Es ... la "**segunda generación de Rmarkdown**"
+
+- Quarto utiliza Knitr para ejecutar el código R; así que es **capaz de procesar también los ficheros .Rmd** sin modificarlos
+
+. . .
+
+<br>
+
+-   Quarto no es un paquete, **es un programa independiente**, un CLI
+
+## Ventajas de Quarto
+
+-   Proyecto en desarrollo activo ... mientras que Rmarkdown ...
+
+-   **Unifica** algunas de las funcionalidades de Rmarkdown
+
+-   Por ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans
+
+
+- Para ver si estas ventajas merecen la pena para ti puedes leer a  [Occasional Divergences](https://occasionaldivergences.com/posts/quarto-questions/#what-are-the-benefits-of-using-quarto-for-_____), [Nick Tierney](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/), [Alison Hill](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/), [Danielle Navarro](https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/), o [Stack Overflow](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown)
+
+
+-   [Matt Worthington](https://www.mrworthington.com/) (el repo [aqui](https://github.com/mrworthington/mrworthington.github.io))
+
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+Wow, writing first paper using <a href="https://twitter.com/quarto_pub?ref_src=twsrc%5Etfw">@quarto_pub</a> and it is amazing; almost every pain point for academic writing in <a href="https://twitter.com/hashtag/rmarkdown?src=hash&amp;ref_src=twsrc%5Etfw">#rmarkdown</a> has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching
+
+</p>
+
+--- Dan Ovando (@DanOvand0) <a href="https://twitter.com/DanOvand0/status/1580343517154770944?ref_src=twsrc%5Etfw">October 12, 2022</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+
+# Setup para el taller
+
+<br>
+
+. . .
+
+-   Vamos a trabajar con R (a través de RStudio) y Quarto
+
+-   Si tienes RStudio 2022.07.1 +, ya tienes Quarto instalado
+
+-   Instrucciones de instalación [aquí](https://perezp44.github.io/taller.primer.blog/setup.html)
+
+<br>
+
+. . .
+
+El taller está diseñado **suponiendo que conocéis/usáis Rmarkdown**
+
+# Refresh de Rmarkdown (`.Rmd`)
+
+------------------------------------------------------------------------
+
+### ¿Qué es Rmarkdown? ¿Para qué sirve?
+
+. . .
+
+-   Un ["entorno"](https://vimeo.com/178485416) para hacer informes/publicaciones/transparencias **REPRODUCIBLES** con R.
+
+> Is an authoring framework for data science, combining your code, its results, and your prose. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.
+
+. . .
+
+-   Con Rmd se pueden generar **multitud de outputs**. Por ejemplo, visita [está galería](https://rmarkdown.rstudio.com/gallery.html) o [este listado](https://rmarkdown.rstudio.com/formats.html)
+
+<br>
+
+. . .
+
+#### Una oda a Rmarkdown
+
+-   [How Rmarkdown changed my life](https://www.youtube.com/watch?v=_D-ux3MqGug&list=PLXKlQEvIRus-qu1hjc8SyElSamAcT-KaE&index=6): charla de Rob Hyndman sobre su proceso hasta llegar a usar Rmarkdown para hacer sus documentos científicos y webs.
+
+------------------------------------------------------------------------
+
+## Documentos `.Rmd` tienen 3 partes {.smaller}
+
+1.  Encabezamiento (yaml header)\
+2.  Trozos de código R (R chunks)\
+3.  Texto (narratives)
+
+. . .
+
+### Un ejemplo
+
+::: {columns}
+::: {.column width="40%"}
+#### source code
+
+```{r echo = FALSE, comment = "",  out.width = '85%', fig.align = 'center'}
+knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_1.png") )
+```
+:::
+
+::: {.column width="40%"}
+#### output
+
+```{r echo = FALSE, comment = "", out.width = '100%', fig.align = 'center'}
+knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_1b.png") )
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+##### (I) El encabezamiento o "yaml header"
+
+-   Se (suele) poner al ppio del documento, entre estas marcas: **`---`**
+
+-   En el yaml son MUY importantes los **espacios y la indentación**
+
+-   Puedes aprender más sobre el `yaml` en el [manual de Pandoc](https://pandoc.org/MANUAL.html)
+
+##### Otro ejemplo de yaml
+
+```{r echo = FALSE, comment = "", out.width = '80%', fig.align = 'center'}
+knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_yaml.png") )
+```
+
+------------------------------------------------------------------------
+
+#### (IIa) Código R (chunks)
+
+-   Para que `knitr` sepa qué partes del .Rmd es código R, deben ir dentro de estas marcas:
+
+![](./imagenes/tt_01/img_01_dd.png){fig-align="left"}
+
+##### Por ejemplo
+
+![](./imagenes/tt_01/img_01_ee.png){fig-align="left"}
+
+-   Cuando `knitr` procese el chunk, lo interpretará como código R y **ejecutará las instrucciones y mostrará en el documento final el output** generado por el chunk.
+
+------------------------------------------------------------------------
+
+#### (IIb) Chunks: diferencias con Quarto {.smaller}
+
+-   Con `.qmd`, se usa **YAML** style: `echo: false` y, cada opción en una linea que empieza por `#|`
+
+::: columns
+::: {.column width="40%"}
+#### .Rmd
+
+![](./imagenes/tt_01/img_01_ff.png){fig-align="left"}
+:::
+
+::: {.column width="40%"}
+##### .qmd
+
+![](./imagenes/tt_01/img_01_gg.png){fig-align="left"}
+:::
+:::
+
+. . .
+
+-   No hace falta chunk inicial, ahora se pueden poner **las opciones de chunk en el YAML**
+
+::: columns
+::: {.column width="40%"}
+#### .Rmd
+
+![](./imagenes/tt_01/img_01_h1.png){fig-align="left"}
+:::
+
+::: {.column width="40%"}
+##### .qmd
+
+![](./imagenes/tt_01/img_01_h2.png){fig-align="left"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+## (III) Texto (narrativa)
+
+-   Todo lo que no es `YAML` o `CHUNKS` de código, es **TEXTO**.
+
+-   El texto **se escribe en Markdown** (concretamente en Pandoc's Markdown)
+
+<br>
+
+### Sintaxis básica de `markdown`
+
+-   [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) puedes ver (o recordar) la sintaxis básica para escribir en `markdown`. Como ejemplo:
+
+{{< include ./_includes/_tt_05_12_sintaxis-markdown.qmd >}}
+
+------------------------------------------------------------------------
+
+### Cuando tengáis tiempo mirad este Workshop sobre Quarto. Awesome!!
+
+{{< youtube yvi5uXQMvu4 >}}
+
+# Comenzamos el taller !!!! :computer::crossed_fingers: 💪🏼 💪🏼
+
+
+
+--- 
+
+{{< include ./_includes/_tt_01_03_tarea_01_clase.qmd >}}
+
+
+---
+
+## Contenido del Qproject
+
+{{< include ./_includes/_tt_01_04_estructura-Qproject.qmd >}}
+
+ 
+Los **archivos importantes** ahora son 3:
+ 
+ - `_quarto.yml`: especifica la estructura (y apariencia) de la web
+ 
+ - `index.qmd` : generará (y dará formato) a la "landing page" o Home. Esta página será un listado de páginas (un blog)
+ 
+ - `about.qmd` : una de la páginas del blog
+
+ 
+<br>
+
+---
+
+{{< include ./_includes/_tt_01_05_generacion-blog.qmd >}}
+
+
+
+
+<br>
+
+---
+
+## Contenido del Qproject (tras procesar el blog)
+
+{{< include ./_includes/_tt_01_07_estructura-02.qmd >}}
+
+
+- Se han creado 2 subcarpetas: `_site` y `_freeze`
+
+- `_site` es la carpeta que contiene el blog.
+
+<br>
+
+---
+
+
+## Ver el blog en local
+
+- `_site` es la carpeta que contiene el blog. Veamos su contenido
+
+- La página principal (o Home) de nuestro blog es el archivo `index.html`.
+
+- El archivo `index.html` ha sido generado por el fichero `index.qmd`. 
+
+
+{{< include ./_includes/_tt_01_08_tarea-03.qmd >}}
+
+<br>
+
+---
+
+## Contenido de `index.qmd` {.smaller}
+
+- El archivo  `index.qmd` genera `index.html`, la página principal (o Home) de nuestro blog
+
+{{< include ./_includes/_tt_01_09_landing-page.qmd >}}
+
+<br>
+
+---
+
+
+## Alojando el blog  
+
+{{< include ./_includes/_tt_01_10_tarea-04.qmd >}}
+
+
+- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en Internet.
+
+<br>
+
+{{< include ./_includes/_tt_01_11_extensiones-02.qmd >}}
+
+<br>
+
+---
+
+{{< include ./_includes/_tt_01_12_resumen.qmd >}}
+
+<br>
+
+
+# 2. Tuneado básico del blog  {background-color="#EEBF8B"}
+
+(2ª parte del tutorial)
+
+{{< include ./_includes/_tt_02_01_q-haremos.qmd >}}
+
+<br>
+
+---
+
+## Archivo `_quarto.yml` {.smaller}
+
+{{< include ./_includes/_tt_02_02_quarto-yaml.qmd >}}
+
+
+---  
+
+## 
+
+{{< include ./_includes/_tt_02_03_tarea-01_clase.qmd >}} 
+
+- **linea 5**: cambiamos el título del blog
+
+- **lineas 21-26**: modificamos el theme ...,  **CSS**, ....
+
+
+---
+
+
+{{< include ./_includes/_tt_02_06_tarea-02_clase.qmd >}}
+
+
+
+---
+
+## Archivo `index.qmd`
+
+{{< include ./_includes/_tt_02_07_archivo-index.qmd >}}
+
+- De momento, **solo vamos a hacer cambios en la segunda linea**: cambiaremos el título.
+
+- Fijaros que es un archivo especial: "sólo tiene yaml"
+
+<br>
+
+---
+
+{{< include ./_includes/_tt_02_08_tarea-03_clase.qmd >}}
+
+<br>
+
+---
+
+## Archivo `about.qmd` {.smaller}
+
+{{< include ./_includes/_tt_02_09_archivo-about.qmd >}}
+
+
+- Si en el `yaml` se activa la opción `about:` (linea 4), entonces puedes usar unas **plantillas** que Quarto tiene disponibles para **crear About's pages**.
+
+- Como puedes ver [aquí](https://quarto.org/docs/websites/website-about.html#templates) hay **5 plantillas**: jolla, trestles, solana, marquee y broadside.
+
+- [Aquí](https://quarto.org/docs/websites/website-about.html) tienes la documentación oficial sobre estas plantillas. 
+
+<br>
+
+---
+
+{{< include ./_includes/_tt_02_10_tarea-04_clase.qmd >}}
+
+
+
+<br>
+
+---
+
+## Archivo `styles.css`
+
+- Puedes cambiar la apariencia estética del blog usando los `themes` predefinidos en Quarto o puedes usar el archivo `styles.css`^[Veremos en el tutorial nº 6 que también podremos usar archivos `.scss`]
+
+{{< include ./_includes/_tt_02_11_tarea-05_clase.qmd >}}
+
+<br>
+
+---
+
+{{< include ./_includes/_tt_02_12_resumen.qmd >}}
+
+<br>
+
+
+- [Aquí](https://pjperez.quarto.pub/blog_pruebas_01/) puedes ver **como quedaría el blog** tras haber modificado `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
+
+
+---
+
+## Práctica (tutorial nº 2)  {background-color="#D3F3E7"}
+
+En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes el blog a tus necesidades y gustos**. Por ejemplo puedes probar:
+
+<br>
+
+1. Modificar la **apariencia del blog** (realmente del listado de posts) jugando con las opciones que nos proporciona Quarto (`index.qmd`). Gracias YAML inteligence!!
+
+<br>
+
+2. Modificar la apariencia de la **página About** (`about.qmd`)
+
+---
+
+{{< include ./_includes/_tt_02_13_practica-01_clase.qmd >}}
+
+
+---
+
+{{< include ./_includes/_tt_02_13_practica-02_clase.qmd >}}
+
+<br>
+
+
+
+# 3. Convertir el blog en web personal  {background-color="#EEBF8B"}
+
+(3ª parte del tutorial)
+
+{{< include ./_includes/_tt_03_01_q-haremos.qmd >}}
+
+<br>
+
+---
+
+{{< include ./_includes/_tt_03_02_tarea-01.qmd >}}
+
+---
+
+{{< include ./_includes/_tt_03_03_tarea-02_clase.qmd >}}
+
+---
+
+{{< include ./_includes/_tt_03_04_tarea-03.qmd >}}
+
+---
+
+{{< include ./_includes/_tt_03_05_tarea-04.qmd >}}
+
+
+
+# 4. Workflow: ¿cómo crear un post?  {background-color="#EEBF8B"}
+
+(4ª parte del tutorial)
+
+{{< include ./_includes/_tt_04_01_q-haremos.qmd >}}
+
+<br>
+
+---
+
+## ¿Donde están los posts del blog?
+
+- Los ficheros `.qmd` que generan los posts están **en la carpeta `posts`** (de nuestro Qproject que genera el blog). 
+
+- **Cada post** está en **una carpeta diferente**^[No es necesario que los posts estén cada uno en una carpeta, pero me parece una buena práctica.]:
+
+{{< include ./_includes/_tt_04_02_carpeta-posts.qmd >}}
+
+
+- Veamos (en la siguiente slide) el contenido de `./posts/welcome/`
+
+
+---
+
+## Contenido de cada subcarpeta de `./posts/`
+
+<br>
+
+- Por ejemplo de  `./posts/welcome/`
+
+
+{{< include ./_includes/_tt_04_03_contenido-1-post.qmd >}}
+
+<br>
+
+---
+
+{{< include ./_includes/_tt_04_04_tarea-01.qmd >}}
+
+
+---
+
+
+{{< include ./_includes/_tt_04_05_tarea-02.qmd >}}
+
+
+<br>
+
+---
+
+
+{{< include ./_includes/_tt_04_06_resumen.qmd >}}
+
+
+<br>
+
+# 5. Escribiendo posts: practicando con Quarto  {background-color="#EEBF8B"}
+
+(5ª parte del tutorial)
+
+{{< include ./_includes/_tt_05_01_q-haremos.qmd >}}
+
+{{< include ./_includes/_tt_05_02_warning.qmd >}}
+
+<br>
+
+----
+
+## Ficheros `.qmd`
+
+- Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código. 
+
+{{< include ./_includes/_tt_05_03_figura-01.qmd >}}
+
+- Veámoslas una a una
+
+
+---
+
+##  YAML: ideas importantes
+
+<br>
+
+- El encabezamiento o **YAML** sirve para fijar **opciones y metadatos** de nuestro documento.
+
+<br>
+
+- El `YAML` será  procesado varias veces durante el procesado del documento: es leído por Quarto, knitr y Pandoc e **influirá en el output final**.
+
+<br>
+
+- El hecho de estar trabajando dentro de un **Qproject** nos da **mucha versatilidad** a la hora de especificar el YAML de nuestros documentos `.qmd`. Documentación oficial [aquí](https://quarto.org/docs/projects/quarto-projects.html)
+
+
+
+## El `yaml` de un post se puede especificar en **3 niveles**
+
+<br>
+
+-  **Nivel proyecto**:todo Qproject tiene archivo `_quarto.yml`. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en `_quarto.yml`.
+
+-  **Nivel carpeta**: si en una carpeta existe un documento `_metadata.yml`, los documentos de esa carpeta heredan sus metadatos. La carpeta `./posts/` de un blog suele tener un archivo `_metadata.yml`.
+
+-  **Nivel documento**: En el yaml del propio documento `.qmd`
+
+<br>
+
+Si hay conflictos **prevalecen las opciones del nivel documento**, luego nivel carpeta y finalmente nivel proyecto.
+
+**Documentación oficial** de Quarto con las **principales opciones** que se pueden fijar en el YAML para documentos html: [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html)
+
+
+--- 
+
+## YAML: tal como lo tenemos ahora {.smaller}
+
+
+{{< include ./_includes/_tt_05_04_yaml-tabset.qmd >}}
+
+
+---
+
+## YAML: NIVEL PROYECTO (opciones en `_quarto.yml`)  {.smaller}
+
+
+En `_quarto.yml` se suelen poner opciones referentes a 3 aspectos:
+
+::: {.panel-tabset}
+
+#### 1. Sobre el propio Qproject
+
+{{< include ./_includes/_tt_05_05_yaml-proyecto.qmd >}}
+
+<br>
+
+- linea 4: podemos elegir la carpeta de destino de nuestro blog
+- linea 5: podemos cambiar el render directory de los `.qmd`
+
+<br>
+
+Documentación oficial [aquí](https://quarto.org/docs/projects/quarto-projects.html).
+
+#### 2. Estructura de la página web 
+
+{{< include ./_includes/_tt_05_06_yaml-estructura-web.qmd >}}
+
+<br>
+
+
+Como ves, se añadirían elementos como:
+
+- lineas 28 a 37: se añade un pie de página al blog
+
+- lineas 24 y 25: Hemos añadido un elemento a la `navbar` concretamente el icono `Home`. La documentación oficial para elementos de navegación está [aquí](https://quarto.org/docs/websites/website-navigation.html)
+
+- linea 4: añadimos un favicon
+
+- lineas 5 y 6: el url de la web y del repo en Github 
+
+- lineas 7-10: elementos de redes sociales. La documentación oficial para estos elementos esta  [aquí](https://quarto.org/docs/websites/website-tools.html)
+
+<br>
+
+#### 3. Formato de salida de los documentos 
+
+{{< include ./_includes/_tt_05_07_yaml-formato-salida.qmd >}}
+
+<br>
+
+En un blog/web el formato de salida es siempre `.html`; sin embargo podemos especificar otras opciones como por ejemplo sí los documentos (o páginas de la web, o post del blog) tienen un índice flotante, etc... Documentación oficial [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html)
+
+:::
+
+---
+
+## Un ejemplo "completito" de `_quarto.yml`  {.smaller}
+
+Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml). Pertenece a la [web de Quarto](https://quarto.org/docs/websites/). 
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"></iframe>
+```
+:::
+
+::: {.column width="50%"}
+
+{{< include ./_includes/_include_quarto_completito.qmd >}}
+
+:::
+
+::::
+
+
+---
+
+{{< include ./_includes/_tt_05_08_tarea-01_clase.qmd >}}
+
+
+---
+
+### YAML nivel carpeta
+
+- Abajo el, contenido del fichero `./posts/_metadata.yml` de nuestro blog
+
+{{< include ./_includes/_tt_05_09_yaml-nivel-carpeta.qmd >}}
+
+
+---
+
+### YAML nivel carpeta
+
+<br>
+
+{{< include ./_includes/_tt_05_10_tarea-5-02.qmd >}}
+
+
+---
+
+### YAML: nivel documento
+
+<br>
+
+{{< include ./_includes/_tt_05_11_tarea-5-03.qmd >}}
+
+
+---
+
+### Texto (o narrativas) {.smaller}
+
+
+- Se escribe (al igual que `.Rmd`)  en **markdown**. [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) la documentación oficial de Quarto.
+
+- Sintaxis básica de `markdown`
+
+{{< include ./_includes/_tt_05_12_sintaxis-markdown.qmd >}}
+
+
+---
+
+### CHUNKS
+
+**Comportamiento similar** a los documentos `.Rmd`. La documentación oficial está [aquí](https://quarto.org/docs/computations/execution-options.html)
+
+<br>
+
+##### Principales diferencias con .Rmd
+
+- En ficheros `.qmd`, **las opciones de los chunks se pueden especificar globalmente en el YAML** y a nivel individual en cada uno de los chunks.
+
+- En los **chunks individuales** ahora se se utiliza la **sintaxis YAML** (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
+
+{{< include ./_includes/_tt_05_44_img-22.qmd >}}
+
+
+
+
+---
+
+### CHUNKS
+
+
+- Las principales opciones son: **echo**, **eval**, **warning**, **error**, **output** e **include**. [Aquí](https://quarto.org/docs/computations/execution-options.html#output-options) la documentación oficial.
+
+
+- `echo`: además de los típicos true y false, ahora **incorpora un nuevo valor `fenced`** que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo). 
+
+
+- Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
+
+
+{{< include ./_includes/_tt_05_45_img-23.qmd >}}
+
+- Hay **más opciones para los chunks**. Por ejemplo: 
+
+    - hacer **folding code** con `#| code-fold: true`  
+    
+    - si el código es muy largo, puedes usar  `#| code-overflow: wrap`  y `#| code-overflow: scroll`  
+    
+    - puedes hacer que se muestren los **números de linea** con `#| code-line-numbers: true`
+    
+    
+La documentación oficial la tienes [aquí](https://quarto.org/docs/output-formats/html-code.html).
+
+
+---
+
+### Elementos básicos para escribir
+
+<br>
+
+{{< include ./_includes/_tt_05_12-B_text-elementos.qmd >}}
+
+---
+
+### Más elementos para "escribir"
+
+
+{{< include ./_includes/_tt_05_12-B_text-mas-elementos.qmd >}}
+
+
+
+{{< include ./_includes/_tt_05_12-B_text-veamos.qmd >}}
+
+
+---
+
+{{< include ./_includes/_tt_05_14_resumen.qmd >}}
+
+<br>
+
+
+---
+
+{{< include ./_includes/_tt_05_47_practica-01.qmd >}}
+
+
+Las soluciones a la Práctica están [aquí](/posts/post_04_practica-05.html)
