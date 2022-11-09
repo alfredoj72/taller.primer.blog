@@ -13,17 +13,19 @@ quarto install extension sellorm/quarto-youtube-embed
 ```
 
 
-- Una vez instalada, podemos incrustar un video usando el siguiente "shortcode" en nuestro documento .qmd:
+- Una vez instalada, podemos incrustar un vídeo usando el siguiente "shortcode" en nuestro documento .qmd:
 
 
 
 ```{r, eval = FALSE}
-{{< youtube zk9zHqXm6m0 >}}
+{{< youtube 7SVYNyvi0wQ >}}
 ```
 
-Con lo que habremos incrustado el video en nuestro documento .html final.
+Con lo que habremos incrustado el vídeo en nuestro documento .html final.
 
-{{< youtube zk9zHqXm6m0 >}}
+{{< youtube 7SVYNyvi0wQ >}}
+
+
 
 :::
 

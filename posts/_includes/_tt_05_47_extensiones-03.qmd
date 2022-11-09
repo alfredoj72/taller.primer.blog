@@ -23,11 +23,12 @@ Para insertar un **tweet** has de:
 
 por ejemplo:
 
-{{< tweet user=Culturas2_tve id=1589703143562309632 >}}
+{{< tweet user=ambitocultural id=1589543369512026112 >}}
 
 ```
 
-{{< tweet user=Culturas2_tve id=1589703143562309632 >}}
+
+{{< tweet user=ambitocultural id=1589543369512026112 >}}
 
 <br><br>
 
