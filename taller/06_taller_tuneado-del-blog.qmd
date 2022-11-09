@@ -4,23 +4,174 @@ subtitle: "(6ª parte del taller [Mi primer blog con Quarto](https://perezp44.gi
 title-block-banner: true
 title-block-banner-color : "#562457"
 toc-title: Tutorial nº 6
+toc-depth: 4
 ---
 
 
 {{< include ./_includes/_contexto.qmd >}}
 
+
+::: {.callout-note collapse="true" appearance="default" icon="false"}
+## Recapitulación
+-   En esta sexta parte del taller veremos con un poco más de detalle como "mejorar" la apariencia de nuestro blog.
+
+-   Las anteriores secciones del taller son:
+
+    1. **Intro**: se presenta el taller
+
+    2. **Creación de un blog (básico) con Quarto**: vimos como crear y alojar un **blog básico** con RStudio y Quarto.
+    
+    3. **Tuneado básico del blog**: modificamos ligeramente los ficheros `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
+    
+    4. **Workflow: ¿cómo crear un post?**: vimos como generar nuevos posts para nuestro blog.
+    
+    5. **Escribiendo posts: prácticando con Quarto**. Vimos diversos elementos como div, call-outs etc... disponibles en Quarto para escribir posts.
+:::
+
+
+------------------------------------------------------------------------
+
 <br>
 
-Podemos tunear nuestro blog de 3 formas:
 
-    - utilizando las opciones disponibles en Quarto para el `yaml`
+{{< include ./_includes/_tt_06_01_q-haremos.qmd >}}
+
+<br>
+
+La verdad es que creo que es mejor comenzar con un blog sencillo usando las plantillas (o themes) que nos ofrece Quarto hacen un buen trabajo, pero si queremos modificar la apariencia de nuestro blog podemos hacerlo de 3 formas: 
+
+  - utilizando las opciones disponibles en Quarto para el `yaml`
     
-    - utilizando CSS
+  - utilizando CSS
     
-    - utilizando SASS
+  - utilizando SASS
+    
     
 ## Opciones disponibles en el `yaml`
 
+En esta sección repasaremos las opciones disponibles como opciones de `yaml`. Además recuerda que hay tres "niveles" de yaml: 
+
+  - Nivel proyecto: en el archivo `_quarto.yml`
+  
+  - Nivel carpeta: en el archivo `_metadata.yml`
+  
+  - Nivel documento (o post): en el yaml del propio documento `.qmd`
+
+<br>
+  
+### Nivel proyecto
+
+En el archivo `_quarto.yml` hay 3 bloques: 
+
+  - Opciones referentes al proyecto
+  
+  - Opciones referentes a la estructura de la web y barra de navegación
+  
+  - Opciones digamos más "estéticas"
+
+<br>
+
+
+#### Proyecto
+
+Abajo puedes ver las opciones más comunes referentes al proyecto. Yo suelo alojar las webs en el directorio `docs`, porque es el que se suele usar en Github Pages, así que sí suelo usar la linea 3.
+
+{{< include ./_includes/_tt_06_02_yaml-proyecto-01.qmd >}}
+
+Por supuesto que hay más opciones, puedes verlas [aquí](https://quarto.org/docs/projects/quarto-projects.html#project-metadata).
+
+<br>
+
+#### Estructura web
+
+Está parte del archivo `_quarto.yml` sirve para crear la estructura de la página web: barra de navegación y sus pestañas, footer y sidebar. Yo no suelo utilizar sidebar porque no hago web's complejas y me gusta más que la barra de navegación esté arriba y no en un lateral.
+
+Abajo tienes diferentes opciones para crear la estructura de tu web^[Son las opciones que he ido recopilando y que me han parecido que pueden llegar a serme útiles algún día, por eso las recopilo, para tenerlas a mano]:
+
+{{< include ./_includes/_tt_06_02_yaml-proyecto-02.qmd >}}
+
+Por supuesto que hay más opciones, puedes verlas [aquí](https://quarto.org/docs/websites/website-navigation.html) y [aquí](https://quarto.org/docs/websites/).
+
+<br>
+
+#### Estéticas
+
+Opciones referentes a diversos aspectos pero, en general, referentes a la estética (o theme) de la web. Documentación [aquí](https://quarto.org/docs/output-formats/html-basics.html)  y [aquí](https://quarto.org/docs/reference/formats/html.html).
+
+Están son las opciones que he recopilado:
+
+
+{{< include ./_includes/_tt_06_02_yaml-proyecto-03.qmd >}}
+
+
+<br>
+
+--------------------------
+
+
+### Nivel carpeta
+
+En realidad, las opciones que se pongan en el archivo `_metadata.ym` podrían perfectamente ir en el `_quarto.yml` pero el hecho de poder hacerlo indistintamente en ambos nos da más flexibilidad a la hora de hacer pequeñas adaptaciones de estilo para los archivos `.qmd` de una determinada carpeta.
+
+Estas son las opciones que he recopilado. Muchas de ellas (o todas) podrían ir perfectamente en el yaml del propio documento o incluso en el fichero `_quarto.yml`, pero al situarlas en el archivo `_metadata.yml` afectarán a todos los posts pero solo a los posts.
+
+
+
+
+{{< include ./_includes/_tt_06_03_yaml-carpeta-01.qmd >}}
+
+
+
+<br>
+
+--------------------------
+
+### Nivel documento
+
+{{< include ./_includes/_tt_06_04_yaml-documento-01.qmd >}}
+
+
+
+
+<br>
+
+---------------------------
+
+<br>
+
+
+
+### Por categoría
+
+
+Ahora mostraré opciones que podemos utilizar en el YAML para diferentes cuestiones:
+
+
+
+{{< include ./_includes/_tt_06_04_yaml-por-categoria-01.qmd >}}
+
+<br>
+
+---------------------------
+
+### Listing pages
+
+
+{{< include ./_includes/_tt_06_05_yaml-listing-pages.qmd >}}
+
+
+<br>
+
+---------------------------
+
+### About pages
+
+{{< include ./_includes/_tt_06_06_yaml-about-pages.qmd >}}
+
+
+--------------------------
+
+<br>
 
 
 ## SASS

@@ -240,7 +240,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Fecha de Publicación</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">8 de noviembre de 2022</p>
+        <p class="date">9 de noviembre de 2022</p>
       </div>
     </div>
     
@@ -255,7 +255,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Tutorial nº 6</h2>
    
   <ul>
-  <li><a href="#opciones-disponibles-en-el-yaml" id="toc-opciones-disponibles-en-el-yaml" class="nav-link active" data-scroll-target="#opciones-disponibles-en-el-yaml"><span class="toc-section-number">1</span>  Opciones disponibles en el <code>yaml</code></a></li>
+  <li><a href="#opciones-disponibles-en-el-yaml" id="toc-opciones-disponibles-en-el-yaml" class="nav-link active" data-scroll-target="#opciones-disponibles-en-el-yaml"><span class="toc-section-number">1</span>  Opciones disponibles en el <code>yaml</code></a>
+  <ul>
+  <li><a href="#nivel-proyecto" id="toc-nivel-proyecto" class="nav-link" data-scroll-target="#nivel-proyecto"><span class="toc-section-number">1.1</span>  Nivel proyecto</a>
+  <ul class="collapse">
+  <li><a href="#proyecto" id="toc-proyecto" class="nav-link" data-scroll-target="#proyecto">Proyecto</a></li>
+  <li><a href="#estructura-web" id="toc-estructura-web" class="nav-link" data-scroll-target="#estructura-web">Estructura web</a></li>
+  <li><a href="#estéticas" id="toc-estéticas" class="nav-link" data-scroll-target="#estéticas">Estéticas</a></li>
+  </ul></li>
+  <li><a href="#nivel-carpeta" id="toc-nivel-carpeta" class="nav-link" data-scroll-target="#nivel-carpeta"><span class="toc-section-number">1.2</span>  Nivel carpeta</a></li>
+  <li><a href="#nivel-documento" id="toc-nivel-documento" class="nav-link" data-scroll-target="#nivel-documento"><span class="toc-section-number">1.3</span>  Nivel documento</a></li>
+  <li><a href="#por-categoría" id="toc-por-categoría" class="nav-link" data-scroll-target="#por-categoría"><span class="toc-section-number">1.4</span>  Por categoría</a></li>
+  <li><a href="#listing-pages" id="toc-listing-pages" class="nav-link" data-scroll-target="#listing-pages"><span class="toc-section-number">1.5</span>  Listing pages</a></li>
+  <li><a href="#about-pages" id="toc-about-pages" class="nav-link" data-scroll-target="#about-pages"><span class="toc-section-number">1.6</span>  About pages</a></li>
+  </ul></li>
   <li><a href="#sass" id="toc-sass" class="nav-link" data-scroll-target="#sass"><span class="toc-section-number">2</span>  SASS</a></li>
   <li><a href="#colorines-css" id="toc-colorines-css" class="nav-link" data-scroll-target="#colorines-css"><span class="toc-section-number">3</span>  colorines css</a></li>
   <li><a href="#mas" id="toc-mas" class="nav-link" data-scroll-target="#mas"><span class="toc-section-number">4</span>  Mas</a></li>
@@ -291,15 +304,404 @@ Contexto
 </div>
 </div>
 </div>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Recapitulación
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>En esta sexta parte del taller veremos con un poco más de detalle como “mejorar” la apariencia de nuestro blog.</p></li>
+<li><p>Las anteriores secciones del taller son:</p>
+<ol type="1">
+<li><p><strong>Intro</strong>: se presenta el taller</p></li>
+<li><p><strong>Creación de un blog (básico) con Quarto</strong>: vimos como crear y alojar un <strong>blog básico</strong> con RStudio y Quarto.</p></li>
+<li><p><strong>Tuneado básico del blog</strong>: modificamos ligeramente los ficheros <code>_quarto.yml</code>, <code>index.qmd</code>, <code>about.qmd</code> y <code>styles.css</code>.</p></li>
+<li><p><strong>Workflow: ¿cómo crear un post?</strong>: vimos como generar nuevos posts para nuestro blog.</p></li>
+<li><p><strong>Escribiendo posts: prácticando con Quarto</strong>. Vimos diversos elementos como div, call-outs etc… disponibles en Quarto para escribir posts.</p></li>
+</ol></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
 <p><br></p>
-<p>Podemos tunear nuestro blog de 3 formas:</p>
-<pre><code>- utilizando las opciones disponibles en Quarto para el `yaml`
-
-- utilizando CSS
-
-- utilizando SASS</code></pre>
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+¿Qué haremos en este tutorial?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Ver distintas opciones para adaptar el blog a nuestras necesidades</p></li>
+<li><p>En concreto veremos 3 formas de hacerlo: a través de opciones de Quarto en el yaml, con CSS y con SASS</p></li>
+</ul>
+</div>
+</div>
+<p><br></p>
+<p>La verdad es que creo que es mejor comenzar con un blog sencillo usando las plantillas (o themes) que nos ofrece Quarto hacen un buen trabajo, pero si queremos modificar la apariencia de nuestro blog podemos hacerlo de 3 formas:</p>
+<ul>
+<li><p>utilizando las opciones disponibles en Quarto para el <code>yaml</code></p></li>
+<li><p>utilizando CSS</p></li>
+<li><p>utilizando SASS</p></li>
+</ul>
 <section id="opciones-disponibles-en-el-yaml" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="opciones-disponibles-en-el-yaml"><span class="header-section-number">1</span> Opciones disponibles en el <code>yaml</code></h2>
+<p>En esta sección repasaremos las opciones disponibles como opciones de <code>yaml</code>. Además recuerda que hay tres “niveles” de yaml:</p>
+<ul>
+<li><p>Nivel proyecto: en el archivo <code>_quarto.yml</code></p></li>
+<li><p>Nivel carpeta: en el archivo <code>_metadata.yml</code></p></li>
+<li><p>Nivel documento (o post): en el yaml del propio documento <code>.qmd</code></p></li>
+</ul>
+<p><br></p>
+<section id="nivel-proyecto" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="nivel-proyecto"><span class="header-section-number">1.1</span> Nivel proyecto</h3>
+<p>En el archivo <code>_quarto.yml</code> hay 3 bloques:</p>
+<ul>
+<li><p>Opciones referentes al proyecto</p></li>
+<li><p>Opciones referentes a la estructura de la web y barra de navegación</p></li>
+<li><p>Opciones digamos más “estéticas”</p></li>
+</ul>
+<p><br></p>
+<section id="proyecto" class="level4">
+<h4 class="anchored" data-anchor-id="proyecto">Proyecto</h4>
+<p>Abajo puedes ver las opciones más comunes referentes al proyecto. Yo suelo alojar las webs en el directorio <code>docs</code>, porque es el que se suele usar en Github Pages, así que sí suelo usar la linea 3.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#- QUARTO PROJECTS: https://quarto.org/docs/projects/quarto-projects.html</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a>project<span class="sc">:</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  type<span class="sc">:</span> website</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> docs        <span class="co">#- carpeta donde se redirige el output (.html)</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="co"># execute-dir: project  #- render directory: https://quarto.org/docs/projects/code-execution.html#working-dir</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>  <span class="co"># resources:</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="co">#   - "/docs/download/_download.json"</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Por supuesto que hay más opciones, puedes verlas <a href="https://quarto.org/docs/projects/quarto-projects.html#project-metadata">aquí</a>.</p>
+<p><br></p>
+</section>
+<section id="estructura-web" class="level4">
+<h4 class="anchored" data-anchor-id="estructura-web">Estructura web</h4>
+<p>Está parte del archivo <code>_quarto.yml</code> sirve para crear la estructura de la página web: barra de navegación y sus pestañas, footer y sidebar. Yo no suelo utilizar sidebar porque no hago web’s complejas y me gusta más que la barra de navegación esté arriba y no en un lateral.</p>
+<p>Abajo tienes diferentes opciones para crear la estructura de tu web<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">#- PAGINAS WEB: https://quarto.org/docs/websites/ --------------------------------------</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#- Web navigation: https://quarto.org/docs/websites/website-navigation.html</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a>website<span class="sc">:</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>  favicon<span class="sc">:</span> profile.jpg</span>
+<span id="cb2-9"><a href="#cb2-9"></a>  reader<span class="sc">-</span>mode<span class="sc">:</span> true  </span>
+<span id="cb2-10"><a href="#cb2-10"></a>  <span class="co"># site-url: https://....</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="co"># repo-url: https://....</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>  <span class="co"># repo-actions: [edit, issue]</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a>  search<span class="sc">:</span>   <span class="co">#- https://quarto.org/docs/websites/website-search.html</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>    location<span class="sc">:</span> navbar <span class="co">#- {navbar, sidebar}</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a>    type<span class="sc">:</span> overlay   <span class="co">#- {overlay, textbox}</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a>    copy<span class="sc">-</span>button<span class="sc">:</span> true</span>
+<span id="cb2-17"><a href="#cb2-17"></a>  open<span class="sc">-</span>graph<span class="sc">:</span> true <span class="co">#-https://quarto.org/docs/websites/website-tools.html#twitter-cards</span></span>
+<span id="cb2-18"><a href="#cb2-18"></a>  </span>
+<span id="cb2-19"><a href="#cb2-19"></a>  twitter<span class="sc">-</span>card<span class="sc">:</span></span>
+<span id="cb2-20"><a href="#cb2-20"></a>    creator<span class="sc">:</span> <span class="st">"@tu-usuario-twitter"</span></span>
+<span id="cb2-21"><a href="#cb2-21"></a>    card<span class="sc">-</span>style<span class="sc">:</span> summary_large_image</span>
+<span id="cb2-22"><a href="#cb2-22"></a>  body<span class="sc">-</span>header<span class="sc">:</span> <span class="er">|</span> </span>
+<span id="cb2-23"><a href="#cb2-23"></a>    This page brought to you by <span class="sc">&lt;</span>https<span class="sc">:</span><span class="er">//</span>example.com<span class="sc">&gt;</span></span>
+<span id="cb2-24"><a href="#cb2-24"></a>  margin<span class="sc">-</span>header<span class="sc">:</span> <span class="er">|</span></span>
+<span id="cb2-25"><a href="#cb2-25"></a>    <span class="sc">!</span>[Logo image](<span class="sc">/</span>img<span class="sc">/</span>logo.png)</span>
+<span id="cb2-26"><a href="#cb2-26"></a>  <span class="co"># page-navigation: true</span></span>
+<span id="cb2-27"><a href="#cb2-27"></a></span>
+<span id="cb2-28"><a href="#cb2-28"></a>  navbar<span class="sc">:</span></span>
+<span id="cb2-29"><a href="#cb2-29"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
+<span id="cb2-30"><a href="#cb2-30"></a>    <span class="co">#pinned: true</span></span>
+<span id="cb2-31"><a href="#cb2-31"></a>    <span class="co">#background: "primary"    #- {“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or hex color} (el backgroung de la navbar)</span></span>
+<span id="cb2-32"><a href="#cb2-32"></a>    <span class="co">#foreground: "warning"    #- color navigation elements, text and links that appear in the navbar.</span></span>
+<span id="cb2-33"><a href="#cb2-33"></a>    <span class="co">#title: false</span></span>
+<span id="cb2-34"><a href="#cb2-34"></a>    <span class="co">#collapse-below: lg</span></span>
+<span id="cb2-35"><a href="#cb2-35"></a>    <span class="co">#pinned: true</span></span>
+<span id="cb2-36"><a href="#cb2-36"></a>    right<span class="sc">:</span></span>
+<span id="cb2-37"><a href="#cb2-37"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"About me"</span></span>
+<span id="cb2-38"><a href="#cb2-38"></a>        href<span class="sc">:</span> about.qmd</span>
+<span id="cb2-39"><a href="#cb2-39"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb2-40"><a href="#cb2-40"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb2-41"><a href="#cb2-41"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb2-42"><a href="#cb2-42"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
+<span id="cb2-43"><a href="#cb2-43"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb2-44"><a href="#cb2-44"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
+<span id="cb2-45"><a href="#cb2-45"></a>    left<span class="sc">:</span> </span>
+<span id="cb2-46"><a href="#cb2-46"></a>      <span class="sc">-</span> icon<span class="sc">:</span> house<span class="sc">-</span>door</span>
+<span id="cb2-47"><a href="#cb2-47"></a>        href<span class="sc">:</span> index.html</span>
+<span id="cb2-48"><a href="#cb2-48"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
+<span id="cb2-49"><a href="#cb2-49"></a>        href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb2-50"><a href="#cb2-50"></a>  page<span class="sc">-</span>footer<span class="sc">:</span></span>
+<span id="cb2-51"><a href="#cb2-51"></a>    border<span class="sc">:</span> true</span>
+<span id="cb2-52"><a href="#cb2-52"></a>    background<span class="sc">:</span> light</span>
+<span id="cb2-53"><a href="#cb2-53"></a>    left<span class="sc">:</span> <span class="st">"© 2022 Pedro J. Pérez"</span></span>
+<span id="cb2-54"><a href="#cb2-54"></a>    <span class="co">#left: |</span></span>
+<span id="cb2-55"><a href="#cb2-55"></a>    <span class="co">#  Proudly supported by</span></span>
+<span id="cb2-56"><a href="#cb2-56"></a>    <span class="co">#  [![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg){fig-alt="RStudio" width=65px}](https://www.rstudio.com)</span></span>
+<span id="cb2-57"><a href="#cb2-57"></a>    center<span class="sc">:</span> <span class="st">"Hecho con [Quarto](https://quarto.org)"</span></span>
+<span id="cb2-58"><a href="#cb2-58"></a>    right<span class="sc">:</span></span>
+<span id="cb2-59"><a href="#cb2-59"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb2-60"><a href="#cb2-60"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb2-61"><a href="#cb2-61"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb2-62"><a href="#cb2-62"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
+<span id="cb2-63"><a href="#cb2-63"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb2-64"><a href="#cb2-64"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail&gt;@uv.es"</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Por supuesto que hay más opciones, puedes verlas <a href="https://quarto.org/docs/websites/website-navigation.html">aquí</a> y <a href="https://quarto.org/docs/websites/">aquí</a>.</p>
+<p><br></p>
+</section>
+<section id="estéticas" class="level4">
+<h4 class="anchored" data-anchor-id="estéticas">Estéticas</h4>
+<p>Opciones referentes a diversos aspectos pero, en general, referentes a la estética (o theme) de la web. Documentación <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a>.</p>
+<p>Están son las opciones que he recopilado:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="co">#- HTML basics: https://quarto.org/docs/output-formats/html-basics.html</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="co">#- HTML options: https://quarto.org/docs/reference/formats/html.html</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a>format<span class="sc">:</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>  html<span class="sc">:</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-themes.html</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>    <span class="co">#theme:</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>    <span class="co">#  light: [flatly, theme.scss]  </span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb3-11"><a href="#cb3-11"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb3-12"><a href="#cb3-12"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-code.html#highlighting</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span>
+<span id="cb3-14"><a href="#cb3-14"></a>    code<span class="sc">-</span>copy<span class="sc">:</span> true</span>
+<span id="cb3-15"><a href="#cb3-15"></a>    code<span class="sc">-</span>overflow<span class="sc">:</span> wrap</span>
+<span id="cb3-16"><a href="#cb3-16"></a>    <span class="co">#include-after-body: js.html</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a>    theme<span class="sc">:</span></span>
+<span id="cb3-18"><a href="#cb3-18"></a>      light<span class="sc">:</span> flatly</span>
+<span id="cb3-19"><a href="#cb3-19"></a>      dark<span class="sc">:</span> [darkly, theme<span class="sc">-</span>dark.scss]</span>
+<span id="cb3-20"><a href="#cb3-20"></a></span>
+<span id="cb3-21"><a href="#cb3-21"></a><span class="co">#- 4/ Más opciones  ----------------------------------------------------</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a>bibliography<span class="sc">:</span> references.bib</span>
+<span id="cb3-23"><a href="#cb3-23"></a>filters<span class="sc">:</span></span>
+<span id="cb3-24"><a href="#cb3-24"></a>  <span class="sc">-</span> filters<span class="sc">/</span>tools<span class="sc">-</span>tabset.lua</span>
+<span id="cb3-25"><a href="#cb3-25"></a>freeze<span class="sc">:</span> true</span>
+<span id="cb3-26"><a href="#cb3-26"></a>editor<span class="sc">:</span> visual</span>
+<span id="cb3-27"><a href="#cb3-27"></a></span>
+<span id="cb3-28"><a href="#cb3-28"></a>description<span class="sc">:</span> <span class="st">"Un blog para aprender y divertirme"</span> <span class="co">#- necesario para RSS</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<hr>
+</section>
+</section>
+<section id="nivel-carpeta" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="nivel-carpeta"><span class="header-section-number">1.2</span> Nivel carpeta</h3>
+<p>En realidad, las opciones que se pongan en el archivo <code>_metadata.ym</code> podrían perfectamente ir en el <code>_quarto.yml</code> pero el hecho de poder hacerlo indistintamente en ambos nos da más flexibilidad a la hora de hacer pequeñas adaptaciones de estilo para los archivos <code>.qmd</code> de una determinada carpeta.</p>
+<p>Estas son las opciones que he recopilado. Muchas de ellas (o todas) podrían ir perfectamente en el yaml del propio documento o incluso en el fichero <code>_quarto.yml</code>, pero al situarlas en el archivo <code>_metadata.yml</code> afectarán a todos los posts pero solo a los posts.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co"># freeze computational output</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co"># (see https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>freeze<span class="sc">:</span> true</span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="co"># Enable banner style title blocks: https://quarto.org/docs/authoring/title-blocks.html</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true  </span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="co">#title-block-style: default   #- {none, plain, default}</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a></span>
+<span id="cb4-12"><a href="#cb4-12"></a></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="co"># Enable CC licence appendix</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a>license<span class="sc">:</span> <span class="st">"CC BY"</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a></span>
+<span id="cb4-16"><a href="#cb4-16"></a><span class="co"># Default for table of contents</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a>toc<span class="sc">:</span> true</span>
+<span id="cb4-18"><a href="#cb4-18"></a>toc<span class="sc">-</span>title<span class="sc">:</span> Índice</span>
+<span id="cb4-19"><a href="#cb4-19"></a>toc<span class="sc">-</span>location<span class="sc">:</span> left</span>
+<span id="cb4-20"><a href="#cb4-20"></a></span>
+<span id="cb4-21"><a href="#cb4-21"></a></span>
+<span id="cb4-22"><a href="#cb4-22"></a><span class="co"># Default knitr options</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a>execute<span class="sc">:</span></span>
+<span id="cb4-24"><a href="#cb4-24"></a>  echo<span class="sc">:</span> true</span>
+<span id="cb4-25"><a href="#cb4-25"></a>  message<span class="sc">:</span> false</span>
+<span id="cb4-26"><a href="#cb4-26"></a>  warning<span class="sc">:</span> false</span>
+<span id="cb4-27"><a href="#cb4-27"></a>  eval<span class="sc">:</span> true</span>
+<span id="cb4-28"><a href="#cb4-28"></a></span>
+<span id="cb4-29"><a href="#cb4-29"></a><span class="co"># Default author</span></span>
+<span id="cb4-30"><a href="#cb4-30"></a>author<span class="sc">:</span></span>
+<span id="cb4-31"><a href="#cb4-31"></a>  <span class="sc">-</span> name<span class="sc">:</span> Pedro J. Pérez</span>
+<span id="cb4-32"><a href="#cb4-32"></a>    <span class="co">#url: https://perezp44.github.io/intro-ds-22-23-web/</span></span>
+<span id="cb4-33"><a href="#cb4-33"></a>    affiliation<span class="sc">:</span> Universitat de València</span>
+<span id="cb4-34"><a href="#cb4-34"></a>    affiliation<span class="sc">-</span>url<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>www.uv.es</span>
+<span id="cb4-35"><a href="#cb4-35"></a>    orcid<span class="sc">:</span> <span class="dv">0000-0001-9375-6330</span></span>
+<span id="cb4-36"><a href="#cb4-36"></a></span>
+<span id="cb4-37"><a href="#cb4-37"></a><span class="co"># Default fields for citation</span></span>
+<span id="cb4-38"><a href="#cb4-38"></a>citation<span class="sc">:</span> true</span>
+<span id="cb4-39"><a href="#cb4-39"></a></span>
+<span id="cb4-40"><a href="#cb4-40"></a><span class="co"># image as thumbnail</span></span>
+<span id="cb4-41"><a href="#cb4-41"></a><span class="co"># image: "imagenes/thumbnail.png"</span></span>
+<span id="cb4-42"><a href="#cb4-42"></a></span>
+<span id="cb4-43"><a href="#cb4-43"></a><span class="co">#- https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/16-code-tools/</span></span>
+<span id="cb4-44"><a href="#cb4-44"></a>code<span class="sc">-</span>fold<span class="sc">:</span> true</span>
+<span id="cb4-45"><a href="#cb4-45"></a>code<span class="sc">-</span>tools<span class="sc">:</span> true</span>
+<span id="cb4-46"><a href="#cb4-46"></a>code<span class="sc">-</span>link<span class="sc">:</span> true</span>
+<span id="cb4-47"><a href="#cb4-47"></a></span>
+<span id="cb4-48"><a href="#cb4-48"></a><span class="co">#- https://quarto.org/docs/authoring/cross-references.html#options</span></span>
+<span id="cb4-49"><a href="#cb4-49"></a>crossref<span class="sc">:</span></span>
+<span id="cb4-50"><a href="#cb4-50"></a>  fig<span class="sc">-</span>title<span class="sc">:</span> Gráfico   <span class="co"># (default is "Figure")</span></span>
+<span id="cb4-51"><a href="#cb4-51"></a>  tbl<span class="sc">-</span>title<span class="sc">:</span> Tabla     <span class="co"># (default is "Table")</span></span>
+<span id="cb4-52"><a href="#cb4-52"></a>  <span class="co">#title-delim: —      # (default is ":")</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<hr>
+</section>
+<section id="nivel-documento" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="nivel-documento"><span class="header-section-number">1.3</span> Nivel documento</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#- YAML de un post ------------------------------</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="sc">---</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>title<span class="sc">:</span> <span class="st">"Mi primer post con Quarto"</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>author<span class="sc">:</span> <span class="st">"Pedro J. Pérez"</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>date<span class="sc">:</span> <span class="dv">2022-10-25</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a>date<span class="sc">-</span>format<span class="sc">:</span> short</span>
+<span id="cb5-7"><a href="#cb5-7"></a>categories<span class="sc">:</span> [R, quarto]</span>
+<span id="cb5-8"><a href="#cb5-8"></a>image<span class="sc">:</span> <span class="st">"thumbnail.jpg"</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<hr>
+<p><br></p>
+</section>
+<section id="por-categoría" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="por-categoría"><span class="header-section-number">1.4</span> Por categoría</h3>
+<p>Ahora mostraré opciones que podemos utilizar en el YAML para diferentes cuestiones:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#- formato de salida ---------------------------</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>format<span class="sc">:</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>  html<span class="sc">:</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-themes.html</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a>    <span class="co">#theme:</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a>    <span class="co">#  light: [flatly, theme.scss]  </span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb6-8"><a href="#cb6-8"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb6-9"><a href="#cb6-9"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-code.html#highlighting</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span>
+<span id="cb6-11"><a href="#cb6-11"></a>    code<span class="sc">-</span>copy<span class="sc">:</span> true</span>
+<span id="cb6-12"><a href="#cb6-12"></a>    code<span class="sc">-</span>overflow<span class="sc">:</span> wrap</span>
+<span id="cb6-13"><a href="#cb6-13"></a>    <span class="co">#include-after-body: js.html</span></span>
+<span id="cb6-14"><a href="#cb6-14"></a>    theme<span class="sc">:</span></span>
+<span id="cb6-15"><a href="#cb6-15"></a>      light<span class="sc">:</span> flatly</span>
+<span id="cb6-16"><a href="#cb6-16"></a>      dark<span class="sc">:</span> [darkly, theme<span class="sc">-</span>dark.scss]</span>
+<span id="cb6-17"><a href="#cb6-17"></a></span>
+<span id="cb6-18"><a href="#cb6-18"></a><span class="co">#- opciones para TOC ---------------------------</span></span>
+<span id="cb6-19"><a href="#cb6-19"></a>toc<span class="sc">:</span> true</span>
+<span id="cb6-20"><a href="#cb6-20"></a>toc<span class="sc">-</span>title<span class="sc">:</span> Índice</span>
+<span id="cb6-21"><a href="#cb6-21"></a>toc<span class="sc">-</span>location<span class="sc">:</span> left</span>
+<span id="cb6-22"><a href="#cb6-22"></a></span>
+<span id="cb6-23"><a href="#cb6-23"></a><span class="co"># author ---------------------------------------</span></span>
+<span id="cb6-24"><a href="#cb6-24"></a>author<span class="sc">:</span></span>
+<span id="cb6-25"><a href="#cb6-25"></a>  <span class="sc">-</span> name<span class="sc">:</span> Pedro J. Pérez</span>
+<span id="cb6-26"><a href="#cb6-26"></a>    <span class="co">#url: https://</span></span>
+<span id="cb6-27"><a href="#cb6-27"></a>    affiliation<span class="sc">:</span> Universitat de València</span>
+<span id="cb6-28"><a href="#cb6-28"></a>    affiliation<span class="sc">-</span>url<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>www.uv.es</span>
+<span id="cb6-29"><a href="#cb6-29"></a>    orcid<span class="sc">:</span> <span class="dv">0000-0001-9375-6330</span></span>
+<span id="cb6-30"><a href="#cb6-30"></a></span>
+<span id="cb6-31"><a href="#cb6-31"></a><span class="co"># opciones para chunks --------------------------</span></span>
+<span id="cb6-32"><a href="#cb6-32"></a><span class="co"># https://quarto.org/docs/computations/execution-options.html#output-options</span></span>
+<span id="cb6-33"><a href="#cb6-33"></a>execute<span class="sc">:</span></span>
+<span id="cb6-34"><a href="#cb6-34"></a>  echo<span class="sc">:</span> true    <span class="co">#- {true, false, fenced}</span></span>
+<span id="cb6-35"><a href="#cb6-35"></a>  message<span class="sc">:</span> false</span>
+<span id="cb6-36"><a href="#cb6-36"></a>  warning<span class="sc">:</span> false</span>
+<span id="cb6-37"><a href="#cb6-37"></a>  eval<span class="sc">:</span> true</span>
+<span id="cb6-38"><a href="#cb6-38"></a></span>
+<span id="cb6-39"><a href="#cb6-39"></a></span>
+<span id="cb6-40"><a href="#cb6-40"></a><span class="co">#- opciones knitr ---------------------------------</span></span>
+<span id="cb6-41"><a href="#cb6-41"></a><span class="co">#- https://yihui.org/knitr/options/</span></span>
+<span id="cb6-42"><a href="#cb6-42"></a>knitr<span class="sc">:</span></span>
+<span id="cb6-43"><a href="#cb6-43"></a>  opts_chunk<span class="sc">:</span> </span>
+<span id="cb6-44"><a href="#cb6-44"></a>    collapse<span class="sc">:</span> true</span>
+<span id="cb6-45"><a href="#cb6-45"></a>    comment<span class="sc">:</span> <span class="st">"#&gt;"</span> </span>
+<span id="cb6-46"><a href="#cb6-46"></a>    R.options<span class="sc">:</span></span>
+<span id="cb6-47"><a href="#cb6-47"></a>      knitr.graphics.auto_pdf<span class="sc">:</span> true</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<hr>
+</section>
+<section id="listing-pages" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="listing-pages"><span class="header-section-number">1.5</span> Listing pages</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">#- LISTING page -----------------------------</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="sc">---</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a>title<span class="sc">:</span> <span class="st">"Mi listado de post"</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a>description<span class="sc">:</span> <span class="er">|</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a>  Un blog para aprender y divertirme <span class="co">#- necesario para RSS (https://quarto.org/docs/websites/website-listings.html#feeds)</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a>listing<span class="sc">:</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a>  contents<span class="sc">:</span> posts</span>
+<span id="cb7-9"><a href="#cb7-9"></a>  <span class="co">#- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a>  <span class="co">#- https://quarto.org/docs/websites/website-listings.html#sorting-items</span></span>
+<span id="cb7-11"><a href="#cb7-11"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span></span>
+<span id="cb7-12"><a href="#cb7-12"></a>  <span class="co">#-  https://quarto.org/docs/websites/website-listings.html#listing-types</span></span>
+<span id="cb7-13"><a href="#cb7-13"></a>  type<span class="sc">:</span> default  <span class="co">#- {default, table, grid, custom}</span></span>
+<span id="cb7-14"><a href="#cb7-14"></a>  categories<span class="sc">:</span> true</span>
+<span id="cb7-15"><a href="#cb7-15"></a>  feed<span class="sc">:</span> false</span>
+<span id="cb7-16"><a href="#cb7-16"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
+<span id="cb7-17"><a href="#cb7-17"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
+<span id="cb7-18"><a href="#cb7-18"></a>  fields<span class="sc">:</span> [image, date, title, description, categories, author, reading<span class="sc">-</span>time, file<span class="sc">-</span>modified]</span>
+<span id="cb7-19"><a href="#cb7-19"></a>  field<span class="sc">-</span>display<span class="sc">-</span>names<span class="sc">:</span></span>
+<span id="cb7-20"><a href="#cb7-20"></a>    <span class="co"># title: "Report"</span></span>
+<span id="cb7-21"><a href="#cb7-21"></a>    date_format<span class="sc">:</span> medium</span>
+<span id="cb7-22"><a href="#cb7-22"></a>  image<span class="sc">:</span> imagenes<span class="sc">/</span>thumbnail.jpg</span>
+<span id="cb7-23"><a href="#cb7-23"></a>  image<span class="sc">-</span>align<span class="sc">:</span> left</span>
+<span id="cb7-24"><a href="#cb7-24"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full         <span class="co">#- {article, full, custom}</span></span>
+<span id="cb7-25"><a href="#cb7-25"></a><span class="co"># title-block-banner: pone un banner en el title-block: pondrá el title, subtitle, description, y categories dentro del banner</span></span>
+<span id="cb7-26"><a href="#cb7-26"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html</span></span>
+<span id="cb7-27"><a href="#cb7-27"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true  <span class="co">#- #- {true, false, "#FFDDFF",  "image.jpg"}</span></span>
+<span id="cb7-28"><a href="#cb7-28"></a>title<span class="sc">-</span>block<span class="sc">-</span>style<span class="sc">:</span> default <span class="co">#- {default, plain, none}</span></span>
+<span id="cb7-29"><a href="#cb7-29"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">-</span>color<span class="sc">:</span> red  <span class="co">#- {black, "#FFDDFF"} color del texto dentro del banner</span></span>
+<span id="cb7-30"><a href="#cb7-30"></a>feed<span class="sc">:</span> true   <span class="co">#- RSS: https://quarto.org/docs/websites/website-listings.html#feeds</span></span>
+<span id="cb7-31"><a href="#cb7-31"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<hr>
+</section>
+<section id="about-pages" class="level3" data-number="1.6">
+<h3 data-number="1.6" class="anchored" data-anchor-id="about-pages"><span class="header-section-number">1.6</span> About pages</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co">#- About page ---------------------------------</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="co">#- Pages: https://quarto.org/docs/websites/website-about.html</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="sc">---</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>title<span class="sc">:</span> Yo mismo</span>
+<span id="cb8-5"><a href="#cb8-5"></a>image<span class="sc">:</span> profile.jpg</span>
+<span id="cb8-6"><a href="#cb8-6"></a>about<span class="sc">:</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a>  template<span class="sc">:</span> trestles    <span class="co">#- {jolla, solana, ...}</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a>  image<span class="sc">-</span>width<span class="sc">:</span> 10em     <span class="co">#- https://cybmeta.com/em-y-rem</span></span>
+<span id="cb8-9"><a href="#cb8-9"></a>  image<span class="sc">-</span>shape<span class="sc">:</span> round    <span class="co">#- rectangle, round, rounded</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a>  links<span class="sc">:</span></span>
+<span id="cb8-11"><a href="#cb8-11"></a>    <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb8-12"><a href="#cb8-12"></a>      text<span class="sc">:</span> Twitter</span>
+<span id="cb8-13"><a href="#cb8-13"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com</span>
+<span id="cb8-14"><a href="#cb8-14"></a>    <span class="sc">-</span> icon<span class="sc">:</span> linkedin</span>
+<span id="cb8-15"><a href="#cb8-15"></a>      text<span class="sc">:</span> LinkedIn</span>
+<span id="cb8-16"><a href="#cb8-16"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>linkedin.com</span>
+<span id="cb8-17"><a href="#cb8-17"></a>    <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb8-18"><a href="#cb8-18"></a>      text<span class="sc">:</span> Github</span>
+<span id="cb8-19"><a href="#cb8-19"></a>      href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com</span>
+<span id="cb8-20"><a href="#cb8-20"></a>    <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb8-21"><a href="#cb8-21"></a>      text<span class="sc">:</span> email</span>
+<span id="cb8-22"><a href="#cb8-22"></a>      url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
+<span id="cb8-23"><a href="#cb8-23"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><br></p>
+</section>
 </section>
 <section id="sass" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="sass"><span class="header-section-number">2</span> SASS</h2>
@@ -313,7 +715,7 @@ Contexto
 <ul>
 <li><p><a href="https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/" class="uri">https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/</a></p></li>
 <li><p><a href="https://www.emilhvitfeldt.com/post/slidecraft-code-output/" class="uri">https://www.emilhvitfeldt.com/post/slidecraft-code-output/</a></p></li>
-<li><p>CSS, Fantastica <a href="https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17">esta slide</a> slides: https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#15</p></li>
+<li><p>CSS, Fantástica <a href="https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17">esta slide</a> slides: https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#15</p></li>
 </ul>
 <p>Por ejemplo: incluir markado en azulito</p>
 <p>.my-bg-blue { background: lightblue; }</p>
@@ -324,23 +726,23 @@ Contexto
 <li>Otra vez se trata de modificar el archivo <code>index.qmd</code> para dejarlo como:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#title: "Mi listado de posts"  #- yo casi prefiero que no ponga nada</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  contents<span class="sc">:</span> posts</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-listings.html#sorting-items</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span> </span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#-  https://quarto.org/docs/websites/website-listings.html#listing-types</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> default  <span class="co">#- opciones: {default, grid, table}</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  categories<span class="sc">:</span> true</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  date<span class="sc">-</span>format<span class="sc">:</span> long</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> imagenes<span class="sc">/</span>thumbnail.jpg</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#title: "Mi listado de posts"  #- yo casi prefiero que no ponga nada</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  contents<span class="sc">:</span> posts</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#- https://quarto.org/docs/websites/website-listings.html#sorting-items</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">:</span> <span class="st">"date desc"</span> </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#-  https://quarto.org/docs/websites/website-listings.html#listing-types</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> default  <span class="co">#- opciones: {default, grid, table}</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  categories<span class="sc">:</span> true</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  sort<span class="sc">-</span>ui<span class="sc">:</span> false</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  filter<span class="sc">-</span>ui<span class="sc">:</span> false</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  date<span class="sc">-</span>format<span class="sc">:</span> long</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>page<span class="sc">-</span>layout<span class="sc">:</span> full</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>image<span class="sc">:</span> imagenes<span class="sc">/</span>thumbnail.jpg</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <pre><code>
@@ -356,16 +758,22 @@ title-block-banner-color : "#FFDDFF"
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2022,
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p>Son las opciones que he ido recopilando y que me han parecido que pueden llegar a serme útiles algún día, por eso las recopilo, para tenerlas a mano<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2022,
   author = {Pedro J. Pérez},
   title = {Tuneado del blog},
-  date = {2022-08-11},
+  date = {2022-09-11},
   url = {https://perezp44.github.io/taller.primer.blog//06_taller_tuneado-del-blog.html},
   langid = {es}
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2022" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Pedro J. Pérez. 2022. <span>“Tuneado del blog.”</span> August 11, 2022.
-<a href="https://perezp44.github.io/taller.primer.blog//06_taller_tuneado-del-blog.html">https://perezp44.github.io/taller.primer.blog//06_taller_tuneado-del-blog.html</a>.
+Pedro J. Pérez. 2022. <span>“Tuneado del blog.”</span> September 11,
+2022. <a href="https://perezp44.github.io/taller.primer.blog//06_taller_tuneado-del-blog.html">https://perezp44.github.io/taller.primer.blog//06_taller_tuneado-del-blog.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

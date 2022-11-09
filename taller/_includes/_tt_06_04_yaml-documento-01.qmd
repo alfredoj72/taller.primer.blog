@@ -1,0 +1,15 @@
+```{r, eval = FALSE}
+#| code-line-numbers: true
+#| code-overflow: scroll   #- {scroll, wrap}
+
+#- YAML de un post ------------------------------
+---
+title: "Mi primer post con Quarto"
+author: "Pedro J. Pérez"
+date: 2022-10-25
+date-format: short
+categories: [R, quarto]
+image: "thumbnail.jpg"
+---
+
+```

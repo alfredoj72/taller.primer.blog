@@ -7,7 +7,7 @@ image: "./thumbnails/thumbnail_04.png"
 #subtitle: | 
 #  Practicando con Quarto
 description: |
-  Soluciones a la Páctica del tutorial nº 5.
+  Soluciones a la Práctica del tutorial nº 5.
 ---
 
 Este ya es mi segundo post con Quarto. En él voy a hacer lo siguiente:
