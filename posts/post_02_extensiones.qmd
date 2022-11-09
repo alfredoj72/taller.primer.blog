@@ -64,12 +64,11 @@ Ahora, con Quarto, podemos también hacerlo usando la extensión  **"quarto-yout
 La extensión **"quarto-youtube-embed"** funcionaba perfectamente pero se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. Solo hay que usar el siguiente [shortcode](https://quarto.org/docs/extensions/shortcodes.html):
 
 ```{r, eval = FALSE}
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+{{< video https://youtu.be/7SVYNyvi0wQ >}}
 ```
 
 
-
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+{{< video https://youtu.be/7SVYNyvi0wQ >}}
 
 <br>
 
