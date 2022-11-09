@@ -181,7 +181,7 @@ Ahora mostraré opciones que podemos utilizar en el YAML para diferentes cuestio
 - GUAU sass: <https://ucsb-meds.github.io/customizing-quarto-websites/#/tldr1>
 
 
-## colorines css
+## CSS
 - <https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/>
 
 - <https://www.emilhvitfeldt.com/post/slidecraft-code-output/> 
@@ -195,45 +195,4 @@ Por ejemplo:  incluir markado en azulito
 }
 
 
-
-## Mas
-
-
-- Otra vez se trata de modificar el archivo `index.qmd` para dejarlo como:
-
-```{r, eval = FALSE}
----
-#title: "Mi listado de posts"  #- yo casi prefiero que no ponga nada
-listing:
-  contents: posts
-  #- listing options: https://quarto.org/docs/websites/website-listings.html#listing-options
-  #- https://quarto.org/docs/websites/website-listings.html#sorting-items
-  sort: "date desc" 
-  #-  https://quarto.org/docs/websites/website-listings.html#listing-types
-  type: default  #- opciones: {default, grid, table}
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  date-format: long
-page-layout: full
-title-block-banner: true
-image: imagenes/thumbnail.jpg
----
-```
-
-<br>
-
-
-
-```
-
-#- https://quarto.org/docs/authoring/title-blocks.html
-#title-block-banner: true   #- no me funciona
-#title-block-style : plain
-title-block-banner: imagenes/economia.gif
-
-title-block-banner-color : "#FFDDFF"
-
-
-```
 
