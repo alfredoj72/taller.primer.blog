@@ -240,7 +240,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Fecha de Publicación</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">9 de noviembre de 2022</p>
+        <p class="date">24 de noviembre de 2022</p>
       </div>
     </div>
     
@@ -502,7 +502,7 @@ Recapitulación
 </section>
 <section id="nivel-carpeta" class="level3" data-number="1.2">
 <h3 data-number="1.2" class="anchored" data-anchor-id="nivel-carpeta"><span class="header-section-number">1.2</span> Nivel carpeta</h3>
-<p>En realidad, las opciones que se pongan en el archivo <code>_metadata.ym</code> podrían perfectamente ir en el <code>_quarto.yml</code> pero el hecho de poder hacerlo indistintamente en ambos nos da más flexibilidad a la hora de hacer pequeñas adaptaciones de estilo para los archivos <code>.qmd</code> de una determinada carpeta.</p>
+<p>En realidad, las opciones que se pongan en el archivo <code>_metadata.ym</code> podrían perfectamente ir en <code>_quarto.yml</code> pero, el hecho de poder hacerlo indistintamente en ambos nos da más flexibilidad a la hora de hacer pequeñas adaptaciones de estilo para los archivos <code>.qmd</code> de una determinada carpeta.</p>
 <p>Estas son las opciones que he recopilado. Muchas de ellas (o todas) podrían ir perfectamente en el yaml del propio documento o incluso en el fichero <code>_quarto.yml</code>, pero al situarlas en el archivo <code>_metadata.yml</code> afectarán a todos los posts pero solo a los posts.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># options specified here will apply to all posts in this folder</span></span>
@@ -565,6 +565,7 @@ Recapitulación
 </section>
 <section id="nivel-documento" class="level3" data-number="1.3">
 <h3 data-number="1.3" class="anchored" data-anchor-id="nivel-documento"><span class="header-section-number">1.3</span> Nivel documento</h3>
+<p>En el yaml del propio documento que genera un post se pueden introducir la mayoría de opciones de yaml pero parece lógico que los posts de un blog compartan estilo y, por tanto, las principales opciones del yaml creo que es mejor establcerlas a nivel de carpeta en <code>metadata.yml</code>. De esta forma, en el yaml del propio documento quedarían opciones como el título del post, categorías, fecha e imagen.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#- YAML de un post ------------------------------</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a><span class="sc">---</span></span>
@@ -734,16 +735,16 @@ Recapitulación
 <ol>
 <li id="fn1"><p>Son las opciones que he ido recopilando y que me han parecido que pueden llegar a serme útiles algún día, por eso las recopilo, para tenerlas a mano<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2022,
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2023,
   author = {Pedro J. Pérez},
   title = {Tuneado del blog},
-  date = {2022-09-11},
+  date = {2023-12-11},
   url = {https://perezp44.github.io/taller.primer.blog//06_taller_tuneado-del-blog.html},
   langid = {es}
 }
-</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2022" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Pedro J. Pérez. 2022. <span>“Tuneado del blog.”</span> September 11,
-2022. <a href="https://perezp44.github.io/taller.primer.blog//06_taller_tuneado-del-blog.html">https://perezp44.github.io/taller.primer.blog//06_taller_tuneado-del-blog.html</a>.
+</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2023" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
+Pedro J. Pérez. 2023. <span>“Tuneado del blog.”</span> December 11,
+2023. <a href="https://perezp44.github.io/taller.primer.blog//06_taller_tuneado-del-blog.html">https://perezp44.github.io/taller.primer.blog//06_taller_tuneado-del-blog.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

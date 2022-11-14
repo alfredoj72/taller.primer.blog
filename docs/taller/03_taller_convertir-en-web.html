@@ -253,7 +253,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Fecha de Publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">9 de noviembre de 2022</p>
+      <p class="date">24 de noviembre de 2022</p>
     </div>
   </div>
   
@@ -367,9 +367,21 @@ Tarea 3.2: Incluir <code>blog.qmd</code> en la web
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>Para que <code>blog.qmd</code>, la página que contiene el listado de posts, se muestre en nuestra web hay que refrenciarlo/incluirlo en <code>_quarto.yml</code></p></li>
-<li><p>Antes del tutorial 5 la sección de <code>_quarto.yml</code> que hacía referencia a la estructura de la web tenía esta pinta:</p></li>
+<li><p>Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están referenciando al fichero <code>about.qmd</code>. Por ejemplo podríamos <strong>dejar las lineas 8 y 9 como se ve abajo</strong> (a la derecha):</p></li>
 </ul>
-<div class="cell">
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 45.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imagenes/tt_01/img_13gg.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 45.0%;justify-content: center;">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a></span>
 <span id="cb1-3"><a href="#cb1-3"></a>website<span class="sc">:</span></span>
@@ -377,8 +389,8 @@ Tarea 3.2: Incluir <code>blog.qmd</code> en la web
 <span id="cb1-5"><a href="#cb1-5"></a>  navbar<span class="sc">:</span></span>
 <span id="cb1-6"><a href="#cb1-6"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
 <span id="cb1-7"><a href="#cb1-7"></a>    right<span class="sc">:</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"About me"</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>        href<span class="sc">:</span> about.qmd</span>
+<span id="cb1-8"><a href="#cb1-8"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Mi blog"</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>        href<span class="sc">:</span> blog.qmd</span>
 <span id="cb1-10"><a href="#cb1-10"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
 <span id="cb1-11"><a href="#cb1-11"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
 <span id="cb1-12"><a href="#cb1-12"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
@@ -389,30 +401,8 @@ Tarea 3.2: Incluir <code>blog.qmd</code> en la web
 <span id="cb1-17"><a href="#cb1-17"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
 <span id="cb1-18"><a href="#cb1-18"></a>        href<span class="sc">:</span> docencia.qmd</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<ul>
-<li>Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están referenciando al fichero <code>about.qmd</code>. Por ejemplo podríamos dejar las lineas 8 y 9 como se ve abajo:</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3"></a>website<span class="sc">:</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a>  navbar<span class="sc">:</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a>    right<span class="sc">:</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Mi blog"</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a>        href<span class="sc">:</span> blog.qmd</span>
-<span id="cb2-10"><a href="#cb2-10"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb2-11"><a href="#cb2-11"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb2-13"><a href="#cb2-13"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario twitter<span class="sc">&gt;</span></span>
-<span id="cb2-14"><a href="#cb2-14"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
-<span id="cb2-15"><a href="#cb2-15"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
-<span id="cb2-16"><a href="#cb2-16"></a>    left<span class="sc">:</span> </span>
-<span id="cb2-17"><a href="#cb2-17"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
-<span id="cb2-18"><a href="#cb2-18"></a>        href<span class="sc">:</span> docencia.qmd</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><br></p>
+</div>
 <ul>
 <li>Aún no podemos refrescar la web porque ahora no tenemos archivo <code>index.qmd</code>.</li>
 </ul>
@@ -496,16 +486,16 @@ Resumen (tutorial nº 3)
 <ol>
 <li id="fn1"><p>Además, como nuestro Qproject ahora no tiene fichero <code>index.qmd</code> el rebuild no funcionaría<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2022,
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cita</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{j.pérez2023,
   author = {Pedro J. Pérez},
   title = {Convertir el blog en web personal},
-  date = {2022-09-11},
+  date = {2023-12-11},
   url = {https://perezp44.github.io/taller.primer.blog//03_taller_convertir-en-web.html},
   langid = {es}
 }
-</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2022" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Pedro J. Pérez. 2022. <span>“Convertir el blog en web personal.”</span>
-September 11, 2022. <a href="https://perezp44.github.io/taller.primer.blog//03_taller_convertir-en-web.html">https://perezp44.github.io/taller.primer.blog//03_taller_convertir-en-web.html</a>.
+</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor cita este trabajo como:</div><div id="ref-j.pérez2023" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
+Pedro J. Pérez. 2023. <span>“Convertir el blog en web personal.”</span>
+December 11, 2023. <a href="https://perezp44.github.io/taller.primer.blog//03_taller_convertir-en-web.html">https://perezp44.github.io/taller.primer.blog//03_taller_convertir-en-web.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

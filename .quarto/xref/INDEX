@@ -145,5 +145,17 @@
   },
   "taller/slides_clase_01.qmd": {
     "slides_clase_01.html": "0d1fa355"
+  },
+  "posts/post_05_css.qmd": {
+    "post_05_css.html": "a3d193b9"
+  },
+  "posts/post_zz_WIP.qmd": {
+    "post_zz_WIP.html": "77b4261b"
+  },
+  "posts/post_40_markdown-basics.qmd": {
+    "post_40_markdown-basics.html": "45f3e35e"
+  },
+  "posts/post_06_css-bizarro.qmd": {
+    "post_06_css-bizarro.html": "bfc198fc"
   }
 }

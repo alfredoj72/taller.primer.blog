@@ -1,6 +1,6 @@
 ---
 title: 'Blog del taller "Mi primer blog con Quarto"'
-subtitle: Este "blog" es un recurso más dentro del taller. Se usa en el contexto del tutorial nº 5, en concreto para practicar distintos elementos de Quarto para la escritura de artículos o posts. 
+subtitle: Este "blog" es un recurso más dentro del taller. Se usa en el contexto del tutorial nº 5 para practicar distintos elementos de Quarto para la escritura de artículos o posts y en el tutorial nº 6 para modificar o tunera los posts. 
 page-layout: full
 title-block-banner: true
 listing:

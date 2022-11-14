@@ -111,7 +111,7 @@ Están son las opciones que he recopilado:
 
 ### Nivel carpeta
 
-En realidad, las opciones que se pongan en el archivo `_metadata.ym` podrían perfectamente ir en el `_quarto.yml` pero el hecho de poder hacerlo indistintamente en ambos nos da más flexibilidad a la hora de hacer pequeñas adaptaciones de estilo para los archivos `.qmd` de una determinada carpeta.
+En realidad, las opciones que se pongan en el archivo `_metadata.ym` podrían perfectamente ir en `_quarto.yml` pero, el hecho de poder hacerlo indistintamente en ambos nos da más flexibilidad a la hora de hacer pequeñas adaptaciones de estilo para los archivos `.qmd` de una determinada carpeta.
 
 Estas son las opciones que he recopilado. Muchas de ellas (o todas) podrían ir perfectamente en el yaml del propio documento o incluso en el fichero `_quarto.yml`, pero al situarlas en el archivo `_metadata.yml` afectarán a todos los posts pero solo a los posts.
 

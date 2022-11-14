@@ -1,0 +1,17 @@
+---
+title: "Markdown basics (WIP)"
+author: "Pedro J. Pérez"
+date: 2022-10-25
+categories: [Quarto, markdown]
+image: thumbnails/thumbnail_40.png
+description: |
+  Elementos básicos de Markdown (WIP)
+---
+
+Cosas básicas de Rmd para mis estudiantes BigData
+
+## Enlaces
+
+
+- [Wikidata](https://wikidata.com){target="_blank"}
+
