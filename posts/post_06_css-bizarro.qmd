@@ -1,7 +1,7 @@
 ---
 title: "Tuneando con CSS (cambios bizarros!!)"
 author: "Pedro J. Pérez"
-date: 2022-10-25
+date: 2022-11-06
 categories: [Quarto, CSS]
 image: thumbnails/thumbnail_06.png
 description: |
@@ -10,9 +10,10 @@ description: |
 css: "assets/styles_post_05.css"
 ---
 
-La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es dar una clase de CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo como poder incorporar algunos cambios en nuestro blog y, sobre todo en los posts, mediante CSS.
 
-Sólo voy a implementar los cambios en este post: voy a dejar como están al resto de post y páginas de la web
+La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es dar una clase sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS.
+
+<br>
 
 ## ¿Cómo incorporar cambios con CSS?
 
@@ -111,10 +112,9 @@ Con CSS se puede modificar la apariencia de todos los elementos de una página w
 
 ## Estilos útiles pero (un poco) bizarros!!
 
-En clase para mostrar como podemos modificar algunos de los elementos de un documento hecho con Rmd (ahora con Quarto) usaba un archivo css concambios digamos un poco raros: a lo mejor ponía el titulo en pink, el autor en verde etc.. etc... solo era un ejemplo para mostrar algunas de las posibilidades de modificar la apariencia de un documento con CSS.
+En clase, para mostrar como podemos modificar algunos de los elementos de un documento hecho con Rmd (ahora con Quarto) usaba un archivo css con cambios digamos un poco raros: a lo mejor ponía el titulo en pink, el autor en verde etc.. etc... Sólo era un ejemplo para mostrar algunas de las posibilidades para modificar la apariencia de un documento con CSS.
 
-
-- Si quieres ver como quedaría este mismo post pero sin utilizar las reglas CSS que puedes ver abajo, puedes hacerlo [aquí](/posts/post_05_css.html)
+Si quieres ver como quedaría este mismo post pero sin utilizar las reglas CSS (bizarras) que puedes ver abajo, puedes hacerlo [aquí](/posts/post_05_css.html)
 
 ```{r, eval = FALSE}
 #| code-fold: true

@@ -2,14 +2,14 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/post_01_layout.html",
       "/posts/post_02_extensiones.html",
       "/posts/post_03_imagenes.html",
-      "/posts/post_01_layout.html",
-      "/posts/post_40_markdown-basics.html",
       "/posts/post_04_practica-05.html",
-      "/posts/post_zz_WIP.html",
       "/posts/post_05_css.html",
-      "/posts/post_06_css-bizarro.html"
+      "/posts/post_06_css-bizarro.html",
+      "/posts/post_40_markdown-basics.html",
+      "/posts/post_zz_WIP.html"
     ]
   }
 ]

@@ -1,9 +1,9 @@
 ::: {.callout-important icon="false"}
 #### Tarea 2.5: Modificar el contenido de `index.qmd`
 
-- He cambiado la primera linea (**title:**) para poner un nombre a la página con el listado de posts.
+- He cambiado la segunda linea (**title:**) para poner un nombre a la página con el listado de posts.
 
-- También podemos añadir una descripción con **description:**.
+- También podemos añadir una descripción (con **description:**).
 
 
 ```{yaml}

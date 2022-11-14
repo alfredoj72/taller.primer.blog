@@ -902,8 +902,8 @@
 </div>
 <div class="callout-content">
 <ul>
-<li><p>He cambiado la primera linea (<strong>title:</strong>) para poner un nombre a la página con el listado de posts.</p></li>
-<li><p>También podemos añadir una descripción con <strong>description:</strong>.</p></li>
+<li><p>He cambiado la segunda linea (<strong>title:</strong>) para poner un nombre a la página con el listado de posts.</p></li>
+<li><p>También podemos añadir una descripción (con <strong>description:</strong>).</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1"></a><span class="pp">---</span></span>
@@ -1076,9 +1076,10 @@
 <div class="callout-content">
 <p>Evidentemente puedes probar a añadir la página que quieras, pero te ofrezco la siguiente posibilidad:</p>
 <ul>
-<li><p>Crear una página llamada “Más cosas” que tenga la particularidad de que cuando recreemos el blog se convertirá en un desplegable con acceso a varias páginas: “Docencia 2”, “Docencia 3” y “Docencia 4”.</p></li>
+<li><p>Con las lineas 12 y siguientes crear una página más en nuestro blog. La página se llamará “Más cosas”. Además, esta página nueva tiene la particularidad de que cuando recreemos el blog se convertirá en un desplegable con acceso a varias páginas: “Docencia 2”, “Docencia 3” y “Docencia 4”.</p></li>
 <li><p>Fíjate que he puesto la nueva página a la izquierda (<code>left:</code>)</p></li>
-<li><p>Además, puedes probar distintas opciones de <code>theme</code> y de <code>highlighting</code></p></li>
+<li><p>Además, puedes probar distintas opciones de <code>theme</code> (linea 34) y de <code>highlighting</code> (linea 38)</p></li>
+<li><p>También puedes cambiar el color del fondo de la barra de navegación (linea 8)</p></li>
 </ul>
 <div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">project</span><span class="kw">:</span></span>
 <span id="cb10-2"><a href="#cb10-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
@@ -1087,7 +1088,7 @@
 <span id="cb10-5"><a href="#cb10-5"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi blog (aún en pruebas)"</span></span>
 <span id="cb10-6"><a href="#cb10-6"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
 <span id="cb10-7"><a href="#cb10-7"></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"profile.jpg"</span></span>
-<span id="cb10-8"><a href="#cb10-8"></a><span class="co">    #background: primary    #- pink (el backgroung de la navbar)</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a><span class="co">    #background: "#CCCCFF"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)</span></span>
 <span id="cb10-9"><a href="#cb10-9"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb10-10"><a href="#cb10-10"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia"</span></span>
 <span id="cb10-11"><a href="#cb10-11"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span>
@@ -1530,6 +1531,11 @@
 <ul>
 <li>Veámoslas una a una</li>
 </ul>
+</section></section>
+<section>
+<section id="yaml" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>1. YAML</h1>
+
 </section>
 <section id="yaml-ideas-importantes" class="slide level2">
 <h2>YAML: ideas importantes</h2>
@@ -2161,7 +2167,7 @@
 <span id="cb18-8"><a href="#cb18-8"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
 <span id="cb18-9"><a href="#cb18-9"></a>  navbar<span class="sc">:</span></span>
 <span id="cb18-10"><a href="#cb18-10"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
-<span id="cb18-11"><a href="#cb18-11"></a>    <span class="co">#background: primary    #- pink</span></span>
+<span id="cb18-11"><a href="#cb18-11"></a>    <span class="co">#background: "#CCCCFF"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)</span></span>
 <span id="cb18-12"><a href="#cb18-12"></a>    right<span class="sc">:</span></span>
 <span id="cb18-13"><a href="#cb18-13"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"About me"</span></span>
 <span id="cb18-14"><a href="#cb18-14"></a>        href<span class="sc">:</span> about.qmd</span>
@@ -2176,24 +2182,28 @@
 <span id="cb18-23"><a href="#cb18-23"></a>        href<span class="sc">:</span> index.html</span>
 <span id="cb18-24"><a href="#cb18-24"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
 <span id="cb18-25"><a href="#cb18-25"></a>        href<span class="sc">:</span> docencia.qmd</span>
-<span id="cb18-26"><a href="#cb18-26"></a>  page<span class="sc">-</span>footer<span class="sc">:</span></span>
-<span id="cb18-27"><a href="#cb18-27"></a>    left<span class="sc">:</span> <span class="st">"© 2022 Pedro J. Pérez"</span></span>
-<span id="cb18-28"><a href="#cb18-28"></a>    center<span class="sc">:</span> <span class="st">"Hecho con [Quarto](https://quarto.org)"</span></span>
-<span id="cb18-29"><a href="#cb18-29"></a>    right<span class="sc">:</span></span>
-<span id="cb18-30"><a href="#cb18-30"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb18-31"><a href="#cb18-31"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
-<span id="cb18-32"><a href="#cb18-32"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb18-33"><a href="#cb18-33"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
-<span id="cb18-34"><a href="#cb18-34"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
-<span id="cb18-35"><a href="#cb18-35"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail&gt;@uv.es"</span></span>
-<span id="cb18-36"><a href="#cb18-36"></a></span>
-<span id="cb18-37"><a href="#cb18-37"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
-<span id="cb18-38"><a href="#cb18-38"></a>format<span class="sc">:</span></span>
-<span id="cb18-39"><a href="#cb18-39"></a>  html<span class="sc">:</span></span>
-<span id="cb18-40"><a href="#cb18-40"></a>    theme<span class="sc">:</span> flatly  </span>
-<span id="cb18-41"><a href="#cb18-41"></a>    css<span class="sc">:</span> styles.css</span>
-<span id="cb18-42"><a href="#cb18-42"></a>    toc<span class="sc">:</span> true</span>
-<span id="cb18-43"><a href="#cb18-43"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y          </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-26"><a href="#cb18-26"></a>      <span class="co">#- text: "Docencia"</span></span>
+<span id="cb18-27"><a href="#cb18-27"></a>        <span class="co">#href: docencia.qmd</span></span>
+<span id="cb18-28"><a href="#cb18-28"></a>  page<span class="sc">-</span>footer<span class="sc">:</span></span>
+<span id="cb18-29"><a href="#cb18-29"></a>    left<span class="sc">:</span> <span class="st">"© 2022 Pedro J. Pérez"</span></span>
+<span id="cb18-30"><a href="#cb18-30"></a>    center<span class="sc">:</span> <span class="st">"Hecho con [Quarto](https://quarto.org)"</span></span>
+<span id="cb18-31"><a href="#cb18-31"></a>    right<span class="sc">:</span></span>
+<span id="cb18-32"><a href="#cb18-32"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb18-33"><a href="#cb18-33"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb18-34"><a href="#cb18-34"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb18-35"><a href="#cb18-35"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
+<span id="cb18-36"><a href="#cb18-36"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb18-37"><a href="#cb18-37"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail&gt;@uv.es"</span></span>
+<span id="cb18-38"><a href="#cb18-38"></a></span>
+<span id="cb18-39"><a href="#cb18-39"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
+<span id="cb18-40"><a href="#cb18-40"></a>format<span class="sc">:</span></span>
+<span id="cb18-41"><a href="#cb18-41"></a>  html<span class="sc">:</span></span>
+<span id="cb18-42"><a href="#cb18-42"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-themes.html</span></span>
+<span id="cb18-43"><a href="#cb18-43"></a>    theme<span class="sc">:</span> flatly  </span>
+<span id="cb18-44"><a href="#cb18-44"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb18-45"><a href="#cb18-45"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb18-46"><a href="#cb18-46"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-code.html#highlighting</span></span>
+<span id="cb18-47"><a href="#cb18-47"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y     </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -2227,26 +2237,25 @@
 <span id="cb19-4"><a href="#cb19-4"></a><span class="co"># https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
 <span id="cb19-5"><a href="#cb19-5"></a>freeze<span class="sc">:</span> auto   <span class="co">#- {false, true, auto}</span></span>
 <span id="cb19-6"><a href="#cb19-6"></a></span>
-<span id="cb19-7"><a href="#cb19-7"></a></span>
-<span id="cb19-8"><a href="#cb19-8"></a><span class="co">#- Quarto incluye un title-block al principio de los artículos con: title, subtitle, authors, date, doi, and abstract.</span></span>
-<span id="cb19-9"><a href="#cb19-9"></a></span>
-<span id="cb19-10"><a href="#cb19-10"></a><span class="co"># title-block-style: modifica el estilo del title-block</span></span>
-<span id="cb19-11"><a href="#cb19-11"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html</span></span>
-<span id="cb19-12"><a href="#cb19-12"></a>title<span class="sc">-</span>block<span class="sc">-</span>style<span class="sc">:</span> default <span class="co">#- {default, plain, none}</span></span>
-<span id="cb19-13"><a href="#cb19-13"></a></span>
-<span id="cb19-14"><a href="#cb19-14"></a><span class="co"># title-block-banner: pone un banner en el title-block: pondrá el title, subtitle, description, y categories dentro del banner</span></span>
-<span id="cb19-15"><a href="#cb19-15"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
-<span id="cb19-16"><a href="#cb19-16"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true  <span class="co">#- {true, false, "#FFDDFF",  "image.jpg"}</span></span>
-<span id="cb19-17"><a href="#cb19-17"></a></span>
-<span id="cb19-18"><a href="#cb19-18"></a><span class="co"># tb se puede especificar el color del texto dentro del banner</span></span>
-<span id="cb19-19"><a href="#cb19-19"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">-</span>color<span class="sc">:</span> red</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-7"><a href="#cb19-7"></a><span class="co">#- Quarto incluye un title-block al principio de los artículos con elementos como: title, subtitle, authors, date, doi, and abstract.</span></span>
+<span id="cb19-8"><a href="#cb19-8"></a></span>
+<span id="cb19-9"><a href="#cb19-9"></a><span class="co"># title-block-banner: pone un banner en el title-block: pondrá el title, subtitle, description, y categories dentro del banner</span></span>
+<span id="cb19-10"><a href="#cb19-10"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
+<span id="cb19-11"><a href="#cb19-11"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true  <span class="co">#- {true, false, "#FFDDFF",  "image.jpg"}</span></span>
+<span id="cb19-12"><a href="#cb19-12"></a></span>
+<span id="cb19-13"><a href="#cb19-13"></a><span class="co"># title-block-style: modifica el estilo del title-block</span></span>
+<span id="cb19-14"><a href="#cb19-14"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html</span></span>
+<span id="cb19-15"><a href="#cb19-15"></a>title<span class="sc">-</span>block<span class="sc">-</span>style<span class="sc">:</span> default <span class="co">#- {default, plain, none}</span></span>
+<span id="cb19-16"><a href="#cb19-16"></a></span>
+<span id="cb19-17"><a href="#cb19-17"></a><span class="co"># tb se puede especificar el color del texto dentro del banner</span></span>
+<span id="cb19-18"><a href="#cb19-18"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">-</span>color<span class="sc">:</span> red</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>IMPORTANTE</strong>: las opciones que especifiques en <code>_metadata.yml</code> afectarán a todos los .qmd de la carpeta.</p>
 <ul>
 <li><p><code>freeze (linea 5): {false, true, auto}</code> controla la ejecución de los .qmd durante el procesado completo del Qproject. Documentación <a href="https://quarto.org/docs/projects/code-execution.html#freeze">aquí</a>.</p></li>
-<li><p><code>title-block-style (linea 12):  {default, plain, none}</code> modifica el estilo del title-block</p></li>
-<li><p><code>title-block-banner (linea 16): {true, false, "#FFDDFF",  "image.jpg"}</code> controla la presencia y apariencia de los “banners” para dar más importancia a los títulos de los posts. Puedes controlar el color, incluso poner una imagen. Documentación <a href="https://quarto.org/docs/authoring/title-blocks.html#title-banners">aquí</a>.</p></li>
-<li><p><code>title-block-banner-color(linea 19): {black, "#FFDDFF"}</code> controla el color del título del post</p></li>
+<li><p><code>title-block-banner (linea 11): {true, false, "#FFDDFF",  "image.jpg"}</code> controla la presencia y apariencia de los “banners” para dar más importancia a los títulos de los posts. Puedes controlar el color, incluso poner una imagen. Documentación <a href="https://quarto.org/docs/authoring/title-blocks.html#title-banners">aquí</a>.</p></li>
+<li><p><code>title-block-style (linea 15):  {default, plain, none}</code> modifica el estilo del title-block</p></li>
+<li><p><code>title-block-banner-color(linea 18): {black, "#FFDDFF"}</code> controla el color del título del post</p></li>
 </ul>
 </div>
 </div>
@@ -2291,10 +2300,15 @@
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="texto-o-narrativas" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>2. TEXTO (o narrativas)</h1>
+
 </section>
 <section class="slide level2">
 
-<h3 class="smaller" id="texto-o-narrativas">Texto (o narrativas)</h3>
+<h3 class="smaller" id="texto-o-narrativas-1">Texto (o narrativas)</h3>
 <ul>
 <li><p>Se escribe (al igual que <code>.Rmd</code>) en <strong>markdown</strong>. <a href="https://quarto.org/docs/authoring/markdown-basics.html">Aquí</a> la documentación oficial de Quarto.</p></li>
 <li><p>Sintaxis básica de <code>markdown</code></p></li>
@@ -2310,10 +2324,15 @@
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="chunks" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>3. CHUNKS</h1>
+
 </section>
 <section class="slide level2">
 
-<h3 id="chunks">CHUNKS</h3>
+<h3 id="chunks-1">CHUNKS</h3>
 <p><strong>Comportamiento similar</strong> a los documentos <code>.Rmd</code>. La documentación oficial está <a href="https://quarto.org/docs/computations/execution-options.html">aquí</a></p>
 <p><br></p>
 <h5 id="principales-diferencias-con-.rmd">Principales diferencias con .Rmd</h5>
@@ -2325,7 +2344,7 @@
 <img data-src="./imagenes/tt_01/img_22.png" class="r-stretch quarto-figure-center"></section>
 <section class="slide level2">
 
-<h3 id="chunks-1">CHUNKS</h3>
+<h3 id="chunks-2">CHUNKS</h3>
 <ul>
 <li><p>Las principales opciones son: <strong>echo</strong>, <strong>eval</strong>, <strong>warning</strong>, <strong>error</strong>, <strong>output</strong> e <strong>include</strong>. <a href="https://quarto.org/docs/computations/execution-options.html#output-options">Aquí</a> la documentación oficial.</p></li>
 <li><p><code>echo</code>: además de los típicos true y false, ahora <strong>incorpora un nuevo valor <code>fenced</code></strong> que facilita mostrar las marcas de los chunks en el documento final. Documentación <a href="https://quarto.org/docs/computations/execution-options.html#fenced-echo">aquí</a>.</p></li>
@@ -2341,10 +2360,15 @@
 </ul></li>
 </ul>
 <p>La documentación oficial la tienes <a href="https://quarto.org/docs/output-formats/html-code.html">aquí</a>.</p>
+</section></section>
+<section>
+<section id="elementos-básicos-para-escribir" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>4. Elementos básicos para escribir</h1>
+
 </section>
 <section class="slide level2">
 
-<h3 id="elementos-básicos-para-escribir">Elementos básicos para escribir</h3>
+<h3 id="elementos-básicos-para-escribir-1">Elementos básicos para escribir</h3>
 <p><br></p>
 <p>Para escribir en Markdown, además de texto, tenemos los siguientes elementos básicos:</p>
 <ul>
@@ -2357,10 +2381,15 @@
 </ul>
 <p><br></p>
 <p>El <a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/">editor visual</a> facilita la introducción de estos elementos en tus documentos. En <a href="https://www.youtube.com/watch?v=6p4vOKS6Xls">esta charla</a> de Mine Çetinkaya-Rundel se aprecia fácilmente la <strong>utilidad del editor visual</strong>.</p>
+</section></section>
+<section>
+<section id="más-elementos-para-escribir" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>5. Más elementos para “escribir”</h1>
+
 </section>
 <section class="slide level2">
 
-<h3 id="más-elementos-para-escribir">Más elementos para “escribir”</h3>
+<h3 id="más-elementos-para-escribir-1">Más elementos para “escribir”</h3>
 <p>Además de los elementos básicos de escritura que nos ofrece la sintaxis básica de <code>markdown</code>, <strong>Quarto nos ofrece más posibilidades</strong>. Por ejemplo:</p>
 <p><br></p>
 <ul>
@@ -2372,10 +2401,16 @@
 </ul>
 <p><br></p>
 <p>Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.</p>
+</section></section>
+<section>
+<section id="veamos-algunos-de-estos-elementos-con-un-poco-de-detalle." class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>Veamos algunos de estos elementos con un poco de detalle.</h1>
+<p><br><br></p>
+<p>(Después lo recordaremos con una Práctica)</p>
 </section>
 <section class="slide level2">
 
-<h4 id="layouts">Layouts</h4>
+<h4 class="unnumbered" id="layouts">Layouts</h4>
 <ul>
 <li><p>Además de yaml, texto y chunk, para escribir con Quarto <strong>conviene conocer la estructura o layout de los artículos</strong> que se generan con él.</p></li>
 <li><p>Los “artículos” tienen un <strong>body</strong>, un <strong>margin</strong> y un área para las <strong>sidebars</strong>, que en nuestro caso contiene el TOC<sup>1</sup>.</p></li>
@@ -2386,7 +2421,7 @@
 <aside><ol class="aside-footnotes"><li id="fn4"><p>Además, el layout puede venir afectado por la opción <code>page-layout: custom   #- {article, full, custom}</code></p></li></ol></aside></section>
 <section class="slide level2">
 
-<h4 id="extensiones">Extensiones</h4>
+<h4 class="unnumbered" id="extensiones">Extensiones</h4>
 <ul>
 <li><p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en lenguaje <a href="https://es.wikipedia.org/wiki/Lua">Lua</a>.</p></li>
 <li><p>Para ver como <strong>instalar y usar extensiones</strong> vamos a ir, otra vez, a otro de los post del blog del taller: concretamente <a href="../posts/post_02_extensiones.html" target="_blank">aquí</a></p></li>
@@ -2395,10 +2430,10 @@
 </section>
 <section class="slide level2">
 
-<h4 id="imágenes">Imágenes</h4>
+<h4 class="unnumbered" id="imágenes">Imágenes</h4>
 <ul>
 <li><p>Conocemos la sintaxis básica para insertar imágenes <code>![](&lt;ruta-a-imagen&gt;)</code>; ahora veremos posibilidades más avanzadas</p></li>
-<li><p>Veamos como <strong>insertar imágenes</strong> con <a href="../posts/post_03_imagenes.html">este post</a> del blog del taller.</p></li>
+<li><p>Veamos como <strong>insertar imágenes</strong> con <a href="../posts/post_03_imagenes.html" target="_blank">este post</a> del blog del taller.</p></li>
 </ul>
 <p><br></p>
 </section>
@@ -2485,11 +2520,100 @@
 </div>
 </div>
 <p>Las soluciones a la Práctica están <a href="../posts/post_04_practica-05.html">aquí</a></p>
+<p><br></p>
+</section></section>
+<section>
+<section id="tuneado-del-blog" class="title-slide slide level1 center" data-background-color="#EEBF8B">
+<h1>6. Tuneado del blog</h1>
+<p>(6ª parte del tutorial)</p>
+<div class="callout callout-tip no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>¿Qué haremos en este tutorial?</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>Ver distintas opciones para adaptar el blog a nuestras necesidades</p></li>
+<li><p>En concreto veremos 3 formas de hacerlo: a través de opciones de Quarto en el yaml, con CSS y con SASS</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="intro" class="slide level2">
+<h2>Intro</h2>
+<ul>
+<li>Quarto viene preparado con diferentes <code>Bootstrap themes</code> del <a href="https://bootswatch.com/">proyecto Bootswatch project</a> que le dan a nuestro blog una apariencia profesional y cuidada.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>Creo que es mejor <strong>comenzar con un blog sencillo</strong> usando las plantillas (o themes) que nos ofrece Quarto pero, si queremos modificar la apariencia de nuestro blog, podemos hacerlo de 3 formas:</p>
+<ol type="1">
+<li><p>Utilizando las opciones disponibles en Quarto para el <code>yaml</code></p></li>
+<li><p>Utilizando CSS</p></li>
+<li><p>Utilizando SASS</p></li>
+</ol></li>
+</ul>
+</section></section>
+<section>
+<section id="utilizando-opciones-del-yaml" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>1. Utilizando opciones del YAML</h1>
+<p><br></p>
+<ul>
+<li><p>En el <a href="../taller/06_taller_tuneado-del-blog.html">tutorial nº 6</a> repasamos las distintas opciones que tenemos disponibles para poder cambiar a través de opciones en los YAML’s (recuerda los 3 niveles).</p></li>
+<li><p>Aquí solo pondré la <strong>documentación relevante</strong> junta y <strong>destacaré algunas de las opciones</strong> disponibles.</p></li>
+</ul>
+</section>
+<section id="documentación-oficial" class="slide level2">
+<h2>Documentación oficial</h2>
+<h5 id="sobre-opciones-disponibles-en-los-yamls">(sobre opciones disponibles en los YAML’s)</h5>
+<p><br></p>
+<ul>
+<li><p>Referentes al <strong>proyecto</strong>: <a href="https://quarto.org/docs/projects/quarto-projects.html#shared-metadata">aquí</a></p></li>
+<li><p>Referentes a la <strong>estructura de la web</strong>: <a href="https://quarto.org/docs/websites/website-navigation.html">aquí</a> y <a href="https://quarto.org/docs/websites/">aquí</a></p></li>
+<li><p>Referentes a la <strong>estética</strong>: <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a></p></li>
+</ul>
+</section>
+<section id="algunas-opciones-de-yaml" class="slide level2">
+<h2>Algunas opciones de YAML</h2>
+<ul>
+<li><code>lang: es</code></li>
+</ul>
+</section></section>
+<section id="utilizando-css" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>2. Utilizando CSS</h1>
+<p><br></p>
+<ul>
+<li><p>La apariencia visual del blog puede cambiarse utilizando CSS.</p></li>
+<li><p>Veamos un ejemplo con el siguiente <a href="../posts/post_05_css-05.html">post</a></p></li>
+</ul>
+</section>
+
+<section id="utilizando-sass" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>3. Utilizando SASS</h1>
+<p><br></p>
+<ul>
+<li><p>Tendrás que mirar otras referencias, por ejemplo: <a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide">Customizing Quarto Websites: Make your website stand out using SASS</a> o <a href="https://www.youtube.com/watch?v=ErRX8plZpQE">este video</a></p></li>
+<li><p>Bootstrap define unas 1.400 variables con las que controlar fuentes, colores, etc … . Puedes verlas <a href="https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss">aquí</a></p></li>
+<li><p><a href="https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes">Aquí</a> están los ficheros <code>.scss</code> de los 25 built-in Bootswatch themes.</p></li>
+<li><p><a href="https://quarto.org/docs/output-formats/html-themes-more.html">Aquí</a> la documentación oficial de Quarto sobre los Bootswatch Sass Theme Files</p></li>
+</ul>
+</section>
+
+<section id="fín" class="title-slide slide level1 unnumbered centered center" data-background-color="#562457">
+<h1>FÍN!!</h1>
+<ul>
+<li><p>Muchas gracias por la atención</p></li>
+<li><p>Espero que el taller haya salido OK</p></li>
+<li><p>Bye, nos vemos en las próximas Jornadas</p></li>
+</ul>
 
 <div class="footer footer-default">
 
 </div>
-</section></section>
+</section>
+
 
     </div>
   </div>

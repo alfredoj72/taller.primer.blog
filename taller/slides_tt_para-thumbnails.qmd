@@ -1,6 +1,7 @@
 ---
 title: "Mi primer blog con Quarto"
-author: "Pedro J. Pérez y Francisco G. Morillas"
+subtitle: "<br>"
+author: "Pedro J. Pérez <br> Francisco G. Morillas <br><br>"
 date: 2022-11-24  #- ISO8601 YYYY-MM-DD format 
 date-format: short
 format: 

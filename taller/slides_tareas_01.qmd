@@ -34,12 +34,10 @@ format:
 css: /assets/styles_slides_tareas.css
 ---
 
-
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
 #### Contexto
 
 -   El taller está pensado para realizar con [R](https://cran.r-project.org/). Se utilizará el IDE [RStudio](https://www.rstudio.com/products/rstudio/) y [Quarto](https://quarto.org/). Se recomienda tener instaladas **versiones recientes** de los 3 programas
-
 :::
 
 <br>
@@ -48,96 +46,83 @@ css: /assets/styles_slides_tareas.css
 
 <br>
 
-# 1. Creación de un blog básico con Quarto  {background-color="#EEBF8B"}
+# 1. Creación de un blog básico con Quarto {background-color="#EEBF8B"}
 
- (1ª parte del tutorial)
- 
- {{< include ./_includes/_tt_01_01_q-haremos.qmd >}}
+(1ª parte del tutorial)
 
+{{< include ./_includes/_tt_01_01_q-haremos.qmd >}}
 
-
---- 
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_01_03_tarea_01.qmd >}}
 
-
----
+------------------------------------------------------------------------
 
 ## Contenido del Qproject
 
 {{< include ./_includes/_tt_01_04_estructura-Qproject.qmd >}}
 
- 
 Los **archivos importantes** ahora son 3:
- 
- - `_quarto.yml`: especifica la estructura (y apariencia) de la web
- 
- - `index.qmd` : generará (y dará formato) a la "landing page" o Home. Esta página será un listado de páginas (un blog)
- 
- - `about.qmd` : una de la páginas del blog
 
- 
+-   `_quarto.yml`: especifica la estructura (y apariencia) de la web
+
+-   `index.qmd` : generará (y dará formato) a la "landing page" o Home. Esta página será un listado de páginas (un blog)
+
+-   `about.qmd` : una de la páginas del blog
+
 <br>
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_01_05_generacion-blog.qmd >}}
 
-
 {{< include ./_includes/_tt_01_06_extensiones.qmd >}}
-
-
 
 <br>
 
----
+------------------------------------------------------------------------
 
 ## Contenido del Qproject (tras procesar el blog)
 
 {{< include ./_includes/_tt_01_07_estructura-02.qmd >}}
 
+-   Se han creado 2 subcarpetas: `_site` y `_freeze`
 
-- Se han creado 2 subcarpetas: `_site` y `_freeze`
-
-- `_site` es la carpeta que contiene el blog.
+-   `_site` es la carpeta que contiene el blog.
 
 <br>
 
----
-
+------------------------------------------------------------------------
 
 ## Ver el blog en local
 
-- `_site` es la carpeta que contiene el blog. Veamos su contenido
+-   `_site` es la carpeta que contiene el blog. Veamos su contenido
 
-- La página principal (o Home) de nuestro blog es el archivo `index.html`.
+-   La página principal (o Home) de nuestro blog es el archivo `index.html`.
 
-- El archivo `index.html` ha sido generado por el fichero `index.qmd`. 
-
+-   El archivo `index.html` ha sido generado por el fichero `index.qmd`.
 
 {{< include ./_includes/_tt_01_08_tarea-03.qmd >}}
 
 <br>
 
----
+------------------------------------------------------------------------
 
 ## Contenido de `index.qmd` {.smaller}
 
-- El archivo  `index.qmd` genera `index.html`, la página principal (o Home) de nuestro blog
+-   El archivo `index.qmd` genera `index.html`, la página principal (o Home) de nuestro blog
 
 {{< include ./_includes/_tt_01_09_landing-page.qmd >}}
 
 <br>
 
----
+------------------------------------------------------------------------
 
-
-## Alojando el blog  
+## Alojando el blog
 
 {{< include ./_includes/_tt_01_10_tarea-04.qmd >}}
 
-
-- Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en Internet.
+-   Puedes ver [aquí](https://pjperez.quarto.pub/blog_prueba_00/), como quedaría el blog una vez alojado en Internet.
 
 <br>
 
@@ -145,14 +130,13 @@ Los **archivos importantes** ahora son 3:
 
 <br>
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_01_12_resumen.qmd >}}
 
 <br>
 
-
-# 2. Tuneado básico del blog  {background-color="#EEBF8B"}
+# 2. Tuneado básico del blog {background-color="#EEBF8B"}
 
 (2ª parte del tutorial)
 
@@ -160,25 +144,23 @@ Los **archivos importantes** ahora son 3:
 
 <br>
 
----
+------------------------------------------------------------------------
 
 ## Archivo `_quarto.yml` {.smaller}
 
 {{< include ./_includes/_tt_02_02_quarto-yaml.qmd >}}
 
-
----  
+------------------------------------------------------------------------
 
 ## 
 
-{{< include ./_includes/_tt_02_03_tarea-01.qmd >}} 
+{{< include ./_includes/_tt_02_03_tarea-01.qmd >}}
 
-- **linea 5**: cambiamos el título del blog
-- **lineas 17-19**: añadimos la página/pestaña "Docencia" a la izquierda de la navbar
-- **lineas 21-26**: modificamos el theme ...,  **CSS**, ....
+-   **linea 5**: cambiamos el título del blog
+-   **lineas 17-19**: añadimos la página/pestaña "Docencia" a la izquierda de la navbar
+-   **lineas 21-26**: modificamos el theme ..., **CSS**, ....
 
-
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_02_04_tarea-02.qmd >}}
 
@@ -186,103 +168,97 @@ Los **archivos importantes** ahora son 3:
 
 {{< include ./_includes/_tt_02_06_tarea-04.qmd >}}
 
-
-
----
+------------------------------------------------------------------------
 
 ## Archivo `index.qmd`
 
 {{< include ./_includes/_tt_02_07_archivo-index.qmd >}}
 
-- De momento, **solo vamos a hacer cambios en la segunda linea**: cambiaremos el título.
+-   De momento, **solo vamos a hacer cambios en la segunda linea**: cambiaremos el título.
 
-- Fijaros que es un archivo especial: "sólo tiene yaml"
+-   Fijaros que es un archivo especial: "sólo tiene yaml"
 
 <br>
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_02_08_tarea-05.qmd >}}
 
 <br>
 
----
+------------------------------------------------------------------------
 
 ## Archivo `about.qmd` {.smaller}
 
 {{< include ./_includes/_tt_02_09_archivo-about.qmd >}}
 
+-   Si en el `yaml` se activa la opción `about:` (linea 4), entonces puedes usar unas **plantillas** que Quarto tiene disponibles para **crear About's pages**.
 
-- Si en el `yaml` se activa la opción `about:` (linea 4), entonces puedes usar unas **plantillas** que Quarto tiene disponibles para **crear About's pages**.
+-   Como puedes ver [aquí](https://quarto.org/docs/websites/website-about.html#templates) hay **5 plantillas**: jolla, trestles, solana, marquee y broadside.
 
-- Como puedes ver [aquí](https://quarto.org/docs/websites/website-about.html#templates) hay **5 plantillas**: jolla, trestles, solana, marquee y broadside.
-
-- [Aquí](https://quarto.org/docs/websites/website-about.html) tienes la documentación oficial sobre estas plantillas. 
+-   [Aquí](https://quarto.org/docs/websites/website-about.html) tienes la documentación oficial sobre estas plantillas.
 
 <br>
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_02_10_tarea-06.qmd >}}
 
 <br>
 
----
+------------------------------------------------------------------------
 
 ## Archivo `styles.css`
 
-- Puedes cambiar la apariencia estética del blog usando los `themes` predefinidos en Quarto o puedes usar el archivo `styles.css`^[Veremos en el tutorial nº 6 que también podremos usar archivos `.scss`]
+-   Puedes cambiar la apariencia estética del blog usando los `themes` predefinidos en Quarto o puedes usar el archivo `styles.css`[^1]
+
+[^1]: Veremos en el tutorial nº 6 que también podremos usar archivos `.scss`
 
 {{< include ./_includes/_tt_02_11_tarea-07.qmd >}}
 
 <br>
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_02_12_resumen.qmd >}}
 
 <br>
 
+-   [Aquí](https://pjperez.quarto.pub/blog_pruebas_01/) puedes ver **como quedaría el blog** tras haber modificado `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
 
-- [Aquí](https://pjperez.quarto.pub/blog_pruebas_01/) puedes ver **como quedaría el blog** tras haber modificado `_quarto.yml`, `index.qmd`, `about.qmd` y `styles.css`.
+------------------------------------------------------------------------
 
-
----
-
-## Práctica (tutorial nº 2)  {background-color="#D3F3E7"}
+## Práctica (tutorial nº 2) {background-color="#D3F3E7"}
 
 En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes el blog a tus necesidades y gustos**. Por ejemplo puedes probar:
 
 <br>
 
-1. Añadir una **nueva página a la web** (`quarto.yml`). Os doy una posibilidad en la siguiente slide
+1.  Añadir una **nueva página a la web** (`quarto.yml`). Os doy una posibilidad en la siguiente slide
 
 <br>
 
-2. Modificar la **apariencia del blog** (realmente del listado de posts) jugando con las opciones que nos proporciona Quarto (`index.qmd`). Gracias YAML inteligence!!
+2.  Modificar la **apariencia del blog** (realmente del listado de posts) jugando con las opciones que nos proporciona Quarto (`index.qmd`). Gracias YAML inteligence!!
 
 <br>
 
-3. Modificar la apariencia de la **página About** (`about.qmd`)
+3.  Modificar la apariencia de la **página About** (`about.qmd`)
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_02_13_practica-01.qmd >}}
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_02_13_practica-02.qmd >}}
 
-
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_02_13_practica-03.qmd >}}
 
 <br>
 
-
-
-# 3. Convertir el blog en web personal  {background-color="#EEBF8B"}
+# 3. Convertir el blog en web personal {background-color="#EEBF8B"}
 
 (3ª parte del tutorial)
 
@@ -290,25 +266,23 @@ En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes e
 
 <br>
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_03_02_tarea-01.qmd >}}
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_03_03_tarea-02.qmd >}}
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_03_04_tarea-03.qmd >}}
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_03_05_tarea-04.qmd >}}
 
-
-
-# 4. Workflow: ¿cómo crear un post?  {background-color="#EEBF8B"}
+# 4. Workflow: ¿cómo crear un post? {background-color="#EEBF8B"}
 
 (4ª parte del tutorial)
 
@@ -316,55 +290,49 @@ En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes e
 
 <br>
 
----
+------------------------------------------------------------------------
 
 ## ¿Donde están los posts del blog?
 
-- Los ficheros `.qmd` que generan los posts están **en la carpeta `posts`** (de nuestro Qproject que genera el blog). 
+-   Los ficheros `.qmd` que generan los posts están **en la carpeta `posts`** (de nuestro Qproject que genera el blog).
 
-- **Cada post** está en **una carpeta diferente**^[No es necesario que los posts estén cada uno en una carpeta, pero me parece una buena práctica.]:
+-   **Cada post** está en **una carpeta diferente**[^2]:
+
+[^2]: No es necesario que los posts estén cada uno en una carpeta, pero me parece una buena práctica.
 
 {{< include ./_includes/_tt_04_02_carpeta-posts.qmd >}}
 
+-   Veamos (en la siguiente slide) el contenido de `./posts/welcome/`
 
-- Veamos (en la siguiente slide) el contenido de `./posts/welcome/`
-
-
----
+------------------------------------------------------------------------
 
 ## Contenido de cada subcarpeta de `./posts/`
 
 <br>
 
-- Por ejemplo de  `./posts/welcome/`
-
+-   Por ejemplo de `./posts/welcome/`
 
 {{< include ./_includes/_tt_04_03_contenido-1-post.qmd >}}
 
 <br>
 
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_04_04_tarea-01.qmd >}}
 
-
----
-
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_04_05_tarea-02.qmd >}}
 
-
 <br>
 
----
-
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_04_06_resumen.qmd >}}
 
-
 <br>
 
-# 5. Escribiendo posts: practicando con Quarto  {background-color="#EEBF8B"}
+# 5. Escribiendo posts: practicando con Quarto {background-color="#EEBF8B"}
 
 (5ª parte del tutorial)
 
@@ -374,44 +342,43 @@ En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes e
 
 <br>
 
-----
+------------------------------------------------------------------------
 
 ## Ficheros `.qmd`
 
-- Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código. 
+-   Los ficheros `.qmd` tienen **3 partes**: YAML, texto y chunks de código.
 
 {{< include ./_includes/_tt_05_03_figura-01.qmd >}}
 
-- Veámoslas una a una
+-   Veámoslas una a una
 
+# 1. YAML {.unnumbered background-color="#b8c2aa"}
 
----
+------------------------------------------------------------------------
 
-##  YAML: ideas importantes
-
-<br>
-
-- El encabezamiento o **YAML** sirve para fijar **opciones y metadatos** de nuestro documento.
+## YAML: ideas importantes
 
 <br>
 
-- El `YAML` será  procesado varias veces durante el procesado del documento: es leído por Quarto, knitr y Pandoc e **influirá en el output final**.
+-   El encabezamiento o **YAML** sirve para fijar **opciones y metadatos** de nuestro documento.
 
 <br>
 
-- El hecho de estar trabajando dentro de un **Qproject** nos da **mucha versatilidad** a la hora de especificar el YAML de nuestros documentos `.qmd`. Documentación oficial [aquí](https://quarto.org/docs/projects/quarto-projects.html)
+-   El `YAML` será procesado varias veces durante el procesado del documento: es leído por Quarto, knitr y Pandoc e **influirá en el output final**.
 
+<br>
 
+-   El hecho de estar trabajando dentro de un **Qproject** nos da **mucha versatilidad** a la hora de especificar el YAML de nuestros documentos `.qmd`. Documentación oficial [aquí](https://quarto.org/docs/projects/quarto-projects.html)
 
 ## El `yaml` de un post se puede especificar en **3 niveles**
 
 <br>
 
--  **Nivel proyecto**:todo Qproject tiene archivo `_quarto.yml`. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en `_quarto.yml`.
+-   **Nivel proyecto**:todo Qproject tiene archivo `_quarto.yml`. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en `_quarto.yml`.
 
--  **Nivel carpeta**: si en una carpeta existe un documento `_metadata.yml`, los documentos de esa carpeta heredan sus metadatos. La carpeta `./posts/` de un blog suele tener un archivo `_metadata.yml`.
+-   **Nivel carpeta**: si en una carpeta existe un documento `_metadata.yml`, los documentos de esa carpeta heredan sus metadatos. La carpeta `./posts/` de un blog suele tener un archivo `_metadata.yml`.
 
--  **Nivel documento**: En el yaml del propio documento `.qmd`
+-   **Nivel documento**: En el yaml del propio documento `.qmd`
 
 <br>
 
@@ -419,109 +386,94 @@ Si hay conflictos **prevalecen las opciones del nivel documento**, luego nivel c
 
 **Documentación oficial** de Quarto con las **principales opciones** que se pueden fijar en el YAML para documentos html: [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html)
 
-
---- 
+------------------------------------------------------------------------
 
 ## YAML: tal como lo tenemos ahora {.smaller}
 
-
 {{< include ./_includes/_tt_05_04_yaml-tabset.qmd >}}
 
+------------------------------------------------------------------------
 
----
-
-## YAML: NIVEL PROYECTO (opciones en `_quarto.yml`)  {.smaller}
-
+## YAML: NIVEL PROYECTO (opciones en `_quarto.yml`) {.smaller}
 
 En `_quarto.yml` se suelen poner opciones referentes a 3 aspectos:
 
-::: {.panel-tabset}
-
+::: panel-tabset
 #### 1. Sobre el propio Qproject
 
 {{< include ./_includes/_tt_05_05_yaml-proyecto.qmd >}}
 
 <br>
 
-- linea 4: podemos elegir la carpeta de destino de nuestro blog
-- linea 5: podemos cambiar el render directory de los `.qmd`
+-   linea 4: podemos elegir la carpeta de destino de nuestro blog
+-   linea 5: podemos cambiar el render directory de los `.qmd`
 
 <br>
 
 Documentación oficial [aquí](https://quarto.org/docs/projects/quarto-projects.html).
 
-#### 2. Estructura de la página web 
+#### 2. Estructura de la página web
 
 {{< include ./_includes/_tt_05_06_yaml-estructura-web.qmd >}}
 
 <br>
 
-
 Como ves, se añadirían elementos como:
 
-- lineas 28 a 37: se añade un pie de página al blog
+-   lineas 28 a 37: se añade un pie de página al blog
 
-- lineas 24 y 25: Hemos añadido un elemento a la `navbar` concretamente el icono `Home`. La documentación oficial para elementos de navegación está [aquí](https://quarto.org/docs/websites/website-navigation.html)
+-   lineas 24 y 25: Hemos añadido un elemento a la `navbar` concretamente el icono `Home`. La documentación oficial para elementos de navegación está [aquí](https://quarto.org/docs/websites/website-navigation.html)
 
-- linea 4: añadimos un favicon
+-   linea 4: añadimos un favicon
 
-- lineas 5 y 6: el url de la web y del repo en Github 
+-   lineas 5 y 6: el url de la web y del repo en Github
 
-- lineas 7-10: elementos de redes sociales. La documentación oficial para estos elementos esta  [aquí](https://quarto.org/docs/websites/website-tools.html)
+-   lineas 7-10: elementos de redes sociales. La documentación oficial para estos elementos esta [aquí](https://quarto.org/docs/websites/website-tools.html)
 
 <br>
 
-#### 3. Formato de salida de los documentos 
+#### 3. Formato de salida de los documentos
 
 {{< include ./_includes/_tt_05_07_yaml-formato-salida.qmd >}}
 
 <br>
 
 En un blog/web el formato de salida es siempre `.html`; sin embargo podemos especificar otras opciones como por ejemplo sí los documentos (o páginas de la web, o post del blog) tienen un índice flotante, etc... Documentación oficial [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html)
-
 :::
 
----
+------------------------------------------------------------------------
 
-## Un ejemplo "completito" de `_quarto.yml`  {.smaller}
+## Un ejemplo "completito" de `_quarto.yml` {.smaller}
 
-Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml). Pertenece a la [web de Quarto](https://quarto.org/docs/websites/). 
+Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml). Pertenece a la [web de Quarto](https://quarto.org/docs/websites/).
 
 <br>
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-
 ```{=html}
 <iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"></iframe>
 ```
 :::
 
 ::: {.column width="50%"}
-
 {{< include ./_includes/_include_quarto_completito.qmd >}}
-
+:::
 :::
 
-::::
-
-
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_05_08_tarea-01.qmd >}}
 
-
----
+------------------------------------------------------------------------
 
 ### YAML nivel carpeta
 
-- Abajo el, contenido del fichero `./posts/_metadata.yml` de nuestro blog
+-   Abajo el, contenido del fichero `./posts/_metadata.yml` de nuestro blog
 
 {{< include ./_includes/_tt_05_09_yaml-nivel-carpeta.qmd >}}
 
-
----
+------------------------------------------------------------------------
 
 ### YAML nivel carpeta
 
@@ -529,8 +481,7 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 {{< include ./_includes/_tt_05_10_tarea-5-02.qmd >}}
 
-
----
+------------------------------------------------------------------------
 
 ### YAML: nivel documento
 
@@ -538,20 +489,21 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 {{< include ./_includes/_tt_05_11_tarea-5-03.qmd >}}
 
+# 2. TEXTO (o narrativas) {.unnumbered background-color="#b8c2aa"}
 
----
+------------------------------------------------------------------------
 
 ### Texto (o narrativas) {.smaller}
 
+-   Se escribe (al igual que `.Rmd`) en **markdown**. [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) la documentación oficial de Quarto.
 
-- Se escribe (al igual que `.Rmd`)  en **markdown**. [Aquí](https://quarto.org/docs/authoring/markdown-basics.html) la documentación oficial de Quarto.
-
-- Sintaxis básica de `markdown`
+-   Sintaxis básica de `markdown`
 
 {{< include ./_includes/_tt_05_12_sintaxis-markdown.qmd >}}
 
+# 3. CHUNKS {.unnumbered background-color="#b8c2aa"}
 
----
+------------------------------------------------------------------------
 
 ### CHUNKS
 
@@ -561,44 +513,37 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 ##### Principales diferencias con .Rmd
 
-- En ficheros `.qmd`, **las opciones de los chunks se pueden especificar globalmente en el YAML** y a nivel individual en cada uno de los chunks.
+-   En ficheros `.qmd`, **las opciones de los chunks se pueden especificar globalmente en el YAML** y a nivel individual en cada uno de los chunks.
 
-- En los **chunks individuales** ahora se se utiliza la **sintaxis YAML** (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
+-   En los **chunks individuales** ahora se se utiliza la **sintaxis YAML** (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
 
 {{< include ./_includes/_tt_05_44_img-22.qmd >}}
 
-
-
-
----
+------------------------------------------------------------------------
 
 ### CHUNKS
 
+-   Las principales opciones son: **echo**, **eval**, **warning**, **error**, **output** e **include**. [Aquí](https://quarto.org/docs/computations/execution-options.html#output-options) la documentación oficial.
 
-- Las principales opciones son: **echo**, **eval**, **warning**, **error**, **output** e **include**. [Aquí](https://quarto.org/docs/computations/execution-options.html#output-options) la documentación oficial.
+-   `echo`: además de los típicos true y false, ahora **incorpora un nuevo valor `fenced`** que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo).
 
-
-- `echo`: además de los típicos true y false, ahora **incorpora un nuevo valor `fenced`** que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo). 
-
-
-- Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
-
+-   Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
 
 {{< include ./_includes/_tt_05_45_img-23.qmd >}}
 
-- Hay **más opciones para los chunks**. Por ejemplo: 
+-   Hay **más opciones para los chunks**. Por ejemplo:
 
-    - hacer **folding code** con `#| code-fold: true`  
-    
-    - si el código es muy largo, puedes usar  `#| code-overflow: wrap`  y `#| code-overflow: scroll`  
-    
-    - puedes hacer que se muestren los **números de linea** con `#| code-line-numbers: true`
-    
-    
+    -   hacer **folding code** con `#| code-fold: true`
+
+    -   si el código es muy largo, puedes usar `#| code-overflow: wrap` y `#| code-overflow: scroll`
+
+    -   puedes hacer que se muestren los **números de linea** con `#| code-line-numbers: true`
+
 La documentación oficial la tienes [aquí](https://quarto.org/docs/output-formats/html-code.html).
 
+# 4. Elementos básicos para escribir {.unnumbered background-color="#b8c2aa"}
 
----
+------------------------------------------------------------------------
 
 ### Elementos básicos para escribir
 
@@ -606,28 +551,114 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 {{< include ./_includes/_tt_05_12-B_text-elementos.qmd >}}
 
----
+# 5. Más elementos para "escribir" {.unnumbered background-color="#b8c2aa"}
+
+------------------------------------------------------------------------
 
 ### Más elementos para "escribir"
 
-
 {{< include ./_includes/_tt_05_12-B_text-mas-elementos.qmd >}}
 
+# Veamos algunos de estos elementos con un poco de detalle. {.unnumbered background-color="#b8c2aa"}
 
+<br><br>
+
+(Después lo recordaremos con una Práctica)
+
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_05_12-B_text-veamos.qmd >}}
 
-
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_05_14_resumen.qmd >}}
 
 <br>
 
-
----
+------------------------------------------------------------------------
 
 {{< include ./_includes/_tt_05_47_practica-01.qmd >}}
 
-
 Las soluciones a la Práctica están [aquí](/posts/post_04_practica-05.html)
+
+<br>
+
+# 6. Tuneado del blog {background-color="#EEBF8B"}
+
+(6ª parte del tutorial)
+
+{{< include ./_includes/_tt_06_01_q-haremos.qmd >}}
+
+<br>
+
+------------------------------------------------------------------------
+
+## Intro
+
+-   Quarto viene preparado con diferentes `Bootstrap themes` del [proyecto Bootswatch project](https://bootswatch.com/) que le dan a nuestro blog una apariencia profesional y cuidada.
+
+<br>
+
+-   Creo que es mejor **comenzar con un blog sencillo** usando las plantillas (o themes) que nos ofrece Quarto pero, si queremos modificar la apariencia de nuestro blog, podemos hacerlo de 3 formas:
+
+    1.  Utilizando las opciones disponibles en Quarto para el `yaml`
+
+    2.  Utilizando CSS
+
+    3.  Utilizando SASS
+
+# 1. Utilizando opciones del YAML {.unnumbered background-color="#b8c2aa"}
+
+<br>
+
+-   En el [tutorial nº 6](/taller/06_taller_tuneado-del-blog.html) repasamos las distintas opciones que tenemos disponibles para poder cambiar a través de opciones en los YAML's (recuerda los 3 niveles).
+
+-   Aquí solo pondré la **documentación relevante** junta y **destacaré algunas de las opciones** disponibles.
+
+------------------------------------------------------------------------
+
+## Documentación oficial
+
+##### (sobre opciones disponibles en los YAML's)
+
+<br>
+
+-   Referentes al **proyecto**: [aquí](https://quarto.org/docs/projects/quarto-projects.html#shared-metadata)
+
+-   Referentes a la **estructura de la web**: [aquí](https://quarto.org/docs/websites/website-navigation.html) y [aquí](https://quarto.org/docs/websites/)
+
+-   Referentes a la **estética**: [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html)
+
+------------------------------------------------------------------------
+
+## Algunas opciones de YAML
+
+-   `lang: es`
+
+# 2. Utilizando CSS {.unnumbered background-color="#b8c2aa"}
+
+<br>
+
+-   La apariencia visual del blog puede cambiarse utilizando CSS.
+
+-   Veamos un ejemplo con el siguiente [post](/posts/post_05_css-05.html)
+
+# 3. Utilizando SASS {.unnumbered background-color="#b8c2aa"}
+
+<br>
+
+-   Tendrás que mirar otras referencias, por ejemplo: [Customizing Quarto Websites: Make your website stand out using SASS](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide) o [este video](https://www.youtube.com/watch?v=ErRX8plZpQE)
+
+-   Bootstrap define unas 1.400 variables con las que controlar fuentes, colores, etc ... . Puedes verlas [aquí](https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss)
+
+-   [Aquí](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes) están los ficheros `.scss` de los 25 built-in Bootswatch themes.
+
+-   [Aquí](https://quarto.org/docs/output-formats/html-themes-more.html) la documentación oficial de Quarto sobre los Bootswatch Sass Theme Files
+
+# FÍN!!  {.unnumbered .centered background-color="#562457"}
+
+  - Muchas gracias por la atención
+  
+  - Espero que el taller haya salido OK
+  
+  - Bye, nos vemos en las próximas Jornadas

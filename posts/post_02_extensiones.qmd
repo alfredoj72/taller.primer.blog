@@ -8,8 +8,8 @@ description: |
 author:
   - name: Pedro J. Pérez
     affiliation: Universitat de València
-date: 2022-10-26
-categories: [Quarto, extensiones, ejemplos]
+date: 2022-11-02
+categories: [Quarto, extensiones]
 image: "./thumbnails/thumbnail_02.png"
 #title-block-banner: true #- {true, false }
 title-block-banner: thumbnails/thumbnail_02.png

@@ -4,11 +4,13 @@
 
 Evidentemente puedes probar a añadir la página que quieras, pero te ofrezco la siguiente posibilidad:
 
-- Crear una página llamada "Más cosas" que tenga la particularidad de que cuando recreemos el blog se convertirá en un desplegable con acceso a varias páginas: "Docencia 2", "Docencia 3" y "Docencia 4".
+- Con las lineas 12 y siguientes crear una página más en nuestro blog. La página se llamará "Más cosas". Además, esta página nueva tiene la particularidad de que cuando recreemos el blog se convertirá en un desplegable con acceso a varias páginas: "Docencia 2", "Docencia 3" y "Docencia 4".
 
 - Fíjate que he puesto la nueva página a la izquierda (`left: `)
 
-- Además, puedes probar distintas opciones de `theme` y de `highlighting`
+- Además, puedes probar distintas opciones de `theme` (linea 34) y de `highlighting` (linea 38)
+
+- También puedes cambiar el color del fondo de la barra de navegación (linea 8)
 
 
 ```yaml
@@ -19,7 +21,7 @@ website:
   title: "Mi blog (aún en pruebas)"
   navbar:
     logo: "profile.jpg"
-    #background: primary    #- pink (el backgroung de la navbar)
+    #background: "#CCCCFF"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)
     left: 
       - text: "Docencia"
         href: docencia.qmd

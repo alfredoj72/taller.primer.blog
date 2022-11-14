@@ -969,28 +969,29 @@
 </ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">project</span><span class="kw">:</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi blog (aún en pruebas)"</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"profile.jpg"</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"About me"</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> about.qmd</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/&lt;tu-usuario-github&gt;</span></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
-<span id="cb2-14"><a href="#cb2-14"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://twitter.com/&lt;tu-usuario-twitter&gt;</span></span>
-<span id="cb2-15"><a href="#cb2-15"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> envelope</span></span>
-<span id="cb2-16"><a href="#cb2-16"></a><span class="at">        </span><span class="fu">url</span><span class="kw">:</span><span class="at"> </span><span class="st">"mailto:&lt;tu-mail@alumni.uv.es&gt;"</span></span>
-<span id="cb2-17"><a href="#cb2-17"></a></span>
-<span id="cb2-18"><a href="#cb2-18"></a><span class="at"> </span></span>
-<span id="cb2-19"><a href="#cb2-19"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb2-20"><a href="#cb2-20"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb2-21"><a href="#cb2-21"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> flatly  </span></span>
-<span id="cb2-22"><a href="#cb2-22"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
-<span id="cb2-23"><a href="#cb2-23"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb2-24"><a href="#cb2-24"></a><span class="at">    </span><span class="fu">highlight-style</span><span class="kw">:</span><span class="at"> a11y</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> docs</span><span class="co">   #- carpeta donde se generará el blog</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi blog (aún en pruebas)"</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"profile.jpg"</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"About me"</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> about.qmd</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/&lt;tu-usuario-github&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://twitter.com/&lt;tu-usuario-twitter&gt;</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> envelope</span></span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="at">        </span><span class="fu">url</span><span class="kw">:</span><span class="at"> </span><span class="st">"mailto:&lt;tu-mail@alumni.uv.es&gt;"</span></span>
+<span id="cb2-18"><a href="#cb2-18"></a></span>
+<span id="cb2-19"><a href="#cb2-19"></a><span class="at"> </span></span>
+<span id="cb2-20"><a href="#cb2-20"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb2-21"><a href="#cb2-21"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb2-22"><a href="#cb2-22"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> flatly  </span></span>
+<span id="cb2-23"><a href="#cb2-23"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
+<span id="cb2-24"><a href="#cb2-24"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb2-25"><a href="#cb2-25"></a><span class="at">    </span><span class="fu">highlight-style</span><span class="kw">:</span><span class="at"> a11y</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -2311,26 +2312,25 @@
 <span id="cb14-4"><a href="#cb14-4"></a><span class="co"># https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
 <span id="cb14-5"><a href="#cb14-5"></a>freeze<span class="sc">:</span> auto   <span class="co">#- {false, true, auto}</span></span>
 <span id="cb14-6"><a href="#cb14-6"></a></span>
-<span id="cb14-7"><a href="#cb14-7"></a></span>
-<span id="cb14-8"><a href="#cb14-8"></a><span class="co">#- Quarto incluye un title-block al principio de los artículos con: title, subtitle, authors, date, doi, and abstract.</span></span>
-<span id="cb14-9"><a href="#cb14-9"></a></span>
-<span id="cb14-10"><a href="#cb14-10"></a><span class="co"># title-block-style: modifica el estilo del title-block</span></span>
-<span id="cb14-11"><a href="#cb14-11"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html</span></span>
-<span id="cb14-12"><a href="#cb14-12"></a>title<span class="sc">-</span>block<span class="sc">-</span>style<span class="sc">:</span> default <span class="co">#- {default, plain, none}</span></span>
-<span id="cb14-13"><a href="#cb14-13"></a></span>
-<span id="cb14-14"><a href="#cb14-14"></a><span class="co"># title-block-banner: pone un banner en el title-block: pondrá el title, subtitle, description, y categories dentro del banner</span></span>
-<span id="cb14-15"><a href="#cb14-15"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
-<span id="cb14-16"><a href="#cb14-16"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true  <span class="co">#- {true, false, "#FFDDFF",  "image.jpg"}</span></span>
-<span id="cb14-17"><a href="#cb14-17"></a></span>
-<span id="cb14-18"><a href="#cb14-18"></a><span class="co"># tb se puede especificar el color del texto dentro del banner</span></span>
-<span id="cb14-19"><a href="#cb14-19"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">-</span>color<span class="sc">:</span> red</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-7"><a href="#cb14-7"></a><span class="co">#- Quarto incluye un title-block al principio de los artículos con elementos como: title, subtitle, authors, date, doi, and abstract.</span></span>
+<span id="cb14-8"><a href="#cb14-8"></a></span>
+<span id="cb14-9"><a href="#cb14-9"></a><span class="co"># title-block-banner: pone un banner en el title-block: pondrá el title, subtitle, description, y categories dentro del banner</span></span>
+<span id="cb14-10"><a href="#cb14-10"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
+<span id="cb14-11"><a href="#cb14-11"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true  <span class="co">#- {true, false, "#FFDDFF",  "image.jpg"}</span></span>
+<span id="cb14-12"><a href="#cb14-12"></a></span>
+<span id="cb14-13"><a href="#cb14-13"></a><span class="co"># title-block-style: modifica el estilo del title-block</span></span>
+<span id="cb14-14"><a href="#cb14-14"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html</span></span>
+<span id="cb14-15"><a href="#cb14-15"></a>title<span class="sc">-</span>block<span class="sc">-</span>style<span class="sc">:</span> default <span class="co">#- {default, plain, none}</span></span>
+<span id="cb14-16"><a href="#cb14-16"></a></span>
+<span id="cb14-17"><a href="#cb14-17"></a><span class="co"># tb se puede especificar el color del texto dentro del banner</span></span>
+<span id="cb14-18"><a href="#cb14-18"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">-</span>color<span class="sc">:</span> red</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>IMPORTANTE</strong>: las opciones que especifiques en <code>_metadata.yml</code> afectarán a todos los .qmd de la carpeta.</p>
 <ul>
 <li><p><code>freeze (linea 5): {false, true, auto}</code> controla la ejecución de los .qmd durante el procesado completo del Qproject. Documentación <a href="https://quarto.org/docs/projects/code-execution.html#freeze">aquí</a>.</p></li>
-<li><p><code>title-block-style (linea 12):  {default, plain, none}</code> modifica el estilo del title-block</p></li>
-<li><p><code>title-block-banner (linea 16): {true, false, "#FFDDFF",  "image.jpg"}</code> controla la presencia y apariencia de los “banners” para dar más importancia a los títulos de los posts. Puedes controlar el color, incluso poner una imagen. Documentación <a href="https://quarto.org/docs/authoring/title-blocks.html#title-banners">aquí</a>.</p></li>
-<li><p><code>title-block-banner-color(linea 19): {black, "#FFDDFF"}</code> controla el color del título del post</p></li>
+<li><p><code>title-block-banner (linea 11): {true, false, "#FFDDFF",  "image.jpg"}</code> controla la presencia y apariencia de los “banners” para dar más importancia a los títulos de los posts. Puedes controlar el color, incluso poner una imagen. Documentación <a href="https://quarto.org/docs/authoring/title-blocks.html#title-banners">aquí</a>.</p></li>
+<li><p><code>title-block-style (linea 15):  {default, plain, none}</code> modifica el estilo del title-block</p></li>
+<li><p><code>title-block-banner-color(linea 18): {black, "#FFDDFF"}</code> controla el color del título del post</p></li>
 </ul>
 </div>
 </div>
@@ -2456,10 +2456,7 @@
 </ul>
 <p><br></p>
 <p>Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.</p>
-</section>
-<section class="slide level2">
-
-<h4 id="layouts">Layouts</h4>
+<h4 class="unnumbered" id="layouts">Layouts</h4>
 <ul>
 <li><p>Además de yaml, texto y chunk, para escribir con Quarto <strong>conviene conocer la estructura o layout de los artículos</strong> que se generan con él.</p></li>
 <li><p>Los “artículos” tienen un <strong>body</strong>, un <strong>margin</strong> y un área para las <strong>sidebars</strong>, que en nuestro caso contiene el TOC<sup>1</sup>.</p></li>
@@ -2470,7 +2467,7 @@
 <aside><ol class="aside-footnotes"><li id="fn4"><p>Además, el layout puede venir afectado por la opción <code>page-layout: custom   #- {article, full, custom}</code></p></li></ol></aside></section>
 <section class="slide level2">
 
-<h4 id="extensiones">Extensiones</h4>
+<h4 class="unnumbered" id="extensiones">Extensiones</h4>
 <ul>
 <li><p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en lenguaje <a href="https://es.wikipedia.org/wiki/Lua">Lua</a>.</p></li>
 <li><p>Para ver como <strong>instalar y usar extensiones</strong> vamos a ir, otra vez, a otro de los post del blog del taller: concretamente <a href="../posts/post_02_extensiones.html" target="_blank">aquí</a></p></li>
@@ -2479,10 +2476,10 @@
 </section>
 <section class="slide level2">
 
-<h4 id="imágenes">Imágenes</h4>
+<h4 class="unnumbered" id="imágenes">Imágenes</h4>
 <ul>
 <li><p>Conocemos la sintaxis básica para insertar imágenes <code>![](&lt;ruta-a-imagen&gt;)</code>; ahora veremos posibilidades más avanzadas</p></li>
-<li><p>Veamos como <strong>insertar imágenes</strong> con <a href="../posts/post_03_imagenes.html">este post</a> del blog del taller.</p></li>
+<li><p>Veamos como <strong>insertar imágenes</strong> con <a href="../posts/post_03_imagenes.html" target="_blank">este post</a> del blog del taller.</p></li>
 </ul>
 <p><br></p>
 </section>

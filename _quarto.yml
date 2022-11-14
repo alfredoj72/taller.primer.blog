@@ -76,3 +76,5 @@ execute:
 #editor: visual
 
 highlight-style: monochrome
+
+#title-block-banner: true  #- {true, false, "#FFDDFF",  "image.jpg"}

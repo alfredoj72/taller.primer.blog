@@ -558,7 +558,7 @@ Tarea 5.1: Modificar <code>_quarto.yml</code>
 <span id="cb4-8"><a href="#cb4-8"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
 <span id="cb4-9"><a href="#cb4-9"></a>  navbar<span class="sc">:</span></span>
 <span id="cb4-10"><a href="#cb4-10"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a>    <span class="co">#background: primary    #- pink</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a>    <span class="co">#background: "#CCCCFF"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)</span></span>
 <span id="cb4-12"><a href="#cb4-12"></a>    right<span class="sc">:</span></span>
 <span id="cb4-13"><a href="#cb4-13"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"About me"</span></span>
 <span id="cb4-14"><a href="#cb4-14"></a>        href<span class="sc">:</span> about.qmd</span>
@@ -573,24 +573,28 @@ Tarea 5.1: Modificar <code>_quarto.yml</code>
 <span id="cb4-23"><a href="#cb4-23"></a>        href<span class="sc">:</span> index.html</span>
 <span id="cb4-24"><a href="#cb4-24"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
 <span id="cb4-25"><a href="#cb4-25"></a>        href<span class="sc">:</span> docencia.qmd</span>
-<span id="cb4-26"><a href="#cb4-26"></a>  page<span class="sc">-</span>footer<span class="sc">:</span></span>
-<span id="cb4-27"><a href="#cb4-27"></a>    left<span class="sc">:</span> <span class="st">"© 2022 Pedro J. Pérez"</span></span>
-<span id="cb4-28"><a href="#cb4-28"></a>    center<span class="sc">:</span> <span class="st">"Hecho con [Quarto](https://quarto.org)"</span></span>
-<span id="cb4-29"><a href="#cb4-29"></a>    right<span class="sc">:</span></span>
-<span id="cb4-30"><a href="#cb4-30"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb4-31"><a href="#cb4-31"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
-<span id="cb4-32"><a href="#cb4-32"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb4-33"><a href="#cb4-33"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
-<span id="cb4-34"><a href="#cb4-34"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
-<span id="cb4-35"><a href="#cb4-35"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail&gt;@uv.es"</span></span>
-<span id="cb4-36"><a href="#cb4-36"></a></span>
-<span id="cb4-37"><a href="#cb4-37"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
-<span id="cb4-38"><a href="#cb4-38"></a>format<span class="sc">:</span></span>
-<span id="cb4-39"><a href="#cb4-39"></a>  html<span class="sc">:</span></span>
-<span id="cb4-40"><a href="#cb4-40"></a>    theme<span class="sc">:</span> flatly  </span>
-<span id="cb4-41"><a href="#cb4-41"></a>    css<span class="sc">:</span> styles.css</span>
-<span id="cb4-42"><a href="#cb4-42"></a>    toc<span class="sc">:</span> true</span>
-<span id="cb4-43"><a href="#cb4-43"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y          </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-26"><a href="#cb4-26"></a>      <span class="co">#- text: "Docencia"</span></span>
+<span id="cb4-27"><a href="#cb4-27"></a>        <span class="co">#href: docencia.qmd</span></span>
+<span id="cb4-28"><a href="#cb4-28"></a>  page<span class="sc">-</span>footer<span class="sc">:</span></span>
+<span id="cb4-29"><a href="#cb4-29"></a>    left<span class="sc">:</span> <span class="st">"© 2022 Pedro J. Pérez"</span></span>
+<span id="cb4-30"><a href="#cb4-30"></a>    center<span class="sc">:</span> <span class="st">"Hecho con [Quarto](https://quarto.org)"</span></span>
+<span id="cb4-31"><a href="#cb4-31"></a>    right<span class="sc">:</span></span>
+<span id="cb4-32"><a href="#cb4-32"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb4-33"><a href="#cb4-33"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb4-34"><a href="#cb4-34"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb4-35"><a href="#cb4-35"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>twitter<span class="sc">&gt;</span></span>
+<span id="cb4-36"><a href="#cb4-36"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb4-37"><a href="#cb4-37"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail&gt;@uv.es"</span></span>
+<span id="cb4-38"><a href="#cb4-38"></a></span>
+<span id="cb4-39"><a href="#cb4-39"></a><span class="co">#- 3/ Opciones referentes al formato de salida  ---------------------</span></span>
+<span id="cb4-40"><a href="#cb4-40"></a>format<span class="sc">:</span></span>
+<span id="cb4-41"><a href="#cb4-41"></a>  html<span class="sc">:</span></span>
+<span id="cb4-42"><a href="#cb4-42"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-themes.html</span></span>
+<span id="cb4-43"><a href="#cb4-43"></a>    theme<span class="sc">:</span> flatly  </span>
+<span id="cb4-44"><a href="#cb4-44"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb4-45"><a href="#cb4-45"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb4-46"><a href="#cb4-46"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-code.html#highlighting</span></span>
+<span id="cb4-47"><a href="#cb4-47"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y     </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -630,26 +634,25 @@ Tarea 5.2: Modificar <code>./posts/_metadata.yml</code>
 <span id="cb5-4"><a href="#cb5-4"></a><span class="co"># https://quarto.org/docs/projects/code-execution.html#freeze)</span></span>
 <span id="cb5-5"><a href="#cb5-5"></a>freeze<span class="sc">:</span> auto   <span class="co">#- {false, true, auto}</span></span>
 <span id="cb5-6"><a href="#cb5-6"></a></span>
-<span id="cb5-7"><a href="#cb5-7"></a></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="co">#- Quarto incluye un title-block al principio de los artículos con: title, subtitle, authors, date, doi, and abstract.</span></span>
-<span id="cb5-9"><a href="#cb5-9"></a></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="co"># title-block-style: modifica el estilo del title-block</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html</span></span>
-<span id="cb5-12"><a href="#cb5-12"></a>title<span class="sc">-</span>block<span class="sc">-</span>style<span class="sc">:</span> default <span class="co">#- {default, plain, none}</span></span>
-<span id="cb5-13"><a href="#cb5-13"></a></span>
-<span id="cb5-14"><a href="#cb5-14"></a><span class="co"># title-block-banner: pone un banner en el title-block: pondrá el title, subtitle, description, y categories dentro del banner</span></span>
-<span id="cb5-15"><a href="#cb5-15"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
-<span id="cb5-16"><a href="#cb5-16"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true  <span class="co">#- {true, false, "#FFDDFF",  "image.jpg"}</span></span>
-<span id="cb5-17"><a href="#cb5-17"></a></span>
-<span id="cb5-18"><a href="#cb5-18"></a><span class="co"># tb se puede especificar el color del texto dentro del banner</span></span>
-<span id="cb5-19"><a href="#cb5-19"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">-</span>color<span class="sc">:</span> red</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="co">#- Quarto incluye un title-block al principio de los artículos con elementos como: title, subtitle, authors, date, doi, and abstract.</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="co"># title-block-banner: pone un banner en el title-block: pondrá el title, subtitle, description, y categories dentro del banner</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html#title-banners</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">:</span> true  <span class="co">#- {true, false, "#FFDDFF",  "image.jpg"}</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a></span>
+<span id="cb5-13"><a href="#cb5-13"></a><span class="co"># title-block-style: modifica el estilo del title-block</span></span>
+<span id="cb5-14"><a href="#cb5-14"></a><span class="co"># https://quarto.org/docs/authoring/title-blocks.html</span></span>
+<span id="cb5-15"><a href="#cb5-15"></a>title<span class="sc">-</span>block<span class="sc">-</span>style<span class="sc">:</span> default <span class="co">#- {default, plain, none}</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a></span>
+<span id="cb5-17"><a href="#cb5-17"></a><span class="co"># tb se puede especificar el color del texto dentro del banner</span></span>
+<span id="cb5-18"><a href="#cb5-18"></a>title<span class="sc">-</span>block<span class="sc">-</span>banner<span class="sc">-</span>color<span class="sc">:</span> red</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>IMPORTANTE</strong>: las opciones que especifiques en <code>_metadata.yml</code> afectarán a todos los .qmd de la carpeta.</p>
 <ul>
 <li><p><code>freeze (linea 5): {false, true, auto}</code> controla la ejecución de los .qmd durante el procesado completo del Qproject. Documentación <a href="https://quarto.org/docs/projects/code-execution.html#freeze">aquí</a>.</p></li>
-<li><p><code>title-block-style (linea 12):  {default, plain, none}</code> modifica el estilo del title-block</p></li>
-<li><p><code>title-block-banner (linea 16): {true, false, "#FFDDFF",  "image.jpg"}</code> controla la presencia y apariencia de los “banners” para dar más importancia a los títulos de los posts. Puedes controlar el color, incluso poner una imagen. Documentación <a href="https://quarto.org/docs/authoring/title-blocks.html#title-banners">aquí</a>.</p></li>
-<li><p><code>title-block-banner-color(linea 19): {black, "#FFDDFF"}</code> controla el color del título del post</p></li>
+<li><p><code>title-block-banner (linea 11): {true, false, "#FFDDFF",  "image.jpg"}</code> controla la presencia y apariencia de los “banners” para dar más importancia a los títulos de los posts. Puedes controlar el color, incluso poner una imagen. Documentación <a href="https://quarto.org/docs/authoring/title-blocks.html#title-banners">aquí</a>.</p></li>
+<li><p><code>title-block-style (linea 15):  {default, plain, none}</code> modifica el estilo del title-block</p></li>
+<li><p><code>title-block-banner-color(linea 18): {black, "#FFDDFF"}</code> controla el color del título del post</p></li>
 </ul>
 </div>
 </div>
@@ -851,9 +854,8 @@ Extensiones: mi setup chunk
 </section>
 <section id="veamos-algunos" class="level3" data-number="5.3">
 <h3 data-number="5.3" class="anchored" data-anchor-id="veamos-algunos"><span class="header-section-number">5.3</span> Veamos algunos</h3>
-<hr>
-<section id="layouts" class="level4">
-<h4 class="anchored" data-anchor-id="layouts">Layouts</h4>
+<section id="layouts" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="layouts">Layouts</h4>
 <ul>
 <li><p>Además de yaml, texto y chunk, para escribir con Quarto <strong>conviene conocer la estructura o layout de los artículos</strong> que se generan con él.</p></li>
 <li><p>Los “artículos” tienen un <strong>body</strong>, un <strong>margin</strong> y un área para las <strong>sidebars</strong>, que en nuestro caso contiene el TOC<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p></li>
@@ -863,8 +865,8 @@ Extensiones: mi setup chunk
 <p><br></p>
 <hr>
 </section>
-<section id="extensiones" class="level4">
-<h4 class="anchored" data-anchor-id="extensiones">Extensiones</h4>
+<section id="extensiones" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="extensiones">Extensiones</h4>
 <ul>
 <li><p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en lenguaje <a href="https://es.wikipedia.org/wiki/Lua">Lua</a>.</p></li>
 <li><p>Para ver como <strong>instalar y usar extensiones</strong> vamos a ir, otra vez, a otro de los post del blog del taller: concretamente <a href="../posts/post_02_extensiones.html" target="_blank">aquí</a></p></li>
@@ -872,11 +874,11 @@ Extensiones: mi setup chunk
 <p><br></p>
 <hr>
 </section>
-<section id="imágenes" class="level4">
-<h4 class="anchored" data-anchor-id="imágenes">Imágenes</h4>
+<section id="imágenes" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="imágenes">Imágenes</h4>
 <ul>
 <li><p>Conocemos la sintaxis básica para insertar imágenes <code>![](&lt;ruta-a-imagen&gt;)</code>; ahora veremos posibilidades más avanzadas</p></li>
-<li><p>Veamos como <strong>insertar imágenes</strong> con <a href="../posts/post_03_imagenes.html">este post</a> del blog del taller.</p></li>
+<li><p>Veamos como <strong>insertar imágenes</strong> con <a href="../posts/post_03_imagenes.html" target="_blank">este post</a> del blog del taller.</p></li>
 </ul>
 <p><br></p>
 <p><br></p>

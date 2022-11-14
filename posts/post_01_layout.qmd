@@ -8,8 +8,8 @@ description: |
 author:
   - name: Pedro J. Pérez
     affiliation: Universitat de València
-date: 2022-10-26
-categories: [quarto, layout, ejemplos]
+date: 2022-11-01
+categories: [Quarto, layout]
 image: "./thumbnails/thumbnail_01.png"
 title-block-banner: true #- {true, false }
 draft: false
@@ -24,12 +24,14 @@ toc-depth: 3
 
 
 
-### Intro 
+## Intro 
 
 Además de yaml, texto y chunks, para escribir con Quarto **conviene conocer la estructura o layout de los artículos** que se generan con él. Las páginas tienen un body, un margin y un área para las sidebars, que en nuestro caso contiene un TOC^[Además, el layout puede venir afectado por la opción `page-layout: custom   #- {article, full, custom}`. Documentación oficial [aquí](https://quarto.org/docs/output-formats/page-layout.html) ].  Documentación oficial [aquí](https://quarto.org/docs/authoring/article-layout.html).
 
+Usando [divs y spans](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) podemos añadir clases y atributos, haciendo que determinados elementos de nuestro documento cambien sus "propiedades". En esta sección usaremos divs para hacer que determinadas partes de nuestro post se ajusten a distintos layout's.
 
-### Ejemplo (con imágenes)
+
+## Ejemplo (con imágenes)
 
 Para ver las distintas posibilidades que tenemos, **insertaremos una imagen** ocupando distintas áreas del artículo. Empezaremos situando la imagen en el margen. para ello habría que hacer lo siguiente: 
 

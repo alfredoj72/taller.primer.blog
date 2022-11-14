@@ -255,22 +255,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Tutorial nº 6</h2>
    
   <ul>
-  <li><a href="#opciones-disponibles-en-el-yaml" id="toc-opciones-disponibles-en-el-yaml" class="nav-link active" data-scroll-target="#opciones-disponibles-en-el-yaml"><span class="toc-section-number">1</span>  Opciones disponibles en el <code>yaml</code></a>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro"><span class="toc-section-number">1</span>  Intro</a></li>
+  <li><a href="#opciones-yaml" id="toc-opciones-yaml" class="nav-link" data-scroll-target="#opciones-yaml"><span class="toc-section-number">2</span>  Opciones <code>YAML</code></a>
   <ul>
-  <li><a href="#nivel-proyecto" id="toc-nivel-proyecto" class="nav-link" data-scroll-target="#nivel-proyecto"><span class="toc-section-number">1.1</span>  Nivel proyecto</a>
-  <ul class="collapse">
-  <li><a href="#proyecto" id="toc-proyecto" class="nav-link" data-scroll-target="#proyecto">Proyecto</a></li>
-  <li><a href="#estructura-web" id="toc-estructura-web" class="nav-link" data-scroll-target="#estructura-web">Estructura web</a></li>
-  <li><a href="#estéticas" id="toc-estéticas" class="nav-link" data-scroll-target="#estéticas">Estéticas</a></li>
+  <li><a href="#nivel-proyecto" id="toc-nivel-proyecto" class="nav-link" data-scroll-target="#nivel-proyecto"><span class="toc-section-number">2.1</span>  Nivel proyecto</a></li>
+  <li><a href="#nivel-carpeta" id="toc-nivel-carpeta" class="nav-link" data-scroll-target="#nivel-carpeta"><span class="toc-section-number">2.2</span>  Nivel carpeta</a></li>
+  <li><a href="#nivel-documento" id="toc-nivel-documento" class="nav-link" data-scroll-target="#nivel-documento"><span class="toc-section-number">2.3</span>  Nivel documento</a></li>
   </ul></li>
-  <li><a href="#nivel-carpeta" id="toc-nivel-carpeta" class="nav-link" data-scroll-target="#nivel-carpeta"><span class="toc-section-number">1.2</span>  Nivel carpeta</a></li>
-  <li><a href="#nivel-documento" id="toc-nivel-documento" class="nav-link" data-scroll-target="#nivel-documento"><span class="toc-section-number">1.3</span>  Nivel documento</a></li>
-  <li><a href="#por-categoría" id="toc-por-categoría" class="nav-link" data-scroll-target="#por-categoría"><span class="toc-section-number">1.4</span>  Por categoría</a></li>
-  <li><a href="#listing-pages" id="toc-listing-pages" class="nav-link" data-scroll-target="#listing-pages"><span class="toc-section-number">1.5</span>  Listing pages</a></li>
-  <li><a href="#about-pages" id="toc-about-pages" class="nav-link" data-scroll-target="#about-pages"><span class="toc-section-number">1.6</span>  About pages</a></li>
-  </ul></li>
-  <li><a href="#sass" id="toc-sass" class="nav-link" data-scroll-target="#sass"><span class="toc-section-number">2</span>  SASS</a></li>
-  <li><a href="#css" id="toc-css" class="nav-link" data-scroll-target="#css"><span class="toc-section-number">3</span>  CSS</a></li>
+  <li><a href="#yaml-por-categoría" id="toc-yaml-por-categoría" class="nav-link" data-scroll-target="#yaml-por-categoría"><span class="toc-section-number">3</span>  <code>YAML</code> por categoría</a></li>
+  <li><a href="#listing-pages" id="toc-listing-pages" class="nav-link" data-scroll-target="#listing-pages"><span class="toc-section-number">4</span>  Listing pages</a></li>
+  <li><a href="#about-pages" id="toc-about-pages" class="nav-link" data-scroll-target="#about-pages"><span class="toc-section-number">5</span>  About pages</a></li>
+  <li><a href="#css" id="toc-css" class="nav-link" data-scroll-target="#css"><span class="toc-section-number">6</span>  CSS</a></li>
+  <li><a href="#sass" id="toc-sass" class="nav-link" data-scroll-target="#sass"><span class="toc-section-number">7</span>  SASS</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/taller.primer.blog/edit/main/taller/06_taller_tuneado-del-blog.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/taller.primer.blog/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
 </nav>
@@ -348,23 +344,27 @@ Recapitulación
 </div>
 </div>
 <p><br></p>
-<p>La verdad es que creo que es mejor comenzar con un blog sencillo usando las plantillas (o themes) que nos ofrece Quarto hacen un buen trabajo, pero si queremos modificar la apariencia de nuestro blog podemos hacerlo de 3 formas:</p>
+<section id="intro" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="intro"><span class="header-section-number">1</span> Intro</h2>
+<p>Quarto viene preparado con diferentes <code>Bootstrap themes</code> del <a href="https://bootswatch.com/">proyecto Bootswatch project</a> que le dan a nuestro blog una apariencia profesional y cuidada; pero claro, todos los blogs hechos con Quarto tendrán una a apariencia similar. ¿Cómo podemos tunear/modificar un poco la apariencia de nuestro blog?</p>
+<p>En este tutorial trataremos de dar 3 posibilidades, aunque la verdad es que creo que es mejor comenzar con un blog sencillo usando las plantillas (o themes) que nos ofrece Quarto. Si aún así nos empeñamos en modificar la apariencia de nuestro blog, podemos hacerlo de 3 formas:</p>
 <ul>
 <li><p>utilizando las opciones disponibles en Quarto para el <code>yaml</code></p></li>
 <li><p>utilizando CSS</p></li>
 <li><p>utilizando SASS</p></li>
 </ul>
-<section id="opciones-disponibles-en-el-yaml" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="opciones-disponibles-en-el-yaml"><span class="header-section-number">1</span> Opciones disponibles en el <code>yaml</code></h2>
-<p>En esta sección repasaremos las opciones disponibles como opciones de <code>yaml</code>. Además recuerda que hay tres “niveles” de yaml:</p>
-<ul>
-<li><p>Nivel proyecto: en el archivo <code>_quarto.yml</code></p></li>
-<li><p>Nivel carpeta: en el archivo <code>_metadata.yml</code></p></li>
-<li><p>Nivel documento (o post): en el yaml del propio documento <code>.qmd</code></p></li>
-</ul>
 <p><br></p>
-<section id="nivel-proyecto" class="level3" data-number="1.1">
-<h3 data-number="1.1" class="anchored" data-anchor-id="nivel-proyecto"><span class="header-section-number">1.1</span> Nivel proyecto</h3>
+</section>
+<section id="opciones-yaml" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="opciones-yaml"><span class="header-section-number">2</span> Opciones <code>YAML</code></h2>
+<p>En esta sección repasaremos las opciones disponibles como opciones de <code>yaml</code>. Además recuerda que hay tres “niveles” de yaml:</p>
+<p>2.1 <strong>Nivel proyecto</strong>: en el archivo <code>_quarto.yml</code></p>
+<p>2.2 <strong>Nivel carpeta</strong>: en el archivo <code>_metadata.yml</code></p>
+<p>2.3 <strong>Nivel documento</strong> (o post): en el yaml del propio documento <code>.qmd</code></p>
+<p><br></p>
+<hr>
+<section id="nivel-proyecto" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="nivel-proyecto"><span class="header-section-number">2.1</span> Nivel proyecto</h3>
 <p>En el archivo <code>_quarto.yml</code> hay 3 bloques:</p>
 <ul>
 <li><p>Opciones referentes al proyecto</p></li>
@@ -372,9 +372,11 @@ Recapitulación
 <li><p>Opciones digamos más “estéticas”</p></li>
 </ul>
 <p><br></p>
-<section id="proyecto" class="level4">
-<h4 class="anchored" data-anchor-id="proyecto">Proyecto</h4>
-<p>Abajo puedes ver las opciones más comunes referentes al proyecto. Yo suelo alojar las webs en el directorio <code>docs</code>, porque es el que se suele usar en Github Pages, así que sí suelo usar la linea 3.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">1. nivel proyecto (_quarto.yml)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Estructura web</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Estéticas</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Abajo puedes ver las opciones más comunes referentes al proyecto. Yo suelo alojar las webs en el directorio <code>docs</code>, porque es el que se suele usar en Github Pages, así que sí suelo usar la linea 6.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># 1/ Opciones referentes al proyecto ----------------------------</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="co">#- QUARTO PROJECTS: https://quarto.org/docs/projects/quarto-projects.html</span></span>
@@ -388,9 +390,8 @@ Recapitulación
 </div>
 <p>Por supuesto que hay más opciones, puedes verlas <a href="https://quarto.org/docs/projects/quarto-projects.html#project-metadata">aquí</a>.</p>
 <p><br></p>
-</section>
-<section id="estructura-web" class="level4">
-<h4 class="anchored" data-anchor-id="estructura-web">Estructura web</h4>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Está parte del archivo <code>_quarto.yml</code> sirve para crear la estructura de la página web: barra de navegación y sus pestañas, footer y sidebar. Yo no suelo utilizar sidebar porque no hago web’s complejas y me gusta más que la barra de navegación esté arriba y no en un lateral.</p>
 <p>Abajo tienes diferentes opciones para crear la estructura de tu web<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p>
 <div class="cell">
@@ -461,9 +462,8 @@ Recapitulación
 </div>
 <p>Por supuesto que hay más opciones, puedes verlas <a href="https://quarto.org/docs/websites/website-navigation.html">aquí</a> y <a href="https://quarto.org/docs/websites/">aquí</a>.</p>
 <p><br></p>
-</section>
-<section id="estéticas" class="level4">
-<h4 class="anchored" data-anchor-id="estéticas">Estéticas</h4>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Opciones referentes a diversos aspectos pero, en general, referentes a la estética (o theme) de la web. Documentación <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a>.</p>
 <p>Están son las opciones que he recopilado:</p>
 <div class="cell">
@@ -497,11 +497,14 @@ Recapitulación
 <span id="cb3-28"><a href="#cb3-28"></a>description<span class="sc">:</span> <span class="st">"Un blog para aprender y divertirme"</span> <span class="co">#- necesario para RSS</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
 <hr>
 </section>
-</section>
-<section id="nivel-carpeta" class="level3" data-number="1.2">
-<h3 data-number="1.2" class="anchored" data-anchor-id="nivel-carpeta"><span class="header-section-number">1.2</span> Nivel carpeta</h3>
+<section id="nivel-carpeta" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="nivel-carpeta"><span class="header-section-number">2.2</span> Nivel carpeta</h3>
 <p>En realidad, las opciones que se pongan en el archivo <code>_metadata.ym</code> podrían perfectamente ir en <code>_quarto.yml</code> pero, el hecho de poder hacerlo indistintamente en ambos nos da más flexibilidad a la hora de hacer pequeñas adaptaciones de estilo para los archivos <code>.qmd</code> de una determinada carpeta.</p>
 <p>Estas son las opciones que he recopilado. Muchas de ellas (o todas) podrían ir perfectamente en el yaml del propio documento o incluso en el fichero <code>_quarto.yml</code>, pero al situarlas en el archivo <code>_metadata.yml</code> afectarán a todos los posts pero solo a los posts.</p>
 <div class="cell">
@@ -563,8 +566,8 @@ Recapitulación
 <p><br></p>
 <hr>
 </section>
-<section id="nivel-documento" class="level3" data-number="1.3">
-<h3 data-number="1.3" class="anchored" data-anchor-id="nivel-documento"><span class="header-section-number">1.3</span> Nivel documento</h3>
+<section id="nivel-documento" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="nivel-documento"><span class="header-section-number">2.3</span> Nivel documento</h3>
 <p>En el yaml del propio documento que genera un post se pueden introducir la mayoría de opciones de yaml pero parece lógico que los posts de un blog compartan estilo y, por tanto, las principales opciones del yaml creo que es mejor establcerlas a nivel de carpeta en <code>metadata.yml</code>. De esta forma, en el yaml del propio documento quedarían opciones como el título del post, categorías, fecha e imagen.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#- YAML de un post ------------------------------</span></span>
@@ -581,8 +584,9 @@ Recapitulación
 <hr>
 <p><br></p>
 </section>
-<section id="por-categoría" class="level3" data-number="1.4">
-<h3 data-number="1.4" class="anchored" data-anchor-id="por-categoría"><span class="header-section-number">1.4</span> Por categoría</h3>
+</section>
+<section id="yaml-por-categoría" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="yaml-por-categoría"><span class="header-section-number">3</span> <code>YAML</code> por categoría</h2>
 <p>Ahora mostraré opciones que podemos utilizar en el YAML para diferentes cuestiones:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#- formato de salida ---------------------------</span></span>
@@ -640,8 +644,8 @@ Recapitulación
 <p><br></p>
 <hr>
 </section>
-<section id="listing-pages" class="level3" data-number="1.5">
-<h3 data-number="1.5" class="anchored" data-anchor-id="listing-pages"><span class="header-section-number">1.5</span> Listing pages</h3>
+<section id="listing-pages" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="listing-pages"><span class="header-section-number">4</span> Listing pages</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">#- LISTING page -----------------------------</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a></span>
@@ -678,8 +682,8 @@ Recapitulación
 <p><br></p>
 <hr>
 </section>
-<section id="about-pages" class="level3" data-number="1.6">
-<h3 data-number="1.6" class="anchored" data-anchor-id="about-pages"><span class="header-section-number">1.6</span> About pages</h3>
+<section id="about-pages" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="about-pages"><span class="header-section-number">5</span> About pages</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r code-overflow-scroll number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co">#- About page ---------------------------------</span></span>
 <span id="cb8-2"><a href="#cb8-2"></a><span class="co">#- Pages: https://quarto.org/docs/websites/website-about.html</span></span>
@@ -705,26 +709,36 @@ Recapitulación
 <span id="cb8-22"><a href="#cb8-22"></a>      url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
 <span id="cb8-23"><a href="#cb8-23"></a><span class="sc">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p><br><br></p>
 <hr>
+</section>
+<section id="css" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="css"><span class="header-section-number">6</span> CSS</h2>
+<p>La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es crear un tutorial sobre CSS, de hecho yo sé muy poquito CSS, sino solo <strong>mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS</strong>. Para ello he elaborado el siguiente <a href="../posts/post_05_css-05.html">post</a></p>
+<p>Algunos recursos relacionados con CSS/html:</p>
+<ul>
+<li><p><a href="https://www.emilhvitfeldt.com/post/slidecraft-code-output/">Slidecraft 101: Code and Output</a></p></li>
+<li><p><a href="https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/">Slidecraft 101: Colors and Fonts</a></p></li>
+<li><p><a href="https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#1">Business Reports with R Markdown: How to better theme report?</a></p></li>
+<li><p><a href="https://www.internetingishard.com/">Internet is hard</a></p></li>
+<li><p>[CSS basics] (https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) y <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">Html basics</a> de Mozilla.</p></li>
+<li><p>Vídeo <a href="https://www.youtube.com/watch?v=UB1O30fR-EE">HTML Crash Course For Absolute Beginners</a></p></li>
+<li><p><a href="https://css-tricks.com/guides/">CSS tricks</a> y <a href="https://codepen.io/">Codepen</a></p></li>
+<li><p><a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML &amp; CSS</a></p></li>
+</ul>
 <p><br></p>
+<hr>
 </section>
-</section>
-<section id="sass" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="sass"><span class="header-section-number">2</span> SASS</h2>
+<section id="sass" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="sass"><span class="header-section-number">7</span> SASS</h2>
+<p>Si sé muy poquito de CSS imaginaros cuanto sé de SASS. Pero allá vamos, anotaré aquí algunas que he medio aprendido:</p>
+<p>Muchos de los cambios que podemos hacer con SASS, con archivos <code>.scss</code>, también pueden hacerse desde los distintos YAML’s de nuestro blog, <a href="https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17">esta fantática slide</a> nos servirá de ejemplo.</p>
+<p>Algunas referencias sobre SASS:</p>
 <ul>
-<li><p>GUAU: SASS y mas: <span class="citation" data-cites="SamanthaCsik">@SamanthaCsik</span>: I recently took my first baby dive into Sass &amp; CSS for customizing <span class="citation" data-cites="quarto_pub">@quarto_pub</span> websites and it’s been surprisingly addicting✨If you’re also embarking on your own website beautifying journey, check out my workshop slides https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide As always, very open to feedback!</p></li>
-<li><p>GUAU sass: <a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/tldr1" class="uri">https://ucsb-meds.github.io/customizing-quarto-websites/#/tldr1</a></p></li>
+<li><p><a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide">Customizing Quarto Websites: Make your website stand out using SASS</a>: unas slides de Sam Csik.</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=ErRX8plZpQE">Video tutorial de Albert Rapp</a>. llegué a él gracias a <a href="https://www.ddanieltan.com/posts/blogtips/">este post</a>.</p></li>
+<li><p>En <a href="https://www.rstudio.com/blog/2021-spring-rmd-news/">este post</a> de 2021 se anunciaba que se podía utilizar SASS en el entorno Rmarkdown gracias al paquete <a href="https://rstudio.github.io/sass/">sass</a> y en su web se puede encontrar esta <a href="https://rstudio.github.io/sass/articles/sass.html">vignette</a>.</p></li>
 </ul>
-</section>
-<section id="css" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="css"><span class="header-section-number">3</span> CSS</h2>
-<ul>
-<li><p><a href="https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/" class="uri">https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/</a></p></li>
-<li><p><a href="https://www.emilhvitfeldt.com/post/slidecraft-code-output/" class="uri">https://www.emilhvitfeldt.com/post/slidecraft-code-output/</a></p></li>
-<li><p>CSS, Fantástica <a href="https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17">esta slide</a> slides: https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#15</p></li>
-</ul>
-<p>Por ejemplo: incluir markado en azulito</p>
-<p>.my-bg-blue { background: lightblue; }</p>
 
 
 </section>

@@ -10,6 +10,7 @@
 ````{verbatim, lang="yaml"}
 project:
   type: website
+  output-dir: docs   #- carpeta donde se generará el blog
 
 website:
   title: "Mi blog (aún en pruebas)"

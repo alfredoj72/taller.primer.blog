@@ -1,6 +1,6 @@
 ---
 #title: ""
-image: imagenes/portada_06.png
+image: imagenes/portada_07.png
 about:
   #- https://quarto.org/docs/websites/website-about.html#templates
   template: trestles  #- {jolla, solana, trestles}

@@ -5,7 +5,7 @@ description: |
 #author:
 #  - name: Pedro J. Pérez
 #    affiliation: Universitat de València
-date: 2022-10-26
+date: 2022-11-08
 categories: [Quarto, más elementos, ejemplos]
 image: "./thumbnails/thumbnail_00.png"
 title-block-banner: true #- {true, false }
@@ -182,3 +182,10 @@ This content can be styled with a border
 :::
 
 
+## Last Updated {.appendix}
+
+```{r}
+#| echo: false
+today <- Sys.Date()
+format(today, format="%d %B %Y")
+```

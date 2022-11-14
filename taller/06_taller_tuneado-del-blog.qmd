@@ -38,26 +38,33 @@ toc-depth: 4
 
 <br>
 
-La verdad es que creo que es mejor comenzar con un blog sencillo usando las plantillas (o themes) que nos ofrece Quarto hacen un buen trabajo, pero si queremos modificar la apariencia de nuestro blog podemos hacerlo de 3 formas: 
+## Intro
+
+Quarto  viene preparado con diferentes `Bootstrap themes` del  [proyecto Bootswatch project](https://bootswatch.com/) que le dan a nuestro blog una apariencia profesional y cuidada; pero claro, todos los blogs hechos con Quarto tendrán una a apariencia similar. ¿Cómo podemos tunear/modificar un poco la apariencia de nuestro blog?
+
+En este tutorial trataremos de dar 3 posibilidades, aunque la verdad es que creo que es mejor comenzar con un blog sencillo usando las plantillas (o themes) que nos ofrece Quarto. Si aún así nos empeñamos en modificar la apariencia de nuestro blog, podemos hacerlo de 3 formas: 
 
   - utilizando las opciones disponibles en Quarto para el `yaml`
     
   - utilizando CSS
     
   - utilizando SASS
+
+<br>    
     
-    
-## Opciones disponibles en el `yaml`
+## Opciones `YAML`
 
 En esta sección repasaremos las opciones disponibles como opciones de `yaml`. Además recuerda que hay tres "niveles" de yaml: 
 
-  - Nivel proyecto: en el archivo `_quarto.yml`
+  2.1 **Nivel proyecto**: en el archivo `_quarto.yml`
   
-  - Nivel carpeta: en el archivo `_metadata.yml`
+  2.2 **Nivel carpeta**: en el archivo `_metadata.yml`
   
-  - Nivel documento (o post): en el yaml del propio documento `.qmd`
+  2.3 **Nivel documento** (o post): en el yaml del propio documento `.qmd`
 
 <br>
+
+-----------------------
   
 ### Nivel proyecto
 
@@ -72,36 +79,9 @@ En el archivo `_quarto.yml` hay 3 bloques:
 <br>
 
 
-#### Proyecto
 
-Abajo puedes ver las opciones más comunes referentes al proyecto. Yo suelo alojar las webs en el directorio `docs`, porque es el que se suele usar en Github Pages, así que sí suelo usar la linea 3.
+{{< include ./_includes/_tt_06_02b_yaml-proyecto-tabset.qmd >}}
 
-{{< include ./_includes/_tt_06_02_yaml-proyecto-01.qmd >}}
-
-Por supuesto que hay más opciones, puedes verlas [aquí](https://quarto.org/docs/projects/quarto-projects.html#project-metadata).
-
-<br>
-
-#### Estructura web
-
-Está parte del archivo `_quarto.yml` sirve para crear la estructura de la página web: barra de navegación y sus pestañas, footer y sidebar. Yo no suelo utilizar sidebar porque no hago web's complejas y me gusta más que la barra de navegación esté arriba y no en un lateral.
-
-Abajo tienes diferentes opciones para crear la estructura de tu web^[Son las opciones que he ido recopilando y que me han parecido que pueden llegar a serme útiles algún día, por eso las recopilo, para tenerlas a mano]:
-
-{{< include ./_includes/_tt_06_02_yaml-proyecto-02.qmd >}}
-
-Por supuesto que hay más opciones, puedes verlas [aquí](https://quarto.org/docs/websites/website-navigation.html) y [aquí](https://quarto.org/docs/websites/).
-
-<br>
-
-#### Estéticas
-
-Opciones referentes a diversos aspectos pero, en general, referentes a la estética (o theme) de la web. Documentación [aquí](https://quarto.org/docs/output-formats/html-basics.html)  y [aquí](https://quarto.org/docs/reference/formats/html.html).
-
-Están son las opciones que he recopilado:
-
-
-{{< include ./_includes/_tt_06_02_yaml-proyecto-03.qmd >}}
 
 
 <br>
@@ -140,8 +120,7 @@ Estas son las opciones que he recopilado. Muchas de ellas (o todas) podrían ir 
 <br>
 
 
-
-### Por categoría
+## `YAML` por categoría
 
 
 Ahora mostraré opciones que podemos utilizar en el YAML para diferentes cuestiones:
@@ -154,7 +133,7 @@ Ahora mostraré opciones que podemos utilizar en el YAML para diferentes cuestio
 
 ---------------------------
 
-### Listing pages
+## Listing pages
 
 
 {{< include ./_includes/_tt_06_05_yaml-listing-pages.qmd >}}
@@ -164,35 +143,60 @@ Ahora mostraré opciones que podemos utilizar en el YAML para diferentes cuestio
 
 ---------------------------
 
-### About pages
+## About pages
 
 {{< include ./_includes/_tt_06_06_yaml-about-pages.qmd >}}
 
 
---------------------------
+<br><br>
+
+---------------------------
+
+## CSS
+
+
+La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es crear un tutorial sobre CSS, de hecho yo sé muy poquito CSS, sino solo **mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS**. Para ello he elaborado el siguiente [post](/posts/post_05_css-05.html)
+
+
+Algunos recursos relacionados con CSS/html:
+
+  - [Slidecraft 101: Code and Output](https://www.emilhvitfeldt.com/post/slidecraft-code-output/)
+    
+  - [Slidecraft 101: Colors and Fonts](https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/)
+    
+  - [Business Reports with R Markdown: How to better theme report?](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#1)
+
+  - [Internet is hard](https://www.internetingishard.com/)  
+    
+  - [CSS basics] (https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) y [Html basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) de Mozilla.   
+    
+  - Vídeo [HTML Crash Course For Absolute Beginners](https://www.youtube.com/watch?v=UB1O30fR-EE)   
+    
+  - [CSS tricks](https://css-tricks.com/guides/) y [Codepen](https://codepen.io/)
+    
+  - [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
+    
+    
+
 
 <br>
+
+--------------------------
 
 
 ## SASS
 
-- GUAU: SASS y mas: @SamanthaCsik: I recently took my first baby dive into Sass & CSS for customizing @quarto_pub websites and it’s been surprisingly addicting✨If you’re also embarking on your own website beautifying journey, check out my workshop slides https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide As always, very open to feedback!
+Si sé muy poquito de CSS imaginaros cuanto sé de SASS. Pero allá vamos, anotaré aquí algunas que he medio aprendido:
 
-- GUAU sass: <https://ucsb-meds.github.io/customizing-quarto-websites/#/tldr1>
+Muchos de los cambios que podemos hacer con SASS, con archivos `.scss`, también pueden hacerse desde los distintos YAML's de nuestro blog, [esta fantática slide](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17) nos servirá de ejemplo.
 
+Algunas referencias sobre SASS:
 
-## CSS
-- <https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/>
+  - [Customizing Quarto Websites: Make your website stand out using SASS](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide): unas slides de Sam Csik.
+    
+  - [Video tutorial de Albert Rapp](https://www.youtube.com/watch?v=ErRX8plZpQE). llegué a él gracias a [este post](https://www.ddanieltan.com/posts/blogtips/).
 
-- <https://www.emilhvitfeldt.com/post/slidecraft-code-output/> 
-
-- CSS,  Fantástica [esta slide](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17)      slides: https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#15  
-
-Por ejemplo:  incluir markado en azulito  
-
-.my-bg-blue {
-  background: lightblue;
-}
-
-
-
+  - En [este post](https://www.rstudio.com/blog/2021-spring-rmd-news/) de 2021 se anunciaba que se podía utilizar SASS en el entorno Rmarkdown gracias al paquete [sass](https://rstudio.github.io/sass/) y en su web se puede encontrar esta [vignette](https://rstudio.github.io/sass/articles/sass.html). 
+    
+    
+    

@@ -91,7 +91,9 @@ Es imposible repasar todas las opciones de YAML en el taller, veremos solamente 
 
 #### Opciones YAML de nuestro blog
 
+
 {{< include ./_includes/_tt_05_04_yaml-tabset.qmd >}}
+
 
 <br>
 

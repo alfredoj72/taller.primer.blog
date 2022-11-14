@@ -51,7 +51,7 @@ El taller consta de una introducción y 7 secciones. Cada sección tiene un tuto
 
 #### 6. Tuneado del blog (10 min) [[tutorial 6](./taller/06_taller_tuneado-del-blog.qmd){target="_blank"}] 
 
-#### 7. Opciones de alojamiento (0 min) [[tutorial 7](./taller/07_taller_alojamiento.qmd){target="_blank"}] (WIP)
+#### 7. Opciones de alojamiento (1 min) [[tutorial 7](./taller/07_taller_alojamiento.qmd){target="_blank"}] (WIP)
 
 
 <br>

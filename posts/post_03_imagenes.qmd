@@ -8,8 +8,8 @@ description: |
 author:
   - name: Pedro J. Pérez
     affiliation: Universitat de València
-date: "2022-10-26"
-categories: [Quarto, imágenes, ejemplos]
+date: 2022-11-03
+categories: [Quarto, imágenes]
 image: "./thumbnails/thumbnail_03.png"
 title-block-banner: true #- {true, false }
 draft: false
@@ -81,7 +81,7 @@ Documentación [aquí](https://quarto.org/docs/authoring/figures.html#subfigures
 #### Para hacer esto ...
 
 
-::: {#fig-elephants layout-ncol=2}
+::: {layout-ncol=2}
 
 ![Imágen 1](thumbnail.jpg){#fig-2.1}
 
@@ -95,7 +95,7 @@ Dos imágenes alineadas
 
 
 ``` markdown
-::: {#fig-elephants layout-ncol=2}
+::: {layout-ncol=2}
 
 ![Imágen 1](thumbnail.jpg){#fig-2.1}
 

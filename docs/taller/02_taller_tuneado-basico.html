@@ -595,8 +595,8 @@ Tarea 2.5: Modificar el contenido de <code>index.qmd</code>
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>He cambiado la primera linea (<strong>title:</strong>) para poner un nombre a la página con el listado de posts.</p></li>
-<li><p>También podemos añadir una descripción con <strong>description:</strong>.</p></li>
+<li><p>He cambiado la segunda linea (<strong>title:</strong>) para poner un nombre a la página con el listado de posts.</p></li>
+<li><p>También podemos añadir una descripción (con <strong>description:</strong>).</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
@@ -780,9 +780,10 @@ Práctica 2.1: añadir una página más a nuestra web (<code>_quarto.yml</code>)
 <div class="callout-body-container callout-body">
 <p>Evidentemente puedes probar a añadir la página que quieras, pero te ofrezco la siguiente posibilidad:</p>
 <ul>
-<li><p>Crear una página llamada “Más cosas” que tenga la particularidad de que cuando recreemos el blog se convertirá en un desplegable con acceso a varias páginas: “Docencia 2”, “Docencia 3” y “Docencia 4”.</p></li>
+<li><p>Con las lineas 12 y siguientes crear una página más en nuestro blog. La página se llamará “Más cosas”. Además, esta página nueva tiene la particularidad de que cuando recreemos el blog se convertirá en un desplegable con acceso a varias páginas: “Docencia 2”, “Docencia 3” y “Docencia 4”.</p></li>
 <li><p>Fíjate que he puesto la nueva página a la izquierda (<code>left:</code>)</p></li>
-<li><p>Además, puedes probar distintas opciones de <code>theme</code> y de <code>highlighting</code></p></li>
+<li><p>Además, puedes probar distintas opciones de <code>theme</code> (linea 34) y de <code>highlighting</code> (linea 38)</p></li>
+<li><p>También puedes cambiar el color del fondo de la barra de navegación (linea 8)</p></li>
 </ul>
 <div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
@@ -791,7 +792,7 @@ Práctica 2.1: añadir una página más a nuestra web (<code>_quarto.yml</code>)
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi blog (aún en pruebas)"</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"profile.jpg"</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">    #background: primary    #- pink (el backgroung de la navbar)</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">    #background: "#CCCCFF"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)</span></span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Docencia"</span></span>
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docencia.qmd</span></span>

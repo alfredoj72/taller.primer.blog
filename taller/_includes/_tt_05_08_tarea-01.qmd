@@ -17,7 +17,7 @@ website:
   title: "Mi blog (aún en pruebas)"
   navbar:
     logo: "profile.jpg"
-    #background: primary    #- pink
+    #background: "#CCCCFF"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)
     right:
       - text: "About me"
         href: about.qmd
@@ -32,6 +32,8 @@ website:
         href: index.html
       - text: "Docencia"
         href: docencia.qmd
+      #- text: "Docencia"
+        #href: docencia.qmd
   page-footer:
     left: "© 2022 Pedro J. Pérez"
     center: "Hecho con [Quarto](https://quarto.org)"
@@ -46,12 +48,16 @@ website:
 #- 3/ Opciones referentes al formato de salida  ---------------------
 format:
   html:
+    #- https://quarto.org/docs/output-formats/html-themes.html
     theme: flatly  
     css: styles.css
     toc: true
-    highlight-style: a11y          
-  
+    #- https://quarto.org/docs/output-formats/html-code.html#highlighting
+    highlight-style: a11y     
 ```
 
 
 :::
+
+
+

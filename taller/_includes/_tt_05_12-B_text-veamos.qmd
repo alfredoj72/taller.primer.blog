@@ -1,6 +1,6 @@
----
 
-#### Layouts
+
+#### Layouts {.unnumbered}
 
 
 - Además de yaml, texto y chunk, para escribir con Quarto **conviene conocer la estructura o layout de los artículos** que se generan con él.
@@ -17,7 +17,7 @@
 
 ---
 
-#### Extensiones
+#### Extensiones {.unnumbered}
 
 - Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en lenguaje [Lua](https://es.wikipedia.org/wiki/Lua). 
 
@@ -28,10 +28,10 @@
 
 ---
 
-#### Imágenes
+#### Imágenes {.unnumbered}
 
 - Conocemos la sintaxis básica para insertar imágenes `![](<ruta-a-imagen>)`; ahora veremos posibilidades más avanzadas
 
-- Veamos como **insertar imágenes** con [este post](/posts/post_03_imagenes.html) del blog del taller.
+- Veamos como **insertar imágenes** con [este post](/posts/post_03_imagenes.html){target="_blank"} del blog del taller.
 
 <br>
