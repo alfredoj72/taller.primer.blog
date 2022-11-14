@@ -42,7 +42,7 @@ author:
 date: 2022-11-24
 
 # Default fields for citation
-citation: true
+# citation: true
 # Footnotes 
 footnotes-hover: true 
 

@@ -1,11 +1,11 @@
 ---
 #title: ""
-image: imagenes/portada_01.png
+image: imagenes/portada_06.png
 about:
   #- https://quarto.org/docs/websites/website-about.html#templates
   template: trestles  #- {jolla, solana, trestles}
   #- https://quarto.org/docs/websites/website-about.html#image
-  image-width: 42em
+  image-width: 39em
   image-shape: rectangle
   #- https://quarto.org/docs/websites/website-about.html#links
   links:

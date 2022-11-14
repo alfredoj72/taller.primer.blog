@@ -310,23 +310,23 @@
   {
     "objectID": "taller/slides_tt_para-thumbnails.html#estructura-del-taller",
     "href": "taller/slides_tt_para-thumbnails.html#estructura-del-taller",
-    "title": "Markdown basics",
+    "title": "Mi primer blog con Quarto",
     "section": "Estructura del taller",
     "text": "Estructura del taller\nHola\nHola pepe como estas bien siiii bien bien\npepeote"
   },
   {
     "objectID": "taller/slides_tt_para-thumbnails.html#hola-1",
     "href": "taller/slides_tt_para-thumbnails.html#hola-1",
-    "title": "Markdown basics",
+    "title": "Mi primer blog con Quarto",
     "section": "Hola",
     "text": "Hola"
   },
   {
     "objectID": "taller/slides_tt_para-thumbnails.html#cómo-va",
     "href": "taller/slides_tt_para-thumbnails.html#cómo-va",
-    "title": "Markdown basics",
+    "title": "Mi primer blog con Quarto",
     "section": "¿Cómo va?",
-    "text": "¿Cómo va?\nComo vas tete\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
+    "text": "¿Cómo va?\nComo vas tete\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
   },
   {
     "objectID": "taller/05_taller_escribir-posts.html",
@@ -522,7 +522,7 @@
     "href": "taller/07_taller_alojamiento.html",
     "title": "Alojamiento del blog",
     "section": "",
-    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí.\n\n\n\n\n\nNetlify drop\nRpubs\ntutorial Git en un curso de reproducibilidad: https://eliocamp.github.io/reproducibility-with-r/materials/day2/01-git/#git-and-github\nGuía de instalacion de Git: https://ucsb-meds.github.io/meds-install-windows.html\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2023,\n  author = {Pedro J. Pérez},\n  title = {Alojamiento del blog},\n  date = {2023-12-11},\n  url = {https://perezp44.github.io/taller.primer.blog//07_taller_alojamiento.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez. 2023. “Alojamiento del blog.” December 11,\n2023. https://perezp44.github.io/taller.primer.blog//07_taller_alojamiento.html."
+    "text": "Contexto\n\n\n\n\n\n\nTutorial preparado para el taller Mi primer blog con Quarto impartido en Córdoba (Spain) durante el I Congreso & XII Jornadas de Usuarios de R, 23-25 de noviembre de 2022.\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas\nEste tutorial es sólo una parte del taller. El taller completo está aquí.\n\n\n\n\n\nNetlify drop\nRpubs\ntutorial Git en un curso de reproducibilidad: https://eliocamp.github.io/reproducibility-with-r/materials/day2/01-git/#git-and-github\nGuía de instalacion de Git: https://ucsb-meds.github.io/meds-install-windows.html\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
   },
   {
     "objectID": "taller/09_taller_plantilla_escribir_quarto.html",
@@ -620,14 +620,14 @@
     "href": "taller/imagenes/tt_01/ejemplo_1.html",
     "title": "El título de mi informe",
     "section": "",
-    "text": "En este informe haremos un resumen (o summary) del conjunto de datos iris.\n\nsummary(iris)\n\n  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   \n Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  \n 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  \n Median :5.800   Median :3.000   Median :4.350   Median :1.300  \n Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  \n 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  \n Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  \n       Species  \n setosa    :50  \n versicolor:50  \n virginica :50  \n                \n                \n                \n\n\nEl trozo de arriba es un chunk de código R. Cuando compile el documento, knitr ejecutará el código y mostrará los resultados en el documento final.\nCon esto finalizamos este informe.\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2017,\n  author = {Pedro J. Pérez and Yo mismo},\n  title = {El título de mi informe},\n  date = {2017-01-03},\n  url = {https://perezp44.github.io/taller.primer.blog//ejemplo_1.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez, and Yo mismo. 2017. “El título de mi\ninforme.” January 3, 2017. https://perezp44.github.io/taller.primer.blog//ejemplo_1.html."
+    "text": "En este informe haremos un resumen (o summary) del conjunto de datos iris.\n\nsummary(iris)\n\n  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   \n Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  \n 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  \n Median :5.800   Median :3.000   Median :4.350   Median :1.300  \n Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  \n 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  \n Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  \n       Species  \n setosa    :50  \n versicolor:50  \n virginica :50  \n                \n                \n                \n\n\nEl trozo de arriba es un chunk de código R. Cuando compile el documento, knitr ejecutará el código y mostrará los resultados en el documento final.\nCon esto finalizamos este informe.\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
   },
   {
     "objectID": "taller/10_taller_plantilla_revealjs.html",
     "href": "taller/10_taller_plantilla_revealjs.html",
     "title": "Escribiendo slides con Reveals.jst",
     "section": "",
-    "text": "En este tutorial sirve de plantilla para recordar lo q aprendo de Reveals.js\n\n\nPara hacer pausas en una slide: poner . . . o poner ::: {.incremental}\npara la slide de titulo: https://stackoverflow.com/questions/72884987/custom-background-in-title-slide-using-quartos-reveal-implementation\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.esCitaBibTeX@online{j.pérez2023,\n  author = {Pedro J. Pérez},\n  title = {Escribiendo slides con Reveals.jst},\n  date = {2023-12-11},\n  url = {https://perezp44.github.io/taller.primer.blog//10_taller_plantilla_revealjs.html},\n  langid = {es}\n}\nPor favor cita este trabajo como:\nPedro J. Pérez. 2023. “Escribiendo slides con Reveals.jst.”\nDecember 11, 2023. https://perezp44.github.io/taller.primer.blog//10_taller_plantilla_revealjs.html."
+    "text": "En este tutorial sirve de plantilla para recordar lo q aprendo de Reveals.js\n\n\nPara hacer pausas en una slide: poner . . . o poner ::: {.incremental}\npara la slide de titulo: https://stackoverflow.com/questions/72884987/custom-background-in-title-slide-using-quartos-reveal-implementation\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
   },
   {
     "objectID": "taller/04_taller_crear-post.html",
@@ -998,7 +998,7 @@
     "href": "materiales.html#estructura-del-taller",
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "Estructura del taller",
-    "text": "Estructura del taller\n(El taller consta de una introducción y 7 secciones)\n\n0. Introducción (15 min)\n\n\n1. Creación de un blog básico: mi blog en 3 minutos (10 min) [tutorial 1]\n\n\n2. Tuneado básico del blog (15 min + 15 min de Práctica) [tutorial 2]\n\n\n3. Convirtiendo el blog en una web académica (5 min) [tutorial 3]\n\n\n4. Workflow: ¿cómo crear un post? (5 min) [tutorial 4]\n\n\n5. Escribiendo posts con Quarto (15 min + 15 min de Práctica) [tutorial 5]\n\n\n6. Tuneado del blog (15 min) [tutorial 6]\n\n\n7. Opciones de alojamiento (5 min) [tutorial 7]\n \n\nSeguramente usaremos esta Etherpad.\n\n\nSlides para clase BigData (para usar en curso BigData)"
+    "text": "Estructura del taller\n(El taller consta de una introducción y 7 secciones)\n\n0. Introducción (15 min)\n\n\n1. Creación de un blog básico: mi blog en 3 minutos (10 min) [tutorial 1]\n\n\n2. Tuneado básico del blog (15 min + 15 min de Práctica) [tutorial 2]\n\n\n3. Convirtiendo el blog en una web académica (5 min) [tutorial 3]\n\n\n4. Workflow: ¿cómo crear un post? (5 min) [tutorial 4]\n\n\n5. Escribiendo posts con Quarto (15 min + 15 min de Práctica) [tutorial 5]\n\n\n6. Tuneado del blog (10 min) [tutorial 6]\n\n\n7. Opciones de alojamiento (0 min) [tutorial 7] (WIP)\n \n\nSeguramente usaremos esta Etherpad.\n\n\nSlides para clase BigData (para usar en curso BigData)"
   },
   {
     "objectID": "about.html",

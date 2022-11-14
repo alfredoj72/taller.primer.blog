@@ -49,9 +49,9 @@ El taller consta de una introducción y 7 secciones. Cada sección tiene un tuto
 #### 5. Escribiendo posts con Quarto (15 min + 15 min de Práctica) [[tutorial 5](./taller/05_taller_escribir-posts.qmd){target="_blank"}]
 
 
-#### 6. Tuneado del blog (15 min) [[tutorial 6](./taller/06_taller_tuneado-del-blog.qmd){target="_blank"}] 
+#### 6. Tuneado del blog (10 min) [[tutorial 6](./taller/06_taller_tuneado-del-blog.qmd){target="_blank"}] 
 
-#### 7. Opciones de alojamiento (5 min) [[tutorial 7](./taller/07_taller_alojamiento.qmd){target="_blank"}]
+#### 7. Opciones de alojamiento (0 min) [[tutorial 7](./taller/07_taller_alojamiento.qmd){target="_blank"}] (WIP)
 
 
 <br>
