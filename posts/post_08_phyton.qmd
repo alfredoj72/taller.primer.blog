@@ -63,3 +63,6 @@ my_data = r.iris
 )
 ```
 
+## Some biblio
+
+- [Quarto with Python](https://www.meyerperin.com/using-quarto/)

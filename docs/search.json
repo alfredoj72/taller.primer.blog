@@ -1019,7 +1019,14 @@
     "href": "posts/post_08_phyton.html",
     "title": "Using R data with phyton",
     "section": "",
-    "text": "Quarto ha hecho que me vuelva a interesar por Phyton!!!\nEs muy fácil combinar chunks de R con Py, solo hay que pasar los datos así: my_py_data = r.df\nMe falta ver como pasar datos de Py a R, ya lo veré.\n\ndf <- gapminder::gapminder\niris <- iris\n\n\nfrom siuba import _, group_by, summarize\n\nmy_data = r.df\n\n(my_data\n  >> group_by(_.continent)\n  >> summarize(avg_lifeExp = _.lifeExp.mean())\n  )\n\n  continent  avg_lifeExp\n0    Africa    48.865330\n1  Americas    64.658737\n2      Asia    60.064903\n3    Europe    71.903686\n4   Oceania    74.326208\n\n\n\nfrom siuba import mutate, _\nfrom plotnine import ggplot, aes, geom_point\n\nmy_data = r.iris\n\n(my_data\n  >> ggplot(aes(\"Sepal.Length\", \"Petal.Length\", color = \"Species\"))\n   + geom_point()\n)\n\n<ggplot: (8740513311260)>\n\n\n\n\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
+    "text": "Quarto ha hecho que me vuelva a interesar por Phyton!!!\nEs muy fácil combinar chunks de R con Py, solo hay que pasar los datos así: my_py_data = r.df\nMe falta ver como pasar datos de Py a R, ya lo veré."
+  },
+  {
+    "objectID": "posts/post_08_phyton.html#some-biblio",
+    "href": "posts/post_08_phyton.html#some-biblio",
+    "title": "Using R data with phyton",
+    "section": "1 Some biblio",
+    "text": "1 Some biblio\n\nQuarto with Python"
   },
   {
     "objectID": "posts/post_zz_WIP.html",
