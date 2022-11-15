@@ -633,7 +633,7 @@ Las soluciones a la Práctica están [aquí](/posts/post_04_practica-05.html)
 
 ## Algunas opciones de YAML
 
--   `lang: es`
+-   `lang: es`: <https://quarto.org/docs/authoring/language.html>
 
 # 2. Utilizando CSS {.unnumbered background-color="#b8c2aa"}
 
@@ -660,5 +660,10 @@ Las soluciones a la Práctica están [aquí](/posts/post_04_practica-05.html)
   - Muchas gracias por la atención
   
   - Espero que el taller haya salido OK
+  
+  - Si alguien motivado por el taller acaba haciéndose un blog, please que me avise (pedro.j.perez@uv.es)
+  
+  - Big Thanks to all the Posit/Quarto team!!!!
+  
   
   - Bye, nos vemos en las próximas Jornadas

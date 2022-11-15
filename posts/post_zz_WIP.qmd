@@ -5,7 +5,7 @@ description: |
 #author:
 #  - name: Pedro J. Pérez
 #    affiliation: Universitat de València
-date: 2022-11-08
+date: 2022-11-21
 categories: [Quarto, más elementos, ejemplos]
 image: "./thumbnails/thumbnail_00.png"
 title-block-banner: true #- {true, false }

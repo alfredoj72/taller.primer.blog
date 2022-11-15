@@ -10,7 +10,7 @@
 <atom:link href="https://perezp44.github.io/taller.primer.blog/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.2.237</generator>
-<lastBuildDate>Mon, 07 Nov 2022 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 20 Nov 2022 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Más elementos (WIP)</title>
   <dc:creator>Pedro J. Pérez</dc:creator>
@@ -159,7 +159,7 @@ Tarea xx
   <category>más elementos</category>
   <category>ejemplos</category>
   <guid>https://perezp44.github.io/taller.primer.blog/posts/post_zz_WIP.html</guid>
-  <pubDate>Mon, 07 Nov 2022 23:00:00 GMT</pubDate>
+  <pubDate>Sun, 20 Nov 2022 23:00:00 GMT</pubDate>
   <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_00.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
@@ -185,8 +185,51 @@ Tarea xx
   <category>Quarto</category>
   <category>markdown</category>
   <guid>https://perezp44.github.io/taller.primer.blog/posts/post_40_markdown-basics.html</guid>
-  <pubDate>Sun, 06 Nov 2022 23:00:00 GMT</pubDate>
+  <pubDate>Sat, 19 Nov 2022 23:00:00 GMT</pubDate>
   <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_40.png" medium="image" type="image/png" height="83" width="144"/>
+</item>
+<item>
+  <title>Observable JS</title>
+  <dc:creator>Pedro J. Pérez</dc:creator>
+  <dc:creator>Pedro J. Pérez</dc:creator>
+  <link>https://perezp44.github.io/taller.primer.blog/posts/post_07_observable.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="intro" class="level2 page-columns page-full" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="intro"><span class="header-section-number">1</span> Intro</h2>
+<p>Ya sabemos que <a href="https://quarto.org/">Quarto®</a> is an open-source scientific and technical publishing system built on Pandoc. Permite crear contenidos con R, Python, Julia y Observable.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/quarto.png" height="50"></p>
+</div></div><p>Como señala Nicolas Lambert <a href="https://neocarto.github.io/bertin/examples/quarto.html">aquí</a>:</p>
+<blockquote class="blockquote">
+<p>Combining R and Observable javascript allows to take advantage of the strengths of both languages. It allows to combine the statistical analysis possibilities of R and the reactive visualization features of Observable. A win win strategy.</p>
+</blockquote>
+<p><br></p>
+</section>
+<section id="un-ejemplo" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="un-ejemplo"><span class="header-section-number">2</span> Un ejemplo</h2>
+<p><br></p>
+</section>
+<section id="biblio" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="biblio"><span class="header-section-number">3</span> Biblio</h2>
+<ul>
+<li><p><a href="https://neocarto.github.io/bertin/examples/quarto.html">Let’s make maps with bertin.js in Quarto</a> y <a href="https://neocarto.github.io/Quarto/r_ojs.html">aquí</a>:</p></li>
+<li><p><a href="https://github.com/neocarto/bertin">Bertin.js</a>: a JavaScript library for visualizing geospatial data and make thematic maps for the web.</p></li>
+</ul>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div> ]]></description>
+  <category>Quarto</category>
+  <category>Observable</category>
+  <guid>https://perezp44.github.io/taller.primer.blog/posts/post_07_observable.html</guid>
+  <pubDate>Sun, 06 Nov 2022 23:00:00 GMT</pubDate>
+  <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_07.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
   <title>Tuneando con CSS (cambios bizarros!!)</title>
@@ -698,7 +741,7 @@ Tarea xx
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">{{<span class="sc" style="color: #5E5E5E;">&lt;</span> tweet user<span class="ot" style="color: #003B4F;">=</span>Culturas2_tve id<span class="ot" style="color: #003B4F;">=</span><span class="dv" style="color: #AD0000;">1589703143562309632</span> <span class="sc" style="color: #5E5E5E;">&gt;</span>}}</span></code></pre></div>
 </div>
-<p></p><div id="tweet-86249"></div><script>tweet={"url":"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632","author_name":"Culturas 2","author_url":"https:\/\/twitter.com\/Culturas2_tve","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEn primicia en Culturas 2, así empieza el single “Abnegación”, de \u003Ca href=\"https:\/\/twitter.com\/NachoVegasTwit?ref_src=twsrc%5Etfw\"\u003E@NachoVegasTwit\u003C\/a\u003E, que lanza este viernes. La entrevista completa al artista gijonés en \u003Ca href=\"https:\/\/t.co\/d65rOJlOvY\"\u003Ehttps:\/\/t.co\/d65rOJlOvY\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/cAqUtR6rIy\"\u003Epic.twitter.com\/cAqUtR6rIy\u003C\/a\u003E\u003C\/p\u003E&mdash; Culturas 2 (@Culturas2_tve) \u003Ca href=\"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-86249").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-96708"></div><script>tweet={"url":"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632","author_name":"Culturas 2","author_url":"https:\/\/twitter.com\/Culturas2_tve","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEn primicia en Culturas 2, así empieza el single “Abnegación”, de \u003Ca href=\"https:\/\/twitter.com\/NachoVegasTwit?ref_src=twsrc%5Etfw\"\u003E@NachoVegasTwit\u003C\/a\u003E, que lanza este viernes. La entrevista completa al artista gijonés en \u003Ca href=\"https:\/\/t.co\/d65rOJlOvY\"\u003Ehttps:\/\/t.co\/d65rOJlOvY\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/cAqUtR6rIy\"\u003Epic.twitter.com\/cAqUtR6rIy\u003C\/a\u003E\u003C\/p\u003E&mdash; Culturas 2 (@Culturas2_tve) \u003Ca href=\"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-96708").innerHTML = tweet["html"];</script><p></p>
 <p><br></p>
 </section>
 <section id="inserta-un-tab-set" class="level2" data-number="3">
@@ -816,8 +859,8 @@ Tarea xx
 <span id="cb6-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
 
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div id="htmlwidget-2c1401bc07e05e063e79" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2c1401bc07e05e063e79">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-251195491f2d993a7f4a" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-251195491f2d993a7f4a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
 </div></div></div>
 <p><br><br><br><br><br><br><br><br></p>
 <div class="cell page-columns page-full">
@@ -1184,7 +1227,7 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./imagenes/economia.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-desc-position="left" data-description="El logo-nano de la facultad de Economía de la Universtat de València" title="Mi imagen con Lighbox activado"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
+<p><a href="./imagenes/economia.gif" class="lightbox" data-description="El logo-nano de la facultad de Economía de la Universtat de València" data-gallery="quarto-lightbox-gallery-1" data-desc-position="left" title="Mi imagen con Lighbox activado"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">Mi imagen con Lighbox activado</figcaption><p></p>
 </figure>
 </div>
@@ -1222,7 +1265,7 @@ Instalar y usar la extensión <strong>Quarto social embeds</strong>
 <span id="cb8-4"></span>
 <span id="cb8-5">{{<span class="sc" style="color: #5E5E5E;">&lt;</span> tweet user<span class="ot" style="color: #003B4F;">=</span>ambitocultural id<span class="ot" style="color: #003B4F;">=</span><span class="dv" style="color: #AD0000;">1589543369512026112</span> <span class="sc" style="color: #5E5E5E;">&gt;</span>}}</span></code></pre></div>
 </div>
-<p></p><div id="tweet-40001"></div><script>tweet={"url":"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112","author_name":"Ámbito Cultural","author_url":"https:\/\/twitter.com\/ambitocultural","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEl cantautor Nacho Vegas está de vuelta en la escena musical con un nuevo trabajo lleno de gran hondura poética \uD83D\uDC49 Mundos inmóviles derrumbándose \uD83C\uDFA4 Estará acompañado por \u003Ca href=\"https:\/\/twitter.com\/fneirad?ref_src=twsrc%5Etfw\"\u003E@fneirad\u003C\/a\u003E, crítico y periodista musical, en un evento único\uD83D\uDD1D\u003Cbr\u003E\u003Cbr\u003E\uD83D\uDD17\u003Ca href=\"https:\/\/t.co\/kn4uJeMRWo\"\u003Ehttps:\/\/t.co\/kn4uJeMRWo\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/hzdwJzxrfj\"\u003Epic.twitter.com\/hzdwJzxrfj\u003C\/a\u003E\u003C\/p\u003E&mdash; Ámbito Cultural (@ambitocultural) \u003Ca href=\"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-40001").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-32178"></div><script>tweet={"url":"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112","author_name":"Ámbito Cultural","author_url":"https:\/\/twitter.com\/ambitocultural","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEl cantautor Nacho Vegas está de vuelta en la escena musical con un nuevo trabajo lleno de gran hondura poética \uD83D\uDC49 Mundos inmóviles derrumbándose \uD83C\uDFA4 Estará acompañado por \u003Ca href=\"https:\/\/twitter.com\/fneirad?ref_src=twsrc%5Etfw\"\u003E@fneirad\u003C\/a\u003E, crítico y periodista musical, en un evento único\uD83D\uDD1D\u003Cbr\u003E\u003Cbr\u003E\uD83D\uDD17\u003Ca href=\"https:\/\/t.co\/kn4uJeMRWo\"\u003Ehttps:\/\/t.co\/kn4uJeMRWo\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/hzdwJzxrfj\"\u003Epic.twitter.com\/hzdwJzxrfj\u003C\/a\u003E\u003C\/p\u003E&mdash; Ámbito Cultural (@ambitocultural) \u003Ca href=\"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-32178").innerHTML = tweet["html"];</script><p></p>
 <p><br><br></p>
 <p>Para insertar un <strong>gist de Github</strong> has de:</p>
 <div class="cell">
@@ -1337,8 +1380,8 @@ Instalar y usar la extensión <strong>Quarto social embeds</strong>
 <span id="cb2-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
 
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div id="htmlwidget-45179fe09a5bd3e94da5" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-45179fe09a5bd3e94da5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-82bc90aa620bc3cbb33e" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-82bc90aa620bc3cbb33e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
 </div></div></div>
 <p><br></p>
 <p>Y ahora ocupando toda la pantalla:</p>
@@ -1351,8 +1394,8 @@ Instalar y usar la extensión <strong>Quarto social embeds</strong>
 <span id="cb3-6"><span class="fu" style="color: #4758AB;">addMarkers</span>(<span class="at" style="color: #657422;">lng =</span> <span class="sc" style="color: #5E5E5E;">-</span><span class="fl" style="color: #AD0000;">4.7880</span>, <span class="at" style="color: #657422;">lat =</span> <span class="fl" style="color: #AD0000;">37.885</span>, <span class="at" style="color: #657422;">popup =</span> <span class="st" style="color: #20794D;">"Rectorado de la Universidad de Córdoba</span><span class="sc" style="color: #5E5E5E;">\n</span><span class="st" style="color: #20794D;"> (Sede de las XII Jornadas de usuarios de R)"</span>)</span>
 <span id="cb3-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
 <div class="cell-output-display column-screen">
-<div id="htmlwidget-ae4c4e31818cc7c7344f" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ae4c4e31818cc7c7344f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f2547fffa2a91b9c6ea5" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f2547fffa2a91b9c6ea5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>

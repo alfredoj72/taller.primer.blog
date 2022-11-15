@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Pedro J. Pérez">
-<meta name="description" content="Elementos básicos de Markdown (WIP)">
+<meta name="description" content="Intentando entender qué es y cómo usar Observable JS en R.">
 
-<title>Mi primer blog con Quarto (WIP) - Markdown basics (WIP)</title>
+<title>Mi primer blog con Quarto (WIP) - Observable JS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,26 +62,32 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<style>
+    .quarto-title-block .quarto-title-banner {
+      background-image: url(thumbnails/thumbnail_07.png);
+background-size: cover;
+    }
+    </style>
 
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/styles.css">
-<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Markdown basics (WIP)">
-<meta property="og:description" content="Elementos básicos de Markdown (WIP)">
-<meta property="og:image" content="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_40.png">
+<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Observable JS">
+<meta property="og:description" content="Intentando entender qué es y cómo usar **Observable JS** en R.">
+<meta property="og:image" content="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_07.png">
 <meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
 <meta property="og:image:height" content="426">
 <meta property="og:image:width" content="740">
-<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Markdown basics (WIP)">
-<meta name="twitter:description" content="Elementos básicos de Markdown (WIP)">
-<meta name="twitter:image" content="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_40.png">
+<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Observable JS">
+<meta name="twitter:description" content="Intentando entender qué es y cómo usar **Observable JS** en R.">
+<meta name="twitter:image" content="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_07.png">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image-height" content="426">
 <meta name="twitter:image-width" content="740">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -149,64 +155,93 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Observable JS</h1>
+                  <div>
+        <div class="description">
+          <p>Intentando entender qué es y cómo usar <strong>Observable JS</strong> en R.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Quarto</div>
+                <div class="quarto-category">Observable</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-heading"></div>
+    
+      <div class="quarto-title-meta-contents">
+      Pedro J. Pérez 
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              Universitat de València
+            </p>
+        </div>
+      </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Fecha de Publicación</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">7 de noviembre de 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#enlaces" id="toc-enlaces" class="nav-link active" data-scroll-target="#enlaces"><span class="toc-section-number">1</span>  Enlaces</a></li>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro"><span class="toc-section-number">1</span>  Intro</a></li>
+  <li><a href="#un-ejemplo" id="toc-un-ejemplo" class="nav-link" data-scroll-target="#un-ejemplo"><span class="toc-section-number">2</span>  Un ejemplo</a></li>
+  <li><a href="#biblio" id="toc-biblio" class="nav-link" data-scroll-target="#biblio"><span class="toc-section-number">3</span>  Biblio</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/taller.primer.blog/edit/main/posts/post_40_markdown-basics.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/taller.primer.blog/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/taller.primer.blog/edit/main/posts/post_07_observable.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/taller.primer.blog/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Markdown basics (WIP)</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Quarto</div>
-    <div class="quarto-category">markdown</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    <p>Elementos básicos de Markdown (WIP)</p>
-  </div>
-</div>
+<main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Autor</div>
-    <div class="quarto-title-meta-contents">
-             <p>Pedro J. Pérez </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Fecha de Publicación</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">20 de noviembre de 2022</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
 
-</header>
+<section id="intro" class="level2 page-columns page-full" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="intro"><span class="header-section-number">1</span> Intro</h2>
+<p>Ya sabemos que <a href="https://quarto.org/">Quarto®</a> is an open-source scientific and technical publishing system built on Pandoc. Permite crear contenidos con R, Python, Julia y Observable.</p>
 
-<p>Cosas básicas de Rmd para mis estudiantes BigData</p>
-<section id="enlaces" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="enlaces"><span class="header-section-number">1</span> Enlaces</h2>
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="imagenes/quarto.png" height="50"></p>
+</div></div><p>Como señala Nicolas Lambert <a href="https://neocarto.github.io/bertin/examples/quarto.html">aquí</a>:</p>
+<blockquote class="blockquote">
+<p>Combining R and Observable javascript allows to take advantage of the strengths of both languages. It allows to combine the statistical analysis possibilities of R and the reactive visualization features of Observable. A win win strategy.</p>
+</blockquote>
+<p><br></p>
+</section>
+<section id="un-ejemplo" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="un-ejemplo"><span class="header-section-number">2</span> Un ejemplo</h2>
+<p><br></p>
+</section>
+<section id="biblio" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="biblio"><span class="header-section-number">3</span> Biblio</h2>
 <ul>
-<li><a href="https://wikidata.com" target="_blank">Wikidata</a></li>
+<li><p><a href="https://neocarto.github.io/bertin/examples/quarto.html">Let’s make maps with bertin.js in Quarto</a> y <a href="https://neocarto.github.io/Quarto/r_ojs.html">aquí</a>:</p></li>
+<li><p><a href="https://github.com/neocarto/bertin">Bertin.js</a>: a JavaScript library for visualizing geospatial data and make thematic maps for the web.</p></li>
 </ul>
 
 

@@ -310,21 +310,21 @@
   {
     "objectID": "taller/slides_tt_para-thumbnails.html#estructura-del-taller",
     "href": "taller/slides_tt_para-thumbnails.html#estructura-del-taller",
-    "title": "Mi primer blog con Quarto",
+    "title": "Observable JS",
     "section": "Estructura del taller",
     "text": "Estructura del taller\nHola\nHola pepe como estas bien siiii bien bien\npepeote"
   },
   {
     "objectID": "taller/slides_tt_para-thumbnails.html#hola-1",
     "href": "taller/slides_tt_para-thumbnails.html#hola-1",
-    "title": "Mi primer blog con Quarto",
+    "title": "Observable JS",
     "section": "Hola",
     "text": "Hola"
   },
   {
     "objectID": "taller/slides_tt_para-thumbnails.html#cómo-va",
     "href": "taller/slides_tt_para-thumbnails.html#cómo-va",
-    "title": "Mi primer blog con Quarto",
+    "title": "Observable JS",
     "section": "¿Cómo va?",
     "text": "¿Cómo va?\nComo vas tete\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
   },
@@ -536,7 +536,7 @@
     "href": "taller/slides_tareas_01.html#algunas-opciones-de-yaml",
     "title": "Mi primer blog con Quarto",
     "section": "Algunas opciones de YAML",
-    "text": "Algunas opciones de YAML\n\nlang: es"
+    "text": "Algunas opciones de YAML\n\nlang: es: https://quarto.org/docs/authoring/language.html"
   },
   {
     "objectID": "taller/07_taller_alojamiento.html",
@@ -746,7 +746,7 @@
     "href": "taller/06_taller_tuneado-del-blog.html#sass",
     "title": "Tuneado del blog",
     "section": "7 SASS",
-    "text": "7 SASS\nSi sé muy poquito de CSS imaginaros cuanto sé de SASS. Pero allá vamos, anotaré aquí algunas que he medio aprendido:\nMuchos de los cambios que podemos hacer con SASS, con archivos .scss, también pueden hacerse desde los distintos YAML’s de nuestro blog, esta fantática slide nos servirá de ejemplo.\nAlgunas referencias sobre SASS:\n\nCustomizing Quarto Websites: Make your website stand out using SASS: unas slides de Sam Csik.\nVideo tutorial de Albert Rapp. llegué a él gracias a este post.\nEn este post de 2021 se anunciaba que se podía utilizar SASS en el entorno Rmarkdown gracias al paquete sass y en su web se puede encontrar esta vignette."
+    "text": "7 SASS\nSi sé muy poquito de CSS imaginaros cuanto sé de SASS. Pero allá vamos, anotaré aquí algunas que he medio aprendido.\nMuchos de los cambios que podemos hacer con SASS, con archivos .scss, también pueden hacerse desde los distintos YAML’s de nuestro blog, esta fantática slide nos servirá de ejemplo.\nLa documentación oficial de Quarto para documentos html sobre como usar los themes y tunearlos con Sass; además podemos encontrar un listado de variables Sass y un archivo .scss donde ver todas las variables Sass usadas en los themes. Aquí puedes ver los ficheros .scss usados por los 25 25 built-in Bootswatch themes. Aquí hay más información sobre el uso de Sass en Quarto. Para saber aún más, la web de Quarto nos redirige aquí.\nhttps://quarto.org/docs/output-formats/html-themes.html#overview\nPara las slides en formato revealjs: la documentación oficial de Quarto sobre como usar los themes y tunearlos con Sass; además podemos encontrar un listado con las variables Sass y un listado de archivos .scss para revealjs slides.\n\nAlgunas referencias sobre SASS:\n\nCustomizing Quarto Websites: Make your website stand out using SASS: unas slides de Sam Csik.\nVideo tutorial de Albert Rapp. llegué a él gracias a este post.\nEn este post de 2021 se anunciaba que se podía utilizar SASS en el entorno Rmarkdown gracias al paquete sass y en su web se puede encontrar esta vignette.\n\n\n\n7.1 “Práctica”\nSencillamente, para ver cómo es un archivo .scss vamos a ir al blog de Danielle Navarro y desde allí podemos dirigirnos al repo del blog donde podemos ver su archivo ember.scss. No es un archivo muy largo, simplemente coge el theme “litera” como base y ajusta un par de cosas como las fuentes.\nSi quisiéramos copiar/usar los ajustes de Danielle, sólo tendríamos que copiar su archivo en la carpeta raíz de nuestro blog y añadir en _quarto.yml la siguiente linea anidada en format: html:. Algo como esto:\n\nformat:\n  html:\n    theme: ember.scss"
   },
   {
     "objectID": "taller/slides_tt_pruebas.html#estructura-del-taller",
@@ -788,7 +788,7 @@
     "href": "blog.html",
     "title": "Blog para el taller “Mi primer blog con Quarto”",
     "section": "",
-    "text": "Layout’s\n\n\n\n\n\n\n\nQuarto\n\n\nlayout\n\n\n\n\nViendo las posibilidades de Layout que tenemos en Quarto\n\n\n\n\n\n\nNov 1, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nExtensiones\n\n\n\n\n\n\n\nQuarto\n\n\nextensiones\n\n\n\n\nIntentando entender qué son y cómo usar las extensiones de Quarto\n\n\n\n\n\n\nNov 2, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nImágenes\n\n\n\n\n\n\n\nQuarto\n\n\nimágenes\n\n\n\n\nRepasando algunas opciones de Quarto para insertar imágenes.\n\n\n\n\n\n\nNov 3, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nMi Segundo post con Quarto\n\n\n\n\n\n\n\nTaller\n\n\nsoluciones practica nº 5\n\n\n\n\nSoluciones a la Práctica del tutorial nº 5.\n\n\n\n\n\n\nNov 4, 2022\n\n\nPedro J. Pérez, Nosotros\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nTuneando con CSS\n\n\n\n\n\n\n\nQuarto\n\n\nCSS\n\n\n\n\nCambiando el formato con CSS\n\n\n\n\n\n\nNov 5, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nTuneando con CSS (cambios bizarros!!)\n\n\n\n\n\n\n\nQuarto\n\n\nCSS\n\n\n\n\nEl contenido de este post es el mismo quer el del anterior, PERO , pero ahora haciendo cambios bizarros!! con CSS.\n\n\n\n\n\n\nNov 6, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nMarkdown basics (WIP)\n\n\n\n\n\n\n\nQuarto\n\n\nmarkdown\n\n\n\n\nElementos básicos de Markdown (WIP)\n\n\n\n\n\n\nNov 7, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nMás elementos (WIP)\n\n\n\n\n\n\n\nQuarto\n\n\nmás elementos\n\n\nejemplos\n\n\n\n\nAlgunos elementos más de Quarto para escribir artículos o posts.\n\n\n\n\n\n\nNov 8, 2022\n\n\nPedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Layout’s\n\n\n\n\n\n\n\nQuarto\n\n\nlayout\n\n\n\n\nViendo las posibilidades de Layout que tenemos en Quarto\n\n\n\n\n\n\nNov 1, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nExtensiones\n\n\n\n\n\n\n\nQuarto\n\n\nextensiones\n\n\n\n\nIntentando entender qué son y cómo usar las extensiones de Quarto\n\n\n\n\n\n\nNov 2, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nImágenes\n\n\n\n\n\n\n\nQuarto\n\n\nimágenes\n\n\n\n\nRepasando algunas opciones de Quarto para insertar imágenes.\n\n\n\n\n\n\nNov 3, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nMi Segundo post con Quarto\n\n\n\n\n\n\n\nTaller\n\n\nsoluciones practica nº 5\n\n\n\n\nSoluciones a la Práctica del tutorial nº 5.\n\n\n\n\n\n\nNov 4, 2022\n\n\nPedro J. Pérez, Nosotros\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nTuneando con CSS\n\n\n\n\n\n\n\nQuarto\n\n\nCSS\n\n\n\n\nCambiando el formato con CSS\n\n\n\n\n\n\nNov 5, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nTuneando con CSS (cambios bizarros!!)\n\n\n\n\n\n\n\nQuarto\n\n\nCSS\n\n\n\n\nEl contenido de este post es el mismo quer el del anterior, PERO , pero ahora haciendo cambios bizarros!! con CSS.\n\n\n\n\n\n\nNov 6, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nObservable JS\n\n\n\n\n\n\n\nQuarto\n\n\nObservable\n\n\n\n\nIntentando entender qué es y cómo usar Observable JS en R.\n\n\n\n\n\n\nNov 7, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nMarkdown basics (WIP)\n\n\n\n\n\n\n\nQuarto\n\n\nmarkdown\n\n\n\n\nElementos básicos de Markdown (WIP)\n\n\n\n\n\n\nNov 20, 2022\n\n\nPedro J. Pérez, Pedro J. Pérez\n\n\n0 min\n\n\n\n\n\n\n  \n\n\n\n\nMás elementos (WIP)\n\n\n\n\n\n\n\nQuarto\n\n\nmás elementos\n\n\nejemplos\n\n\n\n\nAlgunos elementos más de Quarto para escribir artículos o posts.\n\n\n\n\n\n\nNov 21, 2022\n\n\nPedro J. Pérez\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post_05_css.html",
@@ -817,6 +817,27 @@
     "title": "Tuneando con CSS",
     "section": "3 Estilos útiles pero (un poco) bizarros!!",
     "text": "3 Estilos útiles pero (un poco) bizarros!!\nEn clase, para mostrar como podemos modificar algunos de los elementos de un documento hecho con Rmd (ahora con Quarto) usaba un archivo css con cambios digamos un poco raros: a lo mejor ponía el titulo en pink, el autor en verde etc.. etc… Sólo era un ejemplo para mostrar algunas de las posibilidades para modificar la apariencia de un documento con CSS.\nSi quieres ver como quedaría este mismo post pero utilizando las reglas CSS (bizarras) que puedes ver abajo, puedes hacerlo aquí. Ya os digo que los cambios son un poco raros, vamos no muy estéticos.\n\n\nCódigo\n/* definiendo estilos del body : de toda la página */ \nbody { \n  background-color: aliceblue; }  /* color del fondo*/ \n\n\n/* importo un tipo de letra */ \n@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300); \n\n/* definiendo estilos de los párrafos */ \np {\n  text-align: justify;         /* justificar el texto del body */      \n  line-height: 1.4;            /* anchura entre las lineas 1.0 is the default in Firefox. 2.0 provides a large space */     \n  margin: 10px 0px 10px 0px;    /* margenes entre los párafos: top, izquierda, abajo, left */   \n  font-size: 13pt;                                     /* tamaño de letra */   \n  font-family: 'Open Sans', Helvetica, sans-serif; }   /* tipo de letra */  \n\n\n\n/* definiendo estilos de las cajas de código (chunks) */ \npre {\n  background-color: pink;  /* color de las cajas de código */ \n    font-size: 10pt;\n    border-radius: 9px;     /* q los bordes de las cajas sean redondas */ \n    font-family: Monaco, monospace;\n    border: 3px solid green; }\n\n/* hacer cambios en el texto en negrita, ahora el texto en negrita saldrá en verde!!! */ \nstrong {\n  color: green; }\n\n\n/* cambiar el color de los hipervinculos/enlaces  */\na {\n  color: brown;\n  font-weight: bold; }\n\n\n/* cambiar el aspecto del TOC: \nhttps://stackoverflow.com/questions/42546001/how-to-change-colors-and-attributes-of-table-of-contents-in-r-markdown-html-docu */\n.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{\n  color: darkgreen;\n  font-weight: bold;\n  background-color: gold; }\n   \n   \n/* para hacer cajas de texto de colorines*/\n\n.caja-darkkhaki { background-color:#bdb76b; border-radius: 4px; padding: 13px;}\n\n.caja-linea-verde {  color: #004346;\n  background-color: #fff;\n  border-top: 4pt solid #09bc8a;\n  border-right-style: none;\n  border-bottom-style: none;\n  border-left-style: none;\n  padding: 23px 10px 21px 10px;\n}\n\n\n/* Guía para los colores: https://htmlcolorcodes.com/es/nombres-de-los-colores/  */\n\n \n /* para las quotes o citas */\n\nblockquote {\n    padding: 10px 20px;\n    margin: 0 0 20px;\n    font-size: 14px;\n    border-left: 5px solid #DC143C;\n}\n\n\n/* para hacer lineas de colores */\n.linea-black {\n  border-top: 1px solid black;\n}\n\n\n.linea-red {\n  border-top: 2px dashed red;\n}"
+  },
+  {
+    "objectID": "posts/post_07_observable.html",
+    "href": "posts/post_07_observable.html",
+    "title": "Observable JS",
+    "section": "",
+    "text": "Ya sabemos que Quarto® is an open-source scientific and technical publishing system built on Pandoc. Permite crear contenidos con R, Python, Julia y Observable.\n\n\n\nComo señala Nicolas Lambert aquí:\n\nCombining R and Observable javascript allows to take advantage of the strengths of both languages. It allows to combine the statistical analysis possibilities of R and the reactive visualization features of Observable. A win win strategy."
+  },
+  {
+    "objectID": "posts/post_07_observable.html#un-ejemplo",
+    "href": "posts/post_07_observable.html#un-ejemplo",
+    "title": "Observable JS",
+    "section": "2 Un ejemplo",
+    "text": "2 Un ejemplo"
+  },
+  {
+    "objectID": "posts/post_07_observable.html#biblio",
+    "href": "posts/post_07_observable.html#biblio",
+    "title": "Observable JS",
+    "section": "3 Biblio",
+    "text": "3 Biblio\n\nLet’s make maps with bertin.js in Quarto y aquí:\nBertin.js: a JavaScript library for visualizing geospatial data and make thematic maps for the web."
   },
   {
     "objectID": "posts/post_02_extensiones.html",

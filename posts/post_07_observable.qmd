@@ -1,0 +1,62 @@
+---
+title: "Observable JS"
+#author: "Nosotros"
+#subtitle: | 
+#  Viendo las posibilidades de Layout que tenemos en Quarto
+description: |
+  Intentando entender qué es y cómo usar **Observable JS** en R.
+author:
+  - name: Pedro J. Pérez
+    affiliation: Universitat de València
+date: 2022-11-07
+categories: [Quarto, Observable]
+image: "./thumbnails/thumbnail_07.png"
+#title-block-banner: true #- {true, false }
+title-block-banner: thumbnails/thumbnail_07.png
+draft: false
+toc: true
+toc-location: left
+toc-depth: 3
+filters:
+   - lightbox
+#css: assets/my_css_file.css
+#bibliography: references.bib
+#nocite: |
+#  @*
+---
+
+
+
+## Intro 
+
+Ya sabemos que [Quarto®](https://quarto.org/) is an open-source scientific and technical publishing system built on Pandoc. Permite crear contenidos con R, Python, Julia y Observable.
+
+
+:::{.aside}
+<img src="imagenes/quarto.png" height="50"></img>
+:::
+
+Como señala Nicolas Lambert [aquí](https://neocarto.github.io/bertin/examples/quarto.html):
+
+> Combining R and Observable javascript allows to take advantage of the strengths of both languages. It allows to combine the statistical analysis possibilities of R and the reactive visualization features of Observable. A win win strategy.
+
+
+<br>
+
+## Un ejemplo
+
+
+
+
+
+
+
+
+<br>
+
+
+## Biblio
+
+- [Let’s make maps with bertin.js in Quarto](https://neocarto.github.io/bertin/examples/quarto.html) y [aquí](https://neocarto.github.io/Quarto/r_ojs.html): 
+
+- [Bertin.js](https://github.com/neocarto/bertin): a JavaScript library for visualizing geospatial data and make thematic maps for the web.

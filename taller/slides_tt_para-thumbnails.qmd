@@ -1,9 +1,9 @@
 ---
-title: "Mi primer blog con Quarto"
-subtitle: "<br>"
-author: "Pedro J. Pérez <br> Francisco G. Morillas <br><br>"
-date: 2022-11-24  #- ISO8601 YYYY-MM-DD format 
-date-format: short
+title: "Observable JS"
+subtitle: ""  #-"<br>"
+author: "" #-"Pedro J. Pérez <br> Francisco G. Morillas <br><br>"
+date: "" #-2022-11-24  #- ISO8601 YYYY-MM-DD format 
+# date-format: short
 format: 
   revealjs:
     scrollable: true
@@ -14,7 +14,7 @@ format:
     from: markdown+emoji  #- usar emojis https://gist.github.com/rxaviers/7360908)
     center-title-slide: true
     title-slide-attributes: #- atributos para la slide de titulo
-      data-background-color: "#562457"   #- color de R-ladies
+      data-background-color: " #847a8a"   #- "#562457"   color de R-ladies
       #data-background-image: /imagenes/economia.gif
       #data-background-size: contain      
     preview-links: auto  #- true: abre un iframe en lugar de abrir ventana
@@ -35,6 +35,14 @@ footer: |
     #theme: [moon, custom.scss]
 ---
 
+
+```{r, eval = FALSE, echo = FALSE}
+
+# subtitle: "<br>"
+# author: "Pedro J. Pérez <br> Francisco G. Morillas <br><br>"
+# date: 2022-11-24  #- ISO8601 YYYY-MM-DD format 
+# date-format: short
+```
 
 
 ## Estructura del taller {.smaller}

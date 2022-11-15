@@ -10,8 +10,8 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.237">
 
-  <meta name="author" content="Pedro J. Pérez   Francisco G. Morillas   ">
-  <title>Mi primer blog con Quarto (WIP) - Mi primer blog con Quarto</title>
+  <meta name="author" content="">
+  <title>Mi primer blog con Quarto (WIP) - Observable JS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -321,11 +321,11 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Mi primer blog con Quarto">
-<meta property="og:description" content="<br>">
+<meta property="og:title" content="Mi primer blog con Quarto (WIP) - Observable JS">
+<meta property="og:description" content="">
 <meta property="og:site-name" content="Mi primer blog con Quarto (WIP)">
-<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Mi primer blog con Quarto">
-<meta name="twitter:description" content="<br>">
+<meta name="twitter:title" content="Mi primer blog con Quarto (WIP) - Observable JS">
+<meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@pjpv4444">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -333,19 +333,18 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-color="#562457" class="quarto-title-block center">
-  <h1 class="title">Mi primer blog con Quarto</h1>
-  <p class="subtitle"><br></p>
+<section id="title-slide" data-background-color="#847a8a" class="quarto-title-block center">
+  <h1 class="title">Observable JS</h1>
 
 <div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Pedro J. Pérez <br> Francisco G. Morillas <br><br> 
-</div>
-</div>
 </div>
 
-  <p class="date">24/11/22</p>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+
+</div>
 </section>
 <section id="estructura-del-taller" class="slide level2 smaller">
 <h2>Estructura del taller</h2>
@@ -575,6 +574,44 @@ Pedro J. Pérez <br> Francisco G. Morillas <br><br>
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

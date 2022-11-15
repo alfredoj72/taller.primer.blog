@@ -266,7 +266,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#listing-pages" id="toc-listing-pages" class="nav-link" data-scroll-target="#listing-pages"><span class="toc-section-number">4</span>  Listing pages</a></li>
   <li><a href="#about-pages" id="toc-about-pages" class="nav-link" data-scroll-target="#about-pages"><span class="toc-section-number">5</span>  About pages</a></li>
   <li><a href="#css" id="toc-css" class="nav-link" data-scroll-target="#css"><span class="toc-section-number">6</span>  CSS</a></li>
-  <li><a href="#sass" id="toc-sass" class="nav-link" data-scroll-target="#sass"><span class="toc-section-number">7</span>  SASS</a></li>
+  <li><a href="#sass" id="toc-sass" class="nav-link" data-scroll-target="#sass"><span class="toc-section-number">7</span>  SASS</a>
+  <ul>
+  <li><a href="#práctica" id="toc-práctica" class="nav-link" data-scroll-target="#práctica"><span class="toc-section-number">7.1</span>  “Práctica”</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/taller.primer.blog/edit/main/taller/06_taller_tuneado-del-blog.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/taller.primer.blog/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
 </nav>
@@ -731,16 +734,31 @@ Recapitulación
 </section>
 <section id="sass" class="level2" data-number="7">
 <h2 data-number="7" class="anchored" data-anchor-id="sass"><span class="header-section-number">7</span> SASS</h2>
-<p>Si sé muy poquito de CSS imaginaros cuanto sé de SASS. Pero allá vamos, anotaré aquí algunas que he medio aprendido:</p>
+<p>Si sé muy poquito de CSS imaginaros cuanto sé de SASS. Pero allá vamos, anotaré aquí algunas que he medio aprendido.</p>
 <p>Muchos de los cambios que podemos hacer con SASS, con archivos <code>.scss</code>, también pueden hacerse desde los distintos YAML’s de nuestro blog, <a href="https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17">esta fantática slide</a> nos servirá de ejemplo.</p>
+<p>La <a href="https://quarto.org/docs/output-formats/html-themes.html#overview">documentación oficial de Quarto</a> para <strong>documentos html</strong> sobre <strong>como usar los themes y tunearlos con Sass</strong>; además podemos encontrar <a href="https://quarto.org/docs/output-formats/html-themes.html#sass-variables">un listado de variables Sass</a> y un <a href="https://github.com/twbs/bootstrap/blob/main/scss/_variables.scsss">archivo <code>.scss</code></a> donde ver todas las variables Sass usadas en los themes. <a href="https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes">Aquí</a> puedes ver los ficheros <code>.scss</code> usados por los 25 25 built-in Bootswatch themes. <a href="https://quarto.org/docs/output-formats/html-themes-more.html">Aquí</a> hay más información sobre el uso de Sass en Quarto. Para saber aún más, la web de Quarto nos redirige <a href="https://getbootstrap.com/docs/5.1/customize/sass/">aquí</a>.</p>
+<p>https://quarto.org/docs/output-formats/html-themes.html#overview</p>
+<p>Para las <strong>slides en formato revealjs</strong>: la <a href="https://quarto.org/docs/presentations/revealjs/themes.html#using-themes">documentación oficial de Quarto</a> sobre <strong>como usar los themes y tunearlos con Sass</strong>; además podemos encontrar un <a href="https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables">listado con las variables Sass</a> y un <a href="https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/revealjs/themes">listado de archivos .scss</a> para revealjs slides.</p>
+<p><br></p>
 <p>Algunas referencias sobre SASS:</p>
 <ul>
 <li><p><a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide">Customizing Quarto Websites: Make your website stand out using SASS</a>: unas slides de Sam Csik.</p></li>
 <li><p><a href="https://www.youtube.com/watch?v=ErRX8plZpQE">Video tutorial de Albert Rapp</a>. llegué a él gracias a <a href="https://www.ddanieltan.com/posts/blogtips/">este post</a>.</p></li>
 <li><p>En <a href="https://www.rstudio.com/blog/2021-spring-rmd-news/">este post</a> de 2021 se anunciaba que se podía utilizar SASS en el entorno Rmarkdown gracias al paquete <a href="https://rstudio.github.io/sass/">sass</a> y en su web se puede encontrar esta <a href="https://rstudio.github.io/sass/articles/sass.html">vignette</a>.</p></li>
 </ul>
+<p><br></p>
+<section id="práctica" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="práctica"><span class="header-section-number">7.1</span> “Práctica”</h3>
+<p>Sencillamente, para ver cómo es un archivo <code>.scss</code> vamos a ir al blog de <a href="https://blog.djnavarro.net/">Danielle Navarro</a> y desde allí podemos dirigirnos al <a href="https://github.com/djnavarro/quarto-blog">repo del blog</a> donde podemos ver su archivo <a href="https://github.com/djnavarro/quarto-blog/blob/main/ember.scss">ember.scss</a>. No es un archivo muy largo, simplemente coge el theme “litera” como base y ajusta un par de cosas como las fuentes.</p>
+<p>Si quisiéramos copiar/usar los ajustes de Danielle, sólo tendríamos que copiar su archivo en la carpeta raíz de nuestro blog y añadir en <code>_quarto.yml</code> la siguiente linea anidada en <code>format: html:</code>. Algo como esto:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> ember.scss</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
+</section>
 </section>
 
 

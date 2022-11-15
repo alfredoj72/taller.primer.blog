@@ -186,9 +186,21 @@ Algunos recursos relacionados con CSS/html:
 
 ## SASS
 
-Si sé muy poquito de CSS imaginaros cuanto sé de SASS. Pero allá vamos, anotaré aquí algunas que he medio aprendido:
+Si sé muy poquito de CSS imaginaros cuanto sé de SASS. Pero allá vamos, anotaré aquí algunas que he medio aprendido.
 
 Muchos de los cambios que podemos hacer con SASS, con archivos `.scss`, también pueden hacerse desde los distintos YAML's de nuestro blog, [esta fantática slide](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17) nos servirá de ejemplo.
+
+
+La  [documentación oficial de Quarto](https://quarto.org/docs/output-formats/html-themes.html#overview) para **documentos html** sobre **como usar los themes y tunearlos con Sass**; además podemos encontrar [un listado de variables Sass](https://quarto.org/docs/output-formats/html-themes.html#sass-variables) y un [archivo `.scss`](https://github.com/twbs/bootstrap/blob/main/scss/_variables.scsss) donde ver todas las variables Sass usadas en los themes. [Aquí](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes) puedes ver los ficheros `.scss` usados por los 25 25 built-in Bootswatch themes. [Aquí](https://quarto.org/docs/output-formats/html-themes-more.html) hay más información sobre el uso de Sass en Quarto. Para saber aún más, la web de Quarto nos redirige [aquí](https://getbootstrap.com/docs/5.1/customize/sass/).
+
+
+https://quarto.org/docs/output-formats/html-themes.html#overview
+
+
+Para las **slides en formato revealjs**: la  [documentación oficial de Quarto](https://quarto.org/docs/presentations/revealjs/themes.html#using-themes) sobre **como usar los themes y tunearlos con Sass**; además podemos encontrar un [listado con las variables Sass](https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables) y un [listado de archivos .scss](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/revealjs/themes) para revealjs slides.
+
+
+<br>
 
 Algunas referencias sobre SASS:
 
@@ -198,5 +210,18 @@ Algunas referencias sobre SASS:
 
   - En [este post](https://www.rstudio.com/blog/2021-spring-rmd-news/) de 2021 se anunciaba que se podía utilizar SASS en el entorno Rmarkdown gracias al paquete [sass](https://rstudio.github.io/sass/) y en su web se puede encontrar esta [vignette](https://rstudio.github.io/sass/articles/sass.html). 
     
+<br>
     
-    
+### "Práctica"
+
+Sencillamente, para ver cómo es un archivo `.scss` vamos a ir al blog de [Danielle Navarro](https://blog.djnavarro.net/) y desde allí podemos dirigirnos al [repo del blog](https://github.com/djnavarro/quarto-blog) donde podemos ver su archivo [ember.scss](https://github.com/djnavarro/quarto-blog/blob/main/ember.scss). No es un archivo muy largo, simplemente coge el theme "litera" como base y ajusta un par de cosas como las fuentes. 
+
+Si quisiéramos copiar/usar los ajustes de Danielle, sólo tendríamos que copiar su archivo en la carpeta raíz de nuestro blog y añadir en `_quarto.yml` la siguiente linea anidada en `format: html:`. Algo como esto:
+
+
+```{r, eval = FALSE}
+format:
+  html:
+    theme: ember.scss
+```
+
