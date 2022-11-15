@@ -189,6 +189,68 @@ Tarea xx
   <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_40.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
+  <title>Using R data with phyton</title>
+  <dc:creator>Pedro J. Pérez</dc:creator>
+  <dc:creator>Pedro J. Pérez</dc:creator>
+  <link>https://perezp44.github.io/taller.primer.blog/posts/post_08_phyton.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Quarto ha hecho que me vuelva a interesar por Phyton!!!</p>
+<p>Es muy fácil combinar chunks de R con Py, solo hay que pasar los datos así: <code>my_py_data = r.df</code></p>
+<p>Me falta ver como pasar datos de Py a R, ya lo veré.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">df <span class="ot" style="color: #003B4F;">&lt;-</span> gapminder<span class="sc" style="color: #5E5E5E;">::</span>gapminder</span>
+<span id="cb1-2">iris <span class="ot" style="color: #003B4F;">&lt;-</span> iris</span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;">from</span> siuba <span class="im" style="color: #00769E;">import</span> _, group_by, summarize</span>
+<span id="cb2-2"></span>
+<span id="cb2-3">my_data <span class="op" style="color: #5E5E5E;">=</span> r.df</span>
+<span id="cb2-4"></span>
+<span id="cb2-5">(my_data</span>
+<span id="cb2-6">  <span class="op" style="color: #5E5E5E;">&gt;&gt;</span> group_by(_.continent)</span>
+<span id="cb2-7">  <span class="op" style="color: #5E5E5E;">&gt;&gt;</span> summarize(avg_lifeExp <span class="op" style="color: #5E5E5E;">=</span> _.lifeExp.mean())</span>
+<span id="cb2-8">  )</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  continent  avg_lifeExp
+0    Africa    48.865330
+1  Americas    64.658737
+2      Asia    60.064903
+3    Europe    71.903686
+4   Oceania    74.326208</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;">from</span> siuba <span class="im" style="color: #00769E;">import</span> mutate, _</span>
+<span id="cb4-2"><span class="im" style="color: #00769E;">from</span> plotnine <span class="im" style="color: #00769E;">import</span> ggplot, aes, geom_point</span>
+<span id="cb4-3"></span>
+<span id="cb4-4">my_data <span class="op" style="color: #5E5E5E;">=</span> r.iris</span>
+<span id="cb4-5"></span>
+<span id="cb4-6">(my_data</span>
+<span id="cb4-7">  <span class="op" style="color: #5E5E5E;">&gt;&gt;</span> ggplot(aes(<span class="st" style="color: #20794D;">"Sepal.Length"</span>, <span class="st" style="color: #20794D;">"Petal.Length"</span>, color <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">"Species"</span>))</span>
+<span id="cb4-8">   <span class="op" style="color: #5E5E5E;">+</span> geom_point()</span>
+<span id="cb4-9">)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;ggplot: (8740513311260)&gt;</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="https://perezp44.github.io/taller.primer.blog/posts/post_08_phyton_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="614"></p>
+</div>
+</div>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div> ]]></description>
+  <category>Quarto</category>
+  <category>Python</category>
+  <guid>https://perezp44.github.io/taller.primer.blog/posts/post_08_phyton.html</guid>
+  <pubDate>Mon, 07 Nov 2022 23:00:00 GMT</pubDate>
+  <media:content url="https://perezp44.github.io/taller.primer.blog/posts/thumbnails/thumbnail_08.png" medium="image" type="image/png" height="46" width="144"/>
+</item>
+<item>
   <title>Observable JS</title>
   <dc:creator>Pedro J. Pérez</dc:creator>
   <dc:creator>Pedro J. Pérez</dc:creator>
@@ -211,9 +273,17 @@ Tarea xx
 </blockquote>
 <p>Algo parecido dice Sharon Machlis <a href="https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html">aquí</a>:</p>
 <blockquote class="blockquote">
-<p>Using Quarto with Observable JavaScript is a great solution for R and Python users who want to create more interactive and visually engaging reports. Using Quarto with Observable offers an elegant workflow if you want to combine data analysis in Python and R with reactivity. Finally, Observable was set up with collaboration in mind, so it’s fairly easy to find and use someone else’s open source code</p>
+<p>Using Quarto with Observable JavaScript is a great solution for R and Python users who want to create more interactive and visually engaging reports. Using Quarto with Observable offers an elegant workflow if you want to combine data analysis in Python and R with reactivity. Finally, Observable was set up with collaboration in mind, so it’s fairly easy to find and use someone else’s open source code.</p>
+</blockquote>
+<p>Otra ventaja de Quarto:</p>
+<blockquote class="blockquote">
+<p>Quarto’s rendered HTML files can be hosted on any web server or opened locally with a simple browser, with no separate language or framework installations required. That’s not the case for options like Shiny for R or Dash for Python (alpha Shiny for Python can run without a Shiny server, but it’s not yet production-ready). Using Quarto with Observable offers an elegant workflow if you want to combine data analysis in Python and R with reactivity.</p>
 </blockquote>
 <p>Quarto puede ejecutar código de OJS. Sólo hay que colocar el código entre las marcas habituales : <code>```{ojs}</code>. Además se puede analizar los datos en R y luego enviarlos a OJS<sup>1</sup> con la función <code>ojs_define()</code>.</p>
+</section>
+<section id="un-ejemplo" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="un-ejemplo"><span class="header-section-number">2</span> Un ejemplo</h2>
+<p>Voy a adpatar un ejemplo sacado de <a href="https://neocarto.github.io/bertin/examples/quarto.html">aquí</a></p>
 <p>Por ejemplo, voy a crear un sf data.frame para ver si me lo acepta OJS:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">library</span>(tidyverse)</span>
@@ -228,7 +298,7 @@ Tarea xx
 <span id="cb1-10">df_world <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">left_join</span>(world, df,  <span class="at" style="color: #657422;">by =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"name"</span> <span class="ot" style="color: #003B4F;">=</span> <span class="st" style="color: #20794D;">"country"</span>)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> <span class="co" style="color: #5E5E5E;">#- solo 142</span></span>
 <span id="cb1-11">  <span class="fu" style="color: #4758AB;">select</span>(<span class="sc" style="color: #5E5E5E;">-</span>year)</span></code></pre></div>
 </div>
-<p>Pasamos <code>df</code> a OJS, como es un sf necesitamos el paquete <code>geojsonsf</code></p>
+<p>Para pasar <code>df_world</code> a OJS, como es un sf, necesitamos el paquete <code>geojsonsf</code>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
 <span id="cb2-2"><span class="co" style="color: #5E5E5E;">#| eval: true</span></span>
@@ -238,10 +308,10 @@ Tarea xx
 <span id="cb2-6"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
 </div>
 <p>Hay que hacer un paso más para poder usar datos los datos de R en Observable: hay que transformar los datos a un formato compatible con OJS, para ello usamos la función <code>transpose()</code></p>
-<p>Las visualizaciones de JavaScript suelen utilizar un formato de datos diferente al de los marcos de datos rectangulares que normalmente se necesitan en R o Python.</p>
+<p>Las visualizaciones de JavaScript suelen utilizar un formato de datos diferente al de los marcos de datos rectangulares que normalmente se necesitan en R o Python. Aunque en este caso no ha hecho falta (!!)</p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="90" data-source-offset="-27" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 89;"><span id="cb3-90">countries <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">JSON</span><span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">parse</span>(data) </span>
-<span id="cb3-91">Inputs<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">table</span>(countries<span class="op" style="color: #5E5E5E;">.</span><span class="at" style="color: #657422;">features</span><span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">map</span>(d <span class="kw" style="color: #003B4F;">=&gt;</span> d<span class="op" style="color: #5E5E5E;">.</span><span class="at" style="color: #657422;">properties</span>))</span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="98" data-source-offset="-27" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 97;"><span id="cb3-98">countries <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">JSON</span><span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">parse</span>(data) </span>
+<span id="cb3-99">Inputs<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">table</span>(countries<span class="op" style="color: #5E5E5E;">.</span><span class="at" style="color: #657422;">features</span><span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">map</span>(d <span class="kw" style="color: #003B4F;">=&gt;</span> d<span class="op" style="color: #5E5E5E;">.</span><span class="at" style="color: #657422;">properties</span>))</span></code></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -259,8 +329,8 @@ Tarea xx
 </div>
 <p>Cargamos la librería <code>bertin</code></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" data-startfrom="97" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 96;"><span id="cb4-97">bertin <span class="op" style="color: #5E5E5E;">=</span> <span class="pp" style="color: #AD0000;">require</span>(<span class="st" style="color: #20794D;">"bertin@1.2.4"</span>)</span>
-<span id="cb4-98"><span class="co" style="color: #5E5E5E;">//bertin.quickdraw(countries)</span></span></code></pre></div>
+<div class="sourceCode cell-code" id="cb4" data-startfrom="105" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 104;"><span id="cb4-105">bertin <span class="op" style="color: #5E5E5E;">=</span> <span class="pp" style="color: #AD0000;">require</span>(<span class="st" style="color: #20794D;">"bertin@1.2.4"</span>)</span>
+<span id="cb4-106"><span class="co" style="color: #5E5E5E;">//bertin.quickdraw(countries)</span></span></code></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
 
@@ -270,35 +340,35 @@ Tarea xx
 <p><br></p>
 <p>Hacemos una coropleta:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" data-startfrom="111" data-source-offset="-14" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 110;"><span id="cb5-111">viewof nbreaks <span class="op" style="color: #5E5E5E;">=</span> Inputs<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">range</span>([<span class="dv" style="color: #AD0000;">3</span><span class="op" style="color: #5E5E5E;">,</span> <span class="dv" style="color: #AD0000;">9</span>]<span class="op" style="color: #5E5E5E;">,</span> { <span class="dt" style="color: #AD0000;">label</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"nbreaks"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="dt" style="color: #AD0000;">step</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">1</span><span class="op" style="color: #5E5E5E;">,</span> <span class="dt" style="color: #AD0000;">value</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">7</span> })</span>
-<span id="cb5-112">viewof method <span class="op" style="color: #5E5E5E;">=</span> Inputs<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">select</span>([<span class="st" style="color: #20794D;">"jenks"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"q6"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"quantile"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"equal"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"msd"</span>]<span class="op" style="color: #5E5E5E;">,</span> {</span>
-<span id="cb5-113">  <span class="dt" style="color: #AD0000;">label</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"method"</span><span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-114">  <span class="dt" style="color: #AD0000;">value</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"quantile"</span></span>
-<span id="cb5-115">})</span>
-<span id="cb5-116">choro <span class="op" style="color: #5E5E5E;">=</span> bertin<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">draw</span>({</span>
-<span id="cb5-117">  <span class="dt" style="color: #AD0000;">params</span><span class="op" style="color: #5E5E5E;">:</span> { <span class="dt" style="color: #AD0000;">projection</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"Eckert3"</span>}<span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-118">  <span class="dt" style="color: #AD0000;">layers</span><span class="op" style="color: #5E5E5E;">:</span> [</span>
-<span id="cb5-119">    {</span>
-<span id="cb5-120">      <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"layer"</span><span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-121">      <span class="dt" style="color: #AD0000;">geojson</span><span class="op" style="color: #5E5E5E;">:</span> countries<span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-122">      <span class="dt" style="color: #AD0000;">fill</span><span class="op" style="color: #5E5E5E;">:</span> {</span>
-<span id="cb5-123">        <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"choro"</span><span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-124">        <span class="dt" style="color: #AD0000;">values</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"lifeExp"</span><span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-125">        <span class="dt" style="color: #AD0000;">nbreaks</span><span class="op" style="color: #5E5E5E;">:</span> nbreaks<span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-126">        <span class="dt" style="color: #AD0000;">method</span><span class="op" style="color: #5E5E5E;">:</span> method<span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-127">        <span class="dt" style="color: #AD0000;">colors</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"RdYlGn"</span><span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-128">        <span class="dt" style="color: #AD0000;">leg_round</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">3</span><span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-129">        <span class="dt" style="color: #AD0000;">leg_title</span><span class="op" style="color: #5E5E5E;">:</span> <span class="vs" style="color: #20794D;">`Lifeexperience </span></span>
-<span id="cb5-130"><span class="vs" style="color: #20794D;">(in years)`</span><span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-131">        <span class="dt" style="color: #AD0000;">leg_x</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">30</span><span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-132">        <span class="dt" style="color: #AD0000;">leg_y</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">100</span></span>
-<span id="cb5-133">      }<span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-134">      <span class="dt" style="color: #AD0000;">tooltip</span><span class="op" style="color: #5E5E5E;">:</span> [<span class="st" style="color: #20794D;">"$name"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"Esperanza de vida"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"$lifeExp"</span><span class="op" style="color: #5E5E5E;">,</span>  <span class="st" style="color: #20794D;">"PIB per cápita"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"$gdpPercap"</span>]</span>
-<span id="cb5-135">    }<span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-136">    { <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"graticule"</span> }<span class="op" style="color: #5E5E5E;">,</span></span>
-<span id="cb5-137">    { <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"outline"</span> }</span>
-<span id="cb5-138">  ]</span>
-<span id="cb5-139">})</span></code></pre></div>
+<div class="sourceCode cell-code" id="cb5" data-startfrom="119" data-source-offset="-14" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 118;"><span id="cb5-119">viewof nbreaks <span class="op" style="color: #5E5E5E;">=</span> Inputs<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">range</span>([<span class="dv" style="color: #AD0000;">3</span><span class="op" style="color: #5E5E5E;">,</span> <span class="dv" style="color: #AD0000;">9</span>]<span class="op" style="color: #5E5E5E;">,</span> { <span class="dt" style="color: #AD0000;">label</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"nbreaks"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="dt" style="color: #AD0000;">step</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">1</span><span class="op" style="color: #5E5E5E;">,</span> <span class="dt" style="color: #AD0000;">value</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">7</span> })</span>
+<span id="cb5-120">viewof method <span class="op" style="color: #5E5E5E;">=</span> Inputs<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">select</span>([<span class="st" style="color: #20794D;">"jenks"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"q6"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"quantile"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"equal"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"msd"</span>]<span class="op" style="color: #5E5E5E;">,</span> {</span>
+<span id="cb5-121">  <span class="dt" style="color: #AD0000;">label</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"method"</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-122">  <span class="dt" style="color: #AD0000;">value</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"quantile"</span></span>
+<span id="cb5-123">})</span>
+<span id="cb5-124">choro <span class="op" style="color: #5E5E5E;">=</span> bertin<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">draw</span>({</span>
+<span id="cb5-125">  <span class="dt" style="color: #AD0000;">params</span><span class="op" style="color: #5E5E5E;">:</span> { <span class="dt" style="color: #AD0000;">projection</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"Eckert3"</span>}<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-126">  <span class="dt" style="color: #AD0000;">layers</span><span class="op" style="color: #5E5E5E;">:</span> [</span>
+<span id="cb5-127">    {</span>
+<span id="cb5-128">      <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"layer"</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-129">      <span class="dt" style="color: #AD0000;">geojson</span><span class="op" style="color: #5E5E5E;">:</span> countries<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-130">      <span class="dt" style="color: #AD0000;">fill</span><span class="op" style="color: #5E5E5E;">:</span> {</span>
+<span id="cb5-131">        <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"choro"</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-132">        <span class="dt" style="color: #AD0000;">values</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"lifeExp"</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-133">        <span class="dt" style="color: #AD0000;">nbreaks</span><span class="op" style="color: #5E5E5E;">:</span> nbreaks<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-134">        <span class="dt" style="color: #AD0000;">method</span><span class="op" style="color: #5E5E5E;">:</span> method<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-135">        <span class="dt" style="color: #AD0000;">colors</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"RdYlGn"</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-136">        <span class="dt" style="color: #AD0000;">leg_round</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">3</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-137">        <span class="dt" style="color: #AD0000;">leg_title</span><span class="op" style="color: #5E5E5E;">:</span> <span class="vs" style="color: #20794D;">`Lifeexperience </span></span>
+<span id="cb5-138"><span class="vs" style="color: #20794D;">(in years)`</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-139">        <span class="dt" style="color: #AD0000;">leg_x</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">30</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-140">        <span class="dt" style="color: #AD0000;">leg_y</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">100</span></span>
+<span id="cb5-141">      }<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-142">      <span class="dt" style="color: #AD0000;">tooltip</span><span class="op" style="color: #5E5E5E;">:</span> [<span class="st" style="color: #20794D;">"$name"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"Esperanza de vida"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"$lifeExp"</span><span class="op" style="color: #5E5E5E;">,</span>  <span class="st" style="color: #20794D;">"PIB per cápita"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"$gdpPercap"</span>]</span>
+<span id="cb5-143">    }<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-144">    { <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"graticule"</span> }<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-145">    { <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"outline"</span> }</span>
+<span id="cb5-146">  ]</span>
+<span id="cb5-147">})</span></code></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-3-1" data-nodetype="declaration">
@@ -322,15 +392,55 @@ Tarea xx
 </div>
 </div>
 </section>
-<section id="un-ejemplo" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="un-ejemplo"><span class="header-section-number">2</span> Un ejemplo</h2>
+<section id="otro-ejemplo" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="otro-ejemplo"><span class="header-section-number">3</span> Otro ejemplo</h2>
+<p>Esta vez sacado de <a href="https://timelyportfolio.github.io/quarto_tests/examples/quarto_observable_imports/quarto_observable_imports.html">aquí</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" data-startfrom="157" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 156;"><span id="cb6-157"><span class="im" style="color: #00769E;">import</span> {viewof data} <span class="im" style="color: #00769E;">from</span> <span class="st" style="color: #20794D;">"@observablehq/summary-table"</span></span>
+<span id="cb6-158">viewof data</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7" data-startfrom="163" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 162;"><span id="cb7-163"><span class="im" style="color: #00769E;">import</span> {viewof summary_data} <span class="im" style="color: #00769E;">from</span> <span class="st" style="color: #20794D;">"@observablehq/summary-table"</span></span>
+<span id="cb7-164">viewof summary_data</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
 <p><br></p>
 </section>
-<section id="biblio" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="biblio"><span class="header-section-number">3</span> Biblio</h2>
+<section id="biblio" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="biblio"><span class="header-section-number">4</span> Biblio</h2>
 <ul>
-<li><p><a href="https://neocarto.github.io/bertin/examples/quarto.html">Let’s make maps with bertin.js in Quarto</a> y <a href="https://neocarto.github.io/Quarto/r_ojs.html">aquí</a>:</p></li>
+<li><p><a href="https://neocarto.github.io/bertin/examples/quarto.html">Let’s make maps with bertin.js in Quarto</a> y <a href="https://neocarto.github.io/Quarto/r_ojs.html">aquí</a>: post de Nicolas Lambert.</p></li>
 <li><p><a href="https://github.com/neocarto/bertin">Bertin.js</a>: a JavaScript library for visualizing geospatial data and make thematic maps for the web.</p></li>
+<li><p><a href="https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html">A beginner’s guide to using Observable JavaScript, R, and Python with Quarto</a>: una serie de 3 artículos de Infoworl de Sharon Machlis.</p></li>
+<li><p><a href="https://twitter.com/hrbrmstr/status/1556308005225897984">Un ejemplo de boB Rudis, <span class="citation" data-cites="hrbrmstr">@hrbrmstr</span></a>, <a href="https://rud.is/b/2022/08/19/bootstrapping-an-ojs-quarto-document-with-an-observable-notebook/">otro</a>, <a href="https://rud.is/b/2022/08/22/new-chrome-extension-to-turn-observable-notebooks-into-quarto-projects/">conviriendo OJS notebook in Quarto projects</a></p></li>
+<li><p><a href="https://github.com/juba/robservable">Paquete robservable</a></p></li>
 </ul>
 
 
@@ -859,7 +969,7 @@ Tarea xx
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">{{<span class="sc" style="color: #5E5E5E;">&lt;</span> tweet user<span class="ot" style="color: #003B4F;">=</span>Culturas2_tve id<span class="ot" style="color: #003B4F;">=</span><span class="dv" style="color: #AD0000;">1589703143562309632</span> <span class="sc" style="color: #5E5E5E;">&gt;</span>}}</span></code></pre></div>
 </div>
-<p></p><div id="tweet-64330"></div><script>tweet={"url":"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632","author_name":"Culturas 2","author_url":"https:\/\/twitter.com\/Culturas2_tve","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEn primicia en Culturas 2, así empieza el single “Abnegación”, de \u003Ca href=\"https:\/\/twitter.com\/NachoVegasTwit?ref_src=twsrc%5Etfw\"\u003E@NachoVegasTwit\u003C\/a\u003E, que lanza este viernes. La entrevista completa al artista gijonés en \u003Ca href=\"https:\/\/t.co\/d65rOJlOvY\"\u003Ehttps:\/\/t.co\/d65rOJlOvY\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/cAqUtR6rIy\"\u003Epic.twitter.com\/cAqUtR6rIy\u003C\/a\u003E\u003C\/p\u003E&mdash; Culturas 2 (@Culturas2_tve) \u003Ca href=\"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-64330").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-35499"></div><script>tweet={"url":"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632","author_name":"Culturas 2","author_url":"https:\/\/twitter.com\/Culturas2_tve","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEn primicia en Culturas 2, así empieza el single “Abnegación”, de \u003Ca href=\"https:\/\/twitter.com\/NachoVegasTwit?ref_src=twsrc%5Etfw\"\u003E@NachoVegasTwit\u003C\/a\u003E, que lanza este viernes. La entrevista completa al artista gijonés en \u003Ca href=\"https:\/\/t.co\/d65rOJlOvY\"\u003Ehttps:\/\/t.co\/d65rOJlOvY\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/cAqUtR6rIy\"\u003Epic.twitter.com\/cAqUtR6rIy\u003C\/a\u003E\u003C\/p\u003E&mdash; Culturas 2 (@Culturas2_tve) \u003Ca href=\"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-35499").innerHTML = tweet["html"];</script><p></p>
 <p><br></p>
 </section>
 <section id="inserta-un-tab-set" class="level2" data-number="3">
@@ -1345,7 +1455,7 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./imagenes/economia.gif" class="lightbox" data-description="El logo-nano de la facultad de Economía de la Universtat de València" title="Mi imagen con Lighbox activado" data-gallery="quarto-lightbox-gallery-1" data-desc-position="left"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
+<p><a href="./imagenes/economia.gif" class="lightbox" data-description="El logo-nano de la facultad de Economía de la Universtat de València" data-desc-position="left" data-gallery="quarto-lightbox-gallery-1" title="Mi imagen con Lighbox activado"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">Mi imagen con Lighbox activado</figcaption><p></p>
 </figure>
 </div>
@@ -1383,7 +1493,7 @@ Instalar y usar la extensión <strong>Quarto social embeds</strong>
 <span id="cb8-4"></span>
 <span id="cb8-5">{{<span class="sc" style="color: #5E5E5E;">&lt;</span> tweet user<span class="ot" style="color: #003B4F;">=</span>ambitocultural id<span class="ot" style="color: #003B4F;">=</span><span class="dv" style="color: #AD0000;">1589543369512026112</span> <span class="sc" style="color: #5E5E5E;">&gt;</span>}}</span></code></pre></div>
 </div>
-<p></p><div id="tweet-45166"></div><script>tweet={"url":"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112","author_name":"Ámbito Cultural","author_url":"https:\/\/twitter.com\/ambitocultural","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEl cantautor Nacho Vegas está de vuelta en la escena musical con un nuevo trabajo lleno de gran hondura poética \uD83D\uDC49 Mundos inmóviles derrumbándose \uD83C\uDFA4 Estará acompañado por \u003Ca href=\"https:\/\/twitter.com\/fneirad?ref_src=twsrc%5Etfw\"\u003E@fneirad\u003C\/a\u003E, crítico y periodista musical, en un evento único\uD83D\uDD1D\u003Cbr\u003E\u003Cbr\u003E\uD83D\uDD17\u003Ca href=\"https:\/\/t.co\/kn4uJeMRWo\"\u003Ehttps:\/\/t.co\/kn4uJeMRWo\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/hzdwJzxrfj\"\u003Epic.twitter.com\/hzdwJzxrfj\u003C\/a\u003E\u003C\/p\u003E&mdash; Ámbito Cultural (@ambitocultural) \u003Ca href=\"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-45166").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-32879"></div><script>tweet={"url":"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112","author_name":"Ámbito Cultural","author_url":"https:\/\/twitter.com\/ambitocultural","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEl cantautor Nacho Vegas está de vuelta en la escena musical con un nuevo trabajo lleno de gran hondura poética \uD83D\uDC49 Mundos inmóviles derrumbándose \uD83C\uDFA4 Estará acompañado por \u003Ca href=\"https:\/\/twitter.com\/fneirad?ref_src=twsrc%5Etfw\"\u003E@fneirad\u003C\/a\u003E, crítico y periodista musical, en un evento único\uD83D\uDD1D\u003Cbr\u003E\u003Cbr\u003E\uD83D\uDD17\u003Ca href=\"https:\/\/t.co\/kn4uJeMRWo\"\u003Ehttps:\/\/t.co\/kn4uJeMRWo\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/hzdwJzxrfj\"\u003Epic.twitter.com\/hzdwJzxrfj\u003C\/a\u003E\u003C\/p\u003E&mdash; Ámbito Cultural (@ambitocultural) \u003Ca href=\"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-32879").innerHTML = tweet["html"];</script><p></p>
 <p><br><br></p>
 <p>Para insertar un <strong>gist de Github</strong> has de:</p>
 <div class="cell">

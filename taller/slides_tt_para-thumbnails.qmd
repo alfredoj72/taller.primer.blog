@@ -1,5 +1,5 @@
 ---
-title: "Observable JS"
+title: "🖤  Python   🏴‍☠️ "
 subtitle: ""  #-"<br>"
 author: "" #-"Pedro J. Pérez <br> Francisco G. Morillas <br><br>"
 date: "" #-2022-11-24  #- ISO8601 YYYY-MM-DD format 
@@ -14,7 +14,7 @@ format:
     from: markdown+emoji  #- usar emojis https://gist.github.com/rxaviers/7360908)
     center-title-slide: true
     title-slide-attributes: #- atributos para la slide de titulo
-      data-background-color: " #847a8a"   #- "#562457"   color de R-ladies
+      data-background-color: " #ffc0cb"   #- "#562457"   color de R-ladies
       #data-background-image: /imagenes/economia.gif
       #data-background-size: contain      
     preview-links: auto  #- true: abre un iframe en lugar de abrir ventana
@@ -35,7 +35,6 @@ footer: |
     #theme: [moon, custom.scss]
 ---
 
-
 ```{r, eval = FALSE, echo = FALSE}
 
 # subtitle: "<br>"
@@ -44,22 +43,16 @@ footer: |
 # date-format: short
 ```
 
-
 ## Estructura del taller {.smaller}
 
-##### [ Hola ]{.purple}
+##### [Hola]{.purple}
 
+Hola pepe como estas [bien]{.purple} [siiii]{.yellow-h} [bien]{.purple2} [bien]{.purple3}
 
-Hola pepe como estas  [bien]{.purple}  [siiii]{.yellow-h}  [bien]{.purple2} [bien]{.purple3}
-
-[[pepeote]{.out-t}]{.purple2}
-
+[pepeote]{.out-t}
 
 ## Hola {.inverse2}
 
-
-
 ## ¿Cómo va? {.takeaway .center}
-
 
 [Como vas tete]{.takeaway .center}

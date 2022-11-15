@@ -1,0 +1,16 @@
+{
+  "hash": "7c4cf1e2697afe0473a87208b6ec295f",
+  "result": {
+    "markdown": "---\ntitle: \"Using R data with phyton\"\n#author: \"Nosotros\"\n#subtitle: | \n#  Viendo las posibilidades de Layout que tenemos en Quarto\ndescription: |\n  Viendo cómo usar datos de R en chunks de Py con Quarto.\nauthor:\n  - name: Pedro J. Pérez\n    affiliation: Universitat de València\ndate: 2022-11-08\ncategories: [Quarto, Python]\nimage: \"./thumbnails/thumbnail_08.png\"\n#title-block-banner: true #- {true, false }\ntitle-block-banner: thumbnails/thumbnail_08.png\ndraft: false\ntoc: true\ntoc-location: left\ntoc-depth: 3\nfilters:\n   - lightbox\n#css: assets/my_css_file.css\n#bibliography: references.bib\n#nocite: |\n#  @*\n---\n\n\nQuarto ha hecho que me vuelva a interesar por Phyton!!!\n\nEs muy fácil combinar chunks de R con Py, solo hay que pasar los datos así: `my_py_data = r.df`\n\nMe falta ver como pasar datos de Py a R, ya lo veré.\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndf <- gapminder::gapminder\niris <- iris\n```\n:::\n\n::: {.cell}\n\n```{.python .cell-code}\nfrom siuba import _, group_by, summarize\n\nmy_data = r.df\n\n(my_data\n  >> group_by(_.continent)\n  >> summarize(avg_lifeExp = _.lifeExp.mean())\n  )\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n  continent  avg_lifeExp\n0    Africa    48.865330\n1  Americas    64.658737\n2      Asia    60.064903\n3    Europe    71.903686\n4   Oceania    74.326208\n```\n:::\n:::\n\n::: {.cell}\n\n```{.python .cell-code}\nfrom siuba import mutate, _\nfrom plotnine import ggplot, aes, geom_point\n\nmy_data = r.iris\n\n(my_data\n  >> ggplot(aes(\"Sepal.Length\", \"Petal.Length\", color = \"Species\"))\n   + geom_point()\n)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n<ggplot: (8740513311260)>\n```\n:::\n\n::: {.cell-output-display}\n![](post_08_phyton_files/figure-html/unnamed-chunk-3-1.png){width=614}\n:::\n:::\n",
+    "supporting": [
+      "post_08_phyton_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

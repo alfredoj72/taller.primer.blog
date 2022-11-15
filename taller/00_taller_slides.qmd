@@ -213,7 +213,7 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 ## Ventajas de Quarto
 
--   Proyecto en desarrollo activo ... mientras que Rmarkdown ...
+-   Proyecto en [desarrollo activo](https://quarto.org/docs/download/) ... mientras que Rmarkdown ...
 
 -   **Unifica** algunas de las funcionalidades de Rmarkdown
 
