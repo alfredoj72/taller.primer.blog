@@ -29,7 +29,9 @@ filters:
 
 ## Intro 
 
-Ya sabemos que [Quarto®](https://quarto.org/) is an open-source scientific and technical publishing system built on Pandoc. Permite crear contenidos con R, Python, Julia y Observable.
+Ya sabemos que [Quarto®](https://quarto.org/) is an open-source scientific and technical publishing system built on Pandoc que permite crear contenidos con R, Python, Julia y [Observable](https://observablehq.com/)
+
+Obervable JS (OJS) es *"a JavaScript flavor designed for data analysis"*. Observable tiene digamos la interactividad incorporada de serie: es sencillo incorporar filtros interactivos para controlar el output que muestran las tablas y gráficos. Esto abré nuevas posibilidades a los usuarios de R.
 
 
 :::{.aside}
@@ -40,8 +42,103 @@ Como señala Nicolas Lambert [aquí](https://neocarto.github.io/bertin/examples/
 
 > Combining R and Observable javascript allows to take advantage of the strengths of both languages. It allows to combine the statistical analysis possibilities of R and the reactive visualization features of Observable. A win win strategy.
 
+Algo parecido dice Sharon Machlis [aquí](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html):
+
+> Using Quarto with Observable JavaScript is a great solution for R and Python users who want to create more interactive and visually engaging reports. Using Quarto with Observable offers an elegant workflow if you want to combine data analysis in Python and R with reactivity. Finally, Observable was set up with collaboration in mind, so it's fairly easy to find and use someone else's open source code
+
+
+Quarto puede ejecutar código de OJS. Sólo hay que colocar el código entre las marcas habituales : ` ```{ojs} `. Además se puede analizar los datos en R y luego enviarlos a OJS^[La documentación oficial de Quarto para hacer disponibles los datos a OJS está [aquí](https://quarto.org/docs/interactive/ojs/data-sources.html)] con la función `ojs_define()`. 
+
+
+Por ejemplo, voy a crear un sf data.frame para ver si me lo acepta OJS:
+
+
+```{r}
+library(tidyverse)
+library("rnaturalearth")
+library("rnaturalearthdata")
+library(sf)
+df <- gapminder::gapminder %>% filter(year == 2007) 
+world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf") %>% 
+       filter(subregion != "Antarctica") %>% 
+       filter(admin != "Greenland") %>% 
+       select(name, iso_a3, geometry) 
+df_world <- left_join(world, df,  by = c("name" = "country")) %>% #- solo 142
+  select(-year)
+```
+
+Pasamos `df` a OJS, como es un sf necesitamos el paquete `geojsonsf`
+
+
+```{r}
+#| echo: fenced
+#| eval: true
+library("geojsonsf")
+#ojs_define(my_ojs_data = df)
+ojs_define(data = sf_geojson(df_world))
+```
+
+Hay que hacer un paso más para poder usar datos los datos de R en Observable: hay que transformar los datos a un formato compatible con OJS, para ello usamos la función `transpose()`
+
+Las visualizaciones de JavaScript suelen utilizar un formato de datos diferente al de los marcos de datos rectangulares que normalmente se necesitan en R o Python.
+
+
+
+```{ojs}
+//| echo: false
+//mydata = transpose(data)
+countries = JSON.parse(data) 
+Inputs.table(countries.features.map(d => d.properties))
+```
+
+
+Cargamos la librería `bertin`
+
+```{ojs}
+bertin = require("bertin@1.2.4")
+//bertin.quickdraw(countries)
+```
+
+
 
 <br>
+
+Hacemos una coropleta:
+
+
+```{ojs}
+// eval: true
+viewof nbreaks = Inputs.range([3, 9], { label: "nbreaks", step: 1, value: 7 })
+viewof method = Inputs.select(["jenks", "q6", "quantile", "equal", "msd"], {
+  label: "method",
+  value: "quantile"
+})
+choro = bertin.draw({
+  params: { projection: "Eckert3"},
+  layers: [
+    {
+      type: "layer",
+      geojson: countries,
+      fill: {
+        type: "choro",
+        values: "lifeExp",
+        nbreaks: nbreaks,
+        method: method,
+        colors: "RdYlGn",
+        leg_round: 3,
+        leg_title: `Lifeexperience 
+(in years)`,
+        leg_x: 30,
+        leg_y: 100
+      },
+      tooltip: ["$name", "Esperanza de vida", "$lifeExp",  "PIB per cápita", "$gdpPercap"]
+    },
+    { type: "graticule" },
+    { type: "outline" }
+  ]
+})
+```
+
 
 ## Un ejemplo
 

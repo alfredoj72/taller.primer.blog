@@ -200,7 +200,8 @@ Tarea xx
 
 <section id="intro" class="level2 page-columns page-full" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="intro"><span class="header-section-number">1</span> Intro</h2>
-<p>Ya sabemos que <a href="https://quarto.org/">Quarto®</a> is an open-source scientific and technical publishing system built on Pandoc. Permite crear contenidos con R, Python, Julia y Observable.</p>
+<p>Ya sabemos que <a href="https://quarto.org/">Quarto®</a> is an open-source scientific and technical publishing system built on Pandoc que permite crear contenidos con R, Python, Julia y <a href="https://observablehq.com/">Observable</a></p>
+<p>Obervable JS (OJS) es <em>“a JavaScript flavor designed for data analysis”</em>. Observable tiene digamos la interactividad incorporada de serie: es sencillo incorporar filtros interactivos para controlar el output que muestran las tablas y gráficos. Esto abré nuevas posibilidades a los usuarios de R.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/quarto.png" height="50"></p>
@@ -208,7 +209,118 @@ Tarea xx
 <blockquote class="blockquote">
 <p>Combining R and Observable javascript allows to take advantage of the strengths of both languages. It allows to combine the statistical analysis possibilities of R and the reactive visualization features of Observable. A win win strategy.</p>
 </blockquote>
+<p>Algo parecido dice Sharon Machlis <a href="https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html">aquí</a>:</p>
+<blockquote class="blockquote">
+<p>Using Quarto with Observable JavaScript is a great solution for R and Python users who want to create more interactive and visually engaging reports. Using Quarto with Observable offers an elegant workflow if you want to combine data analysis in Python and R with reactivity. Finally, Observable was set up with collaboration in mind, so it’s fairly easy to find and use someone else’s open source code</p>
+</blockquote>
+<p>Quarto puede ejecutar código de OJS. Sólo hay que colocar el código entre las marcas habituales : <code>```{ojs}</code>. Además se puede analizar los datos en R y luego enviarlos a OJS<sup>1</sup> con la función <code>ojs_define()</code>.</p>
+<p>Por ejemplo, voy a crear un sf data.frame para ver si me lo acepta OJS:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">library</span>(tidyverse)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"rnaturalearth"</span>)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"rnaturalearthdata"</span>)</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;">library</span>(sf)</span>
+<span id="cb1-5">df <span class="ot" style="color: #003B4F;">&lt;-</span> gapminder<span class="sc" style="color: #5E5E5E;">::</span>gapminder <span class="sc" style="color: #5E5E5E;">%&gt;%</span> <span class="fu" style="color: #4758AB;">filter</span>(year <span class="sc" style="color: #5E5E5E;">==</span> <span class="dv" style="color: #AD0000;">2007</span>) </span>
+<span id="cb1-6">world <span class="ot" style="color: #003B4F;">&lt;-</span> rnaturalearth<span class="sc" style="color: #5E5E5E;">::</span><span class="fu" style="color: #4758AB;">ne_countries</span>(<span class="at" style="color: #657422;">scale =</span> <span class="st" style="color: #20794D;">"medium"</span>, <span class="at" style="color: #657422;">returnclass =</span> <span class="st" style="color: #20794D;">"sf"</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> </span>
+<span id="cb1-7">       <span class="fu" style="color: #4758AB;">filter</span>(subregion <span class="sc" style="color: #5E5E5E;">!=</span> <span class="st" style="color: #20794D;">"Antarctica"</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> </span>
+<span id="cb1-8">       <span class="fu" style="color: #4758AB;">filter</span>(admin <span class="sc" style="color: #5E5E5E;">!=</span> <span class="st" style="color: #20794D;">"Greenland"</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> </span>
+<span id="cb1-9">       <span class="fu" style="color: #4758AB;">select</span>(name, iso_a3, geometry) </span>
+<span id="cb1-10">df_world <span class="ot" style="color: #003B4F;">&lt;-</span> <span class="fu" style="color: #4758AB;">left_join</span>(world, df,  <span class="at" style="color: #657422;">by =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">"name"</span> <span class="ot" style="color: #003B4F;">=</span> <span class="st" style="color: #20794D;">"country"</span>)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> <span class="co" style="color: #5E5E5E;">#- solo 142</span></span>
+<span id="cb1-11">  <span class="fu" style="color: #4758AB;">select</span>(<span class="sc" style="color: #5E5E5E;">-</span>year)</span></code></pre></div>
+</div>
+<p>Pasamos <code>df</code> a OJS, como es un sf necesitamos el paquete <code>geojsonsf</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;">```{r}</span></span>
+<span id="cb2-2"><span class="co" style="color: #5E5E5E;">#| eval: true</span></span>
+<span id="cb2-3"><span class="fu" style="color: #4758AB;">library</span>(<span class="st" style="color: #20794D;">"geojsonsf"</span>)</span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;">#ojs_define(my_ojs_data = df)</span></span>
+<span id="cb2-5"><span class="fu" style="color: #4758AB;">ojs_define</span>(<span class="at" style="color: #657422;">data =</span> <span class="fu" style="color: #4758AB;">sf_geojson</span>(df_world))</span>
+<span id="cb2-6"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
+</div>
+<p>Hay que hacer un paso más para poder usar datos los datos de R en Observable: hay que transformar los datos a un formato compatible con OJS, para ello usamos la función <code>transpose()</code></p>
+<p>Las visualizaciones de JavaScript suelen utilizar un formato de datos diferente al de los marcos de datos rectangulares que normalmente se necesitan en R o Python.</p>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="90" data-source-offset="-27" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 89;"><span id="cb3-90">countries <span class="op" style="color: #5E5E5E;">=</span> <span class="bu" style="color: null;">JSON</span><span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">parse</span>(data) </span>
+<span id="cb3-91">Inputs<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">table</span>(countries<span class="op" style="color: #5E5E5E;">.</span><span class="at" style="color: #657422;">features</span><span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">map</span>(d <span class="kw" style="color: #003B4F;">=&gt;</span> d<span class="op" style="color: #5E5E5E;">.</span><span class="at" style="color: #657422;">properties</span>))</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<p>Cargamos la librería <code>bertin</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" data-startfrom="97" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 96;"><span id="cb4-97">bertin <span class="op" style="color: #5E5E5E;">=</span> <span class="pp" style="color: #AD0000;">require</span>(<span class="st" style="color: #20794D;">"bertin@1.2.4"</span>)</span>
+<span id="cb4-98"><span class="co" style="color: #5E5E5E;">//bertin.quickdraw(countries)</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
 <p><br></p>
+<p>Hacemos una coropleta:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5" data-startfrom="111" data-source-offset="-14" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 110;"><span id="cb5-111">viewof nbreaks <span class="op" style="color: #5E5E5E;">=</span> Inputs<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">range</span>([<span class="dv" style="color: #AD0000;">3</span><span class="op" style="color: #5E5E5E;">,</span> <span class="dv" style="color: #AD0000;">9</span>]<span class="op" style="color: #5E5E5E;">,</span> { <span class="dt" style="color: #AD0000;">label</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"nbreaks"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="dt" style="color: #AD0000;">step</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">1</span><span class="op" style="color: #5E5E5E;">,</span> <span class="dt" style="color: #AD0000;">value</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">7</span> })</span>
+<span id="cb5-112">viewof method <span class="op" style="color: #5E5E5E;">=</span> Inputs<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">select</span>([<span class="st" style="color: #20794D;">"jenks"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"q6"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"quantile"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"equal"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"msd"</span>]<span class="op" style="color: #5E5E5E;">,</span> {</span>
+<span id="cb5-113">  <span class="dt" style="color: #AD0000;">label</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"method"</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-114">  <span class="dt" style="color: #AD0000;">value</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"quantile"</span></span>
+<span id="cb5-115">})</span>
+<span id="cb5-116">choro <span class="op" style="color: #5E5E5E;">=</span> bertin<span class="op" style="color: #5E5E5E;">.</span><span class="fu" style="color: #4758AB;">draw</span>({</span>
+<span id="cb5-117">  <span class="dt" style="color: #AD0000;">params</span><span class="op" style="color: #5E5E5E;">:</span> { <span class="dt" style="color: #AD0000;">projection</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"Eckert3"</span>}<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-118">  <span class="dt" style="color: #AD0000;">layers</span><span class="op" style="color: #5E5E5E;">:</span> [</span>
+<span id="cb5-119">    {</span>
+<span id="cb5-120">      <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"layer"</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-121">      <span class="dt" style="color: #AD0000;">geojson</span><span class="op" style="color: #5E5E5E;">:</span> countries<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-122">      <span class="dt" style="color: #AD0000;">fill</span><span class="op" style="color: #5E5E5E;">:</span> {</span>
+<span id="cb5-123">        <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"choro"</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-124">        <span class="dt" style="color: #AD0000;">values</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"lifeExp"</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-125">        <span class="dt" style="color: #AD0000;">nbreaks</span><span class="op" style="color: #5E5E5E;">:</span> nbreaks<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-126">        <span class="dt" style="color: #AD0000;">method</span><span class="op" style="color: #5E5E5E;">:</span> method<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-127">        <span class="dt" style="color: #AD0000;">colors</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"RdYlGn"</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-128">        <span class="dt" style="color: #AD0000;">leg_round</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">3</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-129">        <span class="dt" style="color: #AD0000;">leg_title</span><span class="op" style="color: #5E5E5E;">:</span> <span class="vs" style="color: #20794D;">`Lifeexperience </span></span>
+<span id="cb5-130"><span class="vs" style="color: #20794D;">(in years)`</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-131">        <span class="dt" style="color: #AD0000;">leg_x</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">30</span><span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-132">        <span class="dt" style="color: #AD0000;">leg_y</span><span class="op" style="color: #5E5E5E;">:</span> <span class="dv" style="color: #AD0000;">100</span></span>
+<span id="cb5-133">      }<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-134">      <span class="dt" style="color: #AD0000;">tooltip</span><span class="op" style="color: #5E5E5E;">:</span> [<span class="st" style="color: #20794D;">"$name"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"Esperanza de vida"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"$lifeExp"</span><span class="op" style="color: #5E5E5E;">,</span>  <span class="st" style="color: #20794D;">"PIB per cápita"</span><span class="op" style="color: #5E5E5E;">,</span> <span class="st" style="color: #20794D;">"$gdpPercap"</span>]</span>
+<span id="cb5-135">    }<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-136">    { <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"graticule"</span> }<span class="op" style="color: #5E5E5E;">,</span></span>
+<span id="cb5-137">    { <span class="dt" style="color: #AD0000;">type</span><span class="op" style="color: #5E5E5E;">:</span> <span class="st" style="color: #20794D;">"outline"</span> }</span>
+<span id="cb5-138">  ]</span>
+<span id="cb5-139">})</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="un-ejemplo" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="un-ejemplo"><span class="header-section-number">2</span> Un ejemplo</h2>
@@ -224,7 +336,13 @@ Tarea xx
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div> ]]></description>
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p>La documentación oficial de Quarto para hacer disponibles los datos a OJS está <a href="https://quarto.org/docs/interactive/ojs/data-sources.html">aquí</a>↩︎</p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div> ]]></description>
   <category>Quarto</category>
   <category>Observable</category>
   <guid>https://perezp44.github.io/taller.primer.blog/posts/post_07_observable.html</guid>
@@ -741,7 +859,7 @@ Tarea xx
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">{{<span class="sc" style="color: #5E5E5E;">&lt;</span> tweet user<span class="ot" style="color: #003B4F;">=</span>Culturas2_tve id<span class="ot" style="color: #003B4F;">=</span><span class="dv" style="color: #AD0000;">1589703143562309632</span> <span class="sc" style="color: #5E5E5E;">&gt;</span>}}</span></code></pre></div>
 </div>
-<p></p><div id="tweet-96708"></div><script>tweet={"url":"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632","author_name":"Culturas 2","author_url":"https:\/\/twitter.com\/Culturas2_tve","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEn primicia en Culturas 2, así empieza el single “Abnegación”, de \u003Ca href=\"https:\/\/twitter.com\/NachoVegasTwit?ref_src=twsrc%5Etfw\"\u003E@NachoVegasTwit\u003C\/a\u003E, que lanza este viernes. La entrevista completa al artista gijonés en \u003Ca href=\"https:\/\/t.co\/d65rOJlOvY\"\u003Ehttps:\/\/t.co\/d65rOJlOvY\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/cAqUtR6rIy\"\u003Epic.twitter.com\/cAqUtR6rIy\u003C\/a\u003E\u003C\/p\u003E&mdash; Culturas 2 (@Culturas2_tve) \u003Ca href=\"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-96708").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-64330"></div><script>tweet={"url":"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632","author_name":"Culturas 2","author_url":"https:\/\/twitter.com\/Culturas2_tve","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEn primicia en Culturas 2, así empieza el single “Abnegación”, de \u003Ca href=\"https:\/\/twitter.com\/NachoVegasTwit?ref_src=twsrc%5Etfw\"\u003E@NachoVegasTwit\u003C\/a\u003E, que lanza este viernes. La entrevista completa al artista gijonés en \u003Ca href=\"https:\/\/t.co\/d65rOJlOvY\"\u003Ehttps:\/\/t.co\/d65rOJlOvY\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/cAqUtR6rIy\"\u003Epic.twitter.com\/cAqUtR6rIy\u003C\/a\u003E\u003C\/p\u003E&mdash; Culturas 2 (@Culturas2_tve) \u003Ca href=\"https:\/\/twitter.com\/Culturas2_tve\/status\/1589703143562309632?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-64330").innerHTML = tweet["html"];</script><p></p>
 <p><br></p>
 </section>
 <section id="inserta-un-tab-set" class="level2" data-number="3">
@@ -859,8 +977,8 @@ Tarea xx
 <span id="cb6-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
 
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div id="htmlwidget-251195491f2d993a7f4a" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-251195491f2d993a7f4a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b0ccaea93504d56c4e57" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b0ccaea93504d56c4e57">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
 </div></div></div>
 <p><br><br><br><br><br><br><br><br></p>
 <div class="cell page-columns page-full">
@@ -1227,7 +1345,7 @@ Tarea 5.5: Instalar y usar la extensión “Lightbox”
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./imagenes/economia.gif" class="lightbox" data-description="El logo-nano de la facultad de Economía de la Universtat de València" data-gallery="quarto-lightbox-gallery-1" data-desc-position="left" title="Mi imagen con Lighbox activado"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
+<p><a href="./imagenes/economia.gif" class="lightbox" data-description="El logo-nano de la facultad de Economía de la Universtat de València" title="Mi imagen con Lighbox activado" data-gallery="quarto-lightbox-gallery-1" data-desc-position="left"><img src="https://perezp44.github.io/taller.primer.blog/posts/imagenes/economia.gif" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">Mi imagen con Lighbox activado</figcaption><p></p>
 </figure>
 </div>
@@ -1265,7 +1383,7 @@ Instalar y usar la extensión <strong>Quarto social embeds</strong>
 <span id="cb8-4"></span>
 <span id="cb8-5">{{<span class="sc" style="color: #5E5E5E;">&lt;</span> tweet user<span class="ot" style="color: #003B4F;">=</span>ambitocultural id<span class="ot" style="color: #003B4F;">=</span><span class="dv" style="color: #AD0000;">1589543369512026112</span> <span class="sc" style="color: #5E5E5E;">&gt;</span>}}</span></code></pre></div>
 </div>
-<p></p><div id="tweet-32178"></div><script>tweet={"url":"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112","author_name":"Ámbito Cultural","author_url":"https:\/\/twitter.com\/ambitocultural","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEl cantautor Nacho Vegas está de vuelta en la escena musical con un nuevo trabajo lleno de gran hondura poética \uD83D\uDC49 Mundos inmóviles derrumbándose \uD83C\uDFA4 Estará acompañado por \u003Ca href=\"https:\/\/twitter.com\/fneirad?ref_src=twsrc%5Etfw\"\u003E@fneirad\u003C\/a\u003E, crítico y periodista musical, en un evento único\uD83D\uDD1D\u003Cbr\u003E\u003Cbr\u003E\uD83D\uDD17\u003Ca href=\"https:\/\/t.co\/kn4uJeMRWo\"\u003Ehttps:\/\/t.co\/kn4uJeMRWo\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/hzdwJzxrfj\"\u003Epic.twitter.com\/hzdwJzxrfj\u003C\/a\u003E\u003C\/p\u003E&mdash; Ámbito Cultural (@ambitocultural) \u003Ca href=\"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-32178").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-45166"></div><script>tweet={"url":"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112","author_name":"Ámbito Cultural","author_url":"https:\/\/twitter.com\/ambitocultural","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEl cantautor Nacho Vegas está de vuelta en la escena musical con un nuevo trabajo lleno de gran hondura poética \uD83D\uDC49 Mundos inmóviles derrumbándose \uD83C\uDFA4 Estará acompañado por \u003Ca href=\"https:\/\/twitter.com\/fneirad?ref_src=twsrc%5Etfw\"\u003E@fneirad\u003C\/a\u003E, crítico y periodista musical, en un evento único\uD83D\uDD1D\u003Cbr\u003E\u003Cbr\u003E\uD83D\uDD17\u003Ca href=\"https:\/\/t.co\/kn4uJeMRWo\"\u003Ehttps:\/\/t.co\/kn4uJeMRWo\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/hzdwJzxrfj\"\u003Epic.twitter.com\/hzdwJzxrfj\u003C\/a\u003E\u003C\/p\u003E&mdash; Ámbito Cultural (@ambitocultural) \u003Ca href=\"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-45166").innerHTML = tweet["html"];</script><p></p>
 <p><br><br></p>
 <p>Para insertar un <strong>gist de Github</strong> has de:</p>
 <div class="cell">
@@ -1380,8 +1498,8 @@ Instalar y usar la extensión <strong>Quarto social embeds</strong>
 <span id="cb2-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
 
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
-<div id="htmlwidget-82bc90aa620bc3cbb33e" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-82bc90aa620bc3cbb33e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f26c862983851e916d8a" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f26c862983851e916d8a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
 </div></div></div>
 <p><br></p>
 <p>Y ahora ocupando toda la pantalla:</p>
@@ -1394,8 +1512,8 @@ Instalar y usar la extensión <strong>Quarto social embeds</strong>
 <span id="cb3-6"><span class="fu" style="color: #4758AB;">addMarkers</span>(<span class="at" style="color: #657422;">lng =</span> <span class="sc" style="color: #5E5E5E;">-</span><span class="fl" style="color: #AD0000;">4.7880</span>, <span class="at" style="color: #657422;">lat =</span> <span class="fl" style="color: #AD0000;">37.885</span>, <span class="at" style="color: #657422;">popup =</span> <span class="st" style="color: #20794D;">"Rectorado de la Universidad de Córdoba</span><span class="sc" style="color: #5E5E5E;">\n</span><span class="st" style="color: #20794D;"> (Sede de las XII Jornadas de usuarios de R)"</span>)</span>
 <span id="cb3-7"><span class="in" style="color: #5E5E5E;">```</span></span></code></pre></div>
 <div class="cell-output-display column-screen">
-<div id="htmlwidget-f2547fffa2a91b9c6ea5" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f2547fffa2a91b9c6ea5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-57a98a9a2d8c707da096" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-57a98a9a2d8c707da096">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[37.885,-4.788,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Rectorado de la Universidad de Córdoba\n (Sede de las XII Jornadas de usuarios de R)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[37.885,37.885],"lng":[-4.788,-4.788]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
