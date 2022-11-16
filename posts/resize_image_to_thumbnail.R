@@ -8,7 +8,7 @@
 # carpeta <- carpetas_de_posts[1] #- la ruta a la carpeta más antigua
 # carpeta <- carpetas_de_posts[length(carpetas_de_posts)] #- la ruta a la carpeta más moderna
 
-my_thumbnail <- here::here("posts", "thumbnails", "thumbnail_08.png")
+my_thumbnail <- here::here("posts", "thumbnails", "thumbnail_08b.png")
 
 img <-  magick::image_read(my_thumbnail)
 img_resized <- img |> magick::image_scale("740x426!")

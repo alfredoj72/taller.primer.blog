@@ -7,7 +7,10 @@ description: |
   Intentando entender qué son y cómo usar las extensiones de Quarto
 author:
   - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
     affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
 date: 2022-11-02
 categories: [Quarto, extensiones]
 image: "./thumbnails/thumbnail_02.png"

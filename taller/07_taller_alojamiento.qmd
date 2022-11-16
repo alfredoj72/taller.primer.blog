@@ -6,12 +6,23 @@ toc-title: Tutorial nº 7
 
 {{< include ./_includes/_contexto.qmd >}}
 
+Al final este tutorial no salió, así que os remito a la [documentación oficial](https://quarto.org/docs/publishing/) de Quarto.
 
-- Netlify drop
+Simplemente decir que publicar el blog en QuartoPub es muy fácil, ya lo hemos hecho, simplemente desde la Terminal ejecutar `quarto render`.
 
-- Rpubs
+Yo suelo alojar mis proyectos en Github Pages. Lo suelo hacer utilizando Git desde RStudio y la terminal.
+
+Para alojar el blog en Github pages el blog debe generarse en la carpeta "docs". Simplemente en el archivo `_quarto.yml` has de poner `output-dir: docs` y luego subir toda la carpeta del Qproject a un repositorio de Github y activarla opción "Pages".
+
+Si hay tiempo y nos animamos lo hacemos en el taller. No creo que haya tiempo
 
 
-- tutorial Git en un curso de reproducibilidad: <https://eliocamp.github.io/reproducibility-with-r/materials/day2/01-git/#git-and-github>
 
-- Guía de instalacion de Git: <https://ucsb-meds.github.io/meds-install-windows.html>
+<br>
+
+
+## Some biblio
+
+- [Tutorial Git en curso de reproducibilidad](https://eliocamp.github.io/reproducibility-with-r/materials/day2/01-git/#git-and-github)
+
+- [Guía de instalacion de Git](https://ucsb-meds.github.io/meds-install-windows.html)

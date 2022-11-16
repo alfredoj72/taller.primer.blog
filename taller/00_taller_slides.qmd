@@ -31,6 +31,8 @@ format:
 footer: |
         Slides hechas con [Quarto](https://quarto.org/) para las [XII Jornadas de Usuarios de R](http://r-es.org/12jr/)
     #theme: [moon, custom.scss]
+revealjs-plugins:
+  - pointer
 ---
 
 # Bienvenidos al taller!! :vulcan_salute::rose:
@@ -110,6 +112,14 @@ footer: |
 
 -   ... y, si puede ser, **pasar un buen rato** :slightly_smiling_face: mientras aprendemos
 :::
+
+
+## Estructura de una web  {.center .unnumbered background-color="#C5B38F" title-align="center"}
+
+
+![](imagenes/img_estructura-web_ok-02.png){fig-align="center" width="120%"}
+
+
 
 ## Beneficios de tener un blog {.smaller}
 
@@ -213,7 +223,7 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 ## Ventajas de Quarto
 
--   Proyecto en [desarrollo activo](https://quarto.org/docs/download/) ... mientras que Rmarkdown ...
+-   Proyecto en [desarrollo activo](https://quarto.org/docs/download/) ... mientras que Rmarkdown [it's not going away](https://yihui.org/en/2022/04/quarto-r-markdown/) ...
 
 -   **Unifica** algunas de las funcionalidades de Rmarkdown
 

@@ -7,7 +7,10 @@ description: |
   Viendo las posibilidades de Layout que tenemos en Quarto
 author:
   - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
     affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
 date: 2022-11-01
 categories: [Quarto, layout]
 image: "./thumbnails/thumbnail_01.png"

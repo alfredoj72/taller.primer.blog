@@ -27,12 +27,12 @@ execute:
   eval: true
 
 # Default author
-author:
-  - name: Pedro J. Pérez
-    url: https://perezp44.github.io/pjperez.web/
-    affiliation: Universitat de València
-    affiliation-url: https://www.uv.es
-    orcid: 0000-0001-9375-6330
+# author:
+#   - name: Pedro J. Pérez
+#     url: https://perezp44.github.io/pjperez.web/
+#     affiliation: Universitat de València
+#     affiliation-url: https://www.uv.es
+#     orcid: 0000-0001-9375-6330
 
 # Fechas
 # la fecha de creación la pongo en el .qmd

@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.2.237">
+  <meta name="generator" content="quarto-1.2.269">
 
   <meta name="author" content="Pedro J. Pérez">
   <title>Mi primer blog con Quarto (WIP) - Mi primer blog con Quarto</title>
@@ -99,6 +99,7 @@
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-pointer/pointer.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style>html{ scroll-behavior: smooth; }</style>
   <style type="text/css">
@@ -772,8 +773,9 @@
 <div class="callout-content">
 <ul>
 <li><p>Sustituye el contenido original del fichero <code>_quarto.yml</code> por el contenido del siguiente chunk.</p></li>
-<li><p>Pon un título a tu blog(<code>title: "titulo-de-mi-blog"</code>)</p></li>
-<li><p>Pon tu e-mail, usuario de Github y cuenta de Twitter (<code>href:</code>)</p></li>
+<li><p>Pon un título que te guste a tu blog (línea 5 <code>title: "titulo-de-mi-blog"</code>)</p></li>
+<li><p>Pon tu usuario de Github y cuenta de Twitter (lineas 12 y 14: <code>href:</code>)</p></li>
+<li><p>Pon tu email (línea 16: <code>href:</code>)</p></li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">project</span><span class="kw">:</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
@@ -804,10 +806,10 @@
 </div>
 </div>
 </div>
+<p>Además:</p>
 <ul>
-<li><strong>linea 5</strong>: cambiamos el título del blog</li>
 <li><strong>lineas 17-19</strong>: añadimos la página/pestaña “Docencia” a la izquierda de la navbar</li>
-<li><strong>lineas 21-26</strong>: modificamos el theme …, <strong>CSS</strong>, ….</li>
+<li><strong>lineas 21-26</strong>: modificamos el theme, ponemos TOC a los documentos, …, <strong>CSS</strong>, ….</li>
 </ul>
 </section>
 <section class="slide level2">
@@ -889,7 +891,8 @@
 </div>
 <ul>
 <li><p>De momento, <strong>solo vamos a hacer cambios en la segunda linea</strong>: cambiaremos el título.</p></li>
-<li><p>Fijaros que es un archivo especial: “sólo tiene yaml”</p></li>
+<li><p>Fíjate que es el título del listado de posts (del blog), no de la página web.</p></li>
+<li><p>Fijaros que <code>index.qmd</code> es un archivo especial: “sólo tiene yaml”. Es el que genera el listado de posts</p></li>
 </ul>
 <p><br></p>
 </section>
@@ -1136,6 +1139,7 @@
 <li><p>Con ello podremos cambiar la <strong>apariencia del listado de posts</strong></p></li>
 <li><p>Para ello tienes que ir jugando con las opciones que nos ha proporcionado la plantilla de Quarto en el fichero <code>index.qmd</code>.</p></li>
 <li><p>la YAML inteligence te ayudará!! (vamos el autocompletado en el YAML)</p></li>
+<li><p>No uses las opciones llamadas <code>custom</code></p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -2350,12 +2354,21 @@
 <li><p><code>echo</code>: además de los típicos true y false, ahora <strong>incorpora un nuevo valor <code>fenced</code></strong> que facilita mostrar las marcas de los chunks en el documento final. Documentación <a href="https://quarto.org/docs/computations/execution-options.html#fenced-echo">aquí</a>.</p></li>
 <li><p>Además, si usamos <code>knitr</code> para ejecutar los chunks, entonces podemos usar todas las <a href="https://yihui.org/knitr/options/">opciones nativas de <code>knitr</code></a>, como: collapse, fig.width, comment, etc … Más información <a href="https://quarto.org/docs/computations/execution-options.html#knitr-options">aquí</a>. Un ejemplo:</p></li>
 </ul>
-
-<img data-src="./imagenes/tt_01/img_23.png" class="r-stretch quarto-figure-center"><ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./imagenes/tt_01/img_23.png"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./imagenes/tt_01/img_23.png"></p>
+</figure>
+</div>
+<ul>
 <li><p>Hay <strong>más opciones para los chunks</strong>. Por ejemplo:</p>
 <ul>
 <li><p>hacer <strong>folding code</strong> con <code>#| code-fold: true</code></p></li>
-<li><p>si el código es muy largo, puedes usar <code>#| code-overflow: wrap</code> y <code>#| code-overflow: scroll</code></p></li>
+<li><p>si el código es muy largo, puedes usar <code>#| code-overflow: wrap</code> o scroll</p></li>
 <li><p>puedes hacer que se muestren los <strong>números de linea</strong> con <code>#| code-line-numbers: true</code></p></li>
 </ul></li>
 </ul>
@@ -2574,12 +2587,52 @@
 <li><p>Referentes a la <strong>estructura de la web</strong>: <a href="https://quarto.org/docs/websites/website-navigation.html">aquí</a> y <a href="https://quarto.org/docs/websites/">aquí</a></p></li>
 <li><p>Referentes a la <strong>estética</strong>: <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a></p></li>
 </ul>
+</section></section>
+<section>
+<section id="algunas-opciones-de-yaml" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>Algunas opciones de YAML</h1>
+
 </section>
-<section id="algunas-opciones-de-yaml" class="slide level2">
-<h2>Algunas opciones de YAML</h2>
+<section id="algunas-opciones-de-yaml-lang" class="slide level2">
+<h2>Algunas opciones de YAML (<strong>lang</strong>)</h2>
 <ul>
-<li><code>lang: es</code>: <a href="https://quarto.org/docs/authoring/language.html" class="uri">https://quarto.org/docs/authoring/language.html</a></li>
+<li><p>Si te has fijado, los metadatos de los documentos aparecen en inglés.</p></li>
+<li><p>Por ejemplo, pone “Author” en lugar de “Autor” o “Autora”.</p></li>
 </ul>
+<p><br></p>
+<h4 id="hagamos-algunos-cambios">Hagamos algunos cambios</h4>
+<ul>
+<li>Si quisiéramos cambiar específicamente la opción de autor, tendríamos que poner en el YAML:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>language<span class="sc">:</span> </span>
+<span id="cb22-2"><a href="#cb22-2"></a>  title<span class="sc">-</span>block<span class="sc">-</span>author<span class="sc">-</span>single<span class="sc">:</span> <span class="st">"Autora"</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>Podemos cambiar todas las opciones especificando en el YAML <code>lang: es</code>.</p></li>
+<li><p>La documentación oficial está <a href="https://quarto.org/docs/authoring/language.html">aquí</a> y <a href="https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language.yml">aquí</a> todos los elementos que se pueden modificar. Y <a href="https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/language">aquí</a> los ficheros específicos para diferentes idiomas. <a href="https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language-es.yml">Aquí</a> el documento para el castellano.</p></li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>Si quisieras usar tu propio documento tendrías que poner en el YAML: <code>language: custom.yml</code> (lógicamente el fichero <code>custom.yml</code> tendría que existir y estar en la ruta correcta).</p></li>
+<li><p>¿Probamos a hacerlo?</p></li>
+</ul>
+</section>
+<section id="otras-opciones-para-tunear-desde-el-yaml" class="slide level2">
+<h2>Otras opciones para tunear desde el YAML</h2>
+<ul>
+<li><p><strong>TOC</strong>: es importante tenerlo a nuestro gusto. <a href="https://quarto.org/docs/reference/formats/html.html#table-of-contents">Aquí</a> tienes las opciones que puedes ajustar con opciones en el yaml</p></li>
+<li><p><strong>Chunks</strong>: <a href="https://quarto.org/docs/reference/formats/html.html#code">aquí</a> tienes las opciones que puedes ajustar desde el YAML</p></li>
+<li><p><strong>Resizing de los thumbnails</strong>. Un <a href="https://gist.github.com/perezp44/fc5a3853039fd29ff94c5b8488fea0a1#file-resize_thumbnails-r">gist</a> para hacerlo.</p></li>
+<li><p><strong>Algunas opciones de tuneado</strong> que puedes implementar desde el YAML. Prueba a poner estas opciones en el archivo <code>_quarto.yml</code>. Nuestro blog <strong>empeorará bastante</strong>. Más opciones <a href="https://quarto.org/docs/output-formats/html-themes.html#basic-options">aquí</a>.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>fontcolor<span class="sc">:</span> green          <span class="co">#- color del texto</span></span>
+<span id="cb23-2"><a href="#cb23-2"></a>linkcolor<span class="sc">:</span> purple         <span class="co">#- color de los enlaces</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a>monobackgroundcolor<span class="sc">:</span> red  <span class="co">#- color de los cuadros de resultados de evaluar código</span></span>
+<span id="cb23-4"><a href="#cb23-4"></a>fontsize<span class="sc">:</span> <span class="fl">0.6</span>em           <span class="co">#- tamaño del texto (más pequeño de lo normal: 1)</span></span>
+<span id="cb23-5"><a href="#cb23-5"></a>linestretch<span class="sc">:</span> <span class="fl">2.3</span>          <span class="co">#- tamaño entre las lineas (1.6 es lo "normal")</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section></section>
 <section id="utilizando-css" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
 <h1>2. Utilizando CSS</h1>
@@ -2592,23 +2645,33 @@
 
 <section id="utilizando-sass" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
 <h1>3. Utilizando SASS</h1>
-<p><br></p>
 <ul>
-<li><p>Tendrás que mirar otras referencias, por ejemplo: <a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide">Customizing Quarto Websites: Make your website stand out using SASS</a> o <a href="https://www.youtube.com/watch?v=ErRX8plZpQE">este video</a></p></li>
+<li><p>La documentación oficial <a href="https://quarto.org/docs/output-formats/html-themes.html#sass-variables">aquí</a></p></li>
+<li><p><a href="https://quarto.org/docs/output-formats/html-themes-more.html">Aquí</a> la documentación oficial de Quarto sobre los Bootswatch Sass Theme Files.</p></li>
 <li><p>Bootstrap define unas 1.400 variables con las que controlar fuentes, colores, etc … . Puedes verlas <a href="https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss">aquí</a></p></li>
 <li><p><a href="https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes">Aquí</a> están los ficheros <code>.scss</code> de los 25 built-in Bootswatch themes.</p></li>
-<li><p><a href="https://quarto.org/docs/output-formats/html-themes-more.html">Aquí</a> la documentación oficial de Quarto sobre los Bootswatch Sass Theme Files</p></li>
+</ul>
+<p><br></p>
+<ul>
+<li><p><strong>Otras referencias</strong>, por ejemplo: <a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide">Customizing Quarto Websites: Make your website stand out using SASS</a> o <a href="https://www.youtube.com/watch?v=ErRX8plZpQE">este video</a></p></li>
+<li><p>Tengo una “práctica” en el <a href="./taller/06_taller_tuneado-del-blog.html">tutorial nº 6</a> del taller.</p></li>
 </ul>
 </section>
 
-<section id="fín" class="title-slide slide level1 unnumbered centered center" data-background-color="#562457">
-<h1>FÍN!!</h1>
+<section id="fin" class="title-slide slide level1 unnumbered centered center" data-background-color="#562457">
+<h1>Fin!!</h1>
 <ul>
-<li><p>Muchas gracias por la atención</p></li>
-<li><p>Espero que el taller haya salido OK</p></li>
-<li><p>Si alguien motivado por el taller acaba haciéndose un blog, please que me avise (pedro.j.perez@uv.es)</p></li>
-<li><p>Big Thanks to all the Posit/Quarto team!!!!</p></li>
-<li><p>Bye, nos vemos en las próximas Jornadas</p></li>
+<li><p>Muchas gracias por la atención <span class="emoji" data-emoji="slightly_smiling_face">🙂</span></p></li>
+<li><p>Espero que el taller haya salido OK <span class="emoji" data-emoji="white_check_mark">✅</span></p></li>
+<li><p>Si alguien motivado por el taller acaba haciéndose un blog, <strong>please que me avise</strong> (pedro.j.perez@uv.es) <span class="emoji" data-emoji="mailbox">📫</span></p></li>
+</ul>
+<p><br></p>
+<ul>
+<li>Big thanks to all the Posit/Quarto team !!!! 👏🏼👏🏼 🙌🏼</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Bye 👋🏼 👋🏼 , nos vemos en las próximas Jornadas en …</li>
 </ul>
 
 <div class="footer footer-default">
@@ -2627,6 +2690,7 @@
   <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-pointer/pointer.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -2649,6 +2713,7 @@
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'pointer': {"key":"q","color":"red","pointerSize":16,"alwaysVisible":false},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -2819,7 +2884,7 @@
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealPointer, QuartoSupport,
 
           RevealMath,
           RevealNotes,

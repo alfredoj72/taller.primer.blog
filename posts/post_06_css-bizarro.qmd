@@ -1,6 +1,11 @@
 ---
 title: "Tuneando con CSS (cambios bizarros!!)"
-author: "Pedro J. Pérez"
+author:
+  - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
+    affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
 date: 2022-11-06
 categories: [Quarto, CSS]
 image: thumbnails/thumbnail_06.png

@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.2.237">
+  <meta name="generator" content="quarto-1.2.269">
 
   <meta name="author" content="Pedro J. Pérez">
   <title>Mi primer blog con Quarto (WIP) - Mi primer blog con Quarto (y Rmd)</title>
@@ -34,6 +34,7 @@
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-pointer/pointer.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style>html{ scroll-behavior: smooth; }</style>
   <style type="text/css">
@@ -434,6 +435,10 @@
 </ul>
 </div>
 </section>
+<section id="estructura-de-una-web" class="slide level2 center unnumbered" data-background-color="#C5B38F" data-title-align="center">
+<h2>Estructura de una web</h2>
+
+<img data-src="imagenes/img_estructura-web_ok-02.png" style="width:120.0%" class="r-stretch quarto-figure-center"></section>
 <section id="beneficios-de-tener-un-blog" class="slide level2 smaller">
 <h2>Beneficios de tener un blog</h2>
 <p><br></p>
@@ -533,7 +538,7 @@
 <section id="ventajas-de-quarto" class="slide level2">
 <h2>Ventajas de Quarto</h2>
 <ul>
-<li><p>Proyecto en <a href="https://quarto.org/docs/download/">desarrollo activo</a> … mientras que Rmarkdown …</p></li>
+<li><p>Proyecto en <a href="https://quarto.org/docs/download/">desarrollo activo</a> … mientras que Rmarkdown <a href="https://yihui.org/en/2022/04/quarto-r-markdown/">it’s not going away</a> …</p></li>
 <li><p><strong>Unifica</strong> algunas de las funcionalidades de Rmarkdown</p></li>
 <li><p>Por ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans</p></li>
 <li><p>Para ver si estas ventajas merecen la pena para ti puedes leer a <a href="https://occasionaldivergences.com/posts/quarto-questions/#what-are-the-benefits-of-using-quarto-for-_____">Occasional Divergences</a>, <a href="https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/">Nick Tierney</a>, <a href="https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/">Alison Hill</a>, <a href="https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/">Danielle Navarro</a>, o <a href="https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown">Stack Overflow</a></p></li>
@@ -753,6 +758,7 @@
   <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-pointer/pointer.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -775,6 +781,7 @@
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'pointer': {"key":"q","color":"red","pointerSize":16,"alwaysVisible":false},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -945,7 +952,7 @@
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealPointer, QuartoSupport,
 
           RevealMath,
           RevealNotes,

@@ -1,10 +1,13 @@
 ---
 title: "Más elementos (WIP)"
 description: |
-  Algunos elementos más de Quarto para escribir artículos o posts.
-#author:
-#  - name: Pedro J. Pérez
-#    affiliation: Universitat de València
+  Post siempre en WIP para ir recopilando truqillos.
+author:
+  - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
+    affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
 date: 2022-11-21
 categories: [Quarto, más elementos, ejemplos]
 image: "./thumbnails/thumbnail_00.png"
@@ -138,6 +141,10 @@ Will only appear in HTML.
 
 ## Más cosas
 
+- Render code in yaml: @sharon000: You can render R code in Quarto YAML with !expr @thomas_mock's example:  #| fig-cap: !expr glue::glue("The mean temperature was {mean(airquality$Temp) |> round()}")
+>https://twitter.com/sharon000/status/1557060949613445120/photo/1>
+
+
 - [Shinylive](https://quarto.org/docs/blog/posts/2022-10-25-shinylive-extension/): incorporar un shiny (hecho con Phyton) sin necesidad de servidor.
 
 - Para convertir ficheros `.Rmd` a `wmd` puedes usar `knitr::convert_chunk_header()`
@@ -175,11 +182,25 @@ Se verá así: El data.frame iris tiene `r nrow(iris)` filas `r ncol(iris)` colu
 ```
 
 
-####  Border
+###  Border
 
 ::: {.border}
 This content can be styled with a border
 :::
+
+### Teclitas
+
+Hacer como las teclitas del ordenador: `<kbd>Enter</kbd>` se ve así:  <kbd>Enter</kbd>
+
+### Atajos RStudio
+
+En RStudio: <kbd>ALT</kbd> + click activa el multicursor
+
+
+
+## Some biblio
+
+- [R Markdown Tips and Tricks #3: Time-savers & Trouble-shooters](https://posit.co/blog/r-markdown-tips-and-tricks-3-time-savers/). Viene de [este hilo](https://twitter.com/_bcullen/status/1526979869774475264)
 
 
 ## Last Updated {.appendix}

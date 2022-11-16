@@ -17,7 +17,7 @@ Este ya es mi segundo post con Quarto. En él voy a hacer lo siguiente:
 
 ```{r, eval = FALSE}
 
-::: {#fig-elephants layout-ncol=2}
+::: {layout-ncol=2}
 
 ![Imágen 1](thumbnail.jpg){#fig-2.1}
 
@@ -28,7 +28,7 @@ Este ya es mi segundo post con Quarto. En él voy a hacer lo siguiente:
 ```
 
 
-::: {#fig-elephants layout-ncol=2}
+::: {layout-ncol=2}
 
 ![Imágen 1](thumbnail.jpg){#fig-2.1}
 
@@ -60,7 +60,7 @@ Este ya es mi segundo post con Quarto. En él voy a hacer lo siguiente:
 #### Para hacer esto ...
 
 
-::: {#fig-elephants layout-ncol=2}
+::: {layout-ncol=2}
 
 ![Imágen 1](thumbnail.jpg){#fig-2.1}
 
@@ -74,7 +74,7 @@ Dos imágenes alineadas
 
 
 ``` markdown
-::: {#fig-elephants layout-ncol=2}
+::: {layout-ncol=2}
 
 ![Imágen 1](thumbnail.jpg){#fig-2.1}
 
@@ -90,7 +90,7 @@ Dos imágenes alineadas
 #### Para hacer esto ...
 
 
-::: {#fig-elephants layout-ncol=2}
+::: { layout-ncol=2}
 
 ![Imágen 1](thumbnail.jpg){#fig-2.1}
 
@@ -104,7 +104,7 @@ Dos imágenes alineadas
 
 
 ``` markdown
-::: {#fig-elephants layout-ncol=2}
+::: {layout-ncol=2}
 
 ![Imágen 1](thumbnail.jpg){#fig-2.1}
 

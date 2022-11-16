@@ -32,6 +32,8 @@ format:
     incremental: false   # https://quarto.org/docs/presentations/#incremental-lists
 #logo: imagenes/economia.gif
 css: /assets/styles_slides_tareas.css
+revealjs-plugins:
+  - pointer
 ---
 
 ::: {.callout-note collapse="true" appearance="default" icon="false"}
@@ -156,9 +158,10 @@ Los **archivos importantes** ahora son 3:
 
 {{< include ./_includes/_tt_02_03_tarea-01.qmd >}}
 
--   **linea 5**: cambiamos el título del blog
+Además:
+
 -   **lineas 17-19**: añadimos la página/pestaña "Docencia" a la izquierda de la navbar
--   **lineas 21-26**: modificamos el theme ..., **CSS**, ....
+-   **lineas 21-26**: modificamos el theme, ponemos TOC a los documentos, ..., **CSS**, ....
 
 ------------------------------------------------------------------------
 
@@ -174,9 +177,11 @@ Los **archivos importantes** ahora son 3:
 
 {{< include ./_includes/_tt_02_07_archivo-index.qmd >}}
 
--   De momento, **solo vamos a hacer cambios en la segunda linea**: cambiaremos el título.
+- De momento, **solo vamos a hacer cambios en la segunda linea**: cambiaremos el título.
 
--   Fijaros que es un archivo especial: "sólo tiene yaml"
+- Fíjate que es el título del listado de posts (del blog), no de la página web.
+
+- Fijaros que `index.qmd` es un archivo especial: "sólo tiene yaml". Es el que genera el listado de posts
 
 <br>
 
@@ -527,15 +532,19 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 -   `echo`: además de los típicos true y false, ahora **incorpora un nuevo valor `fenced`** que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo).
 
--   Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
+-   Además, si usamos `knitr` para ejecutar los chunks, entonces podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:  
 
-{{< include ./_includes/_tt_05_45_img-23.qmd >}}
+{{< include ./_includes/_tt_05_45_img-23.qmd >}}  
+
+
+{{< include ./_includes/_tt_05_45_img-23.qmd >}}  
+
 
 -   Hay **más opciones para los chunks**. Por ejemplo:
 
     -   hacer **folding code** con `#| code-fold: true`
 
-    -   si el código es muy largo, puedes usar `#| code-overflow: wrap` y `#| code-overflow: scroll`
+    -   si el código es muy largo, puedes usar `#| code-overflow: wrap` o  scroll
 
     -   puedes hacer que se muestren los **números de linea** con `#| code-line-numbers: true`
 
@@ -629,11 +638,65 @@ Las soluciones a la Práctica están [aquí](/posts/post_04_practica-05.html)
 
 -   Referentes a la **estética**: [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html)
 
-------------------------------------------------------------------------
+# Algunas opciones de YAML {.unnumbered background-color="#b8c2aa"}
 
-## Algunas opciones de YAML
+---
 
--   `lang: es`: <https://quarto.org/docs/authoring/language.html>
+## Algunas opciones de YAML (**lang**)
+
+- Si te has fijado, los metadatos de los documentos aparecen en inglés.
+
+- Por ejemplo, pone "Author" en lugar de "Autor" o "Autora".
+
+<br>
+
+#### Hagamos algunos cambios
+
+
+- Si quisiéramos cambiar específicamente la opción de autor, tendríamos que poner en el YAML:
+
+
+```{r}
+#| eval: false
+language: 
+  title-block-author-single: "Autora"
+```
+
+
+- Podemos cambiar todas las opciones especificando en el YAML   `lang: es`. 
+
+- La documentación oficial está [aquí](https://quarto.org/docs/authoring/language.html) y [aquí](https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language.yml) todos los elementos que se pueden modificar. Y [aquí](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/language) los ficheros específicos para diferentes idiomas. [Aquí](https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language-es.yml) el documento para el castellano.
+
+<br>
+
+- Si quisieras usar tu propio documento tendrías que poner en el YAML: `language: custom.yml` (lógicamente el fichero `custom.yml` tendría que existir y estar en la ruta correcta).
+
+- ¿Probamos a hacerlo?
+
+
+
+---
+
+## Otras opciones para tunear desde el YAML 
+
+- **TOC**: es importante tenerlo a nuestro gusto. [Aquí](https://quarto.org/docs/reference/formats/html.html#table-of-contents) tienes las opciones que puedes ajustar con opciones en el yaml
+
+- **Chunks**: [aquí](https://quarto.org/docs/reference/formats/html.html#code) tienes las opciones que puedes ajustar desde el YAML
+
+- **Resizing de los thumbnails**. Un [gist](https://gist.github.com/perezp44/fc5a3853039fd29ff94c5b8488fea0a1#file-resize_thumbnails-r)  para hacerlo.
+
+
+- **Algunas opciones de tuneado** que puedes implementar desde el YAML. Prueba a poner estas opciones en el archivo `_quarto.yml`. Nuestro blog **empeorará bastante**. Más opciones [aquí](https://quarto.org/docs/output-formats/html-themes.html#basic-options).
+
+```{r, eval = FALSE}
+fontcolor: green          #- color del texto
+linkcolor: purple         #- color de los enlaces
+monobackgroundcolor: red  #- color de los cuadros de resultados de evaluar código
+fontsize: 0.6em           #- tamaño del texto (más pequeño de lo normal: 1)
+linestretch: 2.3          #- tamaño entre las lineas (1.6 es lo "normal")
+```
+
+
 
 # 2. Utilizando CSS {.unnumbered background-color="#b8c2aa"}
 
@@ -645,25 +708,35 @@ Las soluciones a la Práctica están [aquí](/posts/post_04_practica-05.html)
 
 # 3. Utilizando SASS {.unnumbered background-color="#b8c2aa"}
 
-<br>
 
--   Tendrás que mirar otras referencias, por ejemplo: [Customizing Quarto Websites: Make your website stand out using SASS](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide) o [este video](https://www.youtube.com/watch?v=ErRX8plZpQE)
+- La documentación oficial [aquí](https://quarto.org/docs/output-formats/html-themes.html#sass-variables)
+
+
+-   [Aquí](https://quarto.org/docs/output-formats/html-themes-more.html) la documentación oficial de Quarto sobre los Bootswatch Sass Theme Files.
 
 -   Bootstrap define unas 1.400 variables con las que controlar fuentes, colores, etc ... . Puedes verlas [aquí](https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss)
 
 -   [Aquí](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes) están los ficheros `.scss` de los 25 built-in Bootswatch themes.
 
--   [Aquí](https://quarto.org/docs/output-formats/html-themes-more.html) la documentación oficial de Quarto sobre los Bootswatch Sass Theme Files
+<br>
 
-# FÍN!!  {.unnumbered .centered background-color="#562457"}
+- **Otras referencias**, por ejemplo: [Customizing Quarto Websites: Make your website stand out using SASS](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide) o [este video](https://www.youtube.com/watch?v=ErRX8plZpQE)
 
-  - Muchas gracias por la atención
-  
-  - Espero que el taller haya salido OK
-  
-  - Si alguien motivado por el taller acaba haciéndose un blog, please que me avise (pedro.j.perez@uv.es)
-  
-  - Big Thanks to all the Posit/Quarto team!!!!
-  
-  
-  - Bye, nos vemos en las próximas Jornadas
+- Tengo una "práctica" en el [tutorial nº 6](./taller/06_taller_tuneado-del-blog.html) del taller.
+
+
+# Fin!! {.unnumbered .centered background-color="#562457"}
+
+-   Muchas gracias por la atención :slightly_smiling_face:
+
+-   Espero que el taller haya salido OK :white_check_mark:
+
+-   Si alguien motivado por el taller acaba haciéndose un blog, **please que me avise** (pedro.j.perez\@uv.es) :mailbox: 
+
+<br>
+
+-   Big thanks to all the Posit/Quarto team !!!! 👏🏼👏🏼 🙌🏼
+
+<br>
+
+-   Bye 👋🏼 👋🏼 , nos vemos en las próximas Jornadas en ...

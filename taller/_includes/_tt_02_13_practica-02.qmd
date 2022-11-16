@@ -10,6 +10,8 @@
 
 - la YAML inteligence te ayudará!! (vamos el autocompletado en el YAML)
 
+- No uses las opciones llamadas `custom`
+
 ![](./imagenes/tt_01/img_12v.png){fig-align="center"}
 
 :::

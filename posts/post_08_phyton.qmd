@@ -7,12 +7,15 @@ description: |
   Viendo cómo usar datos de R en chunks de Py con Quarto.
 author:
   - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
     affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
 date: 2022-11-08
 categories: [Quarto, Python]
-image: "./thumbnails/thumbnail_08.png"
+image: "./thumbnails/thumbnail_08b.png"
 #title-block-banner: true #- {true, false }
-title-block-banner: thumbnails/thumbnail_08.png
+title-block-banner: thumbnails/thumbnail_08b.png
 draft: false
 toc: true
 toc-location: left

@@ -1,13 +1,13 @@
 ---
 title: "Imágenes"
-#author: "Nosotros"
-#subtitle: | 
-#  Viendo las posibilidades de Layout que tenemos en Quarto
 description: |
   Repasando algunas opciones de Quarto para insertar imágenes.
 author:
   - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
     affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
 date: 2022-11-03
 categories: [Quarto, imágenes]
 image: "./thumbnails/thumbnail_03.png"

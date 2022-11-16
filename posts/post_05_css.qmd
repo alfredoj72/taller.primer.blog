@@ -1,6 +1,11 @@
 ---
 title: "Tuneando con CSS"
-author: "Pedro J. Pérez"
+author:
+  - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
+    affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
 date: 2022-11-05
 categories: [Quarto, CSS]
 image: thumbnails/thumbnail_05.png
@@ -10,7 +15,7 @@ css: ["assets/mis_estilos_01.css" , "assets/mis_estilos_02.css"]
 #css: "assets/mis_estilos_01.css"
 ---
 
-La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es dar una clase sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS.
+La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo del post no es dar una clase sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS.
 
 <br>
 

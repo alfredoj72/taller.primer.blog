@@ -7,7 +7,10 @@ description: |
   Intentando entender qué es y cómo usar **Observable JS** en R.
 author:
   - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
     affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
 date: 2022-11-07
 categories: [Quarto, Observable]
 image: "./thumbnails/thumbnail_07.png"
