@@ -27,3 +27,5 @@ about:
 ---
 
 ```
+
+La documentación oficial para las About Pages está [aquí](https://quarto.org/docs/websites/website-about.html)

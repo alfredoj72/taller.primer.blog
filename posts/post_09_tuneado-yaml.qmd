@@ -39,7 +39,7 @@ fontsize: 0.6em           #- tamaño del texto (más pequeño de lo normal: 1)
 linestretch: 2.3          #- tamaño entre las lineas (1.6 es lo "normal")
 ---
 
-A este post le he puesto en el YAML algunas opciones un poco raras
+A este post le he puesto en el YAML algunas opciones un poco raras. Deberían haberse ejecutado pero ... no ha salido.
 
 Concretamente le he puesto estas opciones:
 

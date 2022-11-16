@@ -638,6 +638,12 @@ Las soluciones a la Práctica están [aquí](/posts/post_04_practica-05.html)
 
 -   Referentes a la **estética**: [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html)
 
+- Referentes a las **Listing Pages**: [aquí](https://quarto.org/docs/websites/website-listings.html)
+
+
+- Referentes a las **About Pages**: [aquí](https://quarto.org/docs/websites/website-about.html)
+
+
 # Algunas opciones de YAML {.unnumbered background-color="#b8c2aa"}
 
 ---

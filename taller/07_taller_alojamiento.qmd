@@ -8,13 +8,13 @@ toc-title: Tutorial nº 7
 
 Al final este tutorial no salió, así que os remito a la [documentación oficial](https://quarto.org/docs/publishing/) de Quarto.
 
-Simplemente decir que publicar el blog en QuartoPub es muy fácil, ya lo hemos hecho, simplemente desde la Terminal ejecutar `quarto render`.
+Simplemente decir que publicar el blog en QuartoPub es muy fácil, ya lo hemos hecho, simplemente desde la Terminal hay que ejecutar `quarto render`.
 
-Yo suelo alojar mis proyectos en Github Pages. Lo suelo hacer utilizando Git desde RStudio y la terminal.
+Yo suelo alojar mis proyectos en [Github Pages](https://docs.github.com/en/pages/quickstart). Lo suelo hacer utilizando Git desde RStudio y la Terminal.
 
-Para alojar el blog en Github pages el blog debe generarse en la carpeta "docs". Simplemente en el archivo `_quarto.yml` has de poner `output-dir: docs` y luego subir toda la carpeta del Qproject a un repositorio de Github y activarla opción "Pages".
+Para alojar el blog en Github Pages el blog debe generarse en la carpeta "docs". Para ello, has de poner en el archivo `_quarto.yml` la opción `output-dir: docs` en lugar de `output-dir: _site`. Una vez hecho esto, tienes que alojar toda la carpeta del Qproject en un repositorio de Github; después tendrás, desde las opciones de setup del repositorio, activarla la opción "Pages".
 
-Si hay tiempo y nos animamos lo hacemos en el taller. No creo que haya tiempo
+Si hay tiempo y nos animamos lo hacemos en el taller, pero no creo que haya tiempo
 
 
 
