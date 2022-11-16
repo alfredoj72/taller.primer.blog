@@ -753,14 +753,14 @@
     "href": "taller/06_taller_tuneado-del-blog.html#about-pages",
     "title": "Tuneado del blog",
     "section": "5 About pages",
-    "text": "5 About pages\n\n#- About page ---------------------------------\n#- Pages: https://quarto.org/docs/websites/website-about.html\n---\ntitle: Yo mismo\nimage: profile.jpg\nabout:\n  template: trestles    #- {jolla, solana, ...}\n  image-width: 10em     #- https://cybmeta.com/em-y-rem\n  image-shape: round    #- rectangle, round, rounded\n  links:\n    - icon: twitter\n      text: Twitter\n      href: https://twitter.com\n    - icon: linkedin\n      text: LinkedIn\n      href: https://linkedin.com\n    - icon: github\n      text: Github\n      href: https://github.com\n    - icon: envelope\n      text: email\n      url: \"mailto:<tu-mail@uv.es>\"\n---"
+    "text": "5 About pages\n\n#- About page ---------------------------------\n#- Pages: https://quarto.org/docs/websites/website-about.html\n---\ntitle: Yo mismo\nimage: profile.jpg\nabout:\n  template: trestles    #- {jolla, solana, ...}\n  image-width: 10em     #- https://cybmeta.com/em-y-rem\n  image-shape: round    #- rectangle, round, rounded\n  links:\n    - icon: twitter\n      text: Twitter\n      href: https://twitter.com\n    - icon: linkedin\n      text: LinkedIn\n      href: https://linkedin.com\n    - icon: github\n      text: Github\n      href: https://github.com\n    - icon: envelope\n      text: email\n      url: \"mailto:<tu-mail@uv.es>\"\n---\n\nLa documentación oficial para las About Pages está aquí"
   },
   {
     "objectID": "taller/06_taller_tuneado-del-blog.html#css",
     "href": "taller/06_taller_tuneado-del-blog.html#css",
     "title": "Tuneado del blog",
     "section": "6 CSS",
-    "text": "6 CSS\nLa apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es crear un tutorial sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS. Para ello he elaborado el siguiente post\nAlgunos recursos relacionados con CSS/html:\n\nSlidecraft 101: Code and Output\nSlidecraft 101: Colors and Fonts\nBusiness Reports with R Markdown: How to better theme report?\nInternet is hard\n[CSS basics] (https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) y Html basics de Mozilla.\nVídeo HTML Crash Course For Absolute Beginners\nCSS tricks y Codepen\nLearn to Code HTML & CSS"
+    "text": "6 CSS\nLa apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es crear un tutorial sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS. Para ello he elaborado el siguiente post\nAlgunos recursos relacionados con CSS/html:\n\nSlidecraft 101: Code and Output\nSlidecraft 101: Colors and Fonts\nBusiness Reports with R Markdown: How to better theme report?\nInternet is hard\n[CSS basics] (https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) y Html basics de Mozilla.\nVídeo HTML Crash Course For Absolute Beginners\nCSS tricks y Codepen\nLearn to Code HTML & CSS\nBootstrap CSS grid para layout’s complejos"
   },
   {
     "objectID": "taller/06_taller_tuneado-del-blog.html#sass",
@@ -950,6 +950,13 @@
     "title": "Layout’s",
     "section": "3 Ejemplo (con chunks)",
     "text": "3 Ejemplo (con chunks)\nEl output de los chunks también puede ocupar distintas áreas. Veamos si un leaflet se puede poner en el margen:\n\n```{r}\n#| column: margin\nlibrary(leaflet)\nleaflet() %>%\n  addTiles() %>%  # Add default OpenStreetMap map tiles\n  addMarkers(lng = -4.7880, lat = 37.885, popup = \"Rectorado de la Universidad de Córdoba\\n (Sede de las XII Jornadas de usuarios de R)\")\n```\n\n\n\n\n\n\nY ahora ocupando toda la pantalla:\n\n```{r}\n#| column: screen\nlibrary(leaflet)\nleaflet() %>%\n  addTiles() %>%  # Add default OpenStreetMap map tiles\naddMarkers(lng = -4.7880, lat = 37.885, popup = \"Rectorado de la Universidad de Córdoba\\n (Sede de las XII Jornadas de usuarios de R)\")\n```\n\n\n\n\n\n\nComo no puede ser de otro modo, aún hay más opciones para el layout. Documentación aquí"
+  },
+  {
+    "objectID": "posts/post_01_layout.html#layout-de-las-páginas",
+    "href": "posts/post_01_layout.html#layout-de-las-páginas",
+    "title": "Layout’s",
+    "section": "4 Layout de las páginas",
+    "text": "4 Layout de las páginas\nAdemás, para el layout de toda la página tienes las opciones aquí. Si quieres crear un “custom layout” quizás tengas que usar Bootstrap CSS grid."
   },
   {
     "objectID": "posts/post_03_imagenes.html",

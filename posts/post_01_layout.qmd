@@ -126,3 +126,7 @@ Como no puede ser de otro modo, aún hay más opciones para el layout. Documenta
 
 <br>
 
+## Layout de las páginas
+
+Además, para el layout de toda la página tienes las opciones [aquí](https://quarto.org/docs/output-formats/page-layout.html#overview). Si quieres crear un "custom layout" quizás tengas que usar [Bootstrap CSS grid](https://getbootstrap.com/docs/5.1/layout/css-grid/).
+

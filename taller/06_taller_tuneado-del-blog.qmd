@@ -176,7 +176,7 @@ Algunos recursos relacionados con CSS/html:
     
   - [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
     
-    
+  - [Bootstrap CSS grid](https://getbootstrap.com/docs/5.1/layout/css-grid/) para [layout's complejos](https://quarto.org/docs/output-formats/page-layout.html#css-grid)
 
 
 <br>

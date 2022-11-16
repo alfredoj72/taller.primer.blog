@@ -731,6 +731,20 @@ linestretch: 2.3          #- tamaño entre las lineas (1.6 es lo "normal")
 - Tengo una "práctica" en el [tutorial nº 6](./taller/06_taller_tuneado-del-blog.html) del taller.
 
 
+# Publicando el blog {.unnumbered background-color="#b8c2aa"}
+
+<br>
+
+- La [documentación oficial](https://quarto.org/docs/publishing/) de Quarto.
+
+- Si lo publicamos en [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html), ejecutar en la Terminal: `quarto publish quarto-pub`
+
+- En [Github Pages](https://quarto.org/docs/publishing/github-pages.html)
+    
+    
+
+
+
 # Fin!! {.unnumbered .centered background-color="#562457"}
 
 -   Muchas gracias por la atención :slightly_smiling_face:
