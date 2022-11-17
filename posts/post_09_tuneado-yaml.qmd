@@ -20,7 +20,7 @@ draft: false
 toc: true
 toc-location: left
 toc-depth: 3
-toc-title: Cabrón
+toc-title: Toc modificado por mi
 filters:
    - lightbox
 #css: assets/my_css_file.css
@@ -39,7 +39,7 @@ fontsize: 0.6em           #- tamaño del texto (más pequeño de lo normal: 1)
 linestretch: 2.3          #- tamaño entre las lineas (1.6 es lo "normal")
 ---
 
-A este post le he puesto en el YAML algunas opciones un poco raras. Deberían haberse ejecutado pero ... no ha salido.
+A este post le he puesto en el YAML algunas opciones un poco raras. Deberían haberse ejecutado pero ... no ha salido. Si las pusiésemos en el archivo `_quarto.yml` sí funcionaría pero entonces empeoraríamos todo la web, así que mejor no hacerlo.
 
 Concretamente le he puesto estas opciones:
 

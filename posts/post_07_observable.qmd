@@ -34,7 +34,9 @@ filters:
 
 Ya sabemos que [Quarto®](https://quarto.org/) is an open-source scientific and technical publishing system built on Pandoc que permite crear contenidos con R, Python, Julia y [Observable](https://observablehq.com/)
 
-Obervable JS (OJS) es *"a JavaScript flavor designed for data analysis"*. Observable tiene digamos la interactividad incorporada de serie: es sencillo incorporar filtros interactivos para controlar el output que muestran las tablas y gráficos. Esto abré nuevas posibilidades a los usuarios de R.
+Obervable JS (OJS) es *"a JavaScript flavor designed for data analysis"*. Observable tiene digamos la interactividad incorporada de serie: es sencillo incorporar filtros interactivos para controlar el output que muestran las tablas y gráficos. Esto abre nuevas posibilidades a los usuarios de R.
+
+La documentación oficial de Quarto para hacer disponibles los datos a OJS está [aquí](https://quarto.org/docs/interactive/ojs/data-sources.html).
 
 
 :::{.aside}
@@ -55,11 +57,11 @@ Otra ventaja de Quarto:
 > Quarto’s rendered HTML files can be hosted on any web server or opened locally with a simple browser, with no separate language or framework installations required. That’s not the case for options like Shiny for R or Dash for Python (alpha Shiny for Python can run without a Shiny server, but it's not yet production-ready). Using Quarto with Observable offers an elegant workflow if you want to combine data analysis in Python and R with reactivity.
 
 
-Quarto puede ejecutar código de OJS. Sólo hay que colocar el código entre las marcas habituales : ` ```{ojs} `. Además se puede analizar los datos en R y luego enviarlos a OJS^[La documentación oficial de Quarto para hacer disponibles los datos a OJS está [aquí](https://quarto.org/docs/interactive/ojs/data-sources.html)] con la función `ojs_define()`. 
+Quarto puede ejecutar código de OJS. Sólo hay que colocar el código entre las marcas habituales : ` ```{ojs} `. Además se puede analizar los datos en R y luego enviarlos a OJS con la función `ojs_define()`. 
 
 ## Un ejemplo
 
-Voy a adpatar un ejemplo sacado de [aquí](https://neocarto.github.io/bertin/examples/quarto.html)
+Voy a adaptar un ejemplo sacado de [aquí](https://neocarto.github.io/bertin/examples/quarto.html)
 
 Por ejemplo, voy a crear un sf data.frame para ver si me lo acepta OJS:
 
@@ -180,7 +182,7 @@ viewof summary_data
 
 - [Bertin.js](https://github.com/neocarto/bertin): a JavaScript library for visualizing geospatial data and make thematic maps for the web.
 
-- [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html): una serie de 3 artículos de Infoworl de Sharon Machlis.
+- [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html): una serie de 3 artículos de Infoworld de Sharon Machlis.
 
 - [Un ejemplo de boB Rudis, @hrbrmstr](https://twitter.com/hrbrmstr/status/1556308005225897984), [otro](https://rud.is/b/2022/08/19/bootstrapping-an-ojs-quarto-document-with-an-observable-notebook/), [conviriendo OJS notebook in Quarto projects](https://rud.is/b/2022/08/22/new-chrome-extension-to-turn-observable-notebooks-into-quarto-projects/)
 

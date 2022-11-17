@@ -32,7 +32,6 @@ Quarto ha hecho que me vuelva a interesar por Phyton!!!
 
 Es muy fácil combinar chunks de R con Py, solo hay que pasar los datos así: `my_py_data = r.df`
 
-Me falta ver como pasar datos de Py a R, ya lo veré.
 
 
 ```{r}

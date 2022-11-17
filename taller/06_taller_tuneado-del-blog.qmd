@@ -155,7 +155,7 @@ Ahora mostraré opciones que podemos utilizar en el YAML para diferentes cuestio
 ## CSS
 
 
-La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es crear un tutorial sobre CSS, de hecho yo sé muy poquito CSS, sino solo **mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS**. Para ello he elaborado el siguiente [post](/posts/post_05_css-05.html)
+La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es crear un tutorial sobre CSS, de hecho mis conocimientos de CSS son limitados, sino solo **mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS**. Para ello he elaborado el siguiente [post](/posts/post_05_css-05.html)
 
 
 Algunos recursos relacionados con CSS/html:
@@ -186,15 +186,12 @@ Algunos recursos relacionados con CSS/html:
 
 ## SASS
 
-Si sé muy poquito de CSS imaginaros cuanto sé de SASS. Pero allá vamos, anotaré aquí algunas que he medio aprendido.
-
-Muchos de los cambios que podemos hacer con SASS, con archivos `.scss`, también pueden hacerse desde los distintos YAML's de nuestro blog, [esta fantática slide](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17) nos servirá de ejemplo.
+Recordar que muchos de los cambios que podemos hacer con SASS, con archivos `.scss`, también pueden hacerse desde los distintos YAML's de nuestro blog, [esta fantástica slide](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#17) nos sirve de ejemplo.
 
 
-La  [documentación oficial de Quarto](https://quarto.org/docs/output-formats/html-themes.html#overview) para **documentos html** sobre **como usar los themes y tunearlos con Sass**; además podemos encontrar [un listado de variables Sass](https://quarto.org/docs/output-formats/html-themes.html#sass-variables) y un [archivo `.scss`](https://github.com/twbs/bootstrap/blob/main/scss/_variables.scsss) donde ver todas las variables Sass usadas en los themes. [Aquí](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes) puedes ver los ficheros `.scss` usados por los 25 25 built-in Bootswatch themes. [Aquí](https://quarto.org/docs/output-formats/html-themes-more.html) hay más información sobre el uso de Sass en Quarto. Para saber aún más, la web de Quarto nos redirige [aquí](https://getbootstrap.com/docs/5.1/customize/sass/).
+La  [documentación oficial de Quarto](https://quarto.org/docs/output-formats/html-themes.html#overview) para **documentos html** sobre **como usar los themes y tunearlos con Sass**; además podemos encontrar [un listado de variables Sass](https://quarto.org/docs/output-formats/html-themes.html#sass-variables) y un [archivo `.scss`](https://github.com/twbs/bootstrap/blob/main/scss/_variables.scsss) donde ver todas las variables Sass usadas en los themes. [Aquí](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes) puedes ver los ficheros `.scss` usados por los 25 built-in Bootswatch themes. [Aquí](https://quarto.org/docs/output-formats/html-themes-more.html) hay más información sobre el uso de Sass en Quarto. Para saber aún más, la web de Quarto nos redirige [aquí](https://getbootstrap.com/docs/5.1/customize/sass/).
 
 
-https://quarto.org/docs/output-formats/html-themes.html#overview
 
 
 Para las **slides en formato revealjs**: la  [documentación oficial de Quarto](https://quarto.org/docs/presentations/revealjs/themes.html#using-themes) sobre **como usar los themes y tunearlos con Sass**; además podemos encontrar un [listado con las variables Sass](https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables) y un [listado de archivos .scss](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/revealjs/themes) para revealjs slides.
