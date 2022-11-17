@@ -422,6 +422,10 @@
 <h1>1. Creación de un blog básico con Quarto</h1>
 <p>Objetivo: <strong>Aprender sobre Quarto</strong> mientras vamos creando una web/blog</p>
 </section>
+<section id="estructura-de-una-web" class="slide level2 center unnumbered" data-background-color="#C5B38F" data-title-align="center">
+<h2>Estructura de una web</h2>
+
+<img data-src="imagenes/img_estructura-web_ok-02.png" style="width:120.0%" class="r-stretch quarto-figure-center"></section>
 <section id="ejemplos-de-blogs-hechos-con-quarto" class="slide level2 smaller">
 <h2>Ejemplos de blogs (hechos con Quarto)</h2>
 <ul>
@@ -2456,6 +2460,9 @@
 </ul>
 <p><br></p>
 <p>Veamos algunos de estos elementos con un poco de detalle. Después lo recordaremos con una Práctica.</p>
+</section>
+<section class="slide level2">
+
 <h4 class="unnumbered" id="layouts">Layouts</h4>
 <ul>
 <li><p>Además de yaml, texto y chunk, para escribir con Quarto <strong>conviene conocer la estructura o layout de los artículos</strong> que se generan con él.</p></li>
@@ -2566,11 +2573,131 @@
 </div>
 </div>
 <p>Las soluciones a la Práctica están <a href="../posts/post_04_practica-05.html">aquí</a></p>
+</section></section>
+<section>
+<section id="tuneado-del-blog" class="title-slide slide level1 center" data-background-color="#EEBF8B">
+<h1>6. Tuneado del blog</h1>
+<p>(6ª parte del tutorial)</p>
+<div class="callout callout-tip no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>¿Qué haremos en este tutorial?</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>Ver distintas opciones para adaptar el blog a nuestras necesidades</p></li>
+<li><p>En concreto veremos 3 formas de hacerlo: a través de opciones de Quarto en el yaml, con CSS y con SASS</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="intro" class="slide level2">
+<h2>Intro</h2>
+<ul>
+<li>Quarto viene preparado con diferentes <code>Bootstrap themes</code> del <a href="https://bootswatch.com/">proyecto Bootswatch project</a> que le dan a nuestro blog una apariencia profesional y cuidada.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>Creo que es mejor <strong>comenzar con un blog sencillo</strong> usando las plantillas (o themes) que nos ofrece Quarto pero, si queremos modificar la apariencia de nuestro blog, podemos hacerlo de 3 formas:</p>
+<ol type="1">
+<li><p>Utilizando las opciones disponibles en Quarto para el <code>yaml</code></p></li>
+<li><p>Utilizando CSS</p></li>
+<li><p>Utilizando SASS</p></li>
+</ol></li>
+</ul>
+</section></section>
+<section>
+<section id="utilizando-opciones-del-yaml" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>1. Utilizando opciones del YAML</h1>
+<p><br></p>
+<ul>
+<li><p>En el <a href="../taller/06_taller_tuneado-del-blog.html">tutorial nº 6</a> repasamos las distintas opciones que tenemos disponibles para poder cambiar a través de opciones en los YAML’s (recuerda los 3 niveles).</p></li>
+<li><p>Aquí solo pondré la <strong>documentación relevante</strong> junta y <strong>destacaré algunas de las opciones</strong> disponibles.</p></li>
+</ul>
+</section>
+<section id="documentación-oficial" class="slide level2">
+<h2>Documentación oficial</h2>
+<h5 id="sobre-opciones-disponibles-en-los-yamls">(sobre opciones disponibles en los YAML’s)</h5>
+<p><br></p>
+<ul>
+<li><p>Referentes al <strong>proyecto</strong>: <a href="https://quarto.org/docs/projects/quarto-projects.html#shared-metadata">aquí</a></p></li>
+<li><p>Referentes a la <strong>estructura de la web</strong>: <a href="https://quarto.org/docs/websites/website-navigation.html">aquí</a> y <a href="https://quarto.org/docs/websites/">aquí</a></p></li>
+<li><p>Referentes a la <strong>estética</strong>: <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a></p></li>
+<li><p>Referentes a las <strong>Listing Pages</strong>: <a href="https://quarto.org/docs/websites/website-listings.html">aquí</a></p></li>
+<li><p>Referentes a las <strong>About Pages</strong>: <a href="https://quarto.org/docs/websites/website-about.html">aquí</a></p></li>
+</ul>
+</section></section>
+<section>
+<section id="algunas-opciones-de-yaml" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>Algunas opciones de YAML</h1>
+
+</section>
+<section id="algunas-opciones-de-yaml-lang" class="slide level2">
+<h2>Algunas opciones de YAML (<strong>lang</strong>)</h2>
+<ul>
+<li><p>Si te has fijado, los metadatos de los documentos aparecen en inglés.</p></li>
+<li><p>Por ejemplo, pone “Author” en lugar de “Autor” o “Autora”.</p></li>
+</ul>
+<p><br></p>
+<h4 id="hagamos-algunos-cambios">Hagamos algunos cambios</h4>
+<ul>
+<li>Si quisiéramos cambiar específicamente la opción de autor, tendríamos que poner en el YAML:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>language<span class="sc">:</span> </span>
+<span id="cb17-2"><a href="#cb17-2"></a>  title<span class="sc">-</span>block<span class="sc">-</span>author<span class="sc">-</span>single<span class="sc">:</span> <span class="st">"Autora"</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>Podemos cambiar todas las opciones especificando en el YAML <code>lang: es</code>.</p></li>
+<li><p>La documentación oficial está <a href="https://quarto.org/docs/authoring/language.html">aquí</a> y <a href="https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language.yml">aquí</a> todos los elementos que se pueden modificar. Y <a href="https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/language">aquí</a> los ficheros específicos para diferentes idiomas. <a href="https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language-es.yml">Aquí</a> el documento para el castellano.</p></li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>Si quisieras usar tu propio documento tendrías que poner en el YAML: <code>language: custom.yml</code> (lógicamente el fichero <code>custom.yml</code> tendría que existir y estar en la ruta correcta).</p></li>
+<li><p>¿Probamos a hacerlo?</p></li>
+</ul>
+</section>
+<section id="otras-opciones-para-tunear-desde-el-yaml" class="slide level2">
+<h2>Otras opciones para tunear desde el YAML</h2>
+<ul>
+<li><p><strong>TOC</strong>: es importante tenerlo a nuestro gusto. <a href="https://quarto.org/docs/reference/formats/html.html#table-of-contents">Aquí</a> tienes las opciones que puedes ajustar con opciones en el yaml</p></li>
+<li><p><strong>Chunks</strong>: <a href="https://quarto.org/docs/reference/formats/html.html#code">aquí</a> tienes las opciones que puedes ajustar desde el YAML</p></li>
+<li><p><strong>Resizing de los thumbnails</strong>. Un <a href="https://gist.github.com/perezp44/fc5a3853039fd29ff94c5b8488fea0a1#file-resize_thumbnails-r">gist</a> para hacerlo.</p></li>
+<li><p><strong>Algunas opciones de tuneado</strong> que puedes implementar desde el YAML. Prueba a poner estas opciones en el archivo <code>_quarto.yml</code>. Nuestro blog <strong>empeorará bastante</strong>. Más opciones <a href="https://quarto.org/docs/output-formats/html-themes.html#basic-options">aquí</a>.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>fontcolor<span class="sc">:</span> green          <span class="co">#- color del texto</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a>linkcolor<span class="sc">:</span> purple         <span class="co">#- color de los enlaces</span></span>
+<span id="cb18-3"><a href="#cb18-3"></a>monobackgroundcolor<span class="sc">:</span> red  <span class="co">#- color de los cuadros de resultados de evaluar código</span></span>
+<span id="cb18-4"><a href="#cb18-4"></a>fontsize<span class="sc">:</span> <span class="fl">0.6</span>em           <span class="co">#- tamaño del texto (más pequeño de lo normal: 1)</span></span>
+<span id="cb18-5"><a href="#cb18-5"></a>linestretch<span class="sc">:</span> <span class="fl">2.3</span>          <span class="co">#- tamaño entre las lineas (1.6 es lo "normal")</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section>
+<section id="utilizando-css" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>2. Utilizando CSS</h1>
+<p><br></p>
+<ul>
+<li><p>La apariencia visual del blog puede cambiarse utilizando CSS.</p></li>
+<li><p>Veamos un ejemplo con el siguiente <a href="../posts/post_05_css-05.html">post</a></p></li>
+</ul>
+</section>
+
+<section id="publicando-el-blog" class="title-slide slide level1 unnumbered center" data-background-color="#b8c2aa">
+<h1>Publicando el blog</h1>
+<p><br></p>
+<ul>
+<li><p>La <a href="https://quarto.org/docs/publishing/">documentación oficial</a> de Quarto.</p></li>
+<li><p>Si lo publicamos en <a href="https://quarto.org/docs/publishing/quarto-pub.html">Quarto Pub</a>, ejecutar en la Terminal: <code>quarto publish quarto-pub</code></p></li>
+<li><p>En <a href="https://quarto.org/docs/publishing/github-pages.html">Github Pages</a></p></li>
+</ul>
 
 <div class="footer footer-default">
 
 </div>
-</section></section>
+</section>
+
 
     </div>
   </div>

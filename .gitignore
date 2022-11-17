@@ -4,6 +4,8 @@
 .httr-oauth
 .DS_Store
 
+/.my_tuneando/
+
 /.quarto/
 
 _bitacora.qmd

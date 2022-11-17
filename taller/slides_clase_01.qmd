@@ -48,6 +48,17 @@ css: /assets/styles_slides_tareas.css
 
 ---
 
+## Estructura de una web  {.center .unnumbered background-color="#C5B38F" title-align="center"}
+
+
+![](imagenes/img_estructura-web_ok-02.png){fig-align="center" width="120%"}
+
+
+
+
+
+---
+
 ## Ejemplos de blogs (hechos con Quarto) {.smaller}
 
 -   [Mike Mahoney](https://www.mm218.dev/blog.html) (el repo [aqui](https://github.com/mikemahoney218/mm218.dev))
@@ -851,7 +862,7 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 {{< include ./_includes/_tt_05_12-B_text-mas-elementos.qmd >}}
 
-
+---
 
 {{< include ./_includes/_tt_05_12-B_text-veamos.qmd >}}
 
@@ -869,3 +880,140 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 
 Las soluciones a la Práctica están [aquí](/posts/post_04_practica-05.html)
+
+
+
+
+# 6. Tuneado del blog {background-color="#EEBF8B"}
+
+(6ª parte del tutorial)
+
+{{< include ./_includes/_tt_06_01_q-haremos.qmd >}}
+
+<br>
+
+------------------------------------------------------------------------
+
+## Intro
+
+-   Quarto viene preparado con diferentes `Bootstrap themes` del [proyecto Bootswatch project](https://bootswatch.com/) que le dan a nuestro blog una apariencia profesional y cuidada.
+
+<br>
+
+-   Creo que es mejor **comenzar con un blog sencillo** usando las plantillas (o themes) que nos ofrece Quarto pero, si queremos modificar la apariencia de nuestro blog, podemos hacerlo de 3 formas:
+
+    1.  Utilizando las opciones disponibles en Quarto para el `yaml`
+
+    2.  Utilizando CSS
+
+    3.  Utilizando SASS
+
+# 1. Utilizando opciones del YAML {.unnumbered background-color="#b8c2aa"}
+
+<br>
+
+-   En el [tutorial nº 6](/taller/06_taller_tuneado-del-blog.html) repasamos las distintas opciones que tenemos disponibles para poder cambiar a través de opciones en los YAML's (recuerda los 3 niveles).
+
+-   Aquí solo pondré la **documentación relevante** junta y **destacaré algunas de las opciones** disponibles.
+
+------------------------------------------------------------------------
+
+## Documentación oficial
+
+##### (sobre opciones disponibles en los YAML's)
+
+<br>
+
+-   Referentes al **proyecto**: [aquí](https://quarto.org/docs/projects/quarto-projects.html#shared-metadata)
+
+-   Referentes a la **estructura de la web**: [aquí](https://quarto.org/docs/websites/website-navigation.html) y [aquí](https://quarto.org/docs/websites/)
+
+-   Referentes a la **estética**: [aquí](https://quarto.org/docs/output-formats/html-basics.html) y [aquí](https://quarto.org/docs/reference/formats/html.html)
+
+- Referentes a las **Listing Pages**: [aquí](https://quarto.org/docs/websites/website-listings.html)
+
+
+- Referentes a las **About Pages**: [aquí](https://quarto.org/docs/websites/website-about.html)
+
+
+# Algunas opciones de YAML {.unnumbered background-color="#b8c2aa"}
+
+---
+
+## Algunas opciones de YAML (**lang**)
+
+- Si te has fijado, los metadatos de los documentos aparecen en inglés.
+
+- Por ejemplo, pone "Author" en lugar de "Autor" o "Autora".
+
+<br>
+
+#### Hagamos algunos cambios
+
+
+- Si quisiéramos cambiar específicamente la opción de autor, tendríamos que poner en el YAML:
+
+
+```{r}
+#| eval: false
+language: 
+  title-block-author-single: "Autora"
+```
+
+
+- Podemos cambiar todas las opciones especificando en el YAML   `lang: es`. 
+
+- La documentación oficial está [aquí](https://quarto.org/docs/authoring/language.html) y [aquí](https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language.yml) todos los elementos que se pueden modificar. Y [aquí](https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/language) los ficheros específicos para diferentes idiomas. [Aquí](https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language-es.yml) el documento para el castellano.
+
+<br>
+
+- Si quisieras usar tu propio documento tendrías que poner en el YAML: `language: custom.yml` (lógicamente el fichero `custom.yml` tendría que existir y estar en la ruta correcta).
+
+- ¿Probamos a hacerlo?
+
+
+
+---
+
+## Otras opciones para tunear desde el YAML 
+
+- **TOC**: es importante tenerlo a nuestro gusto. [Aquí](https://quarto.org/docs/reference/formats/html.html#table-of-contents) tienes las opciones que puedes ajustar con opciones en el yaml
+
+- **Chunks**: [aquí](https://quarto.org/docs/reference/formats/html.html#code) tienes las opciones que puedes ajustar desde el YAML
+
+- **Resizing de los thumbnails**. Un [gist](https://gist.github.com/perezp44/fc5a3853039fd29ff94c5b8488fea0a1#file-resize_thumbnails-r)  para hacerlo.
+
+
+- **Algunas opciones de tuneado** que puedes implementar desde el YAML. Prueba a poner estas opciones en el archivo `_quarto.yml`. Nuestro blog **empeorará bastante**. Más opciones [aquí](https://quarto.org/docs/output-formats/html-themes.html#basic-options).
+
+```{r, eval = FALSE}
+fontcolor: green          #- color del texto
+linkcolor: purple         #- color de los enlaces
+monobackgroundcolor: red  #- color de los cuadros de resultados de evaluar código
+fontsize: 0.6em           #- tamaño del texto (más pequeño de lo normal: 1)
+linestretch: 2.3          #- tamaño entre las lineas (1.6 es lo "normal")
+```
+
+
+
+# 2. Utilizando CSS {.unnumbered background-color="#b8c2aa"}
+
+<br>
+
+-   La apariencia visual del blog puede cambiarse utilizando CSS.
+
+-   Veamos un ejemplo con el siguiente [post](/posts/post_05_css-05.html)
+
+
+# Publicando el blog {.unnumbered background-color="#b8c2aa"}
+
+<br>
+
+- La [documentación oficial](https://quarto.org/docs/publishing/) de Quarto.
+
+- Si lo publicamos en [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html), ejecutar en la Terminal: `quarto publish quarto-pub`
+
+- En [Github Pages](https://quarto.org/docs/publishing/github-pages.html)
+    
+    
+
