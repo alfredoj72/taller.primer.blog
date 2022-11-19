@@ -1,0 +1,12 @@
+/* css styles */
+
+/* centrando contenido {style="text-align: center;"} */ 
+
+.center{
+   text-align: center;
+}
+/* definiendo estilos de los párrafos */ 
+p, ul, ol {
+  text-align: justify; }        /* justificar el texto del body */      
+
+

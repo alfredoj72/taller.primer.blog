@@ -10,7 +10,7 @@
 ::: {layout="[45,-10,45]"}
 
 
-![](./imagenes/tt_01/img_13gg.png){fig-align="center"}
+![](./imagenes/tt_01/img_13gg-2.png){fig-align="center"}
 
 
 ```{r, eval = FALSE}

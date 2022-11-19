@@ -1,4 +1,4 @@
-::: {.callout-warning collapse="true" appearance="default" icon="false"}
+::: {.callout-warning collapse="true" appearance="default" icon="false" width="100%"}
 #### Extensiones: ver el contenido  del archivo `index.qmd`
 
 Contenido del archivo  `index.qmd` que genera a `index.html`:

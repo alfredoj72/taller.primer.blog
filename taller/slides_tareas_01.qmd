@@ -158,10 +158,12 @@ Los **archivos importantes** ahora son 3:
 
 {{< include ./_includes/_tt_02_03_tarea-01.qmd >}}
 
+
 Además:
 
 -   **lineas 17-19**: añadimos la página/pestaña "Docencia" a la izquierda de la navbar
--   **lineas 21-26**: modificamos el theme, ponemos TOC a los documentos, ..., **CSS**, ....
+-   **lineas 21-26**: modificamos el theme, ponemos TOC a los documentos, ..., **CSS**,
+
 
 ------------------------------------------------------------------------
 
@@ -536,8 +538,8 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 {{< include ./_includes/_tt_05_45_img-23.qmd >}}  
 
-
 {{< include ./_includes/_tt_05_45_img-23.qmd >}}  
+
 
 
 -   Hay **más opciones para los chunks**. Por ejemplo:

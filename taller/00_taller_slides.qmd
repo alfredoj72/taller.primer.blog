@@ -33,9 +33,34 @@ footer: |
     #theme: [moon, custom.scss]
 revealjs-plugins:
   - pointer
+css: assets/styles_slides.intro.css
 ---
 
-# Bienvenidos al taller!! :vulcan_salute::rose:
+# Bienvenidos al taller!! :vulcan_salute::rose: {background-color="#abd2d6"}
+
+------------------------------------------------------------------------
+
+## Sobre mi (Pedro J. Pérez) {background-color="#abd2d6"}
+
+<br>
+
+-   Profesor en la UV: [Econometría](https://perezp44.github.io/web.Econometria.GADE/) e [Intro a la Ciencia de datos con R](https://perezp44.github.io/intro-ds-22-23-web/)
+
+-   Entusiasta de R
+
+<br>
+
+. . .
+
+-   No soy "bloguero", más bien soy creador y **liquidador de blogs**:
+
+    -   [2015, R & flowers](http://perezp44.github.io/) , con Jekyll
+    -   [2018, R & flowers V](https://rflowers5.netlify.app/), con Hugo y blogdown
+    -   [2020, R & flowers (o casi)](https://perezp44.github.io/my_blog_R-flowers-0.1.3/), con radix
+    -   [2021, pedro.j.perez blog's](https://perezp44.github.io/pjperez.web/), con Distill
+    -   [2022, R & flowers](https://perezp44.github.io/pjperez.blog.2022/), con Quarto
+
+# Intro {background-color="#b8c2aa"}
 
 ## Estructura del taller {.smaller}
 
@@ -65,33 +90,11 @@ revealjs-plugins:
 
 . . .
 
-6.  Tuneado: **mejorando la web** (15 min)
+6.  Tuneado: **mejorando la web** (14 min)
 
 . . .
 
-7.  Gestión y **publicación** de la web/blog (5 min)
-
-# Intro
-
-## Sobre mi
-
-<br>
-
--   Profesor en la UV: [Econometría](https://perezp44.github.io/web.Econometria.GADE/) e [Intro a la Ciencia de datos con R](https://perezp44.github.io/intro-ds-22-23-web/)
-
--   Entusiasta de R
-
-<br>
-
-. . .
-
--   No soy "bloguero", más bien soy creador y **liquidador de blogs**:
-
-    -   [2015, R & flowers](http://perezp44.github.io/) , con Jekyll
-    -   [2018, R & flowers V](https://rflowers5.netlify.app/), con Hugo y blogdown
-    -   [2020, R & flowers (o casi)](https://perezp44.github.io/my_blog_R-flowers-0.1.3/), con radix
-    -   [2021, pedro.j.perez blog's](https://perezp44.github.io/pjperez.web/), con Distill
-    -   [2022, R & flowers](https://perezp44.github.io/pjperez.blog.2022/), con Quarto
+7.  Gestión y **publicación** de la web/blog (1 min)
 
 ## Objetivo(s) del taller
 
@@ -112,14 +115,6 @@ revealjs-plugins:
 
 -   ... y, si puede ser, **pasar un buen rato** :slightly_smiling_face: mientras aprendemos
 :::
-
-
-## Estructura de una web  {.center .unnumbered background-color="#C5B38F" title-align="center"}
-
-
-![](imagenes/img_estructura-web_ok-02.png){fig-align="center" width="120%"}
-
-
 
 ## Beneficios de tener un blog {.smaller}
 
@@ -159,6 +154,10 @@ revealjs-plugins:
 
 -   Los posts **tampoco tienen porqué estar perfectos**, así que no hay que tener miedo a escribir!!
 
+## Estructura de una web {.center .unnumbered background-color="#C5B38F" title-align="center"}
+
+![](imagenes/img_estructura-web_ok-02.png){fig-align="center" width="120%"}
+
 ## Ejemplos de blogs (hechos con Quarto) {.smaller}
 
 -   [Mike Mahoney](https://www.mm218.dev/blog.html) (el repo [aqui](https://github.com/mikemahoney218/mm218.dev))
@@ -187,15 +186,19 @@ revealjs-plugins:
 
 -   La [Gallery de Quarto](https://quarto.org/docs/gallery/#websites)
 
-# ¿Qué es Quarto?
+# ¿Qué es Quarto? {background-color="#b8c2aa"}
 
-. . .
 
 > Quarto is a multi-language, next generation version of R Markdown, with many new features and capabilities.
 
+. . .
+
+
+<br>
+
 Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segundos
 
-## ¿Qué es Quarto? (otra vez)
+## ¿Qué es Quarto?
 
 <br>
 
@@ -207,13 +210,13 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 -   Muy **parecido a Rmarkdown**, pero ... **no requiere R**. Soporta lenguajes como Phyton, Julia y Observable.
 
-. . . 
+. . .
 
-- Unifica las funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
+-   **Unifica funcionalidades** de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
 
-- Es ... la "**segunda generación de Rmarkdown**"
+-   Es ... la "**segunda generación de Rmarkdown**"
 
-- Quarto utiliza Knitr para ejecutar el código R; así que es **capaz de procesar también los ficheros .Rmd** sin modificarlos
+-   Quarto utiliza Knitr para ejecutar el código R; así que es **capaz de procesar también los ficheros .Rmd** sin modificarlos
 
 . . .
 
@@ -223,33 +226,23 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 ## Ventajas de Quarto
 
--   Proyecto en [desarrollo activo](https://quarto.org/docs/download/) ... mientras que Rmarkdown [it's not going away](https://yihui.org/en/2022/04/quarto-r-markdown/) ...
+-   Proyecto en [desarrollo activo](https://quarto.org/docs/download/) ... mientras que Rmarkdown [it's not going away](https://yihui.org/en/2022/04/quarto-r-markdown/) pero ...
 
 -   **Unifica** algunas de las funcionalidades de Rmarkdown
 
--   Por ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans
+-   **Por ejemplo**: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans
 
+. . .
 
-- Para ver si estas ventajas merecen la pena para ti puedes leer a  [Occasional Divergences](https://occasionaldivergences.com/posts/quarto-questions/#what-are-the-benefits-of-using-quarto-for-_____), [Nick Tierney](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/), [Alison Hill](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/), [Danielle Navarro](https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/), o [Stack Overflow](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown)
+-   Para ver si estas ventajas merecen la pena para ti puedes leer a [Occasional Divergences](https://occasionaldivergences.com/posts/quarto-questions/#what-are-the-benefits-of-using-quarto-for-_____), [Nick Tierney](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/), [Alison Hill](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/), [Danielle Navarro](https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/), o [esta pregunta](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown) de Stack Overflow.
 
+. . .
 
-<blockquote class="twitter-tweet">
+::: {.smaller width="67%"}
+{{< tweet user=DanOvand0 id=1580343517154770944 >}}
+:::
 
-<p lang="en" dir="ltr">
-
-Wow, writing first paper using <a href="https://twitter.com/quarto_pub?ref_src=twsrc%5Etfw">@quarto_pub</a> and it is amazing; almost every pain point for academic writing in <a href="https://twitter.com/hashtag/rmarkdown?src=hash&amp;ref_src=twsrc%5Etfw">#rmarkdown</a> has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching
-
-</p>
-
---- Dan Ovando (@DanOvand0) <a href="https://twitter.com/DanOvand0/status/1580343517154770944?ref_src=twsrc%5Etfw">October 12, 2022</a>
-
-</blockquote>
-
-```{=html}
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-```
-
-# Setup para el taller
+# Setup para el taller {background-color="#d6d2ab "}
 
 <br>
 
@@ -259,7 +252,9 @@ Wow, writing first paper using <a href="https://twitter.com/quarto_pub?ref_src=t
 
 -   Si tienes RStudio 2022.07.1 +, ya tienes Quarto instalado
 
--   Instrucciones de instalación [aquí](https://perezp44.github.io/taller.primer.blog/setup.html)
+-   Instrucciones de instalación [aquí](https://perezp44.github.io/taller.primer.blog/setup.html).
+
+-   Para **descargar Quarto** puedes ir [aquí](https://quarto.org/docs/get-started/).
 
 <br>
 
@@ -267,7 +262,7 @@ Wow, writing first paper using <a href="https://twitter.com/quarto_pub?ref_src=t
 
 El taller está diseñado **suponiendo que conocéis/usáis Rmarkdown**
 
-# Refresh de Rmarkdown (`.Rmd`)
+# Refresh de Rmarkdown (`.Rmd`) {background-color="#b8c2aa"}
 
 ------------------------------------------------------------------------
 
@@ -307,7 +302,7 @@ El taller está diseñado **suponiendo que conocéis/usáis Rmarkdown**
 ::: {.column width="40%"}
 #### source code
 
-```{r echo = FALSE, comment = "",  out.width = '85%', fig.align = 'center'}
+```{r echo = FALSE, comment = "",  out.width = '90%', fig.align = 'center'}
 knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_1.png") )
 ```
 :::
@@ -339,53 +334,59 @@ knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_yaml.
 
 ------------------------------------------------------------------------
 
-#### (IIa) Código R (chunks)
+### (IIa) Código R (chunks)
 
 -   Para que `knitr` sepa qué partes del .Rmd es código R, deben ir dentro de estas marcas:
 
-![](./imagenes/tt_01/img_01_dd.png){fig-align="left"}
+![](./imagenes/tt_01/img_01_dd.png){fig-align="left" width="15%"}
 
-##### Por ejemplo
+-   Por ejemplo:
 
-![](./imagenes/tt_01/img_01_ee.png){fig-align="left"}
+![](./imagenes/tt_01/img_01_ee.png){fig-align="left" width="30%"}
 
 -   Cuando `knitr` procese el chunk, lo interpretará como código R y **ejecutará las instrucciones y mostrará en el documento final el output** generado por el chunk.
 
+![](./imagenes/tt_01/img_01_ee_02.png){fig-align="center" width="90%"}
+
 ------------------------------------------------------------------------
 
-#### (IIb) Chunks: diferencias con Quarto {.smaller}
+### (IIb) Chunks: diferencias con Quarto
 
--   Con `.qmd`, se usa **YAML** style: `echo: false` y, cada opción en una linea que empieza por `#|`
+-   Ahora se usa **YAML** style (`echo: false`).
 
-::: columns
-::: {.column width="40%"}
-#### .Rmd
-
-![](./imagenes/tt_01/img_01_ff.png){fig-align="left"}
-:::
-
-::: {.column width="40%"}
-##### .qmd
-
-![](./imagenes/tt_01/img_01_gg.png){fig-align="left"}
-:::
-:::
-
-. . .
-
--   No hace falta chunk inicial, ahora se pueden poner **las opciones de chunk en el YAML**
+-   **Cada opción va en una linea** que empieza por el "hash pipe": `#|`
 
 ::: columns
-::: {.column width="40%"}
+::: {.column width="46%"}
 #### .Rmd
 
-![](./imagenes/tt_01/img_01_h1.png){fig-align="left"}
+![](./imagenes/tt_01/img_01_ff.png){fig-align="left" width="100%"}
 :::
 
-::: {.column width="40%"}
+::: {.column width="46%"}
 ##### .qmd
 
-![](./imagenes/tt_01/img_01_h2.png){fig-align="left"}
+![](./imagenes/tt_01/img_01_gg.png){fig-align="left" width="100%"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### (IIc) Chunks: diferencias con Quarto
+
+-   **No hace falta chunk inicial**: con Quarto se pueden poner **las opciones de chunk en el YAML**
+
+::: columns
+::: {.column width="46%"}
+#### .Rmd
+
+![](./imagenes/tt_01/img_01_h1.png){fig-align="left" width="100%"}
+:::
+
+::: {.column width="46%"}
+##### .qmd
+
+![](./imagenes/tt_01/img_01_h2.png){fig-align="left" width="100%"}
 :::
 :::
 
@@ -411,4 +412,4 @@ knitr::include_graphics(here::here("taller", "imagenes", "tt_01", "ejemplo_yaml.
 
 {{< youtube yvi5uXQMvu4 >}}
 
-# Comenzamos el taller !!!! :computer::crossed_fingers: 💪🏼 💪🏼
+# Comenzamos el taller !!!! :computer::crossed_fingers: 💪🏼 💪🏼    {background-color="#b8c2aa"}

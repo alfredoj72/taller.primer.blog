@@ -12,7 +12,22 @@
 
 - No uses las opciones llamadas `custom`
 
-![](./imagenes/tt_01/img_12v.png){fig-align="center"}
+```{yaml}
+---
+title: "Mi listado de posts"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default        #- {default, table, grid, custom}
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full         #- {article, full, custom}
+title-block-banner: true  #- {true, false}
+---
+
+```
+`
 
 :::
 

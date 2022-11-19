@@ -280,18 +280,18 @@
     "text": "3 Resumen\n\n\n\n\n\n\nResumen (tutorial nº 3)\n\n\n\n\n\n\nEn esta tercera parte del taller hemos visto como hacer que nuestro blog se convierta en una página personal con un blog.\nSólo había que intercambiar 2 ficheros: que about.qmd pasase a ser nuestra landing page.\n\n\n\nEn los siguientes tutoriales veremos en profundidad las posibilidades que nos ofrece Quarto para escribir nuestros posts."
   },
   {
+    "objectID": "taller/00_taller_slides.html#sobre-mi-pedro-j.-pérez",
+    "href": "taller/00_taller_slides.html#sobre-mi-pedro-j.-pérez",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Sobre mi (Pedro J. Pérez)",
+    "text": "Sobre mi (Pedro J. Pérez)\n\n\nProfesor en la UV: Econometría e Intro a la Ciencia de datos con R\nEntusiasta de R\n\n\n\n\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto"
+  },
+  {
     "objectID": "taller/00_taller_slides.html#estructura-del-taller",
     "href": "taller/00_taller_slides.html#estructura-del-taller",
     "title": "Mi primer blog con Quarto (y Rmd)",
     "section": "Estructura del taller",
-    "text": "Estructura del taller\n\n\nIntro: presentación del taller, visionado de blogs y ¿qué es Quarto? (15 min)\n\n\n\n\nCreación de un blog básico: mi blog en 3 minutos (10 min)\nTuneado básico del blog (15 min). Práctica (15 min)\nConvirtiendo el blog en una web personal (5 min)\n\n\n\n\n\nWorkflow: creando posts (5 min)\nEscribiendo un post con Quarto (15 min). Práctica (15 min)\n\n\n\n\n\nTuneado: mejorando la web (15 min)\n\n\n\n\nGestión y publicación de la web/blog (5 min)"
-  },
-  {
-    "objectID": "taller/00_taller_slides.html#sobre-mi",
-    "href": "taller/00_taller_slides.html#sobre-mi",
-    "title": "Mi primer blog con Quarto (y Rmd)",
-    "section": "Sobre mi",
-    "text": "Sobre mi\n\n\nProfesor en la UV: Econometría e Intro a la Ciencia de datos con R\nEntusiasta de R\n\n\n\n\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto"
+    "text": "Estructura del taller\n\n\nIntro: presentación del taller, visionado de blogs y ¿qué es Quarto? (15 min)\n\n\n\n\nCreación de un blog básico: mi blog en 3 minutos (10 min)\nTuneado básico del blog (15 min). Práctica (15 min)\nConvirtiendo el blog en una web personal (5 min)\n\n\n\n\n\nWorkflow: creando posts (5 min)\nEscribiendo un post con Quarto (15 min). Práctica (15 min)\n\n\n\n\n\nTuneado: mejorando la web (14 min)\n\n\n\n\nGestión y publicación de la web/blog (1 min)"
   },
   {
     "objectID": "taller/00_taller_slides.html#objetivos-del-taller",
@@ -301,18 +301,18 @@
     "text": "Objetivo(s) del taller\n\n\n\nAprender a hacer websites/blogs con Quarto\n\n\n\nAprender sobre Quarto mientras vamos creando una web/blog\n\n\n\nQue salgáis todos con el bosquejo y la intención de hacer una web/blog!!\n\n\n\n… y, si puede ser, pasar un buen rato 🙂 mientras aprendemos"
   },
   {
-    "objectID": "taller/00_taller_slides.html#estructura-de-una-web",
-    "href": "taller/00_taller_slides.html#estructura-de-una-web",
-    "title": "Mi primer blog con Quarto (y Rmd)",
-    "section": "Estructura de una web",
-    "text": "Estructura de una web"
-  },
-  {
     "objectID": "taller/00_taller_slides.html#beneficios-de-tener-un-blog",
     "href": "taller/00_taller_slides.html#beneficios-de-tener-un-blog",
     "title": "Mi primer blog con Quarto (y Rmd)",
     "section": "Beneficios de tener un blog",
     "text": "Beneficios de tener un blog\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma olvidarías\nPortafolio y contactos\n\n\n\n\nProductive procrastination (!!)\n\n\n\n(Discursos más elaborados aquí o aquí )\n\n\n\nImportante:\n\nEl blog no tiene que ser perfecto. Mejor empezar con un blog sencillo\n\n\n\nLos posts tampoco tienen porqué estar perfectos, así que no hay que tener miedo a escribir!!"
+  },
+  {
+    "objectID": "taller/00_taller_slides.html#estructura-de-una-web",
+    "href": "taller/00_taller_slides.html#estructura-de-una-web",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Estructura de una web",
+    "text": "Estructura de una web"
   },
   {
     "objectID": "taller/00_taller_slides.html#ejemplos-de-blogs-hechos-con-quarto",
@@ -322,18 +322,18 @@
     "text": "Ejemplos de blogs (hechos con Quarto)\n\nMike Mahoney (el repo aqui)\nIsabella Velásquez (el repo aqui)\nDanielle Navarro (el repo aqui)\nJeff y Marc Dotson (el repo aqui)\nLayton R blog (el repo aqui)\nR Lille (el repo aqui)\nDrew Dimmery\nPA blog (el repo aqui)\nMario Angst\nMatt Worthington (el repo aqui)\n\n\nMás opciones:\n\nLa Gallery de Quarto"
   },
   {
-    "objectID": "taller/00_taller_slides.html#qué-es-quarto-otra-vez",
-    "href": "taller/00_taller_slides.html#qué-es-quarto-otra-vez",
+    "objectID": "taller/00_taller_slides.html#qué-es-quarto-1",
+    "href": "taller/00_taller_slides.html#qué-es-quarto-1",
     "title": "Mi primer blog con Quarto (y Rmd)",
-    "section": "¿Qué es Quarto? (otra vez)",
-    "text": "¿Qué es Quarto? (otra vez)\n\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R. Soporta lenguajes como Phyton, Julia y Observable.\n\n\n\n\nUnifica las funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\nEs … la “segunda generación de Rmarkdown”\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI"
+    "section": "¿Qué es Quarto?",
+    "text": "¿Qué es Quarto?\n\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R. Soporta lenguajes como Phyton, Julia y Observable.\n\n\n\n\nUnifica funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\nEs … la “segunda generación de Rmarkdown”\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI"
   },
   {
     "objectID": "taller/00_taller_slides.html#ventajas-de-quarto",
     "href": "taller/00_taller_slides.html#ventajas-de-quarto",
     "title": "Mi primer blog con Quarto (y Rmd)",
     "section": "Ventajas de Quarto",
-    "text": "Ventajas de Quarto\n\nProyecto en desarrollo activo … mientras que Rmarkdown it’s not going away …\nUnifica algunas de las funcionalidades de Rmarkdown\nPor ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\nPara ver si estas ventajas merecen la pena para ti puedes leer a Occasional Divergences, Nick Tierney, Alison Hill, Danielle Navarro, o Stack Overflow\n\n\n\nWow, writing first paper using @quarto_pub and it is amazing; almost every pain point for academic writing in #rmarkdown has been fixed. Numbered equations? no problem. Citations? easy. Cross reference everything? Simple. Totally worth switching\n\n— Dan Ovando (@DanOvand0) October 12, 2022"
+    "text": "Ventajas de Quarto\n\nProyecto en desarrollo activo … mientras que Rmarkdown it’s not going away pero …\nUnifica algunas de las funcionalidades de Rmarkdown\nPor ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\n\n\n\nPara ver si estas ventajas merecen la pena para ti puedes leer a Occasional Divergences, Nick Tierney, Alison Hill, Danielle Navarro, o esta pregunta de Stack Overflow."
   },
   {
     "objectID": "taller/00_taller_slides.html#documentos-.rmd-tienen-3-partes",
@@ -473,7 +473,7 @@
     "href": "taller/slides_tareas_01.html#section",
     "title": "Mi primer blog con Quarto",
     "section": "",
-    "text": "Tarea 2.1: Modificar el contenido de _quarto.yml\n\n\n\nSustituye el contenido original del fichero _quarto.yml por el contenido del siguiente chunk.\nPon un título que te guste a tu blog (línea 5 title: \"titulo-de-mi-blog\")\nPon tu usuario de Github y cuenta de Twitter (lineas 12 y 14: href:)\nPon tu email (línea 16: href:)\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Mi blog (aún en pruebas)\"\n  navbar:\n    logo: \"profile.jpg\"\n    right:\n      - text: \"About me\"\n        href: about.qmd\n      - icon: github\n        href: https://github.com/<tu-usuario-github>\n      - icon: twitter\n        href: https://twitter.com/<tu-usuario-twitter>\n      - icon: envelope\n        url: \"mailto:<tu-mail@uv.es>\"\n    left: \n      - text: \"Docencia\"\n        href: docencia.qmd\n \nformat:\n  html:\n    theme: flatly  \n    css: styles.css\n    toc: true\n    highlight-style: a11y\n\n\n\nAdemás:\n\nlineas 17-19: añadimos la página/pestaña “Docencia” a la izquierda de la navbar\nlineas 21-26: modificamos el theme, ponemos TOC a los documentos, …, CSS, …."
+    "text": "Tarea 2.1: Modificar el contenido de _quarto.yml\n\n\n\nSustituye el contenido original del fichero _quarto.yml por el contenido del siguiente chunk.\nPon un título que te guste a tu blog (línea 5 title: \"titulo-de-mi-blog\")\nPon tu usuario de Github y cuenta de Twitter (lineas 12 y 14: href:)\nPon tu email (línea 16: href:)\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Mi blog (aún en pruebas)\"\n  navbar:\n    logo: \"profile.jpg\"\n    right:\n      - text: \"About me\"\n        href: about.qmd\n      - icon: github\n        href: https://github.com/<tu-usuario-github>\n      - icon: twitter\n        href: https://twitter.com/<tu-usuario-twitter>\n      - icon: envelope\n        url: \"mailto:<tu-mail@uv.es>\"\n    left: \n      - text: \"Docencia\"\n        href: docencia.qmd\n \nformat:\n  html:\n    theme: flatly  \n    css: styles.css\n    toc: true\n    highlight-style: a11y\n\n\n\nAdemás:\n\nlineas 17-19: añadimos la página/pestaña “Docencia” a la izquierda de la navbar\nlineas 21-26: modificamos el theme, ponemos TOC a los documentos, …, CSS,"
   },
   {
     "objectID": "taller/slides_tareas_01.html#archivo-index.qmd",
@@ -690,14 +690,28 @@
     "href": "taller/02_taller_tuneado-basico.html#práctica",
     "title": "Tuneado básico del blog con Quarto",
     "section": "6 Práctica",
-    "text": "6 Práctica\nEn esta sección dedicaremos un tiempo a la práctica libre para que adaptes el blog a tus necesidades y gustos. Por ejemplo puedes probar:\n\nAñadir una nueva página a la web (quarto.yml)\n\n\n\n\n\n\n\nPráctica 2.1: añadir una página más a nuestra web (_quarto.yml)\n\n\n\n\n\nEvidentemente puedes probar a añadir la página que quieras, pero te ofrezco la siguiente posibilidad:\n\nCon las lineas 12 y siguientes crear una página más en nuestro blog. La página se llamará “Más cosas”. Además, esta página nueva tiene la particularidad de que cuando recreemos el blog se convertirá en un desplegable con acceso a varias páginas: “Docencia 2”, “Docencia 3” y “Docencia 4”.\nFíjate que he puesto la nueva página a la izquierda (left:)\nAdemás, puedes probar distintas opciones de theme (linea 34) y de highlighting (linea 38)\nTambién puedes cambiar el color del fondo de la barra de navegación (linea 8)\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Mi blog (aún en pruebas)\"\n  navbar:\n    logo: \"profile.jpg\"\n    #background: \"#CCCCFF\"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)\n    left: \n      - text: \"Docencia\"\n        href: docencia.qmd\n      - text: \"Más cosas\"\n        menu:\n          - text: \"Docencia 2\"\n            href: docencia.qmd\n          - text: \"Docencia 3\"\n            href: docencia.qmd\n          - text: \"---\"\n          - text: \"Docencia 4\"\n            href: docencia.qmd\n    right:\n      - about.qmd\n      - icon: github\n        href: https://github.com/<tu-usuario-github>\n      - icon: twitter\n        href: https://twitter.com/<tu-usuario twitter>\n      - icon: envelope\n        url: \"mailto:<tu-mail@uv.es>\"\n \n\nformat:\n  html:\n    #- https://quarto.org/docs/output-formats/html-themes.html\n    theme: flatly  \n    css: styles.css\n    toc: true\n    #- https://quarto.org/docs/output-formats/html-code.html#highlighting\n    highlight-style: a11y\n\n\n\n\nModificar la apariencia del blog jugando con las opciones que nos proporciona Quarto (index.qmd)\n\n\n\n\n\n\n\nPráctica 2.2: Modificar la apariencia del blog (index.qmd)\n\n\n\n\n\n\nSe trata de cambiar las opciones predefinidas de tu archivo index.qmd\nCon ello podremos cambiar la apariencia del listado de posts\nPara ello tienes que ir jugando con las opciones que nos ha proporcionado la plantilla de Quarto en el fichero index.qmd.\nla YAML inteligence te ayudará!! (vamos el autocompletado en el YAML)\nNo uses las opciones llamadas custom\n\n\n\n\n\n\n\n\n\n\nModificar la apariencia de la página About (about.qmd)\n\n\n\n\n\n\n\nPráctica 2.3: Modificar la página About (about.qmd)\n\n\n\n\n\n\nSe trata de cambiar las opciones predefinidas de tu archivo about.qmd\nEstaría bien que pusieses una foto tuya.\nPoner los enlaces a tus redes sociales y email\nPuedes adaptar el texto y dar algo de formato a la página.\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n---\ntitle: Yo mismo\nimage: profile.jpg\nabout:\n  template: trestles    #- {jolla, solana, ...}\n  image-width: 10em     #- https://cybmeta.com/em-y-rem\n  image-shape: round    #- rectangle, round, rounded\n  links:\n    - icon: twitter\n      text: Twitter\n      href: https://twitter.com\n    - icon: linkedin\n      text: LinkedIn\n      href: https://linkedin.com\n    - icon: github\n      text: Github\n      href: https://github.com\n    - icon: envelope\n      text: email\n      url: \"mailto:<tu-mail@uv.es>\"\n---"
+    "text": "6 Práctica\nEn esta sección dedicaremos un tiempo a la práctica libre para que adaptes el blog a tus necesidades y gustos. Por ejemplo puedes probar:\n\nAñadir una nueva página a la web (quarto.yml)\n\n\n\n\n\n\n\nPráctica 2.1: añadir una página más a nuestra web (_quarto.yml)\n\n\n\n\n\nEvidentemente puedes probar a añadir la página que quieras, pero te ofrezco la siguiente posibilidad:\n\nCon las lineas 12 y siguientes crear una página más en nuestro blog. La página se llamará “Más cosas”. Además, esta página nueva tiene la particularidad de que cuando recreemos el blog se convertirá en un desplegable con acceso a varias páginas: “Docencia 2”, “Docencia 3” y “Docencia 4”.\nFíjate que he puesto la nueva página a la izquierda (left:)\nAdemás, puedes probar distintas opciones de theme (linea 34) y de highlighting (linea 38)\nTambién puedes cambiar el color del fondo de la barra de navegación (linea 8)\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Mi blog (aún en pruebas)\"\n  navbar:\n    logo: \"profile.jpg\"\n    #background: \"#CCCCFF\"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)\n    left: \n      - text: \"Docencia\"\n        href: docencia.qmd\n      - text: \"Más cosas\"\n        menu:\n          - text: \"Docencia 2\"\n            href: docencia.qmd\n          - text: \"Docencia 3\"\n            href: docencia.qmd\n          - text: \"---\"\n          - text: \"Docencia 4\"\n            href: docencia.qmd\n    right:\n      - about.qmd\n      - icon: github\n        href: https://github.com/<tu-usuario-github>\n      - icon: twitter\n        href: https://twitter.com/<tu-usuario twitter>\n      - icon: envelope\n        url: \"mailto:<tu-mail@uv.es>\"\n \n\nformat:\n  html:\n    #- https://quarto.org/docs/output-formats/html-themes.html\n    theme: flatly  \n    css: styles.css\n    toc: true\n    #- https://quarto.org/docs/output-formats/html-code.html#highlighting\n    highlight-style: a11y\n\n\n\n\nModificar la apariencia del blog jugando con las opciones que nos proporciona Quarto (index.qmd)\n\n\n\n\n\n\n\nPráctica 2.2: Modificar la apariencia del blog (index.qmd)\n\n\n\n\n\n\nSe trata de cambiar las opciones predefinidas de tu archivo index.qmd\nCon ello podremos cambiar la apariencia del listado de posts\nPara ello tienes que ir jugando con las opciones que nos ha proporcionado la plantilla de Quarto en el fichero index.qmd.\nla YAML inteligence te ayudará!! (vamos el autocompletado en el YAML)\nNo uses las opciones llamadas custom\n\n\n---\ntitle: \"Mi listado de posts\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default        #- {default, table, grid, custom}\n  categories: true\n  sort-ui: false\n  filter-ui: false\npage-layout: full         #- {article, full, custom}\ntitle-block-banner: true  #- {true, false}\n---\n\n`\n\n\n\n\nModificar la apariencia de la página About (about.qmd)\n\n\n\n\n\n\n\nPráctica 2.3: Modificar la página About (about.qmd)\n\n\n\n\n\n\nSe trata de cambiar las opciones predefinidas de tu archivo about.qmd\nEstaría bien que pusieses una foto tuya.\nPoner los enlaces a tus redes sociales y email\nPuedes adaptar el texto y dar algo de formato a la página.\n\n\n---\ntitle: Yo mismo\nimage: profile.jpg\nabout:\n  template: trestles    #- {jolla, solana, ...}\n  image-width: 10em     #- https://cybmeta.com/em-y-rem\n  image-shape: round    #- rectangle, round, rounded\n  links:\n    - icon: twitter\n      text: Twitter\n      href: https://twitter.com\n    - icon: linkedin\n      text: LinkedIn\n      href: https://linkedin.com\n    - icon: github\n      text: Github\n      href: https://github.com\n---\n        \nHola, soy \"Yo mismo\". \n      \nEstoy asistiendo al taller **Mi primer blog con Quarto** impartido en el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target=\"_blank\"} celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.\n      \nEn un ratito ya piloto Quarto y genero my blog!!! 🙂"
   },
   {
     "objectID": "taller/imagenes/tt_01/ejemplo_1.html",
     "href": "taller/imagenes/tt_01/ejemplo_1.html",
-    "title": "El título de mi informe",
+    "title": "Mi documento",
     "section": "",
-    "text": "En este informe haremos un resumen (o summary) del conjunto de datos iris.\n\nsummary(iris)\n\n  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   \n Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  \n 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  \n Median :5.800   Median :3.000   Median :4.350   Median :1.300  \n Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  \n 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  \n Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  \n       Species  \n setosa    :50  \n versicolor:50  \n virginica :50  \n                \n                \n                \n\n\nEl trozo de arriba es un chunk de código R. Cuando compile el documento, knitr ejecutará el código y mostrará los resultados en el documento final.\nCon esto finalizamos este informe.\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
+    "text": "Este es un documento Rmarkdown. Para saber más sobre Rmd : http://rmarkdown.rstudio.com.\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nEl trozo de arriba es un chunk de código\nAl hacer clic en el botón Knitr, se ejecutará el código y se generará un documento que incluirá tanto el texto, como el código (o chunks) y la evaluación de este.\nCon esto acabamos el informe"
+  },
+  {
+    "objectID": "taller/imagenes/tt_01/ejemplo_1.html#including-plots",
+    "href": "taller/imagenes/tt_01/ejemplo_1.html#including-plots",
+    "title": "Mi documento",
+    "section": "2 Including Plots",
+    "text": "2 Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "taller/imagenes/tt_01/ejemplo_2.html",
+    "href": "taller/imagenes/tt_01/ejemplo_2.html",
+    "title": "Documentos Rmarkdown (.Rmd)",
+    "section": "",
+    "text": "# se pueden poner comentarios\n# de la forma habitual\naa <- c(1, 4, 9, 16, 25)\nsqrt(aa)\n\n[1] 1 2 3 4 5\n\n\n\n2 + 2\n\n\n2 + 2\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
   },
   {
     "objectID": "taller/10_taller_plantilla_revealjs.html",
@@ -1180,7 +1194,7 @@
     "href": "posts/post_zz_WIP.html#last-updated",
     "title": "Más elementos (WIP)",
     "section": "9 Last Updated",
-    "text": "9 Last Updated\n\n\n\n[1] \"17 noviembre 2022\""
+    "text": "9 Last Updated\n\n\n\n[1] \"19 noviembre 2022\""
   },
   {
     "objectID": "materiales.html",
@@ -1236,6 +1250,6 @@
     "href": "mas-cosas/inline-code.html#reporting-with-lists",
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "Reporting with lists",
-    "text": "Reporting with lists\nCredit to TJ Mahr\n\nknitted <- list(\n  when = format(Sys.Date()),\n  with = system(\"quarto --version\", intern = TRUE)\n)\n\nReported prepared on 2022-11-16 with quarto version 1.2.269."
+    "text": "Reporting with lists\nCredit to TJ Mahr\n\nknitted <- list(\n  when = format(Sys.Date()),\n  with = system(\"quarto --version\", intern = TRUE)\n)\n\nReported prepared on 2022-11-19 with quarto version 1.2.269."
   }
 ]

@@ -11,11 +11,6 @@
 - Puedes adaptar el texto y dar algo de formato a la página.
 
 
-::: {layout="[45,-10,45]"}
-
-
-![](./imagenes/tt_01/img_12_aa.png){fig-align="center"}
-
 ```{yaml}
 ---
 title: Yo mismo
@@ -34,16 +29,14 @@ about:
     - icon: github
       text: Github
       href: https://github.com
-    - icon: envelope
-      text: email
-      url: "mailto:<tu-mail@uv.es>"
 ---
-
+        
+Hola, soy "Yo mismo". 
+      
+Estoy asistiendo al taller **Mi primer blog con Quarto** impartido en el [I Congreso & XII Jornadas de Usuarios de R](http://r-es.org/12jr/){target="_blank"} celebradas en Córdoba (Spain), 23-25 de noviembre de 2022.
+      
+En un ratito ya piloto Quarto y genero my blog!!! 🙂
 ```
-
-
-:::
-
 
 :::
 
