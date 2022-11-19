@@ -1012,7 +1012,7 @@
     "href": "posts/post_03_imagenes.html",
     "title": "Imágenes",
     "section": "",
-    "text": "Las figuras en documentos Rmarkdown se podían insertar con la sintaxis de Markdown; es decir con ![](<ruta-a-la-imagen>), aunque yo prefería hacerlo con knitr::include_graphics(). Era algo así, veamos si también funciona en Quarto:\n\n```{r}\n#| fig.show: \"hold\"\n#| out.width: \"45%\"\n#| fig.align: \"default\"\n# graficos side to side en Rmarkdown\n# https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941/12\n\n\nknitr::include_graphics(\"thumbnail.jpg\")\n\nknitr::include_graphics(here::here(\"posts\", \"thumbnail.jpg\"))\n```\n\n\n\n\nComo veis, no me ha funcionado!!! Ya intentaré ver la razón."
+    "text": "Las figuras en documentos Rmarkdown se podían insertar con la sintaxis de Markdown; es decir con ![](<ruta-a-la-imagen>), aunque yo prefería hacerlo con knitr::include_graphics(). Era algo así, veamos si también funciona en Quarto:\n\n```{r}\n#| fig.show: \"hold\"\n#| out.width: \"45%\"\n#| fig.align: \"default\"\n# graficos side to side en Rmarkdown\n# https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941/12\n\n\nknitr::include_graphics(here::here(\"posts\", \"thumbnails\", \"thumbnail.jpg\"))\n```"
   },
   {
     "objectID": "posts/post_03_imagenes.html#figuras-en-quarto",

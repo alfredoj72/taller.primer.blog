@@ -1,176 +1,107 @@
 {
-  "index.qmd": {
-    "index.html": "dc905cc5"
-  },
-  "about.qmd": {
-    "about.html": "595122ec"
-  },
-  "taller/01_taller_slides.qmd": {
-    "01_taller_slides.html": "ba6d92b7"
-  },
-  "taller/02_taller_crear-blog-basico.qmd": {
-    "02_taller_crear-blog-basico.html": "89a8b770"
-  },
-  "taller.qmd": {
-    "taller.html": "0fb14135"
-  },
-  "taller/07_taller_ejemplos-de-blogs.qmd": {
-    "07_taller_ejemplos-de-blogs.html": "f7fa6033"
-  },
-  "taller/06_taller_githubpages.qmd": {
-    "06_taller_githubpages.html": "f8d097d6"
-  },
-  "taller/05_taller_convertir-en-web.qmd": {
-    "05_taller_convertir-en-web.html": "a6bc2e98"
-  },
-  "taller/03_taller_tuneado-basico.qmd": {
-    "03_taller_tuneado-basico.html": "21aeb921"
-  },
-  "taller/04_taller_crear-post.qmd": {
-    "04_taller_crear-post.html": "80e8c272"
-  },
-  "materiales.qmd": {
-    "materiales.html": "46843db1"
-  },
-  "setup.qmd": {
-    "setup.html": "f97359f8"
-  },
-  "taller/06_taller_convertir-en-web.qmd": {
-    "06_taller_convertir-en-web.html": "09b4210c",
-    "06_taller_convertir-en-web.epub": "1d8936d0"
-  },
-  "taller/05_taller_escribir-posts.qmd": {
-    "05_taller_escribir-posts.html": "81b61b6d",
-    "05_taller_escribir-posts.epub": "923cf20b"
-  },
-  "taller/08_taller_alojamiento.qmd": {
-    "08_taller_alojamiento.html": "3eeb68c9"
-  },
-  "taller/07_taller_tuneado-del-blog.qmd": {
-    "07_taller_tuneado-del-blog.html": "422ab69e"
-  },
-  "mas-cosas/inline-code.qmd": {
-    "inline-code.html": "88df3813"
-  },
-  "taller/02b_taller_slides.qmd": {
-    "02b_taller_slides.html": "775ddcb9"
-  },
-  "taller/imagenes/tt_01/ejemplo_1.Rmd": {
-    "ejemplo_1.html": "17aabb59"
-  },
-  "taller/01b_taller_slides.qmd": {
-    "01b_taller_slides.html": "7391e702",
-    "01b_taller_slides.epub": "f9f239a0"
-  },
-  "taller/slides_tareas_01.qmd": {
-    "slides_tareas_01.html": "866824a6"
-  },
-  "taller/slides_tt_pruebas.qmd": {
-    "slides_tt_pruebas.html": "ef4a807a"
-  },
-  "taller/feo.qmd": {
-    "feo.html": "38d78d2a"
-  },
-  "taller/09_ejemplo_post.qmd": {
-    "09_ejemplo_post.html": "deea1787"
-  },
-  "taller/09_platilla_escribir_quarto.qmd": {
-    "09_platilla_escribir_quarto.html": "74dc0bb7"
-  },
-  "recursos.qmd": {
-    "recursos.html": "a7cc3139"
-  },
-  "taller/09_taller_plantilla_escribir_quarto.qmd": {
-    "09_taller_plantilla_escribir_quarto.html": "93b30806"
-  },
-  "taller/10_taller_plantilla_revealjs.qmd": {
-    "10_taller_plantilla_revealjs.html": "d1a8670c"
-  },
-  "feo.qmd": {
-    "feo.html": "194d8999"
-  },
-  "taller/ejemplo-de-post.qmd": {
-    "ejemplo-de-post.html": "cfd22a2a"
-  },
-  "blog.qmd": {
-    "blog.html": "e99f28c9"
-  },
-  "posts/ejemplo-de-post.qmd": {
-    "ejemplo-de-post.html": "858c7110"
-  },
-  "posts/ejemplo-de-post-02.qmd": {
-    "ejemplo-de-post-02.html": "6bec7e0e"
+  "taller/slides_clase_01.qmd": {
+    "slides_clase_01.html": "34300fce"
   },
   "taller/01_taller_crear-blog-basico.qmd": {
-    "01_taller_crear-blog-basico.html": "dd7faa04"
+    "01_taller_crear-blog-basico.html": "855c9d2b"
   },
   "taller/03_taller_convertir-en-web.qmd": {
-    "03_taller_convertir-en-web.html": "9137ba3d"
+    "03_taller_convertir-en-web.html": "8409e4e2"
   },
   "taller/00_taller_slides.qmd": {
-    "00_taller_slides.html": "4d5c649e"
-  },
-  "taller/07_taller_alojamiento.qmd": {
-    "07_taller_alojamiento.html": "ee94225e"
-  },
-  "taller/02_taller_tuneado-basico.qmd": {
-    "02_taller_tuneado-basico.html": "93149a45"
-  },
-  "taller/06_taller_tuneado-del-blog.qmd": {
-    "06_taller_tuneado-del-blog.html": "4809159d"
-  },
-  "posts/post_01_layout.qmd": {
-    "post_01_layout.html": "00c5a56b"
-  },
-  "posts/post_02_extensiones.qmd": {
-    "post_02_extensiones.html": "cbf90213"
-  },
-  "taller/slides_tt_para-thumnails.qmd": {
-    "slides_tt_para-thumnails.html": "5f4015ab"
+    "00_taller_slides.html": "df54189c"
   },
   "taller/slides_tt_para-thumbnails.qmd": {
-    "slides_tt_para-thumbnails.html": "111eb04b"
+    "slides_tt_para-thumbnails.html": "1e3ec544"
   },
-  "posts/post_03_imagenes.qmd": {
-    "post_03_imagenes.html": "154ad47f"
+  "taller/05_taller_escribir-posts.qmd": {
+    "05_taller_escribir-posts.html": "8807ee21"
   },
-  "posts/post_00_cozitas-q-quedan.qmd": {
-    "post_00_cozitas-q-quedan.html": "f89a65d2"
+  "taller/slides_tareas_01.qmd": {
+    "slides_tareas_01.html": "949bc0fe"
   },
-  "posts/post_04_preactica-05.qmd": {
-    "post_04_preactica-05.html": "0b68644d"
+  "taller/07_taller_alojamiento.qmd": {
+    "07_taller_alojamiento.html": "33d5221a"
   },
-  "posts/post_04_practica-05.qmd": {
-    "post_04_practica-05.html": "429d9d94"
+  "taller/09_taller_plantilla_escribir_quarto.qmd": {
+    "09_taller_plantilla_escribir_quarto.html": "25976b2a"
   },
-  "taller/slides_clase_01.qmd": {
-    "slides_clase_01.html": "0d1fa355"
+  "taller/02_taller_tuneado-basico.qmd": {
+    "02_taller_tuneado-basico.html": "ed5a5a88"
   },
-  "posts/post_05_css.qmd": {
-    "post_05_css.html": "a3d193b9"
-  },
-  "posts/post_zz_WIP.qmd": {
-    "post_zz_WIP.html": "77b4261b"
-  },
-  "posts/post_40_markdown-basics.qmd": {
-    "post_40_markdown-basics.html": "45f3e35e"
-  },
-  "posts/post_06_css-bizarro.qmd": {
-    "post_06_css-bizarro.html": "bfc198fc"
-  },
-  "taller/zz_sobre-mi.qmd": {
-    "zz_sobre-mi.html": "730e4b15"
-  },
-  "posts/post_07_observable.qmd": {
-    "post_07_observable.html": "6c7e0026"
-  },
-  "posts/post_08_phyton.qmd": {
-    "post_08_phyton.html": "2275b6ae"
-  },
-  "posts/post_09_tuneado-yaml.qmd": {
-    "post_09_tuneado-yaml.html": "f463d9ca"
+  "taller/imagenes/tt_01/ejemplo_1.Rmd": {
+    "ejemplo_1.html": "77efbbe5"
   },
   "taller/imagenes/tt_01/ejemplo_2.Rmd": {
-    "ejemplo_2.html": "63a7f44b"
+    "ejemplo_2.html": "b32e837e"
+  },
+  "taller/10_taller_plantilla_revealjs.qmd": {
+    "10_taller_plantilla_revealjs.html": "0d4cfdbb"
+  },
+  "taller/04_taller_crear-post.qmd": {
+    "04_taller_crear-post.html": "a40e26ab"
+  },
+  "taller/zz_sobre-mi.qmd": {
+    "zz_sobre-mi.html": "cf1a12b0"
+  },
+  "taller/06_taller_tuneado-del-blog.qmd": {
+    "06_taller_tuneado-del-blog.html": "f746c6dc"
+  },
+  "taller/slides_tt_pruebas.qmd": {
+    "slides_tt_pruebas.html": "a9b83b9d"
+  },
+  "recursos.qmd": {
+    "recursos.html": "29971b46"
+  },
+  "index.qmd": {
+    "index.html": "fb5ed63c"
+  },
+  "blog.qmd": {
+    "blog.html": "1edaaab7"
+  },
+  "posts/post_05_css.qmd": {
+    "post_05_css.html": "c1dc6cbc"
+  },
+  "posts/post_09_tuneado-yaml.qmd": {
+    "post_09_tuneado-yaml.html": "9fe8a0fd"
+  },
+  "posts/post_07_observable.qmd": {
+    "post_07_observable.html": "b77a2f40"
+  },
+  "posts/post_02_extensiones.qmd": {
+    "post_02_extensiones.html": "851d7edc"
+  },
+  "posts/post_01_layout.qmd": {
+    "post_01_layout.html": "3cedd4ca"
+  },
+  "posts/post_03_imagenes.qmd": {
+    "post_03_imagenes.html": "cb3db213"
+  },
+  "posts/post_40_markdown-basics.qmd": {
+    "post_40_markdown-basics.html": "537c6e23"
+  },
+  "posts/post_04_practica-05.qmd": {
+    "post_04_practica-05.html": "d203ece4"
+  },
+  "posts/post_06_css-bizarro.qmd": {
+    "post_06_css-bizarro.html": "fe9452fe"
+  },
+  "posts/post_08_phyton.qmd": {
+    "post_08_phyton.html": "bf50247a"
+  },
+  "posts/post_zz_WIP.qmd": {
+    "post_zz_WIP.html": "3944d9ae"
+  },
+  "materiales.qmd": {
+    "materiales.html": "30c4af4d"
+  },
+  "about.qmd": {
+    "about.html": "cb59b46e"
+  },
+  "setup.qmd": {
+    "setup.html": "4415f096"
+  },
+  "mas-cosas/inline-code.qmd": {
+    "inline-code.html": "e6d10a47"
   }
 }
