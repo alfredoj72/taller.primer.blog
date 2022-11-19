@@ -156,7 +156,7 @@ css: assets/styles_slides.intro.css
 
 ## Estructura de una web {.center .unnumbered background-color="#C5B38F" title-align="center"}
 
-![](imagenes/img_estructura-web_ok-02c.png){fig-align="center" width="70%"}
+![](imagenes/img_estructura-web_ok-02d.png){fig-align="center" width="70%"}
 
 ## Ejemplos de blogs (hechos con Quarto) {.smaller}
 
