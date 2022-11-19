@@ -7,9 +7,19 @@
 ````markdown
 ---
 title: "Mi primer post con Quarto"
-author: "Pedro J. Pérez"
+description: |
+  Estoy aprendiendo Quarto
+author:
+  - name: Pedro J. Pérez
+    url: https://www.wikidata.org
+    affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-xxxx
 date: "2022-10-25"
 categories: [R, quarto]
+#title-block-banner: true #- {true, false }
+title-block-banner: thumbnail.jpg
+title-block-banner-color: green
 ---
 
 Este es mi **primer post** con Quarto!!!!

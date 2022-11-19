@@ -1144,16 +1144,18 @@
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1"></a><span class="pp">---</span></span>
 <span id="cb11-2"><a href="#cb11-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi listado de posts"</span></span>
-<span id="cb11-3"><a href="#cb11-3"></a><span class="fu">listing</span><span class="kw">:</span></span>
-<span id="cb11-4"><a href="#cb11-4"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
-<span id="cb11-5"><a href="#cb11-5"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
-<span id="cb11-6"><a href="#cb11-6"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> default</span><span class="co">        #- {default, table, grid, custom}</span></span>
-<span id="cb11-7"><a href="#cb11-7"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb11-8"><a href="#cb11-8"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb11-9"><a href="#cb11-9"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb11-10"><a href="#cb11-10"></a><span class="fu">page-layout</span><span class="kw">:</span><span class="at"> full</span><span class="co">         #- {article, full, custom}</span></span>
-<span id="cb11-11"><a href="#cb11-11"></a><span class="fu">title-block-banner</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co">  #- {true, false}</span></span>
-<span id="cb11-12"><a href="#cb11-12"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="fu">description</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb11-4"><a href="#cb11-4"></a>  Estoy tratando de hacer mi blog</span>
+<span id="cb11-5"><a href="#cb11-5"></a><span class="fu">listing</span><span class="kw">:</span></span>
+<span id="cb11-6"><a href="#cb11-6"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> posts</span></span>
+<span id="cb11-7"><a href="#cb11-7"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span></span>
+<span id="cb11-8"><a href="#cb11-8"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> default</span><span class="co">        #- {default, table, grid, custom}</span></span>
+<span id="cb11-9"><a href="#cb11-9"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb11-10"><a href="#cb11-10"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb11-11"><a href="#cb11-11"></a><span class="at">  </span><span class="fu">filter-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb11-12"><a href="#cb11-12"></a><span class="fu">page-layout</span><span class="kw">:</span><span class="at"> full</span><span class="co">         #- {article, full, custom}</span></span>
+<span id="cb11-13"><a href="#cb11-13"></a><span class="fu">title-block-banner</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co">  #- {true, false}</span></span>
+<span id="cb11-14"><a href="#cb11-14"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>`</p>
 </div>
@@ -1253,46 +1255,62 @@
 <li><p>Para que <code>blog.qmd</code>, la página que contiene el listado de posts, se muestre en nuestra web hay que refrenciarlo/incluirlo en <code>_quarto.yml</code></p></li>
 <li><p>Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están referenciando al fichero <code>about.qmd</code>. Por ejemplo podríamos <strong>dejar las lineas 8 y 9 como se ve abajo</strong> (a la derecha):</p></li>
 </ul>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 45.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="./imagenes/tt_01/img_13gg-2.png"></p>
 </figure>
 </div>
+<ul>
+<li>Para hacerlo, es mejor copiar el código de abajo y pegarlo en <code>_quarto.yml</code></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="true"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>project<span class="sc">:</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>  type<span class="sc">:</span> website</span>
+<span id="cb13-3"><a href="#cb13-3"></a></span>
+<span id="cb13-4"><a href="#cb13-4"></a>website<span class="sc">:</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
+<span id="cb13-6"><a href="#cb13-6"></a>  navbar<span class="sc">:</span></span>
+<span id="cb13-7"><a href="#cb13-7"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
+<span id="cb13-8"><a href="#cb13-8"></a>    <span class="co">#background: "#CCCCFF"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)</span></span>
+<span id="cb13-9"><a href="#cb13-9"></a>    left<span class="sc">:</span> </span>
+<span id="cb13-10"><a href="#cb13-10"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
+<span id="cb13-11"><a href="#cb13-11"></a>        href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb13-12"><a href="#cb13-12"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Más cosas"</span></span>
+<span id="cb13-13"><a href="#cb13-13"></a>        menu<span class="sc">:</span></span>
+<span id="cb13-14"><a href="#cb13-14"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia 2"</span></span>
+<span id="cb13-15"><a href="#cb13-15"></a>            href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb13-16"><a href="#cb13-16"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia 3"</span></span>
+<span id="cb13-17"><a href="#cb13-17"></a>            href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb13-18"><a href="#cb13-18"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"---"</span></span>
+<span id="cb13-19"><a href="#cb13-19"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia 4"</span></span>
+<span id="cb13-20"><a href="#cb13-20"></a>            href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb13-21"><a href="#cb13-21"></a>    right<span class="sc">:</span></span>
+<span id="cb13-22"><a href="#cb13-22"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Mi blog"</span></span>
+<span id="cb13-23"><a href="#cb13-23"></a>        href<span class="sc">:</span> blog.qmd</span>
+<span id="cb13-24"><a href="#cb13-24"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb13-25"><a href="#cb13-25"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb13-26"><a href="#cb13-26"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb13-27"><a href="#cb13-27"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario twitter<span class="sc">&gt;</span></span>
+<span id="cb13-28"><a href="#cb13-28"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb13-29"><a href="#cb13-29"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
+<span id="cb13-30"><a href="#cb13-30"></a> </span>
+<span id="cb13-31"><a href="#cb13-31"></a></span>
+<span id="cb13-32"><a href="#cb13-32"></a>format<span class="sc">:</span></span>
+<span id="cb13-33"><a href="#cb13-33"></a>  html<span class="sc">:</span></span>
+<span id="cb13-34"><a href="#cb13-34"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-themes.html</span></span>
+<span id="cb13-35"><a href="#cb13-35"></a>    theme<span class="sc">:</span> flatly  </span>
+<span id="cb13-36"><a href="#cb13-36"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb13-37"><a href="#cb13-37"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb13-38"><a href="#cb13-38"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-code.html#highlighting</span></span>
+<span id="cb13-39"><a href="#cb13-39"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
-<p>&nbsp;</p>
-</div>
-<div class="cell quarto-layout-cell" style="flex-basis: 45.0%;justify-content: center;">
-<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="true"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
-<span id="cb13-2"><a href="#cb13-2"></a></span>
-<span id="cb13-3"><a href="#cb13-3"></a>website<span class="sc">:</span></span>
-<span id="cb13-4"><a href="#cb13-4"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
-<span id="cb13-5"><a href="#cb13-5"></a>  navbar<span class="sc">:</span></span>
-<span id="cb13-6"><a href="#cb13-6"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
-<span id="cb13-7"><a href="#cb13-7"></a>    right<span class="sc">:</span></span>
-<span id="cb13-8"><a href="#cb13-8"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Mi blog"</span></span>
-<span id="cb13-9"><a href="#cb13-9"></a>        href<span class="sc">:</span> blog.qmd</span>
-<span id="cb13-10"><a href="#cb13-10"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb13-11"><a href="#cb13-11"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
-<span id="cb13-12"><a href="#cb13-12"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb13-13"><a href="#cb13-13"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario twitter<span class="sc">&gt;</span></span>
-<span id="cb13-14"><a href="#cb13-14"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
-<span id="cb13-15"><a href="#cb13-15"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
-<span id="cb13-16"><a href="#cb13-16"></a>    left<span class="sc">:</span> </span>
-<span id="cb13-17"><a href="#cb13-17"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
-<span id="cb13-18"><a href="#cb13-18"></a>        href<span class="sc">:</span> docencia.qmd</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 <ul>
 <li>Aún no podemos refrescar la web porque ahora no tenemos archivo <code>index.qmd</code>.</li>
 </ul>
-</div>
-</div>
-</div>
+<p>:::</p>
 </section>
 <section class="slide level2">
 
@@ -1555,17 +1573,19 @@
 <li>El hecho de estar trabajando dentro de un <strong>Qproject</strong> nos da <strong>mucha versatilidad</strong> a la hora de especificar el YAML de nuestros documentos <code>.qmd</code>. Documentación oficial <a href="https://quarto.org/docs/projects/quarto-projects.html">aquí</a></li>
 </ul>
 </section>
-<section id="el-yaml-de-un-post-se-puede-especificar-en-3-niveles" class="slide level2">
+<section id="el-yaml-de-un-post-se-puede-especificar-en-3-niveles" class="slide level2" data-background-color="#f7f5d2">
 <h2>El <code>yaml</code> de un post se puede especificar en <strong>3 niveles</strong></h2>
 <p><br></p>
-<ul>
+<ol type="1">
 <li><p><strong>Nivel proyecto</strong>:todo Qproject tiene archivo <code>_quarto.yml</code>. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en <code>_quarto.yml</code>.</p></li>
 <li><p><strong>Nivel carpeta</strong>: si en una carpeta existe un documento <code>_metadata.yml</code>, los documentos de esa carpeta heredan sus metadatos. La carpeta <code>./posts/</code> de un blog suele tener un archivo <code>_metadata.yml</code>.</p></li>
 <li><p><strong>Nivel documento</strong>: En el yaml del propio documento <code>.qmd</code></p></li>
-</ul>
+</ol>
 <p><br></p>
-<p>Si hay conflictos <strong>prevalecen las opciones del nivel documento</strong>, luego nivel carpeta y finalmente nivel proyecto.</p>
-<p><strong>Documentación oficial</strong> de Quarto con las <strong>principales opciones</strong> que se pueden fijar en el YAML para documentos html: <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a></p>
+<ul>
+<li><p>Si hay conflictos <strong>prevalecen las opciones del nivel documento</strong>, luego nivel carpeta y finalmente nivel proyecto.</p></li>
+<li><p><strong>Documentación oficial</strong> de Quarto con las <strong>principales opciones</strong> que se pueden fijar en el YAML para documentos html: <a href="https://quarto.org/docs/output-formats/html-basics.html">aquí</a> y <a href="https://quarto.org/docs/reference/formats/html.html">aquí</a></p></li>
+</ul>
 </section>
 <section id="yaml-tal-como-lo-tenemos-ahora" class="slide level2 smaller">
 <h2>YAML: tal como lo tenemos ahora</h2>
@@ -2172,8 +2192,8 @@
 <span id="cb19-10"><a href="#cb19-10"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
 <span id="cb19-11"><a href="#cb19-11"></a>    <span class="co">#background: "#CCCCFF"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)</span></span>
 <span id="cb19-12"><a href="#cb19-12"></a>    right<span class="sc">:</span></span>
-<span id="cb19-13"><a href="#cb19-13"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"About me"</span></span>
-<span id="cb19-14"><a href="#cb19-14"></a>        href<span class="sc">:</span> about.qmd</span>
+<span id="cb19-13"><a href="#cb19-13"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Mi blog"</span></span>
+<span id="cb19-14"><a href="#cb19-14"></a>        href<span class="sc">:</span> blog.qmd</span>
 <span id="cb19-15"><a href="#cb19-15"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
 <span id="cb19-16"><a href="#cb19-16"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
 <span id="cb19-17"><a href="#cb19-17"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
@@ -2279,23 +2299,33 @@
 </ul>
 <div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">---</span></span>
 <span id="cb21-2"><a href="#cb21-2"></a><span class="an">title:</span><span class="co"> "Mi primer post con Quarto"</span></span>
-<span id="cb21-3"><a href="#cb21-3"></a><span class="an">author:</span><span class="co"> "Pedro J. Pérez"</span></span>
-<span id="cb21-4"><a href="#cb21-4"></a><span class="an">date:</span><span class="co"> "2022-10-25"</span></span>
-<span id="cb21-5"><a href="#cb21-5"></a><span class="an">categories:</span><span class="co"> [R, quarto]</span></span>
-<span id="cb21-6"><a href="#cb21-6"></a><span class="co">---</span></span>
-<span id="cb21-7"><a href="#cb21-7"></a></span>
-<span id="cb21-8"><a href="#cb21-8"></a>Este es mi **primer post** con Quarto!!!!</span>
-<span id="cb21-9"><a href="#cb21-9"></a></span>
-<span id="cb21-10"><a href="#cb21-10"></a><span class="in">```{r}</span></span>
-<span id="cb21-11"><a href="#cb21-11"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
-<span id="cb21-12"><a href="#cb21-12"></a><span class="in">```</span></span>
-<span id="cb21-13"><a href="#cb21-13"></a></span>
-<span id="cb21-14"><a href="#cb21-14"></a>Voy a poner una imagen:</span>
-<span id="cb21-15"><a href="#cb21-15"></a></span>
-<span id="cb21-16"><a href="#cb21-16"></a><span class="al">![](thumbnail.jpg)</span></span>
+<span id="cb21-3"><a href="#cb21-3"></a><span class="an">description:</span><span class="co"> |</span></span>
+<span id="cb21-4"><a href="#cb21-4"></a><span class="co">  Estoy aprendiendo Quarto</span></span>
+<span id="cb21-5"><a href="#cb21-5"></a><span class="an">author:</span></span>
+<span id="cb21-6"><a href="#cb21-6"></a><span class="co">  - name: Pedro J. Pérez</span></span>
+<span id="cb21-7"><a href="#cb21-7"></a><span class="co">    url: https://www.wikidata.org</span></span>
+<span id="cb21-8"><a href="#cb21-8"></a><span class="co">    affiliation: Universitat de València</span></span>
+<span id="cb21-9"><a href="#cb21-9"></a><span class="co">    affiliation-url: https://www.uv.es</span></span>
+<span id="cb21-10"><a href="#cb21-10"></a><span class="co">    orcid: 0000-xxxx</span></span>
+<span id="cb21-11"><a href="#cb21-11"></a><span class="an">date:</span><span class="co"> "2022-10-25"</span></span>
+<span id="cb21-12"><a href="#cb21-12"></a><span class="an">categories:</span><span class="co"> [R, quarto]</span></span>
+<span id="cb21-13"><a href="#cb21-13"></a><span class="co">#title-block-banner: true #- {true, false }</span></span>
+<span id="cb21-14"><a href="#cb21-14"></a><span class="an">title-block-banner:</span><span class="co"> thumbnail.jpg</span></span>
+<span id="cb21-15"><a href="#cb21-15"></a><span class="an">title-block-banner-color:</span><span class="co"> green</span></span>
+<span id="cb21-16"><a href="#cb21-16"></a><span class="co">---</span></span>
 <span id="cb21-17"><a href="#cb21-17"></a></span>
-<span id="cb21-18"><a href="#cb21-18"></a>Acabé con mi primer post. FIN</span>
-<span id="cb21-19"><a href="#cb21-19"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-18"><a href="#cb21-18"></a>Este es mi **primer post** con Quarto!!!!</span>
+<span id="cb21-19"><a href="#cb21-19"></a></span>
+<span id="cb21-20"><a href="#cb21-20"></a><span class="in">```{r}</span></span>
+<span id="cb21-21"><a href="#cb21-21"></a><span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span>)</span>
+<span id="cb21-22"><a href="#cb21-22"></a><span class="in">```</span></span>
+<span id="cb21-23"><a href="#cb21-23"></a></span>
+<span id="cb21-24"><a href="#cb21-24"></a>Voy a poner una imagen:</span>
+<span id="cb21-25"><a href="#cb21-25"></a></span>
+<span id="cb21-26"><a href="#cb21-26"></a><span class="al">![](thumbnail.jpg)</span></span>
+<span id="cb21-27"><a href="#cb21-27"></a></span>
+<span id="cb21-28"><a href="#cb21-28"></a>Acabé con mi primer post. FIN</span>
+<span id="cb21-29"><a href="#cb21-29"></a>  </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><p>Sustituye <code>thumbnail.jpg</code> por otro archivo</p></li>
 <li><p>Vuelve a regenerar el blog: <code>Build &gt; Render Website</code></p></li>
@@ -2640,7 +2670,7 @@
 <p><br></p>
 <ul>
 <li><p>La apariencia visual del blog puede cambiarse utilizando CSS.</p></li>
-<li><p>Veamos un ejemplo con el siguiente <a href="../posts/post_05_css-05.html">post</a></p></li>
+<li><p>Veamos un ejemplo con el siguiente <a href="../posts/post_05_css.html">post</a></p></li>
 </ul>
 </section>
 
@@ -2655,7 +2685,7 @@
 <p><br></p>
 <ul>
 <li><p><strong>Otras referencias</strong>, por ejemplo: <a href="https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide">Customizing Quarto Websites: Make your website stand out using SASS</a> o <a href="https://www.youtube.com/watch?v=ErRX8plZpQE">este video</a></p></li>
-<li><p>Tengo una “práctica” en el <a href="./taller/06_taller_tuneado-del-blog.html">tutorial nº 6</a> del taller.</p></li>
+<li><p>Tengo una “práctica” en el <a href="../taller/06_taller_tuneado-del-blog.html">tutorial nº 6</a> del taller.</p></li>
 </ul>
 </section>
 

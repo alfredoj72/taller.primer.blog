@@ -19,8 +19,8 @@ website:
     logo: "profile.jpg"
     #background: "#CCCCFF"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)
     right:
-      - text: "About me"
-        href: about.qmd
+      - text: "Mi blog"
+        href: blog.qmd
       - icon: github
         href: https://github.com/<tu-usuario-github>
       - icon: twitter

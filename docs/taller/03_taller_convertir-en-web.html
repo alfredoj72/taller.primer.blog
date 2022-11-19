@@ -369,45 +369,61 @@ Tarea 3.2: Incluir <code>blog.qmd</code> en la web
 <li><p>Para que <code>blog.qmd</code>, la página que contiene el listado de posts, se muestre en nuestra web hay que refrenciarlo/incluirlo en <code>_quarto.yml</code></p></li>
 <li><p>Simplemente, tendríamos que modificar las lineas 8 y 9 que ahora están referenciando al fichero <code>about.qmd</code>. Por ejemplo podríamos <strong>dejar las lineas 8 y 9 como se ve abajo</strong> (a la derecha):</p></li>
 </ul>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 45.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./imagenes/tt_01/img_13gg-2.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-</div>
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
-<p>&nbsp;</p>
-</div>
-<div class="cell quarto-layout-cell" style="flex-basis: 45.0%;justify-content: center;">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">#- 2/ Opciones referentes a la estructura de la web -----------------</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>website<span class="sc">:</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>  navbar<span class="sc">:</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>    right<span class="sc">:</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Mi blog"</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>        href<span class="sc">:</span> blog.qmd</span>
-<span id="cb1-10"><a href="#cb1-10"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
-<span id="cb1-11"><a href="#cb1-11"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
-<span id="cb1-13"><a href="#cb1-13"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario twitter<span class="sc">&gt;</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
-<span id="cb1-15"><a href="#cb1-15"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a>    left<span class="sc">:</span> </span>
-<span id="cb1-17"><a href="#cb1-17"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a>        href<span class="sc">:</span> docencia.qmd</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Para hacerlo, es mejor copiar el código de abajo y pegarlo en <code>_quarto.yml</code></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r code-overflow-wrap number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>project<span class="sc">:</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>  type<span class="sc">:</span> website</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a>website<span class="sc">:</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  title<span class="sc">:</span> <span class="st">"Mi blog (aún en pruebas)"</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>  navbar<span class="sc">:</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>    logo<span class="sc">:</span> <span class="st">"profile.jpg"</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>    <span class="co">#background: "#CCCCFF"    #- {“primary”, “secondary”,  “danger”, “warning”, “light”, “dark”, or hex color} (el backgroung de la navbar)</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>    left<span class="sc">:</span> </span>
+<span id="cb1-10"><a href="#cb1-10"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia"</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>        href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb1-12"><a href="#cb1-12"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Más cosas"</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>        menu<span class="sc">:</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia 2"</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a>            href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb1-16"><a href="#cb1-16"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia 3"</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a>            href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb1-18"><a href="#cb1-18"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"---"</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a>          <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Docencia 4"</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a>            href<span class="sc">:</span> docencia.qmd</span>
+<span id="cb1-21"><a href="#cb1-21"></a>    right<span class="sc">:</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a>      <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Mi blog"</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a>        href<span class="sc">:</span> blog.qmd</span>
+<span id="cb1-24"><a href="#cb1-24"></a>      <span class="sc">-</span> icon<span class="sc">:</span> github</span>
+<span id="cb1-25"><a href="#cb1-25"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario<span class="sc">-</span>github<span class="sc">&gt;</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a>      <span class="sc">-</span> icon<span class="sc">:</span> twitter</span>
+<span id="cb1-27"><a href="#cb1-27"></a>        href<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>twitter.com<span class="sc">/</span><span class="er">&lt;</span>tu<span class="sc">-</span>usuario twitter<span class="sc">&gt;</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a>      <span class="sc">-</span> icon<span class="sc">:</span> envelope</span>
+<span id="cb1-29"><a href="#cb1-29"></a>        url<span class="sc">:</span> <span class="st">"mailto:&lt;tu-mail@uv.es&gt;"</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a> </span>
+<span id="cb1-31"><a href="#cb1-31"></a></span>
+<span id="cb1-32"><a href="#cb1-32"></a>format<span class="sc">:</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a>  html<span class="sc">:</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-themes.html</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a>    theme<span class="sc">:</span> flatly  </span>
+<span id="cb1-36"><a href="#cb1-36"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb1-37"><a href="#cb1-37"></a>    toc<span class="sc">:</span> true</span>
+<span id="cb1-38"><a href="#cb1-38"></a>    <span class="co">#- https://quarto.org/docs/output-formats/html-code.html#highlighting</span></span>
+<span id="cb1-39"><a href="#cb1-39"></a>    highlight<span class="sc">-</span>style<span class="sc">:</span> a11y</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 <ul>
 <li>Aún no podemos refrescar la web porque ahora no tenemos archivo <code>index.qmd</code>.</li>
 </ul>
-</div>
-</div>
+<p>:::</p>
 <p><br></p>
 </section>
 <section id="tarea-3.3" class="level4">
