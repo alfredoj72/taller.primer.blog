@@ -154,9 +154,39 @@ css: assets/styles_slides.intro.css
 
 -   Los posts **tampoco tienen porqué estar perfectos**, así que no hay que tener miedo a escribir!!
 
-## Estructura de una web {.center .unnumbered background-color="#C5B38F" title-align="center"}
+## Estructura de una web { .unnumbered background-color="#C5B38F" title-align="center"}
 
-![](imagenes/img_estructura-web_ok-02d.png){fig-align="center" width="70%"}
+
+::: {columns}
+
+::: {.column width="69%"}
+![](imagenes/img_final.png)
+:::
+
+
+
+::: {.column width="30%"}
+
+
+**HEADER/Navbar**
+
+<br>
+
+**TITLE-block banner**
+
+<br><br><br>
+
+[**ARTICLE**]{.purple}
+
+<br><br><br><br>
+
+**Footer**
+
+:::
+
+:::
+
+
 
 ## Ejemplos de blogs (hechos con Quarto) {.smaller}
 

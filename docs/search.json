@@ -312,7 +312,7 @@
     "href": "taller/00_taller_slides.html#estructura-de-una-web",
     "title": "Mi primer blog con Quarto (y Rmd)",
     "section": "Estructura de una web",
-    "text": "Estructura de una web"
+    "text": "Estructura de una web\n\n\n\n\n\nHEADER/Navbar\n\nTITLE-block banner\n\nARTICLE\n\nFooter"
   },
   {
     "objectID": "taller/00_taller_slides.html#ejemplos-de-blogs-hechos-con-quarto",
@@ -872,7 +872,7 @@
     "href": "taller/slides.html#estructura-de-una-web",
     "title": "Mi primer blog con Quarto (y Rmd)",
     "section": "Estructura de una web",
-    "text": "Estructura de una web"
+    "text": "Estructura de una web\n\n\n\n\n\nHEADER/Navbar\n\nTITLE-block banner\n\nARTICLE\n\nFooter"
   },
   {
     "objectID": "taller/slides.html#ejemplos-de-blogs-hechos-con-quarto",
