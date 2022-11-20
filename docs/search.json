@@ -840,6 +840,237 @@
     "text": "¿Cómo va?\nComo vas tete\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
   },
   {
+    "objectID": "taller/slides.html#sobre-mi-pedro-j.-pérez",
+    "href": "taller/slides.html#sobre-mi-pedro-j.-pérez",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Sobre mi (Pedro J. Pérez)",
+    "text": "Sobre mi (Pedro J. Pérez)\n\n\nProfesor en la UV: Econometría e Intro a la Ciencia de datos con R\nEntusiasta de R\n\n\n\n\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto"
+  },
+  {
+    "objectID": "taller/slides.html#estructura-del-taller",
+    "href": "taller/slides.html#estructura-del-taller",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Estructura del taller",
+    "text": "Estructura del taller\n\n\nIntro: presentación del taller, visionado de blogs y ¿qué es Quarto? (15 min)\n\n\n\n\nCreación de un blog básico: mi blog en 3 minutos (10 min)\nTuneado básico del blog (15 min). Práctica (15 min)\nConvirtiendo el blog en una web personal (5 min)\n\n\n\n\n\nWorkflow: creando posts (5 min)\nEscribiendo un post con Quarto (15 min). Práctica (15 min)\n\n\n\n\n\nTuneado: mejorando la web (14 min)\n\n\n\n\nGestión y publicación de la web/blog (1 min)"
+  },
+  {
+    "objectID": "taller/slides.html#objetivos-del-taller",
+    "href": "taller/slides.html#objetivos-del-taller",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Objetivo(s) del taller",
+    "text": "Objetivo(s) del taller\n\n\n\nAprender a hacer websites/blogs con Quarto\n\n\n\nAprender sobre Quarto mientras vamos creando una web/blog\n\n\n\nQue salgáis todos con el bosquejo y la intención de hacer una web/blog!!\n\n\n\n… y, si puede ser, pasar un buen rato 🙂 mientras aprendemos"
+  },
+  {
+    "objectID": "taller/slides.html#beneficios-de-tener-un-blog",
+    "href": "taller/slides.html#beneficios-de-tener-un-blog",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Beneficios de tener un blog",
+    "text": "Beneficios de tener un blog\n\n\nSe aprende mucho!!\n\n\n\nEs fácil (pocas barreras de entrada si usas Rmarkdown)\nEs divertido\n\n\n\n\nRegistrar análisis que haces que de otra forma olvidarías\nPortafolio y contactos\n\n\n\n\nProductive procrastination (!!)\n\n\n\n(Discursos más elaborados aquí o aquí )\n\n\n\nImportante:\n\nEl blog no tiene que ser perfecto. Mejor empezar con un blog sencillo\n\n\n\nLos posts tampoco tienen porqué estar perfectos, así que no hay que tener miedo a escribir!!"
+  },
+  {
+    "objectID": "taller/slides.html#estructura-de-una-web",
+    "href": "taller/slides.html#estructura-de-una-web",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Estructura de una web",
+    "text": "Estructura de una web"
+  },
+  {
+    "objectID": "taller/slides.html#ejemplos-de-blogs-hechos-con-quarto",
+    "href": "taller/slides.html#ejemplos-de-blogs-hechos-con-quarto",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Ejemplos de blogs (hechos con Quarto)",
+    "text": "Ejemplos de blogs (hechos con Quarto)\n\nMike Mahoney (el repo aqui)\nIsabella Velásquez (el repo aqui)\nDanielle Navarro (el repo aqui)\nJeff y Marc Dotson (el repo aqui)\nLayton R blog (el repo aqui)\nR Lille (el repo aqui)\nDrew Dimmery\nPA blog (el repo aqui)\nMario Angst\nMatt Worthington (el repo aqui)\n\n\nMás opciones:\n\nLa Gallery de Quarto"
+  },
+  {
+    "objectID": "taller/slides.html#qué-es-quarto-1",
+    "href": "taller/slides.html#qué-es-quarto-1",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "¿Qué es Quarto?",
+    "text": "¿Qué es Quarto?\n\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R. Soporta lenguajes como Phyton, Julia y Observable.\n\n\n\n\nUnifica funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\nEs … la “segunda generación de Rmarkdown”\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI"
+  },
+  {
+    "objectID": "taller/slides.html#ventajas-de-quarto",
+    "href": "taller/slides.html#ventajas-de-quarto",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Ventajas de Quarto",
+    "text": "Ventajas de Quarto\n\nProyecto en desarrollo activo … mientras que Rmarkdown it’s not going away pero …\nUnifica algunas de las funcionalidades de Rmarkdown\nPor ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\n\n\n\nPara ver si estas ventajas merecen la pena para ti puedes leer a Occasional Divergences, Nick Tierney, Alison Hill, Danielle Navarro, o esta pregunta de Stack Overflow."
+  },
+  {
+    "objectID": "taller/slides.html#documentos-.rmd-tienen-3-partes",
+    "href": "taller/slides.html#documentos-.rmd-tienen-3-partes",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Documentos .Rmd tienen 3 partes",
+    "text": "Documentos .Rmd tienen 3 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (narratives)\n\n\nUn ejemplo\n\n\nsource code\n\n\n\n\n\n\n\n\n\n\n\noutput"
+  },
+  {
+    "objectID": "taller/slides.html#iii-texto-narrativa",
+    "href": "taller/slides.html#iii-texto-narrativa",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "(III) Texto (narrativa)",
+    "text": "(III) Texto (narrativa)\n\nTodo lo que no es YAML o CHUNKS de código, es TEXTO.\nEl texto se escribe en Markdown (concretamente en Pandoc’s Markdown)\n\n\nSintaxis básica de markdown\n\nAquí puedes ver (o recordar) la sintaxis básica para escribir en markdown. Como ejemplo:"
+  },
+  {
+    "objectID": "taller/slides.html#contenido-del-qproject",
+    "href": "taller/slides.html#contenido-del-qproject",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Contenido del Qproject",
+    "text": "Contenido del Qproject\n\n\n\n\n\n\n\n\n\n\n\nLos archivos importantes ahora son 3:\n\n_quarto.yml: especifica la estructura (y apariencia) de la web\nindex.qmd : generará (y dará formato) a la “landing page” o Home. Esta página será un listado de páginas (un blog)\nabout.qmd : una de la páginas del blog"
+  },
+  {
+    "objectID": "taller/slides.html#contenido-del-qproject-tras-procesar-el-blog",
+    "href": "taller/slides.html#contenido-del-qproject-tras-procesar-el-blog",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Contenido del Qproject (tras procesar el blog)",
+    "text": "Contenido del Qproject (tras procesar el blog)\n\n\n\n\n\n\n\n\n\n\n\n\nSe han creado 2 subcarpetas: _site y _freeze\n_site es la carpeta que contiene el blog."
+  },
+  {
+    "objectID": "taller/slides.html#ver-el-blog-en-local",
+    "href": "taller/slides.html#ver-el-blog-en-local",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Ver el blog en local",
+    "text": "Ver el blog en local\n\n_site es la carpeta que contiene el blog. Veamos su contenido\nLa página principal (o Home) de nuestro blog es el archivo index.html.\nEl archivo index.html ha sido generado por el fichero index.qmd.\n\n\n\n\nTarea 1.3: Ver el blog\n\n\n\nEnseguida publicaremos el blog en Quartopub, pero antes vamos a verlo en local.\nPara ello solo tienes que pinchar en el archivo ./blog_prueba_00/_site/index.html\nEse fichero es el que contiene la “Landing Page” o “Home” de nuestro blog.\nComo ves el blog es muy sencillo, solo tiene 2 páginas:\n\nla Home Page (que consiste en un listado de posts)\nla página About"
+  },
+  {
+    "objectID": "taller/slides.html#contenido-de-index.qmd",
+    "href": "taller/slides.html#contenido-de-index.qmd",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Contenido de index.qmd",
+    "text": "Contenido de index.qmd\n\nEl archivo index.qmd genera index.html, la página principal (o Home) de nuestro blog\n\n\n\n\nExtensiones: ver el contenido del archivo index.qmd\n\n\nContenido del archivo index.qmd que genera a index.html:\n\n\n\n\n\n\n\n\n\n\n\n\nComo vemos, el archivo index.qmd no tiene contenido, sólo contiene un yaml o encabezamiento\nEse encabezamiento genera una lista (listing:) con los contenidos (con los ficheros .qmd) que haya en la carpeta posts.\nSí, has imaginado bien, en la carpeta posts es donde estarán los ficheros .qmd que generarán los posts\nEl resto del yaml son opciones para nuestro blog. Por ejemplo, sort: \"date desc\" ordenará el listado de post de más reciente a más antiguo.\nLo iremos viendo"
+  },
+  {
+    "objectID": "taller/slides.html#alojando-el-blog",
+    "href": "taller/slides.html#alojando-el-blog",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Alojando el blog",
+    "text": "Alojando el blog\n\n\n\nTarea 1.4: Alojar el blog en Quarto Pub\n\n\nPara publicar nuestro blog en Quartopub sólo hay que:\n\nteclear en la Terminal de RStudio (panel inferior-izquierda) lo siguiente:\n\nquarto publish quarto-pub\n\nTras ejecutar lo anterior, se te pedirá que autorices en la Terminal.\nDespués se abrirá el navegador, tendrás que logearte en Quarto Pub y volverás a autorizar. Además te preguntarán el nombre del blog.\n\n\n\n\n\nPuedes ver aquí, como quedaría el blog una vez alojado en Internet.\n\n\n\n\n\nExtensiones: el fichero _publish.yml\n\n\nSi te fijas, tras haberse publicado el blog en “Quarto Pub”, se habrá creado un nuevo fichero en nuestro Qproject: es el fichero _publish.yml. En él solamente están los metadatos necesarios para publicar y actualizar nuestro blog."
+  },
+  {
+    "objectID": "taller/slides.html#archivo-_quarto.yml",
+    "href": "taller/slides.html#archivo-_quarto.yml",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Archivo _quarto.yml",
+    "text": "Archivo _quarto.yml\n\n\n\n\n\n\nContenido original de _quarto.yml\n\n\n\n\n\n\n\nAsí dejaremos el fichero _quarto.yml"
+  },
+  {
+    "objectID": "taller/slides.html#section",
+    "href": "taller/slides.html#section",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "",
+    "text": "Tarea 2.1: Modificar el contenido de _quarto.yml\n\n\n\nSustituye el contenido original del fichero _quarto.yml por el contenido del siguiente chunk.\nPon un título que te guste a tu blog (línea 5 title: \"titulo-de-mi-blog\")\nPon tu usuario de Github y cuenta de Twitter (lineas 12 y 14: href:)\nPon tu email (línea 16: href:)\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Mi blog (aún en pruebas)\"\n  navbar:\n    logo: \"profile.jpg\"\n    right:\n      - text: \"About me\"\n        href: about.qmd\n      - icon: github\n        href: https://github.com/<tu-usuario-github>\n      - icon: twitter\n        href: https://twitter.com/<tu-usuario-twitter>\n      - icon: envelope\n        url: \"mailto:<tu-mail@uv.es>\"\n    left: \n      - text: \"Docencia\"\n        href: docencia.qmd\n \nformat:\n  html:\n    theme: flatly  \n    css: styles.css\n    toc: true\n    highlight-style: a11y\n\n\n\nAdemás:\n\nlineas 17-19: añadimos la página/pestaña “Docencia” a la izquierda de la navbar\nlineas 21-26: modificamos el theme, ponemos TOC a los documentos, …, CSS,"
+  },
+  {
+    "objectID": "taller/slides.html#archivo-index.qmd",
+    "href": "taller/slides.html#archivo-index.qmd",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Archivo index.qmd",
+    "text": "Archivo index.qmd\n\n\n\n\n\n\nContenido original de index.qmd\n\n\n\n\n\n\n\nAsí dejaremos el fichero index.qmd\n\n\n\n\n\n\nDe momento, solo vamos a hacer cambios en la segunda linea: cambiaremos el título.\nFíjate que es el título del listado de posts (del blog), no de la página web.\nFijaros que index.qmd es un archivo especial: “sólo tiene yaml”. Es el que genera el listado de posts"
+  },
+  {
+    "objectID": "taller/slides.html#archivo-about.qmd",
+    "href": "taller/slides.html#archivo-about.qmd",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Archivo about.qmd",
+    "text": "Archivo about.qmd\n\n\n\n\n\n\nContenido original de about.qmd\n\n\n\n\n\n\n\nAsí dejaremos el fichero about.qmd\n\n\n\n\n\n\nSi en el yaml se activa la opción about: (linea 4), entonces puedes usar unas plantillas que Quarto tiene disponibles para crear About’s pages.\nComo puedes ver aquí hay 5 plantillas: jolla, trestles, solana, marquee y broadside.\nAquí tienes la documentación oficial sobre estas plantillas."
+  },
+  {
+    "objectID": "taller/slides.html#archivo-styles.css",
+    "href": "taller/slides.html#archivo-styles.css",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Archivo styles.css",
+    "text": "Archivo styles.css\n\nPuedes cambiar la apariencia estética del blog usando los themes predefinidos en Quarto o puedes usar el archivo styles.css1\n\n\n\n\nTarea 2.7: Modificar styles.css\n\n\n\nSimplemente sustituye el contenido original del fichero styles.css por el contenido del siguiente chunk:\n\n/* css styles */\n\n\n/* justificar el texto */ \np, ul, ol {\n  text-align: justify; }       \n\n\n\n\nVeremos en el tutorial nº 6 que también podremos usar archivos .scss"
+  },
+  {
+    "objectID": "taller/slides.html#práctica-tutorial-nº-2",
+    "href": "taller/slides.html#práctica-tutorial-nº-2",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Práctica (tutorial nº 2)",
+    "text": "Práctica (tutorial nº 2)\nEn esta sección dedicaremos un tiempo a la práctica libre para que adaptes el blog a tus necesidades y gustos. Por ejemplo puedes probar:\n\n\nAñadir una nueva página a la web (quarto.yml). Os doy una posibilidad en la siguiente slide\n\n\n\nModificar la apariencia del blog (realmente del listado de posts) jugando con las opciones que nos proporciona Quarto (index.qmd). Gracias YAML inteligence!!\n\n\n\nModificar la apariencia de la página About (about.qmd)"
+  },
+  {
+    "objectID": "taller/slides.html#donde-están-los-posts-del-blog",
+    "href": "taller/slides.html#donde-están-los-posts-del-blog",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "¿Donde están los posts del blog?",
+    "text": "¿Donde están los posts del blog?\n\nLos ficheros .qmd que generan los posts están en la carpeta posts (de nuestro Qproject que genera el blog).\nCada post está en una carpeta diferente1:\n\n\n\n\n\n\n\n\n\n\n\n\n\nVeamos (en la siguiente slide) el contenido de ./posts/welcome/\n\nNo es necesario que los posts estén cada uno en una carpeta, pero me parece una buena práctica."
+  },
+  {
+    "objectID": "taller/slides.html#contenido-de-cada-subcarpeta-de-.posts",
+    "href": "taller/slides.html#contenido-de-cada-subcarpeta-de-.posts",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Contenido de cada subcarpeta de ./posts/",
+    "text": "Contenido de cada subcarpeta de ./posts/\n\n\nPor ejemplo de ./posts/welcome/\n\n\n\n\n\n\n\nContenido de la carpeta welcome que genera el post titulado “Welcome to my blog”\n\n\n\n\n\n\n\nContenido del archivo index.qmd”"
+  },
+  {
+    "objectID": "taller/slides.html#ficheros-.qmd",
+    "href": "taller/slides.html#ficheros-.qmd",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Ficheros .qmd",
+    "text": "Ficheros .qmd\n\nLos ficheros .qmd tienen 3 partes: YAML, texto y chunks de código.\n\n\n\n\n\n\n\n\n\n\n\n\n\nVeámoslas una a una"
+  },
+  {
+    "objectID": "taller/slides.html#yaml-ideas-importantes",
+    "href": "taller/slides.html#yaml-ideas-importantes",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "YAML: ideas importantes",
+    "text": "YAML: ideas importantes\n\n\nEl encabezamiento o YAML sirve para fijar opciones y metadatos de nuestro documento.\n\n\n\nEl YAML será procesado varias veces durante el procesado del documento: es leído por Quarto, knitr y Pandoc e influirá en el output final.\n\n\n\nEl hecho de estar trabajando dentro de un Qproject nos da mucha versatilidad a la hora de especificar el YAML de nuestros documentos .qmd. Documentación oficial aquí"
+  },
+  {
+    "objectID": "taller/slides.html#el-yaml-de-un-post-se-puede-especificar-en-3-niveles",
+    "href": "taller/slides.html#el-yaml-de-un-post-se-puede-especificar-en-3-niveles",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "El yaml de un post se puede especificar en 3 niveles",
+    "text": "El yaml de un post se puede especificar en 3 niveles\n\n\nNivel proyecto:todo Qproject tiene archivo _quarto.yml. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en _quarto.yml.\nNivel carpeta: si en una carpeta existe un documento _metadata.yml, los documentos de esa carpeta heredan sus metadatos. La carpeta ./posts/ de un blog suele tener un archivo _metadata.yml.\nNivel documento: En el yaml del propio documento .qmd\n\n\n\nSi hay conflictos prevalecen las opciones del nivel documento, luego nivel carpeta y finalmente nivel proyecto.\nDocumentación oficial de Quarto con las principales opciones que se pueden fijar en el YAML para documentos html: aquí y aquí"
+  },
+  {
+    "objectID": "taller/slides.html#yaml-tal-como-lo-tenemos-ahora",
+    "href": "taller/slides.html#yaml-tal-como-lo-tenemos-ahora",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "YAML: tal como lo tenemos ahora",
+    "text": "YAML: tal como lo tenemos ahora\n\n1. nivel proyecto (_quarto.yml)2. nivel carpeta (_metadata.yml)3. nivel documento (index.qmd)\n\n\nAbajo el contenido del fichero _quarto.yml tal y como lo tenemos ahora en nuestro blog. Solo he añadido 3 comentarios para diferenciar entre secciones:\n\n\n\n\n\n\n\nAbajo el, contenido del fichero ./posts/_metadata.yml. Afectará a todos los ficheros .qmd que haya en la carpeta ./posts/"
+  },
+  {
+    "objectID": "taller/slides.html#yaml-nivel-proyecto-opciones-en-_quarto.yml",
+    "href": "taller/slides.html#yaml-nivel-proyecto-opciones-en-_quarto.yml",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "YAML: NIVEL PROYECTO (opciones en _quarto.yml)",
+    "text": "YAML: NIVEL PROYECTO (opciones en _quarto.yml)\nEn _quarto.yml se suelen poner opciones referentes a 3 aspectos:\n\n1. Sobre el propio Qproject2. Estructura de la página web3. Formato de salida de los documentos\n\n\n\n# 1/ Opciones referentes al proyecto ----------------------------\nproject:\n  type: website\n  output-dir: docs    #- podemos cambiar la carpeta donde se redirige el output (.html)\n  # execute-dir: project    #- cambiar el render directory: https://quarto.org/docs/projects/code-execution.html#working-dir\n\n\n\nlinea 4: podemos elegir la carpeta de destino de nuestro blog\nlinea 5: podemos cambiar el render directory de los .qmd\n\n\nDocumentación oficial aquí.\n\n\n\n#- 2/ Opciones referentes a la estructura de la web -----------------\nwebsite:\n  title: \"Mi blog (aún en pruebas)\"\n  favicon: profile.jpg\n  #site-url: https://....\n  #repo-url: https://....\n  open-graph: true #-https://quarto.org/docs/websites/website-tools.html#twitter-cards\n  twitter-card:\n    creator: \"@tu-usuario-twitter\"\n    card-style: summary_large_image\n  navbar:\n    logo: \"profile.jpg\"\n    #background: primary    #- pink\n    right:\n      - text: \"About me\"\n        href: about.qmd\n      - icon: github\n        href: https://github.com/<tu-usuario-github>\n      - icon: twitter\n        href: https://twitter.com/<tu-usuario-twitter>\n      - icon: envelope\n        url: \"mailto:<tu-mail@uv.es>\"\n    left: \n      - icon: house-door\n        href: index.html\n      - text: \"Docencia\"\n        href: docencia.qmd\n  page-footer:\n    left: \"© 2022 Pedro J. Pérez\"\n    center: \"Hecho con [Quarto](https://quarto.org)\"\n    right:\n      - icon: github\n        href: https://github.com/<tu-usuario-github>\n      - icon: twitter\n        href: https://twitter.com/<tu-usuario-twitter>\n      - icon: envelope\n        url: \"mailto:<tu-mail>@uv.es\"\n\n\nComo ves, se añadirían elementos como:\n\nlineas 28 a 37: se añade un pie de página al blog\nlineas 24 y 25: Hemos añadido un elemento a la navbar concretamente el icono Home. La documentación oficial para elementos de navegación está aquí\nlinea 4: añadimos un favicon\nlineas 5 y 6: el url de la web y del repo en Github\nlineas 7-10: elementos de redes sociales. La documentación oficial para estos elementos esta aquí\n\n\n\n\n\n#- 3/ Opciones referentes al formato de salida  ---------------------\nformat:\n  html:\n    theme: flatly  \n    css: styles.css\n    toc: true\n    highlight-style: a11y\n\n\nEn un blog/web el formato de salida es siempre .html; sin embargo podemos especificar otras opciones como por ejemplo sí los documentos (o páginas de la web, o post del blog) tienen un índice flotante, etc… Documentación oficial aquí y aquí"
+  },
+  {
+    "objectID": "taller/slides.html#un-ejemplo-completito-de-_quarto.yml",
+    "href": "taller/slides.html#un-ejemplo-completito-de-_quarto.yml",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Un ejemplo “completito” de _quarto.yml",
+    "text": "Un ejemplo “completito” de _quarto.yml\nSi quieres ver un documento _quarto.yml completito, ve aquí. Pertenece a la web de Quarto.\n\n\n\n\n\nproject:\n  type: website\n  output-dir: _site\n  resources:\n    - \"/docs/download/_download.json\"\n    - \"/docs/download/_prerelease.json\"\n    - \"/_redirects\"\n\nwebsite:\n  title: \"Quarto\"\n  image: \"quarto.png\"\n  favicon: \"favicon.png\"\n  google-analytics: \"G-FV9Z7SDZ0M\"\n  open-graph: true\n  twitter-card: true\n  site-url: https://quarto.org\n  repo-url: https://github.com/quarto-dev/quarto-web\n  repo-actions: [edit, issue]\n  page-navigation: true\n  search:\n    algolia:\n      index-name: prod_QUARTO\n      application-id: ZPJB5I1QN7\n      search-only-api-key: 41be6c1e0a7fea4a51b107810facf577\n      analytics-events: true\n      show-logo: true\n  page-footer:\n    left: |\n      Proudly supported by\n      [![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-flat.svg){fig-alt=\"RStudio\" width=65px}](https://www.rstudio.com)\n    center:\n      - text: \"About\"\n        href: about.qmd\n      - text: \"FAQ\"\n        href: docs/faq/index.qmd\n      - text: \"License\"\n        href: license.qmd\n      - text: \"Trademark\"\n        href: trademark.qmd\n    right:\n      - icon: twitter\n        href: https://twitter.com/quarto_pub\n        aria-label: Quarto Twitter\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        aria-label: Quarto GitHub\n  navbar:\n    background: light\n    logo: quarto.png\n    logo-alt: \"Quarto logo.\"\n    title: false\n    collapse-below: lg\n    left:\n      - text: \"Overview\"\n        href: index.qmd\n      - text: \"Get Started\"\n        href: docs/get-started/index.qmd\n      - text: \"Guide\"\n        href: docs/guide/index.qmd\n      - text: Extensions\n        href: docs/extensions/index.qmd\n      - text: \"Reference\"\n        href: docs/reference/index.qmd\n      - text: \"Gallery\"\n        href: docs/gallery/index.qmd\n      - text: \"Blog\"\n        href: docs/blog/index.qmd\n      - text: \"Help\"\n        menu:\n          - text: \"Report a Bug\"\n            icon: \"bug\"\n            href: \"https://github.com/quarto-dev/quarto-cli/issues\"\n          - text: \"Ask a Question\"\n            icon: \"chat-right-text\"\n            href: \"https://github.com/quarto-dev/quarto-cli/discussions\"\n          - text: \"FAQ\"\n            icon: \"question-circle\"\n            href: docs/faq/index.qmd\n    right:\n      - icon: twitter\n        href: https://twitter.com/quarto_pub\n        aria-label: Quarto Twitter\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        aria-label: Quarto GitHub\n\n  sidebar:\n    - id: get-started\n      title: \"Get Started\"\n      style: \"floating\"\n      collapse-level: 2\n      align: left\n      contents:\n        - docs/get-started/index.qmd\n        - text: \"Tutorial: Hello, Quarto\"\n          href: docs/get-started/hello/\n        - text: \"Tutorial: Computations\"\n          href: docs/get-started/computations/\n        - text: \"Tutorial: Authoring\"\n          href: docs/get-started/authoring/\n\n    - id: guide\n      collapse-level: 1\n      contents:\n        - text: \"Guide\"\n          href: docs/guide/index.qmd\n        - section: \"Authoring\"\n          contents:\n            - docs/authoring/markdown-basics.qmd\n            - docs/authoring/figures.qmd\n            - docs/authoring/tables.qmd\n            - docs/authoring/diagrams.qmd\n            - docs/authoring/videos.qmd\n            - docs/authoring/callouts.qmd\n            - docs/authoring/article-layout.qmd\n            - section: \"Scholarly Writing\"\n              contents:\n                - docs/authoring/title-blocks.qmd\n                - docs/authoring/footnotes-and-citations.qmd\n                - docs/authoring/cross-references.qmd\n                - docs/authoring/create-citeable-articles.qmd\n                - docs/authoring/appendices.qmd\n        - section: \"Computations\"\n          contents:\n            - docs/computations/python.qmd\n            - docs/computations/r.qmd\n            - docs/computations/julia.qmd\n            - docs/computations/ojs.qmd\n            - docs/computations/execution-options.qmd\n            - docs/computations/parameters.qmd\n        - section: \"Tools\"\n          contents:\n            - docs/tools/jupyter-lab.qmd\n            - docs/tools/rstudio.qmd\n            - docs/tools/vscode.qmd\n            - docs/tools/text-editors.qmd\n            - section: \"Visual Editor\"\n              contents:\n                - text: Editor Basics\n                  href: docs/visual-editor/index.qmd\n                - docs/visual-editor/technical.qmd\n                - docs/visual-editor/content.qmd\n                - docs/visual-editor/options.qmd\n                - docs/visual-editor/markdown.qmd\n        - section: \"Documents\"\n          contents:\n            - section: \"HTML\"\n              contents:\n                - docs/output-formats/html-basics.qmd\n                - docs/output-formats/html-code.qmd\n                - docs/output-formats/html-themes.qmd\n                - docs/output-formats/html-publishing.qmd\n            - section: \"PDF\"\n              contents:\n                - docs/output-formats/pdf-basics.qmd\n                - docs/output-formats/pdf-engine.qmd\n            - section: \"MS Word\"\n              contents:\n                - docs/output-formats/ms-word.qmd\n                - docs/output-formats/ms-word-templates.qmd\n            - section: \"Markdown\"\n              contents:\n                - docs/output-formats/gfm.qmd\n                - docs/output-formats/hugo.qmd\n                - docs/output-formats/docusaurus.qmd\n            - docs/output-formats/all-formats.qmd\n        - section: \"Presentations\"\n          contents:\n            - text: \"Overview\"\n              href: docs/presentations/index.qmd\n            - section: docs/presentations/revealjs/index.qmd\n              contents:\n                - text: \"Reveal Basics\"\n                  href: docs/presentations/revealjs/index.qmd\n                - docs/presentations/revealjs/presenting.qmd\n                - docs/presentations/revealjs/advanced.qmd\n                - docs/presentations/revealjs/themes.qmd\n            - docs/presentations/powerpoint.qmd\n            - docs/presentations/beamer.qmd\n        - section: \"Websites\"\n          href: docs/websites/website-basics.qmd\n          contents:\n            - docs/websites/website-basics.qmd\n            - docs/websites/website-navigation.qmd\n            - docs/websites/website-blog.qmd\n            - docs/websites/website-search.qmd\n            - docs/websites/website-tools.qmd\n            - docs/websites/website-about.qmd\n            - section: \"Listing Pages\"\n              href: docs/websites/website-listings.qmd\n              contents:\n                - docs/websites/website-listings.qmd\n                - docs/websites/website-listings-custom.qmd\n        - section: \"Books\"\n          href: docs/books/book-basics.qmd\n          contents:\n            - docs/books/book-basics.qmd\n            - docs/books/book-structure.qmd\n            - docs/books/book-crossrefs.qmd\n            - text: \"Customizing Output\"\n              href: docs/books/book-output.qmd\n        - section: \"Interactivity\"\n          contents:\n            - text: \"Overview\"\n              href: docs/interactive/index.qmd\n            - section: docs/interactive/ojs/index.qmd\n              contents:\n                - text: \"Introduction\"\n                  href: docs/interactive/ojs/index.qmd\n                - docs/interactive/ojs/libraries.qmd\n                - docs/interactive/ojs/data-sources.qmd\n                - docs/interactive/ojs/ojs-cells.qmd\n                - docs/interactive/ojs/shiny.qmd\n                - docs/interactive/ojs/code-reuse.qmd\n                - section: \"Examples\"\n                  contents:\n                    - docs/interactive/ojs/examples/penguins.qmd\n                    - docs/interactive/ojs/examples/sunburst.qmd\n                    - docs/interactive/ojs/examples/arquero.qmd\n                    - docs/interactive/ojs/examples/population.qmd\n                    - docs/interactive/ojs/examples/noaa-co2.qmd\n                    - docs/interactive/ojs/examples/github.qmd\n                    - docs/interactive/ojs/examples/layout.qmd\n                    - section: \"Shiny\"\n                      contents:\n                        - text: \"K-Means\"\n                          href: https://jjallaire.shinyapps.io/kmeans-shiny-ojs/\n                        - text: \"Binning\"\n                          href: https://jjallaire.shinyapps.io/binning-shiny-ojs/\n                        - text: \"Data Binding\"\n                          href: https://jjallaire.shinyapps.io/data-shiny-ojs/\n                        - text: \"Covid Map\"\n                          href: https://jjallaire.shinyapps.io/covid19-bicartogram/\n            - section: docs/interactive/shiny/index.qmd\n              contents:\n                - text: \"Introduction\"\n                  href: docs/interactive/shiny/index.qmd\n                - docs/interactive/shiny/running.qmd\n                - docs/interactive/shiny/execution.qmd\n                - docs/interactive/shiny/resources.qmd\n                - section: \"Examples\"\n                  contents:\n                    - text: \"Old Faithful\"\n                      href: https://jjallaire.shinyapps.io/shiny-old-faithful/\n                    - text: \"K-Means\"\n                      href: https://jjallaire.shinyapps.io/shiny-k-means/\n                    - text: \"Diamonds\"\n                      href: https://jjallaire.shinyapps.io/shiny-diamonds/\n            - section: \"Widgets\"\n              contents:\n                - docs/interactive/widgets/jupyter.qmd\n                - docs/interactive/widgets/htmlwidgets.qmd\n            - docs/interactive/layout.qmd\n        - section: \"Publishing\"\n          contents:\n            - docs/publishing/index.qmd\n            - docs/publishing/quarto-pub.qmd\n            - docs/publishing/github-pages.qmd\n            - docs/publishing/rstudio-connect.qmd\n            - docs/publishing/netlify.qmd\n            - docs/publishing/other.qmd\n            - text: \"Publishing with CI\"\n              href: docs/publishing/ci.qmd\n        - section: \"Projects\"\n          contents:\n            - docs/projects/quarto-projects.qmd\n            - docs/projects/code-execution.qmd\n            - docs/projects/profiles.qmd\n            - docs/projects/environment.qmd\n            - docs/projects/scripts.qmd\n            - docs/projects/virtual-environments.qmd\n        - section: \"Advanced\"\n          contents:\n            - docs/authoring/includes.qmd\n            - docs/authoring/variables.qmd\n            - docs/output-formats/page-layout.qmd\n            - docs/authoring/language.qmd\n            - docs/authoring/conditional.qmd\n            - docs/extensions/nbfilter.qmd\n    - id: extensions\n      title: \"Extensions\"\n      contents:\n        - \"---\"\n        - section: docs/extensions/index.qmd\n          contents: \n            - text: \"Shortcodes & Filters\"\n              href: docs/extensions/listing-filters.qmd\n            - text: \"Journal Articles\"\n              href: docs/extensions/listing-journals.qmd\n            - text: \"Custom Formats\"\n              href: docs/extensions/listing-formats.qmd\n            - text: \"Revealjs Extensions\"\n              href: docs/extensions/listing-revealjs.qmd\n            - docs/extensions/managing.qmd\n        - \"---\"\n        - section: docs/extensions/creating.qmd\n          contents:\n            - text: \"Overview\"\n              href: docs/extensions/creating.qmd\n            - docs/extensions/lua.qmd\n            - docs/extensions/lua-api.qmd\n            - text: \"Distribution\"\n              href: docs/extensions/distributing.qmd\n            - \"---\"\n            - text: \"Shortcodes\"\n              href: docs/extensions/shortcodes.qmd\n            - text: \"Filters\"\n              href: docs/extensions/filters.qmd\n            - section: \"Journal Articles\"\n              href: docs/journals/formats.qmd\n              contents:\n                - docs/journals/formats.qmd\n                - docs/journals/templates.qmd\n                - docs/journals/authors.qmd\n            - docs/extensions/formats.qmd\n            - docs/extensions/revealjs.qmd\n            - docs/extensions/project-types.qmd\n            - docs/extensions/starter-templates.qmd\n\n    - id: reference\n      title: \"Reference\"\n      contents:\n        - text: \"Reference\"\n          href: docs/reference/index.qmd\n        - section: \"Formats\"\n          contents:\n            - text: \"HTML\"\n              href: docs/reference/formats/html.qmd\n            - text: \"PDF\"\n              href: docs/reference/formats/pdf.qmd\n            - text: \"MS Word\"\n              href: docs/reference/formats/docx.qmd\n            - text: \"OpenOffice\"\n              href: docs/reference/formats/odt.qmd\n            - text: \"ePub\"\n              href: docs/reference/formats/epub.qmd\n            - section: \"Presentations\"\n              contents:\n                - text: \"Revealjs\"\n                  href: docs/reference/formats/presentations/revealjs.qmd\n                - text: \"PowerPoint\"\n                  href: docs/reference/formats/presentations/pptx.qmd\n                - text: \"Beamer\"\n                  href: docs/reference/formats/presentations/beamer.qmd\n            - section: \"Markdown\"\n              contents:\n                - text: \"GitHub\"\n                  href: docs/reference/formats/markdown/gfm.qmd\n                - text: \"CommonMark\"\n                  href: docs/reference/formats/markdown/commonmark.qmd\n                - text: \"Markua\"\n                  href: docs/reference/formats/markdown/markua.qmd\n            - section: \"Wikis\"\n              contents:\n                - text: \"MediaWiki\"\n                  href: docs/reference/formats/wiki/mediawiki.qmd\n                - text: \"DokuWiki\"\n                  href: docs/reference/formats/wiki/dokuwiki.qmd\n                - text: \"ZimWiki\"\n                  href: docs/reference/formats/wiki/zimwiki.qmd\n                - text: \"Jira Wiki\"\n                  href: docs/reference/formats/wiki/jira.qmd\n                - text: \"XWiki\"\n                  href: docs/reference/formats/wiki/xwiki.qmd\n            - section: \"More Formats\"\n              contents:\n                - text: \"JATS\"\n                  href: docs/reference/formats/jats.qmd\n                - text: \"Jupyter\"\n                  href: docs/reference/formats/ipynb.qmd\n                - text: \"ConTeXt\"\n                  href: docs/reference/formats/context.qmd\n                - text: \"RTF\"\n                  href: docs/reference/formats/rtf.qmd\n                - text: \"reST\"\n                  href: docs/reference/formats/rst.qmd\n                - text: \"AsciiDoc\"\n                  href: docs/reference/formats/asciidoc.qmd\n                - text: \"Org-Mode\"\n                  href: docs/reference/formats/org.qmd\n                - text: \"Muse\"\n                  href: docs/reference/formats/muse.qmd\n                - text: \"GNU TexInfo\"\n                  href: docs/reference/formats/texinfo.qmd\n                - text: \"Groff Man Page\"\n                  href: docs/reference/formats/man.qmd\n                - text: \"Groff Manuscript\"\n                  href: docs/reference/formats/ms.qmd\n                - text: \"Haddock markup\"\n                  href: docs/reference/formats/haddock.qmd\n                - text: \"OPML\"\n                  href: docs/reference/formats/opml.qmd\n                - text: \"Textile\"\n                  href: docs/reference/formats/textile.qmd\n                - text: \"DocBook\"\n                  href: docs/reference/formats/docbook.qmd\n                - text: \"InDesign\"\n                  href: docs/reference/formats/icml.qmd\n                - text: \"TEI Simple\"\n                  href: docs/reference/formats/tei.qmd\n                - text: \"FictionBook\"\n                  href: docs/reference/formats/fb2.qmd\n        - section: \"Code Cells\"\n          contents:\n            - text: \"Jupyter\"\n              href: docs/reference/cells/cells-jupyter.qmd\n            - text: \"Knitr\"\n              href: docs/reference/cells/cells-knitr.qmd\n            - text: \"Observable\"\n              href: docs/reference/cells/cells-ojs.qmd\n        - section: \"Projects\"\n          contents:\n            - text: \"Options\"\n              href: docs/reference/projects/options.qmd\n            - text: \"Websites\"\n              href: docs/reference/projects/websites.qmd\n            - text: \"Books\"\n              href: docs/reference/projects/books.qmd\n        - section: \"More\"\n          contents:\n            - text: \"Dates\"\n              href: docs/reference/dates.qmd\n            - text: \"Globs\"\n              href: docs/reference/globs.qmd\n            - text: \"Citations\"\n              href: docs/reference/metadata/citation.qmd\n\nbibliography: references.bib\n\nformat:\n  html:\n    toc: true\n    theme:\n      light: [cosmo, theme.scss]\n    code-copy: true\n    code-overflow: wrap\n    css: styles.css\n    include-after-body: js.html\n\nfilters:\n  - filters/tools-tabset.lua\n\n\nfreeze: true\n\neditor: visual\n\nprofile:\n  group: \n    - [rc, prerelease]"
+  },
+  {
+    "objectID": "taller/slides.html#intro-1",
+    "href": "taller/slides.html#intro-1",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Intro",
+    "text": "Intro\n\nQuarto viene preparado con diferentes Bootstrap themes del proyecto Bootswatch project que le dan a nuestro blog una apariencia profesional y cuidada.\n\n\n\nCreo que es mejor comenzar con un blog sencillo usando las plantillas (o themes) que nos ofrece Quarto pero, si queremos modificar la apariencia de nuestro blog, podemos hacerlo de 3 formas:\n\nUtilizando las opciones disponibles en Quarto para el yaml\nUtilizando CSS\nUtilizando SASS"
+  },
+  {
+    "objectID": "taller/slides.html#documentación-oficial",
+    "href": "taller/slides.html#documentación-oficial",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Documentación oficial",
+    "text": "Documentación oficial\n(sobre opciones disponibles en los YAML’s)\n\n\nReferentes al proyecto: aquí\nReferentes a la estructura de la web: aquí y aquí\nReferentes a la estética: aquí y aquí\nReferentes a las Listing Pages: aquí\nReferentes a las About Pages: aquí"
+  },
+  {
+    "objectID": "taller/slides.html#algunas-opciones-de-yaml-lang",
+    "href": "taller/slides.html#algunas-opciones-de-yaml-lang",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Algunas opciones de YAML (lang)",
+    "text": "Algunas opciones de YAML (lang)\n\nSi te has fijado, los metadatos de los documentos aparecen en inglés.\nPor ejemplo, pone “Author” en lugar de “Autor” o “Autora”.\n\n\nHagamos algunos cambios\n\nSi quisiéramos cambiar específicamente la opción de autor, tendríamos que poner en el YAML:\n\n\nlanguage: \n  title-block-author-single: \"Autora\"\n\n\nPodemos cambiar todas las opciones especificando en el YAML lang: es.\nLa documentación oficial está aquí y aquí todos los elementos que se pueden modificar. Y aquí los ficheros específicos para diferentes idiomas. Aquí el documento para el castellano.\n\n\n\nSi quisieras usar tu propio documento tendrías que poner en el YAML: language: custom.yml (lógicamente el fichero custom.yml tendría que existir y estar en la ruta correcta).\n¿Probamos a hacerlo?"
+  },
+  {
+    "objectID": "taller/slides.html#otras-opciones-para-tunear-desde-el-yaml",
+    "href": "taller/slides.html#otras-opciones-para-tunear-desde-el-yaml",
+    "title": "Mi primer blog con Quarto (y Rmd)",
+    "section": "Otras opciones para tunear desde el YAML",
+    "text": "Otras opciones para tunear desde el YAML\n\nTOC: es importante tenerlo a nuestro gusto. Aquí tienes las opciones que puedes ajustar con opciones en el yaml\nChunks: aquí tienes las opciones que puedes ajustar desde el YAML\nResizing de los thumbnails. Un gist para hacerlo.\nAlgunas opciones de tuneado que puedes implementar desde el YAML. Prueba a poner estas opciones en el archivo _quarto.yml. Nuestro blog empeorará bastante. Más opciones aquí.\n\n\nfontcolor: green          #- color del texto\nlinkcolor: purple         #- color de los enlaces\nmonobackgroundcolor: red  #- color de los cuadros de resultados de evaluar código\nfontsize: 0.6em           #- tamaño del texto (más pequeño de lo normal: 1)\nlinestretch: 2.3          #- tamaño entre las lineas (1.6 es lo \"normal\")"
+  },
+  {
     "objectID": "recursos.html",
     "href": "recursos.html",
     "title": "Recursos sobre Quarto",
@@ -1194,26 +1425,26 @@
     "href": "posts/post_zz_WIP.html#last-updated",
     "title": "Más elementos (WIP)",
     "section": "9 Last Updated",
-    "text": "9 Last Updated\n\n\n\n[1] \"19 noviembre 2022\""
+    "text": "9 Last Updated\n\n\n\n[1] \"20 noviembre 2022\""
   },
   {
     "objectID": "materiales.html",
     "href": "materiales.html",
-    "title": "Mi primer blog con Quarto (WIP)",
+    "title": "Materiales para el Taller",
     "section": "",
-    "text": "Contexto\n\n\n\n\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas.\nEn la sección Setup tienes instrucciones para instalar el software necesario para el taller\nEl taller consta de una introducción y 7 secciones. Cada sección tiene un tutorial asociado, que sirve de apoyo, pero durante el taller solo se utilizarán 2 conjuntos de slides."
+    "text": "Contexto\n\n\n\n\nEl taller está pensado para realizar con R. Se utilizará el IDE RStudio y Quarto. Se recomienda tener instaladas versiones recientes de los 3 programas.\nEn la sección Setup tienes instrucciones para instalar el software necesario para el taller\nEl taller consta de una introducción y 7 secciones. Cada sección tiene un tutorial asociado, que sirve de apoyo, pero durante el taller solo se utilizarán las siguientes slides."
   },
   {
-    "objectID": "materiales.html#materiales-para-el-taller",
-    "href": "materiales.html#materiales-para-el-taller",
-    "title": "Mi primer blog con Quarto (WIP)",
-    "section": "Materiales para el Taller",
-    "text": "Materiales para el Taller\n\nSlides para la Intro\n\n\nSlides para el Taller (para las restantes secciones)"
+    "objectID": "materiales.html#slides-para-el-taller",
+    "href": "materiales.html#slides-para-el-taller",
+    "title": "Materiales para el Taller",
+    "section": "Slides para el Taller",
+    "text": "Slides para el Taller"
   },
   {
     "objectID": "materiales.html#estructura-del-taller",
     "href": "materiales.html#estructura-del-taller",
-    "title": "Mi primer blog con Quarto (WIP)",
+    "title": "Materiales para el Taller",
     "section": "Estructura del taller",
     "text": "Estructura del taller\n(El taller consta de una introducción y 7 secciones)\n\n0. Introducción (15 min)\n\n\n1. Creación de un blog básico: mi blog en 3 minutos (10 min) [tutorial 1]\n\n\n2. Tuneado básico del blog (15 min + 15 min de Práctica) [tutorial 2]\n\n\n3. Convirtiendo el blog en una web académica (5 min) [tutorial 3]\n\n\n4. Workflow: ¿cómo crear un post? (5 min) [tutorial 4]\n\n\n5. Escribiendo posts con Quarto (15 min + 15 min de Práctica) [tutorial 5]\n\n\n6. Tuneado del blog (10 min) [tutorial 6]\n\n\n7. Opciones de alojamiento (1 min) [tutorial 7] (WIP)\n \n\nSeguramente usaremos esta Etherpad.\n\n\nSlides para clase BigData (para usar en curso BigData)"
   },
@@ -1250,6 +1481,6 @@
     "href": "mas-cosas/inline-code.html#reporting-with-lists",
     "title": "Mi primer blog con Quarto (WIP)",
     "section": "Reporting with lists",
-    "text": "Reporting with lists\nCredit to TJ Mahr\n\nknitted <- list(\n  when = format(Sys.Date()),\n  with = system(\"quarto --version\", intern = TRUE)\n)\n\nReported prepared on 2022-11-19 with quarto version 1.2.269."
+    "text": "Reporting with lists\nCredit to TJ Mahr\n\nknitted <- list(\n  when = format(Sys.Date()),\n  with = system(\"quarto --version\", intern = TRUE)\n)\n\nReported prepared on 2022-11-20 with quarto version 1.2.269."
   }
 ]

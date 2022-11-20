@@ -103,5 +103,8 @@
   },
   "mas-cosas/inline-code.qmd": {
     "inline-code.html": "e6d10a47"
+  },
+  "taller/slides.qmd": {
+    "slides.html": "d1cb683d"
   }
 }

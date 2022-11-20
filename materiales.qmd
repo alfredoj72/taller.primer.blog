@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Materiales para el Taller"
 ---
 
 
@@ -15,17 +15,10 @@ title: ""
 
 <br>
 
-El taller consta de una introducción y 7 secciones. Cada sección tiene un tutorial asociado, que sirve de apoyo, pero durante el taller solo **se utilizarán 2 conjuntos de slides**.
+El taller consta de una introducción y **7 secciones**. Cada sección tiene un **tutorial asociado**, que sirve de apoyo, pero durante el taller solo **se utilizarán las siguientes slides**.
 
 
-## Materiales para el Taller
-
-#### [Slides para la Intro](./taller/00_taller_slides.html){target="_blank"} 
-
-
-#### [Slides para el Taller](./taller/slides_tareas_01.html){target="_blank"} (para las restantes secciones)
-
-
+## [Slides para el Taller](./taller/slides.qmd){target="_blank"}
 
 
 <br>
