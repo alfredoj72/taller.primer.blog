@@ -28,23 +28,22 @@ El taller consta de una introducción y **7 secciones**. Cada sección tiene un 
 (El taller consta de una **introducción** y **7 secciones**)
 
 
-#### 0. Introducción (15 min)
+#### 0. Introducción 
 
+#### 1. Creación de un blog básico: mi blog en 3 minutos  [[tutorial 1](./taller/01_taller_crear-blog-basico.qmd){target="_blank"}]
 
-#### 1. Creación de un blog básico: mi blog en 3 minutos (10 min)  [[tutorial 1](./taller/01_taller_crear-blog-basico.qmd){target="_blank"}]
+#### 2. Tuneado básico del blog  [[tutorial 2](./taller/02_taller_tuneado-basico.qmd){target="_blank"}]
 
-#### 2. Tuneado básico del blog  (15 min + 15 min de Práctica) [[tutorial 2](./taller/02_taller_tuneado-basico.qmd){target="_blank"}]
-
-#### 3. Convirtiendo el blog en una web académica (5 min) [[tutorial 3](./taller/03_taller_convertir-en-web.qmd){target="_blank"}]
+#### 3. Convirtiendo el blog en una web académica  [[tutorial 3](./taller/03_taller_convertir-en-web.qmd){target="_blank"}]
 
 #### 4. Workflow: ¿cómo crear un post? (5 min) [[tutorial 4](./taller/04_taller_crear-post.qmd){target="_blank"}]  
 
-#### 5. Escribiendo posts con Quarto (15 min + 15 min de Práctica) [[tutorial 5](./taller/05_taller_escribir-posts.qmd){target="_blank"}]
+#### 5. Escribiendo posts con Quarto [[tutorial 5](./taller/05_taller_escribir-posts.qmd){target="_blank"}]
 
 
-#### 6. Tuneado del blog (10 min) [[tutorial 6](./taller/06_taller_tuneado-del-blog.qmd){target="_blank"}] 
+#### 6. Tuneado del blog [[tutorial 6](./taller/06_taller_tuneado-del-blog.qmd){target="_blank"}] 
 
-#### 7. Opciones de alojamiento (1 min) [[tutorial 7](./taller/07_taller_alojamiento.qmd){target="_blank"}] (WIP)
+#### 7. Opciones de alojamiento [[tutorial 7](./taller/07_taller_alojamiento.qmd){target="_blank"}] (WIP)
 
 
 <br>

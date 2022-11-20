@@ -1446,7 +1446,7 @@
     "href": "materiales.html#estructura-del-taller",
     "title": "Materiales para el Taller",
     "section": "Estructura del taller",
-    "text": "Estructura del taller\n(El taller consta de una introducción y 7 secciones)\n\n0. Introducción (15 min)\n\n\n1. Creación de un blog básico: mi blog en 3 minutos (10 min) [tutorial 1]\n\n\n2. Tuneado básico del blog (15 min + 15 min de Práctica) [tutorial 2]\n\n\n3. Convirtiendo el blog en una web académica (5 min) [tutorial 3]\n\n\n4. Workflow: ¿cómo crear un post? (5 min) [tutorial 4]\n\n\n5. Escribiendo posts con Quarto (15 min + 15 min de Práctica) [tutorial 5]\n\n\n6. Tuneado del blog (10 min) [tutorial 6]\n\n\n7. Opciones de alojamiento (1 min) [tutorial 7] (WIP)\n \n\nSeguramente usaremos esta Etherpad.\n\n\nSlides para clase BigData (para usar en curso BigData)"
+    "text": "Estructura del taller\n(El taller consta de una introducción y 7 secciones)\n\n0. Introducción\n\n\n1. Creación de un blog básico: mi blog en 3 minutos [tutorial 1]\n\n\n2. Tuneado básico del blog [tutorial 2]\n\n\n3. Convirtiendo el blog en una web académica [tutorial 3]\n\n\n4. Workflow: ¿cómo crear un post? (5 min) [tutorial 4]\n\n\n5. Escribiendo posts con Quarto [tutorial 5]\n\n\n6. Tuneado del blog [tutorial 6]\n\n\n7. Opciones de alojamiento [tutorial 7] (WIP)\n \n\nSeguramente usaremos esta Etherpad.\n\n\nSlides para clase BigData (para usar en curso BigData)"
   },
   {
     "objectID": "about.html",
