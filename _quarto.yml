@@ -7,7 +7,7 @@ project:
     
 website:
   #page-navigation: true
-  title: "Mi primer blog con Quarto (WIP)"
+  title: "Mi primer blog con Quarto"
   favicon: imagenes/ababol_redondeado.ico
   site-url: https://perezp44.github.io/taller.primer.blog/
   repo-url: https://github.com/perezp44/taller.primer.blog
