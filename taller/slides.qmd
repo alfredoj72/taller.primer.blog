@@ -156,7 +156,7 @@ css: assets/styles_slides.intro.css
 -   Los posts **tampoco tienen porqué estar perfectos**, así que no hay que tener miedo a escribir!!
 
 
-## Estructura de una web { .unnumbered background-color="#C5B38F" title-align="center"}
+## Estructura de una web { .unnumbered background-color="#b8c2aa" title-align="center"}
 
 
 ::: {columns}
