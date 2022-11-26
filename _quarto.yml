@@ -11,6 +11,7 @@ website:
   favicon: imagenes/ababol_redondeado.ico
   site-url: https://perezp44.github.io/taller.primer.blog/
   repo-url: https://github.com/perezp44/taller.primer.blog
+  google-analytics: "G-XLVN8SCPEF"
   repo-actions: [edit, issue]
   open-graph: true #-https://quarto.org/docs/websites/website-tools.html#twitter-cards
   twitter-card:
